@@ -1,0 +1,48 @@
+/* Uber DNA — move black and white, geometric utility */
+.theme-uber-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.964 0 0);
+  --surface-2: oklch(0.931 0 0);
+  --fg: oklch(0.000 0 0);
+  --fg-muted: oklch(0.528 0 0);
+  --accent: oklch(0.000 0 0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.573 0.210 261.4);
+  --line: oklch(0.922 0 0);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.768 0.158 81.3);
+  --danger: oklch(0.000 0 0);
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Rubik", sans-serif;
+  --font-body: "Rubik", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.02em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-uber-dna h1,
+.theme-uber-dna h2,
+.theme-uber-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-uber-dna { --font-ui: var(--font-display); }
+.theme-uber-dna h1 { font-weight: 700; letter-spacing: -0.03em; }
+.theme-uber-dna button { font-weight: 500; }
+

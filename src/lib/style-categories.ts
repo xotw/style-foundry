@@ -28,19 +28,19 @@ export const STYLE_CATEGORIES: { id: string; label: string; blurb: string; slugs
     id: "tech-dna",
     label: "Tech & SaaS DNA",
     blurb: "The design languages of iconic software products, from crawled brand values.",
-    slugs: ["stripe-dna", "superhuman-dna", "figma-dna", "arc-dna", "github-dna", "apple-dna", "braun-dna", "teenage-engineering-dna", "ableton-dna", "proton-dna", "anthropic-dna", "nasa-dna"],
+    slugs: ["stripe-dna", "superhuman-dna", "figma-dna", "arc-dna", "github-dna", "apple-dna", "braun-dna", "teenage-engineering-dna", "ableton-dna", "proton-dna", "anthropic-dna", "nasa-dna", "notion-dna", "revolut-dna", "microsoft-dna"],
   },
   {
     id: "social-dna",
     label: "Social & messaging DNA",
     blurb: "Feeds, bubbles and communities — the interfaces everyone knows.",
-    slugs: ["slack-dna", "discord-dna", "telegram-dna", "whatsapp-dna", "signal-dna", "facebook-dna", "instagram-dna", "x-dna", "linkedin-dna", "reddit-dna"],
+    slugs: ["slack-dna", "discord-dna", "telegram-dna", "whatsapp-dna", "signal-dna", "facebook-dna", "instagram-dna", "x-dna", "linkedin-dna", "reddit-dna", "pinterest-dna"],
   },
   {
     id: "commerce-dna",
     label: "Commerce & lifestyle DNA",
     blurb: "Marketplaces, retail and consumer brands with a point of view.",
-    slugs: ["airbnb-dna", "ikea-dna", "lego-dna", "aesop-dna", "ssense-dna", "headspace-dna", "duolingo-dna", "cash-app-dna"],
+    slugs: ["airbnb-dna", "ikea-dna", "lego-dna", "aesop-dna", "ssense-dna", "headspace-dna", "duolingo-dna", "cash-app-dna", "uber-dna", "amazon-dna", "mcdonalds-dna", "starbucks-dna"],
   },
   {
     id: "media-dna",
@@ -52,6 +52,24 @@ export const STYLE_CATEGORIES: { id: string; label: string; blurb: string; slugs
     id: "sports-dna",
     label: "Sports DNA",
     blurb: "Brands and clubs built on intensity, speed and pride.",
-    slugs: ["nike-dna", "adidas-dna", "reebok-dna", "crossfit-dna", "nba-dna", "nfl-dna", "barcelona-dna", "real-madrid-dna"],
+    slugs: ["nike-dna", "adidas-dna", "reebok-dna", "crossfit-dna", "nba-dna", "nfl-dna", "formula1", "redbull-dna"],
+  },
+  {
+    id: "nba-teams",
+    label: "NBA teams",
+    blurb: "Nine iconic franchises, official colors, jumbotron energy.",
+    slugs: ["chicago-bulls", "boston-celtics", "new-york-knicks", "philadelphia-76ers", "la-lakers", "golden-state-warriors", "miami-heat", "detroit-pistons", "san-antonio-spurs"],
+  },
+  {
+    id: "football-clubs",
+    label: "Football clubs",
+    blurb: "European giants in their kit colors — crest pride as a design system.",
+    slugs: ["barcelona-dna", "real-madrid-dna", "psg", "arsenal", "chelsea", "marseille", "ac-milan", "inter-milan", "roma", "lazio", "juventus", "bayern-munich", "dortmund", "atletico-madrid", "benfica", "porto"],
+  },
+  {
+    id: "gaming-dna",
+    label: "Gaming & streaming DNA",
+    blurb: "Consoles, stores and live platforms.",
+    slugs: ["playstation-dna", "xbox-dna", "nintendo-dna", "steam-dna", "twitch-dna", "youtube-dna", "tiktok-dna"],
   },
 ];

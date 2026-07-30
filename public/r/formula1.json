@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-formula1",
+  "type": "registry:item",
+  "title": "Formula 1 DNA",
+  "description": "Formula 1 DNA — race red on carbon black, apex speed — token file scoped under .theme-formula1; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/formula1.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/formula1.css",
+      "content": "/* Formula 1 DNA — race red on carbon black, apex speed */\n.theme-formula1 {\n  --bg: oklch(0.164 0 0);\n  --surface: oklch(0.205 0 0);\n  --surface-2: oklch(0.252 0 0);\n  --fg: oklch(1.000 0 0);\n  --fg-muted: oklch(0.686 0 0);\n  --accent: oklch(0.573 0.233 29.5);\n  --accent-fg: oklch(1.000 0 0);\n  --accent-2: oklch(1.000 0 0);\n  --line: oklch(1 0 0 / 14%);\n  --success: oklch(0.615 0.143 147.4);\n  --warning: oklch(0.788 0.151 74.9);\n  --danger: oklch(0.615 0.190 27.8);\n  --radius: 0.25rem;\n  --radius-sm: 0.25rem;\n  --radius-lg: 0.5rem;\n  --radius-pill: 9999px;\n  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);\n  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);\n  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);\n  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);\n  --border-width: 1px;\n  --blur-amount: 0px;\n  --font-display: \"Michroma\", sans-serif;\n  --font-body: \"Inter\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n  --tracking-display: 0em;\n  --label-transform: uppercase;\n  --label-tracking: 0.12em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-formula1 h1,\n.theme-formula1 h2,\n.theme-formula1 h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n\n/* signature */\n.theme-formula1 { --font-ui: var(--font-display); background-image: linear-gradient(180deg, oklch(0.2 0 0 / 60%), transparent 300px); }\n.theme-formula1 h1, .theme-formula1 h2 { text-transform: uppercase; font-style: italic; }\n.theme-formula1 h1::after { content: \"\"; display: block; height: 8px; width: 7rem; margin-top: 0.7rem; background: repeating-linear-gradient(45deg, var(--accent) 0 8px, #ffffff 8px 16px); }\n.theme-formula1 button { text-transform: uppercase; font-style: italic; letter-spacing: 0.08em; }\n\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

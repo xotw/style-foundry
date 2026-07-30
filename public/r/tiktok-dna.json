@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-tiktok-dna",
+  "type": "registry:item",
+  "title": "TikTok DNA",
+  "description": "TikTok DNA — void black, glitch cyan and pink, vertical energy — token file scoped under .theme-tiktok-dna; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/tiktok-dna.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/tiktok-dna.css",
+      "content": "/* TikTok DNA — void black, glitch cyan and pink, vertical energy */\n.theme-tiktok-dna {\n  --bg: oklch(0.000 0 0);\n  --surface: oklch(0.182 0 0);\n  --surface-2: oklch(0.231 0 0);\n  --fg: oklch(1.000 0 0);\n  --fg-muted: oklch(0.633 0 0);\n  --accent: oklch(0.647 0.238 17.7);\n  --accent-fg: oklch(1.000 0 0);\n  --accent-2: oklch(0.876 0.146 191.6);\n  --line: oklch(1 0 0 / 14%);\n  --success: oklch(0.615 0.143 147.4);\n  --warning: oklch(0.788 0.151 74.9);\n  --danger: oklch(0.615 0.190 27.8);\n  --radius: 0.5rem;\n  --radius-sm: 0.25rem;\n  --radius-lg: 0.5rem;\n  --radius-pill: 9999px;\n  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);\n  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);\n  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);\n  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);\n  --border-width: 1px;\n  --blur-amount: 0px;\n  --font-display: \"Montserrat\", sans-serif;\n  --font-body: \"Montserrat\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n  --tracking-display: 0em;\n  --label-transform: none;\n  --label-tracking: 0.04em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-tiktok-dna h1,\n.theme-tiktok-dna h2,\n.theme-tiktok-dna h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n\n/* signature */\n.theme-tiktok-dna { --font-ui: var(--font-display); }\n.theme-tiktok-dna h1 { font-weight: 800; text-shadow: 2px 2px 0 var(--accent-2), -2px -2px 0 var(--accent); }\n.theme-tiktok-dna button { font-weight: 700; }\n\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+/* Xbox DNA — power green on carbon dark */
+.theme-xbox-dna {
+  --bg: oklch(0.164 0 0);
+  --surface: oklch(0.200 0 0);
+  --surface-2: oklch(0.239 0 0);
+  --fg: oklch(1.000 0 0);
+  --fg-muted: oklch(0.686 0 0);
+  --accent: oklch(0.510 0.165 142.7);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.622 0.168 143.2);
+  --line: oklch(1 0 0 / 14%);
+  --success: oklch(0.615 0.143 147.4);
+  --warning: oklch(0.788 0.151 74.9);
+  --danger: oklch(0.615 0.190 27.8);
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.04em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-xbox-dna h1,
+.theme-xbox-dna h2,
+.theme-xbox-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-xbox-dna { --font-ui: var(--font-display); background-image: radial-gradient(circle at 50% -20%, oklch(0.4 0.12 145 / 30%), transparent 50%); }
+.theme-xbox-dna h1 { font-weight: 800; }
+.theme-xbox-dna button:hover { box-shadow: 0 0 20px color-mix(in oklab, var(--accent) 55%, transparent); }
+

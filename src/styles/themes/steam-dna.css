@@ -1,0 +1,47 @@
+/* Steam DNA — midnight library blue, glowing store shelves */
+.theme-steam-dna {
+  --bg: oklch(0.218 0.015 266.9);
+  --surface: oklch(0.273 0.035 254.1);
+  --surface-2: oklch(0.363 0.054 255.1);
+  --fg: oklch(0.899 0.003 228.8);
+  --fg-muted: oklch(0.675 0.016 244.8);
+  --accent: oklch(0.772 0.114 236.2);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.794 0.195 123.7);
+  --line: oklch(1 0 0 / 14%);
+  --success: oklch(0.615 0.143 147.4);
+  --warning: oklch(0.788 0.151 74.9);
+  --danger: oklch(0.615 0.190 27.8);
+  --radius: 0.25rem;
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Work Sans", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.04em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-steam-dna h1,
+.theme-steam-dna h2,
+.theme-steam-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-steam-dna h1 { background: linear-gradient(95deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-steam-dna button { background-image: linear-gradient(90deg, #47bfff22, #1a44c222); }
+

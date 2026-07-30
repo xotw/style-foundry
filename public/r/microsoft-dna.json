@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-microsoft-dna",
+  "type": "registry:item",
+  "title": "Microsoft DNA",
+  "description": "Microsoft DNA — fluent four-square, segoe clarity — token file scoped under .theme-microsoft-dna; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/microsoft-dna.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/microsoft-dna.css",
+      "content": "/* Microsoft DNA — fluent four-square, segoe clarity */\n.theme-microsoft-dna {\n  --bg: oklch(1.000 0 0);\n  --surface: oklch(0.962 0.002 67.8);\n  --surface-2: oklch(0.935 0.002 67.8);\n  --fg: oklch(0.240 0.002 67.7);\n  --fg-muted: oklch(0.483 0.004 67.7);\n  --accent: oklch(0.568 0.167 251.3);\n  --accent-fg: oklch(1.000 0 0);\n  --accent-2: oklch(0.510 0.165 142.7);\n  --line: oklch(0.941 0.003 67.8);\n  --success: oklch(0.523 0.135 144.2);\n  --warning: oklch(0.768 0.158 81.3);\n  --danger: oklch(0.568 0.167 251.3);\n  --radius: 0.25rem;\n  --radius-sm: 0.25rem;\n  --radius-lg: 0.5rem;\n  --radius-pill: 9999px;\n  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);\n  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);\n  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);\n  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);\n  --border-width: 1px;\n  --blur-amount: 0px;\n  --font-display: \"Segoe UI\", \"Selawik\", sans-serif;\n  --font-body: \"Segoe UI\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n  --tracking-display: 0em;\n  --label-transform: none;\n  --label-tracking: 0.02em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-microsoft-dna h1,\n.theme-microsoft-dna h2,\n.theme-microsoft-dna h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n\n/* signature */\n.theme-microsoft-dna h1 { font-weight: 600; }\n.theme-microsoft-dna h2::before { content: \"\"; display: inline-block; width: 0.55em; height: 0.55em; margin-right: 0.4em; background: conic-gradient(#F25022 0 25%, #7FBA00 0 50%, #FFB900 0 75%, #00A4EF 0 100%); }\n.theme-microsoft-dna button { font-weight: 600; }\n\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

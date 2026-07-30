@@ -1,0 +1,48 @@
+/* Microsoft DNA — fluent four-square, segoe clarity */
+.theme-microsoft-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.962 0.002 67.8);
+  --surface-2: oklch(0.935 0.002 67.8);
+  --fg: oklch(0.240 0.002 67.7);
+  --fg-muted: oklch(0.483 0.004 67.7);
+  --accent: oklch(0.568 0.167 251.3);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.510 0.165 142.7);
+  --line: oklch(0.941 0.003 67.8);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.768 0.158 81.3);
+  --danger: oklch(0.568 0.167 251.3);
+  --radius: 0.25rem;
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Segoe UI", "Selawik", sans-serif;
+  --font-body: "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.02em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-microsoft-dna h1,
+.theme-microsoft-dna h2,
+.theme-microsoft-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-microsoft-dna h1 { font-weight: 600; }
+.theme-microsoft-dna h2::before { content: ""; display: inline-block; width: 0.55em; height: 0.55em; margin-right: 0.4em; background: conic-gradient(#F25022 0 25%, #7FBA00 0 50%, #FFB900 0 75%, #00A4EF 0 100%); }
+.theme-microsoft-dna button { font-weight: 600; }
+

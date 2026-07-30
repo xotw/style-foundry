@@ -1,0 +1,48 @@
+/* YouTube DNA — play red on white, thumbnail-first */
+.theme-youtube-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.982 0 0);
+  --surface-2: oklch(0.961 0 0);
+  --fg: oklch(0.168 0 0);
+  --fg-muted: oklch(0.489 0 0);
+  --accent: oklch(0.628 0.258 29.2);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.277 0 0);
+  --line: oklch(0.922 0 0);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.768 0.158 81.3);
+  --danger: oklch(0.628 0.258 29.2);
+  --radius: 0.75rem;
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Roboto Condensed", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.03em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-youtube-dna h1,
+.theme-youtube-dna h2,
+.theme-youtube-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-youtube-dna { --font-ui: var(--font-display); }
+.theme-youtube-dna h1, .theme-youtube-dna h2 { text-transform: uppercase; font-weight: 700; }
+.theme-youtube-dna button { font-weight: 600; }
+
