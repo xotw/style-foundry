@@ -86,6 +86,24 @@ const BRIDGE = `
 [class*="theme-"] :is(h1, h2, h3, h4) { font-family: var(--font-display); }
 [class*="theme-"] :is(code, pre, kbd, samp) { font-family: var(--font-mono); }
 [class*="theme-"] ::selection { background: color-mix(in oklab, var(--accent) 30%, transparent); }
+
+/* OPT-IN HARD MODE — add "sf-enforce" beside the theme class when the host app
+   bakes font/shadow/radius literals into its compiled utilities (a var bridge
+   cannot beat a literal). Targeted !important, fonts and surfaces only. */
+[class*="theme-"].sf-enforce { font-family: var(--font-body) !important; }
+[class*="theme-"].sf-enforce :is(h1, h2, h3, h4, [class*="font-heading"], [class*="text-2xl"], [class*="text-3xl"], [class*="text-4xl"], [class*="text-5xl"]) {
+  font-family: var(--font-display) !important;
+  letter-spacing: var(--tracking-display) !important;
+}
+[class*="theme-"].sf-enforce :is(button, [role="button"]) { font-family: var(--font-ui, var(--font-body)) !important; }
+[class*="theme-"].sf-enforce :is(code, pre, kbd) { font-family: var(--font-mono) !important; }
+[class*="theme-"].sf-enforce :is(.bg-card, [class*="card"]) {
+  box-shadow: var(--shadow-2) !important;
+  border-radius: var(--radius-lg) !important;
+  border: var(--border-width) solid var(--line) !important;
+}
+[class*="theme-"].sf-enforce :is([class*="shadow-sm"], [class*="shadow-md"]) { box-shadow: var(--shadow-1) !important; }
+[class*="theme-"].sf-enforce :is([class*="shadow-lg"], [class*="shadow-xl"]) { box-shadow: var(--shadow-3) !important; }
 `;
 
 // System families that must not go through Google Fonts
