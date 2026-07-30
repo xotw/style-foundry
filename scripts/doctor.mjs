@@ -23,13 +23,14 @@ if (!root || !existsSync(root)) {
    }
    Matched findings are counted separately as documented exceptions and do NOT
    weigh on the verdict. An exception is a decision, not a blocker. */
-let manifest = { ignoreFiles: [], allowedHex: [], reason: "" };
+let manifest = { ignoreFiles: [], allowedHex: [], allowedUtilities: [], allowOnColorText: false, reason: "" };
 const manifestPath = join(root, "sf-doctor.json");
 if (existsSync(manifestPath)) {
-  try { manifest = { ignoreFiles: [], allowedHex: [], reason: "", ...JSON.parse(readFileSync(manifestPath, "utf8")) }; }
+  try { manifest = { ignoreFiles: [], allowedHex: [], allowedUtilities: [], allowOnColorText: false, reason: "", ...JSON.parse(readFileSync(manifestPath, "utf8")) }; }
   catch { console.error("!! sf-doctor.json is invalid JSON — ignoring it"); }
 }
 const allowedHexSet = new Set(manifest.allowedHex.map((h) => h.toLowerCase()));
+const allowedUtilSet = new Set(manifest.allowedUtilities);
 const isIgnoredFile = (rel) => manifest.ignoreFiles.some((frag) => rel.includes(frag));
 
 const EXT = new Set([".tsx", ".ts", ".jsx", ".js", ".css", ".html", ".vue", ".svelte"]);
@@ -53,6 +54,7 @@ let semanticVarUse = 0;
 let bakedFontLiterals = [];
 let paletteBlocks = [];
 let hardcodedUtils = 0;
+let exceptedUtils = 0;
 let hasTailwind4 = false;
 let hasShadcnVars = false;
 let inlineStyleColors = 0;
@@ -93,7 +95,16 @@ for (const f of walk(root)) {
       paletteBlocks.push(`${rel}: palette block on \`${m[1]}\``);
     }
   }
-  hardcodedUtils += (src.match(/\b(?:bg|text|border)-(?:white|black|gray|slate|zinc|neutral|stone)-?\d*/g) ?? []).length;
+  {
+    const utils = src.match(/\b(?:bg|text|border)-(?:white|black|gray|slate|zinc|neutral|stone)-?\d*/g) ?? [];
+    if (isIgnoredFile(rel)) exceptedUtils += utils.length;
+    else
+      for (const u of utils) {
+        if (allowedUtilSet.has(u) || (manifest.allowOnColorText && (u === "text-white" || u === "text-black")))
+          exceptedUtils++;
+        else hardcodedUtils++;
+      }
+  }
   inlineStyleColors += (src.match(/style=\{\{[^}]*(?:#[0-9a-fA-F]{3,6}|rgb\()/g) ?? []).length;
 }
 
@@ -105,7 +116,7 @@ console.log(`Tailwind v4:              ${hasTailwind4 ? "yes" : "NO (v3 or none 
 console.log(`shadcn-style variables:   ${hasShadcnVars ? "yes" : "no"} (${semanticVarUse} semantic var() usages)`);
 console.log(`Raw hex colors:           ${rawHex}${exceptedHex ? ` (+ ${exceptedHex} documented exceptions${manifest.reason ? ` — ${manifest.reason}` : ""})` : ""}`);
 for (const [f, n] of topHex) console.log(`   ${String(n).padStart(4)}  ${f}`);
-console.log(`Hardcoded gray/white/black utilities: ${hardcodedUtils}`);
+console.log(`Hardcoded gray/white/black utilities: ${hardcodedUtils}${exceptedUtils ? ` (+ ${exceptedUtils} documented exceptions)` : ""}`);
 console.log(`Inline style colors:      ${inlineStyleColors}`);
 console.log(`Baked font literals:      ${bakedFontLiterals.length}`);
 for (const b of bakedFontLiterals.slice(0, 5)) console.log(`   ${b}`);

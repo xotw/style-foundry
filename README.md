@@ -359,7 +359,7 @@ Run the doctor first — it scores how themable the app is and prints the exact 
 node scripts/doctor.mjs /path/to/your/app
 ```
 
-Categorical color exceptions (status pills, data-viz dots…) can be declared in `<app>/sf-doctor.json` (`ignoreFiles`, `allowedHex`, `reason`) — documented decisions stop counting against the verdict.
+Categorical color exceptions (status pills, data-viz dots…) can be declared in `<app>/sf-doctor.json` (`ignoreFiles`, `allowedHex`, `allowedUtilities`, `allowOnColorText`, `reason`) — documented decisions stop counting against the verdict.
 
 ## Development
 
