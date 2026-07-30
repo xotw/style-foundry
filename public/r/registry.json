@@ -70,6 +70,12 @@
       "description": "Art Deco — black and gold, geometric symmetry, sunburst elegance — token file scoped under .theme-art-deco; wrap your app in that class."
     },
     {
+      "name": "theme-atlanta-hawks",
+      "type": "registry:item",
+      "title": "Atlanta Hawks DNA",
+      "description": "Atlanta Hawks DNA — Torch red and volt, true to Atlanta. — token file scoped under .theme-atlanta-hawks; wrap your app in that class."
+    },
+    {
       "name": "theme-atletico-madrid",
       "type": "registry:item",
       "title": "Atlético Madrid DNA",
@@ -130,6 +136,12 @@
       "description": "Braun DNA — Dieter Rams functionalism: warm gray, black text, signal-orange dot — token file scoped under .theme-braun-dna; wrap your app in that class."
     },
     {
+      "name": "theme-brooklyn-nets",
+      "type": "registry:item",
+      "title": "Brooklyn Nets DNA",
+      "description": "Brooklyn Nets DNA — Black and white, borough minimal. — token file scoped under .theme-brooklyn-nets; wrap your app in that class."
+    },
+    {
       "name": "theme-brutalism",
       "type": "registry:item",
       "title": "Brutalism",
@@ -140,6 +152,12 @@
       "type": "registry:item",
       "title": "Cash App DNA",
       "description": "Cash App DNA — pure black, electric green, heavy condensed type — token file scoped under .theme-cash-app-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-charlotte-hornets",
+      "type": "registry:item",
+      "title": "Charlotte Hornets DNA",
+      "description": "Charlotte Hornets DNA — Buzz purple and teal, nineties royalty. — token file scoped under .theme-charlotte-hornets; wrap your app in that class."
     },
     {
       "name": "theme-chelsea",
@@ -160,6 +178,12 @@
       "description": "Claymorphism — puffy pastel clay blobs, chunky radii, inner highlights — token file scoped under .theme-claymorphism; wrap your app in that class."
     },
     {
+      "name": "theme-cleveland-cavaliers",
+      "type": "registry:item",
+      "title": "Cleveland Cavaliers DNA",
+      "description": "Cleveland Cavaliers DNA — Wine and gold, the land. — token file scoped under .theme-cleveland-cavaliers; wrap your app in that class."
+    },
+    {
       "name": "theme-crossfit-dna",
       "type": "registry:item",
       "title": "CrossFit DNA",
@@ -172,10 +196,22 @@
       "description": "Cyberpunk — ink-black slabs, acid yellow + hot magenta, neon edges — token file scoped under .theme-cyberpunk; wrap your app in that class."
     },
     {
+      "name": "theme-dallas-mavericks",
+      "type": "registry:item",
+      "title": "Dallas Mavericks DNA",
+      "description": "Dallas Mavericks DNA — Royal blue and silver, MFFL. — token file scoped under .theme-dallas-mavericks; wrap your app in that class."
+    },
+    {
       "name": "theme-dark-saas",
       "type": "registry:item",
       "title": "Dark SaaS",
       "description": "Dark SaaS — near-black canvas, subtle borders, one electric accent, tight type — token file scoped under .theme-dark-saas; wrap your app in that class."
+    },
+    {
+      "name": "theme-denver-nuggets",
+      "type": "registry:item",
+      "title": "Denver Nuggets DNA",
+      "description": "Denver Nuggets DNA — Mile high navy, sunrise gold, skyline. — token file scoped under .theme-denver-nuggets; wrap your app in that class."
     },
     {
       "name": "theme-detroit-pistons",
@@ -298,6 +334,12 @@
       "description": "Heisei Retro — 90s Japanese tech catalog: warm beige plastic, red/blue, dense boxes — token file scoped under .theme-heisei-retro; wrap your app in that class."
     },
     {
+      "name": "theme-houston-rockets",
+      "type": "registry:item",
+      "title": "Houston Rockets DNA",
+      "description": "Houston Rockets DNA — Rocket red, clutch city black. — token file scoped under .theme-houston-rockets; wrap your app in that class."
+    },
+    {
       "name": "theme-hud-scifi",
       "type": "registry:item",
       "title": "HUD Sci-Fi",
@@ -308,6 +350,12 @@
       "type": "registry:item",
       "title": "IKEA DNA",
       "description": "IKEA DNA — democratic blue and yellow, Skapa functionalism, price-tag boldness — token file scoped under .theme-ikea-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-indiana-pacers",
+      "type": "registry:item",
+      "title": "Indiana Pacers DNA",
+      "description": "Indiana Pacers DNA — Navy and gold, hoosier speed. — token file scoped under .theme-indiana-pacers; wrap your app in that class."
     },
     {
       "name": "theme-instagram-dna",
@@ -332,6 +380,12 @@
       "type": "registry:item",
       "title": "Juventus DNA",
       "description": "Juventus DNA — zebra black and white, sharp cuts, hot signal pink-red — token file scoped under .theme-juventus; wrap your app in that class."
+    },
+    {
+      "name": "theme-la-clippers",
+      "type": "registry:item",
+      "title": "LA Clippers DNA",
+      "description": "LA Clippers DNA — Nautical red, white and royal. — token file scoped under .theme-la-clippers; wrap your app in that class."
     },
     {
       "name": "theme-la-lakers",
@@ -406,6 +460,12 @@
       "description": "Memphis — 80s postmodern: squiggles, confetti shapes, clashing primaries — token file scoped under .theme-memphis; wrap your app in that class."
     },
     {
+      "name": "theme-memphis-grizzlies",
+      "type": "registry:item",
+      "title": "Memphis Grizzlies DNA",
+      "description": "Memphis Grizzlies DNA — Beale Street blue over midnight navy, grit and grind. — token file scoped under .theme-memphis-grizzlies; wrap your app in that class."
+    },
+    {
       "name": "theme-miami-heat",
       "type": "registry:item",
       "title": "Miami Heat DNA",
@@ -424,10 +484,22 @@
       "description": "Millennium Falcon — used-future cockpit: worn panels, targeting-computer yellow vectors, amber toggles — token file scoped under .theme-millennium-falcon; wrap your app in that class."
     },
     {
+      "name": "theme-milwaukee-bucks",
+      "type": "registry:item",
+      "title": "Milwaukee Bucks DNA",
+      "description": "Milwaukee Bucks DNA — Hunter green and cream city, fear the deer. — token file scoped under .theme-milwaukee-bucks; wrap your app in that class."
+    },
+    {
       "name": "theme-minimal-warm",
       "type": "registry:item",
       "title": "Minimal Warm",
       "description": "Minimal Warm — sand and clay neutrals, soft radii, quiet contrast — token file scoped under .theme-minimal-warm; wrap your app in that class."
+    },
+    {
+      "name": "theme-minnesota-timberwolves",
+      "type": "registry:item",
+      "title": "Minnesota Timberwolves DNA",
+      "description": "Minnesota Timberwolves DNA — Midnight navy, aurora neon green. — token file scoped under .theme-minnesota-timberwolves; wrap your app in that class."
     },
     {
       "name": "theme-nasa-dna",
@@ -452,6 +524,12 @@
       "type": "registry:item",
       "title": "Neumorphism",
       "description": "Neumorphism — soft extruded gray surfaces, double shadows, pill shapes — token file scoped under .theme-neumorphism; wrap your app in that class."
+    },
+    {
+      "name": "theme-new-orleans-pelicans",
+      "type": "registry:item",
+      "title": "New Orleans Pelicans DNA",
+      "description": "New Orleans Pelicans DNA — Navy, mardi gras gold and red. — token file scoped under .theme-new-orleans-pelicans; wrap your app in that class."
     },
     {
       "name": "theme-new-york-knicks",
@@ -490,10 +568,28 @@
       "description": "Notion DNA — paper white, ink gray, serif calm, tool that disappears — token file scoped under .theme-notion-dna; wrap your app in that class."
     },
     {
+      "name": "theme-okc-thunder",
+      "type": "registry:item",
+      "title": "OKC Thunder DNA",
+      "description": "OKC Thunder DNA — Thunder blue, sunset orange surge. — token file scoped under .theme-okc-thunder; wrap your app in that class."
+    },
+    {
+      "name": "theme-orlando-magic",
+      "type": "registry:item",
+      "title": "Orlando Magic DNA",
+      "description": "Orlando Magic DNA — Magic blue, silver pinstripes. — token file scoped under .theme-orlando-magic; wrap your app in that class."
+    },
+    {
       "name": "theme-philadelphia-76ers",
       "type": "registry:item",
       "title": "Philadelphia 76ers DNA",
       "description": "Philadelphia 76ers DNA — liberty navy night, stars and red — token file scoped under .theme-philadelphia-76ers; wrap your app in that class."
+    },
+    {
+      "name": "theme-phoenix-suns",
+      "type": "registry:item",
+      "title": "Phoenix Suns DNA",
+      "description": "Phoenix Suns DNA — The valley: heat purple and blaze orange. — token file scoped under .theme-phoenix-suns; wrap your app in that class."
     },
     {
       "name": "theme-pinterest-dna",
@@ -512,6 +608,12 @@
       "type": "registry:item",
       "title": "PlayStation DNA",
       "description": "PlayStation DNA — console blue on studio white, iconic shapes — token file scoped under .theme-playstation-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-portland-trail-blazers",
+      "type": "registry:item",
+      "title": "Portland Trail Blazers DNA",
+      "description": "Portland Trail Blazers DNA — Rip city red and black, pinwheel diagonals. — token file scoped under .theme-portland-trail-blazers; wrap your app in that class."
     },
     {
       "name": "theme-porto",
@@ -566,6 +668,12 @@
       "type": "registry:item",
       "title": "AS Roma DNA",
       "description": "AS Roma DNA — imperial garnet night, giallorossi gold — token file scoped under .theme-roma; wrap your app in that class."
+    },
+    {
+      "name": "theme-sacramento-kings",
+      "type": "registry:item",
+      "title": "Sacramento Kings DNA",
+      "description": "Sacramento Kings DNA — Crown purple and silver, light the beam. — token file scoped under .theme-sacramento-kings; wrap your app in that class."
     },
     {
       "name": "theme-san-antonio-spurs",
@@ -670,6 +778,12 @@
       "description": "TikTok DNA — void black, glitch cyan and pink, vertical energy — token file scoped under .theme-tiktok-dna; wrap your app in that class."
     },
     {
+      "name": "theme-toronto-raptors",
+      "type": "registry:item",
+      "title": "Toronto Raptors DNA",
+      "description": "Toronto Raptors DNA — We the north red, claw black, chevron gold. — token file scoped under .theme-toronto-raptors; wrap your app in that class."
+    },
+    {
       "name": "theme-twitch-dna",
       "type": "registry:item",
       "title": "Twitch DNA",
@@ -682,10 +796,22 @@
       "description": "Uber DNA — move black and white, geometric utility — token file scoped under .theme-uber-dna; wrap your app in that class."
     },
     {
+      "name": "theme-utah-jazz",
+      "type": "registry:item",
+      "title": "Utah Jazz DNA",
+      "description": "Utah Jazz DNA — Note navy and yellow, mountain shadow. — token file scoped under .theme-utah-jazz; wrap your app in that class."
+    },
+    {
       "name": "theme-vaporwave",
       "type": "registry:item",
       "title": "Vaporwave",
       "description": "Vaporwave — purple/pink/cyan gradients, chrome text, 80s grid horizon — token file scoped under .theme-vaporwave; wrap your app in that class."
+    },
+    {
+      "name": "theme-washington-wizards",
+      "type": "registry:item",
+      "title": "Washington Wizards DNA",
+      "description": "Washington Wizards DNA — DC navy, red and marble. — token file scoped under .theme-washington-wizards; wrap your app in that class."
     },
     {
       "name": "theme-wes-anderson",

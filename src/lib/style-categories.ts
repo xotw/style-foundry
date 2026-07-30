@@ -57,8 +57,8 @@ export const STYLE_CATEGORIES: { id: string; label: string; blurb: string; slugs
   {
     id: "nba-teams",
     label: "NBA teams",
-    blurb: "Nine iconic franchises, official colors, jumbotron energy.",
-    slugs: ["chicago-bulls", "boston-celtics", "new-york-knicks", "philadelphia-76ers", "la-lakers", "golden-state-warriors", "miami-heat", "detroit-pistons", "san-antonio-spurs"],
+    blurb: "All 30 franchises: Icon-edition nights, Association whites, official colors.",
+    slugs: ["chicago-bulls", "boston-celtics", "new-york-knicks", "philadelphia-76ers", "la-lakers", "golden-state-warriors", "miami-heat", "detroit-pistons", "san-antonio-spurs", "brooklyn-nets", "toronto-raptors", "milwaukee-bucks", "cleveland-cavaliers", "indiana-pacers", "atlanta-hawks", "charlotte-hornets", "orlando-magic", "washington-wizards", "denver-nuggets", "minnesota-timberwolves", "okc-thunder", "portland-trail-blazers", "utah-jazz", "dallas-mavericks", "houston-rockets", "memphis-grizzlies", "new-orleans-pelicans", "phoenix-suns", "sacramento-kings", "la-clippers"],
   },
   {
     id: "football-clubs",

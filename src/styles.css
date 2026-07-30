@@ -122,6 +122,27 @@
 @import "./styles/themes/severance.css";
 @import "./styles/themes/james-bond.css";
 @import "./styles/themes/ghibli.css";
+@import "./styles/themes/brooklyn-nets.css";
+@import "./styles/themes/toronto-raptors.css";
+@import "./styles/themes/milwaukee-bucks.css";
+@import "./styles/themes/cleveland-cavaliers.css";
+@import "./styles/themes/indiana-pacers.css";
+@import "./styles/themes/atlanta-hawks.css";
+@import "./styles/themes/charlotte-hornets.css";
+@import "./styles/themes/orlando-magic.css";
+@import "./styles/themes/washington-wizards.css";
+@import "./styles/themes/denver-nuggets.css";
+@import "./styles/themes/minnesota-timberwolves.css";
+@import "./styles/themes/okc-thunder.css";
+@import "./styles/themes/portland-trail-blazers.css";
+@import "./styles/themes/utah-jazz.css";
+@import "./styles/themes/dallas-mavericks.css";
+@import "./styles/themes/houston-rockets.css";
+@import "./styles/themes/memphis-grizzlies.css";
+@import "./styles/themes/new-orleans-pelicans.css";
+@import "./styles/themes/phoenix-suns.css";
+@import "./styles/themes/sacramento-kings.css";
+@import "./styles/themes/la-clippers.css";
 
 @custom-variant dark (&:is(.dark *));
 
