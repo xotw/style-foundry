@@ -225,9 +225,10 @@ export function ComponentGallery({ style }: { style: StyleEntry }) {
                   step={1}
                   className={cn(
                     "w-56",
-                    "[&_[data-slot=slider-track]]:bg-surface-2 [&_[data-slot=slider-track]]:themed-border",
-                    "[&_[data-slot=slider-range]]:bg-accent",
-                    "[&_[data-slot=slider-thumb]]:bg-accent [&_[data-slot=slider-thumb]]:border-[var(--line)]",
+                    "[&>span:first-child]:bg-surface-2 [&>span:first-child]:themed-border [&>span:first-child]:h-2",
+                    "[&>span:first-child>span]:bg-accent",
+                    "[&_[role=slider]]:bg-accent [&_[role=slider]]:border-[var(--line)] [&_[role=slider]]:rounded-theme-pill",
+
                   )}
                 />
               </Stack>
