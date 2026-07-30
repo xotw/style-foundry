@@ -41,8 +41,83 @@ const BRIDGE = `
   --ring: var(--accent);
   --destructive: var(--danger);
   --destructive-foreground: var(--accent-fg);
+
+  /* Full app surface: sidebar, charts, app-level font + shadow + tracking vars.
+     These are what real products (shadcn full kit, RootCX-style UI kits) consume —
+     without them a retrofit looks half-themed. */
+  --sidebar: var(--surface-2);
+  --sidebar-foreground: var(--fg);
+  --sidebar-primary: var(--accent);
+  --sidebar-primary-foreground: var(--accent-fg);
+  --sidebar-accent: color-mix(in oklab, var(--accent) 12%, var(--surface-2));
+  --sidebar-accent-foreground: var(--fg);
+  --sidebar-border: var(--line);
+  --sidebar-ring: var(--accent);
+
+  --chart-1: var(--accent);
+  --chart-2: var(--accent-2);
+  --chart-3: var(--success);
+  --chart-4: var(--warning);
+  --chart-5: var(--danger);
+
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-display);
+  --font-serif: var(--font-display);
+
+  --shadow-2xs: var(--shadow-1);
+  --shadow-xs: var(--shadow-1);
+  --shadow-sm: var(--shadow-1);
+  --shadow: var(--shadow-2);
+  --shadow-md: var(--shadow-2);
+  --shadow-lg: var(--shadow-3);
+  --shadow-xl: var(--shadow-3);
+  --shadow-2xl: var(--shadow-3);
+
+  --tracking-normal: 0em;
 }
+
+/* Base experience: make the theme own the canvas and native elements even in
+   apps that never adopted semantic classes. Scoped to the theme wrapper. */
+[class*="theme-"] {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+[class*="theme-"] :is(h1, h2, h3, h4) { font-family: var(--font-display); }
+[class*="theme-"] :is(code, pre, kbd, samp) { font-family: var(--font-mono); }
+[class*="theme-"] ::selection { background: color-mix(in oklab, var(--accent) 30%, transparent); }
 `;
+
+// System families that must not go through Google Fonts
+const SYSTEM_FAMS = new Set(["-apple-system", "BlinkMacSystemFont", "SF Pro Display", "SF Pro Text",
+  "Segoe UI", "Selawik", "Tahoma", "MS Sans Serif", "Verdana", "Geneva", "Georgia", "Arial",
+  "Helvetica Neue", "Helvetica", "Futura", "Courier New", "ui-monospace", "monospace",
+  "sans-serif", "serif", "cursive", "system-ui", "Inter"]); // Inter loaded app-side or swap below
+SYSTEM_FAMS.delete("Inter"); // Inter is on Google Fonts — include it
+const SINGLE_WEIGHT = new Set(["Monoton", "Anton", "VT323", "Audiowide", "Press Start 2P", "Bebas Neue",
+  "Abril Fatface", "Archivo Black", "Black Ops One", "Fjalla One", "Graduate", "Fugaz One",
+  "Passion One", "Staatliches", "Questrial", "Instrument Serif", "Marcellus", "Forum",
+  "Julius Sans One", "Pathway Gothic One", "Share Tech Mono", "Didact Gothic", "Nova Square", "Varela Round"]);
+
+function fontImportFor(css) {
+  const fams = new Set();
+  for (const tok of ["font-display", "font-body", "font-mono"]) {
+    const m = css.match(new RegExp(`--${tok}:\\s*([^;]+);`));
+    if (!m) continue;
+    for (const raw of m[1].split(",")) {
+      const fam = raw.trim().replace(/^"|"$/g, "");
+      if (!fam || SYSTEM_FAMS.has(fam) || fam.startsWith("-") || fam.startsWith("ui-")) continue;
+      fams.add(fam);
+      break; // only the primary family per token
+    }
+  }
+  if (fams.size === 0) return "";
+  const parts = [...fams].map((f) => {
+    const enc = f.replace(/ /g, "+");
+    return SINGLE_WEIGHT.has(f) ? `family=${enc}` : `family=${enc}:wght@400;500;600;700`;
+  });
+  return `@import url('https://fonts.googleapis.com/css2?${parts.join("&")}&display=swap');\n\n`;
+}
 
 const slugs = readdirSync(themesDir)
   .filter((f) => f.endsWith(".css"))
@@ -58,13 +133,13 @@ for (const slug of slugs) {
     name: `theme-${slug}`,
     type: "registry:item",
     title: firstComment.split("—")[0].trim(),
-    description: `${firstComment} — token file scoped under .theme-${slug}; wrap your app in that class.`,
+    description: `${firstComment} — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-${slug}\".`,
     files: [
       {
         path: `registry/themes/${slug}.css`,
         type: "registry:file",
         target: `~/styles/themes/${slug}.css`,
-        content: css + BRIDGE,
+        content: fontImportFor(css) + css + BRIDGE,
       },
     ],
   };
