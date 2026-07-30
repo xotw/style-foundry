@@ -110,6 +110,27 @@
 [class*="theme-"] {
   --font-display-family: var(--font-display);
   --font-body-family: var(--font-body);
+
+  /* Bridge shadcn semantic variables to theme tokens so ui/ components
+     (calendar, dialog, dropdown, …) are skinned by the active theme. */
+  --background: var(--bg);
+  --foreground: var(--fg);
+  --card: var(--surface);
+  --card-foreground: var(--fg);
+  --popover: var(--surface);
+  --popover-foreground: var(--fg);
+  --primary: var(--accent);
+  --primary-foreground: var(--accent-fg);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--fg);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--fg-muted);
+  --accent-foreground: var(--accent-fg);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--accent);
+  --destructive: var(--danger);
+  --destructive-foreground: var(--accent-fg);
 }
 
 @utility themed-border {
