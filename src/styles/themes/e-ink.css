@@ -1,0 +1,52 @@
+/* E-Ink — pure grayscale paper, high contrast, serif body, matte, zero gloss */
+.theme-e-ink {
+  --bg: oklch(0.94 0.002 90);
+  --surface: oklch(0.975 0.002 90);
+  --surface-2: oklch(0.89 0.002 90);
+  --fg: oklch(0.16 0 0);
+  --fg-muted: oklch(0.46 0 0);
+  --accent: oklch(0.16 0 0);
+  --accent-fg: oklch(0.975 0.002 90);
+  --accent-2: oklch(0.55 0.19 30); /* the single functional accent */
+  --line: oklch(0.62 0 0);
+  --success: oklch(0.35 0 0);
+  --warning: oklch(0.5 0 0);
+  --danger: oklch(0.55 0.19 30);
+
+  --radius: 0.125rem;
+  --radius-sm: 0.0625rem;
+  --radius-lg: 0.25rem;
+  --radius-pill: 0.25rem;
+
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
+  --glow: 0 0 0 2px var(--fg);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Literata", Georgia, serif;
+  --font-body: "Literata", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.01em;
+  --label-transform: uppercase;
+  --label-tracking: 0.16em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-e-ink h1,
+.theme-e-ink h2,
+.theme-e-ink h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: var(--tracking-display);
+}
+
+.theme-e-ink p {
+  line-height: 1.75;
+}
