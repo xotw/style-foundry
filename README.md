@@ -351,6 +351,14 @@ scripts/build-registry.mjs     generates public/r/*.json (runs on prebuild)
 CATALOG.md                     the full index, one line per theme
 ```
 
+## Applying a theme to an existing app
+
+Run the doctor first — it scores how themable the app is and prints the exact blockers and the recommended path (one-command install vs retrofit):
+
+```bash
+node scripts/doctor.mjs /path/to/your/app
+```
+
 ## Development
 
 ```bash
