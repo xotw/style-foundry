@@ -23,6 +23,10 @@
 @import "./styles/themes/frutiger-aero.css";
 @import "./styles/themes/material.css";
 @import "./styles/themes/flat.css";
+@import "./styles/themes/pixel.css";
+@import "./styles/themes/e-ink.css";
+@import "./styles/themes/biophilic.css";
+@import "./styles/themes/maximalism.css";
 
 @custom-variant dark (&:is(.dark *));
 
