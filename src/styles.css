@@ -35,6 +35,10 @@
 @import "./styles/themes/duolingo-dna.css";
 @import "./styles/themes/teenage-engineering-dna.css";
 @import "./styles/themes/slack-dna.css";
+@import "./styles/themes/anthropic-dna.css";
+@import "./styles/themes/cash-app-dna.css";
+@import "./styles/themes/headspace-dna.css";
+@import "./styles/themes/bloomberg-dna.css";
 
 @custom-variant dark (&:is(.dark *));
 

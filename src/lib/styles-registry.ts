@@ -246,6 +246,34 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Figtree / Figtree",
     swatch: ["oklch(1 0 0)", "oklch(0.32 0.09 330)", "oklch(0.62 0.15 200)"],
   },
+  {
+    slug: "anthropic-dna",
+    name: "Anthropic DNA",
+    tagline: "Cream paper, book-like serif display, terracotta accent, calm spacing.",
+    fontPairing: "Fraunces / Inter",
+    swatch: ["oklch(0.97 0.012 85)", "oklch(0.58 0.13 45)", "oklch(0.23 0.012 60)"],
+  },
+  {
+    slug: "cash-app-dna",
+    name: "Cash App DNA",
+    tagline: "Pure black, electric green, heavy condensed type, neon-on-dark energy.",
+    fontPairing: "Archivo Black / Archivo",
+    swatch: ["oklch(0 0 0)", "oklch(0.85 0.24 148)", "oklch(0.2 0 0)"],
+  },
+  {
+    slug: "headspace-dna",
+    name: "Headspace DNA",
+    tagline: "Peach pastels, organic blobs, very soft shadows, breathing whitespace.",
+    fontPairing: "Poppins / Nunito",
+    swatch: ["oklch(0.975 0.025 75)", "oklch(0.72 0.17 55)", "oklch(0.7 0.13 210)"],
+  },
+  {
+    slug: "bloomberg-dna",
+    name: "Bloomberg DNA",
+    tagline: "Black terminal, amber data type, dense tables, zero decoration.",
+    fontPairing: "IBM Plex Mono / IBM Plex Mono",
+    swatch: ["oklch(0.09 0 0)", "oklch(0.78 0.17 65)", "oklch(0.72 0.16 210)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);
