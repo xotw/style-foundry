@@ -27,6 +27,10 @@
 @import "./styles/themes/e-ink.css";
 @import "./styles/themes/biophilic.css";
 @import "./styles/themes/maximalism.css";
+@import "./styles/themes/hud-scifi.css";
+@import "./styles/themes/art-deco.css";
+@import "./styles/themes/heisei-retro.css";
+@import "./styles/themes/dreamcore.css";
 
 @custom-variant dark (&:is(.dark *));
 
