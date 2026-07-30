@@ -54,6 +54,8 @@
 }
 
 /* signature */
+.theme-newspaper { --font-ui: "Inter", sans-serif; }
+
 .theme-newspaper { background-image: radial-gradient(oklch(0.2 0.01 80 / 4%) 1px, transparent 1px); background-size: 4px 4px; }
 .theme-newspaper h1 { font-weight: 700; }
 .theme-newspaper h2 { border-block: 3px double var(--fg); padding-block: 0.5rem; }

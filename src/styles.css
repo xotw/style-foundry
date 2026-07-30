@@ -453,3 +453,9 @@
 /* Colored chips: readable text regardless of the theme's accent-fg */
 [class*="theme-"] span.bg-danger, [class*="theme-"] span.bg-success { color: oklch(0.98 0 0); }
 [class*="theme-"] span.bg-warning { color: oklch(0.2 0.02 80); }
+
+/* Data stays data: large text sizes render digits lining + tabular so serif
+   or decorative faces never produce wobbly KPI figures. */
+[class*="theme-"] :is([class*="text-2xl"], [class*="text-3xl"], [class*="text-4xl"], .font-display) {
+  font-variant-numeric: lining-nums tabular-nums;
+}

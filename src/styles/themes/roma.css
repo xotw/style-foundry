@@ -42,7 +42,7 @@
 }
 
 /* signature */
-.theme-roma { --font-ui: var(--font-display); }
+.theme-roma { --font-ui: var(--font-body); }
 .theme-roma h1, .theme-roma h2 { text-transform: uppercase; }
 .theme-roma button { text-transform: uppercase; letter-spacing: 0.06em; }
 
