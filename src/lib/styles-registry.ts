@@ -214,9 +214,9 @@ export const STYLES: StyleEntry[] = [
   {
     slug: "superhuman-dna",
     name: "Superhuman DNA",
-    tagline: "Violet-tinted dark, glowing accents, keyboard-first micro-detail.",
+    tagline: "Cream paper, plum serif display, lavender accents, refined calm.",
     fontPairing: "Instrument Serif / Inter",
-    swatch: ["oklch(0.15 0.03 295)", "oklch(0.68 0.2 305)", "oklch(0.72 0.15 240)"],
+    swatch: ["oklch(0.974 0.030 88.4)", "oklch(0.286 0.058 9.5)", "oklch(0.859 0.078 295.4)"],
   },
   {
     slug: "apple-dna",
@@ -293,7 +293,7 @@ export const STYLES: StyleEntry[] = [
     name: "Nike DNA",
     tagline: "Black and white, condensed uppercase display, hard edges, volt accent.",
     fontPairing: "Oswald / Inter",
-    swatch: ["oklch(1 0 0)", "oklch(0.1 0 0)", "oklch(0.9 0.22 118)"],
+    swatch: ["oklch(1.000 0 0)", "oklch(0.178 0 0)", "oklch(0.528 0.262 263.8)"],
   },
   {
     slug: "braun-dna",

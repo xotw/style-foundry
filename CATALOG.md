@@ -41,13 +41,13 @@ Live: landing at `/styles/<slug>`, full component gallery at `/styles/<slug>/com
 | **minimal-warm** | Minimal Warm — sand and clay neutrals, soft radii, quiet contrast | `oklch(0.965 0.014 75)` | `oklch(0.6 0.11 45)` | 0.875rem | Lora / Inter |
 | **neumorphism** | soft extruded gray surfaces, double shadows, pill shapes | `oklch(0.93 0.005 260)` | `oklch(0.62 0.14 265)` | 1.5rem | Poppins |
 | **newspaper** | newsprint gray, blackletter-ish serif heads, column rules | `oklch(0.94 0.008 95)` | `oklch(0.18 0.005 60)` | 0rem | Old Standard TT / Libre Baskerville |
-| **nike-dna** | Nike DNA — athletic black/white, condensed uppercase display, volt accent | `oklch(1 0 0)` | `oklch(0.9 0.22 118)` | 0rem | Oswald / Inter |
+| **nike-dna** | Nike DNA — athletic black/white, condensed uppercase display, volt accent | `oklch(1.000 0 0)` | `oklch(0.178 0 0)` | 0.5rem | Oswald / Inter |
 | **pixel** | 8-bit lo-fi, dithered textures, hard 2px pixel borders, stepped shadows | `oklch(0.22 0.05 265)` | `oklch(0.78 0.2 145)` | 0rem | Press Start 2P / VT323 |
 | **skeuomorphism** | brushed metal, linen, glossy bevels, inset engravings | `oklch(0.82 0.012 250)` | `oklch(0.55 0.14 245)` | 0.625rem | Nunito / Inter |
 | **slack-dna** | Slack DNA — aubergine primary, white surfaces, four-color accents, approachable | `oklch(0.99 0.002 300)` | `oklch(0.306 0.108 327.1)` | 0.5rem | Lato |
 | **spotify-dna** | Spotify DNA — near-black entertainment surface, vivid green, pills everywhere | `oklch(0.182 0 0)` | `oklch(0.770 0.212 148.7)` | 0.5rem | DM Sans |
 | **stripe-dna** | Stripe DNA — clean white, indigo/cyan gradient accents, crisp small type, airy depth | `oklch(0.981 0.005 247.9)` | `oklch(0.521 0.268 277.4)` | 0.5rem | Hanken Grotesk |
-| **superhuman-dna** | Superhuman DNA — deep violet-tinted dark, refined gradients, glowing accents, keyboard-first | `oklch(0.15 0.03 295)` | `oklch(0.68 0.2 305)` | 0.625rem | Instrument Serif / Inter |
+| **superhuman-dna** | Superhuman DNA — deep violet-tinted dark, refined gradients, glowing accents, keyboard-first | `oklch(0.974 0.030 88.4)` | `oklch(0.286 0.058 9.5)` | 0.75rem | Instrument Serif / Inter |
 | **swiss** | strict grid, Inter Tight, black/white + one red accent, zero radius | `oklch(1 0 0)` | `oklch(0.55 0.235 27)` | 0px | Inter Tight |
 | **teenage-engineering-dna** | Teenage Engineering DNA — light gray plastic, orange accents, tiny mono uppercase labels | `oklch(0.93 0.002 250)` | `oklch(0.659 0.195 38.3)` | 0px | Space Mono |
 | **terminal** | black bg, phosphor green, IBM Plex Mono, ASCII-ish borders | `oklch(0.13 0.015 150)` | `oklch(0.85 0.22 145)` | 0rem | IBM Plex Mono |
