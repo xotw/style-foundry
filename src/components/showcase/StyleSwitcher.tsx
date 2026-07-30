@@ -34,7 +34,9 @@ export function StyleSwitcher() {
       ? "/styles/$slug/blocks"
       : location.pathname.endsWith("/app")
         ? "/styles/$slug/app"
-        : "/styles/$slug";
+        : location.pathname.endsWith("/book")
+          ? "/styles/$slug/book"
+          : "/styles/$slug";
 
   const current = params.slug;
   // Cycle in the exact order of the homepage categories, not registry order.

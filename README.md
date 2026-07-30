@@ -4,7 +4,7 @@
 
 Live: **https://style-foundry-gabbulldo.vercel.app**
 
-Style Foundry is a vault of fully committed UI themes — design aesthetics (swiss, brutalism, pixel, art-deco…) and product/team DNAs (Stripe, GitHub, Windows 95, NBA franchises, European football clubs, Formula 1, cinematic homages…). Every theme is a single CSS token file that skins the same four surfaces, so styles are directly comparable and instantly reusable.
+Style Foundry is a vault of fully committed UI themes — design aesthetics (swiss, brutalism, pixel, art-deco…) and product/team DNAs (Stripe, GitHub, Windows 95, NBA franchises, European football clubs, Formula 1, cinematic homages…). Every theme is a single CSS token file that skins the same five surfaces, so styles are directly comparable and instantly reusable.
 
 ## The four surfaces
 
@@ -16,6 +16,7 @@ Every theme renders the same content — only the styling changes:
 | Components | `/styles/<slug>/components` | 46 shadcn components, fully skinned |
 | Blocks | `/styles/<slug>/blocks` | Login, dashboard, settings — real product surfaces |
 | App in use | `/styles/<slug>/app` | A live interactive issue tracker, mid-use |
+| Brand book | `/styles/<slug>/book` | The complete system: palette values, type hierarchy, shadow/radius scales, every control state |
 
 Every theme also ships a **light/dark flip variant** (the `Flip` chip, `.alt-mode` class) — hand-tuned where the identity demands it (Dortmund flips to its away kit, terminal flips to paper).
 

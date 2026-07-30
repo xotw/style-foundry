@@ -14,6 +14,7 @@ import { Route as StylesSlugRouteImport } from './routes/styles.$slug'
 import { Route as StylesSlugIndexRouteImport } from './routes/styles.$slug.index'
 import { Route as StylesSlugAppRouteImport } from './routes/styles.$slug.app'
 import { Route as StylesSlugBlocksRouteImport } from './routes/styles.$slug.blocks'
+import { Route as StylesSlugBookRouteImport } from './routes/styles.$slug.book'
 import { Route as StylesSlugComponentsRouteImport } from './routes/styles.$slug.components'
 
 const IndexRoute = IndexRouteImport.update({
@@ -41,6 +42,11 @@ const StylesSlugBlocksRoute = StylesSlugBlocksRouteImport.update({
   path: '/blocks',
   getParentRoute: () => StylesSlugRoute,
 } as any)
+const StylesSlugBookRoute = StylesSlugBookRouteImport.update({
+  id: '/book',
+  path: '/book',
+  getParentRoute: () => StylesSlugRoute,
+} as any)
 const StylesSlugComponentsRoute = StylesSlugComponentsRouteImport.update({
   id: '/components',
   path: '/components',
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/styles/$slug': typeof StylesSlugRouteWithChildren
   '/styles/$slug/app': typeof StylesSlugAppRoute
   '/styles/$slug/blocks': typeof StylesSlugBlocksRoute
+  '/styles/$slug/book': typeof StylesSlugBookRoute
   '/styles/$slug/components': typeof StylesSlugComponentsRoute
   '/styles/$slug/': typeof StylesSlugIndexRoute
 }
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/styles/$slug/app': typeof StylesSlugAppRoute
   '/styles/$slug/blocks': typeof StylesSlugBlocksRoute
+  '/styles/$slug/book': typeof StylesSlugBookRoute
   '/styles/$slug/components': typeof StylesSlugComponentsRoute
   '/styles/$slug': typeof StylesSlugIndexRoute
 }
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/styles/$slug': typeof StylesSlugRouteWithChildren
   '/styles/$slug/app': typeof StylesSlugAppRoute
   '/styles/$slug/blocks': typeof StylesSlugBlocksRoute
+  '/styles/$slug/book': typeof StylesSlugBookRoute
   '/styles/$slug/components': typeof StylesSlugComponentsRoute
   '/styles/$slug/': typeof StylesSlugIndexRoute
 }
@@ -78,6 +87,7 @@ export interface FileRouteTypes {
     | '/styles/$slug'
     | '/styles/$slug/app'
     | '/styles/$slug/blocks'
+    | '/styles/$slug/book'
     | '/styles/$slug/components'
     | '/styles/$slug/'
   fileRoutesByTo: FileRoutesByTo
@@ -85,6 +95,7 @@ export interface FileRouteTypes {
     | '/'
     | '/styles/$slug/app'
     | '/styles/$slug/blocks'
+    | '/styles/$slug/book'
     | '/styles/$slug/components'
     | '/styles/$slug'
   id:
@@ -93,6 +104,7 @@ export interface FileRouteTypes {
     | '/styles/$slug'
     | '/styles/$slug/app'
     | '/styles/$slug/blocks'
+    | '/styles/$slug/book'
     | '/styles/$slug/components'
     | '/styles/$slug/'
   fileRoutesById: FileRoutesById
@@ -139,6 +151,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StylesSlugBlocksRouteImport
       parentRoute: typeof StylesSlugRoute
     }
+    '/styles/$slug/book': {
+      id: '/styles/$slug/book'
+      path: '/book'
+      fullPath: '/styles/$slug/book'
+      preLoaderRoute: typeof StylesSlugBookRouteImport
+      parentRoute: typeof StylesSlugRoute
+    }
     '/styles/$slug/components': {
       id: '/styles/$slug/components'
       path: '/components'
@@ -152,6 +171,7 @@ declare module '@tanstack/react-router' {
 interface StylesSlugRouteChildren {
   StylesSlugAppRoute: typeof StylesSlugAppRoute
   StylesSlugBlocksRoute: typeof StylesSlugBlocksRoute
+  StylesSlugBookRoute: typeof StylesSlugBookRoute
   StylesSlugComponentsRoute: typeof StylesSlugComponentsRoute
   StylesSlugIndexRoute: typeof StylesSlugIndexRoute
 }
@@ -159,6 +179,7 @@ interface StylesSlugRouteChildren {
 const StylesSlugRouteChildren: StylesSlugRouteChildren = {
   StylesSlugAppRoute: StylesSlugAppRoute,
   StylesSlugBlocksRoute: StylesSlugBlocksRoute,
+  StylesSlugBookRoute: StylesSlugBookRoute,
   StylesSlugComponentsRoute: StylesSlugComponentsRoute,
   StylesSlugIndexRoute: StylesSlugIndexRoute,
 }

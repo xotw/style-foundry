@@ -116,6 +116,11 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
                 Blocks
               </TButton>
             </Link>
+            <Link to="/styles/$slug/book" params={{ slug: style.slug }}>
+              <TButton variant="ghost" size="sm">
+                Brand book
+              </TButton>
+            </Link>
             <TButton size="sm">Get started</TButton>
           </div>
         </div>
