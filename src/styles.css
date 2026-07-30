@@ -47,6 +47,18 @@
 @import "./styles/themes/stripe-dna.css";
 @import "./styles/themes/superhuman-dna.css";
 @import "./styles/themes/teenage-engineering-dna.css";
+@import "./styles/themes/github-dna.css";
+@import "./styles/themes/discord-dna.css";
+@import "./styles/themes/netflix-dna.css";
+@import "./styles/themes/windows95-dna.css";
+@import "./styles/themes/ableton-dna.css";
+@import "./styles/themes/nasa-dna.css";
+@import "./styles/themes/ssense-dna.css";
+@import "./styles/themes/aesop-dna.css";
+@import "./styles/themes/lego-dna.css";
+@import "./styles/themes/ikea-dna.css";
+@import "./styles/themes/telegram-dna.css";
+@import "./styles/themes/hackernews-dna.css";
 
 @custom-variant dark (&:is(.dark *));
 

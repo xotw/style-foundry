@@ -1,0 +1,42 @@
+/* NASA DNA — 1976 Graphics Standards Manual: worm red, federal grid, Helvetica discipline */
+.theme-nasa-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.971 0.003 48.7);
+  --surface-2: oklch(0.946 0.003 106.5);
+  --fg: oklch(0.218 0 0);
+  --fg-muted: oklch(0.461 0.005 286.2);
+  --accent: oklch(0.644 0.219 28.2);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.545 0.202 260.4);
+  --line: oklch(0.861 0 0);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.768 0.158 81.3);
+  --danger: oklch(0.488 0.199 28.2);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: none;
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Public Sans", "Helvetica Neue", sans-serif;
+  --font-body: "Public Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: -0.03em;
+  --label-transform: uppercase;
+  --label-tracking: 0.2em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-nasa-dna h1,
+.theme-nasa-dna h2,
+.theme-nasa-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

@@ -1,0 +1,42 @@
+/* Netflix DNA — cinematic black, signal red, UI recedes behind imagery */
+.theme-netflix-dna {
+  --bg: oklch(0.000 0 0);
+  --surface: oklch(0.191 0 0);
+  --surface-2: oklch(0.256 0 0);
+  --fg: oklch(1.000 0 0);
+  --fg-muted: oklch(0.735 0 0);
+  --accent: oklch(0.581 0.235 28.0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.496 0.199 28.6);
+  --line: oklch(1 0 0 / 15%);
+  --success: oklch(0.768 0.190 148.1);
+  --warning: oklch(0.789 0.160 87.2);
+  --danger: oklch(0.581 0.235 28.0);
+  --radius: 0.25rem;
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.375rem;
+  --radius-pill: 0.375rem;
+  --shadow-1: 0 4px 16px oklch(0 0 0 / 60%);
+  --shadow-2: 0 12px 40px oklch(0 0 0 / 70%);
+  --shadow-3: 0 32px 80px oklch(0 0 0 / 80%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Albert Sans", sans-serif;
+  --font-body: "Albert Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: -0.02em;
+  --label-transform: none;
+  --label-tracking: 0.08em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-netflix-dna h1,
+.theme-netflix-dna h2,
+.theme-netflix-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

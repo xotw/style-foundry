@@ -1,0 +1,42 @@
+/* Ableton DNA — flat color blocks, geometric type, zero decoration, Bauhaus pop */
+.theme-ableton-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.973 0 0);
+  --surface-2: oklch(0.946 0 0);
+  --fg: oklch(0.145 0 0);
+  --fg-muted: oklch(0.510 0 0);
+  --accent: oklch(0.637 0.252 15.4);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.775 0.138 182.9);
+  --line: oklch(0.145 0 0);
+  --success: oklch(0.775 0.138 182.9);
+  --warning: oklch(0.875 0.166 91.5);
+  --danger: oklch(0.584 0.188 36.7);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
+  --glow: 0 0 0 2px var(--accent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Questrial", sans-serif;
+  --font-body: "Questrial", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.05em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-ableton-dna h1,
+.theme-ableton-dna h2,
+.theme-ableton-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

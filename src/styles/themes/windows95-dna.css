@@ -1,0 +1,42 @@
+/* Windows 95 DNA — silver bevels, navy title bars, teal desktop, hard pixels */
+.theme-windows95-dna {
+  --bg: oklch(0.543 0.093 194.8);
+  --surface: oklch(0.808 0 0);
+  --surface-2: oklch(0.904 0 0);
+  --fg: oklch(0.000 0 0);
+  --fg-muted: oklch(0.420 0 0);
+  --accent: oklch(0.271 0.188 264.1);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.543 0.093 194.8);
+  --line: oklch(0.600 0 0);
+  --success: oklch(0.520 0.177 142.5);
+  --warning: oklch(0.581 0.127 109.8);
+  --danger: oklch(0.463 0.190 29.2);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: inset -1px -1px 0 oklch(0 0 0), inset 1px 1px 0 oklch(1 0 0), inset -2px -2px 0 oklch(0.5 0 0), inset 2px 2px 0 oklch(0.87 0 0);
+  --shadow-2: inset -1px -1px 0 oklch(0 0 0), inset 1px 1px 0 oklch(1 0 0);
+  --shadow-3: 4px 4px 0 oklch(0 0 0 / 40%);
+  --glow: 0 0 0 1px dotted oklch(0 0 0);
+  --border-width: 2px;
+  --blur-amount: 0px;
+  --font-display: "Tahoma", "MS Sans Serif", "Segoe UI", sans-serif;
+  --font-body: "Tahoma", "MS Sans Serif", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.02em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-windows95-dna h1,
+.theme-windows95-dna h2,
+.theme-windows95-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

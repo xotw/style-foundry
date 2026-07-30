@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Layers, Rocket, ShieldCheck } from "lucide-react";
 import { STYLES, type StyleEntry } from "@/lib/styles-registry";
+import { STYLE_RULES } from "@/lib/style-rules";
 import { SectionTitle, TBadge, TButton, TCard, TInput, TLabel, TTextarea } from "./primitives";
 
 const FEATURES = [
@@ -170,6 +171,32 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
           ))}
         </div>
       </section>
+
+      {/* System rules */}
+      {STYLE_RULES[style.slug] && (
+        <section className="mx-auto max-w-6xl px-6 py-16">
+          <SectionTitle
+            eyebrow="The system"
+            title="How this style behaves — and when to reach for it."
+          />
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+            {(
+              [
+                ["Use for", STYLE_RULES[style.slug].use],
+                ["Avoid for", STYLE_RULES[style.slug].avoid],
+                ["Spacing", STYLE_RULES[style.slug].spacing],
+                ["Type", STYLE_RULES[style.slug].type],
+                ["Motion", STYLE_RULES[style.slug].motion],
+              ] as const
+            ).map(([label, body]) => (
+              <TCard key={label} className="p-5">
+                <p className="label-caps text-accent">{label}</p>
+                <p className="mt-3 text-sm text-fg-muted">{body}</p>
+              </TCard>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Pricing */}
       <section className="mx-auto max-w-6xl px-6 py-20">

@@ -1,0 +1,42 @@
+/* Aesop DNA — apothecary editorial: paper cream, humanist serif, quiet sage calm */
+.theme-aesop-dna {
+  --bg: oklch(0.995 0.016 102.8);
+  --surface: oklch(0.971 0.016 102.8);
+  --surface-2: oklch(0.941 0.016 102.8);
+  --fg: oklch(0.320 0.005 106.7);
+  --fg-muted: oklch(0.563 0.011 113.3);
+  --accent: oklch(0.320 0.005 106.7);
+  --accent-fg: oklch(0.995 0.016 102.8);
+  --accent-2: oklch(0.721 0.021 135.9);
+  --line: oklch(0.852 0.014 106.7);
+  --success: oklch(0.529 0.033 148.2);
+  --warning: oklch(0.661 0.105 84.9);
+  --danger: oklch(0.510 0.113 31.3);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: none;
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px oklch(0.35 0.005 100);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "EB Garamond", Georgia, serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.01em;
+  --label-transform: none;
+  --label-tracking: 0.14em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-aesop-dna h1,
+.theme-aesop-dna h2,
+.theme-aesop-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

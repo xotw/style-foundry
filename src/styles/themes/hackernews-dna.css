@@ -1,0 +1,42 @@
+/* Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament */
+.theme-hackernews-dna {
+  --bg: oklch(0.971 0.009 106.6);
+  --surface: oklch(0.971 0.009 106.6);
+  --surface-2: oklch(0.946 0.013 106.7);
+  --fg: oklch(0.000 0 0);
+  --fg-muted: oklch(0.607 0 0);
+  --accent: oklch(0.696 0.204 43.5);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.607 0 0);
+  --line: oklch(0.898 0 0);
+  --success: oklch(0.512 0.107 144.2);
+  --warning: oklch(0.552 0.077 79.7);
+  --danger: oklch(0.522 0.134 24.0);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
+  --glow: 0 0 0 1px var(--accent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: Verdana, Geneva, sans-serif;
+  --font-body: Verdana, Geneva, sans-serif;
+  --font-mono: "Courier New", monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.02em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-hackernews-dna h1,
+.theme-hackernews-dna h2,
+.theme-hackernews-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

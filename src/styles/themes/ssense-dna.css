@@ -1,0 +1,42 @@
+/* SSENSE DNA — stark fashion e-commerce: black on white, micro type, luxury by subtraction */
+.theme-ssense-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.976 0 0);
+  --fg: oklch(0.000 0 0);
+  --fg-muted: oklch(0.562 0 0);
+  --accent: oklch(0.000 0 0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.562 0 0);
+  --line: oklch(0.922 0 0);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.654 0.134 85.7);
+  --danger: oklch(0.507 0.208 29.2);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: 0 16px 48px oklch(0 0 0 / 12%);
+  --glow: 0 0 0 1px oklch(0 0 0);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Archivo Narrow", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.01em;
+  --label-transform: uppercase;
+  --label-tracking: 0.16em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-ssense-dna h1,
+.theme-ssense-dna h2,
+.theme-ssense-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

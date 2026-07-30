@@ -1,0 +1,42 @@
+/* Telegram DNA — paper-light chat, sky blue, round bubbles, native speed */
+.theme-telegram-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.976 0 0);
+  --surface-2: oklch(0.949 0 0);
+  --fg: oklch(0.000 0 0);
+  --fg-muted: oklch(0.559 0.009 241.8);
+  --accent: oklch(0.644 0.162 251.8);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.600 0.141 241.6);
+  --line: oklch(0.931 0 0);
+  --success: oklch(0.680 0.190 145.3);
+  --warning: oklch(0.768 0.158 81.3);
+  --danger: oklch(0.605 0.197 25.0);
+  --radius: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Roboto", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: -0.01em;
+  --label-transform: none;
+  --label-tracking: 0.04em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-telegram-dna h1,
+.theme-telegram-dna h2,
+.theme-telegram-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
