@@ -1,0 +1,59 @@
+/* Heisei Retro — 90s Japanese tech: beige plastic, dense small type, red/blue accents */
+.theme-heisei-retro {
+  --bg: oklch(0.88 0.022 85);
+  --surface: oklch(0.93 0.018 85);
+  --surface-2: oklch(0.83 0.024 82);
+  --fg: oklch(0.24 0.012 70);
+  --fg-muted: oklch(0.46 0.014 70);
+  --accent: oklch(0.52 0.19 25);
+  --accent-fg: oklch(0.97 0.012 85);
+  --accent-2: oklch(0.45 0.15 260);
+  --line: oklch(0.58 0.02 75);
+  --success: oklch(0.5 0.13 155);
+  --warning: oklch(0.7 0.15 75);
+  --danger: oklch(0.52 0.19 25);
+
+  --radius: 0.125rem;
+  --radius-sm: 0.0625rem;
+  --radius-lg: 0.1875rem;
+  --radius-pill: 0.125rem;
+
+  --shadow-1: inset -1px -1px 0 0 oklch(0.62 0.02 75), inset 1px 1px 0 0 oklch(0.99 0.01 85);
+  --shadow-2: 2px 2px 0 0 oklch(0.62 0.02 75), inset 1px 1px 0 0 oklch(0.99 0.01 85);
+  --shadow-3: 3px 3px 0 0 oklch(0.55 0.02 75);
+  --glow: 0 0 0 2px var(--accent-2);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "IBM Plex Sans", "Noto Sans JP", sans-serif;
+  --font-body: "Noto Sans JP", "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: 0em;
+  --label-transform: uppercase;
+  --label-tracking: 0.08em;
+
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(
+    45deg,
+    oklch(0.2 0.01 70 / 0.02) 0 2px,
+    transparent 2px 4px
+  );
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.theme-heisei-retro h1,
+.theme-heisei-retro h2,
+.theme-heisei-retro h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: var(--tracking-display);
+}
+
+.theme-heisei-retro h1 {
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+}

@@ -1,0 +1,82 @@
+/* HUD Sci-Fi — near-black blue, thin cyan lines, corner brackets, scanlines */
+.theme-hud-scifi {
+  --bg: oklch(0.16 0.03 240);
+  --surface: oklch(0.21 0.035 240);
+  --surface-2: oklch(0.26 0.04 235);
+  --fg: oklch(0.94 0.03 200);
+  --fg-muted: oklch(0.7 0.05 205);
+  --accent: oklch(0.82 0.15 195);
+  --accent-fg: oklch(0.14 0.03 240);
+  --accent-2: oklch(0.78 0.17 85);
+  --line: oklch(0.55 0.11 200 / 0.5);
+  --success: oklch(0.8 0.17 160);
+  --warning: oklch(0.82 0.16 85);
+  --danger: oklch(0.65 0.21 25);
+
+  --radius: 0.125rem;
+  --radius-sm: 0.0625rem;
+  --radius-lg: 0.25rem;
+  --radius-pill: 0.125rem;
+
+  --shadow-1: 0 0 0 1px oklch(0.82 0.15 195 / 0.18);
+  --shadow-2: 0 0 24px -8px oklch(0.82 0.15 195 / 0.5), inset 0 0 0 1px oklch(0.82 0.15 195 / 0.15);
+  --shadow-3: 0 0 48px -12px oklch(0.82 0.15 195 / 0.6);
+  --glow: 0 0 0 1px var(--accent), 0 0 16px -2px oklch(0.82 0.15 195 / 0.6);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Rajdhani", "Inter Tight", sans-serif;
+  --font-body: "Rajdhani", "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: 0.04em;
+  --label-transform: uppercase;
+  --label-tracking: 0.24em;
+
+  background-color: var(--bg);
+  background-image:
+    repeating-linear-gradient(0deg, oklch(0.82 0.15 195 / 0.05) 0 1px, transparent 1px 3px),
+    linear-gradient(oklch(0.82 0.15 195 / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.82 0.15 195 / 0.05) 1px, transparent 1px),
+    radial-gradient(70% 50% at 50% 0%, oklch(0.4 0.1 220 / 0.5), transparent 70%);
+  background-size: 100% 3px, 48px 48px, 48px 48px, 100% 100%;
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-hud-scifi h1,
+.theme-hud-scifi h2,
+.theme-hud-scifi h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: var(--tracking-display);
+  text-transform: uppercase;
+}
+
+/* corner brackets on panels */
+.theme-hud-scifi [class*="rounded"][class*="border"] {
+  position: relative;
+}
+.theme-hud-scifi [class*="rounded"][class*="border"]::before,
+.theme-hud-scifi [class*="rounded"][class*="border"]::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--accent);
+  pointer-events: none;
+}
+.theme-hud-scifi [class*="rounded"][class*="border"]::before {
+  top: -1px;
+  left: -1px;
+  border-right: 0;
+  border-bottom: 0;
+}
+.theme-hud-scifi [class*="rounded"][class*="border"]::after {
+  right: -1px;
+  bottom: -1px;
+  border-left: 0;
+  border-top: 0;
+}

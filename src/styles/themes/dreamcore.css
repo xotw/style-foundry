@@ -1,0 +1,57 @@
+/* Dreamcore — hazy pastel gradients, blurred glows, thin ethereal type */
+.theme-dreamcore {
+  --bg: oklch(0.92 0.05 310);
+  --surface: oklch(0.97 0.025 320 / 0.72);
+  --surface-2: oklch(0.9 0.06 260 / 0.6);
+  --fg: oklch(0.34 0.07 300);
+  --fg-muted: oklch(0.55 0.06 300);
+  --accent: oklch(0.72 0.13 330);
+  --accent-fg: oklch(0.99 0.01 320);
+  --accent-2: oklch(0.78 0.11 220);
+  --line: oklch(1 0 0 / 0.6);
+  --success: oklch(0.78 0.1 170);
+  --warning: oklch(0.86 0.11 90);
+  --danger: oklch(0.7 0.15 20);
+
+  --radius: 1.75rem;
+  --radius-sm: 1rem;
+  --radius-lg: 2.75rem;
+  --radius-pill: 999px;
+
+  --shadow-1: 0 8px 30px -12px oklch(0.6 0.14 320 / 0.4);
+  --shadow-2: 0 20px 60px -20px oklch(0.6 0.14 320 / 0.45), 0 0 40px -10px oklch(0.8 0.12 220 / 0.4);
+  --shadow-3: 0 40px 110px -30px oklch(0.6 0.14 320 / 0.55);
+  --glow: 0 0 0 4px oklch(1 0 0 / 0.55), 0 0 30px -4px oklch(0.72 0.13 330 / 0.6);
+
+  --border-width: 1px;
+  --blur-amount: 20px;
+
+  --font-display: "Quicksand", "Jost", sans-serif;
+  --font-body: "Quicksand", "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: 0.02em;
+  --label-transform: lowercase;
+  --label-tracking: 0.2em;
+
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(50% 45% at 15% 10%, oklch(0.92 0.09 200 / 0.9), transparent 70%),
+    radial-gradient(55% 45% at 85% 15%, oklch(0.9 0.1 330 / 0.9), transparent 70%),
+    radial-gradient(60% 50% at 50% 95%, oklch(0.93 0.08 95 / 0.8), transparent 70%);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-dreamcore h1,
+.theme-dreamcore h2,
+.theme-dreamcore h3 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: var(--tracking-display);
+}
+
+.theme-dreamcore h1 {
+  text-shadow: 0 0 32px oklch(1 0 0 / 0.8);
+}
