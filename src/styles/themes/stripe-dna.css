@@ -1,0 +1,64 @@
+/* Stripe DNA — clean white, indigo/cyan gradient accents, crisp small type, airy depth */
+.theme-stripe-dna {
+  --bg: oklch(1 0 0);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.975 0.008 265);
+  --fg: oklch(0.22 0.03 270);
+  --fg-muted: oklch(0.52 0.03 270);
+  --accent: oklch(0.53 0.21 275);
+  --accent-fg: oklch(1 0 0);
+  --accent-2: oklch(0.72 0.14 205);
+  --line: oklch(0.9 0.012 270);
+  --success: oklch(0.66 0.16 155);
+  --warning: oklch(0.78 0.15 75);
+  --danger: oklch(0.6 0.21 22);
+
+  --radius: 0.5rem;
+  --radius-sm: 0.375rem;
+  --radius-lg: 0.875rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: 0 1px 2px oklch(0.3 0.06 270 / 8%), 0 1px 1px oklch(0.3 0.06 270 / 4%);
+  --shadow-2: 0 4px 12px -2px oklch(0.3 0.06 270 / 12%), 0 2px 4px -2px oklch(0.3 0.06 270 / 8%);
+  --shadow-3: 0 24px 48px -16px oklch(0.3 0.06 270 / 22%), 0 8px 16px -8px oklch(0.3 0.06 270 / 12%);
+  --glow: 0 0 0 3px color-mix(in oklab, var(--accent) 22%, transparent);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Sora", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.03em;
+  --label-transform: none;
+  --label-tracking: 0.01em;
+
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(120% 70% at 8% -10%, oklch(0.53 0.21 275 / 12%) 0%, transparent 60%),
+    radial-gradient(90% 60% at 95% -5%, oklch(0.72 0.14 205 / 14%) 0%, transparent 55%);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-stripe-dna h1,
+.theme-stripe-dna h2,
+.theme-stripe-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 700;
+}
+
+.theme-stripe-dna h1 {
+  background-image: linear-gradient(
+    100deg,
+    oklch(0.22 0.03 270) 20%,
+    oklch(0.53 0.21 275) 55%,
+    oklch(0.72 0.14 205) 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
