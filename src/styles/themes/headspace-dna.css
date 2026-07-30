@@ -1,0 +1,59 @@
+/* Headspace DNA — warm peach pastels, organic blobs, very soft shadows */
+.theme-headspace-dna {
+  --bg: oklch(0.975 0.025 75);
+  --surface: oklch(0.995 0.012 75);
+  --surface-2: oklch(0.945 0.05 70);
+  --fg: oklch(0.28 0.05 45);
+  --fg-muted: oklch(0.55 0.04 50);
+  --accent: oklch(0.72 0.17 55);
+  --accent-fg: oklch(0.15 0.03 45);
+  --accent-2: oklch(0.7 0.13 210);
+  --line: oklch(0.9 0.03 70);
+  --success: oklch(0.72 0.14 155);
+  --warning: oklch(0.82 0.15 85);
+  --danger: oklch(0.65 0.18 25);
+
+  --radius: 1.5rem;
+  --radius-sm: 1rem;
+  --radius-lg: 2.25rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: 0 4px 16px -6px oklch(0.5 0.1 55 / 14%);
+  --shadow-2: 0 16px 40px -16px oklch(0.5 0.1 55 / 22%);
+  --shadow-3: 0 32px 80px -32px oklch(0.5 0.1 55 / 30%);
+  --glow: 0 0 0 6px color-mix(in oklab, var(--accent) 22%, transparent);
+
+  --border-width: 0px;
+  --blur-amount: 12px;
+
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Nunito", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.015em;
+  --label-transform: none;
+  --label-tracking: 0.01em;
+
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(60% 50% at 12% 8%, oklch(0.88 0.1 60 / 55%), transparent 70%),
+    radial-gradient(50% 45% at 88% 22%, oklch(0.88 0.08 200 / 45%), transparent 70%),
+    radial-gradient(55% 45% at 70% 90%, oklch(0.9 0.09 340 / 40%), transparent 70%);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.75;
+}
+
+.theme-headspace-dna h1,
+.theme-headspace-dna h2,
+.theme-headspace-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 600;
+}
+
+.theme-headspace-dna section > div,
+.theme-headspace-dna article {
+  border-radius: var(--radius-lg);
+}
