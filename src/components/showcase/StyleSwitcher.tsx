@@ -10,7 +10,9 @@ export function StyleSwitcher() {
     ? "/styles/$slug/components"
     : location.pathname.endsWith("/blocks")
       ? "/styles/$slug/blocks"
-      : "/styles/$slug";
+      : location.pathname.endsWith("/app")
+        ? "/styles/$slug/app"
+        : "/styles/$slug";
   const current = params.slug;
 
   return (

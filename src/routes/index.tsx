@@ -61,13 +61,20 @@ function Index() {
               <p className="mt-4 min-h-12 text-sm text-white/60">{s.tagline}</p>
               <p className="mt-3 text-xs text-white/40">{s.fontPairing}</p>
 
-              <div className="mt-6 flex gap-2">
+              <div className="mt-6 flex flex-wrap gap-2">
                 <Link
-                  to="/styles/$slug"
+                  to="/styles/$slug/app"
                   params={{ slug: s.slug }}
                   className="inline-flex items-center gap-1.5 rounded-lg bg-white px-3.5 py-2 text-xs font-semibold text-black transition-opacity hover:opacity-85"
                 >
-                  Landing page <ArrowUpRight className="size-3.5" />
+                  App in use <ArrowUpRight className="size-3.5" />
+                </Link>
+                <Link
+                  to="/styles/$slug"
+                  params={{ slug: s.slug }}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-white/15 px-3.5 py-2 text-xs font-semibold text-white/80 transition-colors hover:border-white/40 hover:text-white"
+                >
+                  Landing <ArrowUpRight className="size-3.5" />
                 </Link>
                 <Link
                   to="/styles/$slug/components"

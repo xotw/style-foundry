@@ -101,6 +101,11 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
             ))}
           </nav>
           <div className="flex items-center gap-2">
+            <Link to="/styles/$slug/app" params={{ slug: style.slug }}>
+              <TButton variant="ghost" size="sm">
+                App demo
+              </TButton>
+            </Link>
             <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
               <TButton variant="ghost" size="sm">
                 Components
@@ -127,9 +132,11 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-xl text-fg-muted">{style.tagline}</p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <TButton>
-                Start building <ArrowRight className="size-4" />
-              </TButton>
+              <Link to="/styles/$slug/app" params={{ slug: style.slug }}>
+                <TButton>
+                  See it in use <ArrowRight className="size-4" />
+                </TButton>
+              </Link>
               <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
                 <TButton variant="outline">Browse components</TButton>
               </Link>
@@ -150,7 +157,9 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-fg-muted">{style.tagline}</p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
-              <TButton>Start building</TButton>
+              <Link to="/styles/$slug/app" params={{ slug: style.slug }}>
+                <TButton>See it in use</TButton>
+              </Link>
               <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
                 <TButton variant="outline">Browse components</TButton>
               </Link>
@@ -171,9 +180,11 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
               </h1>
               <p className="mt-6 max-w-xl text-lg text-fg-muted">{style.tagline}</p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <TButton size="lg">
-                  Start building <ArrowRight className="size-4" />
-                </TButton>
+                <Link to="/styles/$slug/app" params={{ slug: style.slug }}>
+                  <TButton size="lg">
+                    See it in use <ArrowRight className="size-4" />
+                  </TButton>
+                </Link>
                 <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
                   <TButton size="lg" variant="outline">
                     Browse components
