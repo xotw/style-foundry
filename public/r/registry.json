@@ -7,1045 +7,1045 @@
       "name": "theme-ableton-dna",
       "type": "registry:item",
       "title": "Ableton DNA",
-      "description": "Ableton DNA — flat color blocks, geometric type, zero decoration, Bauhaus pop — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ableton-dna\"."
+      "description": "Ableton DNA — flat color blocks, geometric type, zero decoration, Bauhaus pop — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ableton-dna\"."
     },
     {
       "name": "theme-ac-milan",
       "type": "registry:item",
       "title": "AC Milan DNA",
-      "description": "AC Milan DNA — San Siro night, rossoneri stripes, scudetto gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ac-milan\"."
+      "description": "AC Milan DNA — San Siro night, rossoneri stripes, scudetto gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ac-milan\"."
     },
     {
       "name": "theme-adidas-dna",
       "type": "registry:item",
       "title": "adidas DNA",
-      "description": "adidas DNA — stark black on white, squared everything, underline energy, three stripes discipline — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-adidas-dna\"."
+      "description": "adidas DNA — stark black on white, squared everything, underline energy, three stripes discipline — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-adidas-dna\"."
     },
     {
       "name": "theme-aesop-dna",
       "type": "registry:item",
       "title": "Aesop DNA",
-      "description": "Aesop DNA — apothecary editorial: paper cream, humanist serif, quiet sage calm — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-aesop-dna\"."
+      "description": "Aesop DNA — apothecary editorial: paper cream, humanist serif, quiet sage calm — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-aesop-dna\"."
     },
     {
       "name": "theme-airbnb-dna",
       "type": "registry:item",
       "title": "Airbnb DNA",
-      "description": "Airbnb DNA — warm white, coral accent, very rounded, soft diffuse shadows — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-airbnb-dna\"."
+      "description": "Airbnb DNA — warm white, coral accent, very rounded, soft diffuse shadows — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-airbnb-dna\"."
     },
     {
       "name": "theme-amazon-dna",
       "type": "registry:item",
       "title": "Amazon DNA",
-      "description": "Amazon DNA — smile orange, squid ink navy, everything store density — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-amazon-dna\"."
+      "description": "Amazon DNA — smile orange, squid ink navy, everything store density — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-amazon-dna\"."
     },
     {
       "name": "theme-anthropic-dna",
       "type": "registry:item",
       "title": "Anthropic DNA",
-      "description": "Anthropic DNA — warm cream, book-like serif display, terracotta accent — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-anthropic-dna\"."
+      "description": "Anthropic DNA — warm cream, book-like serif display, terracotta accent — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-anthropic-dna\"."
     },
     {
       "name": "theme-apple-dna",
       "type": "registry:item",
       "title": "Apple DNA",
-      "description": "Apple DNA — pure white, huge tight display type, monochrome with one blue accent — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-apple-dna\"."
+      "description": "Apple DNA — pure white, huge tight display type, monochrome with one blue accent — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-apple-dna\"."
     },
     {
       "name": "theme-arc-dna",
       "type": "registry:item",
       "title": "Arc DNA",
-      "description": "Arc DNA — soft pastel gradients, macOS-glass panels, bubbly corners — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-arc-dna\"."
+      "description": "Arc DNA — soft pastel gradients, macOS-glass panels, bubbly corners — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-arc-dna\"."
     },
     {
       "name": "theme-arizona-cardinals",
       "type": "registry:item",
       "title": "Arizona Cardinals DNA",
-      "description": "Arizona Cardinals DNA — Cardinal red, desert gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-arizona-cardinals\"."
+      "description": "Arizona Cardinals DNA — Cardinal red, desert gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-arizona-cardinals\"."
     },
     {
       "name": "theme-arsenal",
       "type": "registry:item",
       "title": "Arsenal DNA",
-      "description": "Arsenal DNA — cannon red blocks, white sleeves, north london navy — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-arsenal\"."
+      "description": "Arsenal DNA — cannon red blocks, white sleeves, north london navy — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-arsenal\"."
     },
     {
       "name": "theme-art-deco",
       "type": "registry:item",
       "title": "Art Deco",
-      "description": "Art Deco — black and gold, geometric symmetry, sunburst elegance — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-art-deco\"."
+      "description": "Art Deco — black and gold, geometric symmetry, sunburst elegance — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-art-deco\"."
     },
     {
       "name": "theme-atlanta-falcons",
       "type": "registry:item",
       "title": "Atlanta Falcons DNA",
-      "description": "Atlanta Falcons DNA — Falcon red on blackout. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-atlanta-falcons\"."
+      "description": "Atlanta Falcons DNA — Falcon red on blackout. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-atlanta-falcons\"."
     },
     {
       "name": "theme-atlanta-hawks",
       "type": "registry:item",
       "title": "Atlanta Hawks DNA",
-      "description": "Atlanta Hawks DNA — Torch red and volt, true to Atlanta. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-atlanta-hawks\"."
+      "description": "Atlanta Hawks DNA — Torch red and volt, true to Atlanta. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-atlanta-hawks\"."
     },
     {
       "name": "theme-atletico-madrid",
       "type": "registry:item",
       "title": "Atlético Madrid DNA",
-      "description": "Atlético Madrid DNA — rojiblanco fine stripes on warm plaster, colchonero navy — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-atletico-madrid\"."
+      "description": "Atlético Madrid DNA — rojiblanco fine stripes on warm plaster, colchonero navy — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-atletico-madrid\"."
     },
     {
       "name": "theme-aurora",
       "type": "registry:item",
       "title": "Aurora",
-      "description": "Aurora — midnight sky with drifting teal/violet light ribbons — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-aurora\"."
+      "description": "Aurora — midnight sky with drifting teal/violet light ribbons — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-aurora\"."
     },
     {
       "name": "theme-baltimore-ravens",
       "type": "registry:item",
       "title": "Baltimore Ravens DNA",
-      "description": "Baltimore Ravens DNA — Raven purple, vintage gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-baltimore-ravens\"."
+      "description": "Baltimore Ravens DNA — Raven purple, vintage gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-baltimore-ravens\"."
     },
     {
       "name": "theme-barcelona-dna",
       "type": "registry:item",
       "title": "FC Barcelona DNA",
-      "description": "FC Barcelona DNA — blaugrana night navy, garnet and gold, més que un club — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-barcelona-dna\"."
+      "description": "FC Barcelona DNA — blaugrana night navy, garnet and gold, més que un club — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-barcelona-dna\"."
     },
     {
       "name": "theme-bauhaus",
       "type": "registry:item",
       "title": "Bauhaus",
-      "description": "Bauhaus — primary red/blue/yellow, geometric blocks, heavy grotesk — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-bauhaus\"."
+      "description": "Bauhaus — primary red/blue/yellow, geometric blocks, heavy grotesk — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-bauhaus\"."
     },
     {
       "name": "theme-bayern-munich",
       "type": "registry:item",
       "title": "Bayern Munich DNA",
-      "description": "Bayern Munich DNA — deep red command, bavarian lozenges, mia san mia — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-bayern-munich\"."
+      "description": "Bayern Munich DNA — deep red command, bavarian lozenges, mia san mia — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-bayern-munich\"."
     },
     {
       "name": "theme-benfica",
       "type": "registry:item",
       "title": "Benfica DNA",
-      "description": "Benfica DNA — águia red command, lisbon light, gold wing — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-benfica\"."
+      "description": "Benfica DNA — águia red command, lisbon light, gold wing — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-benfica\"."
     },
     {
       "name": "theme-biophilic",
       "type": "registry:item",
       "title": "Biophilic",
-      "description": "Biophilic — deep greens and earth tones, organic blob radii, soft natural light — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-biophilic\"."
+      "description": "Biophilic — deep greens and earth tones, organic blob radii, soft natural light — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-biophilic\"."
     },
     {
       "name": "theme-bloomberg-dna",
       "type": "registry:item",
       "title": "Bloomberg DNA",
-      "description": "Bloomberg DNA — black finance terminal, amber data type, dense, zero decoration — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-bloomberg-dna\"."
+      "description": "Bloomberg DNA — black finance terminal, amber data type, dense, zero decoration — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-bloomberg-dna\"."
     },
     {
       "name": "theme-boston-celtics",
       "type": "registry:item",
       "title": "Boston Celtics DNA",
-      "description": "Boston Celtics DNA — garden night green, parquet floor, champion gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-boston-celtics\"."
+      "description": "Boston Celtics DNA — garden night green, parquet floor, champion gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-boston-celtics\"."
     },
     {
       "name": "theme-braun-dna",
       "type": "registry:item",
       "title": "Braun DNA",
-      "description": "Braun DNA — Dieter Rams functionalism: warm gray, black text, signal-orange dot — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-braun-dna\"."
+      "description": "Braun DNA — Dieter Rams functionalism: warm gray, black text, signal-orange dot — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-braun-dna\"."
     },
     {
       "name": "theme-brooklyn-nets",
       "type": "registry:item",
       "title": "Brooklyn Nets DNA",
-      "description": "Brooklyn Nets DNA — Black and white, borough minimal. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-brooklyn-nets\"."
+      "description": "Brooklyn Nets DNA — Black and white, borough minimal. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-brooklyn-nets\"."
     },
     {
       "name": "theme-brutalism",
       "type": "registry:item",
       "title": "Brutalism",
-      "description": "Brutalism — thick black borders, hard offset shadows, saturated primaries — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-brutalism\"."
+      "description": "Brutalism — thick black borders, hard offset shadows, saturated primaries — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-brutalism\"."
     },
     {
       "name": "theme-buffalo-bills",
       "type": "registry:item",
       "title": "Buffalo Bills DNA",
-      "description": "Buffalo Bills DNA — Royal charging blue, red streak. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-buffalo-bills\"."
+      "description": "Buffalo Bills DNA — Royal charging blue, red streak. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-buffalo-bills\"."
     },
     {
       "name": "theme-carolina-panthers",
       "type": "registry:item",
       "title": "Carolina Panthers DNA",
-      "description": "Carolina Panthers DNA — Panther blue on black. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-carolina-panthers\"."
+      "description": "Carolina Panthers DNA — Panther blue on black. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-carolina-panthers\"."
     },
     {
       "name": "theme-cash-app-dna",
       "type": "registry:item",
       "title": "Cash App DNA",
-      "description": "Cash App DNA — pure black, electric green, heavy condensed type — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cash-app-dna\"."
+      "description": "Cash App DNA — pure black, electric green, heavy condensed type — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cash-app-dna\"."
     },
     {
       "name": "theme-charlotte-hornets",
       "type": "registry:item",
       "title": "Charlotte Hornets DNA",
-      "description": "Charlotte Hornets DNA — Buzz purple and teal, nineties royalty. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-charlotte-hornets\"."
+      "description": "Charlotte Hornets DNA — Buzz purple and teal, nineties royalty. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-charlotte-hornets\"."
     },
     {
       "name": "theme-chelsea",
       "type": "registry:item",
       "title": "Chelsea DNA",
-      "description": "Chelsea DNA — royal blue night at the Bridge, lion gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-chelsea\"."
+      "description": "Chelsea DNA — royal blue night at the Bridge, lion gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-chelsea\"."
     },
     {
       "name": "theme-chicago-bears",
       "type": "registry:item",
       "title": "Chicago Bears DNA",
-      "description": "Chicago Bears DNA — Monsters-of-the-midway navy and orange. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-chicago-bears\"."
+      "description": "Chicago Bears DNA — Monsters-of-the-midway navy and orange. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-chicago-bears\"."
     },
     {
       "name": "theme-chicago-bulls",
       "type": "registry:item",
       "title": "Chicago Bulls DNA",
-      "description": "Chicago Bulls DNA — united center night, bulls red on black — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-chicago-bulls\"."
+      "description": "Chicago Bulls DNA — united center night, bulls red on black — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-chicago-bulls\"."
     },
     {
       "name": "theme-cincinnati-bengals",
       "type": "registry:item",
       "title": "Cincinnati Bengals DNA",
-      "description": "Cincinnati Bengals DNA — Bengal orange, jungle stripes. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cincinnati-bengals\"."
+      "description": "Cincinnati Bengals DNA — Bengal orange, jungle stripes. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cincinnati-bengals\"."
     },
     {
       "name": "theme-claymorphism",
       "type": "registry:item",
       "title": "Claymorphism",
-      "description": "Claymorphism — puffy pastel clay blobs, chunky radii, inner highlights — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-claymorphism\"."
+      "description": "Claymorphism — puffy pastel clay blobs, chunky radii, inner highlights — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-claymorphism\"."
     },
     {
       "name": "theme-cleveland-browns",
       "type": "registry:item",
       "title": "Cleveland Browns DNA",
-      "description": "Cleveland Browns DNA — Dawg pound brown and orange. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cleveland-browns\"."
+      "description": "Cleveland Browns DNA — Dawg pound brown and orange. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cleveland-browns\"."
     },
     {
       "name": "theme-cleveland-cavaliers",
       "type": "registry:item",
       "title": "Cleveland Cavaliers DNA",
-      "description": "Cleveland Cavaliers DNA — Wine and gold, the land. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cleveland-cavaliers\"."
+      "description": "Cleveland Cavaliers DNA — Wine and gold, the land. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cleveland-cavaliers\"."
     },
     {
       "name": "theme-crossfit-dna",
       "type": "registry:item",
       "title": "CrossFit DNA",
-      "description": "CrossFit DNA — forged dark steel, red intensity, stencil grit, affiliate blue — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-crossfit-dna\"."
+      "description": "CrossFit DNA — forged dark steel, red intensity, stencil grit, affiliate blue — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-crossfit-dna\"."
     },
     {
       "name": "theme-cyberpunk",
       "type": "registry:item",
       "title": "Cyberpunk",
-      "description": "Cyberpunk — ink-black slabs, acid yellow + hot magenta, neon edges — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cyberpunk\"."
+      "description": "Cyberpunk — ink-black slabs, acid yellow + hot magenta, neon edges — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-cyberpunk\"."
     },
     {
       "name": "theme-dallas-cowboys",
       "type": "registry:item",
       "title": "Dallas Cowboys DNA",
-      "description": "Dallas Cowboys DNA — The star: navy and silver. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dallas-cowboys\"."
+      "description": "Dallas Cowboys DNA — The star: navy and silver. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dallas-cowboys\"."
     },
     {
       "name": "theme-dallas-mavericks",
       "type": "registry:item",
       "title": "Dallas Mavericks DNA",
-      "description": "Dallas Mavericks DNA — Royal blue and silver, MFFL. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dallas-mavericks\"."
+      "description": "Dallas Mavericks DNA — Royal blue and silver, MFFL. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dallas-mavericks\"."
     },
     {
       "name": "theme-dark-saas",
       "type": "registry:item",
       "title": "Dark SaaS",
-      "description": "Dark SaaS — near-black canvas, subtle borders, one electric accent, tight type — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dark-saas\"."
+      "description": "Dark SaaS — near-black canvas, subtle borders, one electric accent, tight type — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dark-saas\"."
     },
     {
       "name": "theme-denver-broncos",
       "type": "registry:item",
       "title": "Denver Broncos DNA",
-      "description": "Denver Broncos DNA — Predominantly orange, mile-high navy. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-denver-broncos\"."
+      "description": "Denver Broncos DNA — Predominantly orange, mile-high navy. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-denver-broncos\"."
     },
     {
       "name": "theme-denver-nuggets",
       "type": "registry:item",
       "title": "Denver Nuggets DNA",
-      "description": "Denver Nuggets DNA — Mile high navy, sunrise gold, skyline. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-denver-nuggets\"."
+      "description": "Denver Nuggets DNA — Mile high navy, sunrise gold, skyline. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-denver-nuggets\"."
     },
     {
       "name": "theme-detroit-lions",
       "type": "registry:item",
       "title": "Detroit Lions DNA",
-      "description": "Detroit Lions DNA — Honolulu blue and silver. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-detroit-lions\"."
+      "description": "Detroit Lions DNA — Honolulu blue and silver. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-detroit-lions\"."
     },
     {
       "name": "theme-detroit-pistons",
       "type": "registry:item",
       "title": "Detroit Pistons DNA",
-      "description": "Detroit Pistons DNA — motor city royal night, racing stripe — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-detroit-pistons\"."
+      "description": "Detroit Pistons DNA — motor city royal night, racing stripe — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-detroit-pistons\"."
     },
     {
       "name": "theme-discord-dna",
       "type": "registry:item",
       "title": "Discord DNA",
-      "description": "Discord DNA — blurple dark, rounded chat surfaces, playful but engineered — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-discord-dna\"."
+      "description": "Discord DNA — blurple dark, rounded chat surfaces, playful but engineered — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-discord-dna\"."
     },
     {
       "name": "theme-dortmund",
       "type": "registry:item",
       "title": "Borussia Dortmund DNA",
-      "description": "Borussia Dortmund DNA — the yellow wall itself, black punch — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dortmund\"."
+      "description": "Borussia Dortmund DNA — the yellow wall itself, black punch — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dortmund\"."
     },
     {
       "name": "theme-dreamcore",
       "type": "registry:item",
       "title": "Dreamcore",
-      "description": "Dreamcore — hazy pastel gradients, blurred glows, floating ethereal calm — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dreamcore\"."
+      "description": "Dreamcore — hazy pastel gradients, blurred glows, floating ethereal calm — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dreamcore\"."
     },
     {
       "name": "theme-dune",
       "type": "registry:item",
       "title": "Dune",
-      "description": "Dune — spice sand, monumental thin display, desert silence — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dune\"."
+      "description": "Dune — spice sand, monumental thin display, desert silence — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-dune\"."
     },
     {
       "name": "theme-duolingo-dna",
       "type": "registry:item",
       "title": "Duolingo DNA",
-      "description": "Duolingo DNA — bright green, chunky 3D-pressed buttons, very rounded, cheerful — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-duolingo-dna\"."
+      "description": "Duolingo DNA — bright green, chunky 3D-pressed buttons, very rounded, cheerful — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-duolingo-dna\"."
     },
     {
       "name": "theme-e-ink",
       "type": "registry:item",
       "title": "E-Ink",
-      "description": "E-Ink — pure grayscale paper, high contrast, serif body, matte, zero gloss — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-e-ink\"."
+      "description": "E-Ink — pure grayscale paper, high contrast, serif body, matte, zero gloss — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-e-ink\"."
     },
     {
       "name": "theme-editorial",
       "type": "registry:item",
       "title": "Editorial",
-      "description": "Editorial — magazine: Playfair Display, generous whitespace, thin rules, paper tones — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-editorial\"."
+      "description": "Editorial — magazine: Playfair Display, generous whitespace, thin rules, paper tones — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-editorial\"."
     },
     {
       "name": "theme-facebook-dna",
       "type": "registry:item",
       "title": "Facebook DNA",
-      "description": "Facebook DNA — feed gray, white cards, the blue, dense social chrome — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-facebook-dna\"."
+      "description": "Facebook DNA — feed gray, white cards, the blue, dense social chrome — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-facebook-dna\"."
     },
     {
       "name": "theme-figma-dna",
       "type": "registry:item",
       "title": "Figma DNA",
-      "description": "Figma DNA — white canvas, five-color primary system, crisp 8px grid — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-figma-dna\"."
+      "description": "Figma DNA — white canvas, five-color primary system, crisp 8px grid — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-figma-dna\"."
     },
     {
       "name": "theme-flat",
       "type": "registry:item",
       "title": "Flat / Metro",
-      "description": "Flat / Metro — saturated solids, zero shadow, sharp geometry, big type — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-flat\"."
+      "description": "Flat / Metro — saturated solids, zero shadow, sharp geometry, big type — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-flat\"."
     },
     {
       "name": "theme-formula1",
       "type": "registry:item",
       "title": "Formula 1 DNA",
-      "description": "Formula 1 DNA — race red on carbon black, apex speed — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-formula1\"."
+      "description": "Formula 1 DNA — race red on carbon black, apex speed — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-formula1\"."
     },
     {
       "name": "theme-frutiger-aero",
       "type": "registry:item",
       "title": "Frutiger Aero",
-      "description": "Frutiger Aero — 2000s: sky blue + vivid green, glossy bubbles, lens flares — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-frutiger-aero\"."
+      "description": "Frutiger Aero — 2000s: sky blue + vivid green, glossy bubbles, lens flares — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-frutiger-aero\"."
     },
     {
       "name": "theme-ghibli",
       "type": "registry:item",
       "title": "Ghibli",
-      "description": "Ghibli — watercolor meadows, warm paper skies, gentle wonder — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ghibli\"."
+      "description": "Ghibli — watercolor meadows, warm paper skies, gentle wonder — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ghibli\"."
     },
     {
       "name": "theme-github-dna",
       "type": "registry:item",
       "title": "GitHub DNA",
-      "description": "GitHub DNA — Primer: familiar dev surfaces, link blue, precise grays, 6px radius — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-github-dna\"."
+      "description": "GitHub DNA — Primer: familiar dev surfaces, link blue, precise grays, 6px radius — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-github-dna\"."
     },
     {
       "name": "theme-glass",
       "type": "registry:item",
       "title": "Glass",
-      "description": "Glass — dark gradient bg, frosted blurred surfaces, thin light borders, glows — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-glass\"."
+      "description": "Glass — dark gradient bg, frosted blurred surfaces, thin light borders, glows — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-glass\"."
     },
     {
       "name": "theme-golden-state-warriors",
       "type": "registry:item",
       "title": "Golden State Warriors DNA",
-      "description": "Golden State Warriors DNA — royal bay night, bridge gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-golden-state-warriors\"."
+      "description": "Golden State Warriors DNA — royal bay night, bridge gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-golden-state-warriors\"."
     },
     {
       "name": "theme-green-bay-packers",
       "type": "registry:item",
       "title": "Green Bay Packers DNA",
-      "description": "Green Bay Packers DNA — Frozen tundra green and gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-green-bay-packers\"."
+      "description": "Green Bay Packers DNA — Frozen tundra green and gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-green-bay-packers\"."
     },
     {
       "name": "theme-hackernews-dna",
       "type": "registry:item",
       "title": "Hacker News DNA",
-      "description": "Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-hackernews-dna\"."
+      "description": "Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-hackernews-dna\"."
     },
     {
       "name": "theme-headspace-dna",
       "type": "registry:item",
       "title": "Headspace DNA",
-      "description": "Headspace DNA — warm peach pastels, organic blobs, very soft shadows — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-headspace-dna\"."
+      "description": "Headspace DNA — warm peach pastels, organic blobs, very soft shadows — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-headspace-dna\"."
     },
     {
       "name": "theme-heisei-retro",
       "type": "registry:item",
       "title": "Heisei Retro",
-      "description": "Heisei Retro — 90s Japanese tech catalog: warm beige plastic, red/blue, dense boxes — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-heisei-retro\"."
+      "description": "Heisei Retro — 90s Japanese tech catalog: warm beige plastic, red/blue, dense boxes — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-heisei-retro\"."
     },
     {
       "name": "theme-houston-rockets",
       "type": "registry:item",
       "title": "Houston Rockets DNA",
-      "description": "Houston Rockets DNA — Rocket red, clutch city black. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-houston-rockets\"."
+      "description": "Houston Rockets DNA — Rocket red, clutch city black. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-houston-rockets\"."
     },
     {
       "name": "theme-houston-texans",
       "type": "registry:item",
       "title": "Houston Texans DNA",
-      "description": "Houston Texans DNA — Deep steel blue, battle red. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-houston-texans\"."
+      "description": "Houston Texans DNA — Deep steel blue, battle red. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-houston-texans\"."
     },
     {
       "name": "theme-hud-scifi",
       "type": "registry:item",
       "title": "HUD Sci-Fi",
-      "description": "HUD Sci-Fi — cool dark blue, thin cyan lines, corner brackets, radar data — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-hud-scifi\"."
+      "description": "HUD Sci-Fi — cool dark blue, thin cyan lines, corner brackets, radar data — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-hud-scifi\"."
     },
     {
       "name": "theme-ikea-dna",
       "type": "registry:item",
       "title": "IKEA DNA",
-      "description": "IKEA DNA — democratic blue and yellow, Skapa functionalism, price-tag boldness — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ikea-dna\"."
+      "description": "IKEA DNA — democratic blue and yellow, Skapa functionalism, price-tag boldness — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ikea-dna\"."
     },
     {
       "name": "theme-indiana-pacers",
       "type": "registry:item",
       "title": "Indiana Pacers DNA",
-      "description": "Indiana Pacers DNA — Navy and gold, hoosier speed. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-indiana-pacers\"."
+      "description": "Indiana Pacers DNA — Navy and gold, hoosier speed. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-indiana-pacers\"."
     },
     {
       "name": "theme-indianapolis-colts",
       "type": "registry:item",
       "title": "Indianapolis Colts DNA",
-      "description": "Indianapolis Colts DNA — Horseshoe royal and gray. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-indianapolis-colts\"."
+      "description": "Indianapolis Colts DNA — Horseshoe royal and gray. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-indianapolis-colts\"."
     },
     {
       "name": "theme-instagram-dna",
       "type": "registry:item",
       "title": "Instagram DNA",
-      "description": "Instagram DNA — gallery white, hairline borders, gradient pink to purple — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-instagram-dna\"."
+      "description": "Instagram DNA — gallery white, hairline borders, gradient pink to purple — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-instagram-dna\"."
     },
     {
       "name": "theme-inter-milan",
       "type": "registry:item",
       "title": "Inter Milan DNA",
-      "description": "Inter Milan DNA — nerazzurri serpent night, biscione gradient — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-inter-milan\"."
+      "description": "Inter Milan DNA — nerazzurri serpent night, biscione gradient — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-inter-milan\"."
     },
     {
       "name": "theme-jacksonville-jaguars",
       "type": "registry:item",
       "title": "Jacksonville Jaguars DNA",
-      "description": "Jacksonville Jaguars DNA — Teal, black and duval gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-jacksonville-jaguars\"."
+      "description": "Jacksonville Jaguars DNA — Teal, black and duval gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-jacksonville-jaguars\"."
     },
     {
       "name": "theme-james-bond",
       "type": "registry:item",
       "title": "James Bond",
-      "description": "James Bond — tuxedo black and white, gunbarrel gold precision — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-james-bond\"."
+      "description": "James Bond — tuxedo black and white, gunbarrel gold precision — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-james-bond\"."
     },
     {
       "name": "theme-juventus",
       "type": "registry:item",
       "title": "Juventus DNA",
-      "description": "Juventus DNA — zebra black and white, sharp cuts, hot signal pink-red — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-juventus\"."
+      "description": "Juventus DNA — zebra black and white, sharp cuts, hot signal pink-red — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-juventus\"."
     },
     {
       "name": "theme-kansas-city-chiefs",
       "type": "registry:item",
       "title": "Kansas City Chiefs DNA",
-      "description": "Kansas City Chiefs DNA — Arrowhead red and gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-kansas-city-chiefs\"."
+      "description": "Kansas City Chiefs DNA — Arrowhead red and gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-kansas-city-chiefs\"."
     },
     {
       "name": "theme-la-chargers",
       "type": "registry:item",
       "title": "LA Chargers DNA",
-      "description": "LA Chargers DNA — Powder blue and bolt gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-chargers\"."
+      "description": "LA Chargers DNA — Powder blue and bolt gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-chargers\"."
     },
     {
       "name": "theme-la-clippers",
       "type": "registry:item",
       "title": "LA Clippers DNA",
-      "description": "LA Clippers DNA — Nautical red, white and royal. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-clippers\"."
+      "description": "LA Clippers DNA — Nautical red, white and royal. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-clippers\"."
     },
     {
       "name": "theme-la-lakers",
       "type": "registry:item",
       "title": "LA Lakers DNA",
-      "description": "LA Lakers DNA — forum purple night, showtime gold lights — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-lakers\"."
+      "description": "LA Lakers DNA — forum purple night, showtime gold lights — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-lakers\"."
     },
     {
       "name": "theme-la-rams",
       "type": "registry:item",
       "title": "LA Rams DNA",
-      "description": "LA Rams DNA — Rams royal and sol. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-rams\"."
+      "description": "LA Rams DNA — Rams royal and sol. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-la-rams\"."
     },
     {
       "name": "theme-las-vegas-raiders",
       "type": "registry:item",
       "title": "Las Vegas Raiders DNA",
-      "description": "Las Vegas Raiders DNA — Silver and black. Just win, baby. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-las-vegas-raiders\"."
+      "description": "Las Vegas Raiders DNA — Silver and black. Just win, baby. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-las-vegas-raiders\"."
     },
     {
       "name": "theme-lazio",
       "type": "registry:item",
       "title": "Lazio DNA",
-      "description": "Lazio DNA — biancocelesti sky, eagle wing white, olympic gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-lazio\"."
+      "description": "Lazio DNA — biancocelesti sky, eagle wing white, olympic gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-lazio\"."
     },
     {
       "name": "theme-lego-dna",
       "type": "registry:item",
       "title": "LEGO DNA",
-      "description": "LEGO DNA — primary brick colors, chunky modular blocks, bold play energy — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-lego-dna\"."
+      "description": "LEGO DNA — primary brick colors, chunky modular blocks, bold play energy — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-lego-dna\"."
     },
     {
       "name": "theme-linkedin-dna",
       "type": "registry:item",
       "title": "LinkedIn DNA",
-      "description": "LinkedIn DNA — warm paper feed, white cards, professional blue, pill actions — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-linkedin-dna\"."
+      "description": "LinkedIn DNA — warm paper feed, white cards, professional blue, pill actions — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-linkedin-dna\"."
     },
     {
       "name": "theme-liquid-glass",
       "type": "registry:item",
       "title": "Specular sheen that reads as refracted light across translucent panels.",
-      "description": "Specular sheen that reads as refracted light across translucent panels. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-liquid-glass\"."
+      "description": "Specular sheen that reads as refracted light across translucent panels. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-liquid-glass\"."
     },
     {
       "name": "theme-luxury",
       "type": "registry:item",
       "title": "Luxury",
-      "description": "Luxury — deep ink, champagne gold, high-contrast serif, hairline rules — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-luxury\"."
+      "description": "Luxury — deep ink, champagne gold, high-contrast serif, hairline rules — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-luxury\"."
     },
     {
       "name": "theme-marseille",
       "type": "registry:item",
       "title": "OM DNA",
-      "description": "OM DNA — Mediterranean white, ciel blue air, the gold star — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-marseille\"."
+      "description": "OM DNA — Mediterranean white, ciel blue air, the gold star — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-marseille\"."
     },
     {
       "name": "theme-material",
       "type": "registry:item",
       "title": "Material",
-      "description": "Material — Material Design 3: tonal palette, filled surfaces, elevation — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-material\"."
+      "description": "Material — Material Design 3: tonal palette, filled surfaces, elevation — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-material\"."
     },
     {
       "name": "theme-matrix",
       "type": "registry:item",
       "title": "The Matrix",
-      "description": "The Matrix — digital rain green on void, terminal of the simulation — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-matrix\"."
+      "description": "The Matrix — digital rain green on void, terminal of the simulation — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-matrix\"."
     },
     {
       "name": "theme-maximalism",
       "type": "registry:item",
       "title": "Maximalism",
-      "description": "Maximalism — clashing saturated colors, mixed display fonts, dense layered patterns — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-maximalism\"."
+      "description": "Maximalism — clashing saturated colors, mixed display fonts, dense layered patterns — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-maximalism\"."
     },
     {
       "name": "theme-mcdonalds-dna",
       "type": "registry:item",
       "title": "McDonald's DNA",
-      "description": "McDonald's DNA — golden arches yellow, happy meal red — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-mcdonalds-dna\"."
+      "description": "McDonald's DNA — golden arches yellow, happy meal red — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-mcdonalds-dna\"."
     },
     {
       "name": "theme-memphis",
       "type": "registry:item",
       "title": "Memphis",
-      "description": "Memphis — 80s postmodern: squiggles, confetti shapes, clashing primaries — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-memphis\"."
+      "description": "Memphis — 80s postmodern: squiggles, confetti shapes, clashing primaries — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-memphis\"."
     },
     {
       "name": "theme-memphis-grizzlies",
       "type": "registry:item",
       "title": "Memphis Grizzlies DNA",
-      "description": "Memphis Grizzlies DNA — Beale Street blue over midnight navy, grit and grind. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-memphis-grizzlies\"."
+      "description": "Memphis Grizzlies DNA — Beale Street blue over midnight navy, grit and grind. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-memphis-grizzlies\"."
     },
     {
       "name": "theme-miami-dolphins",
       "type": "registry:item",
       "title": "Miami Dolphins DNA",
-      "description": "Miami Dolphins DNA — Aqua and coral sunshine. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-miami-dolphins\"."
+      "description": "Miami Dolphins DNA — Aqua and coral sunshine. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-miami-dolphins\"."
     },
     {
       "name": "theme-miami-heat",
       "type": "registry:item",
       "title": "Miami Heat DNA",
-      "description": "Miami Heat DNA — heat culture black, vice flame gradient — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-miami-heat\"."
+      "description": "Miami Heat DNA — heat culture black, vice flame gradient — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-miami-heat\"."
     },
     {
       "name": "theme-microsoft-dna",
       "type": "registry:item",
       "title": "Microsoft DNA",
-      "description": "Microsoft DNA — fluent four-square, segoe clarity — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-microsoft-dna\"."
+      "description": "Microsoft DNA — fluent four-square, segoe clarity — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-microsoft-dna\"."
     },
     {
       "name": "theme-millennium-falcon",
       "type": "registry:item",
       "title": "Millennium Falcon",
-      "description": "Millennium Falcon — used-future cockpit: worn panels, targeting-computer yellow vectors, amber toggles — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-millennium-falcon\"."
+      "description": "Millennium Falcon — used-future cockpit: worn panels, targeting-computer yellow vectors, amber toggles — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-millennium-falcon\"."
     },
     {
       "name": "theme-milwaukee-bucks",
       "type": "registry:item",
       "title": "Milwaukee Bucks DNA",
-      "description": "Milwaukee Bucks DNA — Hunter green and cream city, fear the deer. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-milwaukee-bucks\"."
+      "description": "Milwaukee Bucks DNA — Hunter green and cream city, fear the deer. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-milwaukee-bucks\"."
     },
     {
       "name": "theme-minimal-warm",
       "type": "registry:item",
       "title": "Minimal Warm",
-      "description": "Minimal Warm — sand and clay neutrals, soft radii, quiet contrast — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-minimal-warm\"."
+      "description": "Minimal Warm — sand and clay neutrals, soft radii, quiet contrast — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-minimal-warm\"."
     },
     {
       "name": "theme-minnesota-timberwolves",
       "type": "registry:item",
       "title": "Minnesota Timberwolves DNA",
-      "description": "Minnesota Timberwolves DNA — Midnight navy, aurora neon green. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-minnesota-timberwolves\"."
+      "description": "Minnesota Timberwolves DNA — Midnight navy, aurora neon green. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-minnesota-timberwolves\"."
     },
     {
       "name": "theme-minnesota-vikings",
       "type": "registry:item",
       "title": "Minnesota Vikings DNA",
-      "description": "Minnesota Vikings DNA — Skol purple and norse gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-minnesota-vikings\"."
+      "description": "Minnesota Vikings DNA — Skol purple and norse gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-minnesota-vikings\"."
     },
     {
       "name": "theme-nasa-dna",
       "type": "registry:item",
       "title": "NASA DNA",
-      "description": "NASA DNA — 1976 Graphics Standards Manual: worm red, federal grid, Helvetica discipline — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nasa-dna\"."
+      "description": "NASA DNA — 1976 Graphics Standards Manual: worm red, federal grid, Helvetica discipline — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nasa-dna\"."
     },
     {
       "name": "theme-nba-dna",
       "type": "registry:item",
       "title": "NBA DNA",
-      "description": "NBA DNA — league blue and red on white, gold trophy accents, broadcast bold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nba-dna\"."
+      "description": "NBA DNA — league blue and red on white, gold trophy accents, broadcast bold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nba-dna\"."
     },
     {
       "name": "theme-netflix-dna",
       "type": "registry:item",
       "title": "Netflix DNA",
-      "description": "Netflix DNA — cinematic black, signal red, UI recedes behind imagery — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-netflix-dna\"."
+      "description": "Netflix DNA — cinematic black, signal red, UI recedes behind imagery — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-netflix-dna\"."
     },
     {
       "name": "theme-neumorphism",
       "type": "registry:item",
       "title": "Neumorphism",
-      "description": "Neumorphism — soft extruded gray surfaces, double shadows, pill shapes — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-neumorphism\"."
+      "description": "Neumorphism — soft extruded gray surfaces, double shadows, pill shapes — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-neumorphism\"."
     },
     {
       "name": "theme-new-england-patriots",
       "type": "registry:item",
       "title": "New England Patriots DNA",
-      "description": "New England Patriots DNA — Nautical navy, liberty red-white. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-england-patriots\"."
+      "description": "New England Patriots DNA — Nautical navy, liberty red-white. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-england-patriots\"."
     },
     {
       "name": "theme-new-orleans-pelicans",
       "type": "registry:item",
       "title": "New Orleans Pelicans DNA",
-      "description": "New Orleans Pelicans DNA — Navy, mardi gras gold and red. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-orleans-pelicans\"."
+      "description": "New Orleans Pelicans DNA — Navy, mardi gras gold and red. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-orleans-pelicans\"."
     },
     {
       "name": "theme-new-orleans-saints",
       "type": "registry:item",
       "title": "New Orleans Saints DNA",
-      "description": "New Orleans Saints DNA — Black and old gold, who dat. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-orleans-saints\"."
+      "description": "New Orleans Saints DNA — Black and old gold, who dat. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-orleans-saints\"."
     },
     {
       "name": "theme-new-york-giants",
       "type": "registry:item",
       "title": "New York Giants DNA",
-      "description": "New York Giants DNA — Big blue, franchise red. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-york-giants\"."
+      "description": "New York Giants DNA — Big blue, franchise red. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-york-giants\"."
     },
     {
       "name": "theme-new-york-jets",
       "type": "registry:item",
       "title": "New York Jets DNA",
-      "description": "New York Jets DNA — Gotham green blackout. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-york-jets\"."
+      "description": "New York Jets DNA — Gotham green blackout. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-york-jets\"."
     },
     {
       "name": "theme-new-york-knicks",
       "type": "registry:item",
       "title": "New York Knicks DNA",
-      "description": "New York Knicks DNA — MSG navy night, orange marquee — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-york-knicks\"."
+      "description": "New York Knicks DNA — MSG navy night, orange marquee — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-new-york-knicks\"."
     },
     {
       "name": "theme-newspaper",
       "type": "registry:item",
       "title": "Newspaper",
-      "description": "Newspaper — newsprint gray, blackletter-ish serif heads, column rules — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-newspaper\"."
+      "description": "Newspaper — newsprint gray, blackletter-ish serif heads, column rules — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-newspaper\"."
     },
     {
       "name": "theme-nfl-dna",
       "type": "registry:item",
       "title": "NFL DNA",
-      "description": "NFL DNA — shield navy, gridiron red, varsity slab, chalk-line structure — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nfl-dna\"."
+      "description": "NFL DNA — shield navy, gridiron red, varsity slab, chalk-line structure — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nfl-dna\"."
     },
     {
       "name": "theme-nike-dna",
       "type": "registry:item",
       "title": "Nike DNA",
-      "description": "Nike DNA — athletic black/white, condensed uppercase display, volt accent — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nike-dna\"."
+      "description": "Nike DNA — athletic black/white, condensed uppercase display, volt accent — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nike-dna\"."
     },
     {
       "name": "theme-nintendo-dna",
       "type": "registry:item",
       "title": "Nintendo DNA",
-      "description": "Nintendo DNA — joy red on toy white, rounded delight — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nintendo-dna\"."
+      "description": "Nintendo DNA — joy red on toy white, rounded delight — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-nintendo-dna\"."
     },
     {
       "name": "theme-notion-dna",
       "type": "registry:item",
       "title": "Notion DNA",
-      "description": "Notion DNA — paper white, ink gray, serif calm, tool that disappears — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-notion-dna\"."
+      "description": "Notion DNA — paper white, ink gray, serif calm, tool that disappears — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-notion-dna\"."
     },
     {
       "name": "theme-okc-thunder",
       "type": "registry:item",
       "title": "OKC Thunder DNA",
-      "description": "OKC Thunder DNA — Thunder blue, sunset orange surge. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-okc-thunder\"."
+      "description": "OKC Thunder DNA — Thunder blue, sunset orange surge. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-okc-thunder\"."
     },
     {
       "name": "theme-orlando-magic",
       "type": "registry:item",
       "title": "Orlando Magic DNA",
-      "description": "Orlando Magic DNA — Magic blue, silver pinstripes. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-orlando-magic\"."
+      "description": "Orlando Magic DNA — Magic blue, silver pinstripes. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-orlando-magic\"."
     },
     {
       "name": "theme-philadelphia-76ers",
       "type": "registry:item",
       "title": "Philadelphia 76ers DNA",
-      "description": "Philadelphia 76ers DNA — liberty navy night, stars and red — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-philadelphia-76ers\"."
+      "description": "Philadelphia 76ers DNA — liberty navy night, stars and red — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-philadelphia-76ers\"."
     },
     {
       "name": "theme-philadelphia-eagles",
       "type": "registry:item",
       "title": "Philadelphia Eagles DNA",
-      "description": "Philadelphia Eagles DNA — Midnight green, silver wings. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-philadelphia-eagles\"."
+      "description": "Philadelphia Eagles DNA — Midnight green, silver wings. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-philadelphia-eagles\"."
     },
     {
       "name": "theme-phoenix-suns",
       "type": "registry:item",
       "title": "Phoenix Suns DNA",
-      "description": "Phoenix Suns DNA — The valley: heat purple and blaze orange. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-phoenix-suns\"."
+      "description": "Phoenix Suns DNA — The valley: heat purple and blaze orange. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-phoenix-suns\"."
     },
     {
       "name": "theme-pinterest-dna",
       "type": "registry:item",
       "title": "Pinterest DNA",
-      "description": "Pinterest DNA — pin red on gallery white, masonry softness — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-pinterest-dna\"."
+      "description": "Pinterest DNA — pin red on gallery white, masonry softness — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-pinterest-dna\"."
     },
     {
       "name": "theme-pittsburgh-steelers",
       "type": "registry:item",
       "title": "Pittsburgh Steelers DNA",
-      "description": "Pittsburgh Steelers DNA — Black and gold, bumblebee stripes. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-pittsburgh-steelers\"."
+      "description": "Pittsburgh Steelers DNA — Black and gold, bumblebee stripes. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-pittsburgh-steelers\"."
     },
     {
       "name": "theme-pixel",
       "type": "registry:item",
       "title": "Pixel",
-      "description": "Pixel — 8-bit lo-fi, dithered textures, hard 2px pixel borders, stepped shadows — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-pixel\"."
+      "description": "Pixel — 8-bit lo-fi, dithered textures, hard 2px pixel borders, stepped shadows — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-pixel\"."
     },
     {
       "name": "theme-playstation-dna",
       "type": "registry:item",
       "title": "PlayStation DNA",
-      "description": "PlayStation DNA — console blue on studio white, iconic shapes — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-playstation-dna\"."
+      "description": "PlayStation DNA — console blue on studio white, iconic shapes — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-playstation-dna\"."
     },
     {
       "name": "theme-portland-trail-blazers",
       "type": "registry:item",
       "title": "Portland Trail Blazers DNA",
-      "description": "Portland Trail Blazers DNA — Rip city red and black, pinwheel diagonals. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-portland-trail-blazers\"."
+      "description": "Portland Trail Blazers DNA — Rip city red and black, pinwheel diagonals. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-portland-trail-blazers\"."
     },
     {
       "name": "theme-porto",
       "type": "registry:item",
       "title": "FC Porto DNA",
-      "description": "FC Porto DNA — dragões blue and white stripes, dragon gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-porto\"."
+      "description": "FC Porto DNA — dragões blue and white stripes, dragon gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-porto\"."
     },
     {
       "name": "theme-proton-dna",
       "type": "registry:item",
       "title": "Proton DNA",
-      "description": "Proton DNA — privacy purple over deep navy ink, Swiss-made trust — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-proton-dna\"."
+      "description": "Proton DNA — privacy purple over deep navy ink, Swiss-made trust — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-proton-dna\"."
     },
     {
       "name": "theme-psg",
       "type": "registry:item",
       "title": "PSG DNA",
-      "description": "PSG DNA — Parc navy night, the Hechter stripe, Ville Lumière gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-psg\"."
+      "description": "PSG DNA — Parc navy night, the Hechter stripe, Ville Lumière gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-psg\"."
     },
     {
       "name": "theme-real-madrid-dna",
       "type": "registry:item",
       "title": "Real Madrid DNA",
-      "description": "Real Madrid DNA — royal white, championship gold, regal navy restraint — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-real-madrid-dna\"."
+      "description": "Real Madrid DNA — royal white, championship gold, regal navy restraint — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-real-madrid-dna\"."
     },
     {
       "name": "theme-redbull-dna",
       "type": "registry:item",
       "title": "Red Bull DNA",
-      "description": "Red Bull DNA — energy red and yellow over racing navy — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-redbull-dna\"."
+      "description": "Red Bull DNA — energy red and yellow over racing navy — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-redbull-dna\"."
     },
     {
       "name": "theme-reddit-dna",
       "type": "registry:item",
       "title": "Reddit DNA",
-      "description": "Reddit DNA — upvote orange, community white, pill-shaped everything — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-reddit-dna\"."
+      "description": "Reddit DNA — upvote orange, community white, pill-shaped everything — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-reddit-dna\"."
     },
     {
       "name": "theme-reebok-dna",
       "type": "registry:item",
       "title": "Reebok DNA",
-      "description": "Reebok DNA — vector red and blue on stark white, condensed italic speed, zero radius — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-reebok-dna\"."
+      "description": "Reebok DNA — vector red and blue on stark white, condensed italic speed, zero radius — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-reebok-dna\"."
     },
     {
       "name": "theme-revolut-dna",
       "type": "registry:item",
       "title": "Revolut DNA",
-      "description": "Revolut DNA — midnight fintech, aurora gradient accents, borderless — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-revolut-dna\"."
+      "description": "Revolut DNA — midnight fintech, aurora gradient accents, borderless — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-revolut-dna\"."
     },
     {
       "name": "theme-roma",
       "type": "registry:item",
       "title": "AS Roma DNA",
-      "description": "AS Roma DNA — imperial garnet night, giallorossi gold — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-roma\"."
+      "description": "AS Roma DNA — imperial garnet night, giallorossi gold — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-roma\"."
     },
     {
       "name": "theme-sacramento-kings",
       "type": "registry:item",
       "title": "Sacramento Kings DNA",
-      "description": "Sacramento Kings DNA — Crown purple and silver, light the beam. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-sacramento-kings\"."
+      "description": "Sacramento Kings DNA — Crown purple and silver, light the beam. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-sacramento-kings\"."
     },
     {
       "name": "theme-san-antonio-spurs",
       "type": "registry:item",
       "title": "San Antonio Spurs DNA",
-      "description": "San Antonio Spurs DNA — black and silver, fundamentals only — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-san-antonio-spurs\"."
+      "description": "San Antonio Spurs DNA — black and silver, fundamentals only — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-san-antonio-spurs\"."
     },
     {
       "name": "theme-san-francisco-49ers",
       "type": "registry:item",
       "title": "San Francisco 49ers DNA",
-      "description": "San Francisco 49ers DNA — Niners red and gold rush. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-san-francisco-49ers\"."
+      "description": "San Francisco 49ers DNA — Niners red and gold rush. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-san-francisco-49ers\"."
     },
     {
       "name": "theme-seattle-seahawks",
       "type": "registry:item",
       "title": "Seattle Seahawks DNA",
-      "description": "Seattle Seahawks DNA — College navy, action green surge. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-seattle-seahawks\"."
+      "description": "Seattle Seahawks DNA — College navy, action green surge. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-seattle-seahawks\"."
     },
     {
       "name": "theme-severance",
       "type": "registry:item",
       "title": "Severance",
-      "description": "Severance — Lumon terminal teal, pale cyan data, sterile corporate calm — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-severance\"."
+      "description": "Severance — Lumon terminal teal, pale cyan data, sterile corporate calm — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-severance\"."
     },
     {
       "name": "theme-signal-dna",
       "type": "registry:item",
       "title": "Signal DNA",
-      "description": "Signal DNA — quiet white, trusted blue, bubbles with nothing to hide — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-signal-dna\"."
+      "description": "Signal DNA — quiet white, trusted blue, bubbles with nothing to hide — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-signal-dna\"."
     },
     {
       "name": "theme-skeuomorphism",
       "type": "registry:item",
       "title": "Skeuomorphism",
-      "description": "Skeuomorphism — brushed metal, linen, glossy bevels, inset engravings — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-skeuomorphism\"."
+      "description": "Skeuomorphism — brushed metal, linen, glossy bevels, inset engravings — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-skeuomorphism\"."
     },
     {
       "name": "theme-slack-dna",
       "type": "registry:item",
       "title": "Slack DNA",
-      "description": "Slack DNA — aubergine primary, white surfaces, four-color accents, approachable — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-slack-dna\"."
+      "description": "Slack DNA — aubergine primary, white surfaces, four-color accents, approachable — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-slack-dna\"."
     },
     {
       "name": "theme-spotify-dna",
       "type": "registry:item",
       "title": "Spotify DNA",
-      "description": "Spotify DNA — near-black entertainment surface, vivid green, pills everywhere — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-spotify-dna\"."
+      "description": "Spotify DNA — near-black entertainment surface, vivid green, pills everywhere — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-spotify-dna\"."
     },
     {
       "name": "theme-ssense-dna",
       "type": "registry:item",
       "title": "SSENSE DNA",
-      "description": "SSENSE DNA — stark fashion e-commerce: black on white, micro type, luxury by subtraction — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ssense-dna\"."
+      "description": "SSENSE DNA — stark fashion e-commerce: black on white, micro type, luxury by subtraction — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-ssense-dna\"."
     },
     {
       "name": "theme-starbucks-dna",
       "type": "registry:item",
       "title": "Starbucks DNA",
-      "description": "Starbucks DNA — siren green, cream house warmth — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-starbucks-dna\"."
+      "description": "Starbucks DNA — siren green, cream house warmth — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-starbucks-dna\"."
     },
     {
       "name": "theme-steam-dna",
       "type": "registry:item",
       "title": "Steam DNA",
-      "description": "Steam DNA — midnight library blue, glowing store shelves — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-steam-dna\"."
+      "description": "Steam DNA — midnight library blue, glowing store shelves — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-steam-dna\"."
     },
     {
       "name": "theme-stranger-things",
       "type": "registry:item",
       "title": "Stranger Things",
-      "description": "Stranger Things — upside-down night, neon red serif title glow — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-stranger-things\"."
+      "description": "Stranger Things — upside-down night, neon red serif title glow — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-stranger-things\"."
     },
     {
       "name": "theme-stripe-dna",
       "type": "registry:item",
       "title": "Stripe DNA",
-      "description": "Stripe DNA — clean white, indigo/cyan gradient accents, crisp small type, airy depth — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-stripe-dna\"."
+      "description": "Stripe DNA — clean white, indigo/cyan gradient accents, crisp small type, airy depth — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-stripe-dna\"."
     },
     {
       "name": "theme-superhuman-dna",
       "type": "registry:item",
       "title": "Superhuman DNA",
-      "description": "Superhuman DNA — deep violet-tinted dark, refined gradients, glowing accents, keyboard-first — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-superhuman-dna\"."
+      "description": "Superhuman DNA — deep violet-tinted dark, refined gradients, glowing accents, keyboard-first — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-superhuman-dna\"."
     },
     {
       "name": "theme-swiss",
       "type": "registry:item",
       "title": "Swiss",
-      "description": "Swiss — strict grid, Inter Tight, black/white + one red accent, zero radius — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-swiss\"."
+      "description": "Swiss — strict grid, Inter Tight, black/white + one red accent, zero radius — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-swiss\"."
     },
     {
       "name": "theme-tampa-bay-buccaneers",
       "type": "registry:item",
       "title": "Tampa Bay Buccaneers DNA",
-      "description": "Tampa Bay Buccaneers DNA — Buccaneer red over pewter. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-tampa-bay-buccaneers\"."
+      "description": "Tampa Bay Buccaneers DNA — Buccaneer red over pewter. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-tampa-bay-buccaneers\"."
     },
     {
       "name": "theme-teenage-engineering-dna",
       "type": "registry:item",
       "title": "Teenage Engineering DNA",
-      "description": "Teenage Engineering DNA — light gray plastic, orange accents, tiny mono uppercase labels — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-teenage-engineering-dna\"."
+      "description": "Teenage Engineering DNA — light gray plastic, orange accents, tiny mono uppercase labels — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-teenage-engineering-dna\"."
     },
     {
       "name": "theme-telegram-dna",
       "type": "registry:item",
       "title": "Telegram DNA",
-      "description": "Telegram DNA — paper-light chat, sky blue, round bubbles, native speed — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-telegram-dna\"."
+      "description": "Telegram DNA — paper-light chat, sky blue, round bubbles, native speed — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-telegram-dna\"."
     },
     {
       "name": "theme-tennessee-titans",
       "type": "registry:item",
       "title": "Tennessee Titans DNA",
-      "description": "Tennessee Titans DNA — Titans navy, sword-steel blue. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-tennessee-titans\"."
+      "description": "Tennessee Titans DNA — Titans navy, sword-steel blue. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-tennessee-titans\"."
     },
     {
       "name": "theme-terminal",
       "type": "registry:item",
       "title": "Terminal",
-      "description": "Terminal — black bg, phosphor green, IBM Plex Mono, ASCII-ish borders — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-terminal\"."
+      "description": "Terminal — black bg, phosphor green, IBM Plex Mono, ASCII-ish borders — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-terminal\"."
     },
     {
       "name": "theme-tiktok-dna",
       "type": "registry:item",
       "title": "TikTok DNA",
-      "description": "TikTok DNA — void black, glitch cyan and pink, vertical energy — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-tiktok-dna\"."
+      "description": "TikTok DNA — void black, glitch cyan and pink, vertical energy — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-tiktok-dna\"."
     },
     {
       "name": "theme-toronto-raptors",
       "type": "registry:item",
       "title": "Toronto Raptors DNA",
-      "description": "Toronto Raptors DNA — We the north red, claw black, chevron gold. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-toronto-raptors\"."
+      "description": "Toronto Raptors DNA — We the north red, claw black, chevron gold. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-toronto-raptors\"."
     },
     {
       "name": "theme-twitch-dna",
       "type": "registry:item",
       "title": "Twitch DNA",
-      "description": "Twitch DNA — glitch purple dark, live energy — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-twitch-dna\"."
+      "description": "Twitch DNA — glitch purple dark, live energy — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-twitch-dna\"."
     },
     {
       "name": "theme-uber-dna",
       "type": "registry:item",
       "title": "Uber DNA",
-      "description": "Uber DNA — move black and white, geometric utility — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-uber-dna\"."
+      "description": "Uber DNA — move black and white, geometric utility — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-uber-dna\"."
     },
     {
       "name": "theme-utah-jazz",
       "type": "registry:item",
       "title": "Utah Jazz DNA",
-      "description": "Utah Jazz DNA — Note navy and yellow, mountain shadow. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-utah-jazz\"."
+      "description": "Utah Jazz DNA — Note navy and yellow, mountain shadow. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-utah-jazz\"."
     },
     {
       "name": "theme-vaporwave",
       "type": "registry:item",
       "title": "Vaporwave",
-      "description": "Vaporwave — purple/pink/cyan gradients, chrome text, 80s grid horizon — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-vaporwave\"."
+      "description": "Vaporwave — purple/pink/cyan gradients, chrome text, 80s grid horizon — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-vaporwave\"."
     },
     {
       "name": "theme-washington-commanders",
       "type": "registry:item",
       "title": "Washington Commanders DNA",
-      "description": "Washington Commanders DNA — Burgundy command, gold trim. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-washington-commanders\"."
+      "description": "Washington Commanders DNA — Burgundy command, gold trim. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-washington-commanders\"."
     },
     {
       "name": "theme-washington-wizards",
       "type": "registry:item",
       "title": "Washington Wizards DNA",
-      "description": "Washington Wizards DNA — DC navy, red and marble. — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-washington-wizards\"."
+      "description": "Washington Wizards DNA — DC navy, red and marble. — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-washington-wizards\"."
     },
     {
       "name": "theme-wes-anderson",
       "type": "registry:item",
       "title": "Wes Anderson",
-      "description": "Wes Anderson — symmetrical pastel worlds, precious typographic detail — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-wes-anderson\"."
+      "description": "Wes Anderson — symmetrical pastel worlds, precious typographic detail — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-wes-anderson\"."
     },
     {
       "name": "theme-whatsapp-dna",
       "type": "registry:item",
       "title": "WhatsApp DNA",
-      "description": "WhatsApp DNA — chat wallpaper beige, teal headers, bubble green, thumb-first — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-whatsapp-dna\"."
+      "description": "WhatsApp DNA — chat wallpaper beige, teal headers, bubble green, thumb-first — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-whatsapp-dna\"."
     },
     {
       "name": "theme-windows95-dna",
       "type": "registry:item",
       "title": "Windows 95 DNA",
-      "description": "Windows 95 DNA — silver bevels, navy title bars, teal desktop, hard pixels — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-windows95-dna\"."
+      "description": "Windows 95 DNA — silver bevels, navy title bars, teal desktop, hard pixels — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-windows95-dna\"."
     },
     {
       "name": "theme-x-dna",
       "type": "registry:item",
       "title": "X DNA",
-      "description": "X DNA — void black, ghost grays, one blue, ruthless density — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-x-dna\"."
+      "description": "X DNA — void black, ghost grays, one blue, ruthless density — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-x-dna\"."
     },
     {
       "name": "theme-xbox-dna",
       "type": "registry:item",
       "title": "Xbox DNA",
-      "description": "Xbox DNA — power green on carbon dark — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-xbox-dna\"."
+      "description": "Xbox DNA — power green on carbon dark — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-xbox-dna\"."
     },
     {
       "name": "theme-y2k",
       "type": "registry:item",
       "title": "Y2K",
-      "description": "Y2K — glossy chrome-blue, bubbly gradients, silver bevels, cyan glow — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-y2k\"."
+      "description": "Y2K — glossy chrome-blue, bubbly gradients, silver bevels, cyan glow — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-y2k\"."
     },
     {
       "name": "theme-youtube-dna",
       "type": "registry:item",
       "title": "YouTube DNA",
-      "description": "YouTube DNA — play red on white, thumbnail-first — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-youtube-dna\"."
+      "description": "YouTube DNA — play red on white, thumbnail-first — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-youtube-dna\"."
     }
   ]
 }

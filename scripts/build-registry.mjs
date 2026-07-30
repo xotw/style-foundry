@@ -160,18 +160,23 @@ const items = [];
 for (const slug of slugs) {
   const css = readFileSync(join(themesDir, `${slug}.css`), "utf8");
   const firstComment = css.match(/\/\*\s*(.+?)\s*\*\//)?.[1] ?? slug;
+  const fontsImport = fontImportFor(css);
+  const fontsHref = fontsImport ? fontsImport.match(/url\('([^']+)'\)/)?.[1] : null;
   const item = {
     $schema: "https://ui.shadcn.com/schema/registry-item.json",
     name: `theme-${slug}`,
     type: "registry:item",
+    docs: fontsHref
+      ? `FONTS (required): add to your HTML <head> — CSS @import breaks Vite/lightningcss. <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="${fontsHref}">. Then wrap your app root in class="theme-${slug}" (add sf-enforce if the app bakes font/shadow literals).`
+      : `System-font theme, nothing to load. Wrap your app root in class="theme-${slug}".`,
     title: firstComment.split("—")[0].trim(),
-    description: `${firstComment} — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-${slug}\".`,
+    description: `${firstComment} — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-${slug}\".`,
     files: [
       {
         path: `registry/themes/${slug}.css`,
         type: "registry:file",
         target: `~/styles/themes/${slug}.css`,
-        content: fontImportFor(css) + css + BRIDGE,
+        content: css + BRIDGE,
       },
     ],
   };

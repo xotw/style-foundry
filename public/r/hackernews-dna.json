@@ -2,8 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "theme-hackernews-dna",
   "type": "registry:item",
+  "docs": "System-font theme, nothing to load. Wrap your app root in class=\"theme-hackernews-dna\".",
   "title": "Hacker News DNA",
-  "description": "Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament — self-contained: fonts auto-imported, full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-hackernews-dna\".",
+  "description": "Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament — fonts via <link> (see docs), full app-variable bridge (shadcn + sidebar + charts + font/shadow scales). Wrap your app root in class \"theme-hackernews-dna\".",
   "files": [
     {
       "path": "registry/themes/hackernews-dna.css",
