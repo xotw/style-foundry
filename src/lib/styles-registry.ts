@@ -190,6 +190,34 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Abril Fatface / Outfit",
     swatch: ["oklch(0.55 0.24 330)", "oklch(0.95 0.14 95)", "oklch(0.72 0.2 200)"],
   },
+  {
+    slug: "figma-dna",
+    name: "Figma DNA",
+    tagline: "White canvas, five-color primary system, crisp 8px grid, precise.",
+    fontPairing: "Inter / Inter",
+    swatch: ["oklch(1 0 0)", "oklch(0.55 0.2 275)", "oklch(0.62 0.22 25)"],
+  },
+  {
+    slug: "arc-dna",
+    name: "Arc DNA",
+    tagline: "Pastel gradients, glass panels, bubbly corners, whimsical light depth.",
+    fontPairing: "Outfit / Inter",
+    swatch: ["oklch(0.96 0.03 320)", "oklch(0.62 0.19 340)", "oklch(0.68 0.15 240)"],
+  },
+  {
+    slug: "nike-dna",
+    name: "Nike DNA",
+    tagline: "Black and white, condensed uppercase display, hard edges, volt accent.",
+    fontPairing: "Bebas Neue / Archivo",
+    swatch: ["oklch(1 0 0)", "oklch(0.1 0 0)", "oklch(0.9 0.22 118)"],
+  },
+  {
+    slug: "braun-dna",
+    name: "Braun DNA",
+    tagline: "Warm gray functionalism, signal-orange dot, zero ornament, less but better.",
+    fontPairing: "Jost / Inter",
+    swatch: ["oklch(0.9 0.006 85)", "oklch(0.15 0.004 85)", "oklch(0.65 0.2 45)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);
