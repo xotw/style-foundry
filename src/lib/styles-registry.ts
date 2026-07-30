@@ -526,7 +526,7 @@ export const STYLES: StyleEntry[] = [
     slug: "linkedin-dna",
     name: "LinkedIn DNA",
     tagline: "Warm paper feed, white cards, professional blue.",
-    fontPairing: "Source Sans 3",
+    fontPairing: "System UI (product)",
     swatch: ["oklch(0.962 0.006 84.6)", "oklch(0.516 0.163 254.7)", "oklch(0.497 0.109 162.1)"],
   },
   {
