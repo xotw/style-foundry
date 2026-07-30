@@ -11,7 +11,7 @@
   --line: oklch(0.72 0.12 80 / 30%);
   --success: oklch(0.615 0.143 147.4);
   --warning: oklch(0.768 0.158 81.3);
-  --danger: oklch(0.827 0.170 83.1);
+  --danger: oklch(0.55 0.2 27);
   --radius: 0.25rem;
   --radius-sm: 0.25rem;
   --radius-lg: 0.5rem;
