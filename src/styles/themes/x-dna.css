@@ -61,7 +61,7 @@
 .theme-x-dna ::-webkit-scrollbar-thumb { background: oklch(0.35 0.008 240); border-radius: 5px; }
 .theme-x-dna .label-caps { color: var(--fg-muted); font-weight: 700; }
 .theme-x-dna .themed-border { border: 1px solid var(--line); border-radius: var(--radius-lg); }
-.theme-x-dna .themed-border:hover { background: oklch(1 0 0 / 3%); }
+.theme-x-dna div.themed-border:hover { background: oklch(1 0 0 / 3%); } /* div only: must not clobber chip/button fills */
 .theme-x-dna button:hover { opacity: 0.9; }
 .theme-x-dna button:active { transform: scale(0.97); }
 
@@ -80,6 +80,6 @@
   --accent-fg: oklch(1 0 0);
 }
 .theme-x-dna.alt-mode tbody tr:hover { background: oklch(0 0 0 / 4%); }
-.theme-x-dna.alt-mode .themed-border:hover { background: oklch(0 0 0 / 4%); }
+.theme-x-dna.alt-mode div.themed-border:hover { background: oklch(0 0 0 / 4%); }
 .theme-x-dna.alt-mode ::selection { background: oklch(0.85 0.07 245); }
 .theme-x-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.75 0.005 240); }

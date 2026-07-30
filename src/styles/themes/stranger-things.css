@@ -44,6 +44,34 @@
 /* signature */
 .theme-stranger-things { background-image: radial-gradient(ellipse at 50% 120%, oklch(0.35 0.16 25 / 30%), transparent 60%); }
 .theme-stranger-things h1, .theme-stranger-things h2 { text-transform: uppercase; color: var(--accent); text-shadow: 0 0 14px color-mix(in oklab, var(--accent) 70%, transparent), 0 0 40px color-mix(in oklab, var(--accent) 40%, transparent); }
-.theme-stranger-things h1 { -webkit-text-stroke: 1px var(--accent); color: transparent; }
+.theme-stranger-things h1 { -webkit-text-stroke: 1.5px oklch(0.68 0.24 27); color: transparent; }
 .theme-stranger-things button { text-transform: uppercase; letter-spacing: 0.16em; }
+
+/* alt-mode — Hawkins daylight: 80s cream, wallpaper + christmas-light dots */
+.theme-stranger-things.alt-mode {
+  --bg: oklch(0.955 0.018 85.0);
+  --surface: oklch(0.978 0.012 85.0);
+  --surface-2: oklch(0.925 0.022 83.0);
+  --fg: oklch(0.245 0.030 280.0);
+  --fg-muted: oklch(0.480 0.030 285.0);
+  --accent: oklch(0.540 0.220 27.0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.520 0.140 259.7);
+  --line: oklch(0.540 0.160 27.0 / 30%);
+  --success: oklch(0.520 0.130 155.0);
+  --warning: oklch(0.640 0.140 75.0);
+  --danger: oklch(0.520 0.210 27.0);
+  --shadow-1: 0 1px 3px oklch(0.3 0.05 60 / 15%);
+  --shadow-2: 0 6px 18px oklch(0.3 0.05 60 / 18%);
+  --shadow-3: 0 18px 44px oklch(0.3 0.05 60 / 22%);
+  --glow: 0 0 14px color-mix(in oklab, var(--accent) 30%, transparent);
+  background-image:
+    radial-gradient(circle 3px at 12% 8%, oklch(0.65 0.22 27 / 45%) 0 3px, transparent 3px),
+    radial-gradient(circle 3px at 34% 5%, oklch(0.72 0.16 110 / 45%) 0 3px, transparent 3px),
+    radial-gradient(circle 3px at 58% 9%, oklch(0.65 0.14 260 / 45%) 0 3px, transparent 3px),
+    radial-gradient(circle 3px at 80% 6%, oklch(0.78 0.15 85 / 50%) 0 3px, transparent 3px),
+    repeating-linear-gradient(90deg, oklch(0.60 0.10 60 / 4%) 0 2px, transparent 2px 56px);
+}
+.theme-stranger-things.alt-mode h1 { -webkit-text-stroke: 0px transparent; color: var(--accent); text-shadow: 1px 1px 0 oklch(0.85 0.06 60), 0 0 18px color-mix(in oklab, var(--accent) 25%, transparent); }
+.theme-stranger-things.alt-mode h2 { color: var(--accent); text-shadow: none; }
 

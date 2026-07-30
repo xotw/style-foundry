@@ -86,3 +86,9 @@
   background-image: repeating-linear-gradient(45deg, oklch(0.3 0.07 265 / 40%) 0 40px, transparent 40px 80px), repeating-linear-gradient(-45deg, oklch(0.85 0.14 95 / 5%) 0 24px, transparent 24px 72px);
 }
 .theme-arsenal.alt-mode h1, .theme-arsenal.alt-mode h2 { color: #f0c93c; border-color: #f0c93c; }
+.theme-arsenal.alt-mode thead th { color: var(--accent-fg); }
+.theme-arsenal.alt-mode a:hover { color: var(--accent); text-decoration-color: oklch(1 0 0 / 70%); }
+.theme-arsenal.alt-mode button:hover { background: oklch(0.944 0.028 95.9); color: oklch(0.193 0.062 265.4); box-shadow: inset 0 0 0 2px oklch(0.193 0.062 265.4); }
+.theme-arsenal.alt-mode kbd { background: var(--accent); color: var(--accent-fg); border-color: var(--accent-fg); }
+.theme-arsenal.alt-mode ::-webkit-scrollbar-thumb:hover { background: var(--fg); }
+.theme-arsenal.alt-mode tbody tr:hover { background: oklch(0.846 0.156 92.7 / 10%); }

@@ -57,6 +57,6 @@
   --fg: oklch(0.2 0.005 260); --fg-muted: oklch(0.45 0.005 260); --line: oklch(0.89 0.003 260);
   --accent: oklch(0.699 0.121 238.2); --accent-fg: oklch(1.000 0 0);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%); --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%); --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  background-image: repeating-linear-gradient(90deg, oklch(0.3 0.05 250 / 4%) 0 2px, transparent 2px 42px);
 }
-.theme-orlando-magic.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: oklch(0.699 0.121 238.2); }
+.theme-orlando-magic.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: oklch(0.55 0.13 238.2); }

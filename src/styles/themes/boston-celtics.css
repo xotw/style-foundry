@@ -87,3 +87,10 @@
   background-image: none;
 }
 .theme-boston-celtics.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #007a33; -webkit-text-stroke: 0; }
+.theme-boston-celtics.alt-mode input, .theme-boston-celtics.alt-mode select, .theme-boston-celtics.alt-mode textarea { background: #ffffff; border-color: var(--line); color: var(--fg); }
+.theme-boston-celtics.alt-mode a { color: oklch(0.45 0.13 150); }
+.theme-boston-celtics.alt-mode a:hover { color: oklch(0.35 0.13 150); }
+.theme-boston-celtics.alt-mode kbd { background: oklch(0.95 0.01 168); color: oklch(0.45 0.1 82); }
+.theme-boston-celtics.alt-mode ::-webkit-scrollbar-track { background: oklch(0.95 0 0); }
+.theme-boston-celtics.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.55 0.11 150); border-color: oklch(0.95 0 0); }
+.theme-boston-celtics.alt-mode .label-caps { color: oklch(0.55 0.1 82); }

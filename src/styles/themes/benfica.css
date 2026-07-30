@@ -71,18 +71,27 @@
 
 /* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-benfica.alt-mode {
-  --bg: oklch(0.991 0.003 84.6);
-  --surface: oklch(1.000 0 0);
-  --surface-2: oklch(0.956 0.009 84.6);
-  --fg: oklch(0.256 0 0);
-  --fg-muted: oklch(0.548 0.017 80.7);
-  --accent: oklch(0.513 0.211 29.2);
+  --bg: oklch(0.188 0.012 40.0);
+  --surface: oklch(0.228 0.014 42.0);
+  --surface-2: oklch(0.272 0.016 44.0);
+  --fg: oklch(0.952 0.010 78.0);
+  --fg-muted: oklch(0.690 0.025 62.0);
+  --accent: oklch(0.610 0.210 29.2);
   --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.663 0.120 80.3);
-  --line: oklch(0.914 0.014 84.6);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: radial-gradient(circle at 20% 30%, oklch(0.5 0.19 25 / 5%) 0 6px, transparent 6px), radial-gradient(circle at 70% 60%, oklch(0.5 0.19 25 / 4%) 0 5px, transparent 5px), radial-gradient(circle at 45% 85%, oklch(0.5 0.19 25 / 4%) 0 4px, transparent 4px);
+  --accent-2: oklch(0.760 0.130 82.0);
+  --line: oklch(0.76 0.05 70 / 22%);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  background-image: radial-gradient(circle at 20% 30%, oklch(0.76 0.13 82 / 6%) 0 6px, transparent 6px), radial-gradient(circle at 70% 60%, oklch(0.76 0.13 82 / 5%) 0 5px, transparent 5px), radial-gradient(circle at 45% 85%, oklch(0.76 0.13 82 / 5%) 0 4px, transparent 4px);
   background-size: 240px 240px;
+  border-top-color: var(--accent-2);
 }
+.theme-benfica.alt-mode h1 { color: var(--accent-2); }
+.theme-benfica.alt-mode thead th { color: var(--accent-2); border-bottom-color: var(--accent-2); }
+.theme-benfica.alt-mode a { color: var(--accent-2); text-decoration-color: oklch(0.61 0.21 29.2 / 60%); }
+.theme-benfica.alt-mode a:hover { text-decoration-color: var(--accent); }
+.theme-benfica.alt-mode kbd { background: var(--surface-2); border-color: var(--line); border-bottom-color: var(--accent-2); color: var(--accent-2); }
+.theme-benfica.alt-mode input, .theme-benfica.alt-mode select, .theme-benfica.alt-mode textarea { background: oklch(0.165 0.010 40); border-color: var(--line); color: var(--fg); }
+.theme-benfica.alt-mode .label-caps { color: var(--accent-2); }
+.theme-benfica.alt-mode tbody tr:hover { background: oklch(0.76 0.13 82 / 8%); }

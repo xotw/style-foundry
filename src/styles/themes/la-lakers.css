@@ -87,3 +87,8 @@
   background-image: none;
 }
 .theme-la-lakers.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #552583; -webkit-text-stroke: 0; }
+.theme-la-lakers.alt-mode thead th { color: oklch(0.828 0.163 80.2); background: oklch(0.34 0.14 303); border-bottom-color: oklch(0.828 0.163 80.2); }
+.theme-la-lakers.alt-mode input, .theme-la-lakers.alt-mode select, .theme-la-lakers.alt-mode textarea { background: oklch(1 0 0); border-color: var(--line); }
+.theme-la-lakers.alt-mode ::-webkit-scrollbar-track { background: oklch(0.95 0.005 286); }
+.theme-la-lakers.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.62 0.12 303); border-color: oklch(0.95 0.005 286); }
+.theme-la-lakers.alt-mode tbody tr:hover { background: oklch(0.384 0.150 303.3 / 7%); }

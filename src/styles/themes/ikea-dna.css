@@ -79,3 +79,4 @@
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-ikea-dna.alt-mode h2 { color: oklch(0.185 0.045 252.7); }

@@ -87,3 +87,8 @@
   background-image: none;
 }
 .theme-chicago-bulls.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #ce1141; -webkit-text-stroke: 0; }
+.theme-chicago-bulls.alt-mode input, .theme-chicago-bulls.alt-mode select, .theme-chicago-bulls.alt-mode textarea { background: #ffffff; border-color: var(--line); color: var(--fg); }
+.theme-chicago-bulls.alt-mode thead th { background: oklch(0.165 0.006 18); color: oklch(0.88 0.005 18); }
+.theme-chicago-bulls.alt-mode ::-webkit-scrollbar-track { background: oklch(0.95 0 0); }
+.theme-chicago-bulls.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.95 0 0); }
+.theme-chicago-bulls.alt-mode .label-caps { color: oklch(0.5 0.19 18); }

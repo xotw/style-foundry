@@ -71,17 +71,24 @@
 
 /* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-lazio.alt-mode {
-  --bg: oklch(1.000 0 0);
-  --surface: oklch(0.993 0.003 247.9);
-  --surface-2: oklch(0.967 0.011 243.7);
-  --fg: oklch(0.303 0.057 251.0);
-  --fg-muted: oklch(0.563 0.040 247.3);
-  --accent: oklch(0.648 0.119 240.7);
-  --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.338 0.078 250.4);
-  --line: oklch(0.925 0.019 243.0);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: repeating-linear-gradient(60deg, oklch(0.8 0.07 230 / 12%) 0 3px, transparent 3px 34px, oklch(0.35 0.07 250 / 10%) 34px 37px, transparent 37px 68px);
+  --bg: oklch(0.225 0.050 250.0);
+  --surface: oklch(0.268 0.055 249.0);
+  --surface-2: oklch(0.315 0.060 247.5);
+  --fg: oklch(0.955 0.013 236.0);
+  --fg-muted: oklch(0.700 0.045 240.0);
+  --accent: oklch(0.730 0.115 236.0);
+  --accent-fg: oklch(0.210 0.050 250.0);
+  --accent-2: oklch(0.780 0.125 87.0);
+  --line: oklch(0.72 0.07 240 / 28%);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 40%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 50%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 60%);
+  background-image: repeating-linear-gradient(60deg, oklch(0.85 0.08 232 / 6%) 0 3px, transparent 3px 34px, oklch(0.80 0.12 87 / 5%) 34px 37px, transparent 37px 68px);
 }
+.theme-lazio.alt-mode thead th { color: var(--accent); }
+.theme-lazio.alt-mode a { color: var(--accent); }
+.theme-lazio.alt-mode .label-caps { color: var(--accent); }
+.theme-lazio.alt-mode kbd { background: var(--surface-2); color: var(--accent); border-color: var(--line); }
+.theme-lazio.alt-mode input, .theme-lazio.alt-mode select, .theme-lazio.alt-mode textarea { background: oklch(0.195 0.048 250); border-color: var(--line); color: var(--fg); }
+.theme-lazio.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.80 0.11 235); }
+.theme-lazio.alt-mode ::selection { background: var(--accent); color: var(--accent-fg); }

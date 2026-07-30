@@ -69,6 +69,12 @@
 .theme-hackernews-dna button { font-family: var(--font-body); font-size: 13px; background: var(--surface-2); border: 1px solid var(--fg-muted); color: var(--fg); }
 .theme-hackernews-dna hr { border: none; border-top: 1px solid var(--line); }
 
+/* status chips: light tinted tags need dark ink (web-1.0 flat tags) */
+.theme-hackernews-dna span.bg-danger { color: oklch(0.45 0.14 25); }
+.theme-hackernews-dna span.bg-success { color: oklch(0.38 0.1 144); }
+.theme-hackernews-dna span.bg-accent { color: oklch(0.5 0.17 43); }
+.theme-hackernews-dna nav span.bg-accent { color: var(--accent-fg); }
+
 /* alt mode: terminal-orange dark — beige inverted, top bar still #ff6600 */
 .theme-hackernews-dna.alt-mode {
   --bg: oklch(0.185 0.012 106.6);
@@ -82,6 +88,11 @@
   --shadow-3: none;
 }
 .theme-hackernews-dna.alt-mode tbody tr:hover td { background: oklch(0.28 0.014 106.6); }
+.theme-hackernews-dna.alt-mode span.bg-danger { color: oklch(0.82 0.09 25); }
+.theme-hackernews-dna.alt-mode span.bg-success { color: oklch(0.82 0.09 144); }
+.theme-hackernews-dna.alt-mode span.bg-accent { color: oklch(0.83 0.11 55); }
+.theme-hackernews-dna.alt-mode span.bg-warning { color: oklch(0.84 0.09 85); }
+.theme-hackernews-dna.alt-mode nav span.bg-accent { color: var(--accent-fg); }
 .theme-hackernews-dna.alt-mode input, .theme-hackernews-dna.alt-mode textarea, .theme-hackernews-dna.alt-mode select { background: oklch(0.14 0.01 106.6); color: var(--fg); border-color: var(--fg-muted); }
 .theme-hackernews-dna.alt-mode a { color: var(--fg); }
 .theme-hackernews-dna.alt-mode a:visited { color: var(--fg-muted); }

@@ -81,3 +81,6 @@
 }
 .theme-millennium-falcon.alt-mode h1, .theme-millennium-falcon.alt-mode h2 { color: oklch(0.5 0.17 30); text-shadow: none; }
 .theme-millennium-falcon.alt-mode h1::after { border-color: oklch(0.5 0.17 30); background: repeating-linear-gradient(90deg, oklch(0.5 0.17 30 / 35%) 0 6px, transparent 6px 12px); }
+.theme-millennium-falcon.alt-mode td { border-bottom-color: oklch(0.5 0.17 30 / 30%); }
+.theme-millennium-falcon.alt-mode tbody tr:hover { background: oklch(0.5 0.17 30 / 8%); }
+.theme-millennium-falcon.alt-mode th { border-bottom-color: oklch(0.5 0.17 30); }

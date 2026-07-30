@@ -82,4 +82,7 @@
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
 .theme-real-madrid-dna.alt-mode h1 { color: #f2efe4; }
+.theme-real-madrid-dna.alt-mode tbody tr:hover { background: oklch(0.362 0.056 166.3); }
+.theme-real-madrid-dna.alt-mode kbd { background: var(--surface-2); color: var(--fg); }
+.theme-real-madrid-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.5 0.06 160); }
 .theme-real-madrid-dna.alt-mode .label-caps { color: #c7a24a; }

@@ -7,7 +7,7 @@
   --fg-muted: oklch(0.438 0.088 101.8);
   --accent: oklch(0.178 0 0);
   --accent-fg: oklch(0.891 0.183 96.2);
-  --accent-2: oklch(1.000 0 0);
+  --accent-2: oklch(0.420 0.010 270.0);
   --line: oklch(0.178 0 0);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
@@ -86,5 +86,11 @@
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
   background-image: repeating-linear-gradient(135deg, oklch(0.3 0.005 260 / 60%) 0 6px, transparent 6px 12px, oklch(0.25 0.005 260 / 40%) 12px 30px, transparent 30px 60px);
 }
+.theme-dortmund.alt-mode input, .theme-dortmund.alt-mode select, .theme-dortmund.alt-mode textarea { background: oklch(0.185 0.005 271); border-color: oklch(0.891 0.183 96.2); color: var(--fg); }
+.theme-dortmund.alt-mode input:focus-visible, .theme-dortmund.alt-mode select:focus-visible, .theme-dortmund.alt-mode textarea:focus-visible { outline-color: oklch(0.891 0.183 96.2); }
+.theme-dortmund.alt-mode td { border-bottom-color: oklch(1 0 0 / 15%); }
+.theme-dortmund.alt-mode tbody tr:hover { background: oklch(1 0 0 / 7%); }
+.theme-dortmund.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.891 0.183 96.2); }
+.theme-dortmund.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.95 0.16 98); }
 .theme-dortmund.alt-mode h1 { -webkit-text-stroke: 0; color: #ffd900; }
 .theme-dortmund.alt-mode h2, .theme-dortmund.alt-mode h3 { color: #ffd900; }

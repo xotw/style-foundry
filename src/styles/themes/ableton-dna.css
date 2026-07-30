@@ -83,3 +83,6 @@
 .theme-ableton-dna.alt-mode input, .theme-ableton-dna.alt-mode select, .theme-ableton-dna.alt-mode textarea { background: var(--surface); border-color: var(--fg); }
 .theme-ableton-dna.alt-mode .label-caps { background: var(--fg); color: var(--bg); }
 .theme-ableton-dna.alt-mode ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-ableton-dna.alt-mode thead th { color: oklch(0.145 0 0); }
+.theme-ableton-dna.alt-mode a:hover { color: oklch(0.145 0 0); }
+.theme-ableton-dna.alt-mode ::selection { background: var(--warning); color: oklch(0.145 0 0); }

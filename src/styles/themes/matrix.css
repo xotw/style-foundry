@@ -47,3 +47,27 @@
 .theme-matrix h1::after { content: "▌"; animation: sf-blink 1s steps(1) infinite; margin-left: 0.1em; }
 .theme-matrix ::selection { background: var(--accent); color: #020803; }
 
+/* alt-mode — the Construct: infinite white loading program, green code as ink */
+.theme-matrix.alt-mode {
+  --bg: oklch(0.985 0.004 150.0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.950 0.012 152.0);
+  --fg: oklch(0.250 0.040 152.0);
+  --fg-muted: oklch(0.500 0.055 152.0);
+  --accent: oklch(0.480 0.150 148.0);
+  --accent-fg: oklch(0.990 0.005 150.0);
+  --accent-2: oklch(0.400 0.100 152.0);
+  --line: oklch(0.45 0.12 148 / 30%);
+  --success: oklch(0.480 0.150 148.0);
+  --warning: oklch(0.620 0.140 80.0);
+  --danger: oklch(0.520 0.200 27.0);
+  --shadow-1: 0 1px 3px oklch(0.4 0.05 150 / 12%);
+  --shadow-2: 0 8px 24px oklch(0.4 0.05 150 / 14%);
+  --shadow-3: 0 24px 56px oklch(0.4 0.05 150 / 18%);
+  --glow: 0 0 12px color-mix(in oklab, var(--accent) 30%, transparent);
+  background-image:
+    repeating-linear-gradient(90deg, oklch(0.5 0.1 150 / 3%) 0 1px, transparent 1px 48px),
+    repeating-linear-gradient(0deg, oklch(0.5 0.1 150 / 3%) 0 1px, transparent 1px 48px);
+}
+.theme-matrix.alt-mode h1, .theme-matrix.alt-mode h2 { color: var(--accent); text-shadow: none; }
+

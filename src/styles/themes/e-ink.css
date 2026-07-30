@@ -89,6 +89,8 @@
   --accent-fg: oklch(0.145 0.002 90);
   --accent-2: oklch(0.68 0.17 30);
   --danger: oklch(0.68 0.17 30);
+  --success: oklch(0.8 0 0);
+  --warning: oklch(0.66 0 0);
   --line: oklch(0.97 0.005 90 / 35%);
   --shadow-1: none;
   --shadow-2: none;

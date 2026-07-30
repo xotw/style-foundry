@@ -47,3 +47,27 @@
 .theme-dune h2 { border-bottom: 1px solid var(--fg); display: inline-block; padding-bottom: 0.3em; }
 .theme-dune button { letter-spacing: 0.24em; text-transform: uppercase; }
 
+/* alt-mode — Arrakis night: deep desert dark, spice ember accent, Eyes of Ibad blue */
+.theme-dune.alt-mode {
+  --bg: oklch(0.185 0.022 60.0);
+  --surface: oklch(0.230 0.026 62.0);
+  --surface-2: oklch(0.280 0.032 64.0);
+  --fg: oklch(0.900 0.035 82.0);
+  --fg-muted: oklch(0.640 0.040 74.0);
+  --accent: oklch(0.700 0.140 60.0);
+  --accent-fg: oklch(0.160 0.020 60.0);
+  --accent-2: oklch(0.680 0.110 240.0);
+  --line: oklch(0.75 0.06 75 / 25%);
+  --success: oklch(0.680 0.090 128.0);
+  --warning: oklch(0.760 0.130 78.0);
+  --danger: oklch(0.620 0.170 36.0);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 40%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 50%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 60%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 55%, transparent);
+  background-image:
+    linear-gradient(180deg, transparent 55%, oklch(0.28 0.05 55 / 45%)),
+    radial-gradient(ellipse at 75% 8%, oklch(0.40 0.08 60 / 35%), transparent 45%);
+}
+.theme-dune.alt-mode h2 { border-bottom-color: var(--accent); }
+

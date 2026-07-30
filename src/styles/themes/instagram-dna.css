@@ -59,7 +59,7 @@
 .theme-instagram-dna ::-webkit-scrollbar-track { background: transparent; }
 .theme-instagram-dna ::-webkit-scrollbar-thumb { background: oklch(0.8 0 0); border-radius: 4px; }
 .theme-instagram-dna .label-caps { background: linear-gradient(45deg, #ee2a7b, #6228d7); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700; }
-.theme-instagram-dna .themed-border { border: 2px solid transparent; background: linear-gradient(var(--surface), var(--surface)) padding-box, linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7) border-box; } /* story ring */
+.theme-instagram-dna div.themed-border { border: 2px solid transparent; background: linear-gradient(var(--surface), var(--surface)) padding-box, linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7) border-box; } /* story ring — div only: must not clobber chip/button fills */
 .theme-instagram-dna button:active { transform: scale(0.96); } /* double-tap */
 
 /* alt mode: Instagram dark — true black gallery, hairlines only */

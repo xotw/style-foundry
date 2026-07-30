@@ -86,3 +86,8 @@
   background-size: 100% 420px, 16% 420px; background-repeat: no-repeat; background-position: top center, top center;
 }
 .theme-psg.alt-mode h1, .theme-psg.alt-mode h2 { color: #10214b; }
+.theme-psg.alt-mode kbd { background: var(--surface-2); border-color: var(--line); color: var(--fg); }
+.theme-psg.alt-mode a:hover { text-decoration-color: var(--accent); }
+.theme-psg.alt-mode tbody tr:hover { background: oklch(0.3 0.08 265 / 6%); }
+.theme-psg.alt-mode ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-psg.alt-mode ::-webkit-scrollbar-thumb { border-color: var(--surface-2); }

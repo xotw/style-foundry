@@ -85,3 +85,8 @@
   background-image: repeating-radial-gradient(circle at 30% 20%, oklch(0.5 0.08 230 / 7%) 0 2px, transparent 2px 46px);
 }
 .theme-marseille.alt-mode h2::before { color: #d4af37; }
+.theme-marseille.alt-mode thead th { color: var(--accent); }
+.theme-marseille.alt-mode a { color: var(--accent); }
+.theme-marseille.alt-mode kbd { color: var(--fg); }
+.theme-marseille.alt-mode .label-caps { color: var(--accent); }
+.theme-marseille.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.85 0.09 230); }

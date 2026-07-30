@@ -85,6 +85,12 @@
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
 }
+.theme-roma.alt-mode input, .theme-roma.alt-mode select, .theme-roma.alt-mode textarea { background: oklch(0.975 0.015 89); border-color: var(--line); color: var(--fg); }
+.theme-roma.alt-mode kbd { background: oklch(0.885 0.033 87); color: #990a2c; box-shadow: inset 0 2px 3px oklch(0 0 0 / 12%); }
+.theme-roma.alt-mode tbody tr:hover { background: oklch(0.905 0.032 87); }
+.theme-roma.alt-mode ::-webkit-scrollbar-track { background: oklch(0.905 0.030 87); }
+.theme-roma.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.55 0.14 20); border-color: oklch(0.905 0.030 87); }
+.theme-roma.alt-mode ::selection { background: oklch(0.437 0.169 17.9); color: oklch(0.959 0.021 88.7); }
 .theme-roma.alt-mode h1 { color: #990a2c; }
 .theme-roma.alt-mode h1::after { border: none; height: 10px; background: linear-gradient(180deg, #990a2c 0 70%, #fbba00 70% 100%); }
 .theme-roma.alt-mode h2::before { color: #990a2c; }

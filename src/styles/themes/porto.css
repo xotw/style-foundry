@@ -87,5 +87,13 @@
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
   background-image: repeating-linear-gradient(0deg, oklch(0.35 0.09 15 / 30%) 0 2px, transparent 2px 28px);
 }
+.theme-porto.alt-mode thead th { background: var(--accent); color: var(--accent-fg); }
+.theme-porto.alt-mode kbd { background: var(--surface-2); border-color: var(--line); border-bottom-color: var(--accent-2); color: var(--accent); }
+.theme-porto.alt-mode ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-porto.alt-mode tbody tr:nth-child(even) { background: oklch(1 0 0 / 4%); }
+.theme-porto.alt-mode tbody tr:hover { background: oklch(1 0 0 / 8%); }
+.theme-porto.alt-mode input, .theme-porto.alt-mode select, .theme-porto.alt-mode textarea { background: oklch(0.27 0.095 14); border-color: var(--line); color: var(--fg); }
+.theme-porto.alt-mode input:focus-visible, .theme-porto.alt-mode select:focus-visible, .theme-porto.alt-mode textarea:focus-visible { outline-color: var(--accent-2); }
+.theme-porto.alt-mode .themed-border { border-image: repeating-linear-gradient(90deg, oklch(0.746 0.143 87.5) 0 10px, oklch(0.385 0.115 12.1) 10px 20px) 1; }
 .theme-porto.alt-mode h1 { color: #e8d5b5; }
 .theme-porto.alt-mode h1::after { background: #d3a625; }

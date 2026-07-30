@@ -60,7 +60,7 @@
 .theme-discord-dna ::-webkit-scrollbar-track { background: var(--surface-2); border-radius: 4px; }
 .theme-discord-dna ::-webkit-scrollbar-thumb { background: oklch(0.17 0.008 268); border-radius: 4px; }
 .theme-discord-dna .label-caps { color: var(--fg-muted); font-weight: 700; }
-.theme-discord-dna .themed-border { border-left: 4px solid var(--accent); background: color-mix(in oklab, var(--accent) 8%, transparent); }
+.theme-discord-dna div.themed-border { border-left: 4px solid var(--accent); background: color-mix(in oklab, var(--accent) 8%, transparent); } /* div only: must not clobber chip/button fills */
 .theme-discord-dna button:active { transform: translateY(1px); }
 
 /* alt mode: Discord light — white chat panel, gray chrome, blurple intact */

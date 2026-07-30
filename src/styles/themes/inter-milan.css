@@ -86,3 +86,8 @@
   background-image: repeating-linear-gradient(90deg, oklch(0.35 0.09 265 / 10%) 0 2px, transparent 2px 26px);
 }
 .theme-inter-milan.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #1e3f8f; }
+.theme-inter-milan.alt-mode input, .theme-inter-milan.alt-mode select, .theme-inter-milan.alt-mode textarea { background: oklch(1 0 0); border: 1px solid var(--line); }
+.theme-inter-milan.alt-mode kbd { background: var(--surface-2); color: var(--fg); }
+.theme-inter-milan.alt-mode a { color: var(--accent); }
+.theme-inter-milan.alt-mode ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-inter-milan.alt-mode ::-webkit-scrollbar-thumb { border-color: var(--surface-2); }

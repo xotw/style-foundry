@@ -94,7 +94,7 @@
   background-image: repeating-linear-gradient(90deg, oklch(0.55 0.25 340 / 6%) 0 1px, transparent 1px 5rem);
 }
 .theme-cyberpunk.alt-mode h1 { text-shadow: 2px 0 oklch(0.55 0.25 340 / 80%), -2px 0 oklch(0.55 0.14 200 / 60%); }
-.theme-cyberpunk.alt-mode a { color: var(--accent-2); } /* acid yellow illegible on paper — links go magenta */
+.theme-cyberpunk.alt-mode a, .theme-cyberpunk.alt-mode .text-accent { color: var(--accent-2); } /* acid yellow illegible on paper — accent text goes magenta */
 .theme-cyberpunk.alt-mode a:hover { color: var(--fg); }
 .theme-cyberpunk.alt-mode td { border-bottom-color: oklch(0.17 0.02 290 / 12%); }
 .theme-cyberpunk.alt-mode tbody tr:hover { background: oklch(0.55 0.25 340 / 8%); }

@@ -92,6 +92,7 @@
   --accent-fg: oklch(0.145 0.008 95);
   --accent-2: oklch(0.62 0.17 25);
   --danger: oklch(0.62 0.17 25);
+  --success: oklch(0.6 0.12 150);
   background-image: radial-gradient(oklch(0.97 0.005 90 / 4%) 1px, transparent 1px);
   background-size: 4px 4px;
 }

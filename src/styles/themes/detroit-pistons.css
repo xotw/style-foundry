@@ -88,3 +88,8 @@
   background-image: none;
 }
 .theme-detroit-pistons.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #c8102e; -webkit-text-stroke: 0; }
+.theme-detroit-pistons.alt-mode thead th { color: oklch(0.92 0.02 250); border-bottom-color: var(--accent); }
+.theme-detroit-pistons.alt-mode input, .theme-detroit-pistons.alt-mode select, .theme-detroit-pistons.alt-mode textarea { background: #ffffff; border-color: var(--line); color: var(--fg); }
+.theme-detroit-pistons.alt-mode a { color: oklch(0.45 0.16 265); }
+.theme-detroit-pistons.alt-mode a:hover { color: oklch(0.35 0.16 265); }
+.theme-detroit-pistons.alt-mode ::-webkit-scrollbar-track { background: oklch(0.95 0 0); }

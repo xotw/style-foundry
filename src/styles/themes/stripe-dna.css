@@ -83,6 +83,8 @@
 .theme-stripe-dna ::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--fg-muted) 35%, transparent); border-radius: var(--radius-pill); }
 .theme-stripe-dna .label-caps { color: var(--fg-muted); font-weight: 600; }
 .theme-stripe-dna .themed-border { background-image: linear-gradient(95deg, #533afd, #fb76fa 55%, #ff6118); background-size: 100% 3px; background-repeat: no-repeat; background-position: top; }
+.theme-stripe-dna button[role="tab"] { background-image: none; }
+.theme-stripe-dna button[role="tab"][data-state="active"] { background-image: linear-gradient(95deg, var(--accent), color-mix(in oklab, var(--accent) 60%, #fb76fa)); color: var(--accent-fg); }
 .theme-stripe-dna button { transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease; }
 .theme-stripe-dna button:hover { filter: brightness(1.06); box-shadow: var(--shadow-2); }
 .theme-stripe-dna button:active { transform: translateY(1px); filter: brightness(0.97); }

@@ -87,3 +87,8 @@
   background-image: none;
 }
 .theme-new-york-knicks.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #006bb6; -webkit-text-stroke: 0; }
+.theme-new-york-knicks.alt-mode input, .theme-new-york-knicks.alt-mode select, .theme-new-york-knicks.alt-mode textarea { background: #ffffff; border-color: var(--line); color: var(--fg); }
+.theme-new-york-knicks.alt-mode a:hover { color: oklch(0.35 0.13 249); }
+.theme-new-york-knicks.alt-mode thead th { color: oklch(0.85 0.02 257); }
+.theme-new-york-knicks.alt-mode ::-webkit-scrollbar-track { background: oklch(0.95 0 0); }
+.theme-new-york-knicks.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.95 0 0); }

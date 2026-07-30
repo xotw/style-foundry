@@ -88,3 +88,8 @@
 .theme-ac-milan.alt-mode { background-image: none; }
 .theme-ac-milan.alt-mode h1::after { background: #c9a24b; }
 .theme-ac-milan.alt-mode h1 { color: #191510; }
+.theme-ac-milan.alt-mode input, .theme-ac-milan.alt-mode select, .theme-ac-milan.alt-mode textarea { background: oklch(1 0 0); border: 1px solid var(--line); }
+.theme-ac-milan.alt-mode kbd { background: var(--surface-2); color: var(--fg); }
+.theme-ac-milan.alt-mode a { color: oklch(0.50 0.20 27); }
+.theme-ac-milan.alt-mode ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-ac-milan.alt-mode ::-webkit-scrollbar-thumb { border-color: var(--surface-2); }

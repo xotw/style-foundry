@@ -88,3 +88,10 @@
   background-image: none;
 }
 .theme-golden-state-warriors.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #1d428a; -webkit-text-stroke: 0; }
+.theme-golden-state-warriors.alt-mode thead th { color: oklch(0.857 0.165 86.5); background: oklch(0.30 0.10 262); border-bottom-color: oklch(0.857 0.165 86.5); }
+.theme-golden-state-warriors.alt-mode input, .theme-golden-state-warriors.alt-mode select, .theme-golden-state-warriors.alt-mode textarea { background: oklch(1 0 0); border-color: var(--line); }
+.theme-golden-state-warriors.alt-mode kbd { background: oklch(1 0 0); color: oklch(0.396 0.128 261.9); border-color: oklch(0.396 0.128 261.9); }
+.theme-golden-state-warriors.alt-mode ::-webkit-scrollbar-track { background: oklch(0.95 0.005 286); }
+.theme-golden-state-warriors.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.55 0.11 262); border-color: oklch(0.95 0.005 286); }
+.theme-golden-state-warriors.alt-mode tbody tr:hover { background: oklch(0.396 0.128 261.9 / 7%); }
+.theme-golden-state-warriors.alt-mode .themed-border { background-image: repeating-linear-gradient(90deg, oklch(0.268 0.088 262 / 5%) 0 1px, transparent 1px 16px); }

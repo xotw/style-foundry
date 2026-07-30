@@ -44,7 +44,8 @@
 /* signature */
 .theme-reddit-dna { --font-ui: var(--font-display); }
 .theme-reddit-dna h1 { font-weight: 800; }
-.theme-reddit-dna button:hover { background: color-mix(in oklab, var(--accent) 88%, black); }
+.theme-reddit-dna button.bg-accent:hover { background: color-mix(in oklab, var(--accent) 88%, black); } /* primary only — must not repaint secondary/ghost buttons */
+.theme-reddit-dna span.bg-success { color: oklch(0.22 0.05 146); } /* light upvote green needs dark text */
 .theme-reddit-dna .label-caps { text-transform: lowercase; letter-spacing: 0.02em; }
 
 /* depth */

@@ -64,7 +64,8 @@
 .theme-whatsapp-dna ::-webkit-scrollbar-track { background: transparent; }
 .theme-whatsapp-dna ::-webkit-scrollbar-thumb { background: oklch(0.75 0.02 84); border-radius: 4px; }
 .theme-whatsapp-dna .label-caps { color: var(--accent); font-weight: 700; }
-.theme-whatsapp-dna .themed-border { background: oklch(0.93 0.055 150 / 60%); border-radius: var(--radius-lg); border-bottom-right-radius: 0.25rem; } /* sent-bubble */
+.theme-whatsapp-dna div.themed-border { background: oklch(0.93 0.055 150 / 60%); border-radius: var(--radius-lg); border-bottom-right-radius: 0.25rem; } /* sent-bubble — div only: must not clobber chip/button fills */
+.theme-whatsapp-dna span.bg-success { color: oklch(0.25 0.06 150); } /* light bubble green needs dark text */
 .theme-whatsapp-dna h2::after { content: " ✓✓"; font-size: 0.6em; vertical-align: 0.25em; color: oklch(0.72 0.11 220); } /* read receipt */
 .theme-whatsapp-dna button:active { transform: scale(0.97); }
 
@@ -89,5 +90,5 @@
 .theme-whatsapp-dna.alt-mode thead th { background: oklch(0.23 0.018 230); color: var(--accent); }
 .theme-whatsapp-dna.alt-mode tbody tr:hover { background: oklch(0.22 0.018 230); }
 .theme-whatsapp-dna.alt-mode kbd { background: oklch(0.32 0.05 165); }
-.theme-whatsapp-dna.alt-mode .themed-border { background: oklch(0.32 0.05 165 / 50%); }
+.theme-whatsapp-dna.alt-mode div.themed-border { background: oklch(0.32 0.05 165 / 50%); }
 .theme-whatsapp-dna.alt-mode ::selection { background: oklch(0.40 0.08 165); }

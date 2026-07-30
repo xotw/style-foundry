@@ -86,3 +86,8 @@
   background-image: none;
 }
 .theme-miami-heat.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #98002e; -webkit-text-stroke: 0; }
+.theme-miami-heat.alt-mode input, .theme-miami-heat.alt-mode select, .theme-miami-heat.alt-mode textarea { background: #ffffff; border-color: var(--line); color: var(--fg); }
+.theme-miami-heat.alt-mode a:hover { color: oklch(0.35 0.16 16); }
+.theme-miami-heat.alt-mode thead th { color: oklch(0.85 0.01 286); }
+.theme-miami-heat.alt-mode .label-caps { color: oklch(0.6 0.14 60); }
+.theme-miami-heat.alt-mode ::-webkit-scrollbar-track { background: oklch(0.95 0 0); }

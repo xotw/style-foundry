@@ -84,5 +84,10 @@
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-chelsea.alt-mode tbody tr:hover { background: oklch(0.248 0 0); }
+.theme-chelsea.alt-mode input, .theme-chelsea.alt-mode select, .theme-chelsea.alt-mode textarea { background: oklch(0.200 0 0); }
+.theme-chelsea.alt-mode kbd { background: oklch(0.200 0 0); }
+.theme-chelsea.alt-mode ::-webkit-scrollbar-track { background: oklch(0.200 0 0); }
+.theme-chelsea.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.200 0 0); }
 .theme-chelsea.alt-mode h1 { color: #d4a017; }
 .theme-chelsea.alt-mode h1::after { background: #d4a017; }

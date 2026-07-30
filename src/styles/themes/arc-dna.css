@@ -100,3 +100,15 @@
     radial-gradient(60% 50% at 60% 95%, oklch(0.42 0.10 190 / 55%), transparent 70%);
   background-attachment: fixed;
 }
+
+.theme-arc-dna.alt-mode input,
+.theme-arc-dna.alt-mode select,
+.theme-arc-dna.alt-mode textarea { background: oklch(0.3 0.05 300 / 60%); border-color: oklch(1 0 0 / 22%); }
+.theme-arc-dna.alt-mode input:focus-visible,
+.theme-arc-dna.alt-mode select:focus-visible,
+.theme-arc-dna.alt-mode textarea:focus-visible { background: oklch(0.34 0.05 300 / 80%); }
+.theme-arc-dna.alt-mode kbd { background: oklch(0.36 0.05 300 / 80%); border-color: oklch(1 0 0 / 25%); box-shadow: 0 2px 0 oklch(0 0 0 / 40%); }
+.theme-arc-dna.alt-mode thead th { border-bottom-color: oklch(1 0 0 / 25%); }
+.theme-arc-dna.alt-mode td { border-bottom-color: oklch(1 0 0 / 14%); }
+.theme-arc-dna.alt-mode tbody tr:hover { background: oklch(1 0 0 / 10%); }
+.theme-arc-dna.alt-mode .themed-border { border-color: oklch(1 0 0 / 25%); }
