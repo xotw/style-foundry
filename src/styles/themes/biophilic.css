@@ -52,6 +52,8 @@
 }
 
 /* signature */
+.theme-biophilic { --font-app: var(--font-body); }
+
 .theme-biophilic button { border-radius: 1.25rem 2rem 1.25rem 2rem; }
 .theme-biophilic h1 { font-weight: 500; }
 .theme-biophilic h2::before { content: "❧ "; color: var(--accent); }

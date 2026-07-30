@@ -61,7 +61,7 @@ const BRIDGE = `
   --chart-5: var(--danger);
 
   --font-sans: var(--font-body);
-  --font-heading: var(--font-display);
+  --font-heading: var(--font-app, var(--font-display));
   --font-serif: var(--font-display);
 
   --shadow-2xs: var(--shadow-1);
@@ -92,7 +92,7 @@ const BRIDGE = `
    cannot beat a literal). Targeted !important, fonts and surfaces only. */
 [class*="theme-"].sf-enforce { font-family: var(--font-body) !important; }
 [class*="theme-"].sf-enforce :is(h1, h2, h3, h4, [class*="font-heading"]) {
-  font-family: var(--font-display) !important;
+  font-family: var(--font-app, var(--font-display)) !important;
   letter-spacing: var(--tracking-display) !important;
 }
 /* Data stays data: metrics/KPIs keep the body face with aligned lining figures.

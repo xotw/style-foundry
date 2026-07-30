@@ -54,6 +54,8 @@
 }
 
 /* signature */
+.theme-newspaper { --font-app: "Inter", sans-serif; }
+
 .theme-newspaper { --font-ui: "Inter", sans-serif; }
 
 .theme-newspaper { background-image: radial-gradient(oklch(0.2 0.01 80 / 4%) 1px, transparent 1px); background-size: 4px 4px; }

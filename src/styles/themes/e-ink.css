@@ -52,6 +52,8 @@
 }
 
 /* signature */
+.theme-e-ink { --font-app: "Inter", sans-serif; }
+
 .theme-e-ink { --font-ui: "Inter", sans-serif; }
 
 .theme-e-ink *, .theme-e-ink *::before, .theme-e-ink *::after { transition: none !important; animation: none !important; }

@@ -170,7 +170,7 @@ export function AppShowcase({ style }: { style: StyleEntry }) {
   };
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="sf-app flex min-h-screen flex-col">
       {/* Demo banner */}
       <div className="flex items-center justify-between gap-3 border-b-[length:var(--border-width)] border-b-line bg-surface-2 px-4 py-2">
         <Link

@@ -15,7 +15,7 @@ import { SectionTitle, TBadge, TButton, TCard, TInput, TLabel, TTextarea } from 
  */
 export function BlocksShowcase({ style }: { style: StyleEntry }) {
   return (
-    <div className="min-h-screen pb-32">
+    <div className="sf-app min-h-screen pb-32">
       <header className="mx-auto max-w-6xl px-6 pt-12">
         <Link
           to="/styles/$slug"

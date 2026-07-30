@@ -459,3 +459,10 @@
 [class*="theme-"] :is([class*="text-2xl"], [class*="text-3xl"], [class*="text-4xl"], .font-display) {
   font-variant-numeric: lining-nums tabular-nums;
 }
+
+/* Product surfaces (app demo, blocks) use the app-safe face: serif display
+   faces never render inside an app context. Themes opt their app face via
+   --font-app (defaults to the display face). */
+.sf-app :is(h1, h2, h3, h4) {
+  font-family: var(--font-app, var(--font-display));
+}

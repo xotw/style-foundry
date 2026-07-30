@@ -42,6 +42,8 @@
 }
 
 /* signature */
+.theme-art-deco { --font-app: var(--font-body); }
+
 .theme-art-deco { background-image: repeating-conic-gradient(from -90deg at 50% -10%, oklch(0.72 0.09 85 / 5%) 0 4deg, transparent 4deg 12deg); }
 .theme-art-deco h1 { text-transform: uppercase; letter-spacing: 0.14em; }
 .theme-art-deco h1::after { content: ""; display: block; width: 4rem; margin-top: 0.6rem; border-block: 1px solid var(--accent); height: 4px; }

@@ -50,6 +50,8 @@
 }
 
 /* signature */
+.theme-luxury { --font-app: var(--font-body); }
+
 .theme-luxury h1 { font-weight: 300; letter-spacing: 0.03em; }
 .theme-luxury button { text-transform: uppercase; letter-spacing: 0.22em; font-weight: 500; }
 .theme-luxury h2 { font-weight: 400; }

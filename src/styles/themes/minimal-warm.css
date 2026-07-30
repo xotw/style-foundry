@@ -48,6 +48,8 @@
 }
 
 /* signature */
+.theme-minimal-warm { --font-app: var(--font-body); }
+
 .theme-minimal-warm h1 { font-weight: 500; }
 .theme-minimal-warm a, .theme-minimal-warm .text-accent { text-underline-offset: 3px; }
 .theme-minimal-warm button { font-weight: 500; }
