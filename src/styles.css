@@ -31,6 +31,10 @@
 @import "./styles/themes/airbnb-dna.css";
 @import "./styles/themes/spotify-dna.css";
 @import "./styles/themes/superhuman-dna.css";
+@import "./styles/themes/apple-dna.css";
+@import "./styles/themes/duolingo-dna.css";
+@import "./styles/themes/teenage-engineering-dna.css";
+@import "./styles/themes/slack-dna.css";
 
 @custom-variant dark (&:is(.dark *));
 

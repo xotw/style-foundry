@@ -218,6 +218,34 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Sora / Inter",
     swatch: ["oklch(0.15 0.03 295)", "oklch(0.68 0.2 305)", "oklch(0.72 0.15 240)"],
   },
+  {
+    slug: "apple-dna",
+    name: "Apple DNA",
+    tagline: "Pure white, huge tight display type, monochrome with one blue accent.",
+    fontPairing: "Inter Tight / Inter",
+    swatch: ["oklch(1 0 0)", "oklch(0.58 0.19 255)", "oklch(0.16 0 0)"],
+  },
+  {
+    slug: "duolingo-dna",
+    name: "Duolingo DNA",
+    tagline: "Bright green, chunky 3D-pressed buttons, very rounded and cheerful.",
+    fontPairing: "Nunito / Nunito",
+    swatch: ["oklch(1 0 0)", "oklch(0.75 0.21 140)", "oklch(0.68 0.17 235)"],
+  },
+  {
+    slug: "teenage-engineering-dna",
+    name: "Teenage Engineering DNA",
+    tagline: "Gray plastic surfaces, orange accents, tiny mono labels, hairline grid.",
+    fontPairing: "IBM Plex Mono / Inter",
+    swatch: ["oklch(0.93 0.002 250)", "oklch(0.68 0.2 45)", "oklch(0.2 0.003 250)"],
+  },
+  {
+    slug: "slack-dna",
+    name: "Slack DNA",
+    tagline: "Aubergine primary, white surfaces, four-color accents, approachable.",
+    fontPairing: "Figtree / Figtree",
+    swatch: ["oklch(1 0 0)", "oklch(0.32 0.09 330)", "oklch(0.62 0.15 200)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);

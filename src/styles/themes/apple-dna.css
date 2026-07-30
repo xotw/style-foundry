@@ -1,0 +1,58 @@
+/* Apple DNA — pure white, huge tight display type, monochrome with one blue accent */
+.theme-apple-dna {
+  --bg: oklch(1 0 0);
+  --surface: oklch(0.98 0 0);
+  --surface-2: oklch(0.955 0 0);
+  --fg: oklch(0.16 0 0);
+  --fg-muted: oklch(0.55 0 0);
+  --accent: oklch(0.58 0.19 255);
+  --accent-fg: oklch(1 0 0);
+  --accent-2: oklch(0.45 0 0);
+  --line: oklch(0.9 0 0);
+  --success: oklch(0.66 0.16 150);
+  --warning: oklch(0.8 0.15 80);
+  --danger: oklch(0.6 0.22 25);
+
+  --radius: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 5%);
+  --shadow-2: 0 8px 24px -8px oklch(0 0 0 / 12%);
+  --shadow-3: 0 30px 70px -30px oklch(0 0 0 / 25%);
+  --glow: 0 0 0 4px color-mix(in oklab, var(--accent) 25%, transparent);
+
+  --border-width: 1px;
+  --blur-amount: 20px;
+
+  --font-display: "Inter Tight", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.045em;
+  --label-transform: none;
+  --label-tracking: 0em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-apple-dna h1,
+.theme-apple-dna h2,
+.theme-apple-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 700;
+  line-height: 1.03;
+}
+
+.theme-apple-dna h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+}
+
+.theme-apple-dna button {
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+}
