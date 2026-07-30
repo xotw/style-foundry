@@ -78,4 +78,10 @@ export const STYLE_CATEGORIES: { id: string; label: string; blurb: string; slugs
     blurb: "Screen worlds everyone recognizes — homage palettes, no props required.",
     slugs: ["millennium-falcon", "stranger-things", "matrix", "dune", "wes-anderson", "severance", "james-bond", "ghibli"],
   },
+  {
+    id: "nfl-teams",
+    label: "NFL teams",
+    blurb: "All 32 franchises: stadium-night colors, road whites on the flip.",
+    slugs: ["arizona-cardinals", "atlanta-falcons", "baltimore-ravens", "buffalo-bills", "carolina-panthers", "chicago-bears", "cincinnati-bengals", "cleveland-browns", "dallas-cowboys", "denver-broncos", "detroit-lions", "green-bay-packers", "houston-texans", "indianapolis-colts", "jacksonville-jaguars", "kansas-city-chiefs", "las-vegas-raiders", "la-chargers", "la-rams", "miami-dolphins", "minnesota-vikings", "new-england-patriots", "new-orleans-saints", "new-york-giants", "new-york-jets", "philadelphia-eagles", "pittsburgh-steelers", "san-francisco-49ers", "seattle-seahawks", "tampa-bay-buccaneers", "tennessee-titans", "washington-commanders"],
+  },
 ];

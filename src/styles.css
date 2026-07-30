@@ -143,6 +143,38 @@
 @import "./styles/themes/phoenix-suns.css";
 @import "./styles/themes/sacramento-kings.css";
 @import "./styles/themes/la-clippers.css";
+@import "./styles/themes/arizona-cardinals.css";
+@import "./styles/themes/atlanta-falcons.css";
+@import "./styles/themes/baltimore-ravens.css";
+@import "./styles/themes/buffalo-bills.css";
+@import "./styles/themes/carolina-panthers.css";
+@import "./styles/themes/chicago-bears.css";
+@import "./styles/themes/cincinnati-bengals.css";
+@import "./styles/themes/cleveland-browns.css";
+@import "./styles/themes/dallas-cowboys.css";
+@import "./styles/themes/denver-broncos.css";
+@import "./styles/themes/detroit-lions.css";
+@import "./styles/themes/green-bay-packers.css";
+@import "./styles/themes/houston-texans.css";
+@import "./styles/themes/indianapolis-colts.css";
+@import "./styles/themes/jacksonville-jaguars.css";
+@import "./styles/themes/kansas-city-chiefs.css";
+@import "./styles/themes/las-vegas-raiders.css";
+@import "./styles/themes/la-chargers.css";
+@import "./styles/themes/la-rams.css";
+@import "./styles/themes/miami-dolphins.css";
+@import "./styles/themes/minnesota-vikings.css";
+@import "./styles/themes/new-england-patriots.css";
+@import "./styles/themes/new-orleans-saints.css";
+@import "./styles/themes/new-york-giants.css";
+@import "./styles/themes/new-york-jets.css";
+@import "./styles/themes/philadelphia-eagles.css";
+@import "./styles/themes/pittsburgh-steelers.css";
+@import "./styles/themes/san-francisco-49ers.css";
+@import "./styles/themes/seattle-seahawks.css";
+@import "./styles/themes/tampa-bay-buccaneers.css";
+@import "./styles/themes/tennessee-titans.css";
+@import "./styles/themes/washington-commanders.css";
 
 @custom-variant dark (&:is(.dark *));
 

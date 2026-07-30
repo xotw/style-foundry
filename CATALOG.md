@@ -1,128 +1,275 @@
 # Style Foundry — Catalog
 
-113 themes, one token file each in `src/styles/themes/<slug>.css`, scoped `.theme-<slug>`.
-Aesthetics + product/team DNA (crawled or official brand values). Unique font identity per theme, hand-crafted signature CSS layer.
-Live: `/styles/<slug>` (landing + rules), `/components`, `/blocks`, `/app` (interactive). Install: `npx shadcn@latest add <site>/r/<slug>.json`.
+174 themes, one token file each. Light + dark per theme. Install: `npx shadcn@latest add https://style-foundry-gabbulldo.vercel.app/r/<slug>.json`.
 
-| Style | Character | BG | Accent | Radius | Fonts |
-|---|---|---|---|---|---|
-| **ableton-dna** | Ableton DNA — flat color blocks, geometric type, zero decoration, Bauhaus pop | `oklch(1.000 0 0)` | `oklch(0.637 0.252 15.4)` | 0px | Questrial |
-| **ac-milan** | AC Milan DNA — rossoneri red and black stripes | `oklch(1.000 0 0)` | `oklch(0.622 0.253 28.9)` | 0.375rem | Saira / Inter |
-| **adidas-dna** | adidas DNA — stark black on white, squared everything, underline energy, three stripes discipline | `oklch(1.000 0 0)` | `oklch(0.000 0 0)` | 0px | Barlow |
-| **aesop-dna** | Aesop DNA — apothecary editorial: paper cream, humanist serif, quiet sage calm | `oklch(0.995 0.016 102.8)` | `oklch(0.320 0.005 106.7)` | 0px | EB Garamond / Inter |
-| **airbnb-dna** | Airbnb DNA — warm white, coral accent, very rounded, soft diffuse shadows | `oklch(0.995 0.003 60)` | `oklch(0.658 0.231 17.1)` | 0.875rem | Plus Jakarta Sans |
-| **amazon-dna** | Amazon DNA — smile orange, squid ink navy, everything store density | `oklch(1.000 0 0)` | `oklch(0.772 0.174 64.6)` | 0.5rem | PT Sans |
-| **anthropic-dna** | Anthropic DNA — warm cream, book-like serif display, terracotta accent | `oklch(0.982 0.005 95.1)` | `oklch(0.672 0.131 38.8)` | 0.5rem | Source Serif 4 / Archivo |
-| **apple-dna** | Apple DNA — pure white, huge tight display type, monochrome with one blue accent | `oklch(1 0 0)` | `oklch(0.563 0.193 256.2)` | 0.75rem | -apple-system |
-| **arc-dna** | Arc DNA — soft pastel gradients, macOS-glass panels, bubbly corners | `oklch(0.989 0.024 99.1)` | `oklch(0.499 0.274 269.3)` | 1.125rem | Varela Round / Inter |
-| **arsenal** | Arsenal DNA — cannon red, north london navy and gold | `oklch(1.000 0 0)` | `oklch(0.598 0.245 28.8)` | 0.375rem | Saira / Inter |
-| **art-deco** | Art Deco — black and gold, geometric symmetry, sunburst elegance | `oklch(0.188 0.011 80.5)` | `oklch(0.731 0.115 85.0)` | 0px | Marcellus / Josefin Sans |
-| **atletico-madrid** | Atlético Madrid DNA — rojiblanco stripes, colchonero navy | `oklch(1.000 0 0)` | `oklch(0.558 0.189 30.4)` | 0.375rem | Saira / Inter |
-| **aurora** | midnight sky with drifting teal/violet light ribbons | `oklch(0.16 0.04 260)` | `oklch(0.79 0.16 175)` | 1rem | Outfit / Inter |
-| **barcelona-dna** | FC Barcelona DNA — blaugrana night navy, garnet and gold, més que un club | `oklch(0.213 0.072 278.4)` | `oklch(0.462 0.185 8.3)` | 0.5rem | Exo 2 |
-| **bauhaus** | primary red/blue/yellow, geometric blocks, heavy grotesk | `oklch(0.95 0.012 85)` | `oklch(0.55 0.23 28)` | 0rem | Jost |
-| **bayern-munich** | Bayern Munich DNA — mia san mia red and bavarian blue | `oklch(1.000 0 0)` | `oklch(0.565 0.227 23.3)` | 0.375rem | Saira / Inter |
-| **benfica** | Benfica DNA — águias red over lisbon white | `oklch(1.000 0 0)` | `oklch(0.606 0.219 26.8)` | 0.375rem | Saira / Inter |
-| **biophilic** | deep greens and earth tones, organic blob radii, soft natural light | `oklch(0.96 0.018 110)` | `oklch(0.48 0.11 150)` | 1.5rem | Fraunces / Jost |
-| **bloomberg-dna** | Bloomberg DNA — black finance terminal, amber data type, dense, zero decoration | `oklch(0.09 0 0)` | `oklch(0.78 0.17 65)` | 0rem | VT323 / IBM Plex Mono |
-| **boston-celtics** | Boston Celtics DNA — parquet green and champion gold | `oklch(1.000 0 0)` | `oklch(0.506 0.142 149.2)` | 0.375rem | Big Shoulders / Inter |
-| **braun-dna** | Braun DNA — Dieter Rams functionalism: warm gray, black text, signal-orange dot | `oklch(0.9 0.006 85)` | `oklch(0.756 0.155 73.2)` | 0.125rem | Archivo |
-| **brutalism** | thick black borders, hard offset shadows, saturated primaries | `oklch(0.94 0.15 100)` | `oklch(0.68 0.24 350)` | 0px | Archivo Black / Archivo |
-| **cash-app-dna** | Cash App DNA — pure black, electric green, heavy condensed type | `oklch(0 0 0)` | `oklch(0.761 0.245 144.3)` | 1rem | Anton / Inter |
-| **chelsea** | Chelsea DNA — royal blue pride of london | `oklch(1.000 0 0)` | `oklch(0.407 0.142 257.0)` | 0.375rem | Saira / Inter |
-| **chicago-bulls** | Chicago Bulls DNA — bulls red and black, ninety-six swagger | `oklch(1.000 0 0)` | `oklch(0.545 0.211 17.0)` | 0.375rem | Big Shoulders / Inter |
-| **claymorphism** | puffy pastel clay blobs, chunky radii, inner highlights | `oklch(0.95 0.035 300)` | `oklch(0.72 0.16 340)` | 2rem | Fredoka |
-| **crossfit-dna** | CrossFit DNA — forged dark steel, red intensity, stencil grit, affiliate blue | `oklch(0.218 0 0)` | `oklch(0.520 0.201 28.0)` | 2px | Black Ops One / Inter |
-| **cyberpunk** | ink-black slabs, acid yellow + hot magenta, neon edges | `oklch(0.13 0.03 290)` | `oklch(0.88 0.2 100)` | 0.125rem | Chakra Petch |
-| **dark-saas** | Dark SaaS — near-black canvas, subtle borders, one electric accent, tight type | `oklch(0.139 0.003 246.3)` | `oklch(0.62 0.23 274)` | 0.5rem | Inter |
-| **detroit-pistons** | Detroit Pistons DNA — motor city red, white and blue | `oklch(1.000 0 0)` | `oklch(0.530 0.207 22.3)` | 0.375rem | Big Shoulders / Inter |
-| **discord-dna** | Discord DNA — blurple dark, rounded chat surfaces, playful but engineered | `oklch(0.321 0.009 268.4)` | `oklch(0.577 0.209 273.9)` | 0.5rem | Figtree |
-| **dortmund** | Borussia Dortmund DNA — yellow wall on black | `oklch(0.178 0 0)` | `oklch(0.905 0.188 100.2)` | 0.375rem | Saira / Inter |
-| **dreamcore** | hazy pastel gradients, blurred glows, floating ethereal calm | `oklch(0.955 0.018 306.7)` | `oklch(0.708 0.128 305.6)` | 1.5rem | Quicksand |
-| **duolingo-dna** | Duolingo DNA — bright green, chunky 3D-pressed buttons, very rounded, cheerful | `oklch(1 0 0)` | `oklch(0.748 0.229 137.6)` | 1rem | Baloo 2 |
-| **e-ink** | pure grayscale paper, high contrast, serif body, matte, zero gloss | `oklch(0.94 0.002 90)` | `oklch(0.16 0 0)` | 0.125rem | Literata |
-| **editorial** | magazine: Playfair Display, generous whitespace, thin rules, paper tones | `oklch(0.975 0.011 85)` | `oklch(0.45 0.13 30)` | 0rem | Playfair Display / Inter |
-| **facebook-dna** | Facebook DNA — feed gray, white cards, the blue, dense social chrome | `oklch(0.960 0.005 258.3)` | `oklch(0.589 0.203 257.9)` | 0.5rem | Onest |
-| **figma-dna** | Figma DNA — white canvas, five-color primary system, crisp 8px grid | `oklch(1 0 0)` | `oklch(0.670 0.183 249.2)` | 0.375rem | Instrument Sans |
-| **flat** | Flat / Metro — saturated solids, zero shadow, sharp geometry, big type | `oklch(0.96 0.004 250)` | `oklch(0.6 0.19 30)` | 0rem | Titillium Web |
-| **formula1** | Formula 1 DNA — race red on carbon black, apex speed | `oklch(0.164 0 0)` | `oklch(0.573 0.233 29.5)` | 0.25rem | Michroma / Inter |
-| **frutiger-aero** | Frutiger Aero — 2000s: sky blue + vivid green, glossy bubbles, lens flares | `oklch(0.88 0.07 220)` | `oklch(0.72 0.19 145)` | 1rem | Open Sans |
-| **github-dna** | GitHub DNA — Primer: familiar dev surfaces, link blue, precise grays, 6px radius | `oklch(1.000 0 0)` | `oklch(0.540 0.191 257.5)` | 0.375rem | Mona Sans |
-| **glass** | dark gradient bg, frosted blurred surfaces, thin light borders, glows | `oklch(0.18 0.05 275)` | `oklch(0.78 0.16 195)` | 1.25rem | Space Grotesk / Inter |
-| **golden-state-warriors** | Golden State Warriors DNA — bay bridge blue and gold | `oklch(1.000 0 0)` | `oklch(0.396 0.128 261.9)` | 0.375rem | Big Shoulders / Inter |
-| **hackernews-dna** | Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament | `oklch(0.971 0.009 106.6)` | `oklch(0.696 0.204 43.5)` | 0px | Verdana |
-| **headspace-dna** | Headspace DNA — warm peach pastels, organic blobs, very soft shadows | `oklch(1.000 0 0)` | `oklch(0.478 0.257 263.6)` | 1.5rem | Karla |
-| **heisei-retro** | Heisei Retro — 90s Japanese tech catalog: warm beige plastic, red/blue, dense boxes | `oklch(0.923 0.025 89.2)` | `oklch(0.553 0.226 28.0)` | 0.25rem | Zen Kaku Gothic New |
-| **hud-scifi** | HUD Sci-Fi — cool dark blue, thin cyan lines, corner brackets, radar data | `oklch(0.170 0.017 252.7)` | `oklch(0.806 0.129 212.2)` | 2px | Rajdhani |
-| **ikea-dna** | IKEA DNA — democratic blue and yellow, Skapa functionalism, price-tag boldness | `oklch(1.000 0 0)` | `oklch(0.460 0.140 252.7)` | 0.375rem | Noto Sans |
-| **instagram-dna** | Instagram DNA — gallery white, hairline borders, gradient pink to purple | `oklch(1.000 0 0)` | `oklch(0.605 0.213 6.8)` | 0.75rem | Sen |
-| **inter-milan** | Inter Milan DNA — nerazzurri blue and black night | `oklch(0.185 0.030 268.4)` | `oklch(0.502 0.129 246.0)` | 0.375rem | Saira / Inter |
-| **juventus** | Juventus DNA — bianconeri black and white stripes | `oklch(1.000 0 0)` | `oklch(0.000 0 0)` | 0.375rem | Saira / Inter |
-| **la-lakers** | LA Lakers DNA — showtime purple and gold | `oklch(1.000 0 0)` | `oklch(0.384 0.150 303.3)` | 0.375rem | Big Shoulders / Inter |
-| **lazio** | Lazio DNA — biancocelesti sky blue and eagle white | `oklch(1.000 0 0)` | `oklch(0.745 0.112 233.6)` | 0.375rem | Saira / Inter |
-| **lego-dna** | LEGO DNA — primary brick colors, chunky modular blocks, bold play energy | `oklch(1.000 0 0)` | `oklch(0.543 0.216 28.3)` | 0.5rem | Nunito Sans |
-| **linkedin-dna** | LinkedIn DNA — warm paper feed, white cards, professional blue, pill actions | `oklch(0.962 0.006 84.6)` | `oklch(0.516 0.163 254.7)` | 0.5rem | Source Sans 3 |
-| **liquid-glass** | Specular sheen that reads as refracted light across translucent panels. | `oklch(0.96 0.012 250)` | `oklch(0.62 0.17 255)` | 1.5rem | Geist |
-| **luxury** | deep ink, champagne gold, high-contrast serif, hairline rules | `oklch(0.17 0.012 60)` | `oklch(0.82 0.12 88)` | 0.125rem | Cormorant Garamond / Jost |
-| **marseille** | Olympique de Marseille DNA — droit au but sky blue and gold | `oklch(1.000 0 0)` | `oklch(0.706 0.128 229.9)` | 0.375rem | Saira / Inter |
-| **material** | Material Design 3: tonal palette, filled surfaces, elevation | `oklch(0.97 0.012 300)` | `oklch(0.5 0.19 295)` | 1rem | Roboto Flex |
-| **maximalism** | clashing saturated colors, mixed display fonts, dense layered patterns | `oklch(0.55 0.24 330)` | `oklch(0.62 0.26 25)` | 1.25rem | Abril Fatface / Outfit |
-| **mcdonalds-dna** | McDonald's DNA — golden arches yellow, happy meal red | `oklch(1.000 0 0)` | `oklch(0.575 0.213 29.6)` | 1rem | Comfortaa / Inter |
-| **memphis** | 80s postmodern: squiggles, confetti shapes, clashing primaries | `oklch(0.97 0.02 90)` | `oklch(0.68 0.23 15)` | 0.75rem | Bebas Neue / Archivo |
-| **miami-heat** | Miami Heat DNA — heat culture black, vice red and flame | `oklch(0.151 0.004 285.9)` | `oklch(0.432 0.173 15.9)` | 0.375rem | Big Shoulders / Inter |
-| **microsoft-dna** | Microsoft DNA — fluent four-square, segoe clarity | `oklch(1.000 0 0)` | `oklch(0.568 0.167 251.3)` | 0.25rem | Segoe UI |
-| **minimal-warm** | Minimal Warm — sand and clay neutrals, soft radii, quiet contrast | `oklch(0.965 0.014 75)` | `oklch(0.6 0.11 45)` | 0.875rem | Lora / Inter |
-| **nasa-dna** | NASA DNA — 1976 Graphics Standards Manual: worm red, federal grid, Helvetica discipline | `oklch(1.000 0 0)` | `oklch(0.644 0.219 28.2)` | 0px | Public Sans |
-| **nba-dna** | NBA DNA — league blue and red on white, gold trophy accents, broadcast bold | `oklch(1.000 0 0)` | `oklch(0.396 0.128 261.9)` | 0.5rem | Fjalla One / Inter |
-| **netflix-dna** | Netflix DNA — cinematic black, signal red, UI recedes behind imagery | `oklch(0.000 0 0)` | `oklch(0.581 0.235 28.0)` | 0.25rem | Albert Sans |
-| **neumorphism** | soft extruded gray surfaces, double shadows, pill shapes | `oklch(0.93 0.005 260)` | `oklch(0.62 0.14 265)` | 1.5rem | Poppins |
-| **new-york-knicks** | New York Knicks DNA — garden blue and orange, MSG lights | `oklch(1.000 0 0)` | `oklch(0.518 0.143 249.1)` | 0.375rem | Big Shoulders / Inter |
-| **newspaper** | newsprint gray, blackletter-ish serif heads, column rules | `oklch(0.94 0.008 95)` | `oklch(0.18 0.005 60)` | 0rem | Old Standard TT / Libre Baskerville |
-| **nfl-dna** | NFL DNA — shield navy, gridiron red, varsity slab, chalk-line structure | `oklch(1.000 0 0)` | `oklch(0.326 0.107 255.1)` | 0.25rem | Graduate / Inter |
-| **nike-dna** | Nike DNA — athletic black/white, condensed uppercase display, volt accent | `oklch(1.000 0 0)` | `oklch(0.178 0 0)` | 0.5rem | Oswald / Inter |
-| **nintendo-dna** | Nintendo DNA — joy red on toy white, rounded delight | `oklch(1.000 0 0)` | `oklch(0.581 0.238 27.9)` | 1.25rem | M PLUS Rounded 1c |
-| **notion-dna** | Notion DNA — paper white, ink gray, serif calm, tool that disappears | `oklch(1.000 0 0)` | `oklch(0.606 0.167 252.7)` | 0.25rem | Spectral / Inter |
-| **philadelphia-76ers** | Philadelphia 76ers DNA — liberty blue and red, trust the process | `oklch(1.000 0 0)` | `oklch(0.518 0.143 249.1)` | 0.375rem | Big Shoulders / Inter |
-| **pinterest-dna** | Pinterest DNA — pin red on gallery white, masonry softness | `oklch(1.000 0 0)` | `oklch(0.582 0.236 25.5)` | 1rem | Urbanist |
-| **pixel** | 8-bit lo-fi, dithered textures, hard 2px pixel borders, stepped shadows | `oklch(0.22 0.05 265)` | `oklch(0.78 0.2 145)` | 0rem | Press Start 2P / VT323 |
-| **playstation-dna** | PlayStation DNA — console blue on studio white, iconic shapes | `oklch(1.000 0 0)` | `oklch(0.371 0.158 260.7)` | 0.5rem | Encode Sans |
-| **porto** | FC Porto DNA — dragões blue and white | `oklch(1.000 0 0)` | `oklch(0.370 0.122 255.1)` | 0.375rem | Saira / Inter |
-| **proton-dna** | Proton DNA — privacy purple over deep navy ink, Swiss-made trust | `oklch(1.000 0 0)` | `oklch(0.562 0.251 283.7)` | 0.5rem | Red Hat Display |
-| **psg** | PSG DNA — Parc des Princes navy, hechter red stripe | `oklch(0.216 0.047 256.0)` | `oklch(0.367 0.099 248.2)` | 0.375rem | Saira / Inter |
-| **real-madrid-dna** | Real Madrid DNA — royal white, championship gold, regal navy restraint | `oklch(1.000 0 0)` | `oklch(0.443 0.142 254.3)` | 0.375rem | Cinzel / Inter |
-| **redbull-dna** | Red Bull DNA — energy red and yellow over racing navy | `oklch(0.302 0.185 264.2)` | `oklch(0.567 0.224 18.3)` | 0.375rem | Chivo |
-| **reddit-dna** | Reddit DNA — upvote orange, community white, pill-shaped everything | `oklch(1.000 0 0)` | `oklch(0.660 0.229 35.4)` | 1.25rem | Reddit Sans |
-| **reebok-dna** | Reebok DNA — vector red and blue on stark white, condensed italic speed, zero radius | `oklch(1.000 0 0)` | `oklch(0.586 0.228 28.3)` | 0px | Saira Condensed / Inter |
-| **revolut-dna** | Revolut DNA — midnight fintech, aurora gradient accents, borderless | `oklch(0.189 0.014 278.6)` | `oklch(0.572 0.226 282.0)` | 0.75rem | Sora |
-| **roma** | AS Roma DNA — giallorossi garnet and imperial gold | `oklch(1.000 0 0)` | `oklch(0.429 0.146 18.4)` | 0.375rem | Saira / Inter |
-| **san-antonio-spurs** | San Antonio Spurs DNA — silver and black fundamentals | `oklch(1.000 0 0)` | `oklch(0.000 0 0)` | 0.375rem | Big Shoulders / Inter |
-| **signal-dna** | Signal DNA — quiet white, trusted blue, bubbles with nothing to hide | `oklch(1.000 0 0)` | `oklch(0.594 0.194 262.4)` | 1rem | Hind |
-| **skeuomorphism** | brushed metal, linen, glossy bevels, inset engravings | `oklch(0.82 0.012 250)` | `oklch(0.55 0.14 245)` | 0.625rem | Nunito / Inter |
-| **slack-dna** | Slack DNA — aubergine primary, white surfaces, four-color accents, approachable | `oklch(0.99 0.002 300)` | `oklch(0.306 0.108 327.1)` | 0.5rem | Lato |
-| **spotify-dna** | Spotify DNA — near-black entertainment surface, vivid green, pills everywhere | `oklch(0.182 0 0)` | `oklch(0.770 0.212 148.7)` | 0.5rem | DM Sans |
-| **ssense-dna** | SSENSE DNA — stark fashion e-commerce: black on white, micro type, luxury by subtraction | `oklch(1.000 0 0)` | `oklch(0.000 0 0)` | 0px | Archivo Narrow / Inter |
-| **starbucks-dna** | Starbucks DNA — siren green, cream house warmth | `oklch(0.976 0 0)` | `oklch(0.482 0.107 161.2)` | 1.25rem | Assistant |
-| **steam-dna** | Steam DNA — midnight library blue, glowing store shelves | `oklch(0.218 0.015 266.9)` | `oklch(0.772 0.114 236.2)` | 0.25rem | Work Sans |
-| **stripe-dna** | Stripe DNA — clean white, indigo/cyan gradient accents, crisp small type, airy depth | `oklch(0.981 0.005 247.9)` | `oklch(0.521 0.268 277.4)` | 0.5rem | Hanken Grotesk |
-| **superhuman-dna** | Superhuman DNA — deep violet-tinted dark, refined gradients, glowing accents, keyboard-first | `oklch(0.974 0.030 88.4)` | `oklch(0.286 0.058 9.5)` | 0.75rem | Instrument Serif / Inter |
-| **swiss** | strict grid, Inter Tight, black/white + one red accent, zero radius | `oklch(1 0 0)` | `oklch(0.55 0.235 27)` | 0px | Inter Tight |
-| **teenage-engineering-dna** | Teenage Engineering DNA — light gray plastic, orange accents, tiny mono uppercase labels | `oklch(0.93 0.002 250)` | `oklch(0.659 0.195 38.3)` | 0px | Space Mono |
-| **telegram-dna** | Telegram DNA — paper-light chat, sky blue, round bubbles, native speed | `oklch(1.000 0 0)` | `oklch(0.644 0.162 251.8)` | 0.75rem | Roboto |
-| **terminal** | black bg, phosphor green, IBM Plex Mono, ASCII-ish borders | `oklch(0.13 0.015 150)` | `oklch(0.85 0.22 145)` | 0rem | IBM Plex Mono |
-| **tiktok-dna** | TikTok DNA — void black, glitch cyan and pink, vertical energy | `oklch(0.000 0 0)` | `oklch(0.647 0.238 17.7)` | 0.5rem | Montserrat |
-| **twitch-dna** | Twitch DNA — glitch purple dark, live energy | `oklch(0.165 0.004 285.9)` | `oklch(0.591 0.255 296.1)` | 0.375rem | Readex Pro |
-| **uber-dna** | Uber DNA — move black and white, geometric utility | `oklch(1.000 0 0)` | `oklch(0.000 0 0)` | 0.5rem | Rubik |
-| **vaporwave** | purple/pink/cyan gradients, chrome text, 80s grid horizon | `oklch(0.2 0.13 300)` | `oklch(0.75 0.22 340)` | 0.25rem | Orbitron / Space Grotesk |
-| **whatsapp-dna** | WhatsApp DNA — chat wallpaper beige, teal headers, bubble green, thumb-first | `oklch(0.939 0.012 79.8)` | `oklch(0.535 0.102 174.2)` | 1rem | Mulish |
-| **windows95-dna** | Windows 95 DNA — silver bevels, navy title bars, teal desktop, hard pixels | `oklch(0.543 0.093 194.8)` | `oklch(0.271 0.188 264.1)` | 0px | Tahoma |
-| **x-dna** | X DNA — void black, ghost grays, one blue, ruthless density | `oklch(0.000 0 0)` | `oklch(0.667 0.161 245.5)` | 1rem | Schibsted Grotesk |
-| **xbox-dna** | Xbox DNA — power green on carbon dark | `oklch(0.164 0 0)` | `oklch(0.510 0.165 142.7)` | 0.5rem | Manrope |
-| **y2k** | glossy chrome-blue, bubbly gradients, silver bevels, cyan glow | `oklch(0.9 0.05 230)` | `oklch(0.7 0.19 300)` | 1.25rem | Audiowide / Poppins |
-| **youtube-dna** | YouTube DNA — play red on white, thumbnail-first | `oklch(1.000 0 0)` | `oklch(0.628 0.258 29.2)` | 0.75rem | Roboto Condensed / Inter |
+### Minimal & structured (10)
 
-## Reuse
+Type-led, grid-first, nothing decorative survives.
 
-- **shadcn CLI**: `npx shadcn@latest add https://style-foundry-gabbulldo.vercel.app/r/<slug>.json`
-- **Direct**: copy `src/styles/themes/<slug>.css` + wrap your app in `class="theme-<slug>"`.
-- **Lovable**: paste the theme file into your first prompt.
-- **Token contract**: `--bg --surface --surface-2 --fg --fg-muted --accent --accent-fg --accent-2 --line --success --warning --danger --radius(-sm/-lg/-pill) --shadow-1/2/3 --glow --border-width --blur-amount --font-display/body/mono/ui --tracking-display --label-transform --label-tracking`
+| Theme | Character | Fonts |
+|---|---|---|
+| [Swiss](https://style-foundry-gabbulldo.vercel.app/styles/swiss/app) | Strict grid, hairline rules, one red accent. Nothing decorative survives. | Inter Tight / Inter Tight |
+| [Bauhaus](https://style-foundry-gabbulldo.vercel.app/styles/bauhaus/app) | Red, blue, yellow. Circles and squares. Nothing spare. | Jost |
+| [Flat](https://style-foundry-gabbulldo.vercel.app/styles/flat/app) | Metro-era solids, no shadows, sharp edges, authentically digital. | Titillium Web |
+| [Material](https://style-foundry-gabbulldo.vercel.app/styles/material/app) | Material 3 tonal palettes, filled surfaces, state layers, elevation. | Roboto Flex / Roboto Flex |
+| [Minimal Warm](https://style-foundry-gabbulldo.vercel.app/styles/minimal-warm/app) | Sand and clay neutrals, soft radii, deliberately quiet contrast. | Lora / Inter |
+| [E-Ink](https://style-foundry-gabbulldo.vercel.app/styles/e-ink/app) | Paper grayscale, serif body, matte contrast, one functional accent. | Literata / Literata |
+| [Editorial](https://style-foundry-gabbulldo.vercel.app/styles/editorial/app) | Magazine typography, wide margins, hairline rules on paper tones. | Playfair Display / Inter |
+| [Newspaper](https://style-foundry-gabbulldo.vercel.app/styles/newspaper/app) | Newsprint gray, column rules, screaming serif headlines. | Old Standard TT / Libre Baskerville |
+| [Luxury](https://style-foundry-gabbulldo.vercel.app/styles/luxury/app) | Deep ink, champagne gold hairlines, airy high-contrast serif. | Cormorant Garamond / Jost |
+| [Art Deco](https://style-foundry-gabbulldo.vercel.app/styles/art-deco/app) | Black and gold, geometric symmetry, sunburst elegance. | Marcellus / Josefin Sans |
+
+### Depth & materials (9)
+
+Glass, clay, plastic, nature — surfaces you can almost touch.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Glass](https://style-foundry-gabbulldo.vercel.app/styles/glass/app) | Frosted panels floating over a deep gradient, edges lit from behind. | Space Grotesk / Inter |
+| [Liquid Glass](https://style-foundry-gabbulldo.vercel.app/styles/liquid-glass/app) | Bright room, refracting panels, specular hairlines, adaptive blur. | Geist |
+| [Neumorphism](https://style-foundry-gabbulldo.vercel.app/styles/neumorphism/app) | Soft extruded gray surfaces, double shadows, pill shapes. | Poppins / Poppins |
+| [Claymorphism](https://style-foundry-gabbulldo.vercel.app/styles/claymorphism/app) | Puffy pastel clay, chunky radii, inner highlights everywhere. | Fredoka |
+| [Skeuomorphism](https://style-foundry-gabbulldo.vercel.app/styles/skeuomorphism/app) | Brushed metal, glossy bevels, inset engravings, real shadows. | Nunito / Inter |
+| [Frutiger Aero](https://style-foundry-gabbulldo.vercel.app/styles/frutiger-aero/app) | Sky blue and vivid green, glossy bubbles, lens-flare optimism. | Open Sans / Open Sans |
+| [Aurora](https://style-foundry-gabbulldo.vercel.app/styles/aurora/app) | Midnight sky with drifting teal and violet light ribbons. | Outfit / Inter |
+| [Dreamcore](https://style-foundry-gabbulldo.vercel.app/styles/dreamcore/app) | Hazy pastel gradients, blurred glows, floating ethereal calm. | Quicksand |
+| [Biophilic](https://style-foundry-gabbulldo.vercel.app/styles/biophilic/app) | Deep greens and earth tones, organic blob radii, soft natural light. | Fraunces / Jost |
+
+### Retro & expressive (9)
+
+Loud, nostalgic, rule-breaking on purpose.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Brutalism](https://style-foundry-gabbulldo.vercel.app/styles/brutalism/app) | Thick black borders, hard offset shadows, shouting primaries. | Archivo Black / Archivo |
+| [Maximalism](https://style-foundry-gabbulldo.vercel.app/styles/maximalism/app) | Clashing saturation, mixed display fonts, layered pattern everywhere. | Abril Fatface / Outfit |
+| [Memphis](https://style-foundry-gabbulldo.vercel.app/styles/memphis/app) | Postmodern confetti, clashing primaries, hard offset blocks. | Bebas Neue / Archivo |
+| [Vaporwave](https://style-foundry-gabbulldo.vercel.app/styles/vaporwave/app) | Purple-to-cyan gradients, chrome lettering, an endless 80s grid. | Orbitron / Space Grotesk |
+| [Y2K](https://style-foundry-gabbulldo.vercel.app/styles/y2k/app) | Glossy chrome bevels, bubble buttons, aqua-era optimism. | Audiowide / Poppins |
+| [Pixel](https://style-foundry-gabbulldo.vercel.app/styles/pixel/app) | 8-bit lo-fi, dithered texture, hard 2px borders, stepped shadows. | Press Start 2P / VT323 |
+| [Heisei Retro](https://style-foundry-gabbulldo.vercel.app/styles/heisei-retro/app) | 90s Japanese tech catalog: beige plastic, red/blue, dense boxes. | Zen Kaku Gothic New |
+| [Windows 95 DNA](https://style-foundry-gabbulldo.vercel.app/styles/windows95-dna/app) | Silver bevels, navy title bars, teal desktop, hard pixels. | Tahoma (system) |
+| [Hacker News DNA](https://style-foundry-gabbulldo.vercel.app/styles/hackernews-dna/app) | Web-1.0 artifact: beige, Verdana, tables, zero ornament. | Verdana (system) |
+
+### Dark & technical (4)
+
+Built for operators: dense, dark, precise.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Dark SaaS](https://style-foundry-gabbulldo.vercel.app/styles/dark-saas/app) | Near-black product surface, tight type, a single electric accent. | Inter / Inter |
+| [Terminal](https://style-foundry-gabbulldo.vercel.app/styles/terminal/app) | Black screen, phosphor green, monospace everything, scanlines. | IBM Plex Mono / IBM Plex Mono |
+| [Cyberpunk](https://style-foundry-gabbulldo.vercel.app/styles/cyberpunk/app) | Ink slabs, acid yellow, magenta offsets, neon chromatic edges. | Chakra Petch |
+| [HUD Sci-Fi](https://style-foundry-gabbulldo.vercel.app/styles/hud-scifi/app) | Cool dark blue, thin cyan lines, corner brackets, radar data. | Rajdhani |
+
+### Tech & SaaS DNA (15)
+
+The design languages of iconic software products, from crawled brand values.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Stripe DNA](https://style-foundry-gabbulldo.vercel.app/styles/stripe-dna/app) | Clean white, indigo-to-cyan gradient accents, crisp type, generous air. | Hanken Grotesk |
+| [Superhuman DNA](https://style-foundry-gabbulldo.vercel.app/styles/superhuman-dna/app) | Cream paper, plum serif display, lavender accents, refined calm. | Instrument Serif / Inter |
+| [Figma DNA](https://style-foundry-gabbulldo.vercel.app/styles/figma-dna/app) | White canvas, five-color primary system, crisp 8px grid, precise. | Instrument Sans |
+| [Arc DNA](https://style-foundry-gabbulldo.vercel.app/styles/arc-dna/app) | Pastel gradients, glass panels, bubbly corners, whimsical light depth. | Varela Round / Inter |
+| [GitHub DNA](https://style-foundry-gabbulldo.vercel.app/styles/github-dna/app) | Primer: familiar dev surfaces, link blue, precise grays. | Mona Sans |
+| [Apple DNA](https://style-foundry-gabbulldo.vercel.app/styles/apple-dna/app) | Pure white, huge tight display type, monochrome with one blue accent. | SF Pro (system) |
+| [Braun DNA](https://style-foundry-gabbulldo.vercel.app/styles/braun-dna/app) | Warm gray functionalism, signal-orange dot, zero ornament, less but better. | Archivo |
+| [Teenage Engineering DNA](https://style-foundry-gabbulldo.vercel.app/styles/teenage-engineering-dna/app) | Gray plastic surfaces, orange accents, tiny mono labels, hairline grid. | Space Mono |
+| [Ableton DNA](https://style-foundry-gabbulldo.vercel.app/styles/ableton-dna/app) | Flat color blocks, geometric type, zero decoration. | Questrial |
+| [Proton DNA](https://style-foundry-gabbulldo.vercel.app/styles/proton-dna/app) | Privacy purple over deep navy ink, Swiss-made trust. | Red Hat Display |
+| [Anthropic DNA](https://style-foundry-gabbulldo.vercel.app/styles/anthropic-dna/app) | Cream paper, book-like serif display, terracotta accent, calm spacing. | Source Serif 4 / Archivo |
+| [NASA DNA](https://style-foundry-gabbulldo.vercel.app/styles/nasa-dna/app) | 1976 Standards Manual: worm red, federal grid discipline. | Public Sans |
+| [Notion DNA](https://style-foundry-gabbulldo.vercel.app/styles/notion-dna/app) | The app itself: warm gray chrome, quiet ink, pastel property chips. | Inter (app UI) |
+| [Revolut DNA](https://style-foundry-gabbulldo.vercel.app/styles/revolut-dna/app) | Midnight fintech, aurora gradients, borderless. | Sora |
+| [Microsoft DNA](https://style-foundry-gabbulldo.vercel.app/styles/microsoft-dna/app) | Fluent four-square, segoe clarity. | Segoe UI (system) |
+
+### Social & messaging DNA (11)
+
+Feeds, bubbles and communities — the interfaces everyone knows.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Slack DNA](https://style-foundry-gabbulldo.vercel.app/styles/slack-dna/app) | Aubergine primary, white surfaces, four-color accents, approachable. | Lato |
+| [Discord DNA](https://style-foundry-gabbulldo.vercel.app/styles/discord-dna/app) | Blurple dark, rounded chat surfaces, playful but engineered. | Figtree |
+| [Telegram DNA](https://style-foundry-gabbulldo.vercel.app/styles/telegram-dna/app) | Paper-light chat, sky blue, round bubbles, native speed. | Roboto |
+| [WhatsApp DNA](https://style-foundry-gabbulldo.vercel.app/styles/whatsapp-dna/app) | Chat wallpaper beige, teal headers, bubble green. | Mulish |
+| [Signal DNA](https://style-foundry-gabbulldo.vercel.app/styles/signal-dna/app) | Quiet white, trusted blue, bubbles with nothing to hide. | Hind |
+| [Facebook DNA](https://style-foundry-gabbulldo.vercel.app/styles/facebook-dna/app) | Feed gray, white cards, the blue, dense social chrome. | Onest |
+| [Instagram DNA](https://style-foundry-gabbulldo.vercel.app/styles/instagram-dna/app) | Gallery white, hairline borders, gradient pink to purple. | Sen |
+| [X DNA](https://style-foundry-gabbulldo.vercel.app/styles/x-dna/app) | Void black, ghost grays, one blue, ruthless density. | Schibsted Grotesk |
+| [LinkedIn DNA](https://style-foundry-gabbulldo.vercel.app/styles/linkedin-dna/app) | Warm paper feed, white cards, professional blue. | System UI (product) |
+| [Reddit DNA](https://style-foundry-gabbulldo.vercel.app/styles/reddit-dna/app) | Upvote orange, community white, pill-shaped everything. | Reddit Sans |
+| [Pinterest DNA](https://style-foundry-gabbulldo.vercel.app/styles/pinterest-dna/app) | Pin red on gallery white, masonry softness. | Urbanist |
+
+### Commerce & lifestyle DNA (12)
+
+Marketplaces, retail and consumer brands with a point of view.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Airbnb DNA](https://style-foundry-gabbulldo.vercel.app/styles/airbnb-dna/app) | Warm white marketplace, coral accent, big radii, soft diffuse shadows. | Plus Jakarta Sans |
+| [IKEA DNA](https://style-foundry-gabbulldo.vercel.app/styles/ikea-dna/app) | Democratic blue and yellow, Skapa functionalism. | Noto Sans |
+| [LEGO DNA](https://style-foundry-gabbulldo.vercel.app/styles/lego-dna/app) | Primary brick colors, chunky modular blocks, bold play. | Nunito Sans |
+| [Aesop DNA](https://style-foundry-gabbulldo.vercel.app/styles/aesop-dna/app) | Apothecary editorial: paper cream, humanist serif, sage calm. | EB Garamond / Inter |
+| [SSENSE DNA](https://style-foundry-gabbulldo.vercel.app/styles/ssense-dna/app) | Stark fashion e-commerce: micro type, luxury by subtraction. | Archivo Narrow / Inter |
+| [Headspace DNA](https://style-foundry-gabbulldo.vercel.app/styles/headspace-dna/app) | Peach pastels, organic blobs, very soft shadows, breathing whitespace. | Karla |
+| [Duolingo DNA](https://style-foundry-gabbulldo.vercel.app/styles/duolingo-dna/app) | Bright green, chunky 3D-pressed buttons, very rounded and cheerful. | Baloo 2 |
+| [Cash App DNA](https://style-foundry-gabbulldo.vercel.app/styles/cash-app-dna/app) | Pure black, electric green, heavy condensed type, neon-on-dark energy. | Anton / Inter |
+| [Uber DNA](https://style-foundry-gabbulldo.vercel.app/styles/uber-dna/app) | Move black and white, geometric utility. | Rubik |
+| [Amazon DNA](https://style-foundry-gabbulldo.vercel.app/styles/amazon-dna/app) | Smile orange, squid ink, everything-store density. | PT Sans |
+| [McDonald's DNA](https://style-foundry-gabbulldo.vercel.app/styles/mcdonalds-dna/app) | Golden arches yellow, happy meal red. | Comfortaa / Inter |
+| [Starbucks DNA](https://style-foundry-gabbulldo.vercel.app/styles/starbucks-dna/app) | Siren green, cream house warmth. | Assistant |
+
+### Media & entertainment DNA (3)
+
+Content-first surfaces where the UI steps back.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Spotify DNA](https://style-foundry-gabbulldo.vercel.app/styles/spotify-dna/app) | Near-black entertainment shell, vivid green, pill buttons everywhere. | DM Sans |
+| [Netflix DNA](https://style-foundry-gabbulldo.vercel.app/styles/netflix-dna/app) | Cinematic black, signal red, UI recedes behind imagery. | Albert Sans |
+| [Bloomberg DNA](https://style-foundry-gabbulldo.vercel.app/styles/bloomberg-dna/app) | Black terminal, amber data type, dense tables, zero decoration. | VT323 / IBM Plex Mono |
+
+### Sports DNA (8)
+
+Brands and clubs built on intensity, speed and pride.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Nike DNA](https://style-foundry-gabbulldo.vercel.app/styles/nike-dna/app) | Black and white, condensed uppercase display, hard edges, volt accent. | Oswald / Inter |
+| [adidas DNA](https://style-foundry-gabbulldo.vercel.app/styles/adidas-dna/app) | Stark black on white, squared everything, three stripes discipline. | Barlow |
+| [Reebok DNA](https://style-foundry-gabbulldo.vercel.app/styles/reebok-dna/app) | Vector red and blue on stark white, condensed speed. | Saira Condensed / Inter |
+| [CrossFit DNA](https://style-foundry-gabbulldo.vercel.app/styles/crossfit-dna/app) | Forged dark steel, red intensity, stencil grit. | Black Ops One / Inter |
+| [NBA DNA](https://style-foundry-gabbulldo.vercel.app/styles/nba-dna/app) | League blue and red on white, gold trophy accents. | Fjalla One / Inter |
+| [NFL DNA](https://style-foundry-gabbulldo.vercel.app/styles/nfl-dna/app) | Shield navy, gridiron red, varsity slab type. | Graduate / Inter |
+| [Formula 1](https://style-foundry-gabbulldo.vercel.app/styles/formula1/app) | Race red on carbon black, apex speed. | Michroma / Inter |
+| [Red Bull DNA](https://style-foundry-gabbulldo.vercel.app/styles/redbull-dna/app) | Energy red and yellow over racing navy. | Chivo |
+
+### NBA teams (30)
+
+All 30 franchises: Icon-edition nights, Association whites, official colors.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Chicago Bulls](https://style-foundry-gabbulldo.vercel.app/styles/chicago-bulls/app) | Bulls red and black, nineties swagger. | Big Shoulders / Inter |
+| [Boston Celtics](https://style-foundry-gabbulldo.vercel.app/styles/boston-celtics/app) | Parquet green and champion gold. | Big Shoulders / Inter |
+| [New York Knicks](https://style-foundry-gabbulldo.vercel.app/styles/new-york-knicks/app) | Garden blue and orange, MSG lights. | Big Shoulders / Inter |
+| [Philadelphia 76ers](https://style-foundry-gabbulldo.vercel.app/styles/philadelphia-76ers/app) | Liberty blue and red, trust the process. | Big Shoulders / Inter |
+| [LA Lakers](https://style-foundry-gabbulldo.vercel.app/styles/la-lakers/app) | Showtime purple and gold. | Big Shoulders / Inter |
+| [Golden State Warriors](https://style-foundry-gabbulldo.vercel.app/styles/golden-state-warriors/app) | Bay bridge blue and gold. | Big Shoulders / Inter |
+| [Miami Heat](https://style-foundry-gabbulldo.vercel.app/styles/miami-heat/app) | Heat culture black, vice red and flame. | Big Shoulders / Inter |
+| [Detroit Pistons](https://style-foundry-gabbulldo.vercel.app/styles/detroit-pistons/app) | Motor city red, white and blue. | Big Shoulders / Inter |
+| [San Antonio Spurs](https://style-foundry-gabbulldo.vercel.app/styles/san-antonio-spurs/app) | Silver and black fundamentals. | Big Shoulders / Inter |
+| [Brooklyn Nets](https://style-foundry-gabbulldo.vercel.app/styles/brooklyn-nets/app) | Black and white, borough minimal. | Big Shoulders / Inter |
+| [Toronto Raptors](https://style-foundry-gabbulldo.vercel.app/styles/toronto-raptors/app) | We the north red, claw black, chevron gold. | Big Shoulders / Inter |
+| [Milwaukee Bucks](https://style-foundry-gabbulldo.vercel.app/styles/milwaukee-bucks/app) | Hunter green and cream city, fear the deer. | Big Shoulders / Inter |
+| [Cleveland Cavaliers](https://style-foundry-gabbulldo.vercel.app/styles/cleveland-cavaliers/app) | Wine and gold, the land. | Big Shoulders / Inter |
+| [Indiana Pacers](https://style-foundry-gabbulldo.vercel.app/styles/indiana-pacers/app) | Navy and gold, hoosier speed. | Big Shoulders / Inter |
+| [Atlanta Hawks](https://style-foundry-gabbulldo.vercel.app/styles/atlanta-hawks/app) | Torch red and volt, true to Atlanta. | Big Shoulders / Inter |
+| [Charlotte Hornets](https://style-foundry-gabbulldo.vercel.app/styles/charlotte-hornets/app) | Buzz purple and teal, nineties royalty. | Big Shoulders / Inter |
+| [Orlando Magic](https://style-foundry-gabbulldo.vercel.app/styles/orlando-magic/app) | Magic blue, silver pinstripes. | Big Shoulders / Inter |
+| [Washington Wizards](https://style-foundry-gabbulldo.vercel.app/styles/washington-wizards/app) | DC navy, red and marble. | Big Shoulders / Inter |
+| [Denver Nuggets](https://style-foundry-gabbulldo.vercel.app/styles/denver-nuggets/app) | Mile high navy, sunrise gold, skyline. | Big Shoulders / Inter |
+| [Minnesota Timberwolves](https://style-foundry-gabbulldo.vercel.app/styles/minnesota-timberwolves/app) | Midnight navy, aurora neon green. | Big Shoulders / Inter |
+| [OKC Thunder](https://style-foundry-gabbulldo.vercel.app/styles/okc-thunder/app) | Thunder blue, sunset orange surge. | Big Shoulders / Inter |
+| [Portland Trail Blazers](https://style-foundry-gabbulldo.vercel.app/styles/portland-trail-blazers/app) | Rip city red and black, pinwheel diagonals. | Big Shoulders / Inter |
+| [Utah Jazz](https://style-foundry-gabbulldo.vercel.app/styles/utah-jazz/app) | Note navy and yellow, mountain shadow. | Big Shoulders / Inter |
+| [Dallas Mavericks](https://style-foundry-gabbulldo.vercel.app/styles/dallas-mavericks/app) | Royal blue and silver, MFFL. | Big Shoulders / Inter |
+| [Houston Rockets](https://style-foundry-gabbulldo.vercel.app/styles/houston-rockets/app) | Rocket red, clutch city black. | Big Shoulders / Inter |
+| [Memphis Grizzlies](https://style-foundry-gabbulldo.vercel.app/styles/memphis-grizzlies/app) | Beale Street blue over midnight navy, grit and grind. | Big Shoulders / Inter |
+| [New Orleans Pelicans](https://style-foundry-gabbulldo.vercel.app/styles/new-orleans-pelicans/app) | Navy, mardi gras gold and red. | Big Shoulders / Inter |
+| [Phoenix Suns](https://style-foundry-gabbulldo.vercel.app/styles/phoenix-suns/app) | The valley: heat purple and blaze orange. | Big Shoulders / Inter |
+| [Sacramento Kings](https://style-foundry-gabbulldo.vercel.app/styles/sacramento-kings/app) | Crown purple and silver, light the beam. | Big Shoulders / Inter |
+| [LA Clippers](https://style-foundry-gabbulldo.vercel.app/styles/la-clippers/app) | Nautical red, white and royal. | Big Shoulders / Inter |
+
+### Football clubs (16)
+
+European giants in their kit colors — crest pride as a design system.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [FC Barcelona DNA](https://style-foundry-gabbulldo.vercel.app/styles/barcelona-dna/app) | Blaugrana night navy, garnet and gold. | Exo 2 |
+| [Real Madrid DNA](https://style-foundry-gabbulldo.vercel.app/styles/real-madrid-dna/app) | Royal white, championship gold, regal navy restraint. | Cinzel / Inter |
+| [PSG](https://style-foundry-gabbulldo.vercel.app/styles/psg/app) | Parc des Princes navy, hechter red stripe. | Prompt / Inter |
+| [Arsenal](https://style-foundry-gabbulldo.vercel.app/styles/arsenal/app) | Cannon red, north london navy and gold. | Khand / Inter |
+| [Chelsea](https://style-foundry-gabbulldo.vercel.app/styles/chelsea/app) | Royal blue pride of london. | Kanit / Inter |
+| [Olympique de Marseille](https://style-foundry-gabbulldo.vercel.app/styles/marseille/app) | Droit au but sky blue and gold. | Teko / Inter |
+| [AC Milan](https://style-foundry-gabbulldo.vercel.app/styles/ac-milan/app) | Rossoneri red and black stripes. | Antonio / Inter |
+| [Inter Milan](https://style-foundry-gabbulldo.vercel.app/styles/inter-milan/app) | Nerazzurri blue and black night. | Familjen Grotesk |
+| [AS Roma](https://style-foundry-gabbulldo.vercel.app/styles/roma/app) | Giallorossi garnet and imperial gold. | Forum / Inter |
+| [Lazio](https://style-foundry-gabbulldo.vercel.app/styles/lazio/app) | Biancocelesti sky blue and eagle gold. | Cabin |
+| [Juventus](https://style-foundry-gabbulldo.vercel.app/styles/juventus/app) | Bianconeri black and white stripes. | Passion One / Inter |
+| [Bayern Munich](https://style-foundry-gabbulldo.vercel.app/styles/bayern-munich/app) | Mia san mia red and bavarian blue. | Staatliches / Inter |
+| [Borussia Dortmund](https://style-foundry-gabbulldo.vercel.app/styles/dortmund/app) | The yellow wall on black. | Fugaz One / Inter |
+| [Atlético Madrid](https://style-foundry-gabbulldo.vercel.app/styles/atletico-madrid/app) | Rojiblanco stripes, colchonero navy. | Barlow Condensed / Inter |
+| [Benfica](https://style-foundry-gabbulldo.vercel.app/styles/benfica/app) | Águias red over lisbon white. | Amaranth / Inter |
+| [FC Porto](https://style-foundry-gabbulldo.vercel.app/styles/porto/app) | Dragões blue and gold. | Ruda / Inter |
+
+### Gaming & streaming DNA (7)
+
+Consoles, stores and live platforms.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [PlayStation DNA](https://style-foundry-gabbulldo.vercel.app/styles/playstation-dna/app) | Console blue, iconic shapes, studio white. | Encode Sans |
+| [Xbox DNA](https://style-foundry-gabbulldo.vercel.app/styles/xbox-dna/app) | Power green on carbon dark. | Manrope |
+| [Nintendo DNA](https://style-foundry-gabbulldo.vercel.app/styles/nintendo-dna/app) | Joy red on toy white, rounded delight. | M PLUS Rounded 1c |
+| [Steam DNA](https://style-foundry-gabbulldo.vercel.app/styles/steam-dna/app) | Midnight library blue, glowing shelves. | Work Sans |
+| [Twitch DNA](https://style-foundry-gabbulldo.vercel.app/styles/twitch-dna/app) | Glitch purple dark, live energy. | Readex Pro |
+| [YouTube DNA](https://style-foundry-gabbulldo.vercel.app/styles/youtube-dna/app) | Play red on white, thumbnail-first. | Roboto Condensed / Inter |
+| [TikTok DNA](https://style-foundry-gabbulldo.vercel.app/styles/tiktok-dna/app) | Void black, glitch cyan and pink, vertical energy. | Montserrat |
+
+### Cinematic (8)
+
+Screen worlds everyone recognizes — homage palettes, no props required.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Millennium Falcon](https://style-foundry-gabbulldo.vercel.app/styles/millennium-falcon/app) | Used-future cockpit: worn panels, targeting-computer vectors, amber toggles. | Nova Square / Inter + VT323 |
+| [Stranger Things](https://style-foundry-gabbulldo.vercel.app/styles/stranger-things/app) | Upside-down night, neon red serif glow. | Grenze / Inter |
+| [The Matrix](https://style-foundry-gabbulldo.vercel.app/styles/matrix/app) | Digital rain green on void. | Share Tech Mono |
+| [Dune](https://style-foundry-gabbulldo.vercel.app/styles/dune/app) | Spice sand, monumental thin display, desert silence. | Julius Sans One / Inter |
+| [Wes Anderson](https://style-foundry-gabbulldo.vercel.app/styles/wes-anderson/app) | Symmetrical pastel worlds, precious detail. | Didact Gothic |
+| [Severance](https://style-foundry-gabbulldo.vercel.app/styles/severance/app) | Lumon terminal teal, pale cyan data, sterile calm. | IBM Plex Sans |
+| [James Bond](https://style-foundry-gabbulldo.vercel.app/styles/james-bond/app) | Tuxedo black and white, gunbarrel gold. | League Spartan / Inter |
+| [Ghibli](https://style-foundry-gabbulldo.vercel.app/styles/ghibli/app) | Watercolor meadows, warm paper skies, gentle wonder. | Mali |
+
+### NFL teams (32)
+
+All 32 franchises: stadium-night colors, road whites on the flip.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Arizona Cardinals](https://style-foundry-gabbulldo.vercel.app/styles/arizona-cardinals/app) | Cardinal red, desert gold. | Graduate / Inter |
+| [Atlanta Falcons](https://style-foundry-gabbulldo.vercel.app/styles/atlanta-falcons/app) | Falcon red on blackout. | Graduate / Inter |
+| [Baltimore Ravens](https://style-foundry-gabbulldo.vercel.app/styles/baltimore-ravens/app) | Raven purple, vintage gold. | Graduate / Inter |
+| [Buffalo Bills](https://style-foundry-gabbulldo.vercel.app/styles/buffalo-bills/app) | Royal charging blue, red streak. | Graduate / Inter |
+| [Carolina Panthers](https://style-foundry-gabbulldo.vercel.app/styles/carolina-panthers/app) | Panther blue on black. | Graduate / Inter |
+| [Chicago Bears](https://style-foundry-gabbulldo.vercel.app/styles/chicago-bears/app) | Monsters-of-the-midway navy and orange. | Graduate / Inter |
+| [Cincinnati Bengals](https://style-foundry-gabbulldo.vercel.app/styles/cincinnati-bengals/app) | Bengal orange, jungle stripes. | Graduate / Inter |
+| [Cleveland Browns](https://style-foundry-gabbulldo.vercel.app/styles/cleveland-browns/app) | Dawg pound brown and orange. | Graduate / Inter |
+| [Dallas Cowboys](https://style-foundry-gabbulldo.vercel.app/styles/dallas-cowboys/app) | The star: navy and silver. | Graduate / Inter |
+| [Denver Broncos](https://style-foundry-gabbulldo.vercel.app/styles/denver-broncos/app) | Predominantly orange, mile-high navy. | Graduate / Inter |
+| [Detroit Lions](https://style-foundry-gabbulldo.vercel.app/styles/detroit-lions/app) | Honolulu blue and silver. | Graduate / Inter |
+| [Green Bay Packers](https://style-foundry-gabbulldo.vercel.app/styles/green-bay-packers/app) | Frozen tundra green and gold. | Graduate / Inter |
+| [Houston Texans](https://style-foundry-gabbulldo.vercel.app/styles/houston-texans/app) | Deep steel blue, battle red. | Graduate / Inter |
+| [Indianapolis Colts](https://style-foundry-gabbulldo.vercel.app/styles/indianapolis-colts/app) | Horseshoe royal and gray. | Graduate / Inter |
+| [Jacksonville Jaguars](https://style-foundry-gabbulldo.vercel.app/styles/jacksonville-jaguars/app) | Teal, black and duval gold. | Graduate / Inter |
+| [Kansas City Chiefs](https://style-foundry-gabbulldo.vercel.app/styles/kansas-city-chiefs/app) | Arrowhead red and gold. | Graduate / Inter |
+| [Las Vegas Raiders](https://style-foundry-gabbulldo.vercel.app/styles/las-vegas-raiders/app) | Silver and black. Just win, baby. | Graduate / Inter |
+| [LA Chargers](https://style-foundry-gabbulldo.vercel.app/styles/la-chargers/app) | Powder blue and bolt gold. | Graduate / Inter |
+| [LA Rams](https://style-foundry-gabbulldo.vercel.app/styles/la-rams/app) | Rams royal and sol. | Graduate / Inter |
+| [Miami Dolphins](https://style-foundry-gabbulldo.vercel.app/styles/miami-dolphins/app) | Aqua and coral sunshine. | Graduate / Inter |
+| [Minnesota Vikings](https://style-foundry-gabbulldo.vercel.app/styles/minnesota-vikings/app) | Skol purple and norse gold. | Graduate / Inter |
+| [New England Patriots](https://style-foundry-gabbulldo.vercel.app/styles/new-england-patriots/app) | Nautical navy, liberty red-white. | Graduate / Inter |
+| [New Orleans Saints](https://style-foundry-gabbulldo.vercel.app/styles/new-orleans-saints/app) | Black and old gold, who dat. | Graduate / Inter |
+| [New York Giants](https://style-foundry-gabbulldo.vercel.app/styles/new-york-giants/app) | Big blue, franchise red. | Graduate / Inter |
+| [New York Jets](https://style-foundry-gabbulldo.vercel.app/styles/new-york-jets/app) | Gotham green blackout. | Graduate / Inter |
+| [Philadelphia Eagles](https://style-foundry-gabbulldo.vercel.app/styles/philadelphia-eagles/app) | Midnight green, silver wings. | Graduate / Inter |
+| [Pittsburgh Steelers](https://style-foundry-gabbulldo.vercel.app/styles/pittsburgh-steelers/app) | Black and gold, bumblebee stripes. | Graduate / Inter |
+| [San Francisco 49ers](https://style-foundry-gabbulldo.vercel.app/styles/san-francisco-49ers/app) | Niners red and gold rush. | Graduate / Inter |
+| [Seattle Seahawks](https://style-foundry-gabbulldo.vercel.app/styles/seattle-seahawks/app) | College navy, action green surge. | Graduate / Inter |
+| [Tampa Bay Buccaneers](https://style-foundry-gabbulldo.vercel.app/styles/tampa-bay-buccaneers/app) | Buccaneer red over pewter. | Graduate / Inter |
+| [Tennessee Titans](https://style-foundry-gabbulldo.vercel.app/styles/tennessee-titans/app) | Titans navy, sword-steel blue. | Graduate / Inter |
+| [Washington Commanders](https://style-foundry-gabbulldo.vercel.app/styles/washington-commanders/app) | Burgundy command, gold trim. | Graduate / Inter |

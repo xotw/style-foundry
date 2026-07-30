@@ -1,6 +1,6 @@
 # Style Foundry
 
-**121 design systems. One token contract.**
+**174 design systems. One token contract.**
 
 Live: **https://style-foundry-gabbulldo.vercel.app**
 
@@ -127,7 +127,7 @@ The design languages of iconic software products, from crawled brand values.
 | [Proton DNA](https://style-foundry-gabbulldo.vercel.app/styles/proton-dna/app) | Privacy purple over deep navy ink, Swiss-made trust. | Red Hat Display |
 | [Anthropic DNA](https://style-foundry-gabbulldo.vercel.app/styles/anthropic-dna/app) | Cream paper, book-like serif display, terracotta accent, calm spacing. | Source Serif 4 / Archivo |
 | [NASA DNA](https://style-foundry-gabbulldo.vercel.app/styles/nasa-dna/app) | 1976 Standards Manual: worm red, federal grid discipline. | Public Sans |
-| [Notion DNA](https://style-foundry-gabbulldo.vercel.app/styles/notion-dna/app) | Paper white, ink gray, serif calm. | Spectral / Inter |
+| [Notion DNA](https://style-foundry-gabbulldo.vercel.app/styles/notion-dna/app) | The app itself: warm gray chrome, quiet ink, pastel property chips. | Inter (app UI) |
 | [Revolut DNA](https://style-foundry-gabbulldo.vercel.app/styles/revolut-dna/app) | Midnight fintech, aurora gradients, borderless. | Sora |
 | [Microsoft DNA](https://style-foundry-gabbulldo.vercel.app/styles/microsoft-dna/app) | Fluent four-square, segoe clarity. | Segoe UI (system) |
 
@@ -145,7 +145,7 @@ Feeds, bubbles and communities — the interfaces everyone knows.
 | [Facebook DNA](https://style-foundry-gabbulldo.vercel.app/styles/facebook-dna/app) | Feed gray, white cards, the blue, dense social chrome. | Onest |
 | [Instagram DNA](https://style-foundry-gabbulldo.vercel.app/styles/instagram-dna/app) | Gallery white, hairline borders, gradient pink to purple. | Sen |
 | [X DNA](https://style-foundry-gabbulldo.vercel.app/styles/x-dna/app) | Void black, ghost grays, one blue, ruthless density. | Schibsted Grotesk |
-| [LinkedIn DNA](https://style-foundry-gabbulldo.vercel.app/styles/linkedin-dna/app) | Warm paper feed, white cards, professional blue. | Source Sans 3 |
+| [LinkedIn DNA](https://style-foundry-gabbulldo.vercel.app/styles/linkedin-dna/app) | Warm paper feed, white cards, professional blue. | System UI (product) |
 | [Reddit DNA](https://style-foundry-gabbulldo.vercel.app/styles/reddit-dna/app) | Upvote orange, community white, pill-shaped everything. | Reddit Sans |
 | [Pinterest DNA](https://style-foundry-gabbulldo.vercel.app/styles/pinterest-dna/app) | Pin red on gallery white, masonry softness. | Urbanist |
 
@@ -193,9 +193,9 @@ Brands and clubs built on intensity, speed and pride.
 | [Formula 1](https://style-foundry-gabbulldo.vercel.app/styles/formula1/app) | Race red on carbon black, apex speed. | Michroma / Inter |
 | [Red Bull DNA](https://style-foundry-gabbulldo.vercel.app/styles/redbull-dna/app) | Energy red and yellow over racing navy. | Chivo |
 
-### NBA teams (9)
+### NBA teams (30)
 
-Nine iconic franchises, official colors, jumbotron energy.
+All 30 franchises: Icon-edition nights, Association whites, official colors.
 
 | Theme | Character | Fonts |
 |---|---|---|
@@ -208,6 +208,27 @@ Nine iconic franchises, official colors, jumbotron energy.
 | [Miami Heat](https://style-foundry-gabbulldo.vercel.app/styles/miami-heat/app) | Heat culture black, vice red and flame. | Big Shoulders / Inter |
 | [Detroit Pistons](https://style-foundry-gabbulldo.vercel.app/styles/detroit-pistons/app) | Motor city red, white and blue. | Big Shoulders / Inter |
 | [San Antonio Spurs](https://style-foundry-gabbulldo.vercel.app/styles/san-antonio-spurs/app) | Silver and black fundamentals. | Big Shoulders / Inter |
+| [Brooklyn Nets](https://style-foundry-gabbulldo.vercel.app/styles/brooklyn-nets/app) | Black and white, borough minimal. | Big Shoulders / Inter |
+| [Toronto Raptors](https://style-foundry-gabbulldo.vercel.app/styles/toronto-raptors/app) | We the north red, claw black, chevron gold. | Big Shoulders / Inter |
+| [Milwaukee Bucks](https://style-foundry-gabbulldo.vercel.app/styles/milwaukee-bucks/app) | Hunter green and cream city, fear the deer. | Big Shoulders / Inter |
+| [Cleveland Cavaliers](https://style-foundry-gabbulldo.vercel.app/styles/cleveland-cavaliers/app) | Wine and gold, the land. | Big Shoulders / Inter |
+| [Indiana Pacers](https://style-foundry-gabbulldo.vercel.app/styles/indiana-pacers/app) | Navy and gold, hoosier speed. | Big Shoulders / Inter |
+| [Atlanta Hawks](https://style-foundry-gabbulldo.vercel.app/styles/atlanta-hawks/app) | Torch red and volt, true to Atlanta. | Big Shoulders / Inter |
+| [Charlotte Hornets](https://style-foundry-gabbulldo.vercel.app/styles/charlotte-hornets/app) | Buzz purple and teal, nineties royalty. | Big Shoulders / Inter |
+| [Orlando Magic](https://style-foundry-gabbulldo.vercel.app/styles/orlando-magic/app) | Magic blue, silver pinstripes. | Big Shoulders / Inter |
+| [Washington Wizards](https://style-foundry-gabbulldo.vercel.app/styles/washington-wizards/app) | DC navy, red and marble. | Big Shoulders / Inter |
+| [Denver Nuggets](https://style-foundry-gabbulldo.vercel.app/styles/denver-nuggets/app) | Mile high navy, sunrise gold, skyline. | Big Shoulders / Inter |
+| [Minnesota Timberwolves](https://style-foundry-gabbulldo.vercel.app/styles/minnesota-timberwolves/app) | Midnight navy, aurora neon green. | Big Shoulders / Inter |
+| [OKC Thunder](https://style-foundry-gabbulldo.vercel.app/styles/okc-thunder/app) | Thunder blue, sunset orange surge. | Big Shoulders / Inter |
+| [Portland Trail Blazers](https://style-foundry-gabbulldo.vercel.app/styles/portland-trail-blazers/app) | Rip city red and black, pinwheel diagonals. | Big Shoulders / Inter |
+| [Utah Jazz](https://style-foundry-gabbulldo.vercel.app/styles/utah-jazz/app) | Note navy and yellow, mountain shadow. | Big Shoulders / Inter |
+| [Dallas Mavericks](https://style-foundry-gabbulldo.vercel.app/styles/dallas-mavericks/app) | Royal blue and silver, MFFL. | Big Shoulders / Inter |
+| [Houston Rockets](https://style-foundry-gabbulldo.vercel.app/styles/houston-rockets/app) | Rocket red, clutch city black. | Big Shoulders / Inter |
+| [Memphis Grizzlies](https://style-foundry-gabbulldo.vercel.app/styles/memphis-grizzlies/app) | Beale Street blue over midnight navy, grit and grind. | Big Shoulders / Inter |
+| [New Orleans Pelicans](https://style-foundry-gabbulldo.vercel.app/styles/new-orleans-pelicans/app) | Navy, mardi gras gold and red. | Big Shoulders / Inter |
+| [Phoenix Suns](https://style-foundry-gabbulldo.vercel.app/styles/phoenix-suns/app) | The valley: heat purple and blaze orange. | Big Shoulders / Inter |
+| [Sacramento Kings](https://style-foundry-gabbulldo.vercel.app/styles/sacramento-kings/app) | Crown purple and silver, light the beam. | Big Shoulders / Inter |
+| [LA Clippers](https://style-foundry-gabbulldo.vercel.app/styles/la-clippers/app) | Nautical red, white and royal. | Big Shoulders / Inter |
 
 ### Football clubs (16)
 
@@ -252,7 +273,7 @@ Screen worlds everyone recognizes — homage palettes, no props required.
 
 | Theme | Character | Fonts |
 |---|---|---|
-| [Star Wars](https://style-foundry-gabbulldo.vercel.app/styles/star-wars/app) | A galaxy far away: space black, crawl yellow, saber glow. | Pathway Gothic One / Inter |
+| [Millennium Falcon](https://style-foundry-gabbulldo.vercel.app/styles/millennium-falcon/app) | Used-future cockpit: worn panels, targeting-computer vectors, amber toggles. | Nova Square / Inter + VT323 |
 | [Stranger Things](https://style-foundry-gabbulldo.vercel.app/styles/stranger-things/app) | Upside-down night, neon red serif glow. | Grenze / Inter |
 | [The Matrix](https://style-foundry-gabbulldo.vercel.app/styles/matrix/app) | Digital rain green on void. | Share Tech Mono |
 | [Dune](https://style-foundry-gabbulldo.vercel.app/styles/dune/app) | Spice sand, monumental thin display, desert silence. | Julius Sans One / Inter |
@@ -260,6 +281,45 @@ Screen worlds everyone recognizes — homage palettes, no props required.
 | [Severance](https://style-foundry-gabbulldo.vercel.app/styles/severance/app) | Lumon terminal teal, pale cyan data, sterile calm. | IBM Plex Sans |
 | [James Bond](https://style-foundry-gabbulldo.vercel.app/styles/james-bond/app) | Tuxedo black and white, gunbarrel gold. | League Spartan / Inter |
 | [Ghibli](https://style-foundry-gabbulldo.vercel.app/styles/ghibli/app) | Watercolor meadows, warm paper skies, gentle wonder. | Mali |
+
+### NFL teams (32)
+
+All 32 franchises: stadium-night colors, road whites on the flip.
+
+| Theme | Character | Fonts |
+|---|---|---|
+| [Arizona Cardinals](https://style-foundry-gabbulldo.vercel.app/styles/arizona-cardinals/app) | Cardinal red, desert gold. | Graduate / Inter |
+| [Atlanta Falcons](https://style-foundry-gabbulldo.vercel.app/styles/atlanta-falcons/app) | Falcon red on blackout. | Graduate / Inter |
+| [Baltimore Ravens](https://style-foundry-gabbulldo.vercel.app/styles/baltimore-ravens/app) | Raven purple, vintage gold. | Graduate / Inter |
+| [Buffalo Bills](https://style-foundry-gabbulldo.vercel.app/styles/buffalo-bills/app) | Royal charging blue, red streak. | Graduate / Inter |
+| [Carolina Panthers](https://style-foundry-gabbulldo.vercel.app/styles/carolina-panthers/app) | Panther blue on black. | Graduate / Inter |
+| [Chicago Bears](https://style-foundry-gabbulldo.vercel.app/styles/chicago-bears/app) | Monsters-of-the-midway navy and orange. | Graduate / Inter |
+| [Cincinnati Bengals](https://style-foundry-gabbulldo.vercel.app/styles/cincinnati-bengals/app) | Bengal orange, jungle stripes. | Graduate / Inter |
+| [Cleveland Browns](https://style-foundry-gabbulldo.vercel.app/styles/cleveland-browns/app) | Dawg pound brown and orange. | Graduate / Inter |
+| [Dallas Cowboys](https://style-foundry-gabbulldo.vercel.app/styles/dallas-cowboys/app) | The star: navy and silver. | Graduate / Inter |
+| [Denver Broncos](https://style-foundry-gabbulldo.vercel.app/styles/denver-broncos/app) | Predominantly orange, mile-high navy. | Graduate / Inter |
+| [Detroit Lions](https://style-foundry-gabbulldo.vercel.app/styles/detroit-lions/app) | Honolulu blue and silver. | Graduate / Inter |
+| [Green Bay Packers](https://style-foundry-gabbulldo.vercel.app/styles/green-bay-packers/app) | Frozen tundra green and gold. | Graduate / Inter |
+| [Houston Texans](https://style-foundry-gabbulldo.vercel.app/styles/houston-texans/app) | Deep steel blue, battle red. | Graduate / Inter |
+| [Indianapolis Colts](https://style-foundry-gabbulldo.vercel.app/styles/indianapolis-colts/app) | Horseshoe royal and gray. | Graduate / Inter |
+| [Jacksonville Jaguars](https://style-foundry-gabbulldo.vercel.app/styles/jacksonville-jaguars/app) | Teal, black and duval gold. | Graduate / Inter |
+| [Kansas City Chiefs](https://style-foundry-gabbulldo.vercel.app/styles/kansas-city-chiefs/app) | Arrowhead red and gold. | Graduate / Inter |
+| [Las Vegas Raiders](https://style-foundry-gabbulldo.vercel.app/styles/las-vegas-raiders/app) | Silver and black. Just win, baby. | Graduate / Inter |
+| [LA Chargers](https://style-foundry-gabbulldo.vercel.app/styles/la-chargers/app) | Powder blue and bolt gold. | Graduate / Inter |
+| [LA Rams](https://style-foundry-gabbulldo.vercel.app/styles/la-rams/app) | Rams royal and sol. | Graduate / Inter |
+| [Miami Dolphins](https://style-foundry-gabbulldo.vercel.app/styles/miami-dolphins/app) | Aqua and coral sunshine. | Graduate / Inter |
+| [Minnesota Vikings](https://style-foundry-gabbulldo.vercel.app/styles/minnesota-vikings/app) | Skol purple and norse gold. | Graduate / Inter |
+| [New England Patriots](https://style-foundry-gabbulldo.vercel.app/styles/new-england-patriots/app) | Nautical navy, liberty red-white. | Graduate / Inter |
+| [New Orleans Saints](https://style-foundry-gabbulldo.vercel.app/styles/new-orleans-saints/app) | Black and old gold, who dat. | Graduate / Inter |
+| [New York Giants](https://style-foundry-gabbulldo.vercel.app/styles/new-york-giants/app) | Big blue, franchise red. | Graduate / Inter |
+| [New York Jets](https://style-foundry-gabbulldo.vercel.app/styles/new-york-jets/app) | Gotham green blackout. | Graduate / Inter |
+| [Philadelphia Eagles](https://style-foundry-gabbulldo.vercel.app/styles/philadelphia-eagles/app) | Midnight green, silver wings. | Graduate / Inter |
+| [Pittsburgh Steelers](https://style-foundry-gabbulldo.vercel.app/styles/pittsburgh-steelers/app) | Black and gold, bumblebee stripes. | Graduate / Inter |
+| [San Francisco 49ers](https://style-foundry-gabbulldo.vercel.app/styles/san-francisco-49ers/app) | Niners red and gold rush. | Graduate / Inter |
+| [Seattle Seahawks](https://style-foundry-gabbulldo.vercel.app/styles/seattle-seahawks/app) | College navy, action green surge. | Graduate / Inter |
+| [Tampa Bay Buccaneers](https://style-foundry-gabbulldo.vercel.app/styles/tampa-bay-buccaneers/app) | Buccaneer red over pewter. | Graduate / Inter |
+| [Tennessee Titans](https://style-foundry-gabbulldo.vercel.app/styles/tennessee-titans/app) | Titans navy, sword-steel blue. | Graduate / Inter |
+| [Washington Commanders](https://style-foundry-gabbulldo.vercel.app/styles/washington-commanders/app) | Burgundy command, gold trim. | Graduate / Inter |
 
 ## The token contract
 
