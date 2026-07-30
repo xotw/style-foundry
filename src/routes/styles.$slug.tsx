@@ -1,5 +1,34 @@
-import { createFileRoute, notFound, Outlet } from "@tanstack/react-router";
+import { useState } from "react";
+import { createFileRoute, Link, notFound, Outlet } from "@tanstack/react-router";
+import { ArrowLeft, Check, Terminal } from "lucide-react";
 import { getStyle, STYLE_SLUGS } from "@/lib/styles-registry";
+
+/** One-click theme install: copies the shadcn CLI command for this theme. */
+function InstallChip({ slug }: { slug: string }) {
+  const [copied, setCopied] = useState(false);
+  const command = `npx shadcn@latest add https://style-foundry-gabbulldo.vercel.app/r/${slug}.json`;
+  return (
+    <button
+      onClick={() => {
+        navigator.clipboard.writeText(command);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1600);
+      }}
+      title={command}
+      className="fixed right-4 top-4 z-50 inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/80 px-3 py-1.5 text-[11px] font-semibold tracking-wide text-white/70 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-colors hover:text-white"
+    >
+      {copied ? (
+        <>
+          <Check className="size-3 text-emerald-400" /> Copied!
+        </>
+      ) : (
+        <>
+          <Terminal className="size-3" /> Install
+        </>
+      )}
+    </button>
+  );
+}
 
 export const Route = createFileRoute("/styles/$slug")({
   beforeLoad: ({ params }) => {
@@ -14,6 +43,14 @@ function StyleLayout() {
 
   return (
     <div className={`theme-${slug} min-h-screen`} data-style={style?.slug}>
+      {/* Always-visible way home, styled like the switcher shell */}
+      <Link
+        to="/"
+        className="fixed left-4 top-4 z-50 inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/80 px-3 py-1.5 text-[11px] font-semibold tracking-wide text-white/70 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-colors hover:text-white"
+      >
+        <ArrowLeft className="size-3" /> Foundry
+      </Link>
+      <InstallChip slug={slug} />
       <Outlet />
     </div>
   );
