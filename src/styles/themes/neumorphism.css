@@ -1,14 +1,14 @@
 /* Neumorphism — soft extruded gray surfaces, double shadows, pill shapes */
 .theme-neumorphism {
-  --bg: oklch(0.93 0.005 260);
-  --surface: oklch(0.93 0.005 260);
-  --surface-2: oklch(0.95 0.005 260);
+  --bg: oklch(0.920 0.011 256.7);
+  --surface: oklch(0.920 0.011 256.7);
+  --surface-2: oklch(0.893 0.014 258.3);
   --fg: oklch(0.38 0.02 265);
   --fg-muted: oklch(0.58 0.02 265);
   --accent: oklch(0.62 0.14 265);
   --accent-fg: oklch(0.99 0 0);
   --accent-2: oklch(0.72 0.11 200);
-  --line: oklch(0.88 0.006 260);
+  --line: oklch(1 0 0 / 0%);
   --success: oklch(0.68 0.14 155);
   --warning: oklch(0.78 0.14 80);
   --danger: oklch(0.62 0.19 22);
@@ -18,8 +18,8 @@
   --radius-lg: 2rem;
   --radius-pill: 9999px;
 
-  --shadow-1: 6px 6px 12px oklch(0.78 0.01 260 / 90%), -6px -6px 12px oklch(1 0 0 / 90%);
-  --shadow-2: 10px 10px 24px oklch(0.76 0.01 260 / 90%), -10px -10px 24px oklch(1 0 0 / 95%);
+  --shadow-1: 6px 6px 12px oklch(0.72 0.02 260 / 60%), -6px -6px 12px oklch(1 0 0 / 90%);
+  --shadow-2: 10px 10px 20px oklch(0.72 0.02 260 / 55%), -10px -10px 20px oklch(1 0 0 / 90%);
   --shadow-3: 16px 16px 36px oklch(0.74 0.012 260 / 90%), -16px -16px 36px oklch(1 0 0 / 95%);
   --glow: inset 4px 4px 10px oklch(0.78 0.01 260 / 90%), inset -4px -4px 10px oklch(1 0 0 / 95%);
 
@@ -56,3 +56,16 @@
 /* signature */
 .theme-neumorphism button:active { box-shadow: inset 3px 3px 6px oklch(0 0 0 / 15%), inset -3px -3px 6px oklch(1 0 0 / 90%); transform: none; }
 .theme-neumorphism h1, .theme-neumorphism h2 { color: var(--fg); text-shadow: 1px 1px 1px oklch(1 0 0 / 80%); }
+
+/* alt mode: auto-derived dark variant */
+.theme-neumorphism.alt-mode {
+  --bg: oklch(0.145 0.011 256.7);
+  --surface: oklch(0.185 0.011 256.7);
+  --surface-2: oklch(0.225 0.011 256.7);
+  --fg: oklch(0.97 0.005 90);
+  --fg-muted: oklch(0.70 0.01 90);
+  --line: oklch(1 0 0 / 14%);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+}

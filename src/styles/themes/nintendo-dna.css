@@ -1,18 +1,18 @@
 /* Nintendo DNA — joy red on toy white, rounded delight */
 .theme-nintendo-dna {
   --bg: oklch(1.000 0 0);
-  --surface: oklch(0.973 0 0);
+  --surface: oklch(0.970 0 0);
   --surface-2: oklch(0.943 0 0);
   --fg: oklch(0.402 0 0);
   --fg-muted: oklch(0.633 0 0);
   --accent: oklch(0.581 0.238 27.9);
   --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.752 0.133 215.1);
+  --accent-2: oklch(0.730 0.136 223.7);
   --line: oklch(0.922 0 0);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
-  --danger: oklch(0.581 0.238 27.9);
-  --radius: 1.25rem;
+  --danger: oklch(0.654 0.232 30.2);
+  --radius: 1rem;
   --radius-sm: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-pill: 9999px;
@@ -43,7 +43,20 @@
 
 /* signature */
 .theme-nintendo-dna { --font-ui: var(--font-display); }
-.theme-nintendo-dna h1 { font-weight: 800; color: var(--accent); }
 .theme-nintendo-dna button { font-weight: 700; transition: transform 140ms cubic-bezier(0.34, 1.56, 0.64, 1); }
 .theme-nintendo-dna button:active { transform: scale(0.92); }
+.theme-nintendo-dna h1 { font-weight: 800; }
+.theme-nintendo-dna h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; border-radius: 999px; background: linear-gradient(90deg, #ff3c28 0 50%, #0ab9e6 50% 100%); }
 
+/* alt mode: auto-derived dark variant */
+.theme-nintendo-dna.alt-mode {
+  --bg: oklch(0.145 0.000 0.0);
+  --surface: oklch(0.185 0.000 0.0);
+  --surface-2: oklch(0.225 0.000 0.0);
+  --fg: oklch(0.97 0.005 90);
+  --fg-muted: oklch(0.70 0.01 90);
+  --line: oklch(1 0 0 / 14%);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+}

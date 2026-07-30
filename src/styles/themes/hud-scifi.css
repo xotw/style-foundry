@@ -46,3 +46,19 @@
 .theme-hud-scifi { --font-ui: var(--font-display); background-image: repeating-linear-gradient(0deg, transparent 0 3px, oklch(0.75 0.1 220 / 4%) 3px 4px); }
 .theme-hud-scifi h1, .theme-hud-scifi h2 { text-shadow: 0 0 12px color-mix(in oklab, var(--accent) 60%, transparent); }
 .theme-hud-scifi button { clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px); text-transform: uppercase; letter-spacing: 0.14em; }
+
+/* alt mode: auto-derived light variant */
+.theme-hud-scifi.alt-mode {
+  --bg: oklch(0.98 0.012 252.7);
+  --surface: oklch(0.955 0.015 252.7);
+  --surface-2: oklch(0.92 0.017 252.7);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --accent: oklch(0.52 0.129 212.2);
+  --accent-fg: oklch(1 0 0);
+  background-image: none;
+}

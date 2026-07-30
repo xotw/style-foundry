@@ -61,3 +61,8 @@
 .theme-terminal h1, .theme-terminal h2, .theme-terminal h3 { text-transform: lowercase; }
 .theme-terminal button { text-transform: lowercase; }
 .theme-terminal ::selection { background: var(--accent); color: oklch(0.1 0 0); }
+
+.theme-terminal.alt-mode { --bg: oklch(0.96 0.01 120); --surface: oklch(0.93 0.012 120); --surface-2: oklch(0.89 0.015 120);
+  --fg: oklch(0.35 0.09 145); --fg-muted: oklch(0.5 0.06 145); --line: oklch(0.35 0.09 145 / 35%);
+  --accent: oklch(0.42 0.12 145); --accent-fg: oklch(0.97 0.01 120);
+  background-image: repeating-linear-gradient(0deg, transparent 0 2px, oklch(0.35 0.09 145 / 5%) 2px 4px); }

@@ -46,3 +46,16 @@
 .theme-discord-dna h1 { font-weight: 800; }
 .theme-discord-dna button:hover { filter: brightness(0.9); }
 .theme-discord-dna ::selection { background: color-mix(in oklab, var(--accent) 40%, transparent); }
+
+/* alt mode: auto-derived light variant */
+.theme-discord-dna.alt-mode {
+  --bg: oklch(0.98 0.009 268.4);
+  --surface: oklch(0.955 0.009 268.4);
+  --surface-2: oklch(0.92 0.009 268.4);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+}

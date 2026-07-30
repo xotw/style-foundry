@@ -63,3 +63,19 @@
 .theme-headspace-dna { --font-ui: var(--font-display); }
 .theme-headspace-dna h1 { font-weight: 700; }
 .theme-headspace-dna button { font-weight: 700; }
+.theme-headspace-dna h2 { color: var(--accent); }
+.theme-headspace-dna { background-image: radial-gradient(circle at 88% 6%, #ffce00 0 90px, transparent 90px), radial-gradient(circle at 8% 60%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 40%); }
+
+/* alt mode: auto-derived dark variant */
+.theme-headspace-dna.alt-mode {
+  --bg: oklch(0.145 0.000 0.0);
+  --surface: oklch(0.185 0.000 0.0);
+  --surface-2: oklch(0.225 0.000 0.0);
+  --fg: oklch(0.97 0.005 90);
+  --fg-muted: oklch(0.70 0.01 90);
+  --line: oklch(1 0 0 / 14%);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  background-image: none;
+}

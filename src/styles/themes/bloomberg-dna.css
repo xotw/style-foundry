@@ -76,3 +76,7 @@
 .theme-bloomberg-dna * { border-radius: 0 !important; }
 .theme-bloomberg-dna h1, .theme-bloomberg-dna h2 { text-transform: uppercase; text-shadow: 0 0 10px color-mix(in oklab, var(--accent) 45%, transparent); }
 .theme-bloomberg-dna h1::after { content: "▮"; margin-left: 0.15em; animation: sf-blink 1s steps(1) infinite; }
+
+.theme-bloomberg-dna.alt-mode { --bg: oklch(0.97 0.015 85); --surface: oklch(0.94 0.02 85); --surface-2: oklch(0.9 0.025 85);
+  --fg: oklch(0.25 0.02 60); --fg-muted: oklch(0.45 0.03 60); --line: oklch(0.35 0.05 60 / 30%);
+  --accent: oklch(0.55 0.13 60); --accent-fg: oklch(0.98 0.01 85); background-image: none; }

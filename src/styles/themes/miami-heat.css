@@ -1,4 +1,4 @@
-/* Miami Heat DNA — heat culture black, vice red and flame */
+/* Miami Heat DNA — heat culture black, vice flame gradient */
 .theme-miami-heat {
   --bg: oklch(0.151 0.004 285.9);
   --surface: oklch(0.192 0.004 286.0);
@@ -25,9 +25,9 @@
   --font-display: "Big Shoulders", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --tracking-display: 0em;
+  --tracking-display: 0.01em;
   --label-transform: uppercase;
-  --label-tracking: 0.12em;
+  --label-tracking: 0.1em;
 
   background-color: var(--bg);
   color: var(--fg);
@@ -44,10 +44,21 @@
 /* signature */
 .theme-miami-heat { --font-ui: var(--font-display); }
 .theme-miami-heat h1, .theme-miami-heat h2 { text-transform: uppercase; font-weight: 800; }
-.theme-miami-heat h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-miami-heat button { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 
-/* team */
 .theme-miami-heat { background-image: radial-gradient(ellipse at 50% 110%, oklch(0.55 0.2 25 / 35%), oklch(0.7 0.17 60 / 12%) 40%, transparent 70%); }
 .theme-miami-heat h1 { background: linear-gradient(180deg, #ffffff, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
+/* alt mode: auto-derived light variant */
+.theme-miami-heat.alt-mode {
+  --bg: oklch(0.98 0.004 285.9);
+  --surface: oklch(0.955 0.004 285.9);
+  --surface-2: oklch(0.92 0.004 285.9);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
+}

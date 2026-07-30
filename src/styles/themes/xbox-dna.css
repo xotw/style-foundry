@@ -5,7 +5,7 @@
   --surface-2: oklch(0.239 0 0);
   --fg: oklch(1.000 0 0);
   --fg-muted: oklch(0.686 0 0);
-  --accent: oklch(0.510 0.165 142.7);
+  --accent: oklch(0.627 0.170 149.2);
   --accent-fg: oklch(1.000 0 0);
   --accent-2: oklch(0.622 0.168 143.2);
   --line: oklch(1 0 0 / 14%);
@@ -45,4 +45,18 @@
 .theme-xbox-dna { --font-ui: var(--font-display); background-image: radial-gradient(circle at 50% -20%, oklch(0.4 0.12 145 / 30%), transparent 50%); }
 .theme-xbox-dna h1 { font-weight: 800; }
 .theme-xbox-dna button:hover { box-shadow: 0 0 20px color-mix(in oklab, var(--accent) 55%, transparent); }
+.theme-xbox-dna h2 { color: var(--accent); }
 
+/* alt mode: auto-derived light variant */
+.theme-xbox-dna.alt-mode {
+  --bg: oklch(0.98 0.000 0.0);
+  --surface: oklch(0.955 0.000 0.0);
+  --surface-2: oklch(0.92 0.000 0.0);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
+}

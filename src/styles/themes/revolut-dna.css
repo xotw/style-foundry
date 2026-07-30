@@ -45,3 +45,16 @@
 .theme-revolut-dna { --font-ui: var(--font-display); background-image: radial-gradient(ellipse at 80% -10%, oklch(0.45 0.18 285 / 35%), transparent 50%); }
 .theme-revolut-dna h1 { background: linear-gradient(95deg, var(--accent-2), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
+/* alt mode: auto-derived light variant */
+.theme-revolut-dna.alt-mode {
+  --bg: oklch(0.98 0.012 278.6);
+  --surface: oklch(0.955 0.014 278.6);
+  --surface-2: oklch(0.92 0.014 278.6);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
+}

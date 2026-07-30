@@ -1,14 +1,14 @@
 /* Luxury — deep ink, champagne gold, high-contrast serif, hairline rules */
 .theme-luxury {
-  --bg: oklch(0.17 0.012 60);
-  --surface: oklch(0.21 0.014 60);
-  --surface-2: oklch(0.25 0.016 60);
-  --fg: oklch(0.95 0.01 85);
-  --fg-muted: oklch(0.74 0.02 85);
-  --accent: oklch(0.82 0.12 88);
-  --accent-fg: oklch(0.17 0.012 60);
-  --accent-2: oklch(0.68 0.06 150);
-  --line: oklch(0.82 0.12 88 / 32%);
+  --bg: oklch(0.174 0.007 78.1);
+  --surface: oklch(0.206 0.011 80.5);
+  --surface-2: oklch(0.246 0.014 81.6);
+  --fg: oklch(0.930 0.022 83.3);
+  --fg-muted: oklch(0.655 0.033 81.7);
+  --accent: oklch(0.726 0.097 85.4);
+  --accent-fg: oklch(0.174 0.007 78.1);
+  --accent-2: oklch(0.570 0.065 82.9);
+  --line: oklch(0.72 0.06 85 / 30%);
   --success: oklch(0.72 0.12 155);
   --warning: oklch(0.82 0.13 85);
   --danger: oklch(0.6 0.19 22);
@@ -18,7 +18,7 @@
   --radius-lg: 0.25rem;
   --radius-pill: 9999px;
 
-  --shadow-1: 0 1px 0 0 var(--line);
+  --shadow-1: 0 1px 0 oklch(0.72 0.06 85 / 20%);
   --shadow-2: 0 18px 40px -24px oklch(0 0 0 / 85%);
   --shadow-3: 0 34px 80px -34px oklch(0 0 0 / 90%);
   --glow: 0 0 0 1px var(--line), 0 0 30px -12px oklch(0.82 0.12 88 / 55%);
@@ -54,3 +54,18 @@
 .theme-luxury button { text-transform: uppercase; letter-spacing: 0.22em; font-weight: 500; }
 .theme-luxury h2 { font-weight: 400; }
 .theme-luxury ::selection { background: oklch(0.75 0.09 85); color: oklch(0.15 0 0); }
+.theme-luxury h1 { color: #efe7d8; } .theme-luxury h2 { color: var(--accent); }
+
+/* alt mode: auto-derived light variant */
+.theme-luxury.alt-mode {
+  --bg: oklch(0.98 0.007 78.1);
+  --surface: oklch(0.955 0.007 78.1);
+  --surface-2: oklch(0.92 0.007 78.1);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
+}

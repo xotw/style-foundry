@@ -57,3 +57,19 @@
 .theme-cyberpunk { --font-ui: var(--font-display); background-image: repeating-linear-gradient(0deg, transparent 0 3px, oklch(0 0 0 / 18%) 3px 4px); }
 .theme-cyberpunk h1 { text-transform: uppercase; text-shadow: 3px 0 var(--accent-2), -3px 0 var(--danger); }
 .theme-cyberpunk button { text-transform: uppercase; letter-spacing: 0.1em; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
+
+/* alt mode: auto-derived light variant */
+.theme-cyberpunk.alt-mode {
+  --bg: oklch(0.98 0.012 290.0);
+  --surface: oklch(0.955 0.015 290.0);
+  --surface-2: oklch(0.92 0.020 290.0);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --accent: oklch(0.52 0.200 100.0);
+  --accent-fg: oklch(1 0 0);
+  background-image: none;
+}

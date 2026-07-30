@@ -47,3 +47,15 @@
 .theme-redbull-dna h1 { color: var(--accent-2); }
 .theme-redbull-dna button { font-style: italic; text-transform: uppercase; letter-spacing: 0.06em; }
 
+/* alt mode: auto-derived light variant */
+.theme-redbull-dna.alt-mode {
+  --bg: oklch(0.98 0.012 264.2);
+  --surface: oklch(0.955 0.015 264.2);
+  --surface-2: oklch(0.92 0.020 264.2);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+}

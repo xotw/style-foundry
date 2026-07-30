@@ -49,3 +49,16 @@
 /* signature */
 .theme-dark-saas { --font-ui: var(--font-display); }
 .theme-dark-saas h1 { background: linear-gradient(180deg, var(--fg), var(--fg-muted)); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -0.045em; }
+
+/* alt mode: auto-derived light variant */
+.theme-dark-saas.alt-mode {
+  --bg: oklch(0.98 0.003 246.3);
+  --surface: oklch(0.955 0.003 246.3);
+  --surface-2: oklch(0.92 0.003 246.3);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+}

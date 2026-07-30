@@ -5,9 +5,9 @@
   --surface-2: oklch(0.255 0.009 255.6);
   --fg: oklch(0.933 0.003 228.8);
   --fg-muted: oklch(0.563 0.010 248.0);
-  --accent: oklch(0.667 0.161 245.5);
-  --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.933 0.003 228.8);
+  --accent: oklch(0.961 0.004 214.3);
+  --accent-fg: oklch(0.188 0.013 248.5);
+  --accent-2: oklch(0.667 0.161 245.5);
   --line: oklch(0.318 0.008 240.1);
   --success: oklch(0.696 0.156 160.6);
   --warning: oklch(0.881 0.181 94.0);
@@ -45,3 +45,19 @@
 .theme-x-dna { --font-ui: var(--font-display); }
 .theme-x-dna h1 { font-weight: 800; letter-spacing: -0.04em; }
 .theme-x-dna button { font-weight: 700; }
+.theme-x-dna a, .theme-x-dna .text-accent { color: #1d9bf0; }
+
+/* alt mode: auto-derived light variant */
+.theme-x-dna.alt-mode {
+  --bg: oklch(0.98 0.000 0.0);
+  --surface: oklch(0.955 0.000 0.0);
+  --surface-2: oklch(0.92 0.000 0.0);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --accent: oklch(0.52 0.080 214.3);
+  --accent-fg: oklch(1 0 0);
+}

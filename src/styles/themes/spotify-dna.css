@@ -5,11 +5,11 @@
   --surface-2: oklch(0.277 0 0);
   --fg: oklch(0.985 0 0);
   --fg-muted: oklch(0.767 0 0);
-  --accent: oklch(0.770 0.212 148.7);
+  --accent: oklch(0.689 0.187 148.9);
   --accent-fg: oklch(0.14 0 0);
   --accent-2: oklch(0.65 0.2 300);
   --line: oklch(1 0 0 / 12%);
-  --success: oklch(0.83 0.22 148);
+  --success: oklch(0.689 0.187 148.9);
   --warning: oklch(0.83 0.16 85);
   --danger: oklch(0.65 0.22 25);
 
@@ -62,3 +62,17 @@
 .theme-spotify-dna { --font-ui: var(--font-display); }
 .theme-spotify-dna h1 { font-weight: 900; letter-spacing: -0.05em; }
 .theme-spotify-dna button { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; }
+
+/* alt mode: auto-derived light variant */
+.theme-spotify-dna.alt-mode {
+  --bg: oklch(0.98 0.000 0.0);
+  --surface: oklch(0.955 0.000 0.0);
+  --surface-2: oklch(0.92 0.000 0.0);
+  --fg: oklch(0.17 0.005 270);
+  --fg-muted: oklch(0.46 0.01 270);
+  --line: oklch(0.87 0.005 270);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
+}
