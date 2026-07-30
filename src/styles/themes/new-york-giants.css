@@ -62,3 +62,7 @@
 }
 .theme-new-york-giants.alt-mode h1 { color: oklch(0.472 0.174 19.7); }
 .theme-new-york-giants.alt-mode h2, .theme-new-york-giants.alt-mode h3 { color: oklch(0.472 0.174 19.7); }
+.theme-new-york-giants th { color: oklch(0.80 0.09 20); border-bottom-color: oklch(0.60 0.18 20); }
+.theme-new-york-giants a { color: oklch(0.80 0.09 20); }
+.theme-new-york-giants.alt-mode th { color: oklch(0.472 0.174 19.7); border-bottom-color: oklch(0.472 0.174 19.7); }
+.theme-new-york-giants.alt-mode a { color: oklch(0.472 0.174 19.7); }

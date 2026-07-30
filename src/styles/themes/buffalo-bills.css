@@ -60,5 +60,7 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%); --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%); --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   background-image: none;
 }
-.theme-buffalo-bills.alt-mode h1 { color: oklch(0.526 0.207 21.3); }
-.theme-buffalo-bills.alt-mode h2, .theme-buffalo-bills.alt-mode h3 { color: oklch(0.526 0.207 21.3); }
+.theme-buffalo-bills.alt-mode h1 { color: oklch(0.45 0.16 261); }
+.theme-buffalo-bills.alt-mode h2, .theme-buffalo-bills.alt-mode h3 { color: oklch(0.45 0.16 261); }
+.theme-buffalo-bills.alt-mode h2 { border-bottom-color: oklch(0.45 0.16 261); }
+.theme-buffalo-bills.alt-mode th { color: oklch(0.45 0.14 261); border-bottom-color: oklch(0.45 0.14 261); }

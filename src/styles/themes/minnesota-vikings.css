@@ -62,3 +62,10 @@
 }
 .theme-minnesota-vikings.alt-mode h1 { color: oklch(0.855 0.164 85.8); }
 .theme-minnesota-vikings.alt-mode h2, .theme-minnesota-vikings.alt-mode h3 { color: oklch(0.855 0.164 85.8); }
+.theme-minnesota-vikings.alt-mode h1,
+.theme-minnesota-vikings.alt-mode h2,
+.theme-minnesota-vikings.alt-mode h3 { color: oklch(0.40 0.14 296); }
+.theme-minnesota-vikings.alt-mode h1::after { background: linear-gradient(90deg, oklch(0.70 0.14 85) 0 50%, oklch(0.40 0.14 296) 50% 100%); }
+.theme-minnesota-vikings.alt-mode th { color: oklch(0.40 0.14 296); border-bottom-color: oklch(0.70 0.14 85); }
+.theme-minnesota-vikings.alt-mode a { color: oklch(0.55 0.12 80); }
+.theme-minnesota-vikings.alt-mode h2 { border-bottom-color: oklch(0.70 0.14 85); }

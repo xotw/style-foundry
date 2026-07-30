@@ -62,3 +62,10 @@
 }
 .theme-seattle-seahawks.alt-mode h1 { color: oklch(0.720 0.195 135.3); }
 .theme-seattle-seahawks.alt-mode h2, .theme-seattle-seahawks.alt-mode h3 { color: oklch(0.720 0.195 135.3); }
+.theme-seattle-seahawks.alt-mode h1,
+.theme-seattle-seahawks.alt-mode h2,
+.theme-seattle-seahawks.alt-mode h3 { color: oklch(0.32 0.06 255); }
+.theme-seattle-seahawks.alt-mode h1::after { background: linear-gradient(90deg, oklch(0.60 0.17 135) 0 50%, oklch(0.32 0.06 255) 50% 100%); }
+.theme-seattle-seahawks.alt-mode th { color: oklch(0.50 0.14 135); border-bottom-color: oklch(0.60 0.17 135); }
+.theme-seattle-seahawks.alt-mode a { color: oklch(0.50 0.14 135); }
+.theme-seattle-seahawks.alt-mode h2 { border-bottom-color: oklch(0.60 0.17 135); }

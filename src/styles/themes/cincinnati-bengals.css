@@ -58,7 +58,7 @@
   --fg: oklch(0.2 0.005 260); --fg-muted: oklch(0.45 0.005 260); --line: oklch(0.89 0.003 260);
   --accent: oklch(0.664 0.217 36.5); --accent-fg: oklch(1.000 0 0);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%); --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%); --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  background-image: repeating-linear-gradient(100deg, oklch(0.664 0.217 36.5 / 6%) 0 14px, transparent 14px 60px);
 }
 .theme-cincinnati-bengals.alt-mode h1 { color: oklch(0.664 0.217 36.5); }
 .theme-cincinnati-bengals.alt-mode h2, .theme-cincinnati-bengals.alt-mode h3 { color: oklch(0.664 0.217 36.5); }

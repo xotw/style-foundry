@@ -56,9 +56,10 @@
 .theme-kansas-city-chiefs.alt-mode {
   --bg: oklch(0.98 0.001 260); --surface: oklch(1 0 0); --surface-2: oklch(0.94 0.002 260);
   --fg: oklch(0.2 0.005 260); --fg-muted: oklch(0.45 0.005 260); --line: oklch(0.89 0.003 260);
-  --accent: oklch(0.828 0.167 79.6); --accent-fg: oklch(0.178 0 0);
+  --accent: oklch(0.585 0.226 22.2); --accent-fg: oklch(1 0 0);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%); --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%); --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   background-image: none;
 }
-.theme-kansas-city-chiefs.alt-mode h1 { color: oklch(0.828 0.167 79.6); }
-.theme-kansas-city-chiefs.alt-mode h2, .theme-kansas-city-chiefs.alt-mode h3 { color: oklch(0.828 0.167 79.6); }
+.theme-kansas-city-chiefs.alt-mode h1 { color: oklch(0.585 0.226 22.2); }
+.theme-kansas-city-chiefs.alt-mode h2, .theme-kansas-city-chiefs.alt-mode h3 { color: oklch(0.585 0.226 22.2); }
+.theme-kansas-city-chiefs.alt-mode h1::after { background: linear-gradient(90deg, oklch(0.585 0.226 22.2) 0 50%, oklch(0.828 0.167 79.6) 50% 100%); }

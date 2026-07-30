@@ -60,5 +60,10 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%); --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%); --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   background-image: none;
 }
-.theme-arizona-cardinals.alt-mode h1 { color: oklch(0.824 0.169 79.0); }
-.theme-arizona-cardinals.alt-mode h2, .theme-arizona-cardinals.alt-mode h3 { color: oklch(0.824 0.169 79.0); }
+.theme-arizona-cardinals.alt-mode h1,
+.theme-arizona-cardinals.alt-mode h2,
+.theme-arizona-cardinals.alt-mode h3 { color: oklch(0.453 0.151 12.0); }
+.theme-arizona-cardinals.alt-mode h1::after { background: linear-gradient(90deg, oklch(0.68 0.155 75) 0 50%, oklch(0.453 0.151 12.0) 50% 100%); }
+.theme-arizona-cardinals.alt-mode th { color: oklch(0.453 0.151 12.0); border-bottom-color: oklch(0.68 0.155 75); }
+.theme-arizona-cardinals.alt-mode a { color: oklch(0.55 0.13 70); }
+.theme-arizona-cardinals.alt-mode h2 { border-bottom-color: oklch(0.68 0.155 75); }

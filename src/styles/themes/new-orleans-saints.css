@@ -62,3 +62,10 @@
 }
 .theme-new-orleans-saints.alt-mode h1 { color: oklch(0.803 0.068 84.8); }
 .theme-new-orleans-saints.alt-mode h2, .theme-new-orleans-saints.alt-mode h3 { color: oklch(0.803 0.068 84.8); }
+.theme-new-orleans-saints.alt-mode h1,
+.theme-new-orleans-saints.alt-mode h2,
+.theme-new-orleans-saints.alt-mode h3 { color: oklch(0.25 0.01 84); }
+.theme-new-orleans-saints.alt-mode h1::after { background: linear-gradient(90deg, oklch(0.62 0.075 85) 0 50%, oklch(0.25 0.01 84) 50% 100%); }
+.theme-new-orleans-saints.alt-mode th { color: oklch(0.50 0.07 85); border-bottom-color: oklch(0.62 0.075 85); }
+.theme-new-orleans-saints.alt-mode a { color: oklch(0.52 0.07 85); }
+.theme-new-orleans-saints.alt-mode h2 { border-bottom-color: oklch(0.62 0.075 85); }

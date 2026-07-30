@@ -62,3 +62,10 @@
 }
 .theme-la-rams.alt-mode h1 { color: oklch(0.789 0.171 69.6); }
 .theme-la-rams.alt-mode h2, .theme-la-rams.alt-mode h3 { color: oklch(0.789 0.171 69.6); }
+.theme-la-rams.alt-mode h1,
+.theme-la-rams.alt-mode h2,
+.theme-la-rams.alt-mode h3 { color: oklch(0.42 0.13 258); }
+.theme-la-rams.alt-mode h1::after { background: linear-gradient(90deg, oklch(0.66 0.15 65) 0 50%, oklch(0.42 0.13 258) 50% 100%); }
+.theme-la-rams.alt-mode th { color: oklch(0.42 0.13 258); border-bottom-color: oklch(0.66 0.15 65); }
+.theme-la-rams.alt-mode a { color: oklch(0.55 0.13 65); }
+.theme-la-rams.alt-mode h2 { border-bottom-color: oklch(0.66 0.15 65); }

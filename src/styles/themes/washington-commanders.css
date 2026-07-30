@@ -62,3 +62,10 @@
 }
 .theme-washington-commanders.alt-mode h1 { color: oklch(0.824 0.169 79.0); }
 .theme-washington-commanders.alt-mode h2, .theme-washington-commanders.alt-mode h3 { color: oklch(0.824 0.169 79.0); }
+.theme-washington-commanders.alt-mode h1,
+.theme-washington-commanders.alt-mode h2,
+.theme-washington-commanders.alt-mode h3 { color: oklch(0.38 0.11 25); }
+.theme-washington-commanders.alt-mode h1::after { background: linear-gradient(90deg, oklch(0.68 0.155 79) 0 50%, oklch(0.38 0.11 25) 50% 100%); }
+.theme-washington-commanders.alt-mode th { color: oklch(0.38 0.11 25); border-bottom-color: oklch(0.68 0.155 79); }
+.theme-washington-commanders.alt-mode a { color: oklch(0.55 0.13 75); }
+.theme-washington-commanders.alt-mode h2 { border-bottom-color: oklch(0.68 0.155 79); }

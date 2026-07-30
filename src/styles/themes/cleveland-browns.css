@@ -54,11 +54,13 @@
 
 /* alt mode: road whites */
 .theme-cleveland-browns.alt-mode {
-  --bg: oklch(0.98 0.001 260); --surface: oklch(1 0 0); --surface-2: oklch(0.94 0.002 260);
-  --fg: oklch(0.2 0.005 260); --fg-muted: oklch(0.45 0.005 260); --line: oklch(0.89 0.003 260);
+  --bg: oklch(0.975 0.006 75); --surface: oklch(1 0 0); --surface-2: oklch(0.93 0.012 75);
+  --fg: oklch(0.26 0.045 66); --fg-muted: oklch(0.46 0.055 66); --line: oklch(0.88 0.014 75);
   --accent: oklch(0.653 0.235 33.9); --accent-fg: oklch(1.000 0 0);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%); --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%); --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   background-image: none;
 }
 .theme-cleveland-browns.alt-mode h1 { color: oklch(0.653 0.235 33.9); }
-.theme-cleveland-browns.alt-mode h2, .theme-cleveland-browns.alt-mode h3 { color: oklch(0.653 0.235 33.9); }
+.theme-cleveland-browns.alt-mode h2, .theme-cleveland-browns.alt-mode h3 { color: oklch(0.32 0.055 66); }
+.theme-cleveland-browns.alt-mode h2 { border-bottom-color: oklch(0.32 0.055 66); }
+.theme-cleveland-browns.alt-mode th { color: oklch(0.4 0.055 66); border-bottom-color: oklch(0.4 0.055 66); }
