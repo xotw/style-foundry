@@ -47,3 +47,7 @@
 .theme-boston-celtics h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-boston-celtics button { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 
+/* team */
+.theme-boston-celtics { background-image: repeating-linear-gradient(45deg, oklch(0.93 0.015 90 / 45%) 0 34px, transparent 34px 68px), repeating-linear-gradient(-45deg, oklch(0.93 0.015 90 / 45%) 0 34px, transparent 34px 68px); background-size: 100% 280px; background-repeat: no-repeat; }
+.theme-boston-celtics h2::before { content: "☘ "; color: var(--accent); }
+

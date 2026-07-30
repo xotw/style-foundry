@@ -13,7 +13,7 @@
       "name": "theme-ac-milan",
       "type": "registry:item",
       "title": "AC Milan DNA",
-      "description": "AC Milan DNA — rossoneri red and black stripes — token file scoped under .theme-ac-milan; wrap your app in that class."
+      "description": "AC Milan DNA — San Siro night, rossoneri stripes, scudetto gold — token file scoped under .theme-ac-milan; wrap your app in that class."
     },
     {
       "name": "theme-adidas-dna",
@@ -61,7 +61,7 @@
       "name": "theme-arsenal",
       "type": "registry:item",
       "title": "Arsenal DNA",
-      "description": "Arsenal DNA — cannon red, north london navy and gold — token file scoped under .theme-arsenal; wrap your app in that class."
+      "description": "Arsenal DNA — cannon red blocks, white sleeves, north london navy — token file scoped under .theme-arsenal; wrap your app in that class."
     },
     {
       "name": "theme-art-deco",
@@ -73,7 +73,7 @@
       "name": "theme-atletico-madrid",
       "type": "registry:item",
       "title": "Atlético Madrid DNA",
-      "description": "Atlético Madrid DNA — rojiblanco stripes, colchonero navy — token file scoped under .theme-atletico-madrid; wrap your app in that class."
+      "description": "Atlético Madrid DNA — rojiblanco fine stripes on warm plaster, colchonero navy — token file scoped under .theme-atletico-madrid; wrap your app in that class."
     },
     {
       "name": "theme-aurora",
@@ -97,13 +97,13 @@
       "name": "theme-bayern-munich",
       "type": "registry:item",
       "title": "Bayern Munich DNA",
-      "description": "Bayern Munich DNA — mia san mia red and bavarian blue — token file scoped under .theme-bayern-munich; wrap your app in that class."
+      "description": "Bayern Munich DNA — deep red command, bavarian lozenges, mia san mia — token file scoped under .theme-bayern-munich; wrap your app in that class."
     },
     {
       "name": "theme-benfica",
       "type": "registry:item",
       "title": "Benfica DNA",
-      "description": "Benfica DNA — águias red over lisbon white — token file scoped under .theme-benfica; wrap your app in that class."
+      "description": "Benfica DNA — águia red command, lisbon light, gold wing — token file scoped under .theme-benfica; wrap your app in that class."
     },
     {
       "name": "theme-biophilic",
@@ -145,7 +145,7 @@
       "name": "theme-chelsea",
       "type": "registry:item",
       "title": "Chelsea DNA",
-      "description": "Chelsea DNA — royal blue pride of london — token file scoped under .theme-chelsea; wrap your app in that class."
+      "description": "Chelsea DNA — royal blue night at the Bridge, lion gold — token file scoped under .theme-chelsea; wrap your app in that class."
     },
     {
       "name": "theme-chicago-bulls",
@@ -193,7 +193,7 @@
       "name": "theme-dortmund",
       "type": "registry:item",
       "title": "Borussia Dortmund DNA",
-      "description": "Borussia Dortmund DNA — yellow wall on black — token file scoped under .theme-dortmund; wrap your app in that class."
+      "description": "Borussia Dortmund DNA — the yellow wall itself, black punch — token file scoped under .theme-dortmund; wrap your app in that class."
     },
     {
       "name": "theme-dreamcore",
@@ -307,13 +307,13 @@
       "name": "theme-inter-milan",
       "type": "registry:item",
       "title": "Inter Milan DNA",
-      "description": "Inter Milan DNA — nerazzurri blue and black night — token file scoped under .theme-inter-milan; wrap your app in that class."
+      "description": "Inter Milan DNA — nerazzurri serpent night, biscione gradient — token file scoped under .theme-inter-milan; wrap your app in that class."
     },
     {
       "name": "theme-juventus",
       "type": "registry:item",
       "title": "Juventus DNA",
-      "description": "Juventus DNA — bianconeri black and white stripes — token file scoped under .theme-juventus; wrap your app in that class."
+      "description": "Juventus DNA — zebra black and white, sharp cuts, hot signal pink-red — token file scoped under .theme-juventus; wrap your app in that class."
     },
     {
       "name": "theme-la-lakers",
@@ -325,7 +325,7 @@
       "name": "theme-lazio",
       "type": "registry:item",
       "title": "Lazio DNA",
-      "description": "Lazio DNA — biancocelesti sky blue and eagle white — token file scoped under .theme-lazio; wrap your app in that class."
+      "description": "Lazio DNA — biancocelesti sky, eagle wing white, olympic gold — token file scoped under .theme-lazio; wrap your app in that class."
     },
     {
       "name": "theme-lego-dna",
@@ -354,8 +354,8 @@
     {
       "name": "theme-marseille",
       "type": "registry:item",
-      "title": "Olympique de Marseille DNA",
-      "description": "Olympique de Marseille DNA — droit au but sky blue and gold — token file scoped under .theme-marseille; wrap your app in that class."
+      "title": "OM DNA",
+      "description": "OM DNA — Mediterranean white, ciel blue air, the gold star — token file scoped under .theme-marseille; wrap your app in that class."
     },
     {
       "name": "theme-material",
@@ -487,7 +487,7 @@
       "name": "theme-porto",
       "type": "registry:item",
       "title": "FC Porto DNA",
-      "description": "FC Porto DNA — dragões blue and white — token file scoped under .theme-porto; wrap your app in that class."
+      "description": "FC Porto DNA — dragões blue and white stripes, dragon gold — token file scoped under .theme-porto; wrap your app in that class."
     },
     {
       "name": "theme-proton-dna",
@@ -499,7 +499,7 @@
       "name": "theme-psg",
       "type": "registry:item",
       "title": "PSG DNA",
-      "description": "PSG DNA — Parc des Princes navy, hechter red stripe — token file scoped under .theme-psg; wrap your app in that class."
+      "description": "PSG DNA — Parc navy night, the Hechter stripe, Ville Lumière gold — token file scoped under .theme-psg; wrap your app in that class."
     },
     {
       "name": "theme-real-madrid-dna",
@@ -535,7 +535,7 @@
       "name": "theme-roma",
       "type": "registry:item",
       "title": "AS Roma DNA",
-      "description": "AS Roma DNA — giallorossi garnet and imperial gold — token file scoped under .theme-roma; wrap your app in that class."
+      "description": "AS Roma DNA — imperial garnet night, giallorossi gold — token file scoped under .theme-roma; wrap your app in that class."
     },
     {
       "name": "theme-san-antonio-spurs",

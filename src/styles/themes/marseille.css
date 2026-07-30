@@ -1,18 +1,18 @@
-/* Olympique de Marseille DNA — droit au but sky blue and gold */
+/* OM DNA — Mediterranean white, ciel blue air, the gold star */
 .theme-marseille {
   --bg: oklch(1.000 0 0);
-  --surface: oklch(0.973 0 0);
-  --surface-2: oklch(0.943 0 0);
-  --fg: oklch(0.191 0 0);
-  --fg-muted: oklch(0.485 0 0);
+  --surface: oklch(0.981 0.008 228.9);
+  --surface-2: oklch(0.960 0.016 233.0);
+  --fg: oklch(0.284 0.034 250.8);
+  --fg-muted: oklch(0.638 0.035 246.9);
   --accent: oklch(0.706 0.128 229.9);
   --accent-fg: oklch(1.000 0 0);
   --accent-2: oklch(0.767 0.139 91.1);
-  --line: oklch(0.922 0 0);
+  --line: oklch(0.932 0.026 231.6);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
   --danger: oklch(0.706 0.128 229.9);
-  --radius: 0.375rem;
+  --radius: 0.75rem;
   --radius-sm: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-pill: 9999px;
@@ -22,12 +22,12 @@
   --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
   --border-width: 1px;
   --blur-amount: 0px;
-  --font-display: "Saira", sans-serif;
+  --font-display: "Teko", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
   --tracking-display: 0em;
   --label-transform: uppercase;
-  --label-tracking: 0.12em;
+  --label-tracking: 0.1em;
 
   background-color: var(--bg);
   color: var(--fg);
@@ -43,7 +43,10 @@
 
 /* signature */
 .theme-marseille { --font-ui: var(--font-display); }
-.theme-marseille h1, .theme-marseille h2 { text-transform: uppercase; font-weight: 700; }
-.theme-marseille h1::after { content: ""; display: block; height: 4px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
-.theme-marseille button { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.theme-marseille h1, .theme-marseille h2 { text-transform: uppercase; }
+.theme-marseille button { text-transform: uppercase; letter-spacing: 0.06em; }
+
+.theme-marseille h2::before { content: "★ "; color: var(--accent-2); }
+.theme-marseille h1 { font-weight: 600; }
+.theme-marseille button { font-weight: 600; }
 

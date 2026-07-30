@@ -47,3 +47,8 @@
 .theme-new-york-knicks h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-new-york-knicks button { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 
+/* team */
+.theme-new-york-knicks { background-image: linear-gradient(oklch(0.9 0 0 / 60%) 1px, transparent 1px), linear-gradient(90deg, oklch(0.9 0 0 / 60%) 1px, transparent 1px); background-size: 90px 90px; }
+.theme-new-york-knicks h1 { color: var(--accent); }
+.theme-new-york-knicks h1::after { background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
+

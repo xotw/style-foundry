@@ -47,3 +47,7 @@
 .theme-golden-state-warriors h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-golden-state-warriors button { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 
+/* team */
+.theme-golden-state-warriors h1::after { background: var(--accent-2); border-radius: 999px; height: 6px; clip-path: ellipse(50% 100% at 50% 100%); }
+.theme-golden-state-warriors h2 { color: var(--accent); }
+

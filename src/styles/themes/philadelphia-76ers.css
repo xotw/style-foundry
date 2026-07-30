@@ -47,3 +47,6 @@
 .theme-philadelphia-76ers h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-philadelphia-76ers button { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 
+/* team */
+.theme-philadelphia-76ers h1::before { content: "★ ★ ★"; display: block; font-size: 0.35em; letter-spacing: 0.6em; color: var(--accent-2); margin-bottom: 0.4rem; }
+

@@ -1,14 +1,14 @@
-/* FC Porto DNA — dragões blue and white */
+/* FC Porto DNA — dragões blue and white stripes, dragon gold */
 .theme-porto {
-  --bg: oklch(1.000 0 0);
-  --surface: oklch(0.973 0 0);
-  --surface-2: oklch(0.943 0 0);
-  --fg: oklch(0.191 0 0);
-  --fg-muted: oklch(0.485 0 0);
+  --bg: oklch(0.974 0.009 247.9);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.942 0.017 248.0);
+  --fg: oklch(0.302 0.074 252.7);
+  --fg-muted: oklch(0.593 0.044 253.2);
   --accent: oklch(0.370 0.122 255.1);
   --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.716 0.091 81.9);
-  --line: oklch(0.922 0 0);
+  --accent-2: oklch(0.746 0.143 87.5);
+  --line: oklch(0.906 0.025 246.2);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
   --danger: oklch(0.370 0.122 255.1);
@@ -22,12 +22,12 @@
   --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
   --border-width: 1px;
   --blur-amount: 0px;
-  --font-display: "Saira", sans-serif;
+  --font-display: "Ruda", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
   --tracking-display: 0em;
   --label-transform: uppercase;
-  --label-tracking: 0.12em;
+  --label-tracking: 0.1em;
 
   background-color: var(--bg);
   color: var(--fg);
@@ -43,7 +43,10 @@
 
 /* signature */
 .theme-porto { --font-ui: var(--font-display); }
-.theme-porto h1, .theme-porto h2 { text-transform: uppercase; font-weight: 700; }
-.theme-porto h1::after { content: ""; display: block; height: 4px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
-.theme-porto button { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.theme-porto h1, .theme-porto h2 { text-transform: uppercase; }
+.theme-porto button { text-transform: uppercase; letter-spacing: 0.06em; }
+
+.theme-porto { background-image: repeating-linear-gradient(90deg, oklch(0.4 0.09 255 / 7%) 0 40px, transparent 40px 80px); background-size: 100% 260px; background-repeat: no-repeat; }
+.theme-porto h1 { font-weight: 700; }
+.theme-porto h1::after { content: ""; display: block; height: 3px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
 

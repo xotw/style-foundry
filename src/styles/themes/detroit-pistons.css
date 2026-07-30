@@ -47,3 +47,7 @@
 .theme-detroit-pistons h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-detroit-pistons button { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 
+/* team */
+.theme-detroit-pistons h1::after { background: linear-gradient(90deg, var(--accent) 0 40%, #ffffff 40% 60%, var(--accent-2) 60% 100%); outline: 1px solid var(--line); }
+.theme-detroit-pistons h2 { color: var(--accent-2); }
+

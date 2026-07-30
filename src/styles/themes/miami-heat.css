@@ -47,3 +47,7 @@
 .theme-miami-heat h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-miami-heat button { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 
+/* team */
+.theme-miami-heat { background-image: radial-gradient(ellipse at 50% 110%, oklch(0.55 0.2 25 / 35%), oklch(0.7 0.17 60 / 12%) 40%, transparent 70%); }
+.theme-miami-heat h1 { background: linear-gradient(180deg, #ffffff, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+

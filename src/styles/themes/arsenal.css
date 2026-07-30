@@ -1,18 +1,18 @@
-/* Arsenal DNA — cannon red, north london navy and gold */
+/* Arsenal DNA — cannon red blocks, white sleeves, north london navy */
 .theme-arsenal {
   --bg: oklch(1.000 0 0);
   --surface: oklch(0.973 0 0);
-  --surface-2: oklch(0.943 0 0);
-  --fg: oklch(0.191 0 0);
-  --fg-muted: oklch(0.485 0 0);
-  --accent: oklch(0.598 0.245 28.8);
+  --surface-2: oklch(0.946 0 0);
+  --fg: oklch(0.130 0.054 275.9);
+  --fg-muted: oklch(0.529 0.022 285.6);
+  --accent: oklch(0.419 0.168 27.4);
   --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.618 0.081 85.1);
-  --line: oklch(0.922 0 0);
+  --accent-2: oklch(0.697 0.135 231.6);
+  --line: oklch(0.910 0 0);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
-  --danger: oklch(0.598 0.245 28.8);
-  --radius: 0.375rem;
+  --danger: oklch(0.419 0.168 27.4);
+  --radius: 0.25rem;
   --radius-sm: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-pill: 9999px;
@@ -22,12 +22,12 @@
   --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
   --border-width: 1px;
   --blur-amount: 0px;
-  --font-display: "Saira", sans-serif;
+  --font-display: "Khand", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
   --tracking-display: 0em;
   --label-transform: uppercase;
-  --label-tracking: 0.12em;
+  --label-tracking: 0.1em;
 
   background-color: var(--bg);
   color: var(--fg);
@@ -43,7 +43,10 @@
 
 /* signature */
 .theme-arsenal { --font-ui: var(--font-display); }
-.theme-arsenal h1, .theme-arsenal h2 { text-transform: uppercase; font-weight: 700; }
-.theme-arsenal h1::after { content: ""; display: block; height: 4px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
-.theme-arsenal button { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.theme-arsenal h1, .theme-arsenal h2 { text-transform: uppercase; }
+.theme-arsenal button { text-transform: uppercase; letter-spacing: 0.06em; }
+
+.theme-arsenal h2 { border-left: 6px solid var(--accent); padding-left: 0.6rem; }
+.theme-arsenal button { border-radius: 0; }
+.theme-arsenal ::selection { background: var(--accent-2); color: #04041c; }
 
