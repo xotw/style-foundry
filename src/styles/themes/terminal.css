@@ -1,0 +1,56 @@
+/* Terminal — black bg, phosphor green, IBM Plex Mono, ASCII-ish borders */
+.theme-terminal {
+  --bg: oklch(0.13 0.015 150);
+  --surface: oklch(0.17 0.02 150);
+  --surface-2: oklch(0.21 0.025 150);
+  --fg: oklch(0.88 0.2 145);
+  --fg-muted: oklch(0.66 0.14 145);
+  --accent: oklch(0.85 0.22 145);
+  --accent-fg: oklch(0.13 0.015 150);
+  --accent-2: oklch(0.8 0.16 195);
+  --line: oklch(0.85 0.22 145 / 35%);
+  --success: oklch(0.85 0.22 145);
+  --warning: oklch(0.85 0.18 95);
+  --danger: oklch(0.68 0.22 25);
+
+  --radius: 0rem;
+  --radius-sm: 0rem;
+  --radius-lg: 0rem;
+  --radius-pill: 0rem;
+
+  --shadow-1: 0 0 0 1px var(--line);
+  --shadow-2: 0 0 18px -4px color-mix(in oklab, var(--accent) 45%, transparent);
+  --shadow-3: 0 0 34px -6px color-mix(in oklab, var(--accent) 55%, transparent);
+  --glow: 0 0 14px -2px color-mix(in oklab, var(--accent) 70%, transparent);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "IBM Plex Mono", ui-monospace, monospace;
+  --font-body: "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: 0.02em;
+  --label-transform: uppercase;
+  --label-tracking: 0.16em;
+
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    oklch(0.85 0.22 145 / 5%) 0px,
+    oklch(0.85 0.22 145 / 5%) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  color: var(--fg);
+  font-family: var(--font-body);
+  text-shadow: 0 0 6px color-mix(in oklab, var(--accent) 30%, transparent);
+}
+
+.theme-terminal h1,
+.theme-terminal h2,
+.theme-terminal h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-display);
+}

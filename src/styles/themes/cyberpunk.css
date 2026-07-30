@@ -1,0 +1,54 @@
+/* Cyberpunk — ink-black slabs, acid yellow + hot magenta, neon edges */
+.theme-cyberpunk {
+  --bg: oklch(0.13 0.03 290);
+  --surface: oklch(0.18 0.04 290);
+  --surface-2: oklch(0.23 0.05 292);
+  --fg: oklch(0.96 0.02 100);
+  --fg-muted: oklch(0.72 0.05 300);
+  --accent: oklch(0.88 0.2 100);
+  --accent-fg: oklch(0.13 0.03 290);
+  --accent-2: oklch(0.7 0.25 340);
+  --line: oklch(0.88 0.2 100 / 40%);
+  --success: oklch(0.82 0.2 160);
+  --warning: oklch(0.88 0.2 100);
+  --danger: oklch(0.7 0.25 20);
+
+  --radius: 0.125rem;
+  --radius-sm: 0rem;
+  --radius-lg: 0.25rem;
+  --radius-pill: 0.25rem;
+
+  --shadow-1: 0 0 0 1px var(--line);
+  --shadow-2: 4px 4px 0 0 oklch(0.7 0.25 340), 0 0 24px -6px oklch(0.88 0.2 100 / 60%);
+  --shadow-3: 8px 8px 0 0 oklch(0.7 0.25 340), 0 0 48px -10px oklch(0.88 0.2 100 / 70%);
+  --glow: 0 0 20px -2px oklch(0.88 0.2 100 / 75%);
+
+  --border-width: 1px;
+  --blur-amount: 2px;
+
+  --font-display: "Orbitron", "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: 0.08em;
+  --label-transform: uppercase;
+  --label-tracking: 0.24em;
+
+  background-color: var(--bg);
+  background-image:
+    repeating-linear-gradient(90deg, oklch(0.7 0.25 340 / 8%) 0 1px, transparent 1px 5rem),
+    radial-gradient(50rem 30rem at 82% -8%, oklch(0.7 0.25 340 / 30%), transparent 62%),
+    radial-gradient(46rem 28rem at 6% 12%, oklch(0.88 0.2 100 / 18%), transparent 62%);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-cyberpunk h1,
+.theme-cyberpunk h2,
+.theme-cyberpunk h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-display);
+  text-shadow: 2px 0 0 oklch(0.7 0.25 340 / 70%), -2px 0 0 oklch(0.8 0.16 200 / 55%);
+}
