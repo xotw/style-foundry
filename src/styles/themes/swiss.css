@@ -1,0 +1,47 @@
+/* Swiss — strict grid, Inter Tight, black/white + one red accent, zero radius */
+.theme-swiss {
+  --bg: oklch(1 0 0);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.965 0 0);
+  --fg: oklch(0.145 0 0);
+  --fg-muted: oklch(0.5 0 0);
+  --accent: oklch(0.55 0.235 27);
+  --accent-fg: oklch(1 0 0);
+  --accent-2: oklch(0.145 0 0);
+  --line: oklch(0.145 0 0);
+  --success: oklch(0.52 0.15 150);
+  --warning: oklch(0.7 0.16 75);
+  --danger: oklch(0.55 0.235 27);
+
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
+  --glow: none;
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.03em;
+  --label-transform: uppercase;
+  --label-tracking: 0.14em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-swiss h1,
+.theme-swiss h2,
+.theme-swiss h3 {
+  letter-spacing: var(--tracking-display);
+  font-weight: 600;
+}

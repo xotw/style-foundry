@@ -1,0 +1,52 @@
+/* Glass — dark gradient bg, frosted blurred surfaces, thin light borders, glows */
+.theme-glass {
+  --bg: oklch(0.18 0.05 275);
+  --surface: oklch(1 0 0 / 8%);
+  --surface-2: oklch(1 0 0 / 14%);
+  --fg: oklch(0.98 0.01 280);
+  --fg-muted: oklch(0.8 0.03 280 / 75%);
+  --accent: oklch(0.78 0.16 195);
+  --accent-fg: oklch(0.16 0.05 275);
+  --accent-2: oklch(0.7 0.19 320);
+  --line: oklch(1 0 0 / 20%);
+  --success: oklch(0.78 0.16 160);
+  --warning: oklch(0.84 0.16 85);
+  --danger: oklch(0.7 0.2 15);
+
+  --radius: 1.25rem;
+  --radius-sm: 0.75rem;
+  --radius-lg: 1.75rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: 0 4px 20px -6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 16px 48px -12px oklch(0 0 0 / 55%);
+  --shadow-3: 0 28px 80px -20px oklch(0 0 0 / 65%);
+  --glow: 0 0 40px -6px color-mix(in oklab, var(--accent) 55%, transparent);
+
+  --border-width: 1px;
+  --blur-amount: 20px;
+
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.02em;
+  --label-transform: none;
+  --label-tracking: 0.02em;
+
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(60rem 40rem at 12% -10%, oklch(0.62 0.2 320 / 45%), transparent 60%),
+    radial-gradient(50rem 36rem at 92% 8%, oklch(0.7 0.17 195 / 40%), transparent 60%),
+    radial-gradient(70rem 50rem at 50% 110%, oklch(0.5 0.19 265 / 45%), transparent 65%);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-glass h1,
+.theme-glass h2,
+.theme-glass h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
