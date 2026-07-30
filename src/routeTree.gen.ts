@@ -10,33 +10,66 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as StylesSlugRouteImport } from './routes/styles.$slug'
+import { Route as StylesSlugIndexRouteImport } from './routes/styles.$slug.index'
+import { Route as StylesSlugComponentsRouteImport } from './routes/styles.$slug.components'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StylesSlugRoute = StylesSlugRouteImport.update({
+  id: '/styles/$slug',
+  path: '/styles/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StylesSlugIndexRoute = StylesSlugIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => StylesSlugRoute,
+} as any)
+const StylesSlugComponentsRoute = StylesSlugComponentsRouteImport.update({
+  id: '/components',
+  path: '/components',
+  getParentRoute: () => StylesSlugRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/styles/$slug': typeof StylesSlugRouteWithChildren
+  '/styles/$slug/components': typeof StylesSlugComponentsRoute
+  '/styles/$slug/': typeof StylesSlugIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/styles/$slug/components': typeof StylesSlugComponentsRoute
+  '/styles/$slug': typeof StylesSlugIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/styles/$slug': typeof StylesSlugRouteWithChildren
+  '/styles/$slug/components': typeof StylesSlugComponentsRoute
+  '/styles/$slug/': typeof StylesSlugIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/styles/$slug' | '/styles/$slug/components' | '/styles/$slug/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/styles/$slug/components' | '/styles/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/styles/$slug'
+    | '/styles/$slug/components'
+    | '/styles/$slug/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  StylesSlugRoute: typeof StylesSlugRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +81,47 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/styles/$slug': {
+      id: '/styles/$slug'
+      path: '/styles/$slug'
+      fullPath: '/styles/$slug'
+      preLoaderRoute: typeof StylesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/styles/$slug/': {
+      id: '/styles/$slug/'
+      path: '/'
+      fullPath: '/styles/$slug/'
+      preLoaderRoute: typeof StylesSlugIndexRouteImport
+      parentRoute: typeof StylesSlugRoute
+    }
+    '/styles/$slug/components': {
+      id: '/styles/$slug/components'
+      path: '/components'
+      fullPath: '/styles/$slug/components'
+      preLoaderRoute: typeof StylesSlugComponentsRouteImport
+      parentRoute: typeof StylesSlugRoute
+    }
   }
 }
 
+interface StylesSlugRouteChildren {
+  StylesSlugComponentsRoute: typeof StylesSlugComponentsRoute
+  StylesSlugIndexRoute: typeof StylesSlugIndexRoute
+}
+
+const StylesSlugRouteChildren: StylesSlugRouteChildren = {
+  StylesSlugComponentsRoute: StylesSlugComponentsRoute,
+  StylesSlugIndexRoute: StylesSlugIndexRoute,
+}
+
+const StylesSlugRouteWithChildren = StylesSlugRoute._addFileChildren(
+  StylesSlugRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  StylesSlugRoute: StylesSlugRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
