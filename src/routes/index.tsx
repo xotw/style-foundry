@@ -250,6 +250,13 @@ function Index() {
                       >
                         Blocks
                       </Link>
+                      <Link
+                        to="/styles/$slug/book"
+                        params={{ slug: s.slug }}
+                        className="inline-flex items-center gap-1.5 rounded-theme px-3.5 py-2 text-xs font-semibold text-fg-muted themed-border transition-colors hover:text-fg"
+                      >
+                        Brand book
+                      </Link>
                     </div>
                   </article>
                 ))}
