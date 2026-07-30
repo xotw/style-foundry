@@ -148,6 +148,9 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
               <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
                 <TButton variant="ghost">App blocks</TButton>
               </Link>
+              <Link to="/styles/$slug/book" params={{ slug: style.slug }}>
+                <TButton variant="ghost">Brand book</TButton>
+              </Link>
             </div>
             <HeroTokens style={style} className="mt-12 justify-center" />
           </div>
@@ -170,6 +173,9 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
               </Link>
               <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
                 <TButton variant="ghost">App blocks</TButton>
+              </Link>
+              <Link to="/styles/$slug/book" params={{ slug: style.slug }}>
+                <TButton variant="ghost">Brand book</TButton>
               </Link>
             </div>
             <HeroTokens style={style} className="mt-12" />
@@ -198,6 +204,11 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
                 <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
                   <TButton size="lg" variant="ghost">
                     App blocks
+                  </TButton>
+                </Link>
+                <Link to="/styles/$slug/book" params={{ slug: style.slug }}>
+                  <TButton size="lg" variant="ghost">
+                    Brand book
                   </TButton>
                 </Link>
               </div>
