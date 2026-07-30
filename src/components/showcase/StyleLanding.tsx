@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Layers, Rocket, ShieldCheck } from "lucide-react";
-import type { StyleEntry } from "@/lib/styles-registry";
+import { STYLES, type StyleEntry } from "@/lib/styles-registry";
 import { SectionTitle, TBadge, TButton, TCard, TInput, TLabel, TTextarea } from "./primitives";
 
 const FEATURES = [
@@ -23,7 +23,7 @@ const FEATURES = [
 
 const STATS = [
   { value: "26", label: "Components" },
-  { value: "4", label: "Style systems" },
+  { value: String(STYLES.length), label: "Style systems" },
   { value: "48", label: "Design tokens" },
   { value: "0", label: "Hardcoded hex" },
 ];
@@ -40,7 +40,7 @@ const TIERS = [
     name: "Studio",
     price: "$24",
     note: "per seat / month",
-    features: ["All 4 themes", "Full component gallery", "Token export", "Priority support"],
+    features: [`All ${STYLES.length} themes`, "Full component gallery", "Token export", "Priority support"],
     featured: true,
   },
   {
@@ -146,7 +146,7 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <SectionTitle
           eyebrow="Why teams switch"
-          title="One token contract, four completely different products."
+          title={`One token contract, ${STYLES.length} completely different products.`}
         />
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {FEATURES.map((f) => (
