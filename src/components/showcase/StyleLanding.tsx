@@ -4,6 +4,27 @@ import { STYLES, type StyleEntry } from "@/lib/styles-registry";
 import { STYLE_RULES } from "@/lib/style-rules";
 import { SectionTitle, TBadge, TButton, TCard, TInput, TLabel, TTextarea } from "./primitives";
 
+/** Inline token chips for heroes that drop the Live tokens card. */
+function HeroTokens({ style, className }: { style: StyleEntry; className?: string }) {
+  return (
+    <div className={`flex flex-wrap items-center gap-4 ${className ?? ""}`}>
+      {(
+        [
+          ["--bg", "var(--bg)"],
+          ["--surface", "var(--surface)"],
+          ["--accent", "var(--accent)"],
+        ] as const
+      ).map(([k, v]) => (
+        <span key={k} className="flex items-center gap-2 font-code text-xs text-fg-muted">
+          <span className="size-4 rounded-theme-sm themed-border" style={{ background: v }} />
+          {k}
+        </span>
+      ))}
+      <span className="label-caps text-fg-muted">{style.fontPairing}</span>
+    </div>
+  );
+}
+
 const FEATURES = [
   {
     icon: Layers,
@@ -96,62 +117,109 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
       </header>
 
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 pt-20 pb-16">
-        <div className="grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-7">
-            <TBadge>{style.name} system</TBadge>
-            <h1 className="mt-6 font-display text-5xl leading-[1.03] text-fg sm:text-6xl">
-              Design systems that survive contact with production.
+      {style.heroVariant === "centered" ? (
+        /* Product-page hero: centered, one message per viewport, UI recedes. */
+        <section className="px-6 pt-24 pb-20 text-center">
+          <div className="mx-auto max-w-3xl">
+            <p className="label-caps text-fg-muted">{style.name} system</p>
+            <h1 className="mt-5 font-display text-[clamp(3rem,7vw,5.5rem)] leading-[1.02] text-fg">
+              Survives production.
             </h1>
-            <p className="mt-6 max-w-xl text-lg text-fg-muted">{style.tagline}</p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <TButton size="lg">
+            <p className="mx-auto mt-5 max-w-xl text-xl text-fg-muted">{style.tagline}</p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <TButton>
                 Start building <ArrowRight className="size-4" />
               </TButton>
               <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
-                <TButton size="lg" variant="outline">
-                  Browse components
-                </TButton>
+                <TButton variant="outline">Browse components</TButton>
               </Link>
               <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
-                <TButton size="lg" variant="ghost">
-                  App blocks
-                </TButton>
+                <TButton variant="ghost">App blocks</TButton>
               </Link>
             </div>
-            <p className="label-caps mt-8 text-fg-muted">{style.fontPairing}</p>
+            <HeroTokens style={style} className="mt-12 justify-center" />
           </div>
-          <div className="lg:col-span-5">
-            <TCard className="h-full p-6">
-              <div className="flex items-center justify-between">
-                <span className="label-caps text-fg-muted">Live tokens</span>
-                <TBadge tone="neutral">v2.4</TBadge>
-              </div>
-              <dl className="mt-6 space-y-3 font-code text-xs">
-                {[
-                  ["--accent", style.swatch[2]],
-                  ["--surface", style.swatch[1]],
-                  ["--bg", style.swatch[0]],
-                ].map(([k, v]) => (
-                  <div key={k} className="flex items-center gap-3">
-                    <span
-                      className="size-5 rounded-theme-sm themed-border"
-                      style={{ background: v }}
-                    />
-                    <dt className="text-fg">{k}</dt>
-                    <dd className="ml-auto truncate text-fg-muted">{v}</dd>
-                  </div>
-                ))}
-              </dl>
-              <div className="mt-6 space-y-2 border-t-[length:var(--border-width)] border-t-line pt-6">
-                <div className="h-2 w-full rounded-theme-pill bg-surface-2" />
-                <div className="h-2 w-4/5 rounded-theme-pill bg-surface-2" />
-                <div className="h-2 w-2/3 rounded-theme-pill bg-accent" />
-              </div>
-            </TCard>
+        </section>
+      ) : style.heroVariant === "editorial" ? (
+        /* Editorial hero: narrow measure, serif-led, a rule instead of a card. */
+        <section className="mx-auto max-w-3xl px-6 pt-24 pb-20">
+          <div className="border-t-2 border-t-fg pt-6">
+            <p className="label-caps text-fg-muted">{style.name} system</p>
+            <h1 className="mt-6 font-display text-5xl leading-[1.08] text-fg sm:text-6xl">
+              Design systems that survive contact with production.
+            </h1>
+            <p className="mt-6 text-lg leading-relaxed text-fg-muted">{style.tagline}</p>
+            <div className="mt-10 flex flex-wrap items-center gap-3">
+              <TButton>Start building</TButton>
+              <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
+                <TButton variant="outline">Browse components</TButton>
+              </Link>
+              <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
+                <TButton variant="ghost">App blocks</TButton>
+              </Link>
+            </div>
+            <HeroTokens style={style} className="mt-12" />
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className="mx-auto max-w-6xl px-6 pt-20 pb-16">
+          <div className="grid gap-12 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <TBadge>{style.name} system</TBadge>
+              <h1 className="mt-6 font-display text-5xl leading-[1.03] text-fg sm:text-6xl">
+                Design systems that survive contact with production.
+              </h1>
+              <p className="mt-6 max-w-xl text-lg text-fg-muted">{style.tagline}</p>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <TButton size="lg">
+                  Start building <ArrowRight className="size-4" />
+                </TButton>
+                <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
+                  <TButton size="lg" variant="outline">
+                    Browse components
+                  </TButton>
+                </Link>
+                <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
+                  <TButton size="lg" variant="ghost">
+                    App blocks
+                  </TButton>
+                </Link>
+              </div>
+              <p className="label-caps mt-8 text-fg-muted">{style.fontPairing}</p>
+            </div>
+            <div className="lg:col-span-5">
+              <TCard className="h-full p-6">
+                <div className="flex items-center justify-between">
+                  <span className="label-caps text-fg-muted">Live tokens</span>
+                  <TBadge tone="neutral">v2.4</TBadge>
+                </div>
+                <dl className="mt-6 space-y-3 font-code text-xs">
+                  {(
+                    [
+                      ["--bg", "var(--bg)"],
+                      ["--surface", "var(--surface)"],
+                      ["--accent", "var(--accent)"],
+                    ] as const
+                  ).map(([k, v]) => (
+                    <div key={k} className="flex items-center gap-3">
+                      <span
+                        className="size-5 rounded-theme-sm themed-border"
+                        style={{ background: v }}
+                      />
+                      <dt className="text-fg">{k}</dt>
+                    </div>
+                  ))}
+                </dl>
+                <div className="mt-6 space-y-2 border-t-[length:var(--border-width)] border-t-line pt-6">
+                  <div className="h-2 w-full rounded-theme-pill bg-surface-2" />
+                  <div className="h-2 w-4/5 rounded-theme-pill bg-surface-2" />
+                  <div className="h-2 w-2/3 rounded-theme-pill bg-accent" />
+                </div>
+              </TCard>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Features */}
       <section className="mx-auto max-w-6xl px-6 py-16">

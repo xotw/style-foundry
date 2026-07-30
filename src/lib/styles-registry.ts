@@ -3,6 +3,7 @@ export type StyleEntry = {
   name: string;
   tagline: string;
   fontPairing: string;
+  heroVariant?: "centered" | "editorial";
   /** Three representative colors, used only for the index swatch. */
   swatch: [string, string, string];
 };
@@ -45,6 +46,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "editorial",
+    heroVariant: "editorial",
     name: "Editorial",
     tagline: "Magazine typography, wide margins, hairline rules on paper tones.",
     fontPairing: "Playfair Display / Inter",
@@ -73,6 +75,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "luxury",
+    heroVariant: "editorial",
     name: "Luxury",
     tagline: "Deep ink, champagne gold hairlines, airy high-contrast serif.",
     fontPairing: "Cormorant Garamond / Jost",
@@ -122,6 +125,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "newspaper",
+    heroVariant: "editorial",
     name: "Newspaper",
     tagline: "Newsprint gray, column rules, screaming serif headlines.",
     fontPairing: "Old Standard TT / Libre Baskerville",
@@ -171,6 +175,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "e-ink",
+    heroVariant: "editorial",
     name: "E-Ink",
     tagline: "Paper grayscale, serif body, matte contrast, one functional accent.",
     fontPairing: "Literata / Literata",
@@ -213,6 +218,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "superhuman-dna",
+    heroVariant: "editorial",
     name: "Superhuman DNA",
     tagline: "Cream paper, plum serif display, lavender accents, refined calm.",
     fontPairing: "Instrument Serif / Inter",
@@ -220,6 +226,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "apple-dna",
+    heroVariant: "centered",
     name: "Apple DNA",
     tagline: "Pure white, huge tight display type, monochrome with one blue accent.",
     fontPairing: "SF Pro (system)",
@@ -227,6 +234,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "duolingo-dna",
+    heroVariant: "centered",
     name: "Duolingo DNA",
     tagline: "Bright green, chunky 3D-pressed buttons, very rounded and cheerful.",
     fontPairing: "Baloo 2",
@@ -248,6 +256,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "anthropic-dna",
+    heroVariant: "editorial",
     name: "Anthropic DNA",
     tagline: "Cream paper, book-like serif display, terracotta accent, calm spacing.",
     fontPairing: "Source Serif 4 / Archivo",
@@ -255,6 +264,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "cash-app-dna",
+    heroVariant: "centered",
     name: "Cash App DNA",
     tagline: "Pure black, electric green, heavy condensed type, neon-on-dark energy.",
     fontPairing: "Anton / Inter",
@@ -262,6 +272,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "headspace-dna",
+    heroVariant: "centered",
     name: "Headspace DNA",
     tagline: "Peach pastels, organic blobs, very soft shadows, breathing whitespace.",
     fontPairing: "Karla",
@@ -290,6 +301,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "nike-dna",
+    heroVariant: "centered",
     name: "Nike DNA",
     tagline: "Black and white, condensed uppercase display, hard edges, volt accent.",
     fontPairing: "Oswald / Inter",
@@ -346,6 +358,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "netflix-dna",
+    heroVariant: "centered",
     name: "Netflix DNA",
     tagline: "Cinematic black, signal red, UI recedes behind imagery.",
     fontPairing: "Albert Sans",
@@ -374,6 +387,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "ssense-dna",
+    heroVariant: "editorial",
     name: "SSENSE DNA",
     tagline: "Stark fashion e-commerce: micro type, luxury by subtraction.",
     fontPairing: "Archivo Narrow / Inter",
@@ -381,6 +395,7 @@ export const STYLES: StyleEntry[] = [
   },
   {
     slug: "aesop-dna",
+    heroVariant: "editorial",
     name: "Aesop DNA",
     tagline: "Apothecary editorial: paper cream, humanist serif, sage calm.",
     fontPairing: "EB Garamond / Inter",
