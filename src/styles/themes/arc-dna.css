@@ -1,17 +1,17 @@
 /* Arc DNA — soft pastel gradients, macOS-glass panels, bubbly corners */
 .theme-arc-dna {
-  --bg: oklch(0.96 0.03 320);
+  --bg: oklch(0.989 0.024 99.1);
   --surface: oklch(1 0 0 / 62%);
   --surface-2: oklch(1 0 0 / 42%);
   --fg: oklch(0.25 0.04 300);
   --fg-muted: oklch(0.5 0.04 300);
-  --accent: oklch(0.62 0.19 340);
+  --accent: oklch(0.499 0.274 269.3);
   --accent-fg: oklch(1 0 0);
   --accent-2: oklch(0.68 0.15 240);
   --line: oklch(1 0 0 / 55%);
   --success: oklch(0.7 0.14 155);
-  --warning: oklch(0.8 0.15 80);
-  --danger: oklch(0.63 0.2 20);
+  --warning: oklch(0.817 0.164 75.9);
+  --danger: oklch(0.650 0.226 21.5);
 
   --radius: 1.125rem;
   --radius-sm: 0.75rem;
@@ -26,7 +26,7 @@
   --border-width: 1px;
   --blur-amount: 24px;
 
-  --font-display: "Outfit", sans-serif;
+  --font-display: "Varela Round", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 

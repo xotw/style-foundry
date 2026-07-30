@@ -5,7 +5,7 @@
   --surface-2: oklch(0.86 0.007 85);
   --fg: oklch(0.15 0.004 85);
   --fg-muted: oklch(0.46 0.005 85);
-  --accent: oklch(0.65 0.2 45);
+  --accent: oklch(0.756 0.155 73.2);
   --accent-fg: oklch(0.99 0 0);
   --accent-2: oklch(0.15 0.004 85);
   --line: oklch(0.74 0.006 85);
@@ -26,8 +26,8 @@
   --border-width: 1px;
   --blur-amount: 0px;
 
-  --font-display: "Jost", "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-display: "Archivo", "Helvetica Neue", sans-serif;
+  --font-body: "Archivo", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   --tracking-display: -0.01em;

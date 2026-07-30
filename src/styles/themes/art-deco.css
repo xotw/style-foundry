@@ -1,0 +1,42 @@
+/* Art Deco — black and gold, geometric symmetry, sunburst elegance */
+.theme-art-deco {
+  --bg: oklch(0.188 0.011 80.5);
+  --surface: oklch(0.220 0.014 81.6);
+  --surface-2: oklch(0.256 0.020 80.3);
+  --fg: oklch(0.926 0.031 88.4);
+  --fg-muted: oklch(0.657 0.037 84.5);
+  --accent: oklch(0.731 0.115 85.0);
+  --accent-fg: oklch(0.188 0.011 80.5);
+  --accent-2: oklch(0.553 0.089 82.3);
+  --line: oklch(0.72 0.09 85 / 45%);
+  --success: oklch(0.695 0.098 149.8);
+  --warning: oklch(0.775 0.128 86.9);
+  --danger: oklch(0.549 0.130 33.3);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: 0 1px 0 oklch(0.72 0.09 85 / 30%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 50%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 60%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 60%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Marcellus", Georgia, serif;
+  --font-body: "Josefin Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.08em;
+  --label-transform: uppercase;
+  --label-tracking: 0.25em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-art-deco h1,
+.theme-art-deco h2,
+.theme-art-deco h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

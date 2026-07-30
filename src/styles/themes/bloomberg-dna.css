@@ -1,0 +1,72 @@
+/* Bloomberg DNA — black finance terminal, amber data type, dense, zero decoration */
+.theme-bloomberg-dna {
+  --bg: oklch(0.09 0 0);
+  --surface: oklch(0.13 0.005 60);
+  --surface-2: oklch(0.18 0.008 60);
+  --fg: oklch(0.86 0.06 80);
+  --fg-muted: oklch(0.62 0.05 80);
+  --accent: oklch(0.78 0.17 65);
+  --accent-fg: oklch(0.09 0 0);
+  --accent-2: oklch(0.72 0.16 210);
+  --line: oklch(0.32 0.02 70);
+  --success: oklch(0.72 0.18 145);
+  --warning: oklch(0.8 0.16 85);
+  --danger: oklch(0.62 0.22 25);
+
+  --radius: 0rem;
+  --radius-sm: 0rem;
+  --radius-lg: 0rem;
+  --radius-pill: 0rem;
+
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
+  --glow: 0 0 0 1px var(--accent);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "VT323", ui-monospace, monospace;
+  --font-body: "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: 0.01em;
+  --label-transform: uppercase;
+  --label-tracking: 0.1em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+.theme-bloomberg-dna h1,
+.theme-bloomberg-dna h2,
+.theme-bloomberg-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+.theme-bloomberg-dna table,
+.theme-bloomberg-dna th,
+.theme-bloomberg-dna td {
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.theme-bloomberg-dna th {
+  text-transform: uppercase;
+  letter-spacing: var(--label-tracking);
+  color: var(--accent);
+}
+
+.theme-bloomberg-dna button {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}

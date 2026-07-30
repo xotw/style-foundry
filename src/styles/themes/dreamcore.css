@@ -1,0 +1,43 @@
+/* Dreamcore — hazy pastel gradients, blurred glows, floating ethereal calm */
+.theme-dreamcore {
+  --bg: oklch(0.955 0.018 306.7);
+  --surface: oklch(0.985 0.012 320 / 75%);
+  --surface-2: oklch(0.94 0.025 300 / 80%);
+  --fg: oklch(0.396 0.038 301.3);
+  --fg-muted: oklch(0.643 0.038 309.5);
+  --accent: oklch(0.708 0.128 305.6);
+  --accent-fg: oklch(0.280 0.038 304.7);
+  --accent-2: oklch(0.789 0.071 231.3);
+  --line: oklch(0.75 0.06 310 / 30%);
+  --success: oklch(0.814 0.087 160.9);
+  --warning: oklch(0.878 0.079 86.2);
+  --danger: oklch(0.757 0.083 19.2);
+  --radius: 1.5rem;
+  --radius-sm: 1rem;
+  --radius-lg: 2rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 8px 32px oklch(0.6 0.1 310 / 15%);
+  --shadow-2: 0 16px 48px oklch(0.6 0.1 310 / 20%);
+  --shadow-3: 0 24px 80px oklch(0.6 0.1 310 / 25%);
+  --glow: 0 0 24px color-mix(in oklab, var(--accent) 40%, transparent);
+  --border-width: 1px;
+  --blur-amount: 14px;
+  --font-display: "Quicksand", sans-serif;
+  --font-body: "Quicksand", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.02em;
+  --label-transform: lowercase;
+  --label-tracking: 0.12em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-dreamcore h1,
+.theme-dreamcore h2,
+.theme-dreamcore h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+.theme-dreamcore { background-image: radial-gradient(ellipse at 20% 10%, oklch(0.9 0.06 300 / 60%), transparent 50%), radial-gradient(ellipse at 80% 30%, oklch(0.92 0.05 220 / 50%), transparent 50%), radial-gradient(ellipse at 50% 90%, oklch(0.92 0.05 350 / 50%), transparent 55%); }

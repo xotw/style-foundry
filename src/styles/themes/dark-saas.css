@@ -1,10 +1,10 @@
 /* Dark SaaS — near-black canvas, subtle borders, one electric accent, tight type */
 .theme-dark-saas {
-  --bg: oklch(0.16 0.004 285);
+  --bg: oklch(0.139 0.003 246.3);
   --surface: oklch(0.2 0.005 285);
   --surface-2: oklch(0.24 0.006 285);
   --fg: oklch(0.97 0.002 285);
-  --fg-muted: oklch(0.68 0.008 285);
+  --fg-muted: oklch(0.649 0.015 262.4);
   --accent: oklch(0.62 0.23 274);
   --accent-fg: oklch(0.99 0 0);
   --accent-2: oklch(0.72 0.15 200);

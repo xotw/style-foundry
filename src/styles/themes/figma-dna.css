@@ -5,13 +5,13 @@
   --surface-2: oklch(0.965 0 0);
   --fg: oklch(0.18 0 0);
   --fg-muted: oklch(0.55 0 0);
-  --accent: oklch(0.55 0.2 275);
+  --accent: oklch(0.670 0.183 249.2);
   --accent-fg: oklch(1 0 0);
-  --accent-2: oklch(0.6 0.19 250);
+  --accent-2: oklch(0.591 0.244 291.7);
   --line: oklch(0.9 0 0);
-  --success: oklch(0.65 0.17 150);
-  --warning: oklch(0.72 0.17 55);
-  --danger: oklch(0.62 0.22 25);
+  --success: oklch(0.742 0.182 153.0);
+  --warning: oklch(0.714 0.186 41.3);
+  --danger: oklch(0.652 0.234 26.7);
 
   --radius: 0.375rem;
   --radius-sm: 0.25rem;
@@ -26,8 +26,8 @@
   --border-width: 1px;
   --blur-amount: 0px;
 
-  --font-display: "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-display: "Instrument Sans", "Inter", sans-serif;
+  --font-body: "Instrument Sans", "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   --tracking-display: -0.025em;

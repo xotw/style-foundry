@@ -1,0 +1,42 @@
+/* Heisei Retro — 90s Japanese tech catalog: warm beige plastic, red/blue, dense boxes */
+.theme-heisei-retro {
+  --bg: oklch(0.923 0.025 89.2);
+  --surface: oklch(0.958 0.019 90.5);
+  --surface-2: oklch(0.883 0.031 90.3);
+  --fg: oklch(0.244 0.008 84.6);
+  --fg-muted: oklch(0.511 0.021 89.5);
+  --accent: oklch(0.553 0.226 28.0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.511 0.148 250.8);
+  --line: oklch(0.244 0.008 84.6);
+  --success: oklch(0.522 0.140 146.9);
+  --warning: oklch(0.679 0.142 76.5);
+  --danger: oklch(0.553 0.226 28.0);
+  --radius: 0.25rem;
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.375rem;
+  --radius-pill: 0.375rem;
+  --shadow-1: 2px 2px 0 oklch(0.2 0.01 85 / 25%);
+  --shadow-2: 3px 3px 0 oklch(0.2 0.01 85 / 30%);
+  --shadow-3: 5px 5px 0 oklch(0.2 0.01 85 / 30%);
+  --glow: 0 0 0 2px color-mix(in oklab, var(--accent-2) 50%, transparent);
+  --border-width: 2px;
+  --blur-amount: 0px;
+  --font-display: "Zen Kaku Gothic New", sans-serif;
+  --font-body: "Zen Kaku Gothic New", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: uppercase;
+  --label-tracking: 0.1em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-heisei-retro h1,
+.theme-heisei-retro h2,
+.theme-heisei-retro h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

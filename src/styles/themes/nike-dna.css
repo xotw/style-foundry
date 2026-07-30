@@ -26,8 +26,8 @@
   --border-width: 2px;
   --blur-amount: 0px;
 
-  --font-display: "Bebas Neue", "Archivo", sans-serif;
-  --font-body: "Archivo", sans-serif;
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   --tracking-display: 0.005em;

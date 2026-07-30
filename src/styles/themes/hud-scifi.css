@@ -1,0 +1,43 @@
+/* HUD Sci-Fi — cool dark blue, thin cyan lines, corner brackets, radar data */
+.theme-hud-scifi {
+  --bg: oklch(0.170 0.017 252.7);
+  --surface: oklch(0.201 0.024 251.6);
+  --surface-2: oklch(0.239 0.032 252.9);
+  --fg: oklch(0.922 0.025 240.7);
+  --fg-muted: oklch(0.620 0.050 244.7);
+  --accent: oklch(0.806 0.129 212.2);
+  --accent-fg: oklch(0.173 0.027 233.6);
+  --accent-2: oklch(0.623 0.200 265.8);
+  --line: oklch(0.75 0.1 220 / 30%);
+  --success: oklch(0.845 0.198 153.3);
+  --warning: oklch(0.839 0.152 90.4);
+  --danger: oklch(0.650 0.199 29.8);
+  --radius: 2px;
+  --radius-sm: 1px;
+  --radius-lg: 3px;
+  --radius-pill: 3px;
+  --shadow-1: 0 0 12px oklch(0.75 0.12 220 / 15%);
+  --shadow-2: 0 0 24px oklch(0.75 0.12 220 / 20%);
+  --shadow-3: 0 0 48px oklch(0.75 0.12 220 / 25%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 50%, transparent), 0 0 16px color-mix(in oklab, var(--accent) 30%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Rajdhani", sans-serif;
+  --font-body: "Rajdhani", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.06em;
+  --label-transform: uppercase;
+  --label-tracking: 0.22em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-hud-scifi h1,
+.theme-hud-scifi h2,
+.theme-hud-scifi h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+.theme-hud-scifi h1, .theme-hud-scifi h2, .theme-hud-scifi h3 { text-transform: uppercase; }
