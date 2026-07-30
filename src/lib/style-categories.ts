@@ -76,6 +76,6 @@ export const STYLE_CATEGORIES: { id: string; label: string; blurb: string; slugs
     id: "cinematic",
     label: "Cinematic",
     blurb: "Screen worlds everyone recognizes — homage palettes, no props required.",
-    slugs: ["star-wars", "stranger-things", "matrix", "dune", "wes-anderson", "severance", "james-bond", "ghibli"],
+    slugs: ["millennium-falcon", "stranger-things", "matrix", "dune", "wes-anderson", "severance", "james-bond", "ghibli"],
   },
 ];

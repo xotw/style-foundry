@@ -418,6 +418,12 @@
       "description": "Microsoft DNA — fluent four-square, segoe clarity — token file scoped under .theme-microsoft-dna; wrap your app in that class."
     },
     {
+      "name": "theme-millennium-falcon",
+      "type": "registry:item",
+      "title": "Millennium Falcon",
+      "description": "Millennium Falcon — used-future cockpit: worn panels, targeting-computer yellow vectors, amber toggles — token file scoped under .theme-millennium-falcon; wrap your app in that class."
+    },
+    {
       "name": "theme-minimal-warm",
       "type": "registry:item",
       "title": "Minimal Warm",
@@ -602,12 +608,6 @@
       "type": "registry:item",
       "title": "SSENSE DNA",
       "description": "SSENSE DNA — stark fashion e-commerce: black on white, micro type, luxury by subtraction — token file scoped under .theme-ssense-dna; wrap your app in that class."
-    },
-    {
-      "name": "theme-star-wars",
-      "type": "registry:item",
-      "title": "Star Wars",
-      "description": "Star Wars — a galaxy far away: space black, crawl yellow, saber glow — token file scoped under .theme-star-wars; wrap your app in that class."
     },
     {
       "name": "theme-starbucks-dna",

@@ -70,28 +70,20 @@
 .theme-boston-celtics button:hover { box-shadow: inset 0 -3px 0 var(--accent-2), var(--shadow-1); }
 .theme-boston-celtics button:active { transform: translateY(1px); }
 
-/* alt mode: garden day — sanded parquet in daylight, banner gold intact */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-boston-celtics.alt-mode {
-  --bg: oklch(0.965 0.018 92);
-  --surface: oklch(0.935 0.022 92);
-  --surface-2: oklch(0.905 0.026 92);
-  --fg: oklch(0.22 0.045 168);
-  --fg-muted: oklch(0.44 0.045 168);
-  --accent: oklch(0.45 0.13 150);
-  --accent-fg: oklch(1 0 0);
-  --accent-2: oklch(0.55 0.11 80);
-  --line: oklch(0.85 0.025 92);
+  --bg: oklch(0.985 0 0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.953 0.003 286.3);
+  --fg: oklch(0.206 0.006 285.9);
+  --fg-muted: oklch(0.478 0.016 285.8);
+  --accent: oklch(0.506 0.142 149.2);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.692 0.096 81.6);
+  --line: oklch(0.914 0.005 286.3);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: repeating-linear-gradient(45deg, oklch(0.80 0.06 85 / 18%) 0 34px, transparent 34px 68px), repeating-linear-gradient(-45deg, oklch(0.80 0.06 85 / 18%) 0 34px, transparent 34px 68px);
-  background-size: 100% 320px;
-  background-repeat: no-repeat;
+  background-image: none;
 }
-.theme-boston-celtics.alt-mode a { color: oklch(0.48 0.10 80); }
-.theme-boston-celtics.alt-mode a:hover { color: oklch(0.35 0.12 150); }
-.theme-boston-celtics.alt-mode thead th { background: oklch(0.92 0.020 92); }
-.theme-boston-celtics.alt-mode kbd { background: #ffffff; color: oklch(0.42 0.10 80); }
-.theme-boston-celtics.alt-mode input, .theme-boston-celtics.alt-mode select, .theme-boston-celtics.alt-mode textarea { background: #ffffff; }
-.theme-boston-celtics.alt-mode ::-webkit-scrollbar-track { background: oklch(0.92 0.020 92); }
-.theme-boston-celtics.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.55 0.10 150); border-color: oklch(0.92 0.020 92); }
+.theme-boston-celtics.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #007a33; -webkit-text-stroke: 0; }

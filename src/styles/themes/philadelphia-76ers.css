@@ -71,28 +71,20 @@
 .theme-philadelphia-76ers button:hover { box-shadow: inset 0 -3px 0 var(--accent), var(--shadow-1); }
 .theme-philadelphia-76ers button:active { transform: translateY(1px); }
 
-/* alt mode: parchment — declaration paper, navy ink, red seal */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-philadelphia-76ers.alt-mode {
-  --bg: oklch(0.958 0.020 90);
-  --surface: oklch(0.930 0.024 90);
-  --surface-2: oklch(0.900 0.028 90);
-  --fg: oklch(0.24 0.06 261);
-  --fg-muted: oklch(0.44 0.05 261);
-  --accent: oklch(0.54 0.21 19);
-  --line: oklch(0.84 0.026 90);
+  --bg: oklch(0.985 0 0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.953 0.003 286.3);
+  --fg: oklch(0.206 0.006 285.9);
+  --fg-muted: oklch(0.478 0.016 285.8);
+  --accent: oklch(0.606 0.234 17.1);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.518 0.143 249.1);
+  --line: oklch(0.914 0.005 286.3);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
 }
-.theme-philadelphia-76ers.alt-mode h1 { color: oklch(0.24 0.06 261); }
-.theme-philadelphia-76ers.alt-mode h1::before { color: var(--accent); }
-.theme-philadelphia-76ers.alt-mode a { color: oklch(0.50 0.20 19); }
-.theme-philadelphia-76ers.alt-mode a:hover { color: oklch(0.24 0.06 261); }
-.theme-philadelphia-76ers.alt-mode thead th { background: oklch(0.915 0.022 90); }
-.theme-philadelphia-76ers.alt-mode kbd { background: oklch(0.24 0.06 261); color: #ffffff; border-color: oklch(0.24 0.06 261); }
-.theme-philadelphia-76ers.alt-mode .label-caps { color: oklch(0.50 0.20 19); }
-.theme-philadelphia-76ers.alt-mode .label-caps::before { color: oklch(0.24 0.06 261); }
-.theme-philadelphia-76ers.alt-mode .themed-border { border-color: oklch(0.24 0.06 261 / 45%); }
-.theme-philadelphia-76ers.alt-mode input, .theme-philadelphia-76ers.alt-mode select, .theme-philadelphia-76ers.alt-mode textarea { background: #ffffff; }
-.theme-philadelphia-76ers.alt-mode ::-webkit-scrollbar-track { background: oklch(0.915 0.022 90); }
-.theme-philadelphia-76ers.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.60 0.14 19); border-color: oklch(0.915 0.022 90); }
+.theme-philadelphia-76ers.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #ed174c; -webkit-text-stroke: 0; }

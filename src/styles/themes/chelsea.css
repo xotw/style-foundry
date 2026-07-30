@@ -69,27 +69,20 @@
 .theme-chelsea .themed-border { border-top: 3px solid var(--accent); }
 .theme-chelsea button:active { transform: translateY(1px); box-shadow: none; }
 
-/* alt mode: auto-derived light variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-chelsea.alt-mode {
-  --bg: oklch(0.98 0.012 259.8);
-  --surface: oklch(0.955 0.015 259.8);
-  --surface-2: oklch(0.92 0.020 259.8);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  /* daylight at the Bridge: royal blue takes over, gold becomes the trim */
-  --accent: oklch(0.45 0.14 258.0);
-  --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.60 0.13 82.0);
-  background-image: none;
+  --bg: oklch(0.159 0 0);
+  --surface: oklch(0.200 0 0);
+  --surface-2: oklch(0.248 0 0);
+  --fg: oklch(0.943 0.026 92.4);
+  --fg-muted: oklch(0.661 0.033 90.4);
+  --accent: oklch(0.735 0.146 84.3);
+  --accent-fg: oklch(0.159 0 0);
+  --accent-2: oklch(1.000 0 0);
+  --line: oklch(0.75 0.1 85 / 30%);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
-.theme-chelsea.alt-mode tbody tr:hover { background: oklch(0.45 0.14 258 / 8%); }
-.theme-chelsea.alt-mode ::selection { background: oklch(0.45 0.14 258); color: oklch(1 0 0); }
-.theme-chelsea.alt-mode input, .theme-chelsea.alt-mode select, .theme-chelsea.alt-mode textarea { background: oklch(1 0 0); }
-.theme-chelsea.alt-mode kbd { background: oklch(0.94 0.012 260); border-bottom-color: oklch(0.60 0.13 82); }
-.theme-chelsea.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.012 260); }
-.theme-chelsea.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.45 0.14 258); border-color: oklch(0.94 0.012 260); }
-.theme-chelsea.alt-mode a { text-decoration-color: oklch(0.60 0.13 82 / 70%); }
+.theme-chelsea.alt-mode h1 { color: #d4a017; }
+.theme-chelsea.alt-mode h1::after { background: #d4a017; }

@@ -70,17 +70,21 @@
 .theme-dortmund .themed-border { border-image: repeating-linear-gradient(45deg, oklch(0.178 0 0) 0 12px, oklch(0.891 0.183 96.2) 12px 24px) 1; border-width: 3px; }
 .theme-dortmund button:active { transform: translate(1px, 2px); }
 
-.theme-dortmund.alt-mode { --bg: oklch(0.13 0 0); --surface: oklch(0.17 0 0); --surface-2: oklch(0.22 0 0);
-  --fg: oklch(0.96 0.005 100); --fg-muted: oklch(0.72 0.02 100); --accent: oklch(0.9 0.19 100); --accent-fg: oklch(0.13 0 0);
-  --line: oklch(1 0 0 / 16%); background-image: none; }
-.theme-dortmund.alt-mode h2, .theme-dortmund.alt-mode h3 { color: oklch(0.9 0.19 100); }
-.theme-dortmund.alt-mode h1 { -webkit-text-stroke: 0; color: oklch(0.9 0.19 100); }
-.theme-dortmund.alt-mode td { border-bottom-color: oklch(0.9 0.19 100 / 25%); }
-.theme-dortmund.alt-mode tbody tr:hover { background: oklch(0.9 0.19 100 / 8%); }
-.theme-dortmund.alt-mode ::selection { background: oklch(0.9 0.19 100); color: oklch(0.13 0 0); }
-.theme-dortmund.alt-mode input, .theme-dortmund.alt-mode select, .theme-dortmund.alt-mode textarea { background: oklch(0.17 0 0); border-color: oklch(1 0 0 / 25%); color: var(--fg); }
-.theme-dortmund.alt-mode input:focus-visible, .theme-dortmund.alt-mode select:focus-visible, .theme-dortmund.alt-mode textarea:focus-visible { outline-color: oklch(0.9 0.19 100); }
-.theme-dortmund.alt-mode kbd { background: oklch(0.9 0.19 100); color: oklch(0.13 0 0); }
-.theme-dortmund.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.9 0.19 100); }
-.theme-dortmund.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.95 0.16 100); }
-.theme-dortmund.alt-mode .label-caps { background: oklch(0.9 0.19 100); color: oklch(0.13 0 0); }
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
+.theme-dortmund.alt-mode {
+  --bg: oklch(0.209 0.006 271.1);
+  --surface: oklch(0.243 0.008 264.4);
+  --surface-2: oklch(0.277 0.010 268.3);
+  --fg: oklch(0.932 0.003 286.3);
+  --fg-muted: oklch(0.673 0.008 268.5);
+  --accent: oklch(0.891 0.183 96.2);
+  --accent-fg: oklch(0.191 0 0);
+  --accent-2: oklch(1.000 0 0);
+  --line: oklch(1 0 0 / 14%);
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  background-image: repeating-linear-gradient(135deg, oklch(0.3 0.005 260 / 60%) 0 6px, transparent 6px 12px, oklch(0.25 0.005 260 / 40%) 12px 30px, transparent 30px 60px);
+}
+.theme-dortmund.alt-mode h1 { -webkit-text-stroke: 0; color: #ffd900; }
+.theme-dortmund.alt-mode h2, .theme-dortmund.alt-mode h3 { color: #ffd900; }

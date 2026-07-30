@@ -1,0 +1,83 @@
+/* Millennium Falcon — used-future cockpit: worn panels, targeting-computer yellow vectors, amber toggles */
+.theme-millennium-falcon {
+  --bg: oklch(0.145 0.008 75);
+  --surface: oklch(0.19 0.01 75);
+  --surface-2: oklch(0.24 0.012 75);
+  --fg: oklch(0.9 0.02 85);
+  --fg-muted: oklch(0.62 0.03 80);
+  --accent: oklch(0.83 0.16 90);
+  --accent-fg: oklch(0.15 0.01 75);
+  --accent-2: oklch(0.62 0.19 30);
+  --line: oklch(0.83 0.16 90 / 30%);
+  --success: oklch(0.7 0.15 150);
+  --warning: oklch(0.75 0.16 60);
+  --danger: oklch(0.6 0.21 28);
+
+  --radius: 0.25rem;
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.5rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: inset 0 1px 0 oklch(1 0 0 / 6%), 0 2px 6px oklch(0 0 0 / 50%);
+  --shadow-2: inset 0 1px 0 oklch(1 0 0 / 6%), 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 12px color-mix(in oklab, var(--accent) 45%, transparent);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Nova Square", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "VT323", monospace;
+
+  --tracking-display: 0.05em;
+  --label-transform: uppercase;
+  --label-tracking: 0.2em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-millennium-falcon h1,
+.theme-millennium-falcon h2,
+.theme-millennium-falcon h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-millennium-falcon { --font-ui: var(--font-display); background-image: repeating-linear-gradient(0deg, transparent 0 3px, oklch(0 0 0 / 20%) 3px 4px), radial-gradient(circle at 12% 18%, oklch(0.35 0.02 75 / 40%) 0 2px, transparent 2px), radial-gradient(circle at 88% 30%, oklch(0.35 0.02 75 / 40%) 0 2px, transparent 2px); background-size: auto, 260px 260px, 300px 300px; }
+.theme-millennium-falcon h1, .theme-millennium-falcon h2 { text-transform: uppercase; color: var(--accent); text-shadow: 0 0 10px color-mix(in oklab, var(--accent) 45%, transparent); }
+.theme-millennium-falcon h1::after { content: ""; display: block; height: 14px; width: 8rem; margin-top: 0.7rem; border: 1px solid var(--accent); background: repeating-linear-gradient(90deg, color-mix(in oklab, var(--accent) 35%, transparent) 0 6px, transparent 6px 12px); }
+.theme-millennium-falcon button { text-transform: uppercase; letter-spacing: 0.12em; box-shadow: inset 0 2px 0 oklch(1 0 0 / 12%), inset 0 -2px 0 oklch(0 0 0 / 35%), 0 2px 4px oklch(0 0 0 / 45%); }
+.theme-millennium-falcon button:active { box-shadow: inset 0 2px 6px oklch(0 0 0 / 55%); transform: translateY(1px); }
+.theme-millennium-falcon .label-caps::before { content: "● "; color: var(--accent-2); font-size: 0.8em; }
+.theme-millennium-falcon table, .theme-millennium-falcon kbd, .theme-millennium-falcon input { font-family: var(--font-mono); font-size: 1.05em; }
+.theme-millennium-falcon th { color: var(--accent); border-bottom: 1px solid var(--accent); text-transform: uppercase; }
+.theme-millennium-falcon td { border-bottom: 1px dashed oklch(0.83 0.16 90 / 20%); }
+.theme-millennium-falcon tbody tr:hover { background: oklch(0.83 0.16 90 / 7%); }
+.theme-millennium-falcon ::selection { background: var(--accent); color: oklch(0.15 0.01 75); }
+.theme-millennium-falcon ::-webkit-scrollbar { width: 10px; }
+.theme-millennium-falcon ::-webkit-scrollbar-track { background: oklch(0.19 0.01 75); }
+.theme-millennium-falcon ::-webkit-scrollbar-thumb { background: oklch(0.83 0.16 90 / 60%); border: 2px solid oklch(0.19 0.01 75); }
+
+/* alt mode: corridor day — worn beige plastic panels, amber/red toggles */
+.theme-millennium-falcon.alt-mode {
+  --bg: oklch(0.87 0.02 80);
+  --surface: oklch(0.91 0.018 80);
+  --surface-2: oklch(0.82 0.025 78);
+  --fg: oklch(0.25 0.015 75);
+  --fg-muted: oklch(0.48 0.02 75);
+  --accent: oklch(0.55 0.19 30);
+  --accent-fg: oklch(0.97 0.01 80);
+  --accent-2: oklch(0.7 0.16 60);
+  --line: oklch(0.6 0.03 75 / 45%);
+  --shadow-1: inset 0 1px 0 oklch(1 0 0 / 60%), 0 2px 4px oklch(0.3 0.02 75 / 25%);
+  --shadow-2: 0 8px 20px oklch(0.3 0.02 75 / 20%);
+  --shadow-3: 0 20px 48px oklch(0.3 0.02 75 / 25%);
+  background-image: radial-gradient(circle at 15% 25%, oklch(0.6 0.02 75 / 30%) 0 2px, transparent 2px), radial-gradient(circle at 85% 70%, oklch(0.6 0.02 75 / 30%) 0 2px, transparent 2px);
+  background-size: 240px 240px, 280px 280px;
+}
+.theme-millennium-falcon.alt-mode h1, .theme-millennium-falcon.alt-mode h2 { color: oklch(0.5 0.17 30); text-shadow: none; }
+.theme-millennium-falcon.alt-mode h1::after { border-color: oklch(0.5 0.17 30); background: repeating-linear-gradient(90deg, oklch(0.5 0.17 30 / 35%) 0 6px, transparent 6px 12px); }

@@ -802,12 +802,12 @@ export const STYLE_RULES: Record<string, StyleRules> = {
     type: "Segoe clarity, four-square color logic",
     motion: "Fluent reveals, acrylic slides",
   },
-  "star-wars": {
-    use: "Fan products, gaming, space-adjacent brands",
+  "millennium-falcon": {
+    use: "Retro-tech products, gaming, cockpit dashboards",
     avoid: "Corporate trust surfaces",
-    spacing: "Deep-space air, crawl-angle hero",
-    type: "Condensed yellow caps, saber-glow accents",
-    motion: "Hyperspace streaks, crawl scrolls",
+    spacing: "Panel-mounted blocks, instrument density",
+    type: "70s techno caps, targeting-computer yellow, CRT mono data",
+    motion: "Toggle clunks, CRT flicker, jump-to-lightspeed only when earned",
   },
   "stranger-things": {
     use: "Events, horror media, retro campaigns",

@@ -68,26 +68,21 @@
 .theme-psg .themed-border { border-image: linear-gradient(180deg, #0b1730 0 30%, #ffffff 30% 40%, oklch(0.575 0.213 29.6) 40% 60%, #ffffff 60% 70%, #0b1730 70%) 1; }
 .theme-psg button:active { transform: translateY(1px); }
 
-/* alt mode: auto-derived light variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-psg.alt-mode {
-  --bg: oklch(0.98 0.012 263.3);
-  --surface: oklch(0.955 0.015 263.3);
-  --surface-2: oklch(0.92 0.020 263.3);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.985 0 0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.955 0.006 264.5);
+  --fg: oklch(0.261 0.081 264.8);
+  --fg-muted: oklch(0.564 0.045 269.5);
+  --accent: oklch(0.327 0.108 266.0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.575 0.213 29.6);
+  --line: oklch(0.915 0.010 261.8);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  --accent: oklch(0.50 0.20 29.6);
-  /* away-white kit: the Hechter stripe stays, ghosted */
-  background-image: linear-gradient(90deg, transparent 0 44%, oklch(0.21 0.05 263 / 8%) 44% 46%, oklch(0.50 0.18 25 / 14%) 46% 54%, oklch(0.21 0.05 263 / 8%) 54% 56%, transparent 56%);
-  background-size: 100% 480px;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, transparent 0 46%, oklch(0.45 0.18 25 / 20%) 46% 50%, oklch(0.35 0.12 265 / 20%) 50% 54%, transparent 54%), repeating-linear-gradient(90deg, oklch(0.3 0.08 265 / 4%) 0 2px, transparent 2px 8px);
+  background-size: 100% 420px, 16% 420px; background-repeat: no-repeat; background-position: top center, top center;
 }
-.theme-psg.alt-mode a { color: oklch(0.34 0.09 264); text-decoration-color: oklch(0.50 0.20 29.6 / 60%); }
-.theme-psg.alt-mode thead th { color: oklch(0.34 0.09 264); background: oklch(0.94 0.015 263); }
-.theme-psg.alt-mode kbd { background: oklch(0.93 0.015 263); }
-.theme-psg.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.015 263); }
-.theme-psg.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.34 0.09 264); border-color: oklch(0.93 0.015 263); }
-.theme-psg.alt-mode .label-caps { color: oklch(0.50 0.20 29.6); }
+.theme-psg.alt-mode h1, .theme-psg.alt-mode h2 { color: #10214b; }

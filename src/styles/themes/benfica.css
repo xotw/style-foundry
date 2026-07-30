@@ -69,24 +69,20 @@
 .theme-benfica button:hover { box-shadow: 0 4px 14px oklch(0.513 0.211 29.2 / 30%); }
 .theme-benfica button:active { transform: translateY(1px); box-shadow: none; }
 
-/* alt mode: auto-derived dark variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-benfica.alt-mode {
-  /* Estádio da Luz at night — warm dark, red glow, gold wing */
-  --bg: oklch(0.165 0.015 35.0);
-  --surface: oklch(0.205 0.018 35.0);
-  --surface-2: oklch(0.248 0.022 35.0);
-  --fg: oklch(0.97 0.008 60);
-  --fg-muted: oklch(0.72 0.025 55);
-  --line: oklch(0.663 0.120 80.3 / 20%);
-  --accent: oklch(0.60 0.210 29.2);
-  --accent-2: oklch(0.75 0.125 82.0);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --bg: oklch(0.991 0.003 84.6);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.956 0.009 84.6);
+  --fg: oklch(0.256 0 0);
+  --fg-muted: oklch(0.548 0.017 80.7);
+  --accent: oklch(0.513 0.211 29.2);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.663 0.120 80.3);
+  --line: oklch(0.914 0.014 84.6);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: radial-gradient(circle at 20% 30%, oklch(0.5 0.19 25 / 5%) 0 6px, transparent 6px), radial-gradient(circle at 70% 60%, oklch(0.5 0.19 25 / 4%) 0 5px, transparent 5px), radial-gradient(circle at 45% 85%, oklch(0.5 0.19 25 / 4%) 0 4px, transparent 4px);
+  background-size: 240px 240px;
 }
-.theme-benfica.alt-mode h1 { color: oklch(0.68 0.20 29); }
-.theme-benfica.alt-mode a { color: oklch(0.68 0.20 29); }
-.theme-benfica.alt-mode thead th { color: oklch(0.68 0.20 29); }
-.theme-benfica.alt-mode kbd { background: var(--surface-2); color: oklch(0.75 0.125 82); }
-.theme-benfica.alt-mode tbody tr:hover { background: oklch(0.60 0.21 29 / 12%); }
-.theme-benfica.alt-mode .label-caps { color: oklch(0.75 0.125 82); }

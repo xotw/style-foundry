@@ -69,22 +69,20 @@
 .theme-arsenal button:hover { background: oklch(1 0 0); color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
 .theme-arsenal .themed-border { border-left: 6px solid var(--accent); }
 
-/* alt mode: auto-derived dark variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-arsenal.alt-mode {
-  /* north london night — navy away, cannon red still fires */
-  --bg: oklch(0.160 0.045 276.0);
-  --surface: oklch(0.200 0.052 276.0);
-  --surface-2: oklch(0.242 0.058 276.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.72 0.03 276);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.193 0.062 265.4);
+  --surface: oklch(0.237 0.072 264.5);
+  --surface-2: oklch(0.284 0.076 262.9);
+  --fg: oklch(0.944 0.028 95.9);
+  --fg-muted: oklch(0.722 0.048 271.5);
+  --accent: oklch(0.846 0.156 92.7);
+  --accent-fg: oklch(0.193 0.062 265.4);
+  --accent-2: oklch(0.598 0.245 28.8);
+  --line: oklch(0.85 0.12 95 / 25%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.168 27.4);
-  --accent-fg: oklch(1 0 0);
+  background-image: repeating-linear-gradient(45deg, oklch(0.3 0.07 265 / 40%) 0 40px, transparent 40px 80px), repeating-linear-gradient(-45deg, oklch(0.85 0.14 95 / 5%) 0 24px, transparent 24px 72px);
 }
-.theme-arsenal.alt-mode a:hover { color: oklch(1 0 0); }
-.theme-arsenal.alt-mode kbd { background: var(--surface-2); border-color: oklch(0.697 0.135 231.6); color: var(--fg); }
-.theme-arsenal.alt-mode tbody tr:hover { background: oklch(0.62 0.168 27.4 / 12%); }
-.theme-arsenal.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.697 0.135 231.6); }
+.theme-arsenal.alt-mode h1, .theme-arsenal.alt-mode h2 { color: #f0c93c; border-color: #f0c93c; }

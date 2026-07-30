@@ -69,26 +69,20 @@
 .theme-miami-heat button:hover { box-shadow: 0 0 18px oklch(0.55 0.20 25 / 45%), 0 0 6px oklch(0.777 0.164 68.8 / 35%); }
 .theme-miami-heat button:active { transform: translateY(1px); box-shadow: 0 0 6px oklch(0.55 0.20 25 / 30%); }
 
-/* alt mode: white hot — playoff whiteout, deep heat red on white */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-miami-heat.alt-mode {
-  --bg: oklch(0.98 0.004 285.9);
-  --surface: oklch(0.955 0.004 285.9);
-  --surface-2: oklch(0.92 0.004 285.9);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --accent: oklch(0.46 0.18 13);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.985 0 0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.953 0.003 286.3);
+  --fg: oklch(0.206 0.006 285.9);
+  --fg-muted: oklch(0.478 0.016 285.8);
+  --accent: oklch(0.432 0.173 15.9);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.777 0.164 68.8);
+  --line: oklch(0.914 0.005 286.3);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: radial-gradient(ellipse at 50% 110%, oklch(0.55 0.20 25 / 8%), transparent 55%);
+  background-image: none;
 }
-.theme-miami-heat.alt-mode h1 { background: linear-gradient(180deg, oklch(0.30 0.10 13), oklch(0.46 0.18 13)); -webkit-background-clip: text; background-clip: text; }
-.theme-miami-heat.alt-mode a { color: oklch(0.55 0.15 55); }
-.theme-miami-heat.alt-mode a:hover { color: oklch(0.46 0.18 13); }
-.theme-miami-heat.alt-mode thead th { background: oklch(0.94 0.004 286); }
-.theme-miami-heat.alt-mode kbd { background: #ffffff; color: oklch(0.50 0.15 45); }
-.theme-miami-heat.alt-mode .label-caps { color: oklch(0.55 0.15 55); }
-.theme-miami-heat.alt-mode input, .theme-miami-heat.alt-mode select, .theme-miami-heat.alt-mode textarea { background: #ffffff; }
-.theme-miami-heat.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.004 286); }
-.theme-miami-heat.alt-mode ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, oklch(0.70 0.15 60), oklch(0.55 0.18 20)); border-color: oklch(0.94 0.004 286); }
+.theme-miami-heat.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #98002e; -webkit-text-stroke: 0; }

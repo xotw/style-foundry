@@ -70,25 +70,20 @@
 .theme-new-york-knicks button:hover { box-shadow: 0 0 14px oklch(0.726 0.169 54.1 / 40%), var(--shadow-1); }
 .theme-new-york-knicks button:active { transform: translateY(1px); box-shadow: none; }
 
-/* alt mode: garden matinee — white home kit, orange deepened for print contrast */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-new-york-knicks.alt-mode {
-  --bg: oklch(0.98 0.012 256.8);
-  --surface: oklch(0.955 0.015 256.8);
-  --surface-2: oklch(0.92 0.020 256.8);
-  --fg: oklch(0.20 0.05 257);
-  --fg-muted: oklch(0.44 0.05 257);
-  --accent: oklch(0.62 0.17 54);
-  --accent-fg: oklch(1 0 0);
-  --line: oklch(0.87 0.010 257);
+  --bg: oklch(0.985 0 0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.953 0.003 286.3);
+  --fg: oklch(0.206 0.006 285.9);
+  --fg-muted: oklch(0.478 0.016 285.8);
+  --accent: oklch(0.518 0.143 249.1);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.726 0.169 54.1);
+  --line: oklch(0.914 0.005 286.3);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
 }
-.theme-new-york-knicks.alt-mode a { color: oklch(0.52 0.16 54); }
-.theme-new-york-knicks.alt-mode a:hover { color: var(--accent-2); }
-.theme-new-york-knicks.alt-mode thead th { background: oklch(0.94 0.012 257); }
-.theme-new-york-knicks.alt-mode kbd { background: #ffffff; color: oklch(0.20 0.05 257); }
-.theme-new-york-knicks.alt-mode input, .theme-new-york-knicks.alt-mode select, .theme-new-york-knicks.alt-mode textarea { background: #ffffff; }
-.theme-new-york-knicks.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.012 257); }
-.theme-new-york-knicks.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.68 0.13 54); border-color: oklch(0.94 0.012 257); }
-.theme-new-york-knicks.alt-mode .label-caps { color: oklch(0.52 0.16 54); }
+.theme-new-york-knicks.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #006bb6; -webkit-text-stroke: 0; }

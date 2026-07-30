@@ -816,12 +816,12 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Segoe UI (system)",
     swatch: ["oklch(1.000 0 0)", "oklch(0.568 0.167 251.3)", "oklch(0.510 0.165 142.7)"],
   },
-  {
-    slug: "star-wars",
-    name: "Star Wars",
-    tagline: "A galaxy far away: space black, crawl yellow, saber glow.",
-    fontPairing: "Pathway Gothic One / Inter",
-    swatch: ["oklch(0.117 0.009 284.9)", "oklch(0.921 0.188 101.9)", "oklch(0.809 0.121 212.1)"],
+    {
+    slug: "millennium-falcon",
+    name: "Millennium Falcon",
+    tagline: "Used-future cockpit: worn panels, targeting-computer vectors, amber toggles.",
+    fontPairing: "Nova Square / Inter + VT323",
+    swatch: ["oklch(0.145 0.008 75)", "oklch(0.83 0.16 90)", "oklch(0.62 0.19 30)"],
   },
   {
     slug: "stranger-things",

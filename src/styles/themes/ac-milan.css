@@ -70,25 +70,21 @@
 .theme-ac-milan .themed-border { border-image: repeating-linear-gradient(90deg, oklch(0.55 0.22 27) 0 8px, oklch(0.12 0 0) 8px 16px) 1; }
 .theme-ac-milan button:active { transform: translateY(1px); }
 
-/* alt mode: auto-derived light variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-ac-milan.alt-mode {
-  --bg: oklch(0.98 0.000 0.0);
-  --surface: oklch(0.955 0.000 0.0);
-  --surface-2: oklch(0.92 0.000 0.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.985 0.005 95.1);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.948 0.011 95.2);
+  --fg: oklch(0.199 0.012 73.2);
+  --fg-muted: oklch(0.519 0.020 84.6);
+  --accent: oklch(0.199 0.012 73.2);
+  --accent-fg: oklch(0.985 0.005 95.1);
+  --accent-2: oklch(0.731 0.115 85.0);
+  --line: oklch(0.912 0.019 93.7);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  --accent: oklch(0.55 0.24 28.0);
-  /* away white kit: red-black pinstripes ghosted onto the shirt */
-  background-image: repeating-linear-gradient(90deg, oklch(0.55 0.22 27 / 6%) 0 48px, oklch(0.15 0 0 / 5%) 48px 96px);
 }
-.theme-ac-milan.alt-mode a { color: oklch(0.50 0.21 28); }
-.theme-ac-milan.alt-mode thead th { background: oklch(0.20 0 0); }
-.theme-ac-milan.alt-mode input, .theme-ac-milan.alt-mode select, .theme-ac-milan.alt-mode textarea { background: oklch(1 0 0); }
-.theme-ac-milan.alt-mode kbd { background: oklch(0.95 0 0); color: var(--fg); }
-.theme-ac-milan.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0 0); }
-.theme-ac-milan.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.93 0 0); }
-.theme-ac-milan.alt-mode tbody tr:hover { background: oklch(0.55 0.22 27 / 8%); }
+.theme-ac-milan.alt-mode { background-image: none; }
+.theme-ac-milan.alt-mode h1::after { background: #c9a24b; }
+.theme-ac-milan.alt-mode h1 { color: #191510; }

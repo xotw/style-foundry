@@ -69,26 +69,20 @@
 .theme-inter-milan .themed-border { border-image: repeating-linear-gradient(180deg, oklch(0.45 0.16 262) 0 8px, oklch(0.13 0.02 268) 8px 16px) 1; }
 .theme-inter-milan button:active { transform: translateY(1px); }
 
-/* alt mode: auto-derived light variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-inter-milan.alt-mode {
-  --bg: oklch(0.98 0.012 268.4);
-  --surface: oklch(0.955 0.015 268.4);
-  --surface-2: oklch(0.92 0.020 268.4);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.988 0.004 271.4);
+  --surface-2: oklch(0.958 0.010 267.4);
+  --fg: oklch(0.205 0.051 277.6);
+  --fg-muted: oklch(0.500 0.050 277.3);
+  --accent: oklch(0.394 0.138 264.1);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.180 0.043 277.1);
+  --line: oklch(0.916 0.016 270.0);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  --accent: oklch(0.48 0.17 260.5);
-  /* away daylight: faint nerazzurri diagonals stay on the shirt */
-  background-image: repeating-linear-gradient(115deg, oklch(0.45 0.12 262 / 6%) 0 42px, transparent 42px 84px);
+  background-image: repeating-linear-gradient(90deg, oklch(0.35 0.09 265 / 10%) 0 2px, transparent 2px 26px);
 }
-.theme-inter-milan.alt-mode h1 { background: linear-gradient(95deg, #1c3f8f, #4a86e8); -webkit-background-clip: text; background-clip: text; }
-.theme-inter-milan.alt-mode a { color: oklch(0.44 0.15 260); }
-.theme-inter-milan.alt-mode thead th { background: linear-gradient(115deg, oklch(0.30 0.08 262), oklch(0.22 0.05 268)); }
-.theme-inter-milan.alt-mode input, .theme-inter-milan.alt-mode select, .theme-inter-milan.alt-mode textarea { background: oklch(1 0 0); }
-.theme-inter-milan.alt-mode kbd { background: oklch(0.94 0.012 268); color: var(--fg); }
-.theme-inter-milan.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.012 268); }
-.theme-inter-milan.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.93 0.012 268); }
-.theme-inter-milan.alt-mode tbody tr:hover { background: oklch(0.48 0.17 260 / 8%); }
+.theme-inter-milan.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #1e3f8f; }

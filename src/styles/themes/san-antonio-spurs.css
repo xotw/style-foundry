@@ -70,32 +70,20 @@
 .theme-san-antonio-spurs button { border-radius: 0; }
 .theme-san-antonio-spurs button:active { transform: none; background: var(--accent); color: oklch(0.10 0.003 286); }
 
-/* alt mode: fiesta — the 90s warm-up jacket: white court, teal/pink/orange trim */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-san-antonio-spurs.alt-mode {
-  --bg: oklch(0.98 0.004 285.9);
-  --surface: oklch(0.955 0.004 285.9);
-  --surface-2: oklch(0.92 0.004 285.9);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.985 0 0);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.953 0.003 286.3);
+  --fg: oklch(0.206 0.006 285.9);
+  --fg-muted: oklch(0.478 0.016 285.8);
+  --accent: oklch(0.000 0 0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.642 0.005 236.5);
+  --line: oklch(0.914 0.005 286.3);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  --accent: oklch(0.52 0.10 195);
-  --accent-fg: oklch(1 0 0);
-  --accent-2: oklch(0.58 0.19 356);
-  box-shadow: inset 0 3px 0 oklch(0.58 0.19 356), inset 0 6px 0 oklch(0.52 0.10 195), inset 0 9px 0 oklch(0.70 0.15 55);
+  background-image: none;
 }
-.theme-san-antonio-spurs.alt-mode h1 { color: oklch(0.17 0.005 270); }
-.theme-san-antonio-spurs.alt-mode h2 { color: oklch(0.40 0.09 195); }
-.theme-san-antonio-spurs.alt-mode a { color: oklch(0.45 0.10 195); text-decoration-color: oklch(0.58 0.19 356); }
-.theme-san-antonio-spurs.alt-mode a:hover { background: oklch(0.17 0.005 270); color: #ffffff; }
-.theme-san-antonio-spurs.alt-mode thead th { border-bottom-color: oklch(0.52 0.10 195); color: oklch(0.40 0.02 270); }
-.theme-san-antonio-spurs.alt-mode kbd { background: #ffffff; color: oklch(0.45 0.10 195); border-color: oklch(0.52 0.10 195); }
-.theme-san-antonio-spurs.alt-mode .label-caps { color: oklch(0.52 0.17 356); }
-.theme-san-antonio-spurs.alt-mode .themed-border { border-color: oklch(0.52 0.10 195); }
-.theme-san-antonio-spurs.alt-mode button:hover { background: oklch(0.17 0.005 270); color: #ffffff; }
-.theme-san-antonio-spurs.alt-mode button:active { background: oklch(0.52 0.10 195); color: #ffffff; }
-.theme-san-antonio-spurs.alt-mode input, .theme-san-antonio-spurs.alt-mode select, .theme-san-antonio-spurs.alt-mode textarea { background: #ffffff; }
-.theme-san-antonio-spurs.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.004 286); }
-.theme-san-antonio-spurs.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.52 0.10 195); }
+.theme-san-antonio-spurs.alt-mode h1 { background: none; -webkit-background-clip: initial; background-clip: initial; color: #000000; -webkit-text-stroke: 0; }

@@ -70,24 +70,21 @@
 .theme-roma .themed-border { border-style: double; border-width: 3px; border-color: var(--accent); }
 .theme-roma button:active { transform: translateY(1px); }
 
-/* alt mode: auto-derived light variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-roma.alt-mode {
-  /* Roman marble in daylight — warm travertine, garnet inscriptions */
-  --bg: oklch(0.972 0.010 80.0);
-  --surface: oklch(0.995 0.005 85.0);
-  --surface-2: oklch(0.935 0.015 78.0);
-  --fg: oklch(0.250 0.055 12.0);
-  --fg-muted: oklch(0.480 0.040 30.0);
-  --line: oklch(0.870 0.025 75.0);
+  --bg: oklch(0.929 0.027 87.9);
+  --surface: oklch(0.959 0.021 88.7);
+  --surface-2: oklch(0.893 0.033 87.3);
+  --fg: oklch(0.267 0.058 36.8);
+  --fg-muted: oklch(0.588 0.040 77.8);
+  --accent: oklch(0.437 0.169 17.9);
+  --accent-fg: oklch(0.959 0.021 88.7);
+  --accent-2: oklch(0.827 0.170 83.1);
+  --line: oklch(0.851 0.039 86.9);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  --accent: oklch(0.52 0.170 83.1);
-  --accent-fg: oklch(1 0 0);
 }
-.theme-roma.alt-mode tbody tr:hover { background: oklch(0.437 0.169 17.9 / 8%); }
-.theme-roma.alt-mode ::selection { background: oklch(0.437 0.169 17.9); color: oklch(1 0 0); }
-.theme-roma.alt-mode input, .theme-roma.alt-mode select, .theme-roma.alt-mode textarea { background: oklch(1 0 0); }
-.theme-roma.alt-mode kbd { background: oklch(0.93 0.015 78); box-shadow: inset 0 2px 3px oklch(0 0 0 / 12%); }
-.theme-roma.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.015 78); }
-.theme-roma.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.93 0.015 78); }
+.theme-roma.alt-mode h1 { color: #990a2c; }
+.theme-roma.alt-mode h1::after { border: none; height: 10px; background: linear-gradient(180deg, #990a2c 0 70%, #fbba00 70% 100%); }
+.theme-roma.alt-mode h2::before { color: #990a2c; }

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "@tanstack/react-router";
-import { Check, ChevronLeft, ChevronRight, ChevronUp, Search } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, ChevronUp, Moon, Search, Sun, Terminal } from "lucide-react";
 import { STYLES } from "@/lib/styles-registry";
 import { STYLE_CATEGORIES } from "@/lib/style-categories";
 import { cn } from "@/lib/utils";
@@ -14,6 +14,18 @@ export function StyleSwitcher() {
   const params = useParams({ strict: false }) as { slug?: string };
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
+  const [alt, setAlt] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    setAlt(localStorage.getItem("sf-alt-mode") === "1");
+  }, []);
+  const toggleAlt = () => {
+    const next = !alt;
+    setAlt(next);
+    localStorage.setItem("sf-alt-mode", next ? "1" : "0");
+    window.dispatchEvent(new Event("sf-alt-change"));
+  };
   const panelRef = useRef<HTMLDivElement>(null);
 
   const subPage = location.pathname.endsWith("/components")
@@ -167,6 +179,30 @@ export function StyleSwitcher() {
             <span className="hidden px-2 font-mono text-[10px] text-white/40 sm:block">
               {idx + 1}/{ORDERED.length}
             </span>
+            <span className="h-4 w-px bg-white/15" />
+            <button
+              onClick={toggleAlt}
+              aria-label="Toggle light/dark variant"
+              title="Light / dark variant of this theme"
+              className="inline-flex items-center gap-1 rounded-full px-2.5 py-1.5 text-[11px] font-semibold text-white/60 transition-colors hover:text-white"
+            >
+              {alt ? <Sun className="size-3" /> : <Moon className="size-3" />}
+              <span className="hidden md:inline">{alt ? "Base" : "Flip"}</span>
+            </button>
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(
+                  `npx shadcn@latest add https://style-foundry-gabbulldo.vercel.app/r/${current}.json`,
+                );
+                setCopied(true);
+                setTimeout(() => setCopied(false), 1600);
+              }}
+              title={`npx shadcn@latest add https://style-foundry-gabbulldo.vercel.app/r/${current}.json`}
+              className="inline-flex items-center gap-1 rounded-full px-2.5 py-1.5 text-[11px] font-semibold text-white/60 transition-colors hover:text-white"
+            >
+              {copied ? <Check className="size-3 text-emerald-400" /> : <Terminal className="size-3" />}
+              <span className="hidden md:inline">{copied ? "Copied!" : "Install"}</span>
+            </button>
           </>
         )}
       </div>

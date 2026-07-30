@@ -71,29 +71,21 @@
 .theme-porto .themed-border { border-image: repeating-linear-gradient(90deg, oklch(0.370 0.122 255.1) 0 10px, oklch(1 0 0) 10px 20px) 1; }
 .theme-porto button:active { transform: translateY(1px); }
 
-/* alt mode: auto-derived dark variant */
+/* alt mode: away kit (2026-27 real kit / NBA Association Edition) */
 .theme-porto.alt-mode {
-  --bg: oklch(0.145 0.009 247.9);
-  --surface: oklch(0.185 0.009 247.9);
-  --surface-2: oklch(0.225 0.009 247.9);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.307 0.100 13.9);
+  --surface: oklch(0.346 0.107 13.2);
+  --surface-2: oklch(0.385 0.115 12.1);
+  --fg: oklch(0.927 0.031 79.9);
+  --fg-muted: oklch(0.739 0.046 52.4);
+  --accent: oklch(0.880 0.047 80.8);
+  --accent-fg: oklch(0.307 0.100 13.9);
+  --accent-2: oklch(0.746 0.143 87.5);
+  --line: oklch(0.8 0.06 60 / 25%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.122 255.1);
-  --accent-fg: oklch(1 0 0);
-  --accent-2: oklch(0.78 0.140 87.5);
-  /* dragão night: the stripes stay lit */
-  background-image: repeating-linear-gradient(90deg, oklch(0.62 0.12 255 / 7%) 0 40px, transparent 40px 80px);
-  background-size: 100% 260px;
-  background-repeat: no-repeat;
+  background-image: repeating-linear-gradient(0deg, oklch(0.35 0.09 15 / 30%) 0 2px, transparent 2px 28px);
 }
-.theme-porto.alt-mode thead th { background: oklch(0.30 0.09 255); }
-.theme-porto.alt-mode a { color: oklch(0.72 0.10 250); }
-.theme-porto.alt-mode kbd { background: var(--surface-2); color: oklch(0.78 0.14 87.5); }
-.theme-porto.alt-mode tbody tr:nth-child(even) { background: oklch(0.62 0.12 255 / 7%); }
-.theme-porto.alt-mode tbody tr:hover { background: oklch(0.62 0.12 255 / 14%); }
-.theme-porto.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.78 0.14 87.5); }
-.theme-porto.alt-mode .label-caps { color: oklch(0.78 0.14 87.5); }
+.theme-porto.alt-mode h1 { color: #e8d5b5; }
+.theme-porto.alt-mode h1::after { background: #d3a625; }
