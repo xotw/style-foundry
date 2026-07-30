@@ -2,15 +2,16 @@ import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Check, Copy, Github, Star } from "lucide-react";
 import { STYLES } from "@/lib/styles-registry";
+import { STYLE_CATEGORIES } from "@/lib/style-categories";
 
 const GITHUB_URL = "https://github.com/xotw/style-foundry";
 const SITE_URL = "https://style-foundry-gabbulldo.vercel.app";
 
 export const Route = createFileRoute("/")({
   head: () => {
-    const title = "Style Foundry — 58 design systems, one token contract";
+    const title = "Style Foundry — design systems on one token contract";
     const description =
-      "58 fully committed UI themes — aesthetics and product DNAs — each a single CSS token file skinning the same landing page, 46-component gallery, app blocks and a live app demo. Install any theme with the shadcn CLI.";
+      "73 fully committed UI themes — aesthetics and product DNAs — each a single CSS token file skinning the same landing page, 46-component gallery, app blocks and a live app demo. Install any theme with the shadcn CLI.";
     return {
       meta: [
         { title },
@@ -146,7 +147,7 @@ function Index() {
         </div>
       </section>
 
-      {/* Theme grid */}
+      {/* Theme grid, grouped */}
       <section id="themes" className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex items-end justify-between gap-4">
           <div>
@@ -160,64 +161,92 @@ function Index() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2">
-          {STYLES.map((s) => (
-            <article
-              key={s.slug}
-              className="group rounded-theme-lg bg-surface p-6 themed-border transition-colors hover:border-[color:var(--accent)]"
+        {/* Category jump nav */}
+        <nav className="sticky top-14 z-20 -mx-2 mt-8 flex gap-2 overflow-x-auto bg-bg/90 px-2 py-3 backdrop-blur-xl">
+          {STYLE_CATEGORIES.map((c) => (
+            <a
+              key={c.id}
+              href={`#cat-${c.id}`}
+              className="shrink-0 rounded-theme-pill px-3.5 py-1.5 text-xs font-medium text-fg-muted themed-border transition-colors hover:border-[color:var(--accent)] hover:text-fg"
             >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="font-display text-xl">{s.name}</h3>
-                  <p className="mt-1 font-code text-xs text-fg-muted">/styles/{s.slug}</p>
-                </div>
-                <div className="flex -space-x-1.5">
-                  {s.swatch.map((c) => (
-                    <span
-                      key={c}
-                      className="size-6 rounded-full border border-line"
-                      style={{ background: c }}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              <p className="mt-4 min-h-12 text-sm text-fg-muted">{s.tagline}</p>
-              <p className="mt-3 text-xs text-fg-muted/70">{s.fontPairing}</p>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                <Link
-                  to="/styles/$slug/app"
-                  params={{ slug: s.slug }}
-                  className="inline-flex items-center gap-1.5 rounded-theme bg-accent px-3.5 py-2 text-xs font-semibold text-accent-fg transition-opacity hover:opacity-90"
-                >
-                  App in use <ArrowUpRight className="size-3.5" />
-                </Link>
-                <Link
-                  to="/styles/$slug"
-                  params={{ slug: s.slug }}
-                  className="inline-flex items-center gap-1.5 rounded-theme px-3.5 py-2 text-xs font-semibold text-fg-muted themed-border transition-colors hover:text-fg"
-                >
-                  Landing
-                </Link>
-                <Link
-                  to="/styles/$slug/components"
-                  params={{ slug: s.slug }}
-                  className="inline-flex items-center gap-1.5 rounded-theme px-3.5 py-2 text-xs font-semibold text-fg-muted themed-border transition-colors hover:text-fg"
-                >
-                  Components
-                </Link>
-                <Link
-                  to="/styles/$slug/blocks"
-                  params={{ slug: s.slug }}
-                  className="inline-flex items-center gap-1.5 rounded-theme px-3.5 py-2 text-xs font-semibold text-fg-muted themed-border transition-colors hover:text-fg"
-                >
-                  Blocks
-                </Link>
-              </div>
-            </article>
+              {c.label}
+              <span className="ml-1.5 text-fg-muted/60">{c.slugs.length}</span>
+            </a>
           ))}
-        </div>
+        </nav>
+
+        {STYLE_CATEGORIES.map((cat) => {
+          const list = cat.slugs
+            .map((slug) => STYLES.find((s) => s.slug === slug))
+            .filter((s): s is (typeof STYLES)[number] => Boolean(s));
+          return (
+            <div key={cat.id} id={`cat-${cat.id}`} className="scroll-mt-32 pt-12">
+              <div className="flex items-baseline gap-3">
+                <h3 className="font-display text-xl">{cat.label}</h3>
+                <span className="font-code text-xs text-fg-muted">{list.length}</span>
+              </div>
+              <p className="mt-1 text-sm text-fg-muted">{cat.blurb}</p>
+              <div className="mt-6 grid gap-5 sm:grid-cols-2">
+                {list.map((s) => (
+                  <article
+                    key={s.slug}
+                    className="group rounded-theme-lg bg-surface p-6 themed-border transition-colors hover:border-[color:var(--accent)]"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <h4 className="font-display text-xl">{s.name}</h4>
+                        <p className="mt-1 font-code text-xs text-fg-muted">/styles/{s.slug}</p>
+                      </div>
+                      <div className="flex -space-x-1.5">
+                        {s.swatch.map((c) => (
+                          <span
+                            key={c}
+                            className="size-6 rounded-full border border-line"
+                            style={{ background: c }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+
+                    <p className="mt-4 min-h-12 text-sm text-fg-muted">{s.tagline}</p>
+                    <p className="mt-3 text-xs text-fg-muted/70">{s.fontPairing}</p>
+
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      <Link
+                        to="/styles/$slug/app"
+                        params={{ slug: s.slug }}
+                        className="inline-flex items-center gap-1.5 rounded-theme bg-accent px-3.5 py-2 text-xs font-semibold text-accent-fg transition-opacity hover:opacity-90"
+                      >
+                        App in use <ArrowUpRight className="size-3.5" />
+                      </Link>
+                      <Link
+                        to="/styles/$slug"
+                        params={{ slug: s.slug }}
+                        className="inline-flex items-center gap-1.5 rounded-theme px-3.5 py-2 text-xs font-semibold text-fg-muted themed-border transition-colors hover:text-fg"
+                      >
+                        Landing
+                      </Link>
+                      <Link
+                        to="/styles/$slug/components"
+                        params={{ slug: s.slug }}
+                        className="inline-flex items-center gap-1.5 rounded-theme px-3.5 py-2 text-xs font-semibold text-fg-muted themed-border transition-colors hover:text-fg"
+                      >
+                        Components
+                      </Link>
+                      <Link
+                        to="/styles/$slug/blocks"
+                        params={{ slug: s.slug }}
+                        className="inline-flex items-center gap-1.5 rounded-theme px-3.5 py-2 text-xs font-semibold text-fg-muted themed-border transition-colors hover:text-fg"
+                      >
+                        Blocks
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </section>
 
       {/* Footer */}

@@ -40,3 +40,7 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-proton-dna { --font-ui: var(--font-display); }
+.theme-proton-dna h1 { background: linear-gradient(95deg, var(--accent-2), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }

@@ -52,3 +52,8 @@
   letter-spacing: var(--tracking-display);
   text-transform: uppercase;
 }
+
+/* signature */
+.theme-memphis h1 { text-shadow: 4px 4px 0 var(--accent-2); }
+.theme-memphis h2 { text-decoration: underline wavy var(--accent) 3px; text-underline-offset: 8px; }
+.theme-memphis button:hover { transform: rotate(-1.5deg) scale(1.03); }

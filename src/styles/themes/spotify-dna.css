@@ -57,3 +57,8 @@
 .theme-spotify-dna button:hover {
   transform: scale(1.04);
 }
+
+/* signature */
+.theme-spotify-dna { --font-ui: var(--font-display); }
+.theme-spotify-dna h1 { font-weight: 900; letter-spacing: -0.05em; }
+.theme-spotify-dna button { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; }

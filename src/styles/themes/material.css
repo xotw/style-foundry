@@ -59,3 +59,9 @@
     oklch(0.5 0.19 295 / 8%)
   );
 }
+
+/* signature */
+.theme-material { --font-ui: var(--font-display); }
+.theme-material button { transition: box-shadow 200ms cubic-bezier(0.2, 0, 0, 1); }
+.theme-material button:hover { box-shadow: 0 2px 8px oklch(0 0 0 / 25%); }
+.theme-material h1 { font-weight: 500; }

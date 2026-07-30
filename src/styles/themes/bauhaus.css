@@ -50,3 +50,9 @@
   letter-spacing: var(--tracking-display);
   text-transform: uppercase;
 }
+
+/* signature */
+.theme-bauhaus { --font-ui: var(--font-display); }
+.theme-bauhaus h1, .theme-bauhaus h2 { text-transform: uppercase; font-weight: 700; }
+.theme-bauhaus h2::before { content: ""; display: inline-block; width: 0.5em; height: 0.5em; background: var(--accent); margin-right: 0.4em; }
+.theme-bauhaus button { text-transform: uppercase; letter-spacing: 0.06em; }

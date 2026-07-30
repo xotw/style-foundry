@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-github-dna { --font-ui: var(--font-display); }
+.theme-github-dna h1 { font-weight: 600; letter-spacing: -0.02em; }
+.theme-github-dna kbd { border-bottom-width: 3px; }

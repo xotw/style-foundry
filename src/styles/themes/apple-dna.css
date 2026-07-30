@@ -56,3 +56,8 @@
   border-radius: var(--radius-pill);
   font-weight: 500;
 }
+
+/* signature */
+.theme-apple-dna h1 { font-weight: 700; }
+.theme-apple-dna button { font-size: 0.95em; }
+.theme-apple-dna ::selection { background: oklch(0.7 0.15 255 / 30%); }

@@ -70,3 +70,9 @@
   letter-spacing: 0.08em;
   font-weight: 600;
 }
+
+/* signature */
+.theme-bloomberg-dna { --font-ui: var(--font-mono); }
+.theme-bloomberg-dna * { border-radius: 0 !important; }
+.theme-bloomberg-dna h1, .theme-bloomberg-dna h2 { text-transform: uppercase; text-shadow: 0 0 10px color-mix(in oklab, var(--accent) 45%, transparent); }
+.theme-bloomberg-dna h1::after { content: "▮"; margin-left: 0.15em; animation: sf-blink 1s steps(1) infinite; }

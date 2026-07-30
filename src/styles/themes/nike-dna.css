@@ -59,3 +59,8 @@
   font-weight: 700;
   border-radius: var(--radius-pill);
 }
+
+/* signature */
+.theme-nike-dna { --font-ui: var(--font-display); }
+.theme-nike-dna h1, .theme-nike-dna h2 { text-transform: uppercase; font-style: italic; }
+.theme-nike-dna button { text-transform: uppercase; font-weight: 600; letter-spacing: 0.02em; }

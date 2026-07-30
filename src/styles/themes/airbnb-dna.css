@@ -54,3 +54,8 @@
 .theme-airbnb-dna button:hover {
   transform: scale(1.02);
 }
+
+/* signature */
+.theme-airbnb-dna { --font-ui: var(--font-display); }
+.theme-airbnb-dna h1 { font-weight: 600; letter-spacing: -0.02em; }
+.theme-airbnb-dna button:hover { transform: scale(1.02); }

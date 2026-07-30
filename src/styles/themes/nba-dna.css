@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-nba-dna { --font-ui: var(--font-display); }
+.theme-nba-dna h1, .theme-nba-dna h2 { text-transform: uppercase; }
+.theme-nba-dna h1::after { content: ""; display: block; height: 4px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
+.theme-nba-dna button { text-transform: uppercase; letter-spacing: 0.08em; }

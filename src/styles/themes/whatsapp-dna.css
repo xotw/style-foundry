@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-whatsapp-dna { background-image: radial-gradient(oklch(0.5 0.03 160 / 6%) 1.5px, transparent 1.5px); background-size: 18px 18px; }
+.theme-whatsapp-dna { --font-ui: var(--font-display); }
+.theme-whatsapp-dna h1 { font-weight: 700; }
+.theme-whatsapp-dna button { font-weight: 600; }

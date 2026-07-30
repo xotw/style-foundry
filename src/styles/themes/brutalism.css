@@ -46,3 +46,9 @@
   text-transform: uppercase;
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-brutalism h1, .theme-brutalism h2 { text-transform: uppercase; text-shadow: 4px 4px 0 var(--accent-2, var(--accent)); }
+.theme-brutalism button { text-transform: uppercase; }
+.theme-brutalism button:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--line); }
+.theme-brutalism button:active { transform: translate(2px, 2px); box-shadow: none; }

@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-barcelona-dna { background-image: repeating-linear-gradient(90deg, oklch(0.35 0.14 15 / 12%) 0 80px, transparent 80px 160px); }
+.theme-barcelona-dna h1 { text-transform: uppercase; }
+.theme-barcelona-dna h1::after { content: ""; display: block; height: 3px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
+.theme-barcelona-dna button { font-weight: 700; }

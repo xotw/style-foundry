@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-linkedin-dna { --font-ui: var(--font-display); }
+.theme-linkedin-dna h1 { font-weight: 600; }
+.theme-linkedin-dna button { font-weight: 600; }
+.theme-linkedin-dna h2::after { content: ""; display: block; width: 3rem; height: 3px; background: var(--accent); margin-top: 0.5rem; }

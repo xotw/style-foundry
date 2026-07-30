@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-nfl-dna h1, .theme-nfl-dna h2 { text-transform: uppercase; }
+.theme-nfl-dna h2 { border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 0.15em; }
+.theme-nfl-dna button { text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }

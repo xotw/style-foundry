@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-lego-dna { --font-ui: var(--font-display); }
+.theme-lego-dna h1 { font-weight: 900; }
+.theme-lego-dna button { border-bottom: 4px solid oklch(0 0 0 / 30%); font-weight: 800; }
+.theme-lego-dna button:active { transform: translateY(2px); border-bottom-width: 2px; }

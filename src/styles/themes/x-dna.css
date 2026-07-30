@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-x-dna { --font-ui: var(--font-display); }
+.theme-x-dna h1 { font-weight: 800; letter-spacing: -0.04em; }
+.theme-x-dna button { font-weight: 700; }

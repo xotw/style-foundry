@@ -52,3 +52,8 @@
   letter-spacing: var(--tracking-display);
   text-shadow: 2px 0 0 oklch(0.7 0.25 340 / 70%), -2px 0 0 oklch(0.8 0.16 200 / 55%);
 }
+
+/* signature */
+.theme-cyberpunk { --font-ui: var(--font-display); background-image: repeating-linear-gradient(0deg, transparent 0 3px, oklch(0 0 0 / 18%) 3px 4px); }
+.theme-cyberpunk h1 { text-transform: uppercase; text-shadow: 3px 0 var(--accent-2), -3px 0 var(--danger); }
+.theme-cyberpunk button { text-transform: uppercase; letter-spacing: 0.1em; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }

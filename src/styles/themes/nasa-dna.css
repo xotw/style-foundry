@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-nasa-dna { --font-ui: var(--font-display); }
+.theme-nasa-dna h1 { text-transform: uppercase; letter-spacing: 0.08em; }
+.theme-nasa-dna h1::after { content: ""; display: block; width: 6rem; height: 3px; background: var(--accent); margin-top: 0.7rem; }
+.theme-nasa-dna .label-caps { letter-spacing: 0.3em; }

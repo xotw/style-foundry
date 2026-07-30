@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-ssense-dna h1 { text-transform: uppercase; font-size: clamp(1.6rem, 3.5vw, 2.6rem) !important; letter-spacing: 0.04em; }
+.theme-ssense-dna button { text-transform: uppercase; font-size: 11px; letter-spacing: 0.14em; }
+.theme-ssense-dna .label-caps { letter-spacing: 0.22em; }

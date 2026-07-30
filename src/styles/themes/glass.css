@@ -50,3 +50,7 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-glass h1 { background: linear-gradient(100deg, var(--fg), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-glass button:hover { box-shadow: 0 0 24px color-mix(in oklab, var(--accent) 45%, transparent); }

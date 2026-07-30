@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-heisei-retro { background-image: radial-gradient(oklch(0.2 0.01 85 / 8%) 1px, transparent 1px); background-size: 12px 12px; }
+.theme-heisei-retro h1 { border-bottom: 4px solid var(--accent); display: inline-block; padding-bottom: 0.2rem; }
+.theme-heisei-retro button { box-shadow: 2px 2px 0 oklch(0.2 0.01 85 / 40%); }
+.theme-heisei-retro button:active { transform: translate(2px, 2px); box-shadow: none; }

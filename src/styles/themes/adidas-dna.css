@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-adidas-dna { --font-ui: var(--font-display); background-image: repeating-linear-gradient(-60deg, oklch(0 0 0 / 3%) 0 14px, transparent 14px 42px); background-size: 300px 300px; background-repeat: no-repeat; background-position: top right; }
+.theme-adidas-dna h1, .theme-adidas-dna h2 { text-transform: uppercase; letter-spacing: -0.01em; }
+.theme-adidas-dna button { text-transform: uppercase; letter-spacing: 0.12em; }
+.theme-adidas-dna button:hover { text-decoration: underline; text-underline-offset: 4px; }

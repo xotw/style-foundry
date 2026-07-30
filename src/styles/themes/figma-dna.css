@@ -68,3 +68,7 @@
 .theme-figma-dna li:nth-child(5n + 5) svg {
   color: oklch(0.6 0.19 250);
 }
+
+/* signature */
+.theme-figma-dna { --font-ui: var(--font-display); }
+.theme-figma-dna h1::after { content: ""; display: block; height: 4px; width: 5rem; margin-top: 0.6rem; background: linear-gradient(90deg, #ff3737 0 20%, #ff7237 0 40%, #874fff 0 60%, #24cb71 0 80%, #0d99ff 0 100%); }

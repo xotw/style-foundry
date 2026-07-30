@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-facebook-dna { --font-ui: var(--font-display); }
+.theme-facebook-dna h1 { font-weight: 700; letter-spacing: -0.02em; }
+.theme-facebook-dna button { font-weight: 600; }

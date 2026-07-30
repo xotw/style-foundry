@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-crossfit-dna { background-image: repeating-linear-gradient(45deg, oklch(1 0 0 / 2%) 0 2px, transparent 2px 8px); }
+.theme-crossfit-dna h1, .theme-crossfit-dna h2 { text-transform: uppercase; }
+.theme-crossfit-dna button { text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; }
+.theme-crossfit-dna button:active { transform: scale(0.97); }

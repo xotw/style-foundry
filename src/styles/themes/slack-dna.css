@@ -60,3 +60,8 @@
 .theme-slack-dna li:nth-child(4n + 4) svg {
   color: oklch(0.6 0.2 20);
 }
+
+/* signature */
+.theme-slack-dna { --font-ui: var(--font-display); }
+.theme-slack-dna h1 { font-weight: 800; letter-spacing: -0.03em; }
+.theme-slack-dna h2 { border-image: linear-gradient(90deg, #36c5f0, #2eb67d, #ecb22e, #e01e5a) 1; border-bottom: 3px solid; padding-bottom: 0.4rem; }

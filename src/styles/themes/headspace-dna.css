@@ -57,3 +57,9 @@
 .theme-headspace-dna article {
   border-radius: var(--radius-lg);
 }
+
+/* signature */
+.theme-headspace-dna { background-image: radial-gradient(circle at 85% 8%, color-mix(in oklab, var(--accent-2) 25%, transparent), transparent 30%); }
+.theme-headspace-dna { --font-ui: var(--font-display); }
+.theme-headspace-dna h1 { font-weight: 700; }
+.theme-headspace-dna button { font-weight: 700; }

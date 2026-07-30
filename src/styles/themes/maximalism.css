@@ -57,3 +57,8 @@
   font-family: "Bebas Neue", "Outfit", sans-serif;
   letter-spacing: 0.05em;
 }
+
+/* signature */
+.theme-maximalism { background-image: repeating-conic-gradient(from 40deg, oklch(0.9 0.1 340 / 7%) 0 12deg, transparent 12deg 24deg); }
+.theme-maximalism h1 { text-shadow: 3px 3px 0 var(--accent), 6px 6px 0 var(--accent-2); }
+.theme-maximalism button { background-image: linear-gradient(95deg, var(--accent), var(--accent-2)); border-color: transparent; }

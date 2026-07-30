@@ -48,3 +48,9 @@
   font-weight: 300;
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-luxury h1 { font-weight: 300; letter-spacing: 0.03em; }
+.theme-luxury button { text-transform: uppercase; letter-spacing: 0.22em; font-weight: 500; }
+.theme-luxury h2 { font-weight: 400; }
+.theme-luxury ::selection { background: oklch(0.75 0.09 85); color: oklch(0.15 0 0); }

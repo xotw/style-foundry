@@ -45,3 +45,7 @@
   letter-spacing: var(--tracking-display);
   font-weight: 600;
 }
+
+/* signature */
+.theme-dark-saas { --font-ui: var(--font-display); }
+.theme-dark-saas h1 { background: linear-gradient(180deg, var(--fg), var(--fg-muted)); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -0.045em; }

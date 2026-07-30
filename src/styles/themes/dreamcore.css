@@ -41,3 +41,8 @@
   letter-spacing: var(--tracking-display);
 }
 .theme-dreamcore { background-image: radial-gradient(ellipse at 20% 10%, oklch(0.9 0.06 300 / 60%), transparent 50%), radial-gradient(ellipse at 80% 30%, oklch(0.92 0.05 220 / 50%), transparent 50%), radial-gradient(ellipse at 50% 90%, oklch(0.92 0.05 350 / 50%), transparent 55%); }
+
+/* signature */
+.theme-dreamcore h1 { text-shadow: 0 0 24px color-mix(in oklab, var(--accent) 55%, transparent); font-weight: 500; }
+.theme-dreamcore button { box-shadow: 0 0 20px color-mix(in oklab, var(--accent) 35%, transparent); }
+.theme-dreamcore .label-caps { text-transform: lowercase; }

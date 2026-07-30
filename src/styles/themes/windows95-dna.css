@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-windows95-dna button:active { box-shadow: inset 1px 1px 0 oklch(0 0 0), inset -1px -1px 0 oklch(1 0 0); }
+.theme-windows95-dna h2 { background: linear-gradient(90deg, var(--accent), oklch(0.45 0.19 262)); color: #ffffff; padding: 0.2rem 0.6rem; font-size: 1rem; }
+.theme-windows95-dna * { transition: none !important; }

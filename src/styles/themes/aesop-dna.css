@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-aesop-dna h1 { font-weight: 400; }
+.theme-aesop-dna button { text-transform: uppercase; letter-spacing: 0.18em; font-size: 12px; }
+.theme-aesop-dna ::selection { background: oklch(0.75 0.03 130); }

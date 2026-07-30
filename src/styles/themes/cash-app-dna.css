@@ -54,3 +54,9 @@
   font-weight: 700;
   letter-spacing: 0.02em;
 }
+
+/* signature */
+.theme-cash-app-dna { --font-ui: var(--font-display); }
+.theme-cash-app-dna h1 { text-transform: uppercase; transform: skewX(-4deg); display: inline-block; }
+.theme-cash-app-dna button { text-transform: uppercase; letter-spacing: 0.04em; }
+.theme-cash-app-dna button:hover { box-shadow: 0 0 24px color-mix(in oklab, var(--accent) 60%, transparent); }

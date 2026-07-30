@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-reddit-dna { --font-ui: var(--font-display); }
+.theme-reddit-dna h1 { font-weight: 800; }
+.theme-reddit-dna button:hover { background: color-mix(in oklab, var(--accent) 88%, black); }
+.theme-reddit-dna .label-caps { text-transform: lowercase; letter-spacing: 0.02em; }

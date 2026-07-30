@@ -52,3 +52,9 @@
   letter-spacing: var(--tracking-display);
   line-height: 1.02;
 }
+
+/* signature */
+.theme-newspaper { background-image: radial-gradient(oklch(0.2 0.01 80 / 4%) 1px, transparent 1px); background-size: 4px 4px; }
+.theme-newspaper h1 { font-weight: 700; }
+.theme-newspaper h2 { border-block: 3px double var(--fg); padding-block: 0.5rem; }
+.theme-newspaper ::selection { background: var(--fg); color: var(--bg); }

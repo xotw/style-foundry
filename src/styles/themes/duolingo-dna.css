@@ -60,3 +60,9 @@
   transform: translateY(3px);
   border-bottom-width: 1px;
 }
+
+/* signature */
+.theme-duolingo-dna { --font-ui: var(--font-display); }
+.theme-duolingo-dna h1 { font-weight: 800; }
+.theme-duolingo-dna button { border-bottom: 4px solid color-mix(in oklab, var(--accent) 65%, black); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.theme-duolingo-dna button:active { transform: translateY(3px); border-bottom-width: 1px; }

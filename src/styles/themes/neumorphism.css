@@ -52,3 +52,7 @@
 .theme-neumorphism select {
   box-shadow: inset 4px 4px 8px oklch(0.8 0.01 260 / 90%), inset -4px -4px 8px oklch(1 0 0 / 95%);
 }
+
+/* signature */
+.theme-neumorphism button:active { box-shadow: inset 3px 3px 6px oklch(0 0 0 / 15%), inset -3px -3px 6px oklch(1 0 0 / 90%); transform: none; }
+.theme-neumorphism h1, .theme-neumorphism h2 { color: var(--fg); text-shadow: 1px 1px 1px oklch(1 0 0 / 80%); }

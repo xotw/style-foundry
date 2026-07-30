@@ -55,3 +55,8 @@
   letter-spacing: var(--label-tracking);
   font-size: 0.6875rem;
 }
+
+/* signature */
+.theme-braun-dna h1 { font-weight: 500; }
+.theme-braun-dna h2::before { content: ""; display: inline-block; width: 0.45em; height: 0.45em; border-radius: 50%; background: var(--accent); margin-right: 0.45em; }
+.theme-braun-dna button { letter-spacing: 0.02em; }

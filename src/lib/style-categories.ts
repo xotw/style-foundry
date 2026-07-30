@@ -1,0 +1,57 @@
+/** Ordered homepage grouping. Every theme slug appears in exactly one category. */
+export const STYLE_CATEGORIES: { id: string; label: string; blurb: string; slugs: string[] }[] = [
+  {
+    id: "minimal",
+    label: "Minimal & structured",
+    blurb: "Type-led, grid-first, nothing decorative survives.",
+    slugs: ["swiss", "bauhaus", "flat", "material", "minimal-warm", "e-ink", "editorial", "newspaper", "luxury", "art-deco"],
+  },
+  {
+    id: "depth",
+    label: "Depth & materials",
+    blurb: "Glass, clay, plastic, nature — surfaces you can almost touch.",
+    slugs: ["glass", "liquid-glass", "neumorphism", "claymorphism", "skeuomorphism", "frutiger-aero", "aurora", "dreamcore", "biophilic"],
+  },
+  {
+    id: "retro",
+    label: "Retro & expressive",
+    blurb: "Loud, nostalgic, rule-breaking on purpose.",
+    slugs: ["brutalism", "maximalism", "memphis", "vaporwave", "y2k", "pixel", "heisei-retro", "windows95-dna", "hackernews-dna"],
+  },
+  {
+    id: "technical",
+    label: "Dark & technical",
+    blurb: "Built for operators: dense, dark, precise.",
+    slugs: ["dark-saas", "terminal", "cyberpunk", "hud-scifi"],
+  },
+  {
+    id: "tech-dna",
+    label: "Tech & SaaS DNA",
+    blurb: "The design languages of iconic software products, from crawled brand values.",
+    slugs: ["stripe-dna", "superhuman-dna", "figma-dna", "arc-dna", "github-dna", "apple-dna", "braun-dna", "teenage-engineering-dna", "ableton-dna", "proton-dna", "anthropic-dna", "nasa-dna"],
+  },
+  {
+    id: "social-dna",
+    label: "Social & messaging DNA",
+    blurb: "Feeds, bubbles and communities — the interfaces everyone knows.",
+    slugs: ["slack-dna", "discord-dna", "telegram-dna", "whatsapp-dna", "signal-dna", "facebook-dna", "instagram-dna", "x-dna", "linkedin-dna", "reddit-dna"],
+  },
+  {
+    id: "commerce-dna",
+    label: "Commerce & lifestyle DNA",
+    blurb: "Marketplaces, retail and consumer brands with a point of view.",
+    slugs: ["airbnb-dna", "ikea-dna", "lego-dna", "aesop-dna", "ssense-dna", "headspace-dna", "duolingo-dna", "cash-app-dna"],
+  },
+  {
+    id: "media-dna",
+    label: "Media & entertainment DNA",
+    blurb: "Content-first surfaces where the UI steps back.",
+    slugs: ["spotify-dna", "netflix-dna", "bloomberg-dna"],
+  },
+  {
+    id: "sports-dna",
+    label: "Sports DNA",
+    blurb: "Brands and clubs built on intensity, speed and pride.",
+    slugs: ["nike-dna", "adidas-dna", "reebok-dna", "crossfit-dna", "nba-dna", "nfl-dna", "barcelona-dna", "real-madrid-dna"],
+  },
+];

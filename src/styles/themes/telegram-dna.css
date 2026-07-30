@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-telegram-dna { background-image: radial-gradient(circle at 80% 10%, oklch(0.9 0.05 230 / 40%), transparent 40%); }
+.theme-telegram-dna h1 { font-weight: 500; }
+.theme-telegram-dna button:hover { transform: translateY(-1px); }

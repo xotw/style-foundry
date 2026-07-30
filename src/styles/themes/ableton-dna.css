@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-ableton-dna { --font-ui: var(--font-display); }
+.theme-ableton-dna h1 { font-weight: 400; }
+.theme-ableton-dna button { transition: none; }
+.theme-ableton-dna button:hover { background: var(--fg); color: var(--bg); }

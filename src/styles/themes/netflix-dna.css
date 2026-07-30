@@ -40,3 +40,8 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-netflix-dna { background-image: radial-gradient(ellipse at 50% -20%, oklch(0.3 0.1 25 / 45%), transparent 55%); }
+.theme-netflix-dna h1 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+.theme-netflix-dna button { font-weight: 700; }

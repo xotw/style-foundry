@@ -157,6 +157,9 @@
 [class*="theme-"] {
   --font-display-family: var(--font-display);
   --font-body-family: var(--font-body);
+  /* UI font: buttons, labels, kbd. Themes opt into their display face here,
+     which is what makes each theme's typography visible beyond headings. */
+  --font-ui: var(--font-body);
 
   /* Bridge shadcn semantic variables to theme tokens so ui/ components
      (calendar, dialog, dropdown, …) are skinned by the active theme. */
@@ -335,4 +338,13 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+/* Signature-layer shared bits */
+[class*="theme-"] :is(button, kbd, .label-caps) {
+  font-family: var(--font-ui);
+}
+@keyframes sf-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }

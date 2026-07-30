@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-hackernews-dna { border-top: 4px solid var(--accent); font-size: 14px; }
+.theme-hackernews-dna * { border-radius: 0 !important; box-shadow: none !important; transition: none !important; }
+.theme-hackernews-dna h1 { font-size: 1.5rem !important; font-weight: 700; }
+.theme-hackernews-dna .label-caps { text-transform: none; letter-spacing: 0; }

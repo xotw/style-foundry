@@ -41,3 +41,8 @@
   letter-spacing: var(--tracking-display);
 }
 .theme-hud-scifi h1, .theme-hud-scifi h2, .theme-hud-scifi h3 { text-transform: uppercase; }
+
+/* signature */
+.theme-hud-scifi { --font-ui: var(--font-display); background-image: repeating-linear-gradient(0deg, transparent 0 3px, oklch(0.75 0.1 220 / 4%) 3px 4px); }
+.theme-hud-scifi h1, .theme-hud-scifi h2 { text-shadow: 0 0 12px color-mix(in oklab, var(--accent) 60%, transparent); }
+.theme-hud-scifi button { clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px); text-transform: uppercase; letter-spacing: 0.14em; }

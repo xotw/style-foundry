@@ -40,3 +40,9 @@
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* signature */
+.theme-discord-dna { --font-ui: var(--font-display); }
+.theme-discord-dna h1 { font-weight: 800; }
+.theme-discord-dna button:hover { filter: brightness(0.9); }
+.theme-discord-dna ::selection { background: color-mix(in oklab, var(--accent) 40%, transparent); }

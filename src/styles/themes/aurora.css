@@ -51,3 +51,7 @@
   letter-spacing: var(--tracking-display);
   font-weight: 600;
 }
+
+/* signature */
+.theme-aurora h1 { background: linear-gradient(95deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-aurora button:hover { box-shadow: 0 0 32px color-mix(in oklab, var(--accent) 50%, transparent); }

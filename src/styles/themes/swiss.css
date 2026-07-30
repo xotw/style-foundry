@@ -45,3 +45,9 @@
   letter-spacing: var(--tracking-display);
   font-weight: 600;
 }
+
+/* signature */
+.theme-swiss { --font-ui: var(--font-display); }
+.theme-swiss h1 { font-weight: 800; }
+.theme-swiss button { text-transform: uppercase; letter-spacing: 0.08em; }
+.theme-swiss ::selection { background: var(--accent); color: var(--accent-fg); }
