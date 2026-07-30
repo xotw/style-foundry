@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "@tanstack/react-router";
 import { Check, ChevronLeft, ChevronRight, ChevronUp, Search } from "lucide-react";
 import { STYLES } from "@/lib/styles-registry";
+import { STYLE_CATEGORIES } from "@/lib/style-categories";
 import { cn } from "@/lib/utils";
 
 /**
@@ -24,10 +25,16 @@ export function StyleSwitcher() {
         : "/styles/$slug";
 
   const current = params.slug;
-  const idx = STYLES.findIndex((s) => s.slug === current);
-  const currentStyle = idx >= 0 ? STYLES[idx] : null;
-  const prev = STYLES[(idx - 1 + STYLES.length) % STYLES.length];
-  const next = STYLES[(idx + 1) % STYLES.length];
+  // Cycle in the exact order of the homepage categories, not registry order.
+  const ORDERED = STYLE_CATEGORIES.flatMap((c) =>
+    c.slugs
+      .map((slug) => STYLES.find((s) => s.slug === slug))
+      .filter((s): s is (typeof STYLES)[number] => Boolean(s)),
+  );
+  const idx = ORDERED.findIndex((s) => s.slug === current);
+  const currentStyle = idx >= 0 ? ORDERED[idx] : null;
+  const prev = ORDERED[(idx - 1 + ORDERED.length) % ORDERED.length];
+  const next = ORDERED[(idx + 1) % ORDERED.length];
 
   useEffect(() => {
     setOpen(false);
@@ -44,11 +51,15 @@ export function StyleSwitcher() {
   }, [open]);
 
   const q = query.trim().toLowerCase();
-  const filtered = q
-    ? STYLES.filter((s) => (s.name + s.slug + s.tagline).toLowerCase().includes(q))
-    : STYLES;
-  const aesthetics = filtered.filter((s) => !s.slug.endsWith("-dna"));
-  const dnas = filtered.filter((s) => s.slug.endsWith("-dna"));
+  const groups = STYLE_CATEGORIES.map((c) => ({
+    label: c.label,
+    list: ORDERED.filter(
+      (s) =>
+        c.slugs.includes(s.slug) &&
+        (!q || (s.name + s.slug + s.tagline).toLowerCase().includes(q)),
+    ),
+  }));
+  const filteredCount = groups.reduce((n, g) => n + g.list.length, 0);
 
   const linkCls = (active: boolean) =>
     cn(
@@ -67,21 +78,18 @@ export function StyleSwitcher() {
               autoFocus
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search 58 themes…"
+              placeholder={`Search ${STYLES.length} themes…`}
               className="w-full bg-transparent text-[13px] text-white placeholder:text-white/35 focus:outline-none"
             />
           </div>
           <div className="max-h-72 overflow-y-auto p-2">
-            {[
-              ["Aesthetics", aesthetics],
-              ["Product DNA", dnas],
-            ].map(([label, list]) =>
-              (list as typeof STYLES).length === 0 ? null : (
-                <div key={label as string} className="mb-1">
+            {groups.map(({ label, list }) =>
+              list.length === 0 ? null : (
+                <div key={label} className="mb-1">
                   <p className="px-3 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/35">
-                    {label as string}
+                    {label}
                   </p>
-                  {(list as typeof STYLES).map((s) => (
+                  {list.map((s) => (
                     <Link
                       key={s.slug}
                       to={subPage}
@@ -106,7 +114,7 @@ export function StyleSwitcher() {
                 </div>
               ),
             )}
-            {filtered.length === 0 && (
+            {filteredCount === 0 && (
               <p className="px-3 py-6 text-center text-[12px] text-white/40">No theme matches.</p>
             )}
           </div>
@@ -157,7 +165,7 @@ export function StyleSwitcher() {
               <ChevronRight className="size-3.5" />
             </Link>
             <span className="hidden px-2 font-mono text-[10px] text-white/40 sm:block">
-              {idx + 1}/{STYLES.length}
+              {idx + 1}/{ORDERED.length}
             </span>
           </>
         )}
