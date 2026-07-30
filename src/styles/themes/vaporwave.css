@@ -1,0 +1,70 @@
+/* Vaporwave — purple/pink/cyan gradients, chrome text, 80s grid horizon */
+.theme-vaporwave {
+  --bg: oklch(0.2 0.13 300);
+  --surface: oklch(0.28 0.14 305 / 75%);
+  --surface-2: oklch(0.34 0.15 310 / 80%);
+  --fg: oklch(0.97 0.03 320);
+  --fg-muted: oklch(0.82 0.08 320);
+  --accent: oklch(0.75 0.22 340);
+  --accent-fg: oklch(0.17 0.1 300);
+  --accent-2: oklch(0.83 0.16 195);
+  --line: oklch(0.83 0.16 195 / 45%);
+  --success: oklch(0.8 0.17 165);
+  --warning: oklch(0.86 0.16 90);
+  --danger: oklch(0.7 0.23 15);
+
+  --radius: 0.25rem;
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.5rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: 0 0 0 1px var(--line);
+  --shadow-2: 0 0 24px -4px oklch(0.75 0.22 340 / 70%);
+  --shadow-3: 0 0 48px -8px oklch(0.83 0.16 195 / 70%);
+  --glow: 0 0 22px -2px oklch(0.75 0.22 340 / 80%);
+
+  --border-width: 2px;
+  --blur-amount: 8px;
+
+  --font-display: "Orbitron", "Space Grotesk", sans-serif;
+  --font-body: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: 0.06em;
+  --label-transform: uppercase;
+  --label-tracking: 0.22em;
+
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(oklch(0.83 0.16 195 / 35%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.83 0.16 195 / 35%) 1px, transparent 1px),
+    radial-gradient(50rem 30rem at 50% 100%, oklch(0.75 0.22 340 / 55%), transparent 70%),
+    linear-gradient(180deg, oklch(0.18 0.12 295), oklch(0.3 0.16 320));
+  background-size: 4rem 4rem, 4rem 4rem, 100% 100%, 100% 100%;
+  background-position: bottom, bottom, center, center;
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-vaporwave h1,
+.theme-vaporwave h2 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  background-image: linear-gradient(
+    180deg,
+    oklch(0.99 0.02 320) 0%,
+    oklch(0.86 0.1 320) 42%,
+    oklch(0.62 0.18 330) 52%,
+    oklch(0.95 0.06 200) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 24px oklch(0.75 0.22 340 / 45%);
+}
+
+.theme-vaporwave h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

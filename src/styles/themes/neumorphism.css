@@ -1,0 +1,54 @@
+/* Neumorphism — soft extruded gray surfaces, double shadows, pill shapes */
+.theme-neumorphism {
+  --bg: oklch(0.93 0.005 260);
+  --surface: oklch(0.93 0.005 260);
+  --surface-2: oklch(0.95 0.005 260);
+  --fg: oklch(0.38 0.02 265);
+  --fg-muted: oklch(0.58 0.02 265);
+  --accent: oklch(0.62 0.14 265);
+  --accent-fg: oklch(0.99 0 0);
+  --accent-2: oklch(0.72 0.11 200);
+  --line: oklch(0.88 0.006 260);
+  --success: oklch(0.68 0.14 155);
+  --warning: oklch(0.78 0.14 80);
+  --danger: oklch(0.62 0.19 22);
+
+  --radius: 1.5rem;
+  --radius-sm: 1rem;
+  --radius-lg: 2rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: 6px 6px 12px oklch(0.78 0.01 260 / 90%), -6px -6px 12px oklch(1 0 0 / 90%);
+  --shadow-2: 10px 10px 24px oklch(0.76 0.01 260 / 90%), -10px -10px 24px oklch(1 0 0 / 95%);
+  --shadow-3: 16px 16px 36px oklch(0.74 0.012 260 / 90%), -16px -16px 36px oklch(1 0 0 / 95%);
+  --glow: inset 4px 4px 10px oklch(0.78 0.01 260 / 90%), inset -4px -4px 10px oklch(1 0 0 / 95%);
+
+  --border-width: 0px;
+  --blur-amount: 0px;
+
+  --font-display: "Poppins", "Inter", sans-serif;
+  --font-body: "Poppins", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.02em;
+  --label-transform: uppercase;
+  --label-tracking: 0.14em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-neumorphism h1,
+.theme-neumorphism h2,
+.theme-neumorphism h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 600;
+}
+
+.theme-neumorphism input,
+.theme-neumorphism textarea,
+.theme-neumorphism select {
+  box-shadow: inset 4px 4px 8px oklch(0.8 0.01 260 / 90%), inset -4px -4px 8px oklch(1 0 0 / 95%);
+}

@@ -1,0 +1,54 @@
+/* Newspaper — newsprint gray, blackletter-ish serif heads, column rules */
+.theme-newspaper {
+  --bg: oklch(0.94 0.008 95);
+  --surface: oklch(0.965 0.006 95);
+  --surface-2: oklch(0.9 0.01 95);
+  --fg: oklch(0.18 0.005 60);
+  --fg-muted: oklch(0.44 0.008 60);
+  --accent: oklch(0.18 0.005 60);
+  --accent-fg: oklch(0.965 0.006 95);
+  --accent-2: oklch(0.45 0.16 25);
+  --line: oklch(0.18 0.005 60 / 45%);
+  --success: oklch(0.45 0.1 150);
+  --warning: oklch(0.62 0.12 80);
+  --danger: oklch(0.45 0.16 25);
+
+  --radius: 0rem;
+  --radius-sm: 0rem;
+  --radius-lg: 0rem;
+  --radius-pill: 0rem;
+
+  --shadow-1: 0 1px 0 0 var(--line);
+  --shadow-2: 0 0 0 1px var(--line);
+  --shadow-3: 0 0 0 3px var(--line);
+  --glow: none;
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Playfair Display", "Libre Baskerville", Georgia, serif;
+  --font-body: "Libre Baskerville", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.01em;
+  --label-transform: uppercase;
+  --label-tracking: 0.26em;
+
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(
+    45deg,
+    oklch(0.18 0.005 60 / 3%) 0 1px,
+    transparent 1px 3px
+  );
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-newspaper h1,
+.theme-newspaper h2,
+.theme-newspaper h3 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: var(--tracking-display);
+  line-height: 1.02;
+}

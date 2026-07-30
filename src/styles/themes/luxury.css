@@ -1,0 +1,50 @@
+/* Luxury — deep ink, champagne gold, high-contrast serif, hairline rules */
+.theme-luxury {
+  --bg: oklch(0.17 0.012 60);
+  --surface: oklch(0.21 0.014 60);
+  --surface-2: oklch(0.25 0.016 60);
+  --fg: oklch(0.95 0.01 85);
+  --fg-muted: oklch(0.74 0.02 85);
+  --accent: oklch(0.82 0.12 88);
+  --accent-fg: oklch(0.17 0.012 60);
+  --accent-2: oklch(0.68 0.06 150);
+  --line: oklch(0.82 0.12 88 / 32%);
+  --success: oklch(0.72 0.12 155);
+  --warning: oklch(0.82 0.13 85);
+  --danger: oklch(0.6 0.19 22);
+
+  --radius: 0.125rem;
+  --radius-sm: 0.0625rem;
+  --radius-lg: 0.25rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: 0 1px 0 0 var(--line);
+  --shadow-2: 0 18px 40px -24px oklch(0 0 0 / 85%);
+  --shadow-3: 0 34px 80px -34px oklch(0 0 0 / 90%);
+  --glow: 0 0 0 1px var(--line), 0 0 30px -12px oklch(0.82 0.12 88 / 55%);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Jost", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: 0.02em;
+  --label-transform: uppercase;
+  --label-tracking: 0.3em;
+
+  background-color: var(--bg);
+  background-image: radial-gradient(60rem 40rem at 50% -20%, oklch(0.82 0.12 88 / 10%), transparent 70%);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-luxury h1,
+.theme-luxury h2,
+.theme-luxury h3 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: var(--tracking-display);
+}
