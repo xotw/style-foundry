@@ -345,7 +345,7 @@ function Index() {
         </div>
         <div className="border-t-[length:var(--border-width)] border-t-line">
           <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-6 py-5 text-xs text-fg-muted">
-            <span>Built by Gabriel Hardy-Françon — this page runs on the dark-saas theme, naturally.</span>
+            <span>Built by Gab (xotw) — this page runs on the dark-saas theme, naturally.</span>
             <span className="font-code">{STYLES.length} themes · 1 token contract</span>
           </div>
         </div>
