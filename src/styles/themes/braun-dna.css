@@ -1,0 +1,57 @@
+/* Braun DNA — Dieter Rams functionalism: warm gray, black text, signal-orange dot */
+.theme-braun-dna {
+  --bg: oklch(0.9 0.006 85);
+  --surface: oklch(0.945 0.005 85);
+  --surface-2: oklch(0.86 0.007 85);
+  --fg: oklch(0.15 0.004 85);
+  --fg-muted: oklch(0.46 0.005 85);
+  --accent: oklch(0.65 0.2 45);
+  --accent-fg: oklch(0.99 0 0);
+  --accent-2: oklch(0.15 0.004 85);
+  --line: oklch(0.74 0.006 85);
+  --success: oklch(0.55 0.12 150);
+  --warning: oklch(0.75 0.15 85);
+  --danger: oklch(0.55 0.2 28);
+
+  --radius: 0.125rem;
+  --radius-sm: 0.0625rem;
+  --radius-lg: 0.25rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: none;
+  --shadow-2: 0 1px 2px oklch(0 0 0 / 10%);
+  --shadow-3: 0 6px 16px -10px oklch(0 0 0 / 25%);
+  --glow: 0 0 0 2px var(--accent);
+
+  --border-width: 1px;
+  --blur-amount: 0px;
+
+  --font-display: "Jost", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.01em;
+  --label-transform: uppercase;
+  --label-tracking: 0.1em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.55;
+}
+
+.theme-braun-dna h1,
+.theme-braun-dna h2,
+.theme-braun-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.theme-braun-dna label,
+.theme-braun-dna th {
+  text-transform: var(--label-transform);
+  letter-spacing: var(--label-tracking);
+  font-size: 0.6875rem;
+}
