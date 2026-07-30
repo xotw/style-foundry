@@ -65,22 +65,23 @@
 .theme-linkedin-dna button:hover { box-shadow: inset 0 0 0 1px currentColor; } /* double-border hover */
 .theme-linkedin-dna button:active { filter: brightness(0.92); }
 
-/* alt mode: LinkedIn dark — warm charcoal, #70B5F9-class lifted blue */
+/* alt mode: LinkedIn's real dark — black canvas, #1B1F23 cards, light-blue links */
 .theme-linkedin-dna.alt-mode {
-  --bg: oklch(0.145 0.006 84.6);
-  --surface: oklch(0.185 0.006 84.6);
-  --surface-2: oklch(0.225 0.006 84.6);
-  --accent: oklch(0.72 0.12 250);
-  --accent-fg: oklch(0.13 0 0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --bg: oklch(0 0 0);
+  --surface: oklch(0.235 0.008 250);
+  --surface-2: oklch(0.29 0.008 250);
+  --fg: oklch(0.93 0.003 250);
+  --fg-muted: oklch(0.68 0.005 250);
+  --accent: oklch(0.52 0.14 250);
+  --accent-fg: oklch(1 0 0);
+  --accent-2: oklch(0.75 0.11 250);
+  --line: oklch(1 0 0 / 15%);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 60%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 60%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 70%);
 }
-.theme-linkedin-dna.alt-mode tbody tr:hover { background: oklch(1 0 0 / 5%); }
-.theme-linkedin-dna.alt-mode a:hover { color: oklch(0.80 0.10 250); }
-.theme-linkedin-dna.alt-mode ::selection { background: oklch(0.42 0.09 255); }
-.theme-linkedin-dna.alt-mode input, .theme-linkedin-dna.alt-mode textarea, .theme-linkedin-dna.alt-mode select { border-color: oklch(1 0 0 / 40%); }
-.theme-linkedin-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.42 0.01 80); }
+.theme-linkedin-dna.alt-mode a, .theme-linkedin-dna.alt-mode .text-accent { color: oklch(0.75 0.11 250); }
+.theme-linkedin-dna.alt-mode button[class*="outline"], .theme-linkedin-dna.alt-mode button[class*="ghost"] { border-color: oklch(0.75 0.11 250); color: oklch(0.75 0.11 250); }
+.theme-linkedin-dna.alt-mode h2::after { background: oklch(0.75 0.11 250); }
+.theme-linkedin-dna.alt-mode tbody tr:hover { background: oklch(0.27 0.008 250); }
+.theme-linkedin-dna.alt-mode input, .theme-linkedin-dna.alt-mode textarea { background: oklch(0.29 0.008 250); border-color: oklch(1 0 0 / 20%); }
