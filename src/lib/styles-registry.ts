@@ -134,6 +134,34 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Nunito / Inter",
     swatch: ["oklch(0.82 0.012 250)", "oklch(0.93 0.008 250)", "oklch(0.55 0.14 245)"],
   },
+  {
+    slug: "liquid-glass",
+    name: "Liquid Glass",
+    tagline: "Bright room, refracting panels, specular hairlines, adaptive blur.",
+    fontPairing: "Inter Tight / Inter",
+    swatch: ["oklch(0.96 0.012 250)", "oklch(0.86 0.11 250)", "oklch(0.62 0.17 255)"],
+  },
+  {
+    slug: "frutiger-aero",
+    name: "Frutiger Aero",
+    tagline: "Sky blue and vivid green, glossy bubbles, lens-flare optimism.",
+    fontPairing: "Open Sans / Open Sans",
+    swatch: ["oklch(0.86 0.11 230)", "oklch(0.72 0.19 145)", "oklch(0.99 0.06 95)"],
+  },
+  {
+    slug: "material",
+    name: "Material",
+    tagline: "Material 3 tonal palettes, filled surfaces, state layers, elevation.",
+    fontPairing: "Roboto Flex / Roboto Flex",
+    swatch: ["oklch(0.97 0.012 300)", "oklch(0.93 0.03 295)", "oklch(0.5 0.19 295)"],
+  },
+  {
+    slug: "flat",
+    name: "Flat",
+    tagline: "Metro-era solids, no shadows, sharp edges, authentically digital.",
+    fontPairing: "Inter Tight / Open Sans",
+    swatch: ["oklch(0.55 0.19 250)", "oklch(0.6 0.19 30)", "oklch(0.65 0.17 165)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);

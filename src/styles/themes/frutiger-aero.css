@@ -1,0 +1,57 @@
+/* Frutiger Aero — 2000s: sky blue + vivid green, glossy bubbles, lens flares */
+.theme-frutiger-aero {
+  --bg: oklch(0.88 0.07 220);
+  --surface: oklch(0.99 0.01 220 / 80%);
+  --surface-2: oklch(0.93 0.05 205 / 85%);
+  --fg: oklch(0.26 0.05 245);
+  --fg-muted: oklch(0.46 0.05 235);
+  --accent: oklch(0.72 0.19 145);
+  --accent-fg: oklch(0.99 0 0);
+  --accent-2: oklch(0.66 0.16 240);
+  --line: oklch(1 0 0 / 75%);
+  --success: oklch(0.72 0.19 145);
+  --warning: oklch(0.84 0.16 88);
+  --danger: oklch(0.62 0.2 25);
+
+  --radius: 1rem;
+  --radius-sm: 0.625rem;
+  --radius-lg: 1.75rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: inset 0 1px 0 oklch(1 0 0 / 95%), 0 2px 5px -1px oklch(0.35 0.08 240 / 35%);
+  --shadow-2: inset 0 2px 0 oklch(1 0 0 / 95%), inset 0 -8px 16px oklch(0.6 0.1 220 / 18%),
+    0 12px 26px -10px oklch(0.35 0.08 240 / 45%);
+  --shadow-3: inset 0 3px 0 oklch(1 0 0 / 95%), 0 26px 54px -18px oklch(0.32 0.09 240 / 50%);
+  --glow: 0 0 26px -4px oklch(0.72 0.19 145 / 75%);
+
+  --border-width: 1px;
+  --blur-amount: 10px;
+
+  --font-display: "Open Sans", "Segoe UI", sans-serif;
+  --font-body: "Open Sans", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.01em;
+  --label-transform: none;
+  --label-tracking: 0.03em;
+
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 18% 22%, oklch(1 0 0 / 55%) 0 3rem, transparent 3.2rem),
+    radial-gradient(circle at 76% 14%, oklch(1 0 0 / 40%) 0 1.6rem, transparent 1.8rem),
+    radial-gradient(circle at 62% 74%, oklch(0.9 0.14 145 / 45%) 0 5rem, transparent 5.4rem),
+    radial-gradient(40rem 24rem at 92% -8%, oklch(0.99 0.06 95 / 80%), transparent 62%),
+    linear-gradient(180deg, oklch(0.86 0.11 230) 0%, oklch(0.93 0.06 200) 55%, oklch(0.9 0.13 145) 100%);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-frutiger-aero h1,
+.theme-frutiger-aero h2,
+.theme-frutiger-aero h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: var(--tracking-display);
+  text-shadow: 0 1px 0 oklch(1 0 0 / 70%);
+}

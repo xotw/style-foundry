@@ -19,6 +19,10 @@
 @import "./styles/themes/cyberpunk.css";
 @import "./styles/themes/newspaper.css";
 @import "./styles/themes/skeuomorphism.css";
+@import "./styles/themes/liquid-glass.css";
+@import "./styles/themes/frutiger-aero.css";
+@import "./styles/themes/material.css";
+@import "./styles/themes/flat.css";
 
 @custom-variant dark (&:is(.dark *));
 

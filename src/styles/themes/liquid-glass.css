@@ -1,0 +1,69 @@
+/* Liquid Glass — Apple 2026: bright room, ultra-translucent panels,
+   refraction highlights, adaptive blur, specular hairline borders */
+.theme-liquid-glass {
+  --bg: oklch(0.96 0.012 250);
+  --surface: oklch(1 0 0 / 42%);
+  --surface-2: oklch(1 0 0 / 62%);
+  --fg: oklch(0.24 0.02 260);
+  --fg-muted: oklch(0.48 0.02 260);
+  --accent: oklch(0.62 0.17 255);
+  --accent-fg: oklch(0.99 0 0);
+  --accent-2: oklch(0.7 0.14 200);
+  --line: oklch(1 0 0 / 70%);
+  --success: oklch(0.68 0.15 155);
+  --warning: oklch(0.8 0.14 82);
+  --danger: oklch(0.62 0.2 22);
+
+  --radius: 1.5rem;
+  --radius-sm: 1rem;
+  --radius-lg: 2.25rem;
+  --radius-pill: 9999px;
+
+  --shadow-1: inset 0 1px 0 oklch(1 0 0 / 90%), inset 0 -1px 0 oklch(1 0 0 / 45%),
+    0 1px 2px oklch(0.3 0.03 260 / 10%);
+  --shadow-2: inset 0 1px 0 oklch(1 0 0 / 95%), inset 0 -12px 24px oklch(1 0 0 / 30%),
+    0 12px 34px -14px oklch(0.35 0.04 260 / 32%);
+  --shadow-3: inset 0 1.5px 0 oklch(1 0 0 / 95%), inset 0 -20px 40px oklch(1 0 0 / 35%),
+    0 30px 70px -26px oklch(0.35 0.04 260 / 38%);
+  --glow: 0 0 0 1px oklch(1 0 0 / 80%), 0 0 40px -10px oklch(0.62 0.17 255 / 45%);
+
+  --border-width: 1px;
+  --blur-amount: 28px;
+
+  --font-display: "Inter Tight", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.03em;
+  --label-transform: none;
+  --label-tracking: 0.01em;
+
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(48rem 30rem at 6% -6%, oklch(0.86 0.11 250 / 75%), transparent 62%),
+    radial-gradient(44rem 30rem at 96% 4%, oklch(0.9 0.09 190 / 70%), transparent 62%),
+    radial-gradient(56rem 36rem at 46% 108%, oklch(0.88 0.1 320 / 60%), transparent 66%),
+    linear-gradient(180deg, oklch(0.985 0.008 250), oklch(0.93 0.02 250));
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-liquid-glass h1,
+.theme-liquid-glass h2,
+.theme-liquid-glass h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 600;
+}
+
+/* Specular sheen that reads as refracted light across translucent panels. */
+.theme-liquid-glass [class*="rounded-theme"] {
+  background-image: linear-gradient(
+    180deg,
+    oklch(1 0 0 / 45%) 0%,
+    oklch(1 0 0 / 10%) 38%,
+    oklch(1 0 0 / 0%) 62%,
+    oklch(1 0 0 / 22%) 100%
+  );
+}
