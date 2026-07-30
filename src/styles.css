@@ -27,18 +27,10 @@
 @import "./styles/themes/e-ink.css";
 @import "./styles/themes/biophilic.css";
 @import "./styles/themes/maximalism.css";
-@import "./styles/themes/stripe-dna.css";
-@import "./styles/themes/airbnb-dna.css";
-@import "./styles/themes/spotify-dna.css";
-@import "./styles/themes/superhuman-dna.css";
-@import "./styles/themes/apple-dna.css";
-@import "./styles/themes/duolingo-dna.css";
-@import "./styles/themes/teenage-engineering-dna.css";
-@import "./styles/themes/slack-dna.css";
-@import "./styles/themes/anthropic-dna.css";
-@import "./styles/themes/cash-app-dna.css";
-@import "./styles/themes/headspace-dna.css";
-@import "./styles/themes/bloomberg-dna.css";
+@import "./styles/themes/figma-dna.css";
+@import "./styles/themes/arc-dna.css";
+@import "./styles/themes/nike-dna.css";
+@import "./styles/themes/braun-dna.css";
 
 @custom-variant dark (&:is(.dark *));
 
