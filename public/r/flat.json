@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-flat",
+  "type": "registry:item",
+  "title": "Flat / Metro",
+  "description": "Flat / Metro — saturated solids, zero shadow, sharp geometry, big type — token file scoped under .theme-flat; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/flat.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/flat.css",
+      "content": "/* Flat / Metro — saturated solids, zero shadow, sharp geometry, big type */\n.theme-flat {\n  --bg: oklch(0.96 0.004 250);\n  --surface: oklch(1 0 0);\n  --surface-2: oklch(0.9 0.035 250);\n  --fg: oklch(0.2 0.01 250);\n  --fg-muted: oklch(0.5 0.012 250);\n  --accent: oklch(0.6 0.19 30);\n  --accent-fg: oklch(1 0 0);\n  --accent-2: oklch(0.65 0.17 165);\n  --line: oklch(0.86 0.008 250);\n  --success: oklch(0.68 0.18 150);\n  --warning: oklch(0.78 0.17 80);\n  --danger: oklch(0.58 0.22 25);\n\n  --radius: 0rem;\n  --radius-sm: 0rem;\n  --radius-lg: 0rem;\n  --radius-pill: 0rem;\n\n  --shadow-1: none;\n  --shadow-2: none;\n  --shadow-3: none;\n  --glow: 0 0 0 3px var(--accent);\n\n  --border-width: 0px;\n  --blur-amount: 0px;\n\n  --font-display: \"Titillium Web\", \"Segoe UI\", sans-serif;\n  --font-body: \"Titillium Web\", \"Segoe UI\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --tracking-display: -0.035em;\n  --label-transform: uppercase;\n  --label-tracking: 0.1em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-flat h1,\n.theme-flat h2,\n.theme-flat h3 {\n  font-family: var(--font-display);\n  font-weight: 300;\n  letter-spacing: var(--tracking-display);\n}\n\n.theme-flat h1 {\n  font-weight: 200;\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

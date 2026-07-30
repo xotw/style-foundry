@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-aurora",
+  "type": "registry:item",
+  "title": "Aurora",
+  "description": "Aurora — midnight sky with drifting teal/violet light ribbons — token file scoped under .theme-aurora; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/aurora.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/aurora.css",
+      "content": "/* Aurora — midnight sky with drifting teal/violet light ribbons */\n.theme-aurora {\n  --bg: oklch(0.16 0.04 260);\n  --surface: oklch(0.22 0.045 262 / 78%);\n  --surface-2: oklch(0.27 0.05 264 / 82%);\n  --fg: oklch(0.96 0.015 250);\n  --fg-muted: oklch(0.76 0.03 250);\n  --accent: oklch(0.79 0.16 175);\n  --accent-fg: oklch(0.15 0.04 260);\n  --accent-2: oklch(0.72 0.17 300);\n  --line: oklch(0.79 0.16 175 / 26%);\n  --success: oklch(0.79 0.16 165);\n  --warning: oklch(0.83 0.15 88);\n  --danger: oklch(0.68 0.2 18);\n\n  --radius: 1rem;\n  --radius-sm: 0.625rem;\n  --radius-lg: 1.5rem;\n  --radius-pill: 9999px;\n\n  --shadow-1: 0 2px 12px -4px oklch(0 0 0 / 50%);\n  --shadow-2: 0 18px 44px -18px oklch(0.5 0.16 265 / 70%);\n  --shadow-3: 0 34px 80px -28px oklch(0.5 0.16 265 / 80%);\n  --glow: 0 0 46px -10px oklch(0.79 0.16 175 / 60%);\n\n  --border-width: 1px;\n  --blur-amount: 14px;\n\n  --font-display: \"Outfit\", \"Inter\", sans-serif;\n  --font-body: \"Inter\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --tracking-display: -0.025em;\n  --label-transform: uppercase;\n  --label-tracking: 0.14em;\n\n  background-color: var(--bg);\n  background-image:\n    radial-gradient(70rem 34rem at 20% -12%, oklch(0.7 0.17 175 / 42%), transparent 62%),\n    radial-gradient(60rem 40rem at 88% 6%, oklch(0.62 0.19 300 / 42%), transparent 62%),\n    radial-gradient(80rem 36rem at 45% 108%, oklch(0.55 0.16 230 / 45%), transparent 65%);\n  background-attachment: fixed;\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-aurora h1,\n.theme-aurora h2,\n.theme-aurora h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n  font-weight: 600;\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

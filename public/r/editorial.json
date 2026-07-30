@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-editorial",
+  "type": "registry:item",
+  "title": "Editorial",
+  "description": "Editorial — magazine: Playfair Display, generous whitespace, thin rules, paper tones — token file scoped under .theme-editorial; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/editorial.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/editorial.css",
+      "content": "/* Editorial — magazine: Playfair Display, generous whitespace, thin rules, paper tones */\n.theme-editorial {\n  --bg: oklch(0.975 0.011 85);\n  --surface: oklch(0.99 0.006 85);\n  --surface-2: oklch(0.955 0.014 82);\n  --fg: oklch(0.22 0.014 60);\n  --fg-muted: oklch(0.48 0.015 60);\n  --accent: oklch(0.45 0.13 30);\n  --accent-fg: oklch(0.98 0.008 85);\n  --accent-2: oklch(0.55 0.07 150);\n  --line: oklch(0.22 0.014 60 / 22%);\n  --success: oklch(0.5 0.11 150);\n  --warning: oklch(0.68 0.13 75);\n  --danger: oklch(0.5 0.17 25);\n\n  --radius: 0rem;\n  --radius-sm: 0rem;\n  --radius-lg: 0rem;\n  --radius-pill: 9999px;\n\n  --shadow-1: 0 1px 0 0 var(--line);\n  --shadow-2: 0 10px 30px -22px oklch(0.22 0.014 60 / 55%);\n  --shadow-3: 0 24px 60px -34px oklch(0.22 0.014 60 / 60%);\n  --glow: none;\n\n  --border-width: 1px;\n  --blur-amount: 0px;\n\n  --font-display: \"Playfair Display\", Georgia, serif;\n  --font-body: \"Inter\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --tracking-display: -0.015em;\n  --label-transform: uppercase;\n  --label-tracking: 0.2em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-editorial h1,\n.theme-editorial h2,\n.theme-editorial h3 {\n  font-family: var(--font-display);\n  font-weight: 500;\n  letter-spacing: var(--tracking-display);\n  line-height: 1.05;\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

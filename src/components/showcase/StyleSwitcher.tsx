@@ -6,7 +6,11 @@ import { cn } from "@/lib/utils";
 export function StyleSwitcher() {
   const location = useLocation();
   const params = useParams({ strict: false }) as { slug?: string };
-  const isGallery = location.pathname.endsWith("/components");
+  const subPage = location.pathname.endsWith("/components")
+    ? "/styles/$slug/components"
+    : location.pathname.endsWith("/blocks")
+      ? "/styles/$slug/blocks"
+      : "/styles/$slug";
   const current = params.slug;
 
   return (
@@ -22,7 +26,7 @@ export function StyleSwitcher() {
         {STYLES.map((s) => (
           <Link
             key={s.slug}
-            to={isGallery ? "/styles/$slug/components" : "/styles/$slug"}
+            to={subPage}
             params={{ slug: s.slug }}
             className={cn(
               "rounded-full px-3 py-1.5 text-[11px] font-semibold tracking-wide transition-colors",

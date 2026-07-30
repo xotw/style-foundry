@@ -85,6 +85,11 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
                 Components
               </TButton>
             </Link>
+            <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
+              <TButton variant="ghost" size="sm">
+                Blocks
+              </TButton>
+            </Link>
             <TButton size="sm">Get started</TButton>
           </div>
         </div>
@@ -106,6 +111,11 @@ export function StyleLanding({ style }: { style: StyleEntry }) {
               <Link to="/styles/$slug/components" params={{ slug: style.slug }}>
                 <TButton size="lg" variant="outline">
                   Browse components
+                </TButton>
+              </Link>
+              <Link to="/styles/$slug/blocks" params={{ slug: style.slug }}>
+                <TButton size="lg" variant="ghost">
+                  App blocks
                 </TButton>
               </Link>
             </div>

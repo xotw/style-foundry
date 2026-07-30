@@ -3,7 +3,7 @@
 58 themes (28+2 aesthetics, 28 product DNA), one token file each in `src/styles/themes/<slug>.css`, scoped `.theme-<slug>`.
 DNA themes carry real crawled values from the source products. Every theme has a unique font identity.
 System layer: per-theme design rules (use/avoid/spacing/type/motion) in `src/lib/style-rules.ts`, rendered on each landing.
-Live: `/styles/<slug>` (landing + system rules) and `/styles/<slug>/components` (full gallery).
+Live: `/styles/<slug>` (landing + system rules), `/styles/<slug>/components` (full gallery), `/styles/<slug>/blocks` (login/dashboard/settings).
 
 | Style | Character | BG | Accent | Radius | Fonts |
 |---|---|---|---|---|---|
@@ -68,6 +68,7 @@ Live: `/styles/<slug>` (landing + system rules) and `/styles/<slug>/components` 
 
 ## Reuse
 
+- **shadcn registry**: once deployed, `npx shadcn@latest add https://<domain>/r/<slug>.json` installs a theme (tokens + shadcn bridge) into any project. Index at `/r/registry.json`.
 - **Lovable project**: paste the theme file content into your first prompt — "use these exact design tokens".
 - **Direct build**: copy `src/styles/themes/<slug>.css` + wrap your app in `class="theme-<slug>"`; components in `src/components/ui/` are token-driven shadcn.
 - **Token contract**: `--bg --surface --surface-2 --fg --fg-muted --accent --accent-fg --accent-2 --line --success --warning --danger --radius(-sm/-lg/-pill) --shadow-1/2/3 --glow --border-width --blur-amount --font-display/body/mono --tracking-display --label-transform --label-tracking`

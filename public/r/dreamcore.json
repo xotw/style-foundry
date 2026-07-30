@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-dreamcore",
+  "type": "registry:item",
+  "title": "Dreamcore",
+  "description": "Dreamcore — hazy pastel gradients, blurred glows, floating ethereal calm — token file scoped under .theme-dreamcore; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/dreamcore.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/dreamcore.css",
+      "content": "/* Dreamcore — hazy pastel gradients, blurred glows, floating ethereal calm */\n.theme-dreamcore {\n  --bg: oklch(0.955 0.018 306.7);\n  --surface: oklch(0.985 0.012 320 / 75%);\n  --surface-2: oklch(0.94 0.025 300 / 80%);\n  --fg: oklch(0.396 0.038 301.3);\n  --fg-muted: oklch(0.643 0.038 309.5);\n  --accent: oklch(0.708 0.128 305.6);\n  --accent-fg: oklch(0.280 0.038 304.7);\n  --accent-2: oklch(0.789 0.071 231.3);\n  --line: oklch(0.75 0.06 310 / 30%);\n  --success: oklch(0.814 0.087 160.9);\n  --warning: oklch(0.878 0.079 86.2);\n  --danger: oklch(0.757 0.083 19.2);\n  --radius: 1.5rem;\n  --radius-sm: 1rem;\n  --radius-lg: 2rem;\n  --radius-pill: 9999px;\n  --shadow-1: 0 8px 32px oklch(0.6 0.1 310 / 15%);\n  --shadow-2: 0 16px 48px oklch(0.6 0.1 310 / 20%);\n  --shadow-3: 0 24px 80px oklch(0.6 0.1 310 / 25%);\n  --glow: 0 0 24px color-mix(in oklab, var(--accent) 40%, transparent);\n  --border-width: 1px;\n  --blur-amount: 14px;\n  --font-display: \"Quicksand\", sans-serif;\n  --font-body: \"Quicksand\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n  --tracking-display: 0.02em;\n  --label-transform: lowercase;\n  --label-tracking: 0.12em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-dreamcore h1,\n.theme-dreamcore h2,\n.theme-dreamcore h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n.theme-dreamcore { background-image: radial-gradient(ellipse at 20% 10%, oklch(0.9 0.06 300 / 60%), transparent 50%), radial-gradient(ellipse at 80% 30%, oklch(0.92 0.05 220 / 50%), transparent 50%), radial-gradient(ellipse at 50% 90%, oklch(0.92 0.05 350 / 50%), transparent 55%); }\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

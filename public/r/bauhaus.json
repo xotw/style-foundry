@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-bauhaus",
+  "type": "registry:item",
+  "title": "Bauhaus",
+  "description": "Bauhaus — primary red/blue/yellow, geometric blocks, heavy grotesk — token file scoped under .theme-bauhaus; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/bauhaus.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/bauhaus.css",
+      "content": "/* Bauhaus — primary red/blue/yellow, geometric blocks, heavy grotesk */\n.theme-bauhaus {\n  --bg: oklch(0.95 0.012 85);\n  --surface: oklch(0.99 0.005 85);\n  --surface-2: oklch(0.9 0.02 85);\n  --fg: oklch(0.16 0.01 60);\n  --fg-muted: oklch(0.44 0.015 60);\n  --accent: oklch(0.55 0.23 28);\n  --accent-fg: oklch(0.99 0 0);\n  --accent-2: oklch(0.45 0.2 262);\n  --line: oklch(0.16 0.01 60);\n  --success: oklch(0.6 0.16 150);\n  --warning: oklch(0.83 0.18 88);\n  --danger: oklch(0.55 0.23 28);\n\n  --radius: 0rem;\n  --radius-sm: 0rem;\n  --radius-lg: 0rem;\n  --radius-pill: 9999px;\n\n  --shadow-1: 0 0 0 2px var(--fg);\n  --shadow-2: 8px 8px 0 0 oklch(0.45 0.2 262);\n  --shadow-3: 14px 14px 0 0 oklch(0.83 0.18 88);\n  --glow: 0 0 0 4px oklch(0.83 0.18 88);\n\n  --border-width: 2px;\n  --blur-amount: 0px;\n\n  --font-display: \"Jost\", \"Futura\", sans-serif;\n  --font-body: \"Jost\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --tracking-display: -0.02em;\n  --label-transform: uppercase;\n  --label-tracking: 0.18em;\n\n  background-color: var(--bg);\n  background-image:\n    radial-gradient(circle at 88% 12%, oklch(0.83 0.18 88) 0 6rem, transparent 6rem),\n    linear-gradient(180deg, oklch(0.45 0.2 262 / 12%) 0 0.75rem, transparent 0.75rem);\n  background-attachment: fixed;\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-bauhaus h1,\n.theme-bauhaus h2,\n.theme-bauhaus h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n  text-transform: uppercase;\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

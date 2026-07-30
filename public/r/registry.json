@@ -1,0 +1,355 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "style-foundry",
+  "homepage": "https://github.com/xotw/style-foundry",
+  "items": [
+    {
+      "name": "theme-ableton-dna",
+      "type": "registry:item",
+      "title": "Ableton DNA",
+      "description": "Ableton DNA — flat color blocks, geometric type, zero decoration, Bauhaus pop — token file scoped under .theme-ableton-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-aesop-dna",
+      "type": "registry:item",
+      "title": "Aesop DNA",
+      "description": "Aesop DNA — apothecary editorial: paper cream, humanist serif, quiet sage calm — token file scoped under .theme-aesop-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-airbnb-dna",
+      "type": "registry:item",
+      "title": "Airbnb DNA",
+      "description": "Airbnb DNA — warm white, coral accent, very rounded, soft diffuse shadows — token file scoped under .theme-airbnb-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-anthropic-dna",
+      "type": "registry:item",
+      "title": "Anthropic DNA",
+      "description": "Anthropic DNA — warm cream, book-like serif display, terracotta accent — token file scoped under .theme-anthropic-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-apple-dna",
+      "type": "registry:item",
+      "title": "Apple DNA",
+      "description": "Apple DNA — pure white, huge tight display type, monochrome with one blue accent — token file scoped under .theme-apple-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-arc-dna",
+      "type": "registry:item",
+      "title": "Arc DNA",
+      "description": "Arc DNA — soft pastel gradients, macOS-glass panels, bubbly corners — token file scoped under .theme-arc-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-art-deco",
+      "type": "registry:item",
+      "title": "Art Deco",
+      "description": "Art Deco — black and gold, geometric symmetry, sunburst elegance — token file scoped under .theme-art-deco; wrap your app in that class."
+    },
+    {
+      "name": "theme-aurora",
+      "type": "registry:item",
+      "title": "Aurora",
+      "description": "Aurora — midnight sky with drifting teal/violet light ribbons — token file scoped under .theme-aurora; wrap your app in that class."
+    },
+    {
+      "name": "theme-bauhaus",
+      "type": "registry:item",
+      "title": "Bauhaus",
+      "description": "Bauhaus — primary red/blue/yellow, geometric blocks, heavy grotesk — token file scoped under .theme-bauhaus; wrap your app in that class."
+    },
+    {
+      "name": "theme-biophilic",
+      "type": "registry:item",
+      "title": "Biophilic",
+      "description": "Biophilic — deep greens and earth tones, organic blob radii, soft natural light — token file scoped under .theme-biophilic; wrap your app in that class."
+    },
+    {
+      "name": "theme-bloomberg-dna",
+      "type": "registry:item",
+      "title": "Bloomberg DNA",
+      "description": "Bloomberg DNA — black finance terminal, amber data type, dense, zero decoration — token file scoped under .theme-bloomberg-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-braun-dna",
+      "type": "registry:item",
+      "title": "Braun DNA",
+      "description": "Braun DNA — Dieter Rams functionalism: warm gray, black text, signal-orange dot — token file scoped under .theme-braun-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-brutalism",
+      "type": "registry:item",
+      "title": "Brutalism",
+      "description": "Brutalism — thick black borders, hard offset shadows, saturated primaries — token file scoped under .theme-brutalism; wrap your app in that class."
+    },
+    {
+      "name": "theme-cash-app-dna",
+      "type": "registry:item",
+      "title": "Cash App DNA",
+      "description": "Cash App DNA — pure black, electric green, heavy condensed type — token file scoped under .theme-cash-app-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-claymorphism",
+      "type": "registry:item",
+      "title": "Claymorphism",
+      "description": "Claymorphism — puffy pastel clay blobs, chunky radii, inner highlights — token file scoped under .theme-claymorphism; wrap your app in that class."
+    },
+    {
+      "name": "theme-cyberpunk",
+      "type": "registry:item",
+      "title": "Cyberpunk",
+      "description": "Cyberpunk — ink-black slabs, acid yellow + hot magenta, neon edges — token file scoped under .theme-cyberpunk; wrap your app in that class."
+    },
+    {
+      "name": "theme-dark-saas",
+      "type": "registry:item",
+      "title": "Dark SaaS",
+      "description": "Dark SaaS — near-black canvas, subtle borders, one electric accent, tight type — token file scoped under .theme-dark-saas; wrap your app in that class."
+    },
+    {
+      "name": "theme-discord-dna",
+      "type": "registry:item",
+      "title": "Discord DNA",
+      "description": "Discord DNA — blurple dark, rounded chat surfaces, playful but engineered — token file scoped under .theme-discord-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-dreamcore",
+      "type": "registry:item",
+      "title": "Dreamcore",
+      "description": "Dreamcore — hazy pastel gradients, blurred glows, floating ethereal calm — token file scoped under .theme-dreamcore; wrap your app in that class."
+    },
+    {
+      "name": "theme-duolingo-dna",
+      "type": "registry:item",
+      "title": "Duolingo DNA",
+      "description": "Duolingo DNA — bright green, chunky 3D-pressed buttons, very rounded, cheerful — token file scoped under .theme-duolingo-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-e-ink",
+      "type": "registry:item",
+      "title": "E-Ink",
+      "description": "E-Ink — pure grayscale paper, high contrast, serif body, matte, zero gloss — token file scoped under .theme-e-ink; wrap your app in that class."
+    },
+    {
+      "name": "theme-editorial",
+      "type": "registry:item",
+      "title": "Editorial",
+      "description": "Editorial — magazine: Playfair Display, generous whitespace, thin rules, paper tones — token file scoped under .theme-editorial; wrap your app in that class."
+    },
+    {
+      "name": "theme-figma-dna",
+      "type": "registry:item",
+      "title": "Figma DNA",
+      "description": "Figma DNA — white canvas, five-color primary system, crisp 8px grid — token file scoped under .theme-figma-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-flat",
+      "type": "registry:item",
+      "title": "Flat / Metro",
+      "description": "Flat / Metro — saturated solids, zero shadow, sharp geometry, big type — token file scoped under .theme-flat; wrap your app in that class."
+    },
+    {
+      "name": "theme-frutiger-aero",
+      "type": "registry:item",
+      "title": "Frutiger Aero",
+      "description": "Frutiger Aero — 2000s: sky blue + vivid green, glossy bubbles, lens flares — token file scoped under .theme-frutiger-aero; wrap your app in that class."
+    },
+    {
+      "name": "theme-github-dna",
+      "type": "registry:item",
+      "title": "GitHub DNA",
+      "description": "GitHub DNA — Primer: familiar dev surfaces, link blue, precise grays, 6px radius — token file scoped under .theme-github-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-glass",
+      "type": "registry:item",
+      "title": "Glass",
+      "description": "Glass — dark gradient bg, frosted blurred surfaces, thin light borders, glows — token file scoped under .theme-glass; wrap your app in that class."
+    },
+    {
+      "name": "theme-hackernews-dna",
+      "type": "registry:item",
+      "title": "Hacker News DNA",
+      "description": "Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament — token file scoped under .theme-hackernews-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-headspace-dna",
+      "type": "registry:item",
+      "title": "Headspace DNA",
+      "description": "Headspace DNA — warm peach pastels, organic blobs, very soft shadows — token file scoped under .theme-headspace-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-heisei-retro",
+      "type": "registry:item",
+      "title": "Heisei Retro",
+      "description": "Heisei Retro — 90s Japanese tech catalog: warm beige plastic, red/blue, dense boxes — token file scoped under .theme-heisei-retro; wrap your app in that class."
+    },
+    {
+      "name": "theme-hud-scifi",
+      "type": "registry:item",
+      "title": "HUD Sci-Fi",
+      "description": "HUD Sci-Fi — cool dark blue, thin cyan lines, corner brackets, radar data — token file scoped under .theme-hud-scifi; wrap your app in that class."
+    },
+    {
+      "name": "theme-ikea-dna",
+      "type": "registry:item",
+      "title": "IKEA DNA",
+      "description": "IKEA DNA — democratic blue and yellow, Skapa functionalism, price-tag boldness — token file scoped under .theme-ikea-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-lego-dna",
+      "type": "registry:item",
+      "title": "LEGO DNA",
+      "description": "LEGO DNA — primary brick colors, chunky modular blocks, bold play energy — token file scoped under .theme-lego-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-liquid-glass",
+      "type": "registry:item",
+      "title": "Specular sheen that reads as refracted light across translucent panels.",
+      "description": "Specular sheen that reads as refracted light across translucent panels. — token file scoped under .theme-liquid-glass; wrap your app in that class."
+    },
+    {
+      "name": "theme-luxury",
+      "type": "registry:item",
+      "title": "Luxury",
+      "description": "Luxury — deep ink, champagne gold, high-contrast serif, hairline rules — token file scoped under .theme-luxury; wrap your app in that class."
+    },
+    {
+      "name": "theme-material",
+      "type": "registry:item",
+      "title": "Material",
+      "description": "Material — Material Design 3: tonal palette, filled surfaces, elevation — token file scoped under .theme-material; wrap your app in that class."
+    },
+    {
+      "name": "theme-maximalism",
+      "type": "registry:item",
+      "title": "Maximalism",
+      "description": "Maximalism — clashing saturated colors, mixed display fonts, dense layered patterns — token file scoped under .theme-maximalism; wrap your app in that class."
+    },
+    {
+      "name": "theme-memphis",
+      "type": "registry:item",
+      "title": "Memphis",
+      "description": "Memphis — 80s postmodern: squiggles, confetti shapes, clashing primaries — token file scoped under .theme-memphis; wrap your app in that class."
+    },
+    {
+      "name": "theme-minimal-warm",
+      "type": "registry:item",
+      "title": "Minimal Warm",
+      "description": "Minimal Warm — sand and clay neutrals, soft radii, quiet contrast — token file scoped under .theme-minimal-warm; wrap your app in that class."
+    },
+    {
+      "name": "theme-nasa-dna",
+      "type": "registry:item",
+      "title": "NASA DNA",
+      "description": "NASA DNA — 1976 Graphics Standards Manual: worm red, federal grid, Helvetica discipline — token file scoped under .theme-nasa-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-netflix-dna",
+      "type": "registry:item",
+      "title": "Netflix DNA",
+      "description": "Netflix DNA — cinematic black, signal red, UI recedes behind imagery — token file scoped under .theme-netflix-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-neumorphism",
+      "type": "registry:item",
+      "title": "Neumorphism",
+      "description": "Neumorphism — soft extruded gray surfaces, double shadows, pill shapes — token file scoped under .theme-neumorphism; wrap your app in that class."
+    },
+    {
+      "name": "theme-newspaper",
+      "type": "registry:item",
+      "title": "Newspaper",
+      "description": "Newspaper — newsprint gray, blackletter-ish serif heads, column rules — token file scoped under .theme-newspaper; wrap your app in that class."
+    },
+    {
+      "name": "theme-nike-dna",
+      "type": "registry:item",
+      "title": "Nike DNA",
+      "description": "Nike DNA — athletic black/white, condensed uppercase display, volt accent — token file scoped under .theme-nike-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-pixel",
+      "type": "registry:item",
+      "title": "Pixel",
+      "description": "Pixel — 8-bit lo-fi, dithered textures, hard 2px pixel borders, stepped shadows — token file scoped under .theme-pixel; wrap your app in that class."
+    },
+    {
+      "name": "theme-skeuomorphism",
+      "type": "registry:item",
+      "title": "Skeuomorphism",
+      "description": "Skeuomorphism — brushed metal, linen, glossy bevels, inset engravings — token file scoped under .theme-skeuomorphism; wrap your app in that class."
+    },
+    {
+      "name": "theme-slack-dna",
+      "type": "registry:item",
+      "title": "Slack DNA",
+      "description": "Slack DNA — aubergine primary, white surfaces, four-color accents, approachable — token file scoped under .theme-slack-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-spotify-dna",
+      "type": "registry:item",
+      "title": "Spotify DNA",
+      "description": "Spotify DNA — near-black entertainment surface, vivid green, pills everywhere — token file scoped under .theme-spotify-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-ssense-dna",
+      "type": "registry:item",
+      "title": "SSENSE DNA",
+      "description": "SSENSE DNA — stark fashion e-commerce: black on white, micro type, luxury by subtraction — token file scoped under .theme-ssense-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-stripe-dna",
+      "type": "registry:item",
+      "title": "Stripe DNA",
+      "description": "Stripe DNA — clean white, indigo/cyan gradient accents, crisp small type, airy depth — token file scoped under .theme-stripe-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-superhuman-dna",
+      "type": "registry:item",
+      "title": "Superhuman DNA",
+      "description": "Superhuman DNA — deep violet-tinted dark, refined gradients, glowing accents, keyboard-first — token file scoped under .theme-superhuman-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-swiss",
+      "type": "registry:item",
+      "title": "Swiss",
+      "description": "Swiss — strict grid, Inter Tight, black/white + one red accent, zero radius — token file scoped under .theme-swiss; wrap your app in that class."
+    },
+    {
+      "name": "theme-teenage-engineering-dna",
+      "type": "registry:item",
+      "title": "Teenage Engineering DNA",
+      "description": "Teenage Engineering DNA — light gray plastic, orange accents, tiny mono uppercase labels — token file scoped under .theme-teenage-engineering-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-telegram-dna",
+      "type": "registry:item",
+      "title": "Telegram DNA",
+      "description": "Telegram DNA — paper-light chat, sky blue, round bubbles, native speed — token file scoped under .theme-telegram-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-terminal",
+      "type": "registry:item",
+      "title": "Terminal",
+      "description": "Terminal — black bg, phosphor green, IBM Plex Mono, ASCII-ish borders — token file scoped under .theme-terminal; wrap your app in that class."
+    },
+    {
+      "name": "theme-vaporwave",
+      "type": "registry:item",
+      "title": "Vaporwave",
+      "description": "Vaporwave — purple/pink/cyan gradients, chrome text, 80s grid horizon — token file scoped under .theme-vaporwave; wrap your app in that class."
+    },
+    {
+      "name": "theme-windows95-dna",
+      "type": "registry:item",
+      "title": "Windows 95 DNA",
+      "description": "Windows 95 DNA — silver bevels, navy title bars, teal desktop, hard pixels — token file scoped under .theme-windows95-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-y2k",
+      "type": "registry:item",
+      "title": "Y2K",
+      "description": "Y2K — glossy chrome-blue, bubbly gradients, silver bevels, cyan glow — token file scoped under .theme-y2k; wrap your app in that class."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-terminal",
+  "type": "registry:item",
+  "title": "Terminal",
+  "description": "Terminal — black bg, phosphor green, IBM Plex Mono, ASCII-ish borders — token file scoped under .theme-terminal; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/terminal.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/terminal.css",
+      "content": "/* Terminal — black bg, phosphor green, IBM Plex Mono, ASCII-ish borders */\n.theme-terminal {\n  --bg: oklch(0.13 0.015 150);\n  --surface: oklch(0.17 0.02 150);\n  --surface-2: oklch(0.21 0.025 150);\n  --fg: oklch(0.88 0.2 145);\n  --fg-muted: oklch(0.66 0.14 145);\n  --accent: oklch(0.85 0.22 145);\n  --accent-fg: oklch(0.13 0.015 150);\n  --accent-2: oklch(0.8 0.16 195);\n  --line: oklch(0.85 0.22 145 / 35%);\n  --success: oklch(0.85 0.22 145);\n  --warning: oklch(0.85 0.18 95);\n  --danger: oklch(0.68 0.22 25);\n\n  --radius: 0rem;\n  --radius-sm: 0rem;\n  --radius-lg: 0rem;\n  --radius-pill: 0rem;\n\n  --shadow-1: 0 0 0 1px var(--line);\n  --shadow-2: 0 0 18px -4px color-mix(in oklab, var(--accent) 45%, transparent);\n  --shadow-3: 0 0 34px -6px color-mix(in oklab, var(--accent) 55%, transparent);\n  --glow: 0 0 14px -2px color-mix(in oklab, var(--accent) 70%, transparent);\n\n  --border-width: 1px;\n  --blur-amount: 0px;\n\n  --font-display: \"IBM Plex Mono\", ui-monospace, monospace;\n  --font-body: \"IBM Plex Mono\", ui-monospace, monospace;\n  --font-mono: \"IBM Plex Mono\", ui-monospace, monospace;\n\n  --tracking-display: 0.02em;\n  --label-transform: uppercase;\n  --label-tracking: 0.16em;\n\n  background-color: var(--bg);\n  background-image: repeating-linear-gradient(\n    to bottom,\n    oklch(0.85 0.22 145 / 5%) 0px,\n    oklch(0.85 0.22 145 / 5%) 1px,\n    transparent 1px,\n    transparent 3px\n  );\n  color: var(--fg);\n  font-family: var(--font-body);\n  text-shadow: 0 0 6px color-mix(in oklab, var(--accent) 30%, transparent);\n}\n\n.theme-terminal h1,\n.theme-terminal h2,\n.theme-terminal h3 {\n  font-family: var(--font-display);\n  text-transform: uppercase;\n  letter-spacing: var(--tracking-display);\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

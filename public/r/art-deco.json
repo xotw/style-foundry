@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-art-deco",
+  "type": "registry:item",
+  "title": "Art Deco",
+  "description": "Art Deco — black and gold, geometric symmetry, sunburst elegance — token file scoped under .theme-art-deco; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/art-deco.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/art-deco.css",
+      "content": "/* Art Deco — black and gold, geometric symmetry, sunburst elegance */\n.theme-art-deco {\n  --bg: oklch(0.188 0.011 80.5);\n  --surface: oklch(0.220 0.014 81.6);\n  --surface-2: oklch(0.256 0.020 80.3);\n  --fg: oklch(0.926 0.031 88.4);\n  --fg-muted: oklch(0.657 0.037 84.5);\n  --accent: oklch(0.731 0.115 85.0);\n  --accent-fg: oklch(0.188 0.011 80.5);\n  --accent-2: oklch(0.553 0.089 82.3);\n  --line: oklch(0.72 0.09 85 / 45%);\n  --success: oklch(0.695 0.098 149.8);\n  --warning: oklch(0.775 0.128 86.9);\n  --danger: oklch(0.549 0.130 33.3);\n  --radius: 0px;\n  --radius-sm: 0px;\n  --radius-lg: 0px;\n  --radius-pill: 0px;\n  --shadow-1: 0 1px 0 oklch(0.72 0.09 85 / 30%);\n  --shadow-2: 0 8px 24px oklch(0 0 0 / 50%);\n  --shadow-3: 0 24px 56px oklch(0 0 0 / 60%);\n  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 60%, transparent);\n  --border-width: 1px;\n  --blur-amount: 0px;\n  --font-display: \"Marcellus\", Georgia, serif;\n  --font-body: \"Josefin Sans\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n  --tracking-display: 0.08em;\n  --label-transform: uppercase;\n  --label-tracking: 0.25em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-art-deco h1,\n.theme-art-deco h2,\n.theme-art-deco h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

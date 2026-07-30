@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-hackernews-dna",
+  "type": "registry:item",
+  "title": "Hacker News DNA",
+  "description": "Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament — token file scoped under .theme-hackernews-dna; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/hackernews-dna.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/hackernews-dna.css",
+      "content": "/* Hacker News DNA — web-1.0 artifact: beige, Verdana, tables, zero ornament */\n.theme-hackernews-dna {\n  --bg: oklch(0.971 0.009 106.6);\n  --surface: oklch(0.971 0.009 106.6);\n  --surface-2: oklch(0.946 0.013 106.7);\n  --fg: oklch(0.000 0 0);\n  --fg-muted: oklch(0.607 0 0);\n  --accent: oklch(0.696 0.204 43.5);\n  --accent-fg: oklch(1.000 0 0);\n  --accent-2: oklch(0.607 0 0);\n  --line: oklch(0.898 0 0);\n  --success: oklch(0.512 0.107 144.2);\n  --warning: oklch(0.552 0.077 79.7);\n  --danger: oklch(0.522 0.134 24.0);\n  --radius: 0px;\n  --radius-sm: 0px;\n  --radius-lg: 0px;\n  --radius-pill: 0px;\n  --shadow-1: none;\n  --shadow-2: none;\n  --shadow-3: none;\n  --glow: 0 0 0 1px var(--accent);\n  --border-width: 1px;\n  --blur-amount: 0px;\n  --font-display: Verdana, Geneva, sans-serif;\n  --font-body: Verdana, Geneva, sans-serif;\n  --font-mono: \"Courier New\", monospace;\n  --tracking-display: 0em;\n  --label-transform: none;\n  --label-tracking: 0.02em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-hackernews-dna h1,\n.theme-hackernews-dna h2,\n.theme-hackernews-dna h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

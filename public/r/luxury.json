@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-luxury",
+  "type": "registry:item",
+  "title": "Luxury",
+  "description": "Luxury — deep ink, champagne gold, high-contrast serif, hairline rules — token file scoped under .theme-luxury; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/luxury.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/luxury.css",
+      "content": "/* Luxury — deep ink, champagne gold, high-contrast serif, hairline rules */\n.theme-luxury {\n  --bg: oklch(0.17 0.012 60);\n  --surface: oklch(0.21 0.014 60);\n  --surface-2: oklch(0.25 0.016 60);\n  --fg: oklch(0.95 0.01 85);\n  --fg-muted: oklch(0.74 0.02 85);\n  --accent: oklch(0.82 0.12 88);\n  --accent-fg: oklch(0.17 0.012 60);\n  --accent-2: oklch(0.68 0.06 150);\n  --line: oklch(0.82 0.12 88 / 32%);\n  --success: oklch(0.72 0.12 155);\n  --warning: oklch(0.82 0.13 85);\n  --danger: oklch(0.6 0.19 22);\n\n  --radius: 0.125rem;\n  --radius-sm: 0.0625rem;\n  --radius-lg: 0.25rem;\n  --radius-pill: 9999px;\n\n  --shadow-1: 0 1px 0 0 var(--line);\n  --shadow-2: 0 18px 40px -24px oklch(0 0 0 / 85%);\n  --shadow-3: 0 34px 80px -34px oklch(0 0 0 / 90%);\n  --glow: 0 0 0 1px var(--line), 0 0 30px -12px oklch(0.82 0.12 88 / 55%);\n\n  --border-width: 1px;\n  --blur-amount: 0px;\n\n  --font-display: \"Cormorant Garamond\", Georgia, serif;\n  --font-body: \"Jost\", \"Inter\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --tracking-display: 0.02em;\n  --label-transform: uppercase;\n  --label-tracking: 0.3em;\n\n  background-color: var(--bg);\n  background-image: radial-gradient(60rem 40rem at 50% -20%, oklch(0.82 0.12 88 / 10%), transparent 70%);\n  background-attachment: fixed;\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-luxury h1,\n.theme-luxury h2,\n.theme-luxury h3 {\n  font-family: var(--font-display);\n  font-weight: 300;\n  letter-spacing: var(--tracking-display);\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

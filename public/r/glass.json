@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-glass",
+  "type": "registry:item",
+  "title": "Glass",
+  "description": "Glass — dark gradient bg, frosted blurred surfaces, thin light borders, glows — token file scoped under .theme-glass; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/glass.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/glass.css",
+      "content": "/* Glass — dark gradient bg, frosted blurred surfaces, thin light borders, glows */\n.theme-glass {\n  --bg: oklch(0.18 0.05 275);\n  --surface: oklch(1 0 0 / 8%);\n  --surface-2: oklch(1 0 0 / 14%);\n  --fg: oklch(0.98 0.01 280);\n  --fg-muted: oklch(0.8 0.03 280 / 75%);\n  --accent: oklch(0.78 0.16 195);\n  --accent-fg: oklch(0.16 0.05 275);\n  --accent-2: oklch(0.7 0.19 320);\n  --line: oklch(1 0 0 / 20%);\n  --success: oklch(0.78 0.16 160);\n  --warning: oklch(0.84 0.16 85);\n  --danger: oklch(0.7 0.2 15);\n\n  --radius: 1.25rem;\n  --radius-sm: 0.75rem;\n  --radius-lg: 1.75rem;\n  --radius-pill: 9999px;\n\n  --shadow-1: 0 4px 20px -6px oklch(0 0 0 / 45%);\n  --shadow-2: 0 16px 48px -12px oklch(0 0 0 / 55%);\n  --shadow-3: 0 28px 80px -20px oklch(0 0 0 / 65%);\n  --glow: 0 0 40px -6px color-mix(in oklab, var(--accent) 55%, transparent);\n\n  --border-width: 1px;\n  --blur-amount: 20px;\n\n  --font-display: \"Space Grotesk\", \"Inter\", sans-serif;\n  --font-body: \"Inter\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n\n  --tracking-display: -0.02em;\n  --label-transform: none;\n  --label-tracking: 0.02em;\n\n  background-color: var(--bg);\n  background-image:\n    radial-gradient(60rem 40rem at 12% -10%, oklch(0.62 0.2 320 / 45%), transparent 60%),\n    radial-gradient(50rem 36rem at 92% 8%, oklch(0.7 0.17 195 / 40%), transparent 60%),\n    radial-gradient(70rem 50rem at 50% 110%, oklch(0.5 0.19 265 / 45%), transparent 65%);\n  background-attachment: fixed;\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-glass h1,\n.theme-glass h2,\n.theme-glass h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}
