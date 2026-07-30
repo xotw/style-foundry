@@ -190,6 +190,7 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Abril Fatface / Outfit",
     swatch: ["oklch(0.55 0.24 330)", "oklch(0.95 0.14 95)", "oklch(0.72 0.2 200)"],
   },
+  {
     slug: "stripe-dna",
     name: "Stripe DNA",
     tagline: "Clean white, indigo-to-cyan gradient accents, crisp type, generous air.",
