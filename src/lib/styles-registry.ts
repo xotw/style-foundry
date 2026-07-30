@@ -162,6 +162,34 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Inter Tight / Open Sans",
     swatch: ["oklch(0.55 0.19 250)", "oklch(0.6 0.19 30)", "oklch(0.65 0.17 165)"],
   },
+  {
+    slug: "pixel",
+    name: "Pixel",
+    tagline: "8-bit lo-fi, dithered texture, hard 2px borders, stepped shadows.",
+    fontPairing: "Press Start 2P / VT323",
+    swatch: ["oklch(0.22 0.05 265)", "oklch(0.78 0.2 145)", "oklch(0.72 0.19 30)"],
+  },
+  {
+    slug: "e-ink",
+    name: "E-Ink",
+    tagline: "Paper grayscale, serif body, matte contrast, one functional accent.",
+    fontPairing: "Literata / Literata",
+    swatch: ["oklch(0.94 0.002 90)", "oklch(0.16 0 0)", "oklch(0.55 0.19 30)"],
+  },
+  {
+    slug: "biophilic",
+    name: "Biophilic",
+    tagline: "Deep greens and earth tones, organic blob radii, soft natural light.",
+    fontPairing: "Fraunces / Jost",
+    swatch: ["oklch(0.96 0.018 110)", "oklch(0.48 0.11 150)", "oklch(0.66 0.11 65)"],
+  },
+  {
+    slug: "maximalism",
+    name: "Maximalism",
+    tagline: "Clashing saturation, mixed display fonts, layered pattern everywhere.",
+    fontPairing: "Abril Fatface / Outfit",
+    swatch: ["oklch(0.55 0.24 330)", "oklch(0.95 0.14 95)", "oklch(0.72 0.2 200)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);
