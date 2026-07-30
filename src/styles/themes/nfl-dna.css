@@ -1,0 +1,42 @@
+/* NFL DNA — shield navy, gridiron red, varsity slab, chalk-line structure */
+.theme-nfl-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.960 0.005 258.3);
+  --surface-2: oklch(0.930 0.009 258.3);
+  --fg: oklch(0.218 0 0);
+  --fg-muted: oklch(0.507 0.024 243.8);
+  --accent: oklch(0.326 0.107 255.1);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.551 0.222 28.9);
+  --line: oklch(0.860 0.017 250.9);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.768 0.158 81.3);
+  --danger: oklch(0.551 0.222 28.9);
+  --radius: 0.25rem;
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.375rem;
+  --radius-pill: 0.375rem;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Graduate", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.04em;
+  --label-transform: uppercase;
+  --label-tracking: 0.14em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-nfl-dna h1,
+.theme-nfl-dna h2,
+.theme-nfl-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

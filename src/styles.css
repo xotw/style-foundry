@@ -59,6 +59,21 @@
 @import "./styles/themes/ikea-dna.css";
 @import "./styles/themes/telegram-dna.css";
 @import "./styles/themes/hackernews-dna.css";
+@import "./styles/themes/adidas-dna.css";
+@import "./styles/themes/reebok-dna.css";
+@import "./styles/themes/crossfit-dna.css";
+@import "./styles/themes/nba-dna.css";
+@import "./styles/themes/nfl-dna.css";
+@import "./styles/themes/barcelona-dna.css";
+@import "./styles/themes/real-madrid-dna.css";
+@import "./styles/themes/whatsapp-dna.css";
+@import "./styles/themes/facebook-dna.css";
+@import "./styles/themes/instagram-dna.css";
+@import "./styles/themes/x-dna.css";
+@import "./styles/themes/proton-dna.css";
+@import "./styles/themes/signal-dna.css";
+@import "./styles/themes/linkedin-dna.css";
+@import "./styles/themes/reddit-dna.css";
 
 @custom-variant dark (&:is(.dark *));
 

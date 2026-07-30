@@ -1,0 +1,42 @@
+/* adidas DNA — stark black on white, squared everything, underline energy, three stripes discipline */
+.theme-adidas-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.950 0.004 236.5);
+  --surface-2: oklch(0.923 0.006 239.8);
+  --fg: oklch(0.000 0 0);
+  --fg-muted: oklch(0.566 0.002 286.4);
+  --accent: oklch(0.000 0 0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.566 0.002 286.4);
+  --line: oklch(0.000 0 0);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.768 0.158 81.3);
+  --danger: oklch(0.568 0.200 26.4);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: none;
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 2px oklch(0 0 0);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Barlow", "Helvetica Neue", sans-serif;
+  --font-body: "Barlow", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.02em;
+  --label-transform: uppercase;
+  --label-tracking: 0.12em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-adidas-dna h1,
+.theme-adidas-dna h2,
+.theme-adidas-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

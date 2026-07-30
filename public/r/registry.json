@@ -10,6 +10,12 @@
       "description": "Ableton DNA — flat color blocks, geometric type, zero decoration, Bauhaus pop — token file scoped under .theme-ableton-dna; wrap your app in that class."
     },
     {
+      "name": "theme-adidas-dna",
+      "type": "registry:item",
+      "title": "adidas DNA",
+      "description": "adidas DNA — stark black on white, squared everything, underline energy, three stripes discipline — token file scoped under .theme-adidas-dna; wrap your app in that class."
+    },
+    {
       "name": "theme-aesop-dna",
       "type": "registry:item",
       "title": "Aesop DNA",
@@ -50,6 +56,12 @@
       "type": "registry:item",
       "title": "Aurora",
       "description": "Aurora — midnight sky with drifting teal/violet light ribbons — token file scoped under .theme-aurora; wrap your app in that class."
+    },
+    {
+      "name": "theme-barcelona-dna",
+      "type": "registry:item",
+      "title": "FC Barcelona DNA",
+      "description": "FC Barcelona DNA — blaugrana night navy, garnet and gold, més que un club — token file scoped under .theme-barcelona-dna; wrap your app in that class."
     },
     {
       "name": "theme-bauhaus",
@@ -94,6 +106,12 @@
       "description": "Claymorphism — puffy pastel clay blobs, chunky radii, inner highlights — token file scoped under .theme-claymorphism; wrap your app in that class."
     },
     {
+      "name": "theme-crossfit-dna",
+      "type": "registry:item",
+      "title": "CrossFit DNA",
+      "description": "CrossFit DNA — forged dark steel, red intensity, stencil grit, affiliate blue — token file scoped under .theme-crossfit-dna; wrap your app in that class."
+    },
+    {
       "name": "theme-cyberpunk",
       "type": "registry:item",
       "title": "Cyberpunk",
@@ -134,6 +152,12 @@
       "type": "registry:item",
       "title": "Editorial",
       "description": "Editorial — magazine: Playfair Display, generous whitespace, thin rules, paper tones — token file scoped under .theme-editorial; wrap your app in that class."
+    },
+    {
+      "name": "theme-facebook-dna",
+      "type": "registry:item",
+      "title": "Facebook DNA",
+      "description": "Facebook DNA — feed gray, white cards, the blue, dense social chrome — token file scoped under .theme-facebook-dna; wrap your app in that class."
     },
     {
       "name": "theme-figma-dna",
@@ -196,10 +220,22 @@
       "description": "IKEA DNA — democratic blue and yellow, Skapa functionalism, price-tag boldness — token file scoped under .theme-ikea-dna; wrap your app in that class."
     },
     {
+      "name": "theme-instagram-dna",
+      "type": "registry:item",
+      "title": "Instagram DNA",
+      "description": "Instagram DNA — gallery white, hairline borders, gradient pink to purple — token file scoped under .theme-instagram-dna; wrap your app in that class."
+    },
+    {
       "name": "theme-lego-dna",
       "type": "registry:item",
       "title": "LEGO DNA",
       "description": "LEGO DNA — primary brick colors, chunky modular blocks, bold play energy — token file scoped under .theme-lego-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-linkedin-dna",
+      "type": "registry:item",
+      "title": "LinkedIn DNA",
+      "description": "LinkedIn DNA — warm paper feed, white cards, professional blue, pill actions — token file scoped under .theme-linkedin-dna; wrap your app in that class."
     },
     {
       "name": "theme-liquid-glass",
@@ -244,6 +280,12 @@
       "description": "NASA DNA — 1976 Graphics Standards Manual: worm red, federal grid, Helvetica discipline — token file scoped under .theme-nasa-dna; wrap your app in that class."
     },
     {
+      "name": "theme-nba-dna",
+      "type": "registry:item",
+      "title": "NBA DNA",
+      "description": "NBA DNA — league blue and red on white, gold trophy accents, broadcast bold — token file scoped under .theme-nba-dna; wrap your app in that class."
+    },
+    {
       "name": "theme-netflix-dna",
       "type": "registry:item",
       "title": "Netflix DNA",
@@ -262,6 +304,12 @@
       "description": "Newspaper — newsprint gray, blackletter-ish serif heads, column rules — token file scoped under .theme-newspaper; wrap your app in that class."
     },
     {
+      "name": "theme-nfl-dna",
+      "type": "registry:item",
+      "title": "NFL DNA",
+      "description": "NFL DNA — shield navy, gridiron red, varsity slab, chalk-line structure — token file scoped under .theme-nfl-dna; wrap your app in that class."
+    },
+    {
       "name": "theme-nike-dna",
       "type": "registry:item",
       "title": "Nike DNA",
@@ -272,6 +320,36 @@
       "type": "registry:item",
       "title": "Pixel",
       "description": "Pixel — 8-bit lo-fi, dithered textures, hard 2px pixel borders, stepped shadows — token file scoped under .theme-pixel; wrap your app in that class."
+    },
+    {
+      "name": "theme-proton-dna",
+      "type": "registry:item",
+      "title": "Proton DNA",
+      "description": "Proton DNA — privacy purple over deep navy ink, Swiss-made trust — token file scoped under .theme-proton-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-real-madrid-dna",
+      "type": "registry:item",
+      "title": "Real Madrid DNA",
+      "description": "Real Madrid DNA — royal white, championship gold, regal navy restraint — token file scoped under .theme-real-madrid-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-reddit-dna",
+      "type": "registry:item",
+      "title": "Reddit DNA",
+      "description": "Reddit DNA — upvote orange, community white, pill-shaped everything — token file scoped under .theme-reddit-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-reebok-dna",
+      "type": "registry:item",
+      "title": "Reebok DNA",
+      "description": "Reebok DNA — vector red and blue on stark white, condensed italic speed, zero radius — token file scoped under .theme-reebok-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-signal-dna",
+      "type": "registry:item",
+      "title": "Signal DNA",
+      "description": "Signal DNA — quiet white, trusted blue, bubbles with nothing to hide — token file scoped under .theme-signal-dna; wrap your app in that class."
     },
     {
       "name": "theme-skeuomorphism",
@@ -340,10 +418,22 @@
       "description": "Vaporwave — purple/pink/cyan gradients, chrome text, 80s grid horizon — token file scoped under .theme-vaporwave; wrap your app in that class."
     },
     {
+      "name": "theme-whatsapp-dna",
+      "type": "registry:item",
+      "title": "WhatsApp DNA",
+      "description": "WhatsApp DNA — chat wallpaper beige, teal headers, bubble green, thumb-first — token file scoped under .theme-whatsapp-dna; wrap your app in that class."
+    },
+    {
       "name": "theme-windows95-dna",
       "type": "registry:item",
       "title": "Windows 95 DNA",
       "description": "Windows 95 DNA — silver bevels, navy title bars, teal desktop, hard pixels — token file scoped under .theme-windows95-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-x-dna",
+      "type": "registry:item",
+      "title": "X DNA",
+      "description": "X DNA — void black, ghost grays, one blue, ruthless density — token file scoped under .theme-x-dna; wrap your app in that class."
     },
     {
       "name": "theme-y2k",

@@ -1,0 +1,42 @@
+/* LinkedIn DNA — warm paper feed, white cards, professional blue, pill actions */
+.theme-linkedin-dna {
+  --bg: oklch(0.962 0.006 84.6);
+  --surface: oklch(1.000 0 0);
+  --surface-2: oklch(0.945 0.011 76.6);
+  --fg: oklch(0.213 0 0);
+  --fg-muted: oklch(0.510 0 0);
+  --accent: oklch(0.516 0.163 254.7);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.497 0.109 162.1);
+  --line: oklch(0.891 0.016 77.1);
+  --success: oklch(0.497 0.109 162.1);
+  --warning: oklch(0.764 0.139 73.2);
+  --danger: oklch(0.536 0.213 27.7);
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.75rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Source Sans 3", "Helvetica Neue", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: -0.01em;
+  --label-transform: none;
+  --label-tracking: 0.05em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-linkedin-dna h1,
+.theme-linkedin-dna h2,
+.theme-linkedin-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

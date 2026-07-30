@@ -1,0 +1,42 @@
+/* Reebok DNA — vector red and blue on stark white, condensed italic speed, zero radius */
+.theme-reebok-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.970 0 0);
+  --surface-2: oklch(0.907 0 0);
+  --fg: oklch(0.000 0 0);
+  --fg-muted: oklch(0.556 0 0);
+  --accent: oklch(0.586 0.228 28.3);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.413 0.140 264.8);
+  --line: oklch(0.196 0 0);
+  --success: oklch(0.523 0.135 144.2);
+  --warning: oklch(0.788 0.151 74.9);
+  --danger: oklch(0.586 0.228 28.3);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: none;
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 2px;
+  --blur-amount: 0px;
+  --font-display: "Saira Condensed", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.01em;
+  --label-transform: uppercase;
+  --label-tracking: 0.1em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-reebok-dna h1,
+.theme-reebok-dna h2,
+.theme-reebok-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

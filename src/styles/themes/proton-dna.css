@@ -1,0 +1,42 @@
+/* Proton DNA — privacy purple over deep navy ink, Swiss-made trust */
+.theme-proton-dna {
+  --bg: oklch(1.000 0 0);
+  --surface: oklch(0.979 0.011 292.0);
+  --surface-2: oklch(0.952 0.020 292.1);
+  --fg: oklch(0.255 0.072 262.5);
+  --fg-muted: oklch(0.608 0.034 263.4);
+  --accent: oklch(0.562 0.251 283.7);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.495 0.276 272.6);
+  --line: oklch(0.844 0.015 264.5);
+  --success: oklch(0.654 0.123 170.2);
+  --warning: oklch(0.832 0.148 75.7);
+  --danger: oklch(0.591 0.204 16.5);
+  --radius: 0.5rem;
+  --radius-sm: 0.375rem;
+  --radius-lg: 0.75rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Red Hat Display", sans-serif;
+  --font-body: "Red Hat Display", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: -0.02em;
+  --label-transform: none;
+  --label-tracking: 0.06em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-proton-dna h1,
+.theme-proton-dna h2,
+.theme-proton-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}

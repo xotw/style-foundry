@@ -1,0 +1,42 @@
+/* X DNA — void black, ghost grays, one blue, ruthless density */
+.theme-x-dna {
+  --bg: oklch(0.000 0 0);
+  --surface: oklch(0.209 0.009 264.4);
+  --surface-2: oklch(0.255 0.009 255.6);
+  --fg: oklch(0.933 0.003 228.8);
+  --fg-muted: oklch(0.563 0.010 248.0);
+  --accent: oklch(0.667 0.161 245.5);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.933 0.003 228.8);
+  --line: oklch(0.318 0.008 240.1);
+  --success: oklch(0.696 0.156 160.6);
+  --warning: oklch(0.881 0.181 94.0);
+  --danger: oklch(0.619 0.238 25.8);
+  --radius: 1rem;
+  --radius-sm: 0.5rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Schibsted Grotesk", sans-serif;
+  --font-body: "Schibsted Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: -0.02em;
+  --label-transform: none;
+  --label-tracking: 0.04em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-x-dna h1,
+.theme-x-dna h2,
+.theme-x-dna h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
