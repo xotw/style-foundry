@@ -1,6 +1,6 @@
 // Screenshot every theme's /app page in base + flip mode.
 import { chromium } from 'playwright';
-import { readdirSync, mkdirSync } from 'node:fs';
+import { readdirSync, mkdirSync, existsSync } from 'node:fs';
 
 const OUT = '/private/tmp/claude-501/-Users-gab-bulldozer/e3e851c2-6e3f-41e5-8aeb-6b830ce9359e/scratchpad/shots';
 mkdirSync(OUT, { recursive: true });
@@ -15,6 +15,7 @@ const page = await ctx.newPage();
 
 let done = 0;
 for (const slug of slugs) {
+  if (existsSync(`${OUT}/${slug}--base.png`) && process.env.SKIP_EXISTING) { continue; }
   try {
     await page.goto(`${BASE}/styles/${slug}/app`, { waitUntil: 'networkidle', timeout: 30000 });
     await page.waitForTimeout(600); // fonts settle

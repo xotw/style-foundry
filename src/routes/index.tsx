@@ -9,9 +9,9 @@ const SITE_URL = "https://style-foundry-gabbulldo.vercel.app";
 
 export const Route = createFileRoute("/")({
   head: () => {
-    const title = "Style Foundry — design systems on one token contract";
+    const title = `Style Foundry — ${STYLES.length} design systems on one token contract`;
     const description =
-      "73 fully committed UI themes — aesthetics and product DNAs — each a single CSS token file skinning the same landing page, 46-component gallery, app blocks and a live app demo. Install any theme with the shadcn CLI.";
+      `${STYLES.length} fully committed UI themes — aesthetics and product DNAs — each a single CSS token file skinning the same landing page, 46-component gallery, app blocks and a live app demo. Install any theme with the shadcn CLI.`;
     return {
       meta: [
         { title },
@@ -113,7 +113,17 @@ function Index() {
 
       {/* Install */}
       <section id="install" className="border-y-[length:var(--border-width)] border-y-line bg-surface">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p className="label-caps text-accent">00 — Or just ask Claude</p>
+            <p className="mt-3 text-sm text-fg-muted">
+              Using Claude Code? The <span className="font-code text-fg">style-foundry</span> skill
+              picks a theme for your project, installs it and wires the wrapper — one sentence.
+            </p>
+            <div className="mt-4">
+              <CopyCommand command={'"theme this app in bloomberg-dna style"'} />
+            </div>
+          </div>
           <div>
             <p className="label-caps text-accent">01 — Install a theme</p>
             <p className="mt-3 text-sm text-fg-muted">
