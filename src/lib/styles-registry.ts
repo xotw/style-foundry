@@ -190,6 +190,34 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Abril Fatface / Outfit",
     swatch: ["oklch(0.55 0.24 330)", "oklch(0.95 0.14 95)", "oklch(0.72 0.2 200)"],
   },
+  {
+    slug: "hud-scifi",
+    name: "HUD Sci-Fi",
+    tagline: "Near-black blue, hairline cyan, corner brackets, scanlines, radar data.",
+    fontPairing: "Rajdhani / IBM Plex Mono",
+    swatch: ["oklch(0.16 0.03 240)", "oklch(0.82 0.15 195)", "oklch(0.78 0.17 85)"],
+  },
+  {
+    slug: "art-deco",
+    name: "Art Deco",
+    tagline: "Black and gold, geometric symmetry, sunburst motifs, double rules.",
+    fontPairing: "Marcellus / Jost",
+    swatch: ["oklch(0.15 0.012 60)", "oklch(0.79 0.13 85)", "oklch(0.63 0.09 175)"],
+  },
+  {
+    slug: "heisei-retro",
+    name: "Heisei Retro",
+    tagline: "90s Japanese tech: beige plastic, dense small type, red and blue.",
+    fontPairing: "IBM Plex Sans / Noto Sans JP",
+    swatch: ["oklch(0.88 0.022 85)", "oklch(0.52 0.19 25)", "oklch(0.45 0.15 260)"],
+  },
+  {
+    slug: "dreamcore",
+    name: "Dreamcore",
+    tagline: "Hazy pastel gradients, blurred glows, thin type, uncanny calm.",
+    fontPairing: "Quicksand / Quicksand",
+    swatch: ["oklch(0.92 0.05 310)", "oklch(0.72 0.13 330)", "oklch(0.78 0.11 220)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);
