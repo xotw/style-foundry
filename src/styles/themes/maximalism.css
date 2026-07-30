@@ -3,8 +3,8 @@
   --bg: oklch(0.55 0.24 330);
   --surface: oklch(0.95 0.14 95);
   --surface-2: oklch(0.72 0.2 200);
-  --fg: oklch(0.16 0.06 320);
-  --fg-muted: oklch(0.34 0.1 320);
+  --fg: oklch(0.180 0.020 320);
+  --fg-muted: oklch(0.820 0.100 320.0);
   --accent: oklch(0.62 0.26 25);
   --accent-fg: oklch(0.98 0.05 95);
   --accent-2: oklch(0.68 0.21 155);
@@ -89,7 +89,7 @@
   --surface-2: oklch(0.32 0.1 200);
   --fg: oklch(0.96 0.03 95);
   --fg-muted: oklch(0.8 0.05 95);
-  --accent: oklch(0.72 0.22 25);
+  --accent: oklch(0.680 0.220 25.0);
   --accent-2: oklch(0.78 0.18 155);
   --line: oklch(0.92 0.05 95);
   --shadow-1: 4px 4px 0 0 oklch(0.1 0.05 330);

@@ -78,7 +78,7 @@
   --fg: oklch(0.96 0.02 100);
   --fg-muted: oklch(0.75 0.02 100);
   --line: oklch(0.96 0.02 100);
-  --accent: oklch(0.74 0.22 350);
+  --accent: oklch(0.692 0.220 350.0);
   --accent-2: oklch(0.7 0.18 258);
   --shadow-1: 4px 4px 0 0 var(--line);
   --shadow-2: 7px 7px 0 0 var(--line);

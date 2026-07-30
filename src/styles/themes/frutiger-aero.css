@@ -5,7 +5,7 @@
   --surface-2: oklch(0.93 0.05 205 / 85%);
   --fg: oklch(0.26 0.05 245);
   --fg-muted: oklch(0.46 0.05 235);
-  --accent: oklch(0.72 0.19 145);
+  --accent: oklch(0.632 0.190 145.0);
   --accent-fg: oklch(0.99 0 0);
   --accent-2: oklch(0.66 0.16 240);
   --line: oklch(1 0 0 / 75%);

@@ -1,54 +1,89 @@
 # Style Foundry
 
-Prompt 1 — Kickoff (architecture extractible)
+**121 design systems. One token contract.**
 
-Build a "UI Style Library" — a reference vault of UI styles and components, designed to be reused in other projects.
+Live: **https://style-foundry-gabbulldo.vercel.app**
 
-ARCHITECTURE RULES (critical, this repo will be mined by other projects):
+Style Foundry is a vault of fully committed UI themes — design aesthetics (swiss, brutalism, pixel, art-deco…) and product/team DNAs (Stripe, GitHub, Windows 95, NBA franchises, European football clubs, Formula 1, cinematic homages…). Every theme is a single CSS token file that skins the same four surfaces, so styles are directly comparable and instantly reusable.
 
-- Each style's design tokens live in its OWN CSS file: src/styles/themes/<slug>.css, defining CSS variables (colors, radii, shadows, fonts, spacing) scoped under a .theme-<slug> class. No inline hex values in components — everything through tokens.
+## The four surfaces
 
-- Shared demo components live in src/components/showcase/ and read only from theme tokens, so any style can skin them.
+Every theme renders the same content — only the styling changes:
 
-- Each style gets TWO routes:
+| Surface | Route | What it proves |
+|---|---|---|
+| Landing | `/styles/<slug>` | Marketing page + "The system" usage rules |
+| Components | `/styles/<slug>/components` | 46 shadcn components, fully skinned |
+| Blocks | `/styles/<slug>/blocks` | Login, dashboard, settings — real product surfaces |
+| App in use | `/styles/<slug>/app` | A live interactive issue tracker, mid-use |
 
-  - /styles/<slug> — a landing page: nav, hero, feature cards, stats bar, pricing (3 tiers), form, data table, footer. Same content on every style page, only styling changes.
+Every theme also ships a **light/dark flip variant** (the `Flip` chip, `.alt-mode` class) — hand-tuned where the identity demands it (Dortmund flips to its away kit, terminal flips to paper).
 
-  - /styles/<slug>/components — a full component gallery in that style: buttons (all variants/sizes/states), inputs, select, checkbox, radio, switch, slider, badge, avatar, card, alert, dialog, drawer, dropdown menu, tabs, accordion, tooltip, toast, skeleton, progress, breadcrumb, pagination, calendar, table, command palette. Every component visibly styled by the theme — no default shadcn look.
+## Install a theme in your project
 
-- Index page at "/" lists all styles (card grid: name, 3-color swatch, font pairing, tagline) with links to both routes.
+**One command** (any React + Tailwind project):
 
-- Fixed style-switcher on every page.
+```bash
+npx shadcn@latest add https://style-foundry-gabbulldo.vercel.app/r/swiss.json
+```
 
-Start with 4 styles:
+**Or register the foundry once** in `components.json`:
 
-- swiss (strict grid, Inter Tight, black/white + one red accent, zero radius, no shadows)
+```json
+{ "registries": { "@style-foundry": "https://style-foundry-gabbulldo.vercel.app/r/{name}.json" } }
+```
 
-- brutalism (thick black borders, hard offset shadows, saturated yellow/pink/blue, Archivo Black)
+```bash
+npx shadcn add @style-foundry/bloomberg-dna
+```
 
-- glass (dark gradient bg, frosted backdrop-blur cards, thin light borders, glows)
+**Then wrap your app** in the theme class:
 
-- dark-saas (Linear/Vercel: near-black, subtle borders, one electric accent, tight type)
+```html
+<div class="theme-swiss">…</div>
+```
 
-Commit fully to each aesthetic. No backend, no auth, static content only.
+Each registry item ships the theme tokens plus a bridge that maps shadcn's semantic variables (`--primary`, `--background`, …) to the theme, so stock shadcn/ui components are skinned automatically. Registry index: [`/r/registry.json`](https://style-foundry-gabbulldo.vercel.app/r/registry.json).
 
-This project was built with [Lovable](https://lovable.dev).
+## The token contract
 
-## Build with Lovable
+Every theme defines the same variables, scoped under `.theme-<slug>`:
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/0ee5b953-df74-4d15-97b8-d07366e9281b).
+```
+--bg --surface --surface-2 --fg --fg-muted
+--accent --accent-fg --accent-2 --line
+--success --warning --danger
+--radius --radius-sm --radius-lg --radius-pill
+--shadow-1 --shadow-2 --shadow-3 --glow
+--border-width --blur-amount
+--font-display --font-body --font-mono --font-ui
+--tracking-display --label-transform --label-tracking
+```
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+On top of the tokens, each theme file carries a hand-crafted **signature** layer (textures, heading treatments, button physics) and a **depth** layer (tables, focus states, scrollbars, selection — all in character). DNA themes use real values: crawled from the product's live CSS where reachable, official published brand/team palettes otherwise. Contrast is audited programmatically (WCAG pairs, both modes).
+
+## Repository map
+
+```
+src/styles/themes/<slug>.css   one theme = one file (tokens + signature + depth + alt-mode)
+src/lib/styles-registry.ts     name, tagline, fonts, swatch, hero variant per theme
+src/lib/style-rules.ts         per-theme usage rules (use/avoid/spacing/type/motion)
+src/lib/style-categories.ts    the 13 catalog categories
+src/components/showcase/       shared surfaces (landing, gallery, blocks, app)
+scripts/build-registry.mjs     generates public/r/*.json (runs on prebuild)
+CATALOG.md                     the full index, one line per theme
+```
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+```bash
+npm install
+npm run dev        # local dev
+npm run build      # builds registry + site
 ```
+
+Deploys to Vercel (`vercel deploy --prod`).
+
+---
+
+Built by **Gabriel Hardy-Françon** — with Claude doing the heavy lifting. The site dogfoods its own `dark-saas` theme, naturally.
