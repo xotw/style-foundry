@@ -721,8 +721,8 @@ export const STYLES: StyleEntry[] = [
   {
     slug: "notion-dna",
     name: "Notion DNA",
-    tagline: "Paper white, ink gray, serif calm.",
-    fontPairing: "Spectral / Inter",
+    tagline: "The app itself: warm gray chrome, quiet ink, pastel property chips.",
+    fontPairing: "Inter (app UI)",
     swatch: ["oklch(1.000 0 0)", "oklch(0.606 0.167 252.7)", "oklch(0.659 0.159 55.7)"],
   },
   {
