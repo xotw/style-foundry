@@ -50,15 +50,43 @@
 .theme-benfica h1 { color: var(--accent); font-weight: 700; }
 .theme-benfica h2::after { content: ""; display: block; width: 4rem; height: 2px; background: var(--accent-2); margin-top: 0.5rem; }
 
+/* depth */
+.theme-benfica thead th { color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-bottom: 2px solid var(--accent); background: var(--surface); }
+.theme-benfica td { border-bottom: 1px solid var(--line); }
+.theme-benfica tbody tr:hover { background: oklch(0.513 0.211 29.2 / 7%); }
+.theme-benfica a { color: var(--accent); text-underline-offset: 3px; text-decoration-color: oklch(0.663 0.120 80.3 / 60%); }
+/* the eagle's wing: gold sweep under hovered links */
+.theme-benfica a:hover { text-decoration-color: var(--accent-2); text-decoration-thickness: 2px; }
+.theme-benfica ::selection { background: var(--accent); color: oklch(1 0 0); }
+.theme-benfica input:focus-visible, .theme-benfica select:focus-visible, .theme-benfica textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.theme-benfica kbd { background: oklch(1 0 0); border: 1px solid var(--line); border-bottom: 3px solid var(--accent-2); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); color: var(--accent); }
+.theme-benfica ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-benfica ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-benfica ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; border: 2px solid var(--surface-2); }
+.theme-benfica ::-webkit-scrollbar-thumb:hover { background: oklch(0.60 0.13 80); }
+.theme-benfica .label-caps { color: var(--accent); }
+.theme-benfica .themed-border { border-color: var(--accent); border-bottom: 3px solid var(--accent-2); }
+.theme-benfica button:hover { box-shadow: 0 4px 14px oklch(0.513 0.211 29.2 / 30%); }
+.theme-benfica button:active { transform: translateY(1px); box-shadow: none; }
+
 /* alt mode: auto-derived dark variant */
 .theme-benfica.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  /* Estádio da Luz at night — warm dark, red glow, gold wing */
+  --bg: oklch(0.165 0.015 35.0);
+  --surface: oklch(0.205 0.018 35.0);
+  --surface-2: oklch(0.248 0.022 35.0);
+  --fg: oklch(0.97 0.008 60);
+  --fg-muted: oklch(0.72 0.025 55);
+  --line: oklch(0.663 0.120 80.3 / 20%);
+  --accent: oklch(0.60 0.210 29.2);
+  --accent-2: oklch(0.75 0.125 82.0);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-benfica.alt-mode h1 { color: oklch(0.68 0.20 29); }
+.theme-benfica.alt-mode a { color: oklch(0.68 0.20 29); }
+.theme-benfica.alt-mode thead th { color: oklch(0.68 0.20 29); }
+.theme-benfica.alt-mode kbd { background: var(--surface-2); color: oklch(0.75 0.125 82); }
+.theme-benfica.alt-mode tbody tr:hover { background: oklch(0.60 0.21 29 / 12%); }
+.theme-benfica.alt-mode .label-caps { color: oklch(0.75 0.125 82); }

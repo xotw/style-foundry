@@ -47,7 +47,28 @@
 .theme-nba-dna h1::after { content: ""; display: block; height: 4px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%); }
 .theme-nba-dna button { text-transform: uppercase; letter-spacing: 0.08em; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-nba-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-nba-dna thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 400; background: var(--accent); color: var(--accent-fg); }
+.theme-nba-dna td { border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.theme-nba-dna tbody tr:nth-child(even) { background: var(--surface); }
+.theme-nba-dna tbody tr:hover { background: color-mix(in oklab, var(--accent) 10%, transparent); box-shadow: inset 3px 0 0 var(--accent-2); }
+.theme-nba-dna a { color: var(--accent); font-weight: 600; text-decoration: none; border-bottom: 2px solid oklch(0.780 0.130 85.0); }
+.theme-nba-dna a:hover { color: var(--accent-2); border-bottom-color: var(--accent-2); }
+.theme-nba-dna input, .theme-nba-dna select, .theme-nba-dna textarea { border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
+.theme-nba-dna input:focus-visible, .theme-nba-dna select:focus-visible, .theme-nba-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 30%, transparent); }
+.theme-nba-dna kbd { font-family: var(--font-display); background: var(--fg); color: var(--bg); border-radius: var(--radius-sm); padding: 0.1em 0.5em; font-variant-numeric: tabular-nums; }
+.theme-nba-dna .label-caps { font-family: var(--font-display); color: var(--accent); }
+.theme-nba-dna .themed-border { border-top: 4px solid; border-image: linear-gradient(90deg, var(--accent) 0 50%, var(--accent-2) 50% 100%) 1; }
+.theme-nba-dna button { transition: box-shadow 120ms ease, transform 120ms ease; }
+.theme-nba-dna button:hover { box-shadow: 0 4px 0 oklch(0.780 0.130 85.0); transform: translateY(-2px); }
+.theme-nba-dna button:active { box-shadow: none; transform: translateY(0); }
+.theme-nba-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-nba-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-nba-dna ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 9999px; }
+.theme-nba-dna ::-webkit-scrollbar-thumb:hover { background: var(--accent-2); }
+
+/* alt mode: city edition night — arena black, gold trophy trim */
 .theme-nba-dna.alt-mode {
   --bg: oklch(0.145 0.000 0.0);
   --surface: oklch(0.185 0.000 0.0);
@@ -60,4 +81,11 @@
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
   --accent: oklch(0.62 0.128 261.9);
   --accent-fg: oklch(1 0 0);
+  --accent-2: oklch(0.660 0.207 22.3);
 }
+.theme-nba-dna.alt-mode a { color: oklch(0.820 0.130 85.0); border-bottom-color: oklch(0.820 0.130 85.0 / 50%); }
+.theme-nba-dna.alt-mode a:hover { color: oklch(0.90 0.13 85.0); border-bottom-color: oklch(0.90 0.13 85.0); }
+.theme-nba-dna.alt-mode .label-caps { color: oklch(0.820 0.130 85.0); }
+.theme-nba-dna.alt-mode input, .theme-nba-dna.alt-mode select, .theme-nba-dna.alt-mode textarea { background: var(--surface); }
+.theme-nba-dna.alt-mode kbd { background: oklch(0.820 0.130 85.0); color: oklch(0.15 0 0); }
+.theme-nba-dna.alt-mode button:hover { box-shadow: 0 4px 0 oklch(0.820 0.130 85.0); }

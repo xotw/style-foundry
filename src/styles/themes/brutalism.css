@@ -53,15 +53,38 @@
 .theme-brutalism button:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--line); }
 .theme-brutalism button:active { transform: translate(2px, 2px); box-shadow: none; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-brutalism thead th { background: var(--fg); color: var(--bg); text-transform: uppercase; letter-spacing: 0.08em; border: var(--border-width) solid var(--line); }
+.theme-brutalism td { border-bottom: 2px solid var(--line); }
+.theme-brutalism tbody tr:hover td { background: var(--surface-2); }
+.theme-brutalism input, .theme-brutalism textarea, .theme-brutalism select { border: var(--border-width) solid var(--line); background: var(--surface); box-shadow: none; }
+.theme-brutalism input:focus-visible, .theme-brutalism textarea:focus-visible, .theme-brutalism select:focus-visible { outline: none; box-shadow: 4px 4px 0 0 var(--accent); transform: translate(-2px, -2px); }
+.theme-brutalism kbd { font-family: var(--font-mono); border: 2px solid var(--line); background: var(--surface); box-shadow: 2px 2px 0 var(--line); padding: 0.1em 0.4em; text-transform: uppercase; }
+.theme-brutalism a { color: var(--fg); font-weight: 700; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 3px; }
+.theme-brutalism a:hover { background: var(--fg); color: var(--bg); text-decoration: none; }
+.theme-brutalism ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-brutalism ::-webkit-scrollbar { width: 14px; height: 14px; }
+.theme-brutalism ::-webkit-scrollbar-track { background: var(--bg); border-left: 3px solid var(--line); }
+.theme-brutalism ::-webkit-scrollbar-thumb { background: var(--fg); border: 3px solid var(--bg); border-radius: 0; }
+.theme-brutalism .label-caps { font-weight: 900; border-bottom: 3px solid var(--accent); display: inline-block; }
+.theme-brutalism .themed-border { border-left: 8px solid var(--accent); }
+.theme-brutalism hr { border: none; border-top: 4px solid var(--line); }
+
+/* alt mode: blackout brutalism — same violence, lights off */
 .theme-brutalism.alt-mode {
-  --bg: oklch(0.145 0.030 100.0);
-  --surface: oklch(0.185 0.030 100.0);
-  --surface-2: oklch(0.225 0.035 100.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --bg: oklch(0.16 0.01 100);
+  --surface: oklch(0.12 0 0);
+  --surface-2: oklch(0.24 0.05 100);
+  --fg: oklch(0.96 0.02 100);
+  --fg-muted: oklch(0.75 0.02 100);
+  --line: oklch(0.96 0.02 100);
+  --accent: oklch(0.74 0.22 350);
+  --accent-2: oklch(0.7 0.18 258);
+  --shadow-1: 4px 4px 0 0 var(--line);
+  --shadow-2: 7px 7px 0 0 var(--line);
+  --shadow-3: 11px 11px 0 0 var(--line);
+  --glow: 7px 7px 0 0 var(--accent);
 }
+.theme-brutalism.alt-mode thead th { background: var(--fg); color: var(--surface); }
+.theme-brutalism.alt-mode a:hover { background: var(--fg); color: var(--surface); }
+.theme-brutalism.alt-mode ::-webkit-scrollbar-thumb { background: var(--fg); border-color: var(--bg); }

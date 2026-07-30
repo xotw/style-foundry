@@ -47,15 +47,39 @@
 .theme-ableton-dna button { transition: none; }
 .theme-ableton-dna button:hover { background: var(--fg); color: var(--bg); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-ableton-dna table { border: 1px solid var(--fg); border-collapse: collapse; }
+.theme-ableton-dna th, .theme-ableton-dna td { border: 1px solid var(--fg); }
+.theme-ableton-dna thead th { background: var(--warning); color: var(--fg); font-weight: 400; }
+.theme-ableton-dna tbody tr:hover { background: var(--surface); }
+.theme-ableton-dna a { color: var(--fg); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; }
+.theme-ableton-dna a:hover { background: var(--warning); text-decoration: none; }
+.theme-ableton-dna input, .theme-ableton-dna select, .theme-ableton-dna textarea { border: 1px solid var(--fg); border-radius: 0; background: var(--bg); transition: none; }
+.theme-ableton-dna input:focus-visible, .theme-ableton-dna select:focus-visible, .theme-ableton-dna textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; box-shadow: none; }
+.theme-ableton-dna kbd { border: 1px solid var(--fg); border-radius: 0; padding: 0.1em 0.4em; font-size: 0.8em; background: var(--surface-2); }
+.theme-ableton-dna ::selection { background: var(--warning); color: var(--fg); }
+.theme-ableton-dna ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-ableton-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-ableton-dna ::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 0; }
+.theme-ableton-dna button:active { background: var(--accent); color: var(--accent-fg); }
+.theme-ableton-dna .label-caps { background: var(--fg); color: var(--bg); padding: 0.1em 0.5em; }
+.theme-ableton-dna .themed-border { border-color: var(--fg); box-shadow: 8px 8px 0 var(--accent-2); }
+
+/* alt mode: Live dark set — mid-gray console, flat as ever */
 .theme-ableton-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --bg: oklch(0.280 0 0);
+  --surface: oklch(0.330 0 0);
+  --surface-2: oklch(0.380 0 0);
+  --fg: oklch(0.935 0 0);
+  --fg-muted: oklch(0.720 0 0);
+  --line: oklch(0.935 0 0);
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
 }
+.theme-ableton-dna.alt-mode table,
+.theme-ableton-dna.alt-mode th,
+.theme-ableton-dna.alt-mode td { border-color: var(--fg); }
+.theme-ableton-dna.alt-mode input, .theme-ableton-dna.alt-mode select, .theme-ableton-dna.alt-mode textarea { background: var(--surface); border-color: var(--fg); }
+.theme-ableton-dna.alt-mode .label-caps { background: var(--fg); color: var(--bg); }
+.theme-ableton-dna.alt-mode ::-webkit-scrollbar-track { background: var(--surface); }

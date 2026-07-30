@@ -50,7 +50,36 @@
 .theme-dortmund h1 { -webkit-text-stroke: 2px #111111; color: var(--bg); font-size: clamp(3.2rem, 7vw, 6rem) !important; }
 .theme-dortmund button { border: 2px solid #111111; }
 
+/* depth */
+.theme-dortmund thead th { background: var(--accent); color: var(--accent-fg); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; }
+.theme-dortmund td { border-bottom: 1px solid oklch(0.178 0 0 / 30%); }
+.theme-dortmund tbody tr:hover { background: oklch(0 0 0 / 8%); }
+.theme-dortmund a { color: var(--fg); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+/* terrace chant: hover flips to full black block */
+.theme-dortmund a:hover { background: var(--accent); color: var(--accent-fg); text-decoration: none; }
+.theme-dortmund ::selection { background: oklch(0.178 0 0); color: oklch(0.891 0.183 96.2); }
+.theme-dortmund input, .theme-dortmund select, .theme-dortmund textarea { border: 2px solid oklch(0.178 0 0); background: oklch(0.95 0.09 98); }
+.theme-dortmund input:focus-visible, .theme-dortmund select:focus-visible, .theme-dortmund textarea:focus-visible { outline: 3px solid oklch(0.178 0 0); outline-offset: 2px; }
+.theme-dortmund kbd { background: oklch(0.178 0 0); color: oklch(0.891 0.183 96.2); border-radius: var(--radius-sm); padding: 0.1em 0.5em; font-family: var(--font-mono); font-weight: 700; }
+.theme-dortmund ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-dortmund ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-dortmund ::-webkit-scrollbar-thumb { background: oklch(0.178 0 0); border-radius: 2px; }
+.theme-dortmund ::-webkit-scrollbar-thumb:hover { background: oklch(0.30 0 0); }
+.theme-dortmund .label-caps { background: oklch(0.178 0 0); color: oklch(0.891 0.183 96.2); padding: 0.15em 0.5em; }
+/* hazard tape: the Südtribüne barrier */
+.theme-dortmund .themed-border { border-image: repeating-linear-gradient(45deg, oklch(0.178 0 0) 0 12px, oklch(0.891 0.183 96.2) 12px 24px) 1; border-width: 3px; }
+.theme-dortmund button:active { transform: translate(1px, 2px); }
+
 .theme-dortmund.alt-mode { --bg: oklch(0.13 0 0); --surface: oklch(0.17 0 0); --surface-2: oklch(0.22 0 0);
   --fg: oklch(0.92 0.19 100); --fg-muted: oklch(0.7 0.1 100); --accent: oklch(0.9 0.19 100); --accent-fg: oklch(0.13 0 0);
   --line: oklch(0.9 0.19 100 / 25%); background-image: none; }
 .theme-dortmund.alt-mode h1 { -webkit-text-stroke: 2px oklch(0.9 0.19 100); color: oklch(0.13 0 0); }
+.theme-dortmund.alt-mode td { border-bottom-color: oklch(0.9 0.19 100 / 25%); }
+.theme-dortmund.alt-mode tbody tr:hover { background: oklch(0.9 0.19 100 / 8%); }
+.theme-dortmund.alt-mode ::selection { background: oklch(0.9 0.19 100); color: oklch(0.13 0 0); }
+.theme-dortmund.alt-mode input, .theme-dortmund.alt-mode select, .theme-dortmund.alt-mode textarea { background: oklch(0.17 0 0); border-color: oklch(0.9 0.19 100); color: var(--fg); }
+.theme-dortmund.alt-mode input:focus-visible, .theme-dortmund.alt-mode select:focus-visible, .theme-dortmund.alt-mode textarea:focus-visible { outline-color: oklch(0.9 0.19 100); }
+.theme-dortmund.alt-mode kbd { background: oklch(0.9 0.19 100); color: oklch(0.13 0 0); }
+.theme-dortmund.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.9 0.19 100); }
+.theme-dortmund.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.95 0.16 100); }
+.theme-dortmund.alt-mode .label-caps { background: oklch(0.9 0.19 100); color: oklch(0.13 0 0); }

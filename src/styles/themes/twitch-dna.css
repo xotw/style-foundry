@@ -46,15 +46,37 @@
 .theme-twitch-dna h1 { font-weight: 700; }
 .theme-twitch-dna h2::before { content: "⏺ "; color: var(--danger); font-size: 0.6em; vertical-align: middle; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-twitch-dna button { transition: transform 100ms ease-out, box-shadow 100ms ease-out; }
+.theme-twitch-dna button:hover { transform: translate(-2px, -2px); box-shadow: 3px 3px 0 0 var(--accent); }
+.theme-twitch-dna button:active { transform: translate(0, 0); box-shadow: 0 0 0 0 var(--accent); }
+.theme-twitch-dna thead th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-muted); border-bottom: 2px solid var(--accent); }
+.theme-twitch-dna tbody td { border-bottom: 1px solid var(--line); }
+.theme-twitch-dna tbody tr:hover td { background: color-mix(in oklab, var(--accent) 10%, transparent); }
+.theme-twitch-dna a { color: var(--accent-2); font-weight: 600; text-decoration: none; }
+.theme-twitch-dna a:hover { color: oklch(0.850 0.110 301.0); text-decoration: underline; text-underline-offset: 3px; }
+.theme-twitch-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-twitch-dna input:focus-visible, .theme-twitch-dna select:focus-visible, .theme-twitch-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.theme-twitch-dna kbd { font-family: var(--font-mono); font-size: 0.75em; padding: 0.1em 0.45em; border-radius: var(--radius-sm); background: color-mix(in oklab, var(--accent) 25%, var(--surface-2)); border: 1px solid color-mix(in oklab, var(--accent) 50%, transparent); color: oklch(0.900 0.070 300.0); }
+.theme-twitch-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-twitch-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-twitch-dna ::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--accent) 40%, var(--surface-2)); border-radius: 999px; }
+.theme-twitch-dna .label-caps { color: var(--accent-2); font-weight: 700; letter-spacing: 0.08em; }
+.theme-twitch-dna .themed-border { border-color: color-mix(in oklab, var(--accent) 50%, var(--line)); box-shadow: 4px 4px 0 0 color-mix(in oklab, var(--accent) 35%, transparent); }
+
+/* alt mode: streamer light — ice-grey studio, same 9146FF purple */
 .theme-twitch-dna.alt-mode {
   --bg: oklch(0.98 0.004 285.9);
   --surface: oklch(0.955 0.004 285.9);
   --surface-2: oklch(0.92 0.004 285.9);
   --fg: oklch(0.17 0.005 270);
   --fg-muted: oklch(0.46 0.01 270);
+  --accent-2: oklch(0.480 0.220 296.0);
   --line: oklch(0.87 0.005 270);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
 }
+.theme-twitch-dna.alt-mode a { color: oklch(0.480 0.220 296.0); }
+.theme-twitch-dna.alt-mode a:hover { color: oklch(0.400 0.200 296.0); }
+.theme-twitch-dna.alt-mode kbd { background: color-mix(in oklab, var(--accent) 12%, var(--surface)); color: oklch(0.420 0.210 296.0); }

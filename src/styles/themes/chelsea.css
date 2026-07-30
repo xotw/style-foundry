@@ -50,6 +50,25 @@
 .theme-chelsea h1 { font-weight: 700; }
 .theme-chelsea h1::after { content: ""; display: block; height: 3px; width: 5rem; margin-top: 0.6rem; background: var(--accent); }
 
+/* depth */
+.theme-chelsea thead th { color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-bottom: 2px solid var(--accent); }
+.theme-chelsea td { border-bottom: 1px solid var(--line); }
+.theme-chelsea tbody tr:hover { background: oklch(0.36 0.12 261); }
+.theme-chelsea a { color: var(--accent); text-underline-offset: 3px; text-decoration-color: oklch(0.744 0.150 82.0 / 50%); }
+.theme-chelsea a:hover { text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.theme-chelsea ::selection { background: oklch(0.744 0.150 82.0); color: oklch(0.22 0.08 260); }
+.theme-chelsea input, .theme-chelsea select, .theme-chelsea textarea { background: oklch(0.23 0.08 260); border-color: var(--line); }
+.theme-chelsea input:focus-visible, .theme-chelsea select:focus-visible, .theme-chelsea textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.theme-chelsea kbd { background: oklch(0.23 0.08 260); border: 1px solid var(--line); border-bottom: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); }
+.theme-chelsea ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-chelsea ::-webkit-scrollbar-track { background: oklch(0.22 0.08 260); }
+.theme-chelsea ::-webkit-scrollbar-thumb { background: oklch(0.60 0.13 82); border-radius: 5px; border: 2px solid oklch(0.22 0.08 260); }
+.theme-chelsea ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-chelsea .label-caps { color: var(--accent); }
+/* lion-gold braid along framed panels, pressed shirt-button feel */
+.theme-chelsea .themed-border { border-top: 3px solid var(--accent); }
+.theme-chelsea button:active { transform: translateY(1px); box-shadow: none; }
+
 /* alt mode: auto-derived light variant */
 .theme-chelsea.alt-mode {
   --bg: oklch(0.98 0.012 259.8);
@@ -61,5 +80,16 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  /* daylight at the Bridge: royal blue takes over, gold becomes the trim */
+  --accent: oklch(0.45 0.14 258.0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.60 0.13 82.0);
   background-image: none;
 }
+.theme-chelsea.alt-mode tbody tr:hover { background: oklch(0.45 0.14 258 / 8%); }
+.theme-chelsea.alt-mode ::selection { background: oklch(0.45 0.14 258); color: oklch(1 0 0); }
+.theme-chelsea.alt-mode input, .theme-chelsea.alt-mode select, .theme-chelsea.alt-mode textarea { background: oklch(1 0 0); }
+.theme-chelsea.alt-mode kbd { background: oklch(0.94 0.012 260); border-bottom-color: oklch(0.60 0.13 82); }
+.theme-chelsea.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.012 260); }
+.theme-chelsea.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.45 0.14 258); border-color: oklch(0.94 0.012 260); }
+.theme-chelsea.alt-mode a { text-decoration-color: oklch(0.60 0.13 82 / 70%); }

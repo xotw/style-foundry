@@ -50,6 +50,24 @@
 .theme-bayern-munich h1 { letter-spacing: 0.04em; }
 .theme-bayern-munich .label-caps { color: oklch(0.9 0.02 250); }
 
+/* depth */
+.theme-bayern-munich thead th { background: oklch(0.36 0.145 21); color: oklch(1 0 0); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-bottom: 2px solid oklch(0.62 0.13 250); }
+.theme-bayern-munich td { border-bottom: 1px solid var(--line); }
+.theme-bayern-munich tbody tr:hover { background: oklch(1 0 0 / 8%); }
+.theme-bayern-munich a { color: oklch(1 0 0); text-underline-offset: 3px; text-decoration-color: oklch(0.70 0.12 250); }
+.theme-bayern-munich a:hover { text-decoration-thickness: 2px; }
+.theme-bayern-munich ::selection { background: oklch(1 0 0); color: oklch(0.418 0.158 20.7); }
+.theme-bayern-munich input, .theme-bayern-munich select, .theme-bayern-munich textarea { background: oklch(0.37 0.145 21); border-color: var(--line); color: oklch(1 0 0); }
+.theme-bayern-munich input:focus-visible, .theme-bayern-munich select:focus-visible, .theme-bayern-munich textarea:focus-visible { outline: 2px solid oklch(1 0 0); outline-offset: 1px; }
+.theme-bayern-munich kbd { background: oklch(0.36 0.145 21); border: 1px solid var(--line); border-bottom: 3px solid oklch(0.62 0.13 250); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); }
+.theme-bayern-munich ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-bayern-munich ::-webkit-scrollbar-track { background: oklch(0.36 0.145 21); }
+.theme-bayern-munich ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 75%); border-radius: 5px; border: 2px solid oklch(0.36 0.145 21); }
+.theme-bayern-munich ::-webkit-scrollbar-thumb:hover { background: oklch(1 0 0); }
+/* bavarian lozenges woven into the frame */
+.theme-bayern-munich .themed-border { border-image: repeating-linear-gradient(45deg, oklch(0.62 0.13 250) 0 12px, oklch(1 0 0) 12px 24px) 1; }
+.theme-bayern-munich button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived light variant */
 .theme-bayern-munich.alt-mode {
   --bg: oklch(0.98 0.012 20.7);
@@ -61,7 +79,18 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  --accent: oklch(0.52 0.080 0.0);
+  --accent: oklch(0.50 0.190 24.0);
   --accent-fg: oklch(1 0 0);
-  background-image: none;
+  /* white kit, bavarian sky: faint blue lozenges */
+  background-image: repeating-linear-gradient(45deg, oklch(0.503 0.144 250.3 / 5%) 0 26px, transparent 26px 52px), repeating-linear-gradient(-45deg, oklch(0.503 0.144 250.3 / 5%) 0 26px, transparent 26px 52px);
 }
+.theme-bayern-munich.alt-mode thead th { background: oklch(0.50 0.19 24); border-bottom-color: oklch(0.503 0.144 250.3); }
+.theme-bayern-munich.alt-mode a { color: oklch(0.50 0.19 24); text-decoration-color: oklch(0.503 0.144 250.3 / 60%); }
+.theme-bayern-munich.alt-mode ::selection { background: oklch(0.50 0.19 24); color: oklch(1 0 0); }
+.theme-bayern-munich.alt-mode input, .theme-bayern-munich.alt-mode select, .theme-bayern-munich.alt-mode textarea { background: oklch(1 0 0); color: var(--fg); }
+.theme-bayern-munich.alt-mode kbd { background: oklch(0.95 0.008 250); color: var(--fg); }
+.theme-bayern-munich.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.008 250); }
+.theme-bayern-munich.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.50 0.19 24); border-color: oklch(0.93 0.008 250); }
+.theme-bayern-munich.alt-mode tbody tr:hover { background: oklch(0.50 0.19 24 / 7%); }
+.theme-bayern-munich.alt-mode .label-caps { color: oklch(0.45 0.13 250); }
+.theme-bayern-munich.alt-mode input:focus-visible, .theme-bayern-munich.alt-mode select:focus-visible, .theme-bayern-munich.alt-mode textarea:focus-visible { outline-color: oklch(0.50 0.19 24); }

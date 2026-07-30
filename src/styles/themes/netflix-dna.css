@@ -46,16 +46,44 @@
 .theme-netflix-dna h1 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
 .theme-netflix-dna button { font-weight: 700; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-netflix-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-netflix-dna a { color: var(--fg); text-decoration: none; }
+.theme-netflix-dna a:hover { color: var(--fg-muted); } /* nav links dim, never underline */
+.theme-netflix-dna :is(a, button, input, select, textarea, [tabindex]):focus-visible { outline: 2px solid oklch(1 0 0); outline-offset: 2px; } /* TV-remote focus ring */
+.theme-netflix-dna thead th { font-size: 0.75rem; font-weight: 600; color: var(--fg-muted); border-bottom: 1px solid var(--line); text-align: left; }
+.theme-netflix-dna tbody td { border-bottom: 1px solid oklch(1 0 0 / 8%); }
+.theme-netflix-dna tbody tr:hover td { background: oklch(1 0 0 / 6%); }
+.theme-netflix-dna input, .theme-netflix-dna select, .theme-netflix-dna textarea { background: oklch(1 0 0 / 12%); border: 1px solid oklch(1 0 0 / 25%); border-radius: var(--radius); color: var(--fg); }
+.theme-netflix-dna input::placeholder, .theme-netflix-dna textarea::placeholder { color: var(--fg-muted); }
+.theme-netflix-dna input:focus-visible, .theme-netflix-dna select:focus-visible, .theme-netflix-dna textarea:focus-visible { outline-offset: 0; border-color: transparent; background: oklch(1 0 0 / 16%); }
+.theme-netflix-dna button { transition: filter 120ms ease, background-color 120ms ease; }
+.theme-netflix-dna button:active { filter: brightness(0.78); } /* red button presses to deep crimson */
+.theme-netflix-dna kbd { background: var(--surface-2); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); font-size: 0.8em; }
+.theme-netflix-dna ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-netflix-dna ::-webkit-scrollbar-track { background: var(--bg); }
+.theme-netflix-dna ::-webkit-scrollbar-thumb { background: oklch(0.35 0 0); border-radius: 6px; border: 2px solid var(--bg); }
+.theme-netflix-dna ::-webkit-scrollbar-thumb:hover { background: oklch(0.48 0 0); }
+.theme-netflix-dna .label-caps { color: var(--accent); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; } /* "N SERIES" red eyebrow */
+.theme-netflix-dna .themed-border { border-color: var(--accent); }
+.theme-netflix-dna hr { border: none; border-top: 1px solid oklch(1 0 0 / 10%); }
+
+/* alt mode: one-sheet poster — warm paper, red halo kept */
 .theme-netflix-dna.alt-mode {
-  --bg: oklch(0.98 0.000 0.0);
-  --surface: oklch(0.955 0.000 0.0);
-  --surface-2: oklch(0.92 0.000 0.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.975 0.004 60);
+  --surface: oklch(0.945 0.006 50);
+  --surface-2: oklch(0.905 0.008 45);
+  --fg: oklch(0.15 0.005 30);
+  --fg-muted: oklch(0.45 0.015 30);
+  --line: oklch(0.86 0.01 40);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  background-image: radial-gradient(ellipse at 50% -20%, oklch(0.88 0.05 27 / 55%), transparent 55%);
 }
+.theme-netflix-dna.alt-mode :is(a, button, input, select, textarea, [tabindex]):focus-visible { outline-color: oklch(0.15 0.005 30); }
+.theme-netflix-dna.alt-mode tbody td { border-bottom-color: oklch(0 0 0 / 8%); }
+.theme-netflix-dna.alt-mode tbody tr:hover td { background: oklch(0 0 0 / 5%); }
+.theme-netflix-dna.alt-mode input, .theme-netflix-dna.alt-mode select, .theme-netflix-dna.alt-mode textarea { background: oklch(0 0 0 / 5%); border-color: oklch(0 0 0 / 20%); }
+.theme-netflix-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.72 0.01 40); border-color: var(--bg); }
+.theme-netflix-dna.alt-mode hr { border-top-color: oklch(0 0 0 / 10%); }

@@ -50,13 +50,33 @@
 .theme-arsenal button { border-radius: 0; }
 .theme-arsenal ::selection { background: var(--accent-2); color: #04041c; }
 
+/* depth */
+.theme-arsenal thead th { background: var(--accent); color: oklch(1 0 0); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78em; }
+.theme-arsenal td { border-bottom: 1px solid var(--line); }
+.theme-arsenal tbody tr:hover { background: oklch(0.419 0.168 27.4 / 7%); }
+.theme-arsenal a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 2px; }
+.theme-arsenal a:hover { color: oklch(0.130 0.054 275.9); text-decoration-color: var(--accent); }
+.theme-arsenal ::selection { background: var(--accent); color: oklch(1 0 0); }
+.theme-arsenal input, .theme-arsenal select, .theme-arsenal textarea { border-radius: 0; }
+.theme-arsenal input:focus-visible, .theme-arsenal select:focus-visible, .theme-arsenal textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
+.theme-arsenal kbd { background: oklch(1 0 0); border: 1px solid oklch(0.130 0.054 275.9); border-bottom-width: 3px; border-radius: 0; padding: 0.1em 0.45em; font-family: var(--font-mono); }
+.theme-arsenal ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-arsenal ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-arsenal ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 0; }
+.theme-arsenal ::-webkit-scrollbar-thumb:hover { background: oklch(0.130 0.054 275.9); }
+.theme-arsenal .label-caps { color: var(--accent); }
+/* white sleeves: hover inverts the shirt */
+.theme-arsenal button:hover { background: oklch(1 0 0); color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
+.theme-arsenal .themed-border { border-left: 6px solid var(--accent); }
+
 /* alt mode: auto-derived dark variant */
 .theme-arsenal.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
+  /* north london night — navy away, cannon red still fires */
+  --bg: oklch(0.160 0.045 276.0);
+  --surface: oklch(0.200 0.052 276.0);
+  --surface-2: oklch(0.242 0.058 276.0);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
+  --fg-muted: oklch(0.72 0.03 276);
   --line: oklch(1 0 0 / 14%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
@@ -64,3 +84,7 @@
   --accent: oklch(0.62 0.168 27.4);
   --accent-fg: oklch(1 0 0);
 }
+.theme-arsenal.alt-mode a:hover { color: oklch(1 0 0); }
+.theme-arsenal.alt-mode kbd { background: var(--surface-2); border-color: oklch(0.697 0.135 231.6); color: var(--fg); }
+.theme-arsenal.alt-mode tbody tr:hover { background: oklch(0.62 0.168 27.4 / 12%); }
+.theme-arsenal.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.697 0.135 231.6); }

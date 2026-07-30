@@ -49,17 +49,42 @@
 .theme-real-madrid-dna h1::after { content: ""; display: block; height: 2px; width: 7rem; margin-top: 0.7rem; background: linear-gradient(90deg, #c7a24a, transparent); }
 .theme-real-madrid-dna .label-caps { color: #c7a24a; }
 
+/* depth */
+.theme-real-madrid-dna thead th { color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.75em; font-weight: 600; border-bottom: 3px double #c7a24a; }
+.theme-real-madrid-dna td { border-bottom: 1px solid var(--line); }
+.theme-real-madrid-dna tbody tr:hover { background: oklch(0.965 0.012 92); }
+.theme-real-madrid-dna a { color: var(--accent); text-underline-offset: 3px; text-decoration-color: #c7a24a; }
+.theme-real-madrid-dna a:hover { text-decoration-thickness: 2px; }
+.theme-real-madrid-dna ::selection { background: oklch(0.297 0.096 261.4); color: oklch(1 0 0); }
+.theme-real-madrid-dna input:focus-visible, .theme-real-madrid-dna select:focus-visible, .theme-real-madrid-dna textarea:focus-visible { outline: 1px solid #c7a24a; outline-offset: 2px; border-color: var(--accent); }
+.theme-real-madrid-dna kbd { background: var(--surface); border: 1px solid #c7a24a; border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); color: var(--accent); }
+.theme-real-madrid-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-real-madrid-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-real-madrid-dna ::-webkit-scrollbar-thumb { background: oklch(0.297 0.096 261.4); border-radius: 5px; border: 2px solid var(--surface); }
+.theme-real-madrid-dna ::-webkit-scrollbar-thumb:hover { background: #c7a24a; }
+/* trophy-cabinet frame: hairline gold rule floated inside the border */
+.theme-real-madrid-dna .themed-border { border-color: #c7a24a; outline: 1px solid oklch(0.729 0.115 86.3 / 40%); outline-offset: 3px; }
+.theme-real-madrid-dna button:hover { box-shadow: 0 0 0 1px #c7a24a; }
+
 /* alt mode: auto-derived dark variant */
 .theme-real-madrid-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
+  /* Bernabéu night — regal navy dark, gold floodlights */
+  --bg: oklch(0.170 0.035 264.0);
+  --surface: oklch(0.210 0.042 264.0);
+  --surface-2: oklch(0.252 0.050 264.0);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --fg-muted: oklch(0.72 0.025 90);
+  --line: oklch(0.729 0.115 86.3 / 22%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.100 261.4);
-  --accent-fg: oklch(0.13 0 0);
+  --accent: oklch(0.729 0.115 86.3);
+  --accent-fg: oklch(0.17 0.035 264.0);
 }
+.theme-real-madrid-dna.alt-mode h1 { color: oklch(0.85 0.10 88); }
+.theme-real-madrid-dna.alt-mode a { color: oklch(0.85 0.10 88); }
+.theme-real-madrid-dna.alt-mode thead th { color: oklch(0.85 0.10 88); }
+.theme-real-madrid-dna.alt-mode tbody tr:hover { background: oklch(0.24 0.045 264); }
+.theme-real-madrid-dna.alt-mode kbd { color: oklch(0.85 0.10 88); }
+.theme-real-madrid-dna.alt-mode ::selection { background: #c7a24a; color: oklch(0.15 0.03 264); }
+.theme-real-madrid-dna.alt-mode ::-webkit-scrollbar-thumb { background: #c7a24a; border-color: var(--surface); }

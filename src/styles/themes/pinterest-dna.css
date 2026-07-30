@@ -46,11 +46,32 @@
 .theme-pinterest-dna h1 { font-weight: 700; }
 .theme-pinterest-dna button:hover { transform: scale(1.03); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-pinterest-dna thead th { font-weight: 700; color: var(--fg); border-bottom: 2px solid var(--line); }
+.theme-pinterest-dna td { border-bottom: 1px solid var(--line); }
+.theme-pinterest-dna tbody tr:hover { background: var(--surface); }
+.theme-pinterest-dna a { color: var(--fg); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+.theme-pinterest-dna a:hover { color: var(--accent); }
+.theme-pinterest-dna input, .theme-pinterest-dna select { background: var(--bg); border: 2px solid var(--line); border-radius: var(--radius-pill); }
+.theme-pinterest-dna textarea { background: var(--bg); border: 2px solid var(--line); border-radius: var(--radius-lg); }
+.theme-pinterest-dna input:focus-visible, .theme-pinterest-dna textarea:focus-visible, .theme-pinterest-dna select:focus-visible { outline: none; border-color: oklch(0.7 0.11 240); box-shadow: 0 0 0 2px oklch(0.7 0.11 240 / 45%); } /* Pinterest's blue focus halo */
+.theme-pinterest-dna kbd { font-family: var(--font-body); font-size: 0.85em; background: var(--surface-2); border-radius: var(--radius-pill); padding: 0.1em 0.55em; }
+.theme-pinterest-dna ::selection { background: oklch(0.9 0.05 25); }
+.theme-pinterest-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-pinterest-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-pinterest-dna ::-webkit-scrollbar-thumb { background: oklch(0.8 0 0); border-radius: 5px; }
+.theme-pinterest-dna img { border-radius: var(--radius); } /* every image is a pin */
+.theme-pinterest-dna .label-caps { color: var(--fg-muted); font-weight: 600; }
+.theme-pinterest-dna .themed-border { border-radius: var(--radius); transition: box-shadow 150ms; }
+.theme-pinterest-dna .themed-border:hover { box-shadow: var(--shadow-2); } /* pin lift */
+.theme-pinterest-dna button:active { transform: scale(0.94); }
+
+/* alt mode: Pinterest dark — neutral gallery black, red stays saturated */
 .theme-pinterest-dna.alt-mode {
   --bg: oklch(0.145 0.000 0.0);
   --surface: oklch(0.185 0.000 0.0);
   --surface-2: oklch(0.225 0.000 0.0);
+  --accent: oklch(0.62 0.24 25.5);
   --fg: oklch(0.97 0.005 90);
   --fg-muted: oklch(0.70 0.01 90);
   --line: oklch(1 0 0 / 14%);
@@ -58,3 +79,5 @@
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-pinterest-dna.alt-mode ::selection { background: oklch(0.42 0.12 25); }
+.theme-pinterest-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.4 0 0); }

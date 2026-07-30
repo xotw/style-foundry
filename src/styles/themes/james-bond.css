@@ -1,0 +1,49 @@
+/* James Bond — tuxedo black and white, gunbarrel gold precision */
+.theme-james-bond {
+  --bg: oklch(0.159 0 0);
+  --surface: oklch(0.200 0 0);
+  --surface-2: oklch(0.248 0 0);
+  --fg: oklch(0.956 0.006 84.6);
+  --fg-muted: oklch(0.644 0.008 88.7);
+  --accent: oklch(0.956 0.006 84.6);
+  --accent-fg: oklch(0.159 0 0);
+  --accent-2: oklch(0.691 0.088 80.7);
+  --line: oklch(1 0 0 / 16%);
+  --success: oklch(0.550 0.052 144.8);
+  --warning: oklch(0.691 0.088 80.7);
+  --danger: oklch(0.420 0.148 26.4);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 9999px;
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "League Spartan", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.02em;
+  --label-transform: uppercase;
+  --label-tracking: 0.22em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-james-bond h1,
+.theme-james-bond h2,
+.theme-james-bond h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-james-bond { background-image: radial-gradient(circle at 88% 12%, transparent 58px, oklch(1 0 0 / 5%) 58px 60px, transparent 60px 74px, oklch(1 0 0 / 5%) 74px 76px, transparent 76px 90px, oklch(1 0 0 / 4%) 90px 92px, transparent 92px); }
+.theme-james-bond h1, .theme-james-bond h2 { text-transform: uppercase; font-weight: 700; }
+.theme-james-bond h1::after { content: ""; display: block; height: 2px; width: 5rem; margin-top: 0.7rem; background: var(--accent-2); }
+.theme-james-bond button { letter-spacing: 0.14em; }
+

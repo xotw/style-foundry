@@ -50,16 +50,45 @@
 .theme-atletico-madrid h1 { color: var(--accent-2); font-weight: 700; }
 .theme-atletico-madrid h1 em, .theme-atletico-madrid h2 { color: var(--accent); }
 
+/* depth */
+.theme-atletico-madrid thead th { background: var(--accent-2); color: oklch(1 0 0); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; }
+.theme-atletico-madrid td { border-bottom: 1px solid var(--line); }
+/* rojiblanco pinstripes wash over the hovered row */
+.theme-atletico-madrid tbody tr:hover { background: repeating-linear-gradient(90deg, oklch(0.591 0.234 27.3 / 8%) 0 12px, transparent 12px 24px); }
+.theme-atletico-madrid a { color: var(--accent); text-underline-offset: 3px; text-decoration-color: oklch(0.328 0.117 276.6 / 40%); }
+.theme-atletico-madrid a:hover { text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.theme-atletico-madrid ::selection { background: var(--accent); color: oklch(1 0 0); }
+.theme-atletico-madrid input, .theme-atletico-madrid select, .theme-atletico-madrid textarea { border-radius: var(--radius-sm); }
+.theme-atletico-madrid input:focus-visible, .theme-atletico-madrid select:focus-visible, .theme-atletico-madrid textarea:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 1px; }
+.theme-atletico-madrid kbd { background: oklch(1 0 0); border: 1px solid var(--accent-2); border-bottom-width: 3px; border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); color: var(--accent-2); }
+.theme-atletico-madrid ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-atletico-madrid ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-atletico-madrid ::-webkit-scrollbar-thumb { background: var(--accent-2); border-radius: 5px; border: 2px solid var(--surface-2); }
+.theme-atletico-madrid ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-atletico-madrid .label-caps { color: var(--accent); }
+/* shirt pinstripes on framed panels */
+.theme-atletico-madrid .themed-border { border-image: repeating-linear-gradient(90deg, oklch(0.591 0.234 27.3) 0 8px, oklch(1 0 0) 8px 16px) 1; }
+.theme-atletico-madrid button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived dark variant */
 .theme-atletico-madrid.alt-mode {
-  --bg: oklch(0.145 0.003 67.8);
-  --surface: oklch(0.185 0.003 67.8);
-  --surface-2: oklch(0.225 0.003 67.8);
+  /* colchonero night — Metropolitano navy, red still burning */
+  --bg: oklch(0.180 0.048 276.0);
+  --surface: oklch(0.220 0.055 276.0);
+  --surface-2: oklch(0.262 0.062 276.0);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
+  --fg-muted: oklch(0.72 0.03 276);
   --line: oklch(1 0 0 / 14%);
+  --accent: oklch(0.62 0.220 27.3);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
   background-image: none;
 }
+.theme-atletico-madrid.alt-mode h1 { color: oklch(1 0 0); }
+.theme-atletico-madrid.alt-mode thead th { background: oklch(0.30 0.09 276); }
+.theme-atletico-madrid.alt-mode a { color: oklch(0.70 0.19 27); text-decoration-color: oklch(1 0 0 / 30%); }
+.theme-atletico-madrid.alt-mode kbd { background: var(--surface-2); border-color: oklch(0.70 0.19 27); color: var(--fg); }
+.theme-atletico-madrid.alt-mode tbody tr:hover { background: repeating-linear-gradient(90deg, oklch(0.62 0.22 27 / 12%) 0 12px, transparent 12px 24px); }
+.theme-atletico-madrid.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.62 0.22 27); }
+.theme-atletico-madrid.alt-mode .label-caps { color: oklch(0.70 0.19 27); }

@@ -7,7 +7,7 @@
   --fg-muted: oklch(0.743 0.059 303.2);
   --accent: oklch(0.828 0.163 80.2);
   --accent-fg: oklch(0.245 0.085 304.9);
-  --accent-2: oklch(0.540 0.185 298.6);
+  --accent-2: oklch(0.430 0.180 303.0); /* true Lakers purple #552583 */
   --line: oklch(1 0 0 / 14%);
   --success: oklch(0.615 0.143 147.4);
   --warning: oklch(0.788 0.151 74.9);
@@ -49,18 +49,49 @@
 .theme-la-lakers { background-image: radial-gradient(ellipse at 50% -10%, oklch(0.6 0.15 90 / 18%), transparent 50%); }
 .theme-la-lakers h1 { background: linear-gradient(95deg, #fdb927, #e2a51f); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-la-lakers ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-la-lakers a { color: var(--accent); text-decoration-color: color-mix(in oklab, var(--accent) 55%, transparent); text-underline-offset: 3px; }
+.theme-la-lakers a:hover { color: #ffffff; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.theme-la-lakers thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; color: var(--accent); background: oklch(0.195 0.070 301); border-bottom: 2px solid var(--accent); }
+.theme-la-lakers td { border-bottom: 1px solid var(--line); }
+.theme-la-lakers tbody tr:hover { background: oklch(0.828 0.163 80.2 / 8%); }
+.theme-la-lakers input, .theme-la-lakers select, .theme-la-lakers textarea { background: oklch(0.19 0.068 301); border: 1px solid var(--line); caret-color: var(--accent); }
+.theme-la-lakers input:focus-visible, .theme-la-lakers select:focus-visible, .theme-la-lakers textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px oklch(0.828 0.163 80.2 / 25%), 0 0 16px oklch(0.828 0.163 80.2 / 20%); }
+/* championship-ring plate */
+.theme-la-lakers kbd { font-family: var(--font-display); font-weight: 700; background: linear-gradient(180deg, oklch(0.86 0.16 84), oklch(0.76 0.15 76)); color: oklch(0.245 0.085 304.9); border: 1px solid oklch(0.66 0.13 76); border-radius: var(--radius-sm); padding: 0.1em 0.5em; }
+.theme-la-lakers ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-la-lakers ::-webkit-scrollbar-track { background: oklch(0.19 0.068 301); }
+.theme-la-lakers ::-webkit-scrollbar-thumb { background: oklch(0.66 0.13 80); border: 2px solid oklch(0.19 0.068 301); border-radius: 999px; }
+.theme-la-lakers ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-la-lakers .label-caps { color: var(--accent); font-weight: 700; }
+.theme-la-lakers .themed-border { border-color: color-mix(in oklab, var(--accent) 55%, transparent); }
+/* physical: showtime spotlight — hover pulls the arena lights onto the button */
+.theme-la-lakers button:hover { box-shadow: 0 0 20px oklch(0.828 0.163 80.2 / 40%), var(--shadow-1); }
+.theme-la-lakers button:active { transform: translateY(1px); box-shadow: 0 0 8px oklch(0.828 0.163 80.2 / 30%); }
+
+/* alt mode: sunday whites — the white home kit, purple ink, gold trim */
 .theme-la-lakers.alt-mode {
-  --bg: oklch(0.98 0.012 301.3);
-  --surface: oklch(0.955 0.015 301.3);
-  --surface-2: oklch(0.92 0.020 301.3);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.98 0.008 301.3);
+  --surface: oklch(0.955 0.012 301.3);
+  --surface-2: oklch(0.92 0.016 301.3);
+  --fg: oklch(0.28 0.11 303);
+  --fg-muted: oklch(0.46 0.09 303);
+  --line: oklch(0.87 0.014 301);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   --accent: oklch(0.52 0.163 80.2);
   --accent-fg: oklch(1 0 0);
   background-image: none;
+  box-shadow: inset 0 4px 0 oklch(0.828 0.163 80.2);
 }
+.theme-la-lakers.alt-mode h1 { background: linear-gradient(95deg, oklch(0.43 0.18 303), oklch(0.35 0.16 303)); -webkit-background-clip: text; background-clip: text; }
+.theme-la-lakers.alt-mode a { color: oklch(0.46 0.15 78); }
+.theme-la-lakers.alt-mode a:hover { color: oklch(0.35 0.16 303); }
+.theme-la-lakers.alt-mode thead th { color: oklch(0.46 0.15 78); background: oklch(0.94 0.012 301); }
+.theme-la-lakers.alt-mode .label-caps { color: oklch(0.46 0.15 78); }
+.theme-la-lakers.alt-mode kbd { color: oklch(0.28 0.11 303); }
+.theme-la-lakers.alt-mode input, .theme-la-lakers.alt-mode select, .theme-la-lakers.alt-mode textarea { background: #ffffff; }
+.theme-la-lakers.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.012 301); }
+.theme-la-lakers.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.60 0.13 80); border-color: oklch(0.94 0.012 301); }

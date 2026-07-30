@@ -11,7 +11,7 @@
   --line: oklch(0.882 0.004 197.1);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
-  --danger: oklch(0.772 0.174 64.6);
+  --danger: oklch(0.505 0.190 29.0);
   --radius: 0.5rem;
   --radius-sm: 0.25rem;
   --radius-lg: 0.5rem;
@@ -46,15 +46,37 @@
 .theme-amazon-dna h1::after { content: ""; display: block; width: 4.5rem; height: 4px; margin-top: 0.5rem; background: var(--accent); border-radius: 999px 999px 999px 0; }
 .theme-amazon-dna button { font-weight: 600; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-amazon-dna thead th { background: oklch(0.280 0.020 250); color: oklch(0.98 0 0); font-weight: 700; font-size: 0.78rem; }
+.theme-amazon-dna td { border-bottom: 1px solid var(--line); }
+.theme-amazon-dna tbody tr:nth-child(even) { background: var(--surface); }
+.theme-amazon-dna input, .theme-amazon-dna select, .theme-amazon-dna textarea { border: 1px solid oklch(0.65 0.010 197); border-radius: var(--radius-sm); background: oklch(1 0 0); }
+.theme-amazon-dna input:focus-visible, .theme-amazon-dna select:focus-visible, .theme-amazon-dna textarea:focus-visible { outline: none; border-color: oklch(0.68 0.140 60); box-shadow: 0 0 0 3px oklch(0.772 0.174 64.6 / 40%); }
+.theme-amazon-dna a { color: oklch(0.450 0.090 220); text-decoration: none; }
+.theme-amazon-dna a:hover { color: oklch(0.560 0.150 50); text-decoration: underline; }
+.theme-amazon-dna ::selection { background: oklch(0.900 0.080 65); }
+.theme-amazon-dna ::-webkit-scrollbar { width: 12px; }
+.theme-amazon-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-amazon-dna ::-webkit-scrollbar-thumb { background: oklch(0.70 0.010 197); border-radius: 6px; border: 2px solid var(--surface); }
+.theme-amazon-dna kbd { font-family: var(--font-mono); font-size: 0.72em; background: var(--surface-2); border: 1px solid oklch(0.75 0.010 197); border-bottom-width: 2px; border-radius: 4px; padding: 0.1em 0.4em; }
+.theme-amazon-dna .label-caps { color: var(--fg-muted); font-weight: 700; }
+.theme-amazon-dna .themed-border { border-color: var(--accent); }
+.theme-amazon-dna button { background-image: linear-gradient(oklch(1 0 0 / 14%), transparent); }
+.theme-amazon-dna button:active { background-image: linear-gradient(oklch(0 0 0 / 8%), transparent); }
+
+/* alt mode: squid ink — the #232F3E nav navy as full surface */
 .theme-amazon-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
+  --bg: oklch(0.215 0.022 250.0);
+  --surface: oklch(0.255 0.024 250.0);
+  --surface-2: oklch(0.295 0.026 250.0);
+  --fg: oklch(0.955 0.005 90);
+  --fg-muted: oklch(0.72 0.015 240);
   --line: oklch(1 0 0 / 14%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-amazon-dna.alt-mode thead th { background: oklch(0.165 0.020 250); }
+.theme-amazon-dna.alt-mode input, .theme-amazon-dna.alt-mode select, .theme-amazon-dna.alt-mode textarea { background: var(--surface); border-color: oklch(0.45 0.020 250); color: var(--fg); }
+.theme-amazon-dna.alt-mode a { color: oklch(0.720 0.090 220); }
+.theme-amazon-dna.alt-mode ::selection { background: oklch(0.55 0.12 65); }

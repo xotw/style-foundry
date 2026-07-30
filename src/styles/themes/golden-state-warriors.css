@@ -49,17 +49,48 @@
 .theme-golden-state-warriors h1 { color: var(--accent); }
 .theme-golden-state-warriors h1::after { content: ""; display: block; height: 6px; width: 7rem; margin-top: 0.6rem; background: var(--accent); border-radius: 999px 999px 0 0; clip-path: ellipse(50% 100% at 50% 100%); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-golden-state-warriors ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-golden-state-warriors a { color: var(--accent); text-decoration-color: color-mix(in oklab, var(--accent) 50%, transparent); text-underline-offset: 3px; }
+.theme-golden-state-warriors a:hover { color: #ffffff; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+/* bridge deck: heavy gold rail over hairline */
+.theme-golden-state-warriors thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; color: var(--fg-muted); background: oklch(0.235 0.080 262); border-top: 1px solid var(--line); border-bottom: 3px solid var(--accent); }
+.theme-golden-state-warriors td { border-bottom: 1px solid var(--line); }
+.theme-golden-state-warriors tbody tr:hover { background: oklch(0.857 0.165 86.5 / 8%); }
+.theme-golden-state-warriors input, .theme-golden-state-warriors select, .theme-golden-state-warriors textarea { background: oklch(0.23 0.078 262); border: 1px solid var(--line); caret-color: var(--accent); }
+.theme-golden-state-warriors input:focus-visible, .theme-golden-state-warriors select:focus-visible, .theme-golden-state-warriors textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px oklch(0.857 0.165 86.5 / 25%); }
+/* circle-logo roundel kbd */
+.theme-golden-state-warriors kbd { font-family: var(--font-display); font-weight: 700; background: oklch(0.22 0.075 262); color: var(--accent); border: 2px solid var(--accent); border-radius: var(--radius-pill); padding: 0.1em 0.55em; }
+.theme-golden-state-warriors ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-golden-state-warriors ::-webkit-scrollbar-track { background: oklch(0.23 0.078 262); }
+.theme-golden-state-warriors ::-webkit-scrollbar-thumb { background: oklch(0.66 0.13 87); border: 2px solid oklch(0.23 0.078 262); border-radius: 999px; }
+.theme-golden-state-warriors ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-golden-state-warriors .label-caps { color: var(--accent); font-weight: 700; }
+/* physical: suspension cables — fine vertical strands inside featured borders */
+.theme-golden-state-warriors .themed-border { border-color: color-mix(in oklab, var(--accent) 50%, transparent); background-image: repeating-linear-gradient(90deg, oklch(1 0 0 / 4%) 0 1px, transparent 1px 16px); }
+.theme-golden-state-warriors button:hover { box-shadow: inset 0 -3px 0 var(--accent), var(--shadow-1); }
+.theme-golden-state-warriors button:active { transform: translateY(1px); }
+
+/* alt mode: the bay whites — home kit, navy ink, gold deepened for daylight */
 .theme-golden-state-warriors.alt-mode {
   --bg: oklch(0.98 0.012 262.0);
   --surface: oklch(0.955 0.015 262.0);
   --surface-2: oklch(0.92 0.020 262.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --fg: oklch(0.25 0.07 262);
+  --fg-muted: oklch(0.44 0.06 262);
+  --line: oklch(0.87 0.012 262);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   --accent: oklch(0.52 0.165 86.5);
   --accent-fg: oklch(1 0 0);
 }
+.theme-golden-state-warriors.alt-mode a { color: oklch(0.47 0.14 87); }
+.theme-golden-state-warriors.alt-mode a:hover { color: oklch(0.25 0.07 262); }
+.theme-golden-state-warriors.alt-mode thead th { background: oklch(0.94 0.012 262); }
+.theme-golden-state-warriors.alt-mode kbd { background: #ffffff; color: oklch(0.42 0.14 87); border-color: oklch(0.52 0.165 86.5); }
+.theme-golden-state-warriors.alt-mode .label-caps { color: oklch(0.47 0.14 87); }
+.theme-golden-state-warriors.alt-mode .themed-border { background-image: repeating-linear-gradient(90deg, oklch(0.25 0.07 262 / 5%) 0 1px, transparent 1px 16px); }
+.theme-golden-state-warriors.alt-mode input, .theme-golden-state-warriors.alt-mode select, .theme-golden-state-warriors.alt-mode textarea { background: #ffffff; }
+.theme-golden-state-warriors.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.012 262); }
+.theme-golden-state-warriors.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.62 0.13 87); border-color: oklch(0.94 0.012 262); }

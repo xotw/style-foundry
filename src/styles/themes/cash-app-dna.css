@@ -61,6 +61,24 @@
 .theme-cash-app-dna button { text-transform: uppercase; letter-spacing: 0.04em; }
 .theme-cash-app-dna button:hover { box-shadow: 0 0 24px color-mix(in oklab, var(--accent) 60%, transparent); }
 
+/* depth */
+.theme-cash-app-dna thead th { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-cash-app-dna td { border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.theme-cash-app-dna tbody tr:hover { background: color-mix(in oklab, var(--accent) 7%, var(--surface)); }
+.theme-cash-app-dna input, .theme-cash-app-dna select, .theme-cash-app-dna textarea { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); transition: border-color 120ms ease, box-shadow 120ms ease; }
+.theme-cash-app-dna input:focus-visible, .theme-cash-app-dna select:focus-visible, .theme-cash-app-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-cash-app-dna a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.theme-cash-app-dna a:hover { text-decoration: underline; text-underline-offset: 3px; text-shadow: 0 0 12px color-mix(in oklab, var(--accent) 55%, transparent); }
+.theme-cash-app-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-cash-app-dna ::-webkit-scrollbar { width: 8px; }
+.theme-cash-app-dna ::-webkit-scrollbar-track { background: var(--bg); }
+.theme-cash-app-dna ::-webkit-scrollbar-thumb { background: var(--surface-2); border-radius: 999px; }
+.theme-cash-app-dna ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-cash-app-dna kbd { font-family: var(--font-mono); font-size: 0.72em; color: var(--accent); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 0.1em 0.45em; }
+.theme-cash-app-dna .label-caps { font-family: var(--font-display); letter-spacing: 0.08em; }
+.theme-cash-app-dna .themed-border { border-color: var(--line); }
+.theme-cash-app-dna button:active { transform: scale(0.96); }
+
 /* alt mode: auto-derived light variant */
 .theme-cash-app-dna.alt-mode {
   --bg: oklch(0.98 0.000 0.0);

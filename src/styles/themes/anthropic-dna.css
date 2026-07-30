@@ -54,16 +54,41 @@
 .theme-anthropic-dna h1 { font-weight: 500; }
 .theme-anthropic-dna a { text-decoration: underline; text-underline-offset: 3px; }
 
+/* depth */
+.theme-anthropic-dna table { border-collapse: collapse; }
+.theme-anthropic-dna thead th { font-family: var(--font-display); font-weight: 600; border-top: 2px solid var(--fg); border-bottom: 1px solid var(--fg); background: transparent; }
+.theme-anthropic-dna td { border-bottom: 1px solid var(--line); }
+.theme-anthropic-dna tbody tr:last-child td { border-bottom: 2px solid var(--fg); }
+.theme-anthropic-dna tbody tr:hover { background: var(--surface); }
+.theme-anthropic-dna a { color: var(--accent); text-decoration-color: color-mix(in oklab, var(--accent) 45%, transparent); text-decoration-thickness: 1px; transition: text-decoration-color 150ms ease; }
+.theme-anthropic-dna a:hover { text-decoration-color: var(--accent); }
+.theme-anthropic-dna input, .theme-anthropic-dna select, .theme-anthropic-dna textarea { background: oklch(1 0 0 / 60%); border: 1px solid var(--line); transition: border-color 150ms ease, box-shadow 150ms ease; }
+.theme-anthropic-dna input:focus-visible, .theme-anthropic-dna select:focus-visible, .theme-anthropic-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-anthropic-dna kbd { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: 0 1px 0 var(--line); font-size: 0.78em; padding: 0.1em 0.4em; }
+.theme-anthropic-dna ::selection { background: oklch(0.672 0.131 38.8 / 25%); }
+.theme-anthropic-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-anthropic-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-anthropic-dna ::-webkit-scrollbar-thumb { background: oklch(0.74 0.02 80); border-radius: var(--radius-pill); }
+.theme-anthropic-dna .label-caps { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.68rem; color: var(--fg-muted); }
+.theme-anthropic-dna .themed-border { border-color: var(--accent); }
+.theme-anthropic-dna button { transition: background 150ms ease, transform 150ms ease; }
+.theme-anthropic-dna button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived dark variant */
 .theme-anthropic-dna.alt-mode {
-  --bg: oklch(0.145 0.005 95.1);
-  --surface: oklch(0.185 0.005 95.1);
-  --surface-2: oklch(0.225 0.005 95.1);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.205 0.008 80);
+  --surface: oklch(0.245 0.010 80);
+  --surface-2: oklch(0.285 0.012 80);
+  --fg: oklch(0.930 0.012 90);
+  --fg-muted: oklch(0.680 0.015 85);
+  --line: oklch(1 0 0 / 13%);
+  --accent: oklch(0.720 0.130 40);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  background-image: radial-gradient(oklch(1 0 0 / 4%) 1px, transparent 1px);
+  background-size: 6px 6px;
 }
+.theme-anthropic-dna.alt-mode input, .theme-anthropic-dna.alt-mode select, .theme-anthropic-dna.alt-mode textarea { background: oklch(0 0 0 / 25%); }
+.theme-anthropic-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.45 0.015 80); }
+.theme-anthropic-dna.alt-mode ::selection { background: oklch(0.72 0.13 40 / 30%); }

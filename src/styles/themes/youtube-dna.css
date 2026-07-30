@@ -46,15 +46,37 @@
 .theme-youtube-dna h1, .theme-youtube-dna h2 { text-transform: uppercase; font-weight: 700; }
 .theme-youtube-dna button { font-weight: 600; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-youtube-dna button { border-radius: var(--radius-pill); }
+.theme-youtube-dna button:active { transform: scale(0.97); }
+.theme-youtube-dna input, .theme-youtube-dna select { border-radius: var(--radius-pill); }
+.theme-youtube-dna input:focus-visible, .theme-youtube-dna select:focus-visible, .theme-youtube-dna textarea:focus-visible { outline: none; border-color: oklch(0.520 0.150 255.0); box-shadow: 0 0 0 1px oklch(0.520 0.150 255.0); }
+.theme-youtube-dna thead th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-youtube-dna tbody td { border-bottom: 1px solid var(--line); }
+.theme-youtube-dna tbody tr:hover td { background: var(--surface-2); }
+.theme-youtube-dna a { color: oklch(0.480 0.170 255.0); text-decoration: none; }
+.theme-youtube-dna a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.theme-youtube-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-youtube-dna h2 { padding-bottom: 0.3rem; background: linear-gradient(90deg, var(--accent) 0 3.5rem, var(--line) 3.5rem) bottom left / 100% 3px no-repeat; }
+.theme-youtube-dna kbd { font-family: var(--font-mono); font-size: 0.78em; padding: 0.1em 0.5em; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--line); box-shadow: 0 1px 0 var(--line); }
+.theme-youtube-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-youtube-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-youtube-dna ::-webkit-scrollbar-thumb { background: oklch(0.75 0 0); border-radius: 999px; }
+.theme-youtube-dna .label-caps { font-family: var(--font-display); color: var(--fg); background: var(--surface-2); border-radius: var(--radius-pill); padding: 0.15em 0.7em; }
+.theme-youtube-dna .themed-border { border-color: var(--line); }
+
+/* alt mode: dark theme — true #0f0f0f player chrome */
 .theme-youtube-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
+  --bg: oklch(0.130 0.000 0.0);
+  --surface: oklch(0.190 0.000 0.0);
+  --surface-2: oklch(0.245 0.000 0.0);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
+  --fg-muted: oklch(0.72 0.01 90);
   --line: oklch(1 0 0 / 14%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-youtube-dna.alt-mode a { color: oklch(0.750 0.120 250.0); }
+.theme-youtube-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.45 0 0); }
+.theme-youtube-dna.alt-mode input:focus-visible, .theme-youtube-dna.alt-mode select:focus-visible, .theme-youtube-dna.alt-mode textarea:focus-visible { border-color: oklch(0.750 0.120 250.0); box-shadow: 0 0 0 1px oklch(0.750 0.120 250.0); }

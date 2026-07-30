@@ -46,15 +46,37 @@
 .theme-mcdonalds-dna h1 { font-weight: 700; color: var(--accent); }
 .theme-mcdonalds-dna button { font-weight: 700; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-mcdonalds-dna thead th { background: var(--accent-2); color: oklch(0.28 0.05 60); font-weight: 700; font-size: 0.78rem; }
+.theme-mcdonalds-dna td { border-bottom: 1px solid var(--line); }
+.theme-mcdonalds-dna tbody tr:hover { background: var(--surface); }
+.theme-mcdonalds-dna input, .theme-mcdonalds-dna select, .theme-mcdonalds-dna textarea { border: 2px solid var(--line); border-radius: var(--radius); background: oklch(1 0 0); transition: border-color 140ms ease, box-shadow 140ms ease; }
+.theme-mcdonalds-dna input:focus-visible, .theme-mcdonalds-dna select:focus-visible, .theme-mcdonalds-dna textarea:focus-visible { outline: none; border-color: var(--accent-2); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent-2) 45%, transparent); }
+.theme-mcdonalds-dna a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.theme-mcdonalds-dna a:hover { text-decoration: underline; text-decoration-color: var(--accent-2); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+.theme-mcdonalds-dna ::selection { background: var(--accent-2); color: oklch(0.28 0.05 60); }
+.theme-mcdonalds-dna ::-webkit-scrollbar { width: 12px; }
+.theme-mcdonalds-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-mcdonalds-dna ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 999px; border: 3px solid var(--surface); }
+.theme-mcdonalds-dna kbd { font-family: var(--font-display); font-size: 0.72em; font-weight: 700; background: var(--accent-2); color: oklch(0.28 0.05 60); border-bottom: 3px solid var(--accent); border-radius: 0.5em; padding: 0.1em 0.5em; }
+.theme-mcdonalds-dna .label-caps { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--accent); }
+.theme-mcdonalds-dna .themed-border { border-color: var(--accent-2); }
+.theme-mcdonalds-dna h2::after { content: ""; display: block; width: 3rem; height: 4px; margin-top: 0.4rem; background: var(--accent-2); border-radius: 999px; }
+.theme-mcdonalds-dna button:hover { transform: translateY(-1px); box-shadow: var(--shadow-2); }
+
+/* alt mode: late-night drive-thru — warm black menu board, arches glowing */
 .theme-mcdonalds-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
+  --bg: oklch(0.165 0.010 60.0);
+  --surface: oklch(0.205 0.014 70.0);
+  --surface-2: oklch(0.250 0.020 80.0);
+  --fg: oklch(0.960 0.015 90);
+  --fg-muted: oklch(0.72 0.020 80);
+  --accent: oklch(0.630 0.210 29.6);
   --line: oklch(1 0 0 / 14%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent-2) 55%, transparent);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%), 0 0 40px -10px oklch(0.857 0.165 86.5 / 25%);
 }
+.theme-mcdonalds-dna.alt-mode h1 { color: var(--accent-2); }
+.theme-mcdonalds-dna.alt-mode input, .theme-mcdonalds-dna.alt-mode select, .theme-mcdonalds-dna.alt-mode textarea { background: var(--surface); color: var(--fg); }

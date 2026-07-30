@@ -58,16 +58,53 @@
 .theme-skeuomorphism button { background-image: linear-gradient(180deg, oklch(1 0 0 / 35%), transparent 45%, oklch(0 0 0 / 8%)); box-shadow: inset 0 1px 0 oklch(1 0 0 / 70%), 0 1px 3px oklch(0 0 0 / 25%); }
 .theme-skeuomorphism button:active { background-image: linear-gradient(180deg, oklch(0 0 0 / 10%), transparent); box-shadow: inset 0 2px 4px oklch(0 0 0 / 25%); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-skeuomorphism thead th { background-image: linear-gradient(180deg, oklch(0.96 0.008 250), oklch(0.86 0.01 250)); border-bottom: 1px solid var(--line); box-shadow: inset 0 1px 0 oklch(1 0 0 / 90%); color: var(--fg-muted); font-size: 0.72em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; text-shadow: 0 1px 0 oklch(1 0 0 / 80%); }
+.theme-skeuomorphism td { border-bottom: 1px solid oklch(0.74 0.012 250); box-shadow: 0 1px 0 oklch(1 0 0 / 60%); }
+.theme-skeuomorphism tbody tr:nth-child(even) { background: oklch(0.9 0.008 250 / 50%); }
+.theme-skeuomorphism tbody tr:hover { background: oklch(0.85 0.05 245 / 30%); }
+.theme-skeuomorphism input, .theme-skeuomorphism textarea, .theme-skeuomorphism select { background: linear-gradient(180deg, oklch(0.9 0.008 250), oklch(0.97 0.006 250) 30%); border: 1px solid oklch(0.58 0.015 250); border-radius: var(--radius-sm); box-shadow: inset 0 2px 4px oklch(0.35 0.01 250 / 30%), 0 1px 0 oklch(1 0 0 / 80%); text-shadow: none; }
+.theme-skeuomorphism input:focus-visible, .theme-skeuomorphism textarea:focus-visible, .theme-skeuomorphism select:focus-visible { outline: none; border-color: oklch(0.55 0.14 245); box-shadow: inset 0 2px 4px oklch(0.35 0.01 250 / 25%), 0 0 0 3px oklch(0.55 0.14 245 / 30%); }
+.theme-skeuomorphism kbd { background: linear-gradient(180deg, oklch(0.97 0.006 250), oklch(0.85 0.01 250)); border: 1px solid oklch(0.55 0.012 250); border-bottom-width: 3px; border-radius: 0.35em; padding: 0.1em 0.5em; font-family: var(--font-mono); font-size: 0.85em; box-shadow: inset 0 1px 0 oklch(1 0 0 / 95%), 0 1px 2px oklch(0.3 0.01 250 / 35%); text-shadow: 0 1px 0 oklch(1 0 0 / 70%); }
+.theme-skeuomorphism a { color: oklch(0.45 0.14 245); font-weight: 600; text-decoration: underline; text-decoration-color: oklch(0.45 0.14 245 / 45%); text-underline-offset: 0.18em; }
+.theme-skeuomorphism a:hover { text-decoration-color: oklch(0.45 0.14 245); }
+.theme-skeuomorphism ::selection { background: oklch(0.55 0.14 245 / 30%); text-shadow: none; }
+.theme-skeuomorphism ::-webkit-scrollbar { width: 14px; height: 14px; }
+.theme-skeuomorphism ::-webkit-scrollbar-track { background: linear-gradient(90deg, oklch(0.72 0.012 250), oklch(0.8 0.01 250)); box-shadow: inset 1px 0 3px oklch(0.35 0.01 250 / 40%); }
+.theme-skeuomorphism ::-webkit-scrollbar-thumb { background: linear-gradient(90deg, oklch(0.95 0.006 250), oklch(0.78 0.01 250)); border: 1px solid oklch(0.55 0.012 250); border-radius: 7px; box-shadow: inset 0 1px 0 oklch(1 0 0 / 85%); }
+.theme-skeuomorphism ::-webkit-scrollbar-thumb:hover { background: linear-gradient(90deg, oklch(0.97 0.006 250), oklch(0.82 0.01 250)); }
+.theme-skeuomorphism .label-caps { color: var(--fg-muted); text-shadow: 0 1px 0 oklch(1 0 0 / 85%); }
+.theme-skeuomorphism .themed-border { border-color: var(--line); box-shadow: inset 0 1px 0 oklch(1 0 0 / 85%), 0 1px 0 oklch(1 0 0 / 55%); }
+
+/* alt mode: machined night — dark brushed aluminum, letterpress engraving */
 .theme-skeuomorphism.alt-mode {
-  --bg: oklch(0.145 0.012 250.0);
-  --surface: oklch(0.185 0.012 250.0);
-  --surface-2: oklch(0.225 0.012 250.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  --bg: oklch(0.3 0.01 250);
+  --surface: oklch(0.38 0.01 250);
+  --surface-2: oklch(0.34 0.01 250);
+  --fg: oklch(0.93 0.005 250);
+  --fg-muted: oklch(0.72 0.008 250);
+  --accent: oklch(0.65 0.14 245);
+  --accent-fg: oklch(0.15 0.02 245);
+  --line: oklch(0.18 0.01 250);
+  --shadow-1: inset 0 1px 0 oklch(1 0 0 / 14%), inset 0 -1px 0 oklch(0 0 0 / 35%), 0 1px 3px oklch(0 0 0 / 50%);
+  --shadow-2: inset 0 1px 0 oklch(1 0 0 / 16%), 0 6px 12px -3px oklch(0 0 0 / 55%);
+  --shadow-3: inset 0 2px 0 oklch(1 0 0 / 16%), 0 16px 32px -10px oklch(0 0 0 / 65%);
+  --glow: inset 0 2px 5px oklch(0 0 0 / 60%);
+  background-image:
+    repeating-linear-gradient(0deg, oklch(1 0 0 / 4%) 0 1px, transparent 1px 2px),
+    repeating-linear-gradient(90deg, oklch(0 0 0 / 8%) 0 1px, transparent 1px 2px),
+    linear-gradient(180deg, oklch(0.34 0.01 250), oklch(0.24 0.01 250));
+  text-shadow: 0 -1px 0 oklch(0 0 0 / 55%);
 }
+.theme-skeuomorphism.alt-mode button { background-image: linear-gradient(180deg, oklch(1 0 0 / 14%), transparent 45%, oklch(0 0 0 / 22%)); box-shadow: inset 0 1px 0 oklch(1 0 0 / 22%), 0 1px 3px oklch(0 0 0 / 45%); }
+.theme-skeuomorphism.alt-mode button:active { background-image: linear-gradient(180deg, oklch(0 0 0 / 25%), transparent); box-shadow: inset 0 2px 4px oklch(0 0 0 / 55%); }
+.theme-skeuomorphism.alt-mode thead th { background-image: linear-gradient(180deg, oklch(0.42 0.01 250), oklch(0.33 0.01 250)); box-shadow: inset 0 1px 0 oklch(1 0 0 / 14%); text-shadow: 0 -1px 0 oklch(0 0 0 / 55%); }
+.theme-skeuomorphism.alt-mode td { border-bottom-color: oklch(0.22 0.01 250); box-shadow: 0 1px 0 oklch(1 0 0 / 8%); }
+.theme-skeuomorphism.alt-mode tbody tr:nth-child(even) { background: oklch(0.33 0.01 250 / 60%); }
+.theme-skeuomorphism.alt-mode tbody tr:hover { background: oklch(0.4 0.04 245 / 30%); }
+.theme-skeuomorphism.alt-mode input, .theme-skeuomorphism.alt-mode textarea, .theme-skeuomorphism.alt-mode select { background: linear-gradient(180deg, oklch(0.24 0.01 250), oklch(0.3 0.01 250) 30%); border-color: oklch(0.16 0.01 250); color: var(--fg); box-shadow: inset 0 2px 4px oklch(0 0 0 / 45%), 0 1px 0 oklch(1 0 0 / 10%); }
+.theme-skeuomorphism.alt-mode kbd { background: linear-gradient(180deg, oklch(0.42 0.01 250), oklch(0.3 0.01 250)); border-color: oklch(0.16 0.01 250); box-shadow: inset 0 1px 0 oklch(1 0 0 / 18%), 0 1px 2px oklch(0 0 0 / 50%); text-shadow: 0 -1px 0 oklch(0 0 0 / 60%); }
+.theme-skeuomorphism.alt-mode a { color: oklch(0.72 0.13 240); text-decoration-color: oklch(0.72 0.13 240 / 45%); }
+.theme-skeuomorphism.alt-mode ::-webkit-scrollbar-track { background: linear-gradient(90deg, oklch(0.2 0.01 250), oklch(0.26 0.01 250)); box-shadow: inset 1px 0 3px oklch(0 0 0 / 55%); }
+.theme-skeuomorphism.alt-mode ::-webkit-scrollbar-thumb { background: linear-gradient(90deg, oklch(0.46 0.01 250), oklch(0.34 0.01 250)); border-color: oklch(0.16 0.01 250); box-shadow: inset 0 1px 0 oklch(1 0 0 / 20%); }
+.theme-skeuomorphism.alt-mode .label-caps { text-shadow: 0 -1px 0 oklch(0 0 0 / 60%); }

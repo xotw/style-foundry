@@ -11,7 +11,7 @@
   --line: oklch(0.933 0.003 106.5);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
-  --danger: oklch(0.606 0.167 252.7);
+  --danger: oklch(0.645 0.185 25.9);
   --radius: 0.25rem;
   --radius-sm: 0.25rem;
   --radius-lg: 0.5rem;
@@ -47,15 +47,38 @@
 .theme-notion-dna a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
 .theme-notion-dna ::selection { background: oklch(0.85 0.06 240 / 60%); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-notion-dna table { border-collapse: collapse; }
+.theme-notion-dna th, .theme-notion-dna td { border: 1px solid var(--line); }
+.theme-notion-dna thead th { background: var(--surface); color: var(--fg-muted); font-weight: 500; font-size: 0.8125rem; }
+.theme-notion-dna tbody tr:hover { background: color-mix(in oklab, var(--surface) 70%, transparent); }
+.theme-notion-dna input, .theme-notion-dna select, .theme-notion-dna textarea { background: var(--bg); border: 1px solid var(--line); transition: border-color 100ms ease, box-shadow 100ms ease; }
+.theme-notion-dna input:focus-visible, .theme-notion-dna select:focus-visible, .theme-notion-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent) 25%, transparent); }
+.theme-notion-dna kbd { font-size: 0.75em; background: var(--surface); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 3px; padding: 0.1em 0.4em; color: var(--fg-muted); }
+.theme-notion-dna a:hover { background: var(--surface-2); }
+.theme-notion-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-notion-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-notion-dna ::-webkit-scrollbar-thumb { background: oklch(0.85 0.005 95); border-radius: var(--radius-pill); }
+.theme-notion-dna ::-webkit-scrollbar-thumb:hover { background: oklch(0.75 0.005 95); }
+.theme-notion-dna .label-caps { font-size: 0.6875rem; color: var(--fg-muted); letter-spacing: 0.04em; }
+.theme-notion-dna .themed-border { border-color: var(--line); }
+.theme-notion-dna button { transition: background 100ms ease; }
+.theme-notion-dna button:active { background: var(--surface-2); }
+.theme-notion-dna hr { border-color: var(--line); }
+
+/* alt mode: Notion dark — warm charcoal #191919, soft gray ink */
 .theme-notion-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.215 0 0);
+  --surface: oklch(0.255 0 0);
+  --surface-2: oklch(0.295 0 0);
+  --fg: oklch(0.880 0.005 95);
+  --fg-muted: oklch(0.620 0.005 95);
+  --line: oklch(1 0 0 / 10%);
+  --accent: oklch(0.660 0.130 250);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-notion-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.4 0 0); }
+.theme-notion-dna.alt-mode ::selection { background: oklch(0.5 0.1 250 / 45%); }
+.theme-notion-dna.alt-mode a { text-decoration-color: oklch(1 0 0 / 25%); }

@@ -50,17 +50,44 @@
 .theme-roma h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.7rem; border-block: 1px solid var(--accent); }
 .theme-roma h2::before { content: "SPQR "; font-size: 0.5em; color: var(--accent); letter-spacing: 0.3em; vertical-align: middle; }
 
+/* depth */
+.theme-roma thead th { color: var(--accent); font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.82em; border-bottom: 4px double var(--accent); }
+.theme-roma td { border-bottom: 1px solid var(--line); }
+.theme-roma tbody tr:hover { background: oklch(0.29 0.07 12); }
+.theme-roma a { color: var(--accent); text-underline-offset: 3px; text-decoration-color: oklch(0.72 0.12 80 / 45%); }
+.theme-roma a:hover { text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.theme-roma ::selection { background: oklch(0.827 0.170 83.1); color: oklch(0.190 0.048 9.6); }
+.theme-roma input, .theme-roma select, .theme-roma textarea { background: oklch(0.165 0.04 10); border-color: var(--line); }
+.theme-roma input:focus-visible, .theme-roma select:focus-visible, .theme-roma textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+/* incised stone tablet */
+.theme-roma kbd { background: oklch(0.25 0.05 12); border: 1px solid var(--line); border-radius: 0; padding: 0.1em 0.5em; font-family: var(--font-display); letter-spacing: 0.1em; color: var(--accent); box-shadow: inset 0 2px 3px oklch(0 0 0 / 45%); }
+.theme-roma ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-roma ::-webkit-scrollbar-track { background: oklch(0.165 0.04 10); }
+.theme-roma ::-webkit-scrollbar-thumb { background: oklch(0.60 0.12 82); border-radius: 5px; border: 2px solid oklch(0.165 0.04 10); }
+.theme-roma ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-roma .label-caps { color: var(--accent); letter-spacing: 0.22em; }
+/* imperial double-rule frame */
+.theme-roma .themed-border { border-style: double; border-width: 3px; border-color: var(--accent); }
+.theme-roma button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived light variant */
 .theme-roma.alt-mode {
-  --bg: oklch(0.98 0.012 9.6);
-  --surface: oklch(0.955 0.015 9.6);
-  --surface-2: oklch(0.92 0.020 9.6);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  /* Roman marble in daylight — warm travertine, garnet inscriptions */
+  --bg: oklch(0.972 0.010 80.0);
+  --surface: oklch(0.995 0.005 85.0);
+  --surface-2: oklch(0.935 0.015 78.0);
+  --fg: oklch(0.250 0.055 12.0);
+  --fg-muted: oklch(0.480 0.040 30.0);
+  --line: oklch(0.870 0.025 75.0);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   --accent: oklch(0.52 0.170 83.1);
   --accent-fg: oklch(1 0 0);
 }
+.theme-roma.alt-mode tbody tr:hover { background: oklch(0.437 0.169 17.9 / 8%); }
+.theme-roma.alt-mode ::selection { background: oklch(0.437 0.169 17.9); color: oklch(1 0 0); }
+.theme-roma.alt-mode input, .theme-roma.alt-mode select, .theme-roma.alt-mode textarea { background: oklch(1 0 0); }
+.theme-roma.alt-mode kbd { background: oklch(0.93 0.015 78); box-shadow: inset 0 2px 3px oklch(0 0 0 / 12%); }
+.theme-roma.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.015 78); }
+.theme-roma.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.93 0.015 78); }

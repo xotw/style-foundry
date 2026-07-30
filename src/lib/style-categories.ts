@@ -72,4 +72,10 @@ export const STYLE_CATEGORIES: { id: string; label: string; blurb: string; slugs
     blurb: "Consoles, stores and live platforms.",
     slugs: ["playstation-dna", "xbox-dna", "nintendo-dna", "steam-dna", "twitch-dna", "youtube-dna", "tiktok-dna"],
   },
+  {
+    id: "cinematic",
+    label: "Cinematic",
+    blurb: "Screen worlds everyone recognizes — homage palettes, no props required.",
+    slugs: ["star-wars", "stranger-things", "matrix", "dune", "wes-anderson", "severance", "james-bond", "ghibli"],
+  },
 ];

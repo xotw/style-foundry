@@ -45,15 +45,44 @@
 .theme-steam-dna h1 { background: linear-gradient(95deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .theme-steam-dna button { background-image: linear-gradient(90deg, #47bfff22, #1a44c222); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-steam-dna { background-image: linear-gradient(180deg, oklch(0.273 0.035 254.1 / 60%), transparent 320px); }
+.theme-steam-dna h2 { padding-bottom: 0.35rem; background: linear-gradient(90deg, var(--accent), transparent 65%) bottom left / 100% 2px no-repeat; }
+.theme-steam-dna thead th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-muted); border-bottom: 1px solid color-mix(in oklab, var(--accent) 40%, transparent); }
+.theme-steam-dna tbody td { border-bottom: 1px solid oklch(1 0 0 / 8%); }
+.theme-steam-dna tbody tr:hover td { background: linear-gradient(90deg, color-mix(in oklab, var(--accent) 14%, transparent), transparent); }
+.theme-steam-dna a { color: var(--accent); text-decoration: none; }
+.theme-steam-dna a:hover { color: oklch(0.930 0.040 230.0); text-decoration: underline; text-underline-offset: 3px; }
+.theme-steam-dna ::selection { background: var(--accent); color: oklch(0.160 0.02 266); }
+.theme-steam-dna input, .theme-steam-dna select, .theme-steam-dna textarea { background: oklch(0.180 0.015 266.9); box-shadow: inset 0 1px 3px oklch(0 0 0 / 45%); }
+.theme-steam-dna input:focus-visible, .theme-steam-dna select:focus-visible, .theme-steam-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: inset 0 1px 3px oklch(0 0 0 / 45%), 0 0 10px color-mix(in oklab, var(--accent) 45%, transparent); }
+.theme-steam-dna button:hover { background-image: linear-gradient(90deg, #47bfff3a, #a4d0073a); }
+.theme-steam-dna kbd { font-family: var(--font-mono); font-size: 0.78em; padding: 0.12em 0.5em; border-radius: var(--radius-sm); background: oklch(0.170 0.012 266.9); border: 1px solid oklch(1 0 0 / 18%); box-shadow: inset 0 -2px 0 oklch(0 0 0 / 50%); }
+.theme-steam-dna ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-steam-dna ::-webkit-scrollbar-track { background: oklch(0.180 0.012 266.9); }
+.theme-steam-dna ::-webkit-scrollbar-thumb { background: oklch(0.420 0.040 255.0); border-radius: 2px; }
+.theme-steam-dna ::-webkit-scrollbar-thumb:hover { background: color-mix(in oklab, var(--accent) 50%, oklch(0.420 0.040 255.0)); }
+.theme-steam-dna .label-caps { color: var(--accent-2); letter-spacing: 0.1em; }
+.theme-steam-dna .themed-border { border-color: color-mix(in oklab, var(--accent) 35%, var(--line)); }
+
+/* alt mode: community daylight — pale library blue, ink-blue links, deep lime */
 .theme-steam-dna.alt-mode {
-  --bg: oklch(0.98 0.012 266.9);
-  --surface: oklch(0.955 0.015 266.9);
-  --surface-2: oklch(0.92 0.015 266.9);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.955 0.015 250.0);
+  --surface: oklch(0.985 0.008 250.0);
+  --surface-2: oklch(0.915 0.020 250.0);
+  --fg: oklch(0.230 0.020 260.0);
+  --fg-muted: oklch(0.480 0.025 255.0);
+  --accent: oklch(0.500 0.120 245.0);
+  --accent-2: oklch(0.560 0.140 125.0);
+  --line: oklch(0.860 0.015 250.0);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: none;
 }
+.theme-steam-dna.alt-mode ::selection { background: oklch(0.500 0.120 245.0); color: oklch(0.985 0.008 250.0); }
+.theme-steam-dna.alt-mode a:hover { color: oklch(0.350 0.110 245.0); }
+.theme-steam-dna.alt-mode input, .theme-steam-dna.alt-mode select, .theme-steam-dna.alt-mode textarea { background: oklch(1 0 0); box-shadow: inset 0 1px 2px oklch(0 0 0 / 10%); }
+.theme-steam-dna.alt-mode kbd { background: oklch(0.94 0.01 250); border-color: oklch(0.80 0.02 250); color: var(--fg); box-shadow: inset 0 -2px 0 oklch(0 0 0 / 12%); }
+.theme-steam-dna.alt-mode ::-webkit-scrollbar-track { background: oklch(0.90 0.015 250); }
+.theme-steam-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.62 0.04 250); }

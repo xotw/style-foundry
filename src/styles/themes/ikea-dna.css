@@ -47,14 +47,34 @@
 .theme-ikea-dna h2 { background: var(--accent-2); display: inline-block; padding: 0.1em 0.35em; }
 .theme-ikea-dna button { font-weight: 700; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-ikea-dna thead th { background: var(--accent); color: var(--accent-fg); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.theme-ikea-dna td { border-bottom: 1px solid var(--line); }
+.theme-ikea-dna tbody tr:nth-child(even) { background: var(--surface); }
+.theme-ikea-dna input, .theme-ikea-dna select, .theme-ikea-dna textarea { border: 1px solid oklch(0.60 0 0); border-radius: var(--radius-sm); background: var(--bg); }
+.theme-ikea-dna input:focus-visible, .theme-ikea-dna select:focus-visible, .theme-ikea-dna textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.theme-ikea-dna a { color: var(--accent); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+.theme-ikea-dna a:hover { background: var(--accent-2); color: oklch(0.178 0 0); text-decoration: none; }
+.theme-ikea-dna ::selection { background: var(--accent-2); color: oklch(0.178 0 0); }
+.theme-ikea-dna ::-webkit-scrollbar { width: 10px; }
+.theme-ikea-dna ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-ikea-dna ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 0; }
+.theme-ikea-dna kbd { font-family: var(--font-mono); font-size: 0.72em; background: var(--bg); border: 1px solid var(--fg); border-radius: 0; padding: 0.1em 0.4em; }
+.theme-ikea-dna .label-caps { background: var(--accent-2); color: oklch(0.178 0 0); font-weight: 700; padding: 0.1em 0.4em; }
+.theme-ikea-dna .themed-border { border-color: var(--accent); }
+.theme-ikea-dna hr { border: none; border-top: 2px dotted var(--fg-muted); }
+.theme-ikea-dna button:active { transform: translate(1px, 1px); }
+
+/* alt mode: showroom at night — deep IKEA blue, price-tag yellow intact */
 .theme-ikea-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
+  --bg: oklch(0.185 0.045 252.7);
+  --surface: oklch(0.225 0.050 252.7);
+  --surface-2: oklch(0.265 0.055 252.7);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --fg-muted: oklch(0.74 0.03 252);
+  --accent: oklch(0.895 0.184 97.0);
+  --accent-fg: oklch(0.185 0.045 252.7);
+  --line: oklch(1 0 0 / 16%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);

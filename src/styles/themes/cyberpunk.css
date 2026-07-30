@@ -58,18 +58,46 @@
 .theme-cyberpunk h1 { text-transform: uppercase; text-shadow: 3px 0 var(--accent-2), -3px 0 var(--danger); }
 .theme-cyberpunk button { text-transform: uppercase; letter-spacing: 0.1em; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-cyberpunk thead th { background: var(--accent); color: var(--accent-fg); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.72rem; font-weight: 700; border-bottom: 2px solid var(--accent-2); }
+.theme-cyberpunk td { border-bottom: 1px solid oklch(0.88 0.2 100 / 12%); }
+.theme-cyberpunk tbody tr:hover { background: oklch(0.7 0.25 340 / 10%); box-shadow: inset 3px 0 0 var(--accent-2); }
+.theme-cyberpunk input, .theme-cyberpunk select, .theme-cyberpunk textarea { background: oklch(0.1 0.03 290); border: 1px solid var(--line); border-radius: 0; caret-color: var(--accent-2); }
+.theme-cyberpunk input:focus-visible, .theme-cyberpunk select:focus-visible, .theme-cyberpunk textarea:focus-visible { outline: none; border-color: var(--accent-2); box-shadow: 0 0 16px -2px oklch(0.7 0.25 340 / 70%), inset 0 0 8px oklch(0.7 0.25 340 / 15%); }
+.theme-cyberpunk kbd { font-family: var(--font-mono); font-size: 0.72em; background: var(--accent); color: var(--accent-fg); padding: 0.1em 0.5em; border-radius: 0; clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px); }
+.theme-cyberpunk a { color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-cyberpunk a:hover { color: var(--fg); text-shadow: 2px 0 var(--accent-2), -2px 0 oklch(0.8 0.16 200 / 70%); text-decoration-color: var(--accent-2); }
+.theme-cyberpunk ::selection { background: var(--accent-2); color: oklch(0.98 0.01 100); }
+.theme-cyberpunk ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-cyberpunk ::-webkit-scrollbar-track { background: oklch(0.1 0.03 290); }
+.theme-cyberpunk ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 0; border: 2px solid oklch(0.1 0.03 290); }
+.theme-cyberpunk ::-webkit-scrollbar-thumb:hover { background: var(--accent-2); }
+.theme-cyberpunk .label-caps { color: var(--accent-2); font-weight: 700; }
+/* hard-offset slab: pressed state collapses the drop */
+.theme-cyberpunk button:active { transform: translate(3px, 3px); box-shadow: 0 0 0 0 var(--accent-2), 0 0 12px -6px oklch(0.88 0.2 100 / 40%); }
+.theme-cyberpunk .themed-border { border-color: var(--line); box-shadow: 4px 4px 0 -1px oklch(0.7 0.25 340 / 55%); }
+
+/* alt mode: daylight street — acid yellow tape on concrete, magenta ink */
 .theme-cyberpunk.alt-mode {
   --bg: oklch(0.98 0.012 290.0);
   --surface: oklch(0.955 0.015 290.0);
   --surface-2: oklch(0.92 0.020 290.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  --accent: oklch(0.52 0.200 100.0);
-  --accent-fg: oklch(1 0 0);
-  background-image: none;
+  --fg: oklch(0.17 0.02 290);
+  --fg-muted: oklch(0.44 0.03 300);
+  --line: oklch(0.55 0.22 340 / 40%);
+  --shadow-1: 0 0 0 1px var(--line);
+  --shadow-2: 4px 4px 0 0 oklch(0.55 0.25 340), 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 8px 8px 0 0 oklch(0.55 0.25 340), 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --accent: oklch(0.88 0.2 100);
+  --accent-fg: oklch(0.17 0.02 290);
+  --accent-2: oklch(0.55 0.25 340);
+  background-image: repeating-linear-gradient(90deg, oklch(0.55 0.25 340 / 6%) 0 1px, transparent 1px 5rem);
 }
+.theme-cyberpunk.alt-mode h1 { text-shadow: 2px 0 oklch(0.55 0.25 340 / 80%), -2px 0 oklch(0.55 0.14 200 / 60%); }
+.theme-cyberpunk.alt-mode a { color: var(--accent-2); } /* acid yellow illegible on paper — links go magenta */
+.theme-cyberpunk.alt-mode a:hover { color: var(--fg); }
+.theme-cyberpunk.alt-mode td { border-bottom-color: oklch(0.17 0.02 290 / 12%); }
+.theme-cyberpunk.alt-mode tbody tr:hover { background: oklch(0.55 0.25 340 / 8%); }
+.theme-cyberpunk.alt-mode input, .theme-cyberpunk.alt-mode select, .theme-cyberpunk.alt-mode textarea { background: oklch(1 0 0 / 75%); }
+.theme-cyberpunk.alt-mode ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-cyberpunk.alt-mode ::-webkit-scrollbar-thumb { border-color: var(--surface-2); }

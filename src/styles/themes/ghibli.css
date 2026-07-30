@@ -1,0 +1,49 @@
+/* Ghibli — watercolor meadows, warm paper skies, gentle wonder */
+.theme-ghibli {
+  --bg: oklch(0.952 0.018 92.7);
+  --surface: oklch(0.975 0.015 94.2);
+  --surface-2: oklch(0.913 0.026 90.1);
+  --fg: oklch(0.384 0.020 73.3);
+  --fg-muted: oklch(0.601 0.030 80.1);
+  --accent: oklch(0.650 0.090 146.3);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.756 0.076 231.6);
+  --line: oklch(0.869 0.032 86.5);
+  --success: oklch(0.650 0.090 146.3);
+  --warning: oklch(0.789 0.125 87.6);
+  --danger: oklch(0.637 0.122 38.6);
+  --radius: 1rem;
+  --radius-sm: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 9999px;
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
+  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
+  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Mali", cursive;
+  --font-body: "Mali", cursive;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0em;
+  --label-transform: none;
+  --label-tracking: 0.08em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-ghibli h1,
+.theme-ghibli h2,
+.theme-ghibli h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-ghibli { background-image: radial-gradient(ellipse 120px 50px at 15% 8%, oklch(1 0 0 / 70%), transparent), radial-gradient(ellipse 160px 60px at 75% 15%, oklch(1 0 0 / 60%), transparent), linear-gradient(180deg, oklch(0.92 0.03 220 / 40%), transparent 260px); }
+.theme-ghibli h1 { color: #4a4238; font-weight: 600; }
+.theme-ghibli h2::before { content: "❀ "; color: var(--accent-2); }
+.theme-ghibli button { font-weight: 600; }
+

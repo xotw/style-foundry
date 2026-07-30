@@ -4,7 +4,7 @@
   --surface: oklch(1 0 0 / 8%);
   --surface-2: oklch(1 0 0 / 14%);
   --fg: oklch(0.98 0.01 280);
-  --fg-muted: oklch(0.8 0.03 280 / 75%);
+  --fg-muted: oklch(0.84 0.03 280);
   --accent: oklch(0.78 0.16 195);
   --accent-fg: oklch(0.16 0.05 275);
   --accent-2: oklch(0.7 0.19 320);
@@ -55,16 +55,47 @@
 .theme-glass h1 { background: linear-gradient(100deg, var(--fg), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .theme-glass button:hover { box-shadow: 0 0 24px color-mix(in oklab, var(--accent) 45%, transparent); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-glass thead th { background: oklch(1 0 0 / 6%); color: var(--fg-muted); font-family: var(--font-display); font-size: 0.72em; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 1px solid var(--line); }
+.theme-glass td { border-bottom: 1px solid oklch(1 0 0 / 8%); }
+.theme-glass tbody tr:hover { background: oklch(1 0 0 / 5%); }
+.theme-glass input, .theme-glass textarea, .theme-glass select { background: oklch(1 0 0 / 7%); border: 1px solid var(--line); color: var(--fg); backdrop-filter: blur(12px); }
+.theme-glass input::placeholder, .theme-glass textarea::placeholder { color: oklch(0.84 0.03 280 / 55%); }
+.theme-glass input:focus-visible, .theme-glass textarea:focus-visible, .theme-glass select:focus-visible { outline: none; border-color: color-mix(in oklab, var(--accent) 70%, transparent); box-shadow: var(--glow); }
+.theme-glass kbd { background: oklch(1 0 0 / 12%); border: 1px solid oklch(1 0 0 / 28%); border-top-color: oklch(1 0 0 / 55%); border-radius: 0.4em; padding: 0.1em 0.45em; font-family: var(--font-mono); font-size: 0.85em; }
+.theme-glass a { color: var(--accent); text-decoration: underline; text-decoration-color: color-mix(in oklab, var(--accent) 40%, transparent); text-underline-offset: 0.2em; }
+.theme-glass a:hover { text-decoration-color: var(--accent); text-shadow: 0 0 14px color-mix(in oklab, var(--accent) 60%, transparent); }
+.theme-glass ::selection { background: color-mix(in oklab, var(--accent-2) 45%, transparent); color: var(--fg); }
+.theme-glass ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-glass ::-webkit-scrollbar-track { background: oklch(1 0 0 / 4%); }
+.theme-glass ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 22%); border-radius: 9999px; border: 2px solid transparent; background-clip: padding-box; }
+.theme-glass ::-webkit-scrollbar-thumb:hover { background: color-mix(in oklab, var(--accent) 55%, oklch(1 0 0 / 25%)); border: 2px solid transparent; background-clip: padding-box; }
+.theme-glass .label-caps { color: var(--accent); letter-spacing: 0.1em; }
+.theme-glass .themed-border { border-color: var(--line); border-top-color: oklch(1 0 0 / 45%); }
+.theme-glass button:active { transform: translateY(1px); box-shadow: 0 0 12px color-mix(in oklab, var(--accent) 30%, transparent); }
+
+/* alt mode: frosted daylight — glass panes over a bright prism room */
 .theme-glass.alt-mode {
-  --bg: oklch(0.98 0.012 275.0);
-  --surface: oklch(0.955 0.015 275.0);
-  --surface-2: oklch(0.92 0.020 275.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --bg: oklch(0.96 0.02 275);
+  --surface: oklch(1 0 0 / 55%);
+  --surface-2: oklch(1 0 0 / 75%);
+  --fg: oklch(0.22 0.03 275);
+  --fg-muted: oklch(0.44 0.03 275);
+  --accent: oklch(0.52 0.14 195);
+  --accent-fg: oklch(0.98 0.01 195);
+  --line: oklch(0.4 0.04 275 / 22%);
+  --shadow-1: 0 1px 3px oklch(0.3 0.05 275 / 12%);
+  --shadow-2: 0 10px 28px -10px oklch(0.3 0.05 275 / 20%);
+  --shadow-3: 0 24px 60px -18px oklch(0.3 0.05 275 / 28%);
+  --glow: 0 0 32px -6px color-mix(in oklab, var(--accent) 45%, transparent);
+  background-image:
+    radial-gradient(60rem 40rem at 12% -10%, oklch(0.88 0.09 320 / 55%), transparent 60%),
+    radial-gradient(50rem 36rem at 92% 8%, oklch(0.9 0.08 195 / 50%), transparent 60%);
 }
+.theme-glass.alt-mode input::placeholder, .theme-glass.alt-mode textarea::placeholder { color: oklch(0.44 0.03 275 / 65%); }
+.theme-glass.alt-mode kbd { background: oklch(0.3 0.03 275 / 8%); border-color: oklch(0.3 0.03 275 / 22%); border-top-color: oklch(1 0 0 / 85%); }
+.theme-glass.alt-mode thead th { background: oklch(0.3 0.03 275 / 5%); }
+.theme-glass.alt-mode td { border-bottom-color: oklch(0.3 0.03 275 / 10%); }
+.theme-glass.alt-mode tbody tr:hover { background: oklch(0.3 0.03 275 / 5%); }
+.theme-glass.alt-mode ::-webkit-scrollbar-track { background: oklch(0.3 0.03 275 / 6%); }
+.theme-glass.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.3 0.03 275 / 25%); }

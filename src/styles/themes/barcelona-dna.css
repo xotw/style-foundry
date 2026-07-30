@@ -47,6 +47,24 @@
 .theme-barcelona-dna h1::after { content: ""; display: block; height: 3px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
 .theme-barcelona-dna button { font-weight: 700; }
 
+/* depth */
+.theme-barcelona-dna thead th { background: var(--surface); color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78em; border-bottom: 2px solid var(--accent); }
+.theme-barcelona-dna td { border-bottom: 1px solid var(--line); }
+.theme-barcelona-dna tbody tr:hover { background: oklch(0.35 0.14 15 / 18%); }
+.theme-barcelona-dna a { color: var(--accent-2); text-underline-offset: 3px; text-decoration-color: oklch(0.55 0.18 10 / 70%); }
+.theme-barcelona-dna a:hover { text-decoration-color: var(--accent-2); text-decoration-thickness: 2px; }
+.theme-barcelona-dna ::selection { background: oklch(0.462 0.185 8.3); color: oklch(1 0 0); }
+.theme-barcelona-dna input:focus-visible, .theme-barcelona-dna select:focus-visible, .theme-barcelona-dna textarea:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 1px; }
+.theme-barcelona-dna kbd { background: oklch(0.30 0.10 277); border: 1px solid var(--line); border-bottom-width: 3px; border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); }
+.theme-barcelona-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-barcelona-dna ::-webkit-scrollbar-track { background: oklch(0.18 0.06 278); }
+.theme-barcelona-dna ::-webkit-scrollbar-thumb { background: oklch(0.42 0.15 10); border-radius: 5px; border: 2px solid oklch(0.18 0.06 278); }
+.theme-barcelona-dna ::-webkit-scrollbar-thumb:hover { background: oklch(0.50 0.17 10); }
+.theme-barcelona-dna .label-caps { color: var(--accent-2); }
+/* senyera strip — the Catalan bars from the crest */
+.theme-barcelona-dna .themed-border { border-image: repeating-linear-gradient(90deg, oklch(0.814 0.166 89.2) 0 10px, oklch(0.55 0.21 25) 10px 20px) 1; }
+.theme-barcelona-dna button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived light variant */
 .theme-barcelona-dna.alt-mode {
   --bg: oklch(0.98 0.012 278.4);
@@ -58,5 +76,13 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  /* daylight kit: faint blaugrana stripes survive the flip */
+  background-image: repeating-linear-gradient(90deg, oklch(0.50 0.16 275 / 6%) 0 80px, oklch(0.50 0.19 15 / 6%) 80px 160px);
 }
+.theme-barcelona-dna.alt-mode tbody tr:hover { background: oklch(0.50 0.19 15 / 8%); }
+.theme-barcelona-dna.alt-mode kbd { background: oklch(0.94 0.015 278); color: var(--fg); }
+.theme-barcelona-dna.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.012 278); }
+.theme-barcelona-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.55 0.16 275); border-color: oklch(0.94 0.012 278); }
+.theme-barcelona-dna.alt-mode .label-caps { color: oklch(0.55 0.13 85); }
+.theme-barcelona-dna.alt-mode a { color: oklch(0.462 0.185 8.3); text-decoration-color: oklch(0.65 0.13 85); }
+.theme-barcelona-dna.alt-mode thead th { color: oklch(0.55 0.13 85); }

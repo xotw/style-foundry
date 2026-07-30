@@ -46,17 +46,47 @@
 .theme-nfl-dna h2 { border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 0.15em; }
 .theme-nfl-dna button { text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-nfl-dna { background-image: repeating-linear-gradient(180deg, transparent 0 119px, oklch(0.326 0.107 255.1 / 6%) 119px 121px); }
+.theme-nfl-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-nfl-dna thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 400; font-size: 0.8em; background: var(--accent); color: var(--accent-fg); }
+.theme-nfl-dna td { border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.theme-nfl-dna tbody tr:nth-child(5n) { border-bottom: 2px solid var(--accent); }
+.theme-nfl-dna tbody tr:hover { background: color-mix(in oklab, var(--accent) 8%, transparent); }
+.theme-nfl-dna a { color: var(--accent); font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.theme-nfl-dna a:hover { color: var(--accent-2); }
+.theme-nfl-dna input, .theme-nfl-dna select, .theme-nfl-dna textarea { border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); }
+.theme-nfl-dna input:focus-visible, .theme-nfl-dna select:focus-visible, .theme-nfl-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 25%, transparent); }
+.theme-nfl-dna kbd { font-family: var(--font-display); border: 2px solid var(--accent); border-radius: var(--radius-sm); padding: 0.1em 0.5em; background: var(--surface); color: var(--accent); }
+.theme-nfl-dna .label-caps { font-family: var(--font-display); font-weight: 400; color: var(--accent); }
+.theme-nfl-dna .themed-border { border: 2px solid var(--accent); border-top-width: 6px; }
+.theme-nfl-dna button { border: 2px solid transparent; }
+.theme-nfl-dna button:hover { box-shadow: inset 0 -3px 0 var(--accent-2); }
+.theme-nfl-dna button:active { transform: translateY(1px); }
+.theme-nfl-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-nfl-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-nfl-dna ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: var(--radius-sm); }
+.theme-nfl-dna ::-webkit-scrollbar-thumb:hover { background: var(--accent-2); }
+
+/* alt mode: primetime — night game under the lights, deep shield navy */
 .theme-nfl-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
+  --bg: oklch(0.170 0.045 255.1);
+  --surface: oklch(0.210 0.050 255.1);
+  --surface-2: oklch(0.250 0.055 255.1);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --fg-muted: oklch(0.72 0.020 250);
+  --line: oklch(1 0 0 / 16%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.107 255.1);
-  --accent-fg: oklch(0.13 0 0);
+  --accent: oklch(0.97 0.005 90);
+  --accent-fg: oklch(0.170 0.045 255.1);
+  --accent-2: oklch(0.640 0.222 28.9);
+  background-image: repeating-linear-gradient(180deg, transparent 0 119px, oklch(1 0 0 / 7%) 119px 121px);
 }
+.theme-nfl-dna.alt-mode h2 { border-bottom-color: var(--accent); }
+.theme-nfl-dna.alt-mode a { color: var(--fg); }
+.theme-nfl-dna.alt-mode a:hover { color: oklch(0.740 0.180 28.9); }
+.theme-nfl-dna.alt-mode input, .theme-nfl-dna.alt-mode select, .theme-nfl-dna.alt-mode textarea { background: var(--surface); border-color: var(--line); }
+.theme-nfl-dna.alt-mode kbd { border-color: var(--fg); color: var(--fg); background: var(--surface); }
+.theme-nfl-dna.alt-mode .label-caps { color: var(--fg-muted); }

@@ -816,6 +816,62 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Segoe UI (system)",
     swatch: ["oklch(1.000 0 0)", "oklch(0.568 0.167 251.3)", "oklch(0.510 0.165 142.7)"],
   },
+  {
+    slug: "star-wars",
+    name: "Star Wars",
+    tagline: "A galaxy far away: space black, crawl yellow, saber glow.",
+    fontPairing: "Pathway Gothic One / Inter",
+    swatch: ["oklch(0.117 0.009 284.9)", "oklch(0.921 0.188 101.9)", "oklch(0.809 0.121 212.1)"],
+  },
+  {
+    slug: "stranger-things",
+    name: "Stranger Things",
+    tagline: "Upside-down night, neon red serif glow.",
+    fontPairing: "Grenze / Inter",
+    swatch: ["oklch(0.137 0.011 284.8)", "oklch(0.603 0.235 27.0)", "oklch(0.638 0.129 259.7)"],
+  },
+  {
+    slug: "matrix",
+    name: "The Matrix",
+    tagline: "Digital rain green on void.",
+    fontPairing: "Share Tech Mono",
+    swatch: ["oklch(0.122 0.022 149.8)", "oklch(0.869 0.278 144.5)", "oklch(0.904 0.167 152.4)"],
+  },
+  {
+    slug: "dune",
+    name: "Dune",
+    tagline: "Spice sand, monumental thin display, desert silence.",
+    fontPairing: "Julius Sans One / Inter",
+    swatch: ["oklch(0.884 0.040 82.3)", "oklch(0.491 0.101 54.4)", "oklch(0.664 0.083 77.4)"],
+  },
+  {
+    slug: "wes-anderson",
+    name: "Wes Anderson",
+    tagline: "Symmetrical pastel worlds, precious detail.",
+    fontPairing: "Didact Gothic",
+    swatch: ["oklch(0.935 0.032 73.5)", "oklch(0.679 0.108 10.6)", "oklch(0.696 0.042 192.3)"],
+  },
+  {
+    slug: "severance",
+    name: "Severance",
+    tagline: "Lumon terminal teal, pale cyan data, sterile calm.",
+    fontPairing: "IBM Plex Sans",
+    swatch: ["oklch(0.257 0.055 240.9)", "oklch(0.787 0.074 202.3)", "oklch(0.914 0.027 205.4)"],
+  },
+  {
+    slug: "james-bond",
+    name: "James Bond",
+    tagline: "Tuxedo black and white, gunbarrel gold.",
+    fontPairing: "League Spartan / Inter",
+    swatch: ["oklch(0.159 0 0)", "oklch(0.956 0.006 84.6)", "oklch(0.691 0.088 80.7)"],
+  },
+  {
+    slug: "ghibli",
+    name: "Ghibli",
+    tagline: "Watercolor meadows, warm paper skies, gentle wonder.",
+    fontPairing: "Mali",
+    swatch: ["oklch(0.952 0.018 92.7)", "oklch(0.650 0.090 146.3)", "oklch(0.756 0.076 231.6)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);

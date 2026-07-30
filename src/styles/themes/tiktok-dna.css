@@ -46,15 +46,43 @@
 .theme-tiktok-dna h1 { font-weight: 800; text-shadow: 2px 2px 0 var(--accent-2), -2px -2px 0 var(--accent); }
 .theme-tiktok-dna button { font-weight: 700; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-tiktok-dna button { transition: box-shadow 90ms ease-out, transform 90ms ease-out; }
+.theme-tiktok-dna button:hover { box-shadow: -2px 0 0 0 var(--accent-2), 2px 0 0 0 var(--accent); }
+.theme-tiktok-dna button:active { transform: scale(0.96); box-shadow: none; }
+.theme-tiktok-dna thead th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-muted); border-bottom: 2px solid var(--accent); }
+.theme-tiktok-dna tbody td { border-bottom: 1px solid var(--line); }
+.theme-tiktok-dna tbody tr:hover td { background: oklch(1 0 0 / 6%); }
+.theme-tiktok-dna a { color: var(--accent-2); font-weight: 600; text-decoration: none; }
+.theme-tiktok-dna a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.theme-tiktok-dna ::selection { background: var(--accent-2); color: oklch(0.000 0 0); }
+.theme-tiktok-dna input, .theme-tiktok-dna select, .theme-tiktok-dna textarea { background: var(--surface); border-color: oklch(1 0 0 / 20%); }
+.theme-tiktok-dna input:focus-visible, .theme-tiktok-dna select:focus-visible, .theme-tiktok-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: -3px 0 0 -1px var(--accent-2), 3px 0 0 -1px var(--accent); }
+.theme-tiktok-dna kbd { font-family: var(--font-mono); font-size: 0.75em; padding: 0.1em 0.5em; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid oklch(1 0 0 / 22%); color: var(--accent-2); }
+.theme-tiktok-dna ::-webkit-scrollbar { width: 8px; height: 8px; }
+.theme-tiktok-dna ::-webkit-scrollbar-track { background: var(--bg); }
+.theme-tiktok-dna ::-webkit-scrollbar-thumb { background: oklch(0.40 0 0); border-radius: 999px; }
+.theme-tiktok-dna ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-tiktok-dna .label-caps { color: var(--accent-2); font-weight: 800; letter-spacing: 0.1em; }
+.theme-tiktok-dna .themed-border { border-color: oklch(1 0 0 / 25%); box-shadow: -3px 3px 0 0 color-mix(in oklab, var(--accent-2) 55%, transparent), 3px -3px 0 0 color-mix(in oklab, var(--accent) 55%, transparent); }
+
+/* alt mode: light feed — studio white, same glitch pair, ink text */
 .theme-tiktok-dna.alt-mode {
   --bg: oklch(0.98 0.000 0.0);
   --surface: oklch(0.955 0.000 0.0);
   --surface-2: oklch(0.92 0.000 0.0);
   --fg: oklch(0.17 0.005 270);
   --fg-muted: oklch(0.46 0.01 270);
+  --accent-2: oklch(0.600 0.110 192.0);
   --line: oklch(0.87 0.005 270);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
 }
+.theme-tiktok-dna.alt-mode h1 { text-shadow: 2px 2px 0 oklch(0.876 0.146 191.6), -2px -2px 0 color-mix(in oklab, var(--accent) 45%, transparent); }
+.theme-tiktok-dna.alt-mode tbody tr:hover td { background: oklch(0 0 0 / 4%); }
+.theme-tiktok-dna.alt-mode ::selection { background: oklch(0.876 0.146 191.6); color: oklch(0.000 0 0); }
+.theme-tiktok-dna.alt-mode input, .theme-tiktok-dna.alt-mode select, .theme-tiktok-dna.alt-mode textarea { background: oklch(1 0 0); border-color: var(--line); }
+.theme-tiktok-dna.alt-mode kbd { background: var(--surface-2); border-color: var(--line); color: oklch(0.480 0.100 192.0); }
+.theme-tiktok-dna.alt-mode ::-webkit-scrollbar-track { background: var(--bg); }
+.theme-tiktok-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.72 0 0); }

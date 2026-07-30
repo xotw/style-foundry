@@ -74,16 +74,49 @@
 .theme-pixel button:active { transform: translate(3px, 3px); box-shadow: none; }
 .theme-pixel * { border-radius: 0 !important; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-pixel thead th { background: var(--line); color: var(--fg); font-family: var(--font-display); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 2px solid var(--accent); }
+.theme-pixel td { border-bottom: 2px dotted var(--line); }
+.theme-pixel tbody tr:hover td { background: var(--surface-2); box-shadow: inset 3px 0 0 var(--accent); }
+.theme-pixel input, .theme-pixel textarea, .theme-pixel select { border: 2px solid var(--fg); background: var(--line); color: var(--fg); box-shadow: inset 2px 2px 0 oklch(0.1 0.03 265); transition: none; }
+.theme-pixel input:focus-visible, .theme-pixel textarea:focus-visible, .theme-pixel select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; box-shadow: inset 2px 2px 0 oklch(0.1 0.03 265); }
+.theme-pixel kbd { font-family: var(--font-display); font-size: 0.6rem; border: 2px solid var(--fg); background: var(--surface-2); padding: 0.2em 0.45em; box-shadow: 2px 2px 0 var(--line); }
+.theme-pixel a { color: var(--accent); text-decoration: none; border-bottom: 2px dashed var(--accent); }
+.theme-pixel a:hover { background: var(--accent); color: var(--accent-fg); border-bottom-style: solid; }
+.theme-pixel ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-pixel ::-webkit-scrollbar { width: 16px; height: 16px; }
+.theme-pixel ::-webkit-scrollbar-track { background: var(--line); background-image: linear-gradient(45deg, oklch(1 0 0 / 0.06) 25%, transparent 25%), linear-gradient(-45deg, oklch(1 0 0 / 0.06) 25%, transparent 25%); background-size: 6px 6px; }
+.theme-pixel ::-webkit-scrollbar-thumb { background: var(--fg); border: 3px solid var(--line); border-radius: 0; }
+.theme-pixel ::-webkit-scrollbar-corner { background: var(--line); }
+.theme-pixel .label-caps { font-family: var(--font-display); font-size: 0.55rem; background: var(--surface-2); border: 2px solid var(--line); padding: 0.25em 0.5em; }
+.theme-pixel .themed-border { border: 2px solid var(--fg); box-shadow: 0 0 0 2px var(--line), 4px 4px 0 2px var(--line); }
+.theme-pixel hr { border: none; height: 4px; background-image: repeating-linear-gradient(90deg, var(--accent) 0 8px, transparent 8px 16px); }
+
+/* alt mode: DMG hand-held — pea-soup Game Boy screen, four-shade discipline */
 .theme-pixel.alt-mode {
-  --bg: oklch(0.98 0.012 265.0);
-  --surface: oklch(0.955 0.015 265.0);
-  --surface-2: oklch(0.92 0.020 265.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --bg: oklch(0.83 0.08 125);
+  --surface: oklch(0.88 0.07 125);
+  --surface-2: oklch(0.75 0.09 125);
+  --fg: oklch(0.28 0.06 130);
+  --fg-muted: oklch(0.42 0.07 128);
+  --accent: oklch(0.4 0.09 130);
+  --accent-fg: oklch(0.9 0.06 125);
+  --accent-2: oklch(0.55 0.09 128);
+  --line: oklch(0.35 0.07 130);
+  --shadow-1: 2px 2px 0 0 var(--line);
+  --shadow-2: 4px 4px 0 0 var(--line);
+  --shadow-3: 6px 6px 0 0 var(--line);
+  --glow: 0 0 0 2px var(--accent);
+  background-image:
+    linear-gradient(45deg, oklch(0.3 0.06 130 / 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, oklch(0.3 0.06 130 / 0.05) 25%, transparent 25%);
+  background-size: 8px 8px;
 }
+.theme-pixel.alt-mode h1 { text-shadow: 3px 3px 0 var(--surface-2); }
+.theme-pixel.alt-mode input, .theme-pixel.alt-mode textarea, .theme-pixel.alt-mode select { background: var(--surface); box-shadow: inset 2px 2px 0 oklch(0.62 0.08 126); }
+.theme-pixel.alt-mode input:focus-visible, .theme-pixel.alt-mode textarea:focus-visible { box-shadow: inset 2px 2px 0 oklch(0.62 0.08 126); }
+.theme-pixel.alt-mode thead th { background: var(--surface-2); border-bottom-color: var(--fg); }
+.theme-pixel.alt-mode ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-pixel.alt-mode ::-webkit-scrollbar-thumb { background: var(--fg); border-color: var(--surface-2); }
+.theme-pixel.alt-mode a:hover { background: var(--fg); color: var(--surface); }
+.theme-pixel.alt-mode ::selection { background: var(--fg); color: var(--surface); }

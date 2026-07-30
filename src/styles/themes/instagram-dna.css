@@ -45,15 +45,37 @@
 .theme-instagram-dna h1 { background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .theme-instagram-dna h2 { color: #e1306c; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-instagram-dna thead th { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-instagram-dna td { border-bottom: 1px solid var(--line); }
+.theme-instagram-dna tbody tr:hover { background: var(--surface-2); }
+.theme-instagram-dna a { color: oklch(0.42 0.11 250); font-weight: 600; text-decoration: none; }
+.theme-instagram-dna a:hover { color: oklch(0.32 0.11 250); }
+.theme-instagram-dna input, .theme-instagram-dna textarea, .theme-instagram-dna select { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.theme-instagram-dna input:focus-visible, .theme-instagram-dna textarea:focus-visible, .theme-instagram-dna select:focus-visible { outline: none; border-color: oklch(0.65 0 0); box-shadow: var(--glow); }
+.theme-instagram-dna kbd { font-family: var(--font-body); font-size: 0.85em; background: var(--surface-2); border: 1px solid var(--line); border-radius: 0.3rem; padding: 0.1em 0.45em; }
+.theme-instagram-dna ::selection { background: oklch(0.9 0.06 350); }
+.theme-instagram-dna ::-webkit-scrollbar { width: 8px; height: 8px; }
+.theme-instagram-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-instagram-dna ::-webkit-scrollbar-thumb { background: oklch(0.8 0 0); border-radius: 4px; }
+.theme-instagram-dna .label-caps { background: linear-gradient(45deg, #ee2a7b, #6228d7); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700; }
+.theme-instagram-dna .themed-border { border: 2px solid transparent; background: linear-gradient(var(--surface), var(--surface)) padding-box, linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7) border-box; } /* story ring */
+.theme-instagram-dna button:active { transform: scale(0.96); } /* double-tap */
+
+/* alt mode: Instagram dark — true black gallery, hairlines only */
 .theme-instagram-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.05 0 0);
+  --surface: oklch(0.16 0 0);
+  --surface-2: oklch(0.21 0 0);
+  --fg: oklch(0.97 0 0);
+  --fg-muted: oklch(0.68 0 0);
+  --line: oklch(1 0 0 / 12%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-instagram-dna.alt-mode a { color: oklch(0.72 0.11 250); }
+.theme-instagram-dna.alt-mode a:hover { color: oklch(0.80 0.10 250); }
+.theme-instagram-dna.alt-mode .label-caps { background: linear-gradient(45deg, oklch(0.72 0.20 0), oklch(0.68 0.20 300)); -webkit-background-clip: text; background-clip: text; }
+.theme-instagram-dna.alt-mode ::selection { background: oklch(0.45 0.10 350); }
+.theme-instagram-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.4 0 0); }

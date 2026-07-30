@@ -49,15 +49,46 @@
 .theme-detroit-pistons h1 { color: #ffffff; }
 .theme-detroit-pistons h1::after { content: ""; display: block; height: 5px; width: 7rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 40%, #ffffff 40% 60%, #1d42ba 60% 100%); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-detroit-pistons ::selection { background: var(--accent); color: #ffffff; }
+.theme-detroit-pistons a { color: oklch(0.84 0.02 250); text-decoration-color: color-mix(in oklab, var(--accent) 60%, transparent); text-underline-offset: 3px; }
+.theme-detroit-pistons a:hover { color: #ffffff; text-decoration-color: var(--accent); text-decoration-thickness: 3px; }
+/* chrome header rail */
+.theme-detroit-pistons thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; color: var(--accent-2); background: linear-gradient(180deg, oklch(0.40 0.11 256), oklch(0.33 0.10 256)); border-bottom: 2px solid var(--accent-2); }
+.theme-detroit-pistons td { border-bottom: 1px solid var(--line); }
+.theme-detroit-pistons tbody tr:hover { background: oklch(0.530 0.207 22.3 / 10%); box-shadow: inset 3px 0 0 var(--accent); }
+.theme-detroit-pistons input, .theme-detroit-pistons select, .theme-detroit-pistons textarea { background: oklch(0.26 0.09 256); border: 1px solid var(--line); caret-color: var(--accent); }
+.theme-detroit-pistons input:focus-visible, .theme-detroit-pistons select:focus-visible, .theme-detroit-pistons textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px oklch(0.530 0.207 22.3 / 30%); }
+/* stamped engine plate */
+.theme-detroit-pistons kbd { font-family: var(--font-mono); background: linear-gradient(180deg, oklch(0.88 0.005 248), oklch(0.72 0.008 248)); color: oklch(0.20 0.02 256); border: 1px solid oklch(0.60 0.01 248); border-radius: 2px; padding: 0.1em 0.45em; box-shadow: inset 0 1px 0 oklch(1 0 0 / 60%); }
+.theme-detroit-pistons ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-detroit-pistons ::-webkit-scrollbar-track { background: oklch(0.26 0.09 256); }
+.theme-detroit-pistons ::-webkit-scrollbar-thumb { background: oklch(0.62 0.01 248); border: 2px solid oklch(0.26 0.09 256); border-radius: 999px; }
+.theme-detroit-pistons ::-webkit-scrollbar-thumb:hover { background: var(--accent-2); }
+.theme-detroit-pistons .label-caps { color: var(--accent-2); font-weight: 700; }
+.theme-detroit-pistons .themed-border { border-color: var(--accent-2); box-shadow: inset 0 0 0 1px oklch(0.20 0.05 256 / 60%); }
+/* physical: piston stroke — hover primes the racing stripe, active fires the stroke */
+.theme-detroit-pistons button:hover { box-shadow: inset 0 -3px 0 var(--accent), var(--shadow-1); }
+.theme-detroit-pistons button:active { transform: translateY(2px); box-shadow: inset 0 2px 5px oklch(0 0 0 / 50%); }
+
+/* alt mode: garage whites — shop-floor light, chrome and red kept honest */
 .theme-detroit-pistons.alt-mode {
   --bg: oklch(0.98 0.012 265.3);
   --surface: oklch(0.955 0.015 265.3);
   --surface-2: oklch(0.92 0.020 265.3);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --fg: oklch(0.22 0.06 256);
+  --fg-muted: oklch(0.44 0.05 256);
+  --accent-2: oklch(0.46 0.008 248);
+  --line: oklch(0.87 0.008 256);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
 }
+.theme-detroit-pistons.alt-mode h1 { color: oklch(0.22 0.06 256); }
+.theme-detroit-pistons.alt-mode a { color: oklch(0.48 0.18 22); }
+.theme-detroit-pistons.alt-mode a:hover { color: oklch(0.22 0.06 256); }
+.theme-detroit-pistons.alt-mode thead th { color: #ffffff; background: linear-gradient(180deg, oklch(0.40 0.11 256), oklch(0.33 0.10 256)); }
+.theme-detroit-pistons.alt-mode .label-caps { color: oklch(0.46 0.008 248); }
+.theme-detroit-pistons.alt-mode input, .theme-detroit-pistons.alt-mode select, .theme-detroit-pistons.alt-mode textarea { background: #ffffff; }
+.theme-detroit-pistons.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.010 256); }
+.theme-detroit-pistons.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.68 0.008 248); border-color: oklch(0.94 0.010 256); }

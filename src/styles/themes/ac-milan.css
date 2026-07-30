@@ -50,6 +50,26 @@
 .theme-ac-milan h1 { font-weight: 700; }
 .theme-ac-milan h1::after { content: ""; display: block; height: 3px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
 
+/* depth */
+.theme-ac-milan thead th { background: oklch(0.15 0 0); color: oklch(1 0 0); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-bottom: 3px solid var(--accent); }
+.theme-ac-milan td { border-bottom: 1px solid var(--line); }
+.theme-ac-milan tbody tr:hover { background: oklch(0.45 0.19 25 / 16%); }
+.theme-ac-milan a { color: oklch(0.70 0.21 27); text-underline-offset: 3px; }
+.theme-ac-milan a:hover { text-decoration-thickness: 2px; text-decoration-color: var(--accent-2); }
+.theme-ac-milan ::selection { background: var(--accent); color: oklch(1 0 0); }
+.theme-ac-milan input, .theme-ac-milan select, .theme-ac-milan textarea { background: oklch(0.16 0 0); }
+.theme-ac-milan input:focus-visible, .theme-ac-milan select:focus-visible, .theme-ac-milan textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+/* scudetto trim on keycaps */
+.theme-ac-milan kbd { background: oklch(0.16 0 0); border: 1px solid var(--line); border-bottom: 3px solid var(--accent-2); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); }
+.theme-ac-milan ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-ac-milan ::-webkit-scrollbar-track { background: oklch(0.15 0 0); }
+.theme-ac-milan ::-webkit-scrollbar-thumb { background: oklch(0.50 0.20 27); border-radius: 5px; border: 2px solid oklch(0.15 0 0); }
+.theme-ac-milan ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-ac-milan .label-caps { color: var(--accent-2); }
+/* rossoneri shirt stripes on framed panels */
+.theme-ac-milan .themed-border { border-image: repeating-linear-gradient(90deg, oklch(0.55 0.22 27) 0 8px, oklch(0.12 0 0) 8px 16px) 1; }
+.theme-ac-milan button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived light variant */
 .theme-ac-milan.alt-mode {
   --bg: oklch(0.98 0.000 0.0);
@@ -61,5 +81,14 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --accent: oklch(0.55 0.24 28.0);
+  /* away white kit: red-black pinstripes ghosted onto the shirt */
+  background-image: repeating-linear-gradient(90deg, oklch(0.55 0.22 27 / 6%) 0 48px, oklch(0.15 0 0 / 5%) 48px 96px);
 }
+.theme-ac-milan.alt-mode a { color: oklch(0.50 0.21 28); }
+.theme-ac-milan.alt-mode thead th { background: oklch(0.20 0 0); }
+.theme-ac-milan.alt-mode input, .theme-ac-milan.alt-mode select, .theme-ac-milan.alt-mode textarea { background: oklch(1 0 0); }
+.theme-ac-milan.alt-mode kbd { background: oklch(0.95 0 0); color: var(--fg); }
+.theme-ac-milan.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0 0); }
+.theme-ac-milan.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.93 0 0); }
+.theme-ac-milan.alt-mode tbody tr:hover { background: oklch(0.55 0.22 27 / 8%); }

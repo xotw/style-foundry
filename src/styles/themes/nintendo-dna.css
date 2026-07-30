@@ -48,15 +48,39 @@
 .theme-nintendo-dna h1 { font-weight: 800; }
 .theme-nintendo-dna h1::after { content: ""; display: block; height: 5px; width: 6rem; margin-top: 0.6rem; border-radius: 999px; background: linear-gradient(90deg, #ff3c28 0 50%, #0ab9e6 50% 100%); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-nintendo-dna { background-image: radial-gradient(oklch(0.402 0 0 / 4%) 1.5px, transparent 1.5px); background-size: 26px 26px; }
+.theme-nintendo-dna thead th { font-size: 0.74rem; font-weight: 800; color: var(--accent-2); border-bottom: 3px solid var(--accent-2); border-radius: 2px; }
+.theme-nintendo-dna tbody td { border-bottom: 1px solid var(--line); }
+.theme-nintendo-dna tbody tr:hover td { background: color-mix(in oklab, var(--accent) 6%, transparent); }
+.theme-nintendo-dna a { color: var(--accent-2); font-weight: 700; text-underline-offset: 3px; }
+.theme-nintendo-dna a:hover { text-decoration-style: wavy; text-decoration-color: var(--accent); }
+.theme-nintendo-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-nintendo-dna input, .theme-nintendo-dna select { border-radius: var(--radius-pill); }
+.theme-nintendo-dna input:focus-visible, .theme-nintendo-dna select:focus-visible, .theme-nintendo-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in oklab, var(--accent) 25%, transparent); }
+.theme-nintendo-dna button { box-shadow: 0 3px 0 color-mix(in oklab, var(--fg) 22%, transparent); }
+.theme-nintendo-dna button:active { box-shadow: 0 1px 0 color-mix(in oklab, var(--fg) 22%, transparent); }
+.theme-nintendo-dna kbd { font-family: var(--font-display); font-weight: 800; font-size: 0.75em; padding: 0.18em 0.6em; border-radius: 999px; background: oklch(0.300 0 0); color: oklch(0.98 0 0); box-shadow: 0 2px 0 oklch(0.180 0 0); }
+.theme-nintendo-dna ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-nintendo-dna ::-webkit-scrollbar-track { background: var(--surface-2); border-radius: 999px; }
+.theme-nintendo-dna ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 999px; border: 3px solid var(--surface-2); }
+.theme-nintendo-dna .label-caps { color: var(--accent); font-weight: 800; }
+.theme-nintendo-dna .themed-border { border-color: color-mix(in oklab, var(--accent-2) 50%, var(--line)); }
+
+/* alt mode: Switch dark — #2d2d2d console shell, neon Joy-Con accents */
 .theme-nintendo-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
+  --bg: oklch(0.280 0.000 0.0);
+  --surface: oklch(0.330 0.000 0.0);
+  --surface-2: oklch(0.385 0.000 0.0);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --fg-muted: oklch(0.75 0.01 90);
+  --accent: oklch(0.660 0.220 31.0);
+  --accent-2: oklch(0.730 0.130 220.0);
+  --line: oklch(1 0 0 / 16%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  background-image: radial-gradient(oklch(1 0 0 / 4%) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
 }
+.theme-nintendo-dna.alt-mode kbd { background: oklch(0.96 0 0); color: oklch(0.25 0 0); box-shadow: 0 2px 0 oklch(0.70 0 0); }

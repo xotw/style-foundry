@@ -72,16 +72,48 @@
 .theme-liquid-glass button { box-shadow: inset 0 1px 0 oklch(1 0 0 / 60%), 0 4px 16px oklch(0 0 0 / 10%); }
 .theme-liquid-glass h1 { letter-spacing: -0.045em; font-weight: 600; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-liquid-glass thead th { color: var(--fg-muted); font-size: 0.72em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; border-bottom: 1px solid oklch(0.3 0.03 260 / 14%); background: oklch(1 0 0 / 35%); }
+.theme-liquid-glass td { border-bottom: 1px solid oklch(0.3 0.03 260 / 8%); }
+.theme-liquid-glass tbody tr:hover { background: oklch(1 0 0 / 40%); }
+.theme-liquid-glass input, .theme-liquid-glass textarea, .theme-liquid-glass select { background: oklch(1 0 0 / 55%); border: 1px solid oklch(1 0 0 / 80%); box-shadow: inset 0 1px 2px oklch(0.3 0.03 260 / 10%); border-radius: var(--radius-sm); }
+.theme-liquid-glass input:focus-visible, .theme-liquid-glass textarea:focus-visible, .theme-liquid-glass select:focus-visible { outline: none; border-color: color-mix(in oklab, var(--accent) 55%, oklch(1 0 0 / 80%)); box-shadow: inset 0 1px 2px oklch(0.3 0.03 260 / 8%), 0 0 0 4px color-mix(in oklab, var(--accent) 22%, transparent); }
+.theme-liquid-glass kbd { background: linear-gradient(180deg, oklch(1 0 0 / 95%), oklch(1 0 0 / 60%)); border: 1px solid oklch(0.7 0.02 260 / 50%); border-radius: 0.45em; padding: 0.1em 0.45em; box-shadow: inset 0 1px 0 oklch(1 0 0), 0 1px 2px oklch(0.3 0.03 260 / 20%); font-family: var(--font-mono); font-size: 0.85em; }
+.theme-liquid-glass a { color: var(--accent); text-decoration: none; }
+.theme-liquid-glass a:hover { text-decoration: underline; text-underline-offset: 0.2em; text-decoration-thickness: 1.5px; }
+.theme-liquid-glass ::selection { background: color-mix(in oklab, var(--accent) 28%, transparent); }
+.theme-liquid-glass ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-liquid-glass ::-webkit-scrollbar-track { background: transparent; }
+.theme-liquid-glass ::-webkit-scrollbar-thumb { background: oklch(0.5 0.03 260 / 35%); border-radius: 9999px; border: 3px solid transparent; background-clip: padding-box; }
+.theme-liquid-glass ::-webkit-scrollbar-thumb:hover { background: oklch(0.5 0.03 260 / 55%); border: 3px solid transparent; background-clip: padding-box; }
+.theme-liquid-glass .label-caps { color: var(--fg-muted); font-weight: 600; }
+.theme-liquid-glass .themed-border { border-color: oklch(1 0 0 / 75%); box-shadow: 0 0 0 0.5px oklch(0.5 0.03 260 / 18%); }
+.theme-liquid-glass button:hover { box-shadow: inset 0 1px 0 oklch(1 0 0 / 80%), 0 6px 20px oklch(0.35 0.04 260 / 16%); }
+.theme-liquid-glass button:active { transform: scale(0.985); box-shadow: inset 0 1px 3px oklch(0.3 0.03 260 / 18%); }
+
+/* alt mode: dark room — smoked glass, dim specular hairlines, deep glow */
 .theme-liquid-glass.alt-mode {
-  --bg: oklch(0.145 0.012 250.0);
-  --surface: oklch(0.185 0.012 250.0);
-  --surface-2: oklch(0.225 0.012 250.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  --bg: oklch(0.17 0.02 255);
+  --surface: oklch(1 0 0 / 8%);
+  --surface-2: oklch(1 0 0 / 14%);
+  --fg: oklch(0.95 0.008 255);
+  --fg-muted: oklch(0.72 0.015 255);
+  --accent: oklch(0.68 0.16 255);
+  --line: oklch(1 0 0 / 18%);
+  --shadow-1: inset 0 1px 0 oklch(1 0 0 / 22%), 0 2px 6px oklch(0 0 0 / 40%);
+  --shadow-2: inset 0 1px 0 oklch(1 0 0 / 25%), inset 0 -12px 24px oklch(1 0 0 / 4%), 0 12px 34px -12px oklch(0 0 0 / 55%);
+  --shadow-3: inset 0 1.5px 0 oklch(1 0 0 / 28%), 0 30px 70px -24px oklch(0 0 0 / 65%);
+  --glow: 0 0 0 1px oklch(1 0 0 / 20%), 0 0 40px -10px oklch(0.68 0.16 255 / 50%);
+  background-image:
+    radial-gradient(48rem 30rem at 6% -6%, oklch(0.4 0.1 255 / 45%), transparent 62%),
+    radial-gradient(44rem 30rem at 96% 4%, oklch(0.38 0.09 195 / 40%), transparent 62%),
+    linear-gradient(180deg, oklch(0.2 0.02 255), oklch(0.14 0.02 255));
 }
+.theme-liquid-glass.alt-mode [class*="rounded-theme"] { background-image: linear-gradient(180deg, oklch(1 0 0 / 10%) 0%, oklch(1 0 0 / 2%) 38%, oklch(1 0 0 / 0%) 62%, oklch(1 0 0 / 5%) 100%); }
+.theme-liquid-glass.alt-mode input, .theme-liquid-glass.alt-mode textarea, .theme-liquid-glass.alt-mode select { background: oklch(1 0 0 / 8%); border-color: oklch(1 0 0 / 20%); color: var(--fg); }
+.theme-liquid-glass.alt-mode kbd { background: linear-gradient(180deg, oklch(1 0 0 / 18%), oklch(1 0 0 / 8%)); border-color: oklch(1 0 0 / 25%); box-shadow: inset 0 1px 0 oklch(1 0 0 / 35%), 0 1px 2px oklch(0 0 0 / 40%); }
+.theme-liquid-glass.alt-mode thead th { background: oklch(1 0 0 / 6%); border-bottom-color: oklch(1 0 0 / 14%); }
+.theme-liquid-glass.alt-mode td { border-bottom-color: oklch(1 0 0 / 8%); }
+.theme-liquid-glass.alt-mode tbody tr:hover { background: oklch(1 0 0 / 6%); }
+.theme-liquid-glass.alt-mode ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 28%); border: 3px solid transparent; background-clip: padding-box; }
+.theme-liquid-glass.alt-mode button { box-shadow: inset 0 1px 0 oklch(1 0 0 / 25%), 0 4px 16px oklch(0 0 0 / 35%); }

@@ -47,15 +47,38 @@
 .theme-nasa-dna h1::after { content: ""; display: block; width: 6rem; height: 3px; background: var(--accent); margin-top: 0.7rem; }
 .theme-nasa-dna .label-caps { letter-spacing: 0.3em; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-nasa-dna table { border-collapse: collapse; }
+.theme-nasa-dna thead th { border-top: 3px solid var(--fg); border-bottom: 1px solid var(--fg); background: transparent; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.7rem; font-weight: 700; }
+.theme-nasa-dna td { border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.theme-nasa-dna tbody tr:hover { background: var(--surface); box-shadow: inset 3px 0 0 var(--accent); }
+.theme-nasa-dna a { color: var(--accent-2); text-decoration: underline; text-underline-offset: 3px; }
+.theme-nasa-dna a:hover { color: var(--accent); }
+.theme-nasa-dna input, .theme-nasa-dna select, .theme-nasa-dna textarea { background: var(--bg); border: 1px solid var(--fg); border-radius: 0; transition: none; }
+.theme-nasa-dna input:focus-visible, .theme-nasa-dna select:focus-visible, .theme-nasa-dna textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; box-shadow: none; }
+.theme-nasa-dna kbd { font-family: var(--font-mono); border: 1px solid var(--fg); border-radius: 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.15em 0.5em; }
+.theme-nasa-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-nasa-dna ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-nasa-dna ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-nasa-dna ::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 0; }
+.theme-nasa-dna .label-caps::before { content: ""; display: inline-block; width: 1.5em; height: 2px; background: var(--accent); margin-right: 0.5em; vertical-align: middle; }
+.theme-nasa-dna .themed-border { border-color: var(--fg); }
+.theme-nasa-dna button { border-radius: 0; transition: none; }
+.theme-nasa-dna button:active { background: var(--fg); color: var(--bg); }
+
+/* alt mode: mission ops — console black, the worm glows brighter */
 .theme-nasa-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.130 0 0);
+  --surface: oklch(0.180 0 0);
+  --surface-2: oklch(0.230 0 0);
+  --fg: oklch(0.950 0 0);
+  --fg-muted: oklch(0.700 0.005 260);
+  --line: oklch(1 0 0 / 18%);
+  --accent: oklch(0.700 0.210 25);
+  --accent-2: oklch(0.680 0.150 255);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-nasa-dna.alt-mode thead th { border-top-color: var(--fg); }
+.theme-nasa-dna.alt-mode ::-webkit-scrollbar-thumb { background: var(--fg-muted); }

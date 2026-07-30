@@ -47,18 +47,42 @@
 .theme-adidas-dna button { text-transform: uppercase; letter-spacing: 0.12em; }
 .theme-adidas-dna button:hover { text-decoration: underline; text-underline-offset: 4px; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-adidas-dna ::selection { background: oklch(0 0 0); color: oklch(1 0 0); }
+.theme-adidas-dna h2 { border-left: 12px solid; border-image: repeating-linear-gradient(180deg, var(--fg) 0 25%, transparent 25% 37.5%, var(--fg) 37.5% 62.5%, transparent 62.5% 75%, var(--fg) 75% 100%) 1; padding-left: 0.5em; }
+.theme-adidas-dna thead th { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85em; border-bottom: 3px solid var(--fg); background: transparent; }
+.theme-adidas-dna td { border-bottom: 1px solid oklch(0 0 0 / 15%); }
+.theme-adidas-dna tbody tr:hover { background: var(--surface); box-shadow: inset 3px 0 0 var(--fg); }
+.theme-adidas-dna a { color: var(--fg); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.theme-adidas-dna a:hover { text-decoration-thickness: 4px; }
+.theme-adidas-dna input, .theme-adidas-dna select, .theme-adidas-dna textarea { border: 1px solid var(--fg); border-radius: 0; background: var(--bg); }
+.theme-adidas-dna input:focus-visible, .theme-adidas-dna select:focus-visible, .theme-adidas-dna textarea:focus-visible { outline: none; border-color: var(--fg); box-shadow: 3px 3px 0 var(--fg); }
+.theme-adidas-dna kbd { border: 1px solid var(--fg); border-radius: 0; box-shadow: 2px 2px 0 var(--fg); padding: 0.1em 0.45em; background: var(--bg); }
+.theme-adidas-dna .label-caps { border-bottom: 2px solid var(--fg); padding-bottom: 2px; }
+.theme-adidas-dna .themed-border { border: 1px solid var(--fg); box-shadow: 4px 4px 0 var(--fg); }
+.theme-adidas-dna button:active { transform: translate(2px, 2px); }
+.theme-adidas-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-adidas-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-adidas-dna ::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 0; }
+
+/* alt mode: black away kit — pure white on pure black, stripes in white */
 .theme-adidas-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --bg: oklch(0.000 0 0);
+  --surface: oklch(0.150 0.000 0.0);
+  --surface-2: oklch(0.220 0.000 0.0);
+  --fg: oklch(1.000 0 0);
+  --fg-muted: oklch(0.720 0.002 286.4);
+  --line: oklch(1.000 0 0);
+  --shadow-1: none;
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.100 0.0);
-  --accent-fg: oklch(0.13 0 0);
-  background-image: none;
+  --accent: oklch(1.000 0 0);
+  --accent-fg: oklch(0.000 0 0);
+  --glow: 0 0 0 2px oklch(1 0 0);
+  background-image: repeating-linear-gradient(-60deg, oklch(1 0 0 / 4%) 0 14px, transparent 14px 42px);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
+.theme-adidas-dna.alt-mode ::selection { background: oklch(1 0 0); color: oklch(0 0 0); }
+.theme-adidas-dna.alt-mode td { border-bottom-color: oklch(1 0 0 / 20%); }

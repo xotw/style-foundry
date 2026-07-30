@@ -47,11 +47,27 @@
 .theme-discord-dna button:hover { filter: brightness(0.9); }
 .theme-discord-dna ::selection { background: color-mix(in oklab, var(--accent) 40%, transparent); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-discord-dna thead th { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-discord-dna td { border-bottom: 1px solid var(--line); }
+.theme-discord-dna tbody tr:hover { background: oklch(1 0 0 / 4%); }
+.theme-discord-dna a { color: oklch(0.68 0.14 250); text-decoration: none; }
+.theme-discord-dna a:hover { text-decoration: underline; }
+.theme-discord-dna input, .theme-discord-dna textarea, .theme-discord-dna select { background: var(--surface-2); border: 1px solid transparent; border-radius: var(--radius-sm); }
+.theme-discord-dna input:focus-visible, .theme-discord-dna textarea:focus-visible, .theme-discord-dna select:focus-visible { outline: none; border-color: var(--accent); }
+.theme-discord-dna kbd { font-family: var(--font-body); font-size: 0.85em; background: var(--surface-2); border: 1px solid oklch(0 0 0 / 45%); border-bottom-width: 3px; border-radius: 0.3rem; padding: 0.1em 0.5em; }
+.theme-discord-dna ::-webkit-scrollbar { width: 8px; height: 8px; }
+.theme-discord-dna ::-webkit-scrollbar-track { background: var(--surface-2); border-radius: 4px; }
+.theme-discord-dna ::-webkit-scrollbar-thumb { background: oklch(0.17 0.008 268); border-radius: 4px; }
+.theme-discord-dna .label-caps { color: var(--fg-muted); font-weight: 700; }
+.theme-discord-dna .themed-border { border-left: 4px solid var(--accent); background: color-mix(in oklab, var(--accent) 8%, transparent); }
+.theme-discord-dna button:active { transform: translateY(1px); }
+
+/* alt mode: Discord light — white chat panel, gray chrome, blurple intact */
 .theme-discord-dna.alt-mode {
-  --bg: oklch(0.98 0.009 268.4);
-  --surface: oklch(0.955 0.009 268.4);
-  --surface-2: oklch(0.92 0.009 268.4);
+  --bg: oklch(0.98 0.005 268.4);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.94 0.007 264);
   --fg: oklch(0.17 0.005 270);
   --fg-muted: oklch(0.46 0.01 270);
   --line: oklch(0.87 0.005 270);
@@ -59,3 +75,7 @@
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
 }
+.theme-discord-dna.alt-mode tbody tr:hover { background: oklch(0 0 0 / 4%); }
+.theme-discord-dna.alt-mode a { color: oklch(0.48 0.16 250); }
+.theme-discord-dna.alt-mode kbd { border-color: oklch(0 0 0 / 20%); }
+.theme-discord-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.75 0.005 264); }

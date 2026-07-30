@@ -47,15 +47,50 @@
 .theme-redbull-dna h1 { color: var(--accent-2); }
 .theme-redbull-dna button { font-style: italic; text-transform: uppercase; letter-spacing: 0.06em; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-redbull-dna { background-image: linear-gradient(115deg, transparent 0 62%, oklch(1 0 0 / 3%) 62% 64%, transparent 64% 78%, oklch(1 0 0 / 3%) 78% 79.5%, transparent 79.5%); }
+.theme-redbull-dna ::selection { background: var(--accent-2); color: oklch(0.25 0.16 264.2); }
+.theme-redbull-dna thead th { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; font-weight: 700; background: oklch(0.25 0.170 264.2); color: var(--accent-2); }
+.theme-redbull-dna td { border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.theme-redbull-dna tbody tr:hover { background: var(--surface-2); box-shadow: inset 4px 0 0 var(--accent); }
+.theme-redbull-dna a { color: var(--accent-2); font-weight: 700; font-style: italic; text-decoration: none; border-bottom: 2px solid transparent; }
+.theme-redbull-dna a:hover { border-bottom-color: var(--accent-2); }
+.theme-redbull-dna input, .theme-redbull-dna select, .theme-redbull-dna textarea { background: oklch(0.26 0.170 264.2); border: 1px solid oklch(1 0 0 / 25%); border-radius: var(--radius); color: var(--fg); }
+.theme-redbull-dna input::placeholder, .theme-redbull-dna textarea::placeholder { color: var(--fg-muted); }
+.theme-redbull-dna input:focus-visible, .theme-redbull-dna select:focus-visible, .theme-redbull-dna textarea:focus-visible { outline: none; border-color: var(--accent-2); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent-2) 35%, transparent); }
+.theme-redbull-dna kbd { font-style: italic; font-weight: 700; background: var(--accent-2); color: oklch(0.25 0.16 264.2); border-radius: var(--radius-sm); padding: 0.1em 0.5em; }
+.theme-redbull-dna .label-caps { color: var(--accent-2); font-weight: 700; }
+.theme-redbull-dna .themed-border { border-left: 4px solid var(--accent); border-image: linear-gradient(180deg, var(--accent) 0 50%, var(--accent-2) 50% 100%) 1; }
+.theme-redbull-dna button { transition: transform 90ms ease, box-shadow 90ms ease; }
+.theme-redbull-dna button:hover { transform: skewX(-8deg) translateY(-1px); box-shadow: 0 4px 0 oklch(0.20 0.14 264.2); }
+.theme-redbull-dna button:active { transform: skewX(-8deg) translateY(1px); box-shadow: none; }
+.theme-redbull-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-redbull-dna ::-webkit-scrollbar-track { background: oklch(0.25 0.170 264.2); }
+.theme-redbull-dna ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 9999px; }
+.theme-redbull-dna ::-webkit-scrollbar-thumb:hover { background: var(--accent-2); }
+
+/* alt mode: the silver can — brushed silver-blue, navy ink, red and yellow kept loud */
 .theme-redbull-dna.alt-mode {
-  --bg: oklch(0.98 0.012 264.2);
-  --surface: oklch(0.955 0.015 264.2);
-  --surface-2: oklch(0.92 0.020 264.2);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --bg: oklch(0.965 0.008 250.0);
+  --surface: oklch(0.930 0.012 255.0);
+  --surface-2: oklch(0.895 0.016 258.0);
+  --fg: oklch(0.300 0.150 264.2);
+  --fg-muted: oklch(0.480 0.070 264.2);
+  --line: oklch(0.840 0.020 258.0);
+  --accent: oklch(0.540 0.224 18.3);
+  --accent-2: oklch(0.760 0.170 88.9);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
+  background-image: linear-gradient(115deg, transparent 0 62%, oklch(0.30 0.15 264.2 / 4%) 62% 64%, transparent 64% 78%, oklch(0.30 0.15 264.2 / 4%) 78% 79.5%, transparent 79.5%);
 }
+.theme-redbull-dna.alt-mode h1 { color: var(--accent); }
+.theme-redbull-dna.alt-mode ::selection { background: var(--fg); color: oklch(0.965 0.008 250); }
+.theme-redbull-dna.alt-mode thead th { background: var(--fg); color: var(--accent-2); }
+.theme-redbull-dna.alt-mode a { color: var(--accent); }
+.theme-redbull-dna.alt-mode a:hover { border-bottom-color: var(--accent); }
+.theme-redbull-dna.alt-mode input, .theme-redbull-dna.alt-mode select, .theme-redbull-dna.alt-mode textarea { background: oklch(1 0 0); border-color: var(--line); color: var(--fg); }
+.theme-redbull-dna.alt-mode kbd { background: var(--fg); color: oklch(0.965 0.008 250); }
+.theme-redbull-dna.alt-mode .label-caps { color: var(--accent); }
+.theme-redbull-dna.alt-mode ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-redbull-dna.alt-mode button:hover { box-shadow: 0 4px 0 var(--line); }

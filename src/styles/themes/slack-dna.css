@@ -66,11 +66,28 @@
 .theme-slack-dna h1 { font-weight: 800; letter-spacing: -0.03em; }
 .theme-slack-dna h2 { border-image: linear-gradient(90deg, #36c5f0, #2eb67d, #ecb22e, #e01e5a) 1; border-bottom: 3px solid; padding-bottom: 0.4rem; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-slack-dna thead th { background: oklch(0.97 0.01 320); font-size: 0.8em; font-weight: 700; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-slack-dna td { border-bottom: 1px solid var(--line); }
+.theme-slack-dna tbody tr:hover { background: oklch(0.95 0.02 240 / 60%); }
+.theme-slack-dna a { color: oklch(0.47 0.12 240); text-decoration: none; }
+.theme-slack-dna a:hover { text-decoration: underline; }
+.theme-slack-dna kbd { font-family: var(--font-body); font-size: 0.85em; background: var(--surface); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 0.3rem; padding: 0.1em 0.45em; box-shadow: var(--shadow-1); }
+.theme-slack-dna input, .theme-slack-dna textarea, .theme-slack-dna select { border: 1px solid oklch(0.72 0.02 320); border-radius: var(--radius-sm); }
+.theme-slack-dna input:focus-visible, .theme-slack-dna textarea:focus-visible, .theme-slack-dna select:focus-visible { outline: none; border-color: var(--accent-2); box-shadow: var(--glow); }
+.theme-slack-dna ::selection { background: oklch(0.85 0.07 240); }
+.theme-slack-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-slack-dna ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-slack-dna ::-webkit-scrollbar-thumb { background: oklch(0.6 0.06 327); border-radius: 5px; border: 2px solid var(--surface-2); }
+.theme-slack-dna .label-caps { color: var(--accent); font-weight: 700; }
+.theme-slack-dna .themed-border { border-left: 4px solid var(--accent); }
+.theme-slack-dna button:active { transform: translateY(1px); }
+
+/* alt mode: aubergine night — Slack's dark client keeps the plum cast */
 .theme-slack-dna.alt-mode {
-  --bg: oklch(0.145 0.002 300.0);
-  --surface: oklch(0.185 0.002 300.0);
-  --surface-2: oklch(0.225 0.002 300.0);
+  --bg: oklch(0.17 0.03 327);
+  --surface: oklch(0.21 0.035 327);
+  --surface-2: oklch(0.25 0.04 327);
   --fg: oklch(0.97 0.005 90);
   --fg-muted: oklch(0.70 0.01 90);
   --line: oklch(1 0 0 / 14%);
@@ -80,3 +97,10 @@
   --accent: oklch(0.62 0.108 327.1);
   --accent-fg: oklch(0.13 0 0);
 }
+.theme-slack-dna.alt-mode thead th { background: oklch(0.24 0.035 327); }
+.theme-slack-dna.alt-mode tbody tr:hover { background: oklch(1 0 0 / 6%); }
+.theme-slack-dna.alt-mode a { color: oklch(0.70 0.10 240); }
+.theme-slack-dna.alt-mode ::selection { background: oklch(0.45 0.08 240); }
+.theme-slack-dna.alt-mode kbd { background: var(--surface-2); }
+.theme-slack-dna.alt-mode input, .theme-slack-dna.alt-mode textarea, .theme-slack-dna.alt-mode select { border-color: oklch(1 0 0 / 25%); background: var(--surface); }
+.theme-slack-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.5 0.06 327); }

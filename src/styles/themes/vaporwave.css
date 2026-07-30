@@ -74,16 +74,49 @@
 .theme-vaporwave h1 { background: linear-gradient(180deg, oklch(0.85 0.15 200), oklch(0.7 0.25 340)); -webkit-background-clip: text; background-clip: text; color: transparent; text-transform: uppercase; }
 .theme-vaporwave button { text-shadow: 0 0 8px color-mix(in oklab, var(--accent) 70%, transparent); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-vaporwave thead th { color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.18em; font-family: var(--font-display); font-weight: 400; border-bottom: 2px solid var(--accent-2); background: oklch(0.24 0.13 305 / 60%); }
+.theme-vaporwave td { border-bottom: 1px solid oklch(0.83 0.16 195 / 22%); }
+.theme-vaporwave tbody tr:hover td { background: oklch(0.75 0.22 340 / 12%); text-shadow: 0 0 12px oklch(0.75 0.22 340 / 50%); }
+.theme-vaporwave input, .theme-vaporwave textarea, .theme-vaporwave select { background: oklch(0.24 0.13 300 / 70%); border: 1px solid var(--line); color: var(--fg); }
+.theme-vaporwave input:focus-visible, .theme-vaporwave textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 18px -2px oklch(0.75 0.22 340 / 80%), inset 0 0 10px oklch(0.75 0.22 340 / 20%); }
+.theme-vaporwave kbd { font-family: var(--font-mono); border: 1px solid var(--accent-2); background: linear-gradient(180deg, oklch(0.4 0.14 310), oklch(0.26 0.13 300)); color: var(--accent-2); padding: 0.1em 0.45em; text-shadow: 0 0 6px oklch(0.83 0.16 195 / 80%); }
+.theme-vaporwave a { color: var(--accent-2); text-decoration: none; border-bottom: 1px solid oklch(0.83 0.16 195 / 50%); }
+.theme-vaporwave a:hover { color: var(--accent); border-bottom-color: var(--accent); text-shadow: 0 0 14px oklch(0.75 0.22 340 / 80%); }
+.theme-vaporwave ::selection { background: oklch(0.75 0.22 340); color: oklch(0.15 0.1 300); }
+.theme-vaporwave ::-webkit-scrollbar { width: 12px; }
+.theme-vaporwave ::-webkit-scrollbar-track { background: oklch(0.17 0.11 300); }
+.theme-vaporwave ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--accent), var(--accent-2)); border-radius: 999px; box-shadow: 0 0 10px oklch(0.75 0.22 340 / 70%); }
+.theme-vaporwave .label-caps { color: var(--accent-2); text-shadow: 0 0 10px oklch(0.83 0.16 195 / 70%); }
+.theme-vaporwave .themed-border { border: 1px solid var(--accent-2); box-shadow: 0 0 20px -6px oklch(0.83 0.16 195 / 70%), inset 0 0 20px -10px oklch(0.75 0.22 340 / 50%); }
+.theme-vaporwave hr { border: none; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), var(--accent-2), transparent); box-shadow: 0 0 12px oklch(0.75 0.22 340 / 70%); }
+
+/* alt mode: miami daylight — sun-bleached pastel, grid still on the horizon */
 .theme-vaporwave.alt-mode {
-  --bg: oklch(0.98 0.012 300.0);
-  --surface: oklch(0.955 0.015 300.0);
-  --surface-2: oklch(0.92 0.020 300.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --bg: oklch(0.96 0.03 320);
+  --surface: oklch(0.99 0.015 320 / 85%);
+  --surface-2: oklch(0.93 0.05 200 / 85%);
+  --fg: oklch(0.28 0.09 300);
+  --fg-muted: oklch(0.48 0.08 310);
+  --accent: oklch(0.62 0.24 345);
+  --accent-fg: oklch(0.99 0.01 320);
+  --accent-2: oklch(0.55 0.13 210);
+  --line: oklch(0.55 0.13 210 / 40%);
+  --shadow-1: 0 0 0 1px var(--line);
+  --shadow-2: 0 8px 24px -8px oklch(0.62 0.24 345 / 35%);
+  --shadow-3: 0 16px 44px -12px oklch(0.55 0.13 210 / 40%);
+  background-image:
+    linear-gradient(oklch(0.55 0.13 210 / 15%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.55 0.13 210 / 15%) 1px, transparent 1px),
+    radial-gradient(50rem 30rem at 50% 100%, oklch(0.85 0.11 340 / 55%), transparent 70%),
+    linear-gradient(180deg, oklch(0.93 0.05 200), oklch(0.96 0.04 330));
+  background-size: 4rem 4rem, 4rem 4rem, 100% 100%, 100% 100%;
+  background-position: bottom, bottom, center, center;
+  background-attachment: fixed;
 }
+.theme-vaporwave.alt-mode h1, .theme-vaporwave.alt-mode h2 { background-image: linear-gradient(180deg, oklch(0.45 0.16 300), oklch(0.62 0.24 345)); text-shadow: none; }
+.theme-vaporwave.alt-mode thead th { background: oklch(0.93 0.05 200 / 70%); color: var(--accent-2); }
+.theme-vaporwave.alt-mode input, .theme-vaporwave.alt-mode textarea, .theme-vaporwave.alt-mode select { background: oklch(0.99 0.01 320 / 80%); color: var(--fg); }
+.theme-vaporwave.alt-mode kbd { background: linear-gradient(180deg, oklch(0.98 0.01 320), oklch(0.9 0.04 320)); color: var(--accent-2); text-shadow: none; }
+.theme-vaporwave.alt-mode ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-vaporwave.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.03 320); }

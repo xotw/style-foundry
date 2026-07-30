@@ -45,15 +45,39 @@
 .theme-proton-dna { --font-ui: var(--font-display); }
 .theme-proton-dna h1 { background: linear-gradient(95deg, var(--accent-2), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-proton-dna thead th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-proton-dna td { border-bottom: 1px solid color-mix(in oklab, var(--line) 60%, transparent); }
+.theme-proton-dna tbody tr:hover { background: var(--surface); }
+.theme-proton-dna a { color: var(--accent); text-decoration: underline; text-decoration-color: color-mix(in oklab, var(--accent) 35%, transparent); text-underline-offset: 3px; transition: text-decoration-color 120ms ease; }
+.theme-proton-dna a:hover { text-decoration-color: var(--accent); }
+.theme-proton-dna input, .theme-proton-dna select, .theme-proton-dna textarea { background: var(--bg); border: 1px solid var(--line); transition: border-color 120ms ease, box-shadow 120ms ease; }
+.theme-proton-dna input:focus-visible, .theme-proton-dna select:focus-visible, .theme-proton-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 22%, transparent); }
+.theme-proton-dna kbd { font-family: var(--font-mono); font-size: 0.75em; background: var(--surface); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: var(--radius-sm); padding: 0.1em 0.45em; }
+.theme-proton-dna ::selection { background: color-mix(in oklab, var(--accent) 22%, transparent); }
+.theme-proton-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-proton-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-proton-dna ::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--accent) 30%, var(--line)); border-radius: var(--radius-pill); }
+.theme-proton-dna .label-caps { color: var(--accent-2); font-weight: 700; letter-spacing: 0.08em; }
+.theme-proton-dna .themed-border { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 10%, transparent); }
+.theme-proton-dna button { transition: filter 120ms ease, transform 120ms ease; }
+.theme-proton-dna button:hover { filter: brightness(1.06); }
+.theme-proton-dna button:active { transform: translateY(1px); }
+
+/* alt mode: Proton dark — the deep purple-navy of the encrypted inbox */
 .theme-proton-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
+  --bg: oklch(0.205 0.045 284);
+  --surface: oklch(0.245 0.050 284);
+  --surface-2: oklch(0.290 0.055 284);
+  --fg: oklch(0.940 0.010 286);
+  --fg-muted: oklch(0.680 0.030 285);
   --line: oklch(1 0 0 / 14%);
+  --accent: oklch(0.680 0.190 285);
+  --accent-2: oklch(0.780 0.120 286);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  background-image: radial-gradient(80% 50% at 50% -10%, oklch(0.4 0.18 285 / 30%), transparent 60%);
+  background-attachment: fixed;
 }
+.theme-proton-dna.alt-mode h1 { background: linear-gradient(95deg, var(--accent-2), oklch(0.75 0.16 285)); -webkit-background-clip: text; background-clip: text; color: transparent; }

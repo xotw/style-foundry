@@ -1,0 +1,49 @@
+/* The Matrix — digital rain green on void, terminal of the simulation */
+.theme-matrix {
+  --bg: oklch(0.122 0.022 149.8);
+  --surface: oklch(0.165 0.027 158.9);
+  --surface-2: oklch(0.205 0.036 155.3);
+  --fg: oklch(0.952 0.076 153.9);
+  --fg-muted: oklch(0.580 0.092 152.1);
+  --accent: oklch(0.869 0.278 144.5);
+  --accent-fg: oklch(0.122 0.022 149.8);
+  --accent-2: oklch(0.904 0.167 152.4);
+  --line: oklch(0.8 0.2 145 / 25%);
+  --success: oklch(0.869 0.278 144.5);
+  --warning: oklch(0.939 0.223 120.0);
+  --danger: oklch(0.661 0.226 26.0);
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-pill: 0px;
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 14px color-mix(in oklab, var(--accent) 55%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Share Tech Mono", monospace;
+  --font-body: "Share Tech Mono", monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.02em;
+  --label-transform: lowercase;
+  --label-tracking: 0.14em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-matrix h1,
+.theme-matrix h2,
+.theme-matrix h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-matrix { --font-ui: var(--font-display); background-image: repeating-linear-gradient(90deg, oklch(0.6 0.18 145 / 4%) 0 2px, transparent 2px 24px), linear-gradient(180deg, oklch(0.4 0.15 145 / 12%), transparent 300px); }
+.theme-matrix h1, .theme-matrix h2 { color: var(--accent); text-shadow: 0 0 10px color-mix(in oklab, var(--accent) 60%, transparent); }
+.theme-matrix h1::after { content: "▌"; animation: sf-blink 1s steps(1) infinite; margin-left: 0.1em; }
+.theme-matrix ::selection { background: var(--accent); color: #020803; }
+

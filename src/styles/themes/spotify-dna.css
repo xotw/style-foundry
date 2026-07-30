@@ -5,11 +5,11 @@
   --surface-2: oklch(0.277 0 0);
   --fg: oklch(0.985 0 0);
   --fg-muted: oklch(0.767 0 0);
-  --accent: oklch(0.689 0.187 148.9);
+  --accent: oklch(0.765 0.205 151.5); /* #1ED760 — current Spotify green on dark */
   --accent-fg: oklch(0.14 0 0);
   --accent-2: oklch(0.65 0.2 300);
   --line: oklch(1 0 0 / 12%);
-  --success: oklch(0.689 0.187 148.9);
+  --success: oklch(0.765 0.205 151.5);
   --warning: oklch(0.83 0.16 85);
   --danger: oklch(0.65 0.22 25);
 
@@ -63,7 +63,27 @@
 .theme-spotify-dna h1 { font-weight: 900; letter-spacing: -0.05em; }
 .theme-spotify-dna button { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-spotify-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-spotify-dna a { color: var(--fg); text-decoration: none; }
+.theme-spotify-dna a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.theme-spotify-dna thead th { font-size: 0.6875rem; font-weight: 500; text-transform: uppercase; letter-spacing: var(--label-tracking); color: var(--fg-muted); border-bottom: 1px solid var(--line); text-align: left; }
+.theme-spotify-dna tbody td { border: none; }
+.theme-spotify-dna tbody tr:hover td { background: oklch(1 0 0 / 8%); } /* tracklist row wash */
+.theme-spotify-dna tbody tr:hover td:first-child { color: var(--accent); } /* now-playing tick */
+.theme-spotify-dna input, .theme-spotify-dna select, .theme-spotify-dna textarea { background: oklch(1 0 0 / 10%); border: 1px solid transparent; border-radius: var(--radius-pill); color: var(--fg); }
+.theme-spotify-dna input::placeholder, .theme-spotify-dna textarea::placeholder { color: var(--fg-muted); }
+.theme-spotify-dna input:focus-visible, .theme-spotify-dna select:focus-visible, .theme-spotify-dna textarea:focus-visible { outline: none; border-color: var(--fg); background: oklch(1 0 0 / 14%); }
+.theme-spotify-dna button:active { transform: scale(0.97); filter: brightness(0.88); } /* play-pill press-in */
+.theme-spotify-dna kbd { background: oklch(1 0 0 / 12%); color: var(--fg); border-radius: var(--radius-pill); padding: 0.1em 0.55em; font-family: var(--font-mono); font-size: 0.8em; }
+.theme-spotify-dna ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-spotify-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-spotify-dna ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 30%); border-radius: 0; }
+.theme-spotify-dna ::-webkit-scrollbar-thumb:hover { background: oklch(1 0 0 / 50%); }
+.theme-spotify-dna .label-caps { color: var(--fg-muted); font-weight: 700; }
+.theme-spotify-dna .themed-border { border-color: var(--accent); }
+
+/* alt mode: paper sleeve — Spotify green kept, darkened for light-ground contrast */
 .theme-spotify-dna.alt-mode {
   --bg: oklch(0.98 0.000 0.0);
   --surface: oklch(0.955 0.000 0.0);
@@ -74,5 +94,13 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --accent: oklch(0.55 0.17 150); /* #1DB954-family, dark enough on white */
+  --accent-fg: oklch(0.99 0 0);
+  --success: oklch(0.55 0.17 150);
+  background-image: linear-gradient(180deg, oklch(0.93 0.05 150 / 55%) 0%, transparent 420px);
 }
+.theme-spotify-dna.alt-mode tbody tr:hover td { background: oklch(0 0 0 / 5%); }
+.theme-spotify-dna.alt-mode input, .theme-spotify-dna.alt-mode select, .theme-spotify-dna.alt-mode textarea { background: oklch(0 0 0 / 6%); }
+.theme-spotify-dna.alt-mode input:focus-visible, .theme-spotify-dna.alt-mode select:focus-visible, .theme-spotify-dna.alt-mode textarea:focus-visible { border-color: var(--fg); background: oklch(0 0 0 / 9%); }
+.theme-spotify-dna.alt-mode kbd { background: oklch(0 0 0 / 8%); color: var(--fg); }
+.theme-spotify-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0 0 0 / 30%); }

@@ -50,15 +50,40 @@
 .theme-marseille h1 { font-weight: 600; }
 .theme-marseille button { font-weight: 600; }
 
+/* depth */
+.theme-marseille thead th { color: oklch(0.45 0.10 240); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-bottom: 2px solid var(--accent); }
+.theme-marseille td { border-bottom: 1px solid var(--line); }
+.theme-marseille tbody tr:hover { background: oklch(0.706 0.128 229.9 / 9%); }
+.theme-marseille a { color: oklch(0.50 0.11 235); text-underline-offset: 3px; }
+/* the Mediterranean: links ripple on hover */
+.theme-marseille a:hover { text-decoration-style: wavy; text-decoration-color: var(--accent); }
+.theme-marseille ::selection { background: var(--accent); color: oklch(1 0 0); }
+.theme-marseille input:focus-visible, .theme-marseille select:focus-visible, .theme-marseille textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.theme-marseille kbd { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-pill); padding: 0.1em 0.55em; font-family: var(--font-mono); color: oklch(0.45 0.10 240); }
+.theme-marseille ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-marseille ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-marseille ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; border: 2px solid var(--surface-2); }
+.theme-marseille ::-webkit-scrollbar-thumb:hover { background: oklch(0.60 0.13 235); }
+.theme-marseille .label-caps { color: oklch(0.55 0.12 235); }
+.theme-marseille .themed-border { border-color: var(--accent); border-bottom-width: 3px; }
+.theme-marseille button:hover { box-shadow: 0 4px 14px oklch(0.706 0.128 229.9 / 35%); }
+
 /* alt mode: auto-derived dark variant */
 .theme-marseille.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  /* Vélodrome night match — deep sea navy, ciel floodlit */
+  --bg: oklch(0.175 0.032 245.0);
+  --surface: oklch(0.215 0.038 245.0);
+  --surface-2: oklch(0.258 0.045 245.0);
+  --fg: oklch(0.97 0.008 230);
+  --fg-muted: oklch(0.72 0.035 235);
+  --line: oklch(0.706 0.128 229.9 / 22%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-marseille.alt-mode thead th { color: var(--accent); }
+.theme-marseille.alt-mode a { color: oklch(0.78 0.11 230); }
+.theme-marseille.alt-mode kbd { color: oklch(0.78 0.11 230); }
+.theme-marseille.alt-mode .label-caps { color: oklch(0.767 0.139 91.1); }
+.theme-marseille.alt-mode tbody tr:hover { background: oklch(0.706 0.128 229.9 / 14%); }
+.theme-marseille.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.78 0.11 230); }

@@ -47,16 +47,49 @@
 .theme-art-deco h1::after { content: ""; display: block; width: 4rem; margin-top: 0.6rem; border-block: 1px solid var(--accent); height: 4px; }
 .theme-art-deco button { text-transform: uppercase; letter-spacing: 0.18em; outline: 1px solid var(--accent); outline-offset: 3px; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-art-deco thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: var(--label-tracking); font-size: 0.68em; color: var(--accent); border-bottom: 1px solid var(--accent); text-align: left; }
+.theme-art-deco td { border-bottom: 1px solid oklch(0.72 0.09 85 / 20%); }
+.theme-art-deco tbody tr:hover { background: oklch(0.731 0.115 85.0 / 8%); }
+.theme-art-deco input, .theme-art-deco select, .theme-art-deco textarea { background: transparent; border: 1px solid var(--line); border-radius: 0; color: var(--fg); }
+/* physical: focus frames step outward like a ziggurat setback */
+.theme-art-deco input:focus, .theme-art-deco select:focus, .theme-art-deco textarea:focus { outline: 1px solid var(--accent); outline-offset: 3px; border-color: var(--accent); box-shadow: none; }
+.theme-art-deco a { color: var(--accent); text-decoration: none; letter-spacing: 0.04em; }
+.theme-art-deco a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; color: oklch(0.82 0.12 88); }
+.theme-art-deco kbd { font-family: var(--font-mono); font-size: 0.8em; padding: 0.12em 0.5em; border: 1px solid var(--accent-2); border-radius: 0; background: var(--surface-2); color: var(--accent); }
+.theme-art-deco ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-art-deco ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-art-deco ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-art-deco ::-webkit-scrollbar-thumb { background: var(--accent-2); border-radius: 0; border: 2px solid var(--surface); }
+.theme-art-deco ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-art-deco .label-caps { color: var(--accent); }
+.theme-art-deco .label-caps::before, .theme-art-deco .label-caps::after { content: "—"; color: var(--accent-2); margin-inline: 0.5em; }
+.theme-art-deco .themed-border { border: 1px solid var(--accent); outline: 1px solid oklch(0.553 0.089 82.3 / 60%); outline-offset: 4px; }
+.theme-art-deco button:active { transform: translateY(1px); outline-offset: 1px; }
+
+/* alt mode: marble lobby — cream stone, bronze inlay, sunburst in daylight */
 .theme-art-deco.alt-mode {
   --bg: oklch(0.98 0.011 80.5);
   --surface: oklch(0.955 0.011 80.5);
   --surface-2: oklch(0.92 0.011 80.5);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --fg: oklch(0.25 0.02 80);
+  --fg-muted: oklch(0.48 0.035 82);
+  --accent: oklch(0.54 0.11 85);
+  --accent-fg: oklch(0.98 0.011 80.5);
+  --accent-2: oklch(0.64 0.09 83);
+  --line: oklch(0.54 0.09 85 / 40%);
+  --glow: 0 0 0 1px color-mix(in oklab, oklch(0.54 0.11 85) 60%, transparent);
+  --shadow-1: 0 1px 0 oklch(0.54 0.09 85 / 30%);
+  --shadow-2: 0 8px 24px oklch(0.3 0.03 80 / 18%);
+  --shadow-3: 0 24px 56px oklch(0.3 0.03 80 / 22%);
+  background-image: repeating-conic-gradient(from -90deg at 50% -10%, oklch(0.54 0.11 85 / 7%) 0 4deg, transparent 4deg 12deg);
 }
+.theme-art-deco.alt-mode thead th { color: var(--accent); border-bottom-color: var(--accent); }
+.theme-art-deco.alt-mode td { border-bottom-color: oklch(0.54 0.09 85 / 25%); }
+.theme-art-deco.alt-mode tbody tr:hover { background: oklch(0.54 0.11 85 / 8%); }
+.theme-art-deco.alt-mode a:hover { color: oklch(0.44 0.11 85); }
+.theme-art-deco.alt-mode kbd { background: var(--surface-2); color: var(--accent); border-color: var(--accent-2); }
+.theme-art-deco.alt-mode ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-art-deco.alt-mode ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-art-deco.alt-mode ::-webkit-scrollbar-thumb { background: var(--accent-2); border-color: var(--surface); }
+.theme-art-deco.alt-mode h1::after { border-block-color: var(--accent); }

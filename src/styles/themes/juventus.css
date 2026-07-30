@@ -51,6 +51,30 @@
 .theme-juventus h2 { color: var(--accent-2); }
 .theme-juventus button { clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); border-radius: 0; }
 
+/* depth */
+.theme-juventus thead th { background: var(--fg); color: var(--bg); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-radius: 0; }
+.theme-juventus td { border-bottom: 1px solid oklch(0.178 0 0 / 25%); }
+/* zebra rows, obviously */
+.theme-juventus tbody tr:nth-child(even) { background: oklch(0.178 0 0 / 4%); }
+.theme-juventus tbody tr:hover { background: oklch(0.178 0 0 / 9%); }
+.theme-juventus a { color: var(--fg); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-juventus a:hover { text-decoration-color: var(--accent-2); }
+.theme-juventus ::selection { background: var(--fg); color: var(--bg); }
+.theme-juventus input, .theme-juventus select, .theme-juventus textarea { border-radius: 0; border-color: var(--fg); }
+.theme-juventus input:focus-visible, .theme-juventus select:focus-visible, .theme-juventus textarea:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.theme-juventus kbd { background: var(--bg); color: var(--fg); border: 2px solid var(--fg); border-radius: 0; padding: 0.1em 0.45em; font-family: var(--font-mono); clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
+.theme-juventus ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-juventus ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-juventus ::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 0; }
+.theme-juventus ::-webkit-scrollbar-thumb:hover { background: oklch(0.646 0.241 18.8); }
+.theme-juventus .label-caps { color: var(--accent-2); }
+/* the J-cut: framed panels lose their top-left corner */
+.theme-juventus .themed-border { border: 2px solid var(--fg); clip-path: polygon(14px 0, 100% 0, 100% 100%, 0 100%, 0 14px); }
+.theme-juventus button:active { transform: translate(1px, 1px); }
+
 .theme-juventus.alt-mode { --bg: oklch(0.13 0 0); --surface: oklch(0.18 0 0); --surface-2: oklch(0.23 0 0);
   --fg: oklch(0.97 0 0); --fg-muted: oklch(0.7 0 0); --accent: oklch(0.97 0 0); --accent-fg: oklch(0.13 0 0);
   --line: oklch(1 0 0 / 20%); background-image: repeating-linear-gradient(90deg, oklch(1 0 0 / 5%) 0 32px, transparent 32px 64px); background-size: 100% 260px; background-repeat: no-repeat; }
+.theme-juventus.alt-mode td { border-bottom-color: oklch(1 0 0 / 22%); }
+.theme-juventus.alt-mode tbody tr:nth-child(even) { background: oklch(1 0 0 / 5%); }
+.theme-juventus.alt-mode tbody tr:hover { background: oklch(1 0 0 / 10%); }

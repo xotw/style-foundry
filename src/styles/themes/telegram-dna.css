@@ -46,16 +46,41 @@
 .theme-telegram-dna h1 { font-weight: 500; }
 .theme-telegram-dna button:hover { transform: translateY(-1px); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-telegram-dna { background-image: radial-gradient(circle at 80% 10%, oklch(0.9 0.05 230 / 40%), transparent 40%), radial-gradient(oklch(0.6 0.12 250 / 5%) 1px, transparent 1px); background-size: auto, 22px 22px; }
+.theme-telegram-dna thead th { font-weight: 500; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-telegram-dna td { border-bottom: 1px solid var(--line); }
+.theme-telegram-dna tbody tr:hover { background: oklch(0.95 0.02 250 / 70%); }
+.theme-telegram-dna a { color: var(--accent-2); text-decoration: none; }
+.theme-telegram-dna a:hover { text-decoration: underline; }
+.theme-telegram-dna input, .theme-telegram-dna textarea, .theme-telegram-dna select { border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
+.theme-telegram-dna input:focus-visible, .theme-telegram-dna textarea:focus-visible, .theme-telegram-dna select:focus-visible { outline: none; border-color: var(--accent); box-shadow: inset 0 -1px 0 var(--accent); }
+.theme-telegram-dna kbd { font-family: var(--font-body); font-size: 0.85em; background: var(--surface); border: 1px solid var(--line); border-radius: 0.4rem; padding: 0.1em 0.45em; }
+.theme-telegram-dna ::selection { background: oklch(0.88 0.06 250); }
+.theme-telegram-dna ::-webkit-scrollbar { width: 6px; height: 6px; }
+.theme-telegram-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-telegram-dna ::-webkit-scrollbar-thumb { background: oklch(0.8 0.01 250); border-radius: 3px; }
+.theme-telegram-dna .label-caps { color: var(--accent); font-weight: 500; }
+.theme-telegram-dna .themed-border { border-radius: var(--radius-lg); border-bottom-left-radius: 0.25rem; } /* chat-bubble tail corner */
+.theme-telegram-dna button:active { transform: translateY(0); }
+
+/* alt mode: Telegram night — deep blue-gray, brighter sky accent */
 .theme-telegram-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.21 0.02 240);
+  --surface: oklch(0.25 0.025 240);
+  --surface-2: oklch(0.29 0.025 240);
+  --fg: oklch(0.96 0.005 240);
+  --fg-muted: oklch(0.68 0.02 240);
+  --line: oklch(1 0 0 / 12%);
+  --accent: oklch(0.70 0.13 240);
+  --accent-fg: oklch(0.13 0 0);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
   background-image: none;
 }
+.theme-telegram-dna.alt-mode tbody tr:hover { background: oklch(1 0 0 / 5%); }
+.theme-telegram-dna.alt-mode ::selection { background: oklch(0.45 0.08 250); }
+.theme-telegram-dna.alt-mode input, .theme-telegram-dna.alt-mode textarea, .theme-telegram-dna.alt-mode select { background: var(--surface); }
+.theme-telegram-dna.alt-mode kbd { background: var(--surface-2); }
+.theme-telegram-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.45 0.02 240); }

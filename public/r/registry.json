@@ -202,6 +202,12 @@
       "description": "Dreamcore — hazy pastel gradients, blurred glows, floating ethereal calm — token file scoped under .theme-dreamcore; wrap your app in that class."
     },
     {
+      "name": "theme-dune",
+      "type": "registry:item",
+      "title": "Dune",
+      "description": "Dune — spice sand, monumental thin display, desert silence — token file scoped under .theme-dune; wrap your app in that class."
+    },
+    {
       "name": "theme-duolingo-dna",
       "type": "registry:item",
       "title": "Duolingo DNA",
@@ -248,6 +254,12 @@
       "type": "registry:item",
       "title": "Frutiger Aero",
       "description": "Frutiger Aero — 2000s: sky blue + vivid green, glossy bubbles, lens flares — token file scoped under .theme-frutiger-aero; wrap your app in that class."
+    },
+    {
+      "name": "theme-ghibli",
+      "type": "registry:item",
+      "title": "Ghibli",
+      "description": "Ghibli — watercolor meadows, warm paper skies, gentle wonder — token file scoped under .theme-ghibli; wrap your app in that class."
     },
     {
       "name": "theme-github-dna",
@@ -310,6 +322,12 @@
       "description": "Inter Milan DNA — nerazzurri serpent night, biscione gradient — token file scoped under .theme-inter-milan; wrap your app in that class."
     },
     {
+      "name": "theme-james-bond",
+      "type": "registry:item",
+      "title": "James Bond",
+      "description": "James Bond — tuxedo black and white, gunbarrel gold precision — token file scoped under .theme-james-bond; wrap your app in that class."
+    },
+    {
       "name": "theme-juventus",
       "type": "registry:item",
       "title": "Juventus DNA",
@@ -362,6 +380,12 @@
       "type": "registry:item",
       "title": "Material",
       "description": "Material — Material Design 3: tonal palette, filled surfaces, elevation — token file scoped under .theme-material; wrap your app in that class."
+    },
+    {
+      "name": "theme-matrix",
+      "type": "registry:item",
+      "title": "The Matrix",
+      "description": "The Matrix — digital rain green on void, terminal of the simulation — token file scoped under .theme-matrix; wrap your app in that class."
     },
     {
       "name": "theme-maximalism",
@@ -544,6 +568,12 @@
       "description": "San Antonio Spurs DNA — black and silver, fundamentals only — token file scoped under .theme-san-antonio-spurs; wrap your app in that class."
     },
     {
+      "name": "theme-severance",
+      "type": "registry:item",
+      "title": "Severance",
+      "description": "Severance — Lumon terminal teal, pale cyan data, sterile corporate calm — token file scoped under .theme-severance; wrap your app in that class."
+    },
+    {
       "name": "theme-signal-dna",
       "type": "registry:item",
       "title": "Signal DNA",
@@ -574,6 +604,12 @@
       "description": "SSENSE DNA — stark fashion e-commerce: black on white, micro type, luxury by subtraction — token file scoped under .theme-ssense-dna; wrap your app in that class."
     },
     {
+      "name": "theme-star-wars",
+      "type": "registry:item",
+      "title": "Star Wars",
+      "description": "Star Wars — a galaxy far away: space black, crawl yellow, saber glow — token file scoped under .theme-star-wars; wrap your app in that class."
+    },
+    {
       "name": "theme-starbucks-dna",
       "type": "registry:item",
       "title": "Starbucks DNA",
@@ -584,6 +620,12 @@
       "type": "registry:item",
       "title": "Steam DNA",
       "description": "Steam DNA — midnight library blue, glowing store shelves — token file scoped under .theme-steam-dna; wrap your app in that class."
+    },
+    {
+      "name": "theme-stranger-things",
+      "type": "registry:item",
+      "title": "Stranger Things",
+      "description": "Stranger Things — upside-down night, neon red serif title glow — token file scoped under .theme-stranger-things; wrap your app in that class."
     },
     {
       "name": "theme-stripe-dna",
@@ -644,6 +686,12 @@
       "type": "registry:item",
       "title": "Vaporwave",
       "description": "Vaporwave — purple/pink/cyan gradients, chrome text, 80s grid horizon — token file scoped under .theme-vaporwave; wrap your app in that class."
+    },
+    {
+      "name": "theme-wes-anderson",
+      "type": "registry:item",
+      "title": "Wes Anderson",
+      "description": "Wes Anderson — symmetrical pastel worlds, precious typographic detail — token file scoped under .theme-wes-anderson; wrap your app in that class."
     },
     {
       "name": "theme-whatsapp-dna",

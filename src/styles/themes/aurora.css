@@ -56,16 +56,49 @@
 .theme-aurora h1 { background: linear-gradient(95deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .theme-aurora button:hover { box-shadow: 0 0 32px color-mix(in oklab, var(--accent) 50%, transparent); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-aurora thead th { color: var(--accent); font-family: var(--font-display); font-size: 0.7em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; border-bottom: 1px solid var(--line); background: oklch(0.79 0.16 175 / 6%); }
+.theme-aurora td { border-bottom: 1px solid oklch(0.79 0.16 175 / 12%); }
+.theme-aurora tbody tr:hover { background: linear-gradient(90deg, oklch(0.79 0.16 175 / 8%), oklch(0.72 0.17 300 / 8%)); }
+.theme-aurora input, .theme-aurora textarea, .theme-aurora select { background: oklch(0.19 0.04 261 / 80%); border: 1px solid var(--line); color: var(--fg); }
+.theme-aurora input:focus-visible, .theme-aurora textarea:focus-visible, .theme-aurora select:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-aurora kbd { background: oklch(0.26 0.05 262); border: 1px solid oklch(0.79 0.16 175 / 35%); border-radius: 0.4em; padding: 0.1em 0.45em; font-family: var(--font-mono); font-size: 0.85em; box-shadow: 0 0 12px -4px oklch(0.79 0.16 175 / 50%); }
+.theme-aurora a { color: var(--accent); text-decoration: none; background-image: linear-gradient(90deg, var(--accent), var(--accent-2)); background-repeat: no-repeat; background-size: 100% 1.5px; background-position: 0 100%; padding-bottom: 1px; }
+.theme-aurora a:hover { color: oklch(0.86 0.14 175); text-shadow: 0 0 16px oklch(0.79 0.16 175 / 60%); }
+.theme-aurora ::selection { background: oklch(0.72 0.17 300 / 45%); color: oklch(0.98 0.01 250); }
+.theme-aurora ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-aurora ::-webkit-scrollbar-track { background: oklch(0.14 0.03 260); }
+.theme-aurora ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, oklch(0.79 0.16 175 / 60%), oklch(0.72 0.17 300 / 60%)); border-radius: 9999px; }
+.theme-aurora ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, var(--accent), var(--accent-2)); }
+.theme-aurora .label-caps { color: var(--accent); }
+.theme-aurora .themed-border { border-color: var(--line); box-shadow: 0 0 24px -12px oklch(0.79 0.16 175 / 40%); }
+.theme-aurora button:active { transform: translateY(1px); }
+
+/* alt mode: arctic noon — pale ice sheet, the ribbons faint in a daylit sky */
 .theme-aurora.alt-mode {
-  --bg: oklch(0.98 0.012 260.0);
-  --surface: oklch(0.955 0.015 260.0);
-  --surface-2: oklch(0.92 0.020 260.0);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --bg: oklch(0.965 0.015 230);
+  --surface: oklch(1 0 0 / 78%);
+  --surface-2: oklch(0.94 0.025 220 / 85%);
+  --fg: oklch(0.22 0.04 260);
+  --fg-muted: oklch(0.44 0.03 255);
+  --accent: oklch(0.52 0.13 175);
+  --accent-fg: oklch(0.97 0.01 175);
+  --accent-2: oklch(0.5 0.16 300);
+  --line: oklch(0.52 0.13 175 / 30%);
+  --shadow-1: 0 1px 3px oklch(0.3 0.06 260 / 10%);
+  --shadow-2: 0 12px 32px -14px oklch(0.4 0.12 265 / 30%);
+  --shadow-3: 0 26px 60px -22px oklch(0.4 0.12 265 / 38%);
+  --glow: 0 0 36px -10px oklch(0.52 0.13 175 / 45%);
+  background-image:
+    radial-gradient(70rem 34rem at 20% -12%, oklch(0.88 0.09 175 / 45%), transparent 62%),
+    radial-gradient(60rem 40rem at 88% 6%, oklch(0.88 0.08 300 / 40%), transparent 62%);
 }
+.theme-aurora.alt-mode input, .theme-aurora.alt-mode textarea, .theme-aurora.alt-mode select { background: oklch(1 0 0 / 85%); }
+.theme-aurora.alt-mode kbd { background: oklch(0.93 0.02 220); border-color: oklch(0.52 0.13 175 / 40%); box-shadow: 0 1px 2px oklch(0.3 0.06 260 / 15%); color: var(--fg); }
+.theme-aurora.alt-mode thead th { background: oklch(0.52 0.13 175 / 7%); }
+.theme-aurora.alt-mode td { border-bottom-color: oklch(0.52 0.13 175 / 16%); }
+.theme-aurora.alt-mode tbody tr:hover { background: linear-gradient(90deg, oklch(0.52 0.13 175 / 8%), oklch(0.5 0.16 300 / 8%)); }
+.theme-aurora.alt-mode a:hover { color: oklch(0.45 0.13 175); text-shadow: none; }
+.theme-aurora.alt-mode ::selection { background: oklch(0.5 0.16 300 / 25%); color: var(--fg); }
+.theme-aurora.alt-mode ::-webkit-scrollbar-track { background: oklch(0.92 0.02 225); }
+.theme-aurora.alt-mode h1 { background: linear-gradient(95deg, oklch(0.5 0.13 175), oklch(0.48 0.16 300)); -webkit-background-clip: text; background-clip: text; color: transparent; }

@@ -50,6 +50,24 @@
 .theme-psg h1 { font-weight: 600; letter-spacing: 0.04em; }
 .theme-psg h1::after { content: ""; display: block; height: 4px; width: 6rem; margin-top: 0.7rem; background: linear-gradient(90deg, #0b1730 0 30%, #ffffff 30% 40%, var(--accent) 40% 60%, #ffffff 60% 70%, #0b1730 70%); outline: 1px solid oklch(1 0 0 / 25%); }
 
+/* depth */
+.theme-psg thead th { color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.75em; border-bottom: 2px solid var(--accent); background: oklch(0.24 0.058 264); }
+.theme-psg td { border-bottom: 1px solid var(--line); }
+.theme-psg tbody tr:hover { box-shadow: inset 3px 0 0 var(--accent); background: oklch(1 0 0 / 4%); }
+.theme-psg a { color: var(--accent-2); text-underline-offset: 3px; text-decoration-color: oklch(0.575 0.213 29.6 / 70%); }
+.theme-psg a:hover { text-decoration-color: oklch(1 0 0); text-decoration-thickness: 2px; }
+.theme-psg ::selection { background: oklch(0.575 0.213 29.6); color: oklch(1 0 0); }
+.theme-psg input:focus-visible, .theme-psg select:focus-visible, .theme-psg textarea:focus-visible { outline: 2px solid oklch(1 0 0 / 80%); outline-offset: 1px; }
+.theme-psg kbd { background: oklch(0.17 0.045 264); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); }
+.theme-psg ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-psg ::-webkit-scrollbar-track { background: oklch(0.17 0.045 264); }
+.theme-psg ::-webkit-scrollbar-thumb { background: oklch(0.42 0.16 28); border-radius: 5px; border: 2px solid oklch(0.17 0.045 264); }
+.theme-psg ::-webkit-scrollbar-thumb:hover { background: oklch(0.52 0.19 28); }
+.theme-psg .label-caps { color: var(--accent-2); }
+/* the Hechter band, vertical, as a border treatment */
+.theme-psg .themed-border { border-image: linear-gradient(180deg, #0b1730 0 30%, #ffffff 30% 40%, oklch(0.575 0.213 29.6) 40% 60%, #ffffff 60% 70%, #0b1730 70%) 1; }
+.theme-psg button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived light variant */
 .theme-psg.alt-mode {
   --bg: oklch(0.98 0.012 263.3);
@@ -61,5 +79,15 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --accent: oklch(0.50 0.20 29.6);
+  /* away-white kit: the Hechter stripe stays, ghosted */
+  background-image: linear-gradient(90deg, transparent 0 44%, oklch(0.21 0.05 263 / 8%) 44% 46%, oklch(0.50 0.18 25 / 14%) 46% 54%, oklch(0.21 0.05 263 / 8%) 54% 56%, transparent 56%);
+  background-size: 100% 480px;
+  background-repeat: no-repeat;
 }
+.theme-psg.alt-mode a { color: oklch(0.34 0.09 264); text-decoration-color: oklch(0.50 0.20 29.6 / 60%); }
+.theme-psg.alt-mode thead th { color: oklch(0.34 0.09 264); background: oklch(0.94 0.015 263); }
+.theme-psg.alt-mode kbd { background: oklch(0.93 0.015 263); }
+.theme-psg.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.015 263); }
+.theme-psg.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.34 0.09 264); border-color: oklch(0.93 0.015 263); }
+.theme-psg.alt-mode .label-caps { color: oklch(0.50 0.20 29.6); }

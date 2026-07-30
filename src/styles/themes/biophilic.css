@@ -56,16 +56,52 @@
 .theme-biophilic h1 { font-weight: 500; }
 .theme-biophilic h2::before { content: "❧ "; color: var(--accent); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-biophilic thead th { color: var(--accent); font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: 0.82em; letter-spacing: 0.04em; border-bottom: 2px solid oklch(0.48 0.11 150 / 35%); background: oklch(0.92 0.03 120 / 50%); }
+.theme-biophilic td { border-bottom: 1px solid oklch(0.85 0.03 125 / 70%); }
+.theme-biophilic tbody tr:hover { background: oklch(0.92 0.04 130 / 60%); }
+.theme-biophilic input, .theme-biophilic textarea, .theme-biophilic select { background: oklch(0.99 0.01 110); border: 1px solid oklch(0.75 0.05 135); border-radius: 1rem 1.4rem 1rem 1.4rem; }
+.theme-biophilic input:focus-visible, .theme-biophilic textarea:focus-visible, .theme-biophilic select:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-biophilic kbd { background: oklch(0.93 0.025 115); border: 1px solid oklch(0.72 0.05 135); border-radius: 0.6em 0.9em 0.6em 0.9em; padding: 0.1em 0.5em; font-family: var(--font-mono); font-size: 0.85em; color: oklch(0.35 0.06 150); box-shadow: 0 1px 3px oklch(0.3 0.06 150 / 0.2); }
+.theme-biophilic a { color: var(--accent); text-decoration: underline; text-decoration-color: oklch(0.66 0.11 65 / 60%); text-decoration-thickness: 2px; text-underline-offset: 0.22em; transition: text-underline-offset 180ms ease; }
+.theme-biophilic a:hover { text-decoration-color: var(--accent-2); text-underline-offset: 0.32em; }
+.theme-biophilic ::selection { background: oklch(0.55 0.13 150 / 25%); }
+.theme-biophilic ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-biophilic ::-webkit-scrollbar-track { background: oklch(0.92 0.02 110); }
+.theme-biophilic ::-webkit-scrollbar-thumb { background: oklch(0.55 0.08 140); border-radius: 9999px; border: 3px solid oklch(0.96 0.018 110); }
+.theme-biophilic ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-biophilic .label-caps { color: oklch(0.55 0.1 65); letter-spacing: 0.09em; }
+.theme-biophilic .themed-border { border-color: oklch(0.75 0.05 135); }
+.theme-biophilic tbody tr:hover td:first-child { box-shadow: inset 3px 0 0 var(--accent-2); }
+.theme-biophilic button:hover { border-radius: 2rem 1.25rem 2rem 1.25rem; transition: border-radius 220ms ease; }
+
+/* alt mode: night forest — moonlit canopy, deep greens, warm ember accent */
 .theme-biophilic.alt-mode {
-  --bg: oklch(0.145 0.018 110.0);
-  --surface: oklch(0.185 0.018 110.0);
-  --surface-2: oklch(0.225 0.018 110.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  --bg: oklch(0.21 0.035 150);
+  --surface: oklch(0.26 0.04 150);
+  --surface-2: oklch(0.3 0.045 145);
+  --fg: oklch(0.93 0.02 120);
+  --fg-muted: oklch(0.72 0.03 130);
+  --accent: oklch(0.72 0.12 150);
+  --accent-fg: oklch(0.18 0.04 150);
+  --accent-2: oklch(0.74 0.12 65);
+  --line: oklch(0.4 0.04 145);
+  --shadow-1: 0 2px 10px -4px oklch(0.05 0.02 150 / 0.6);
+  --shadow-2: 0 10px 30px -12px oklch(0.05 0.02 150 / 0.65);
+  --shadow-3: 0 24px 60px -20px oklch(0.05 0.02 150 / 0.7);
+  --glow: 0 0 0 4px oklch(0.72 0.12 150 / 0.25);
+  background-image:
+    radial-gradient(60% 45% at 12% 0%, oklch(0.35 0.06 150 / 0.5), transparent 70%),
+    radial-gradient(50% 40% at 92% 12%, oklch(0.35 0.05 90 / 0.4), transparent 70%);
 }
+.theme-biophilic.alt-mode thead th { color: var(--accent); border-bottom-color: oklch(0.72 0.12 150 / 35%); background: oklch(0.29 0.04 145 / 60%); }
+.theme-biophilic.alt-mode td { border-bottom-color: oklch(0.36 0.04 145 / 80%); }
+.theme-biophilic.alt-mode tbody tr:hover { background: oklch(0.3 0.045 145 / 70%); }
+.theme-biophilic.alt-mode input, .theme-biophilic.alt-mode textarea, .theme-biophilic.alt-mode select { background: oklch(0.24 0.035 150); border-color: oklch(0.42 0.05 145); color: var(--fg); }
+.theme-biophilic.alt-mode kbd { background: oklch(0.3 0.04 145); border-color: oklch(0.45 0.05 140); color: oklch(0.88 0.03 120); box-shadow: 0 1px 3px oklch(0 0 0 / 0.4); }
+.theme-biophilic.alt-mode a { color: oklch(0.78 0.11 150); text-decoration-color: oklch(0.74 0.12 65 / 55%); }
+.theme-biophilic.alt-mode ::selection { background: oklch(0.72 0.12 150 / 30%); }
+.theme-biophilic.alt-mode ::-webkit-scrollbar-track { background: oklch(0.24 0.03 148); }
+.theme-biophilic.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.45 0.06 145); border-color: oklch(0.21 0.035 150); }
+.theme-biophilic.alt-mode .label-caps { color: oklch(0.74 0.12 65); }
+.theme-biophilic.alt-mode h2::before { color: var(--accent-2); }

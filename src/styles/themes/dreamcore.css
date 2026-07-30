@@ -47,16 +47,49 @@
 .theme-dreamcore button { box-shadow: 0 0 20px color-mix(in oklab, var(--accent) 35%, transparent); }
 .theme-dreamcore .label-caps { text-transform: lowercase; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-dreamcore thead th { color: var(--fg-muted); font-size: 0.78em; font-weight: 500; text-transform: lowercase; letter-spacing: 0.12em; border-bottom: 1px dashed oklch(0.75 0.06 310 / 45%); background: oklch(0.985 0.012 320 / 50%); }
+.theme-dreamcore td { border-bottom: 1px dashed oklch(0.75 0.06 310 / 28%); }
+.theme-dreamcore tbody tr:hover { background: oklch(0.94 0.03 305 / 60%); }
+.theme-dreamcore input, .theme-dreamcore textarea, .theme-dreamcore select { background: oklch(0.99 0.01 320 / 80%); border: 1px solid oklch(0.75 0.06 310 / 35%); border-radius: var(--radius-sm); }
+.theme-dreamcore input::placeholder, .theme-dreamcore textarea::placeholder { color: oklch(0.643 0.038 309.5 / 70%); font-style: italic; }
+.theme-dreamcore input:focus-visible, .theme-dreamcore textarea:focus-visible, .theme-dreamcore select:focus-visible { outline: none; border-color: oklch(0.708 0.128 305.6 / 60%); box-shadow: var(--glow); }
+.theme-dreamcore kbd { background: oklch(0.985 0.012 320); border: 1px solid oklch(0.75 0.06 310 / 40%); border-radius: 0.7em; padding: 0.12em 0.5em; font-family: var(--font-mono); font-size: 0.85em; box-shadow: 0 2px 10px oklch(0.6 0.1 310 / 18%); }
+.theme-dreamcore a { color: oklch(0.55 0.13 305); text-decoration: underline dotted; text-decoration-color: oklch(0.708 0.128 305.6 / 55%); text-underline-offset: 0.25em; }
+.theme-dreamcore a:hover { text-decoration-style: solid; text-shadow: 0 0 14px oklch(0.708 0.128 305.6 / 50%); }
+.theme-dreamcore ::selection { background: oklch(0.789 0.071 231.3 / 40%); }
+.theme-dreamcore ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-dreamcore ::-webkit-scrollbar-track { background: oklch(0.94 0.02 305 / 60%); }
+.theme-dreamcore ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, oklch(0.85 0.07 305), oklch(0.85 0.06 230)); border-radius: 9999px; border: 3px solid oklch(0.955 0.018 306.7); }
+.theme-dreamcore ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, oklch(0.8 0.1 305), oklch(0.8 0.07 230)); }
+.theme-dreamcore .label-caps { color: oklch(0.55 0.13 305); }
+.theme-dreamcore .themed-border { border-color: oklch(0.75 0.06 310 / 35%); box-shadow: 0 0 24px -8px oklch(0.708 0.128 305.6 / 30%); }
+.theme-dreamcore button:hover { box-shadow: 0 0 32px color-mix(in oklab, var(--accent) 50%, transparent); transform: translateY(-1px); transition: all 400ms ease; }
+
+/* alt mode: lucid night — the same dream after dark, glows instead of haze */
 .theme-dreamcore.alt-mode {
-  --bg: oklch(0.145 0.018 306.7);
-  --surface: oklch(0.185 0.018 306.7);
-  --surface-2: oklch(0.225 0.018 306.7);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  --bg: oklch(0.22 0.04 300);
+  --surface: oklch(0.27 0.05 310 / 80%);
+  --surface-2: oklch(0.32 0.05 295 / 82%);
+  --fg: oklch(0.92 0.02 305);
+  --fg-muted: oklch(0.73 0.04 305);
+  --accent: oklch(0.75 0.12 305);
+  --accent-fg: oklch(0.2 0.04 305);
+  --line: oklch(0.6 0.08 310 / 35%);
+  --shadow-1: 0 8px 32px oklch(0.1 0.04 310 / 45%), 0 0 24px -8px oklch(0.6 0.12 305 / 25%);
+  --shadow-2: 0 16px 48px oklch(0.08 0.04 310 / 55%), 0 0 32px -8px oklch(0.6 0.12 305 / 30%);
+  --shadow-3: 0 24px 80px oklch(0.06 0.04 310 / 65%), 0 0 48px -10px oklch(0.6 0.12 305 / 35%);
+  background-image:
+    radial-gradient(ellipse at 20% 10%, oklch(0.35 0.09 300 / 60%), transparent 50%),
+    radial-gradient(ellipse at 80% 30%, oklch(0.33 0.07 230 / 50%), transparent 50%),
+    radial-gradient(ellipse at 50% 90%, oklch(0.33 0.08 350 / 50%), transparent 55%);
 }
+.theme-dreamcore.alt-mode thead th { background: oklch(0.3 0.05 310 / 60%); border-bottom-color: oklch(0.6 0.08 310 / 40%); }
+.theme-dreamcore.alt-mode td { border-bottom-color: oklch(0.6 0.08 310 / 25%); }
+.theme-dreamcore.alt-mode tbody tr:hover { background: oklch(0.3 0.05 305 / 60%); }
+.theme-dreamcore.alt-mode input, .theme-dreamcore.alt-mode textarea, .theme-dreamcore.alt-mode select { background: oklch(0.25 0.04 305 / 85%); border-color: oklch(0.6 0.08 310 / 40%); color: var(--fg); }
+.theme-dreamcore.alt-mode kbd { background: oklch(0.3 0.05 310); border-color: oklch(0.6 0.08 310 / 45%); box-shadow: 0 0 14px oklch(0.6 0.12 305 / 30%); }
+.theme-dreamcore.alt-mode a { color: oklch(0.82 0.1 305); text-decoration-color: oklch(0.75 0.12 305 / 55%); }
+.theme-dreamcore.alt-mode ::-webkit-scrollbar-track { background: oklch(0.25 0.04 305 / 70%); }
+.theme-dreamcore.alt-mode ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, oklch(0.55 0.1 305), oklch(0.5 0.08 230)); border-color: oklch(0.22 0.04 300); }
+.theme-dreamcore.alt-mode .label-caps { color: oklch(0.82 0.1 305); }

@@ -50,6 +50,27 @@
 .theme-porto h1 { font-weight: 700; }
 .theme-porto h1::after { content: ""; display: block; height: 3px; width: 5rem; margin-top: 0.6rem; background: var(--accent-2); }
 
+/* depth */
+.theme-porto thead th { background: var(--accent); color: oklch(1 0 0); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; }
+.theme-porto td { border-bottom: 1px solid var(--line); }
+/* portista stripes: every other row carries the shirt */
+.theme-porto tbody tr:nth-child(even) { background: oklch(0.370 0.122 255.1 / 5%); }
+.theme-porto tbody tr:hover { background: oklch(0.370 0.122 255.1 / 10%); }
+.theme-porto a { color: var(--accent); text-underline-offset: 3px; text-decoration-color: oklch(0.746 0.143 87.5 / 60%); }
+.theme-porto a:hover { text-decoration-color: var(--accent-2); text-decoration-thickness: 2px; }
+.theme-porto ::selection { background: var(--accent); color: oklch(1 0 0); }
+.theme-porto input:focus-visible, .theme-porto select:focus-visible, .theme-porto textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+/* dragon-gold keycap */
+.theme-porto kbd { background: oklch(1 0 0); border: 1px solid var(--line); border-bottom: 3px solid var(--accent-2); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); color: var(--accent); }
+.theme-porto ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-porto ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-porto ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; border: 2px solid var(--surface-2); }
+.theme-porto ::-webkit-scrollbar-thumb:hover { background: oklch(0.60 0.12 87); }
+.theme-porto .label-caps { color: var(--accent); }
+/* azulejo tilework on framed panels */
+.theme-porto .themed-border { border-image: repeating-linear-gradient(90deg, oklch(0.370 0.122 255.1) 0 10px, oklch(1 0 0) 10px 20px) 1; }
+.theme-porto button:active { transform: translateY(1px); }
+
 /* alt mode: auto-derived dark variant */
 .theme-porto.alt-mode {
   --bg: oklch(0.145 0.009 247.9);
@@ -63,5 +84,16 @@
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
   --accent: oklch(0.62 0.122 255.1);
   --accent-fg: oklch(1 0 0);
-  background-image: none;
+  --accent-2: oklch(0.78 0.140 87.5);
+  /* dragão night: the stripes stay lit */
+  background-image: repeating-linear-gradient(90deg, oklch(0.62 0.12 255 / 7%) 0 40px, transparent 40px 80px);
+  background-size: 100% 260px;
+  background-repeat: no-repeat;
 }
+.theme-porto.alt-mode thead th { background: oklch(0.30 0.09 255); }
+.theme-porto.alt-mode a { color: oklch(0.72 0.10 250); }
+.theme-porto.alt-mode kbd { background: var(--surface-2); color: oklch(0.78 0.14 87.5); }
+.theme-porto.alt-mode tbody tr:nth-child(even) { background: oklch(0.62 0.12 255 / 7%); }
+.theme-porto.alt-mode tbody tr:hover { background: oklch(0.62 0.12 255 / 14%); }
+.theme-porto.alt-mode ::-webkit-scrollbar-thumb:hover { background: oklch(0.78 0.14 87.5); }
+.theme-porto.alt-mode .label-caps { color: oklch(0.78 0.14 87.5); }

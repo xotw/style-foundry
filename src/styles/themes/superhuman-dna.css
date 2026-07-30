@@ -18,9 +18,9 @@
   --radius-lg: 1rem;
   --radius-pill: 9999px;
 
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 55%), inset 0 1px 0 oklch(1 0 0 / 5%);
-  --shadow-2: 0 10px 30px -12px oklch(0 0 0 / 70%), inset 0 1px 0 oklch(1 0 0 / 6%);
-  --shadow-3: 0 30px 70px -24px oklch(0.4 0.2 300 / 45%), inset 0 1px 0 oklch(1 0 0 / 8%);
+  --shadow-1: 0 1px 2px oklch(0.3 0.05 10 / 12%), inset 0 1px 0 oklch(1 0 0 / 60%);
+  --shadow-2: 0 10px 30px -12px oklch(0.3 0.05 10 / 22%), inset 0 1px 0 oklch(1 0 0 / 65%);
+  --shadow-3: 0 30px 70px -24px oklch(0.4 0.2 300 / 28%), inset 0 1px 0 oklch(1 0 0 / 70%);
   --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 55%, transparent),
     0 0 24px -4px color-mix(in oklab, var(--accent) 55%, transparent);
 
@@ -69,18 +69,38 @@
 .theme-superhuman-dna h1 { font-size: clamp(3rem, 6vw, 5rem) !important; }
 .theme-superhuman-dna button:hover { box-shadow: 0 0 24px color-mix(in oklab, #d4c7ff 60%, transparent); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-superhuman-dna kbd { text-transform: uppercase; font-size: 0.72em; letter-spacing: 0.06em; background: var(--surface); border-bottom-width: 2px; border-bottom-color: color-mix(in oklab, var(--fg) 25%, var(--line)); box-shadow: 0 1px 0 oklch(0.3 0.05 10 / 15%); }
+.theme-superhuman-dna thead th { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.68rem; font-weight: 600; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-superhuman-dna td { border-bottom: 1px solid color-mix(in oklab, var(--line) 50%, transparent); }
+.theme-superhuman-dna tbody tr:hover { background: color-mix(in oklab, var(--accent-2) 20%, transparent); box-shadow: inset 3px 0 0 var(--accent); }
+.theme-superhuman-dna a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--accent-2); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-superhuman-dna a:hover { text-decoration-color: var(--accent); }
+.theme-superhuman-dna input, .theme-superhuman-dna select, .theme-superhuman-dna textarea { border: 1px solid var(--line); background: var(--surface); transition: box-shadow 140ms ease, border-color 140ms ease; }
+.theme-superhuman-dna input:focus-visible, .theme-superhuman-dna select:focus-visible, .theme-superhuman-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-superhuman-dna ::selection { background: color-mix(in oklab, var(--accent-2) 55%, transparent); }
+.theme-superhuman-dna ::-webkit-scrollbar { width: 8px; height: 8px; }
+.theme-superhuman-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-superhuman-dna ::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--accent) 35%, transparent); border-radius: var(--radius-pill); }
+.theme-superhuman-dna button:active { transform: translateY(1px); }
+.theme-superhuman-dna .label-caps { font-size: 0.68rem; color: var(--fg-muted); }
+
+/* alt mode: night mode — the original Superhuman deep-violet cockpit */
 .theme-superhuman-dna.alt-mode {
-  --bg: oklch(0.145 0.030 88.4);
-  --surface: oklch(0.185 0.030 88.4);
-  --surface-2: oklch(0.225 0.030 88.4);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.100 9.5);
-  --accent-fg: oklch(0.13 0 0);
-  background-image: none;
+  --bg: oklch(0.185 0.045 295);
+  --surface: oklch(0.225 0.050 295);
+  --surface-2: oklch(0.270 0.055 295);
+  --fg: oklch(0.950 0.015 300);
+  --fg-muted: oklch(0.700 0.030 300);
+  --line: oklch(0.85 0.08 300 / 18%);
+  --accent: oklch(0.780 0.110 300);
+  --accent-fg: oklch(0.160 0.040 295);
+  --accent-2: oklch(0.550 0.180 300);
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 55%), inset 0 1px 0 oklch(1 0 0 / 5%);
+  --shadow-2: 0 10px 30px -12px oklch(0 0 0 / 70%), inset 0 1px 0 oklch(1 0 0 / 6%);
+  --shadow-3: 0 30px 70px -24px oklch(0.4 0.2 300 / 45%), inset 0 1px 0 oklch(1 0 0 / 8%);
+  background-image:
+    radial-gradient(100% 60% at 15% 0%, oklch(0.4 0.18 305 / 45%) 0%, transparent 60%),
+    radial-gradient(80% 50% at 90% 10%, oklch(0.4 0.16 245 / 35%) 0%, transparent 60%);
+  background-attachment: fixed;
 }

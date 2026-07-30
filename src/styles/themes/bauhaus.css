@@ -57,16 +57,44 @@
 .theme-bauhaus h2::before { content: ""; display: inline-block; width: 0.5em; height: 0.5em; background: var(--accent); margin-right: 0.4em; }
 .theme-bauhaus button { text-transform: uppercase; letter-spacing: 0.06em; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-bauhaus thead th { text-transform: uppercase; letter-spacing: var(--label-tracking); font-size: 0.7em; border-bottom: 3px solid var(--fg); text-align: left; }
+.theme-bauhaus tbody tr { border-bottom: 2px solid oklch(0.16 0.01 60 / 12%); }
+.theme-bauhaus tbody tr:hover { background: oklch(0.83 0.18 88 / 18%); }
+.theme-bauhaus input, .theme-bauhaus select, .theme-bauhaus textarea { border: 2px solid var(--fg); border-radius: 0; background: var(--surface); }
+.theme-bauhaus input:focus, .theme-bauhaus select:focus, .theme-bauhaus textarea:focus { outline: none; box-shadow: 4px 4px 0 0 oklch(0.45 0.2 262); border-color: var(--fg); }
+.theme-bauhaus a { color: oklch(0.45 0.2 262); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+.theme-bauhaus a:hover { background: oklch(0.83 0.18 88); color: var(--fg); text-decoration-color: var(--fg); }
+.theme-bauhaus kbd { font-family: var(--font-mono); font-size: 0.85em; padding: 0.1em 0.45em; border: 2px solid var(--fg); border-radius: 0; background: var(--surface); box-shadow: 2px 2px 0 0 var(--fg); }
+.theme-bauhaus ::selection { background: oklch(0.45 0.2 262); color: oklch(0.99 0 0); }
+.theme-bauhaus ::-webkit-scrollbar { width: 12px; height: 12px; }
+.theme-bauhaus ::-webkit-scrollbar-track { background: oklch(0.83 0.18 88); }
+.theme-bauhaus ::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 0; border: 2px solid oklch(0.83 0.18 88); }
+.theme-bauhaus .label-caps { font-weight: 700; }
+.theme-bauhaus .themed-border { border: 2px solid var(--fg); box-shadow: 6px 6px 0 0 var(--accent); }
+/* physical: hard-shadow press — the block lands on the page */
+.theme-bauhaus button { box-shadow: 4px 4px 0 0 var(--fg); }
+.theme-bauhaus button:active { transform: translate(4px, 4px); box-shadow: none; transition: none; }
+
+/* alt mode: night workshop — primaries stay primary on near-black */
 .theme-bauhaus.alt-mode {
   --bg: oklch(0.145 0.012 85.0);
   --surface: oklch(0.185 0.012 85.0);
   --surface-2: oklch(0.225 0.012 85.0);
   --fg: oklch(0.97 0.005 90);
   --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  --line: oklch(0.95 0.01 85);
+  --accent: oklch(0.6 0.23 28);
+  --accent-2: oklch(0.55 0.19 262);
+  --shadow-1: 0 0 0 2px var(--fg);
+  --shadow-2: 8px 8px 0 0 oklch(0.55 0.19 262);
+  --shadow-3: 14px 14px 0 0 oklch(0.83 0.18 88);
+  background-image: radial-gradient(circle at 88% 12%, oklch(0.83 0.18 88 / 25%) 0 6rem, transparent 6rem);
+  background-attachment: fixed;
 }
+.theme-bauhaus.alt-mode thead th, .theme-bauhaus.alt-mode input, .theme-bauhaus.alt-mode select, .theme-bauhaus.alt-mode textarea, .theme-bauhaus.alt-mode kbd, .theme-bauhaus.alt-mode .themed-border { border-color: var(--fg); }
+.theme-bauhaus.alt-mode tbody tr { border-bottom-color: oklch(0.95 0.01 85 / 18%); }
+.theme-bauhaus.alt-mode a { color: oklch(0.72 0.14 262); }
+.theme-bauhaus.alt-mode a:hover { background: oklch(0.83 0.18 88); color: oklch(0.16 0.01 60); text-decoration-color: oklch(0.16 0.01 60); }
+.theme-bauhaus.alt-mode button { box-shadow: 4px 4px 0 0 oklch(0.83 0.18 88); }
+.theme-bauhaus.alt-mode button:active { box-shadow: none; }

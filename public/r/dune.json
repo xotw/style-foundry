@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-dune",
+  "type": "registry:item",
+  "title": "Dune",
+  "description": "Dune — spice sand, monumental thin display, desert silence — token file scoped under .theme-dune; wrap your app in that class.",
+  "files": [
+    {
+      "path": "registry/themes/dune.css",
+      "type": "registry:file",
+      "target": "~/styles/themes/dune.css",
+      "content": "/* Dune — spice sand, monumental thin display, desert silence */\n.theme-dune {\n  --bg: oklch(0.884 0.040 82.3);\n  --surface: oklch(0.922 0.030 83.6);\n  --surface-2: oklch(0.843 0.049 81.5);\n  --fg: oklch(0.280 0.029 64.0);\n  --fg-muted: oklch(0.536 0.043 73.2);\n  --accent: oklch(0.491 0.101 54.4);\n  --accent-fg: oklch(0.934 0.027 83.5);\n  --accent-2: oklch(0.664 0.083 77.4);\n  --line: oklch(0.790 0.053 83.3);\n  --success: oklch(0.567 0.074 127.8);\n  --warning: oklch(0.691 0.129 75.7);\n  --danger: oklch(0.496 0.143 36.5);\n  --radius: 0.125rem;\n  --radius-sm: 0px;\n  --radius-lg: 0.25rem;\n  --radius-pill: 0.25rem;\n  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);\n  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);\n  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);\n  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);\n  --border-width: 1px;\n  --blur-amount: 0px;\n  --font-display: \"Julius Sans One\", sans-serif;\n  --font-body: \"Inter\", sans-serif;\n  --font-mono: \"JetBrains Mono\", ui-monospace, monospace;\n  --tracking-display: 0.22em;\n  --label-transform: uppercase;\n  --label-tracking: 0.3em;\n\n  background-color: var(--bg);\n  color: var(--fg);\n  font-family: var(--font-body);\n}\n\n.theme-dune h1,\n.theme-dune h2,\n.theme-dune h3 {\n  font-family: var(--font-display);\n  letter-spacing: var(--tracking-display);\n}\n\n/* signature */\n.theme-dune { background-image: linear-gradient(180deg, transparent 60%, oklch(0.75 0.06 75 / 25%)), radial-gradient(ellipse at 80% 0%, oklch(0.95 0.04 85 / 60%), transparent 50%); }\n.theme-dune h1 { font-size: clamp(2.6rem, 6vw, 4.6rem) !important; }\n.theme-dune h2 { border-bottom: 1px solid var(--fg); display: inline-block; padding-bottom: 0.3em; }\n.theme-dune button { letter-spacing: 0.24em; text-transform: uppercase; }\n\n\n/* Bridge shadcn semantic variables to the theme tokens so stock shadcn/ui\n   components are skinned by the theme. Scope-safe: applies inside the theme\n   class only. */\n[class*=\"theme-\"] {\n  --background: var(--bg);\n  --foreground: var(--fg);\n  --card: var(--surface);\n  --card-foreground: var(--fg);\n  --popover: var(--surface);\n  --popover-foreground: var(--fg);\n  --primary: var(--accent);\n  --primary-foreground: var(--accent-fg);\n  --secondary: var(--surface-2);\n  --secondary-foreground: var(--fg);\n  --muted: var(--surface-2);\n  --muted-foreground: var(--fg-muted);\n  --accent-foreground: var(--accent-fg);\n  --border: var(--line);\n  --input: var(--line);\n  --ring: var(--accent);\n  --destructive: var(--danger);\n  --destructive-foreground: var(--accent-fg);\n}\n"
+    }
+  ]
+}

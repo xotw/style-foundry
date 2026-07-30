@@ -50,16 +50,44 @@
 .theme-lazio h1 { font-weight: 700; color: var(--accent); }
 .theme-lazio h2::after { content: ""; display: block; width: 4rem; height: 2px; background: var(--accent-2); margin-top: 0.4rem; }
 
+/* depth */
+.theme-lazio thead th { color: oklch(0.44 0.09 243); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-bottom: 2px solid var(--accent); background: var(--surface); }
+.theme-lazio td { border-bottom: 1px solid var(--line); }
+.theme-lazio tbody tr:hover { background: oklch(0.686 0.120 240.4 / 10%); }
+.theme-lazio a { color: oklch(0.50 0.11 242); text-underline-offset: 3px; }
+.theme-lazio a:hover { text-decoration-thickness: 2px; text-decoration-color: var(--accent-2); }
+.theme-lazio ::selection { background: var(--accent); color: oklch(1 0 0); }
+.theme-lazio input:focus-visible, .theme-lazio select:focus-visible, .theme-lazio textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.theme-lazio kbd { background: oklch(1 0 0); border: 1px solid var(--line); border-bottom: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); color: oklch(0.44 0.09 243); }
+.theme-lazio ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-lazio ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-lazio ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; border: 2px solid var(--surface-2); }
+.theme-lazio ::-webkit-scrollbar-thumb:hover { background: oklch(0.55 0.11 242); }
+.theme-lazio .label-caps { color: oklch(0.55 0.11 242); }
+/* eagle wing: panels get a swept, feathered top edge */
+.theme-lazio .themed-border { border-top: 3px solid var(--accent); border-top-left-radius: var(--radius-pill); }
+.theme-lazio button:hover { transform: translateY(-1px); box-shadow: 0 6px 16px oklch(0.686 0.120 240.4 / 30%); }
+.theme-lazio button:active { transform: translateY(0); box-shadow: none; }
+
 /* alt mode: auto-derived dark variant */
 .theme-lazio.alt-mode {
-  --bg: oklch(0.145 0.013 236.6);
-  --surface: oklch(0.185 0.013 236.6);
-  --surface-2: oklch(0.225 0.013 236.6);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  /* night flight over the Olimpico — deep sky, eagle lit from below */
+  --bg: oklch(0.160 0.030 240.0);
+  --surface: oklch(0.200 0.035 240.0);
+  --surface-2: oklch(0.242 0.040 240.0);
+  --fg: oklch(0.97 0.008 235);
+  --fg-muted: oklch(0.72 0.035 238);
+  --line: oklch(0.686 0.120 240.4 / 22%);
+  --accent: oklch(0.72 0.115 240.4);
+  --accent-fg: oklch(0.16 0.03 240);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
   background-image: none;
 }
+.theme-lazio.alt-mode thead th { color: var(--accent); }
+.theme-lazio.alt-mode a { color: oklch(0.78 0.10 238); }
+.theme-lazio.alt-mode kbd { background: var(--surface-2); color: oklch(0.78 0.10 238); }
+.theme-lazio.alt-mode .label-caps { color: oklch(0.727 0.113 87.3); }
+.theme-lazio.alt-mode ::selection { background: var(--accent); color: oklch(0.16 0.03 240); }
+.theme-lazio.alt-mode tbody tr:hover { background: oklch(0.686 0.120 240.4 / 14%); }

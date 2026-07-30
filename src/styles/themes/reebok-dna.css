@@ -47,7 +47,28 @@
 .theme-reebok-dna h2::before { content: "/"; color: var(--accent); margin-right: 0.3em; font-weight: 700; }
 .theme-reebok-dna button { text-transform: uppercase; font-style: italic; letter-spacing: 0.06em; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-reebok-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-reebok-dna thead th { font-family: var(--font-display); font-style: italic; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 3px solid var(--fg); background: transparent; }
+.theme-reebok-dna td { border-bottom: 1px solid oklch(0 0 0 / 12%); }
+.theme-reebok-dna tbody tr:hover { background: var(--surface); box-shadow: inset 4px 0 0 var(--accent); }
+.theme-reebok-dna a { color: var(--accent-2); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); }
+.theme-reebok-dna a:hover { color: var(--accent); border-bottom-color: var(--accent-2); }
+.theme-reebok-dna input, .theme-reebok-dna select, .theme-reebok-dna textarea { border: var(--border-width) solid var(--fg); border-radius: 0; background: var(--bg); }
+.theme-reebok-dna input:focus-visible, .theme-reebok-dna select:focus-visible, .theme-reebok-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 4px 4px 0 color-mix(in oklab, var(--accent) 30%, transparent); }
+.theme-reebok-dna kbd { font-family: var(--font-display); font-style: italic; border: 2px solid var(--fg); border-radius: 0; padding: 0.05em 0.5em; background: var(--bg); }
+.theme-reebok-dna .label-caps { font-style: italic; }
+.theme-reebok-dna .label-caps::before { content: "//"; color: var(--accent); margin-right: 0.4em; font-weight: 700; }
+.theme-reebok-dna .themed-border { border: 2px solid var(--fg); border-left: 6px solid var(--accent); }
+.theme-reebok-dna button { transition: transform 90ms ease, box-shadow 90ms ease; }
+.theme-reebok-dna button:hover { box-shadow: 4px 4px 0 var(--accent-2); transform: translate(-2px, -2px); }
+.theme-reebok-dna button:active { box-shadow: none; transform: translate(0, 0); }
+.theme-reebok-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-reebok-dna ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-reebok-dna ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 0; }
+.theme-reebok-dna ::-webkit-scrollbar-thumb:hover { background: var(--accent-2); }
+
+/* alt mode: night track — vector red and sky blue on carbon black */
 .theme-reebok-dna.alt-mode {
   --bg: oklch(0.145 0.000 0.0);
   --surface: oklch(0.185 0.000 0.0);
@@ -58,4 +79,10 @@
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --accent: oklch(0.640 0.225 28.3);
+  --accent-2: oklch(0.700 0.130 250.0);
 }
+.theme-reebok-dna.alt-mode thead th { border-bottom-color: var(--fg); }
+.theme-reebok-dna.alt-mode td { border-bottom-color: oklch(1 0 0 / 14%); }
+.theme-reebok-dna.alt-mode input, .theme-reebok-dna.alt-mode select, .theme-reebok-dna.alt-mode textarea { border-color: var(--fg); background: var(--surface); }
+.theme-reebok-dna.alt-mode kbd { border-color: var(--fg); background: var(--surface); }

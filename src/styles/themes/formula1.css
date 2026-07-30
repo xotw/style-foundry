@@ -47,16 +47,46 @@
 .theme-formula1 h1::after { content: ""; display: block; height: 8px; width: 7rem; margin-top: 0.7rem; background: repeating-linear-gradient(45deg, var(--accent) 0 8px, #ffffff 8px 16px); }
 .theme-formula1 button { text-transform: uppercase; font-style: italic; letter-spacing: 0.08em; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-formula1 { background-image: linear-gradient(180deg, oklch(0.2 0 0 / 60%), transparent 300px), repeating-linear-gradient(45deg, oklch(1 0 0 / 1.5%) 0 3px, transparent 3px 6px), repeating-linear-gradient(-45deg, oklch(1 0 0 / 1.5%) 0 3px, transparent 3px 6px); }
+.theme-formula1 ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-formula1 thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72em; background: oklch(0.13 0 0); border-bottom: 2px solid var(--accent); }
+.theme-formula1 td { border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; font-family: var(--font-mono); font-size: 0.92em; }
+.theme-formula1 tbody tr { border-left: 4px solid transparent; }
+.theme-formula1 tbody tr:hover { background: oklch(0.24 0 0); border-left-color: var(--accent); }
+.theme-formula1 a { color: var(--fg); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); transition: color 100ms ease, letter-spacing 100ms ease; }
+.theme-formula1 a:hover { color: var(--accent); letter-spacing: 0.02em; }
+.theme-formula1 input, .theme-formula1 select, .theme-formula1 textarea { background: oklch(0.14 0 0); border: 1px solid oklch(1 0 0 / 20%); border-radius: var(--radius-sm); color: var(--fg); }
+.theme-formula1 input:focus-visible, .theme-formula1 select:focus-visible, .theme-formula1 textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), 0 0 16px color-mix(in oklab, var(--accent) 50%, transparent); }
+.theme-formula1 kbd { font-family: var(--font-display); font-size: 0.75em; background: oklch(0.13 0 0); border: 1px solid oklch(1 0 0 / 30%); border-radius: var(--radius-sm); padding: 0.15em 0.5em; }
+.theme-formula1 .label-caps { font-family: var(--font-display); font-size: 0.7em; color: var(--fg-muted); }
+.theme-formula1 .themed-border { border-left: 4px solid var(--accent); background-image: linear-gradient(90deg, color-mix(in oklab, var(--accent) 12%, transparent), transparent 40%); }
+.theme-formula1 button { transition: transform 90ms ease, box-shadow 90ms ease; }
+.theme-formula1 button:hover { transform: translateX(3px); box-shadow: -4px 0 0 var(--accent); }
+.theme-formula1 button:active { transform: translateX(1px) scale(0.98); }
+.theme-formula1 ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-formula1 ::-webkit-scrollbar-track { background: oklch(0.13 0 0); }
+.theme-formula1 ::-webkit-scrollbar-thumb { background: oklch(0.35 0 0); border-radius: var(--radius-sm); }
+.theme-formula1 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* alt mode: pit wall — daylight paddock white, race red kept sharp */
 .theme-formula1.alt-mode {
   --bg: oklch(0.98 0.000 0.0);
   --surface: oklch(0.955 0.000 0.0);
   --surface-2: oklch(0.92 0.000 0.0);
   --fg: oklch(0.17 0.005 270);
   --fg-muted: oklch(0.46 0.01 270);
+  --accent-2: oklch(0.17 0.005 270);
   --line: oklch(0.87 0.005 270);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   background-image: none;
 }
+.theme-formula1.alt-mode h1::after { background: repeating-linear-gradient(45deg, var(--accent) 0 8px, oklch(0.17 0.005 270) 8px 16px); }
+.theme-formula1.alt-mode thead th { background: var(--fg); color: oklch(0.98 0 0); }
+.theme-formula1.alt-mode tbody tr:hover { background: var(--surface-2); }
+.theme-formula1.alt-mode input, .theme-formula1.alt-mode select, .theme-formula1.alt-mode textarea { background: oklch(1 0 0); border-color: oklch(0 0 0 / 25%); color: var(--fg); }
+.theme-formula1.alt-mode kbd { background: var(--fg); color: oklch(0.98 0 0); border-color: var(--fg); }
+.theme-formula1.alt-mode ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-formula1.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.70 0 0); }

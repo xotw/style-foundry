@@ -52,15 +52,42 @@
 .theme-minimal-warm a, .theme-minimal-warm .text-accent { text-underline-offset: 3px; }
 .theme-minimal-warm button { font-weight: 500; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-minimal-warm thead th { text-transform: uppercase; letter-spacing: var(--label-tracking); font-size: 0.7em; font-weight: 500; color: var(--fg-muted); border-bottom: 1px solid var(--line); text-align: left; }
+.theme-minimal-warm td { border-bottom: 1px solid var(--line); }
+.theme-minimal-warm tbody tr { transition: background 180ms ease; }
+.theme-minimal-warm tbody tr:hover { background: var(--surface-2); }
+.theme-minimal-warm input, .theme-minimal-warm select, .theme-minimal-warm textarea { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); transition: border-color 180ms ease, box-shadow 180ms ease; }
+.theme-minimal-warm input:focus, .theme-minimal-warm select:focus, .theme-minimal-warm textarea:focus { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-minimal-warm a { color: var(--accent); text-decoration-color: oklch(0.6 0.11 45 / 40%); text-decoration-thickness: 1px; transition: text-decoration-color 180ms ease; }
+.theme-minimal-warm a:hover { text-decoration-color: var(--accent); }
+.theme-minimal-warm kbd { font-family: var(--font-mono); font-size: 0.85em; padding: 0.12em 0.5em; background: var(--surface-2); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: var(--radius-sm); }
+.theme-minimal-warm ::selection { background: oklch(0.88 0.05 60); color: var(--fg); }
+.theme-minimal-warm ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-minimal-warm ::-webkit-scrollbar-track { background: transparent; }
+.theme-minimal-warm ::-webkit-scrollbar-thumb { background: oklch(0.82 0.03 60); border-radius: 9999px; border: 2px solid var(--bg); }
+.theme-minimal-warm ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-minimal-warm .label-caps { color: oklch(0.55 0.08 45); }
+.theme-minimal-warm .themed-border { border-left: 3px solid var(--accent); border-radius: 2px; }
+/* physical: quiet press — the clay gives slightly under the finger */
+.theme-minimal-warm button:active { transform: translateY(1px); box-shadow: var(--shadow-1); }
+
+/* alt mode: dusk clay — warm ember darks, terracotta glows instead of shouts */
 .theme-minimal-warm.alt-mode {
-  --bg: oklch(0.145 0.009 78.3);
-  --surface: oklch(0.185 0.009 78.3);
-  --surface-2: oklch(0.225 0.009 78.3);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.17 0.012 60);
+  --surface: oklch(0.21 0.014 62);
+  --surface-2: oklch(0.25 0.016 62);
+  --fg: oklch(0.94 0.012 78);
+  --fg-muted: oklch(0.7 0.02 70);
+  --accent: oklch(0.72 0.12 45);
+  --accent-fg: oklch(0.18 0.02 50);
+  --line: oklch(0.94 0.012 78 / 12%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 0 3px oklch(0.72 0.12 45 / 22%);
 }
+.theme-minimal-warm.alt-mode a { color: oklch(0.76 0.11 50); text-decoration-color: oklch(0.76 0.11 50 / 40%); }
+.theme-minimal-warm.alt-mode ::selection { background: oklch(0.42 0.07 50); color: var(--fg); }
+.theme-minimal-warm.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.4 0.03 60); border-color: var(--bg); }
+.theme-minimal-warm.alt-mode .label-caps { color: oklch(0.72 0.09 50); }

@@ -49,15 +49,46 @@
 .theme-new-york-knicks h1 { color: var(--accent); }
 .theme-new-york-knicks h1::after { content: ""; display: block; height: 4px; width: 6rem; margin-top: 0.6rem; background: linear-gradient(90deg, var(--accent) 0 50%, #006bb6 50% 100%); }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-new-york-knicks ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-new-york-knicks a { color: var(--accent); text-decoration-color: color-mix(in oklab, var(--accent-2) 75%, white); text-underline-offset: 3px; }
+.theme-new-york-knicks a:hover { color: #ffffff; text-decoration-color: var(--accent); text-decoration-thickness: 3px; }
+.theme-new-york-knicks thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; color: var(--fg-muted); background: oklch(0.185 0.045 257); border-bottom: 3px solid var(--accent); box-shadow: 0 3px 0 var(--accent-2); }
+.theme-new-york-knicks td { border-bottom: 1px solid var(--line); }
+.theme-new-york-knicks tbody tr:hover { background: oklch(0.726 0.169 54.1 / 9%); }
+.theme-new-york-knicks input, .theme-new-york-knicks select, .theme-new-york-knicks textarea { background: oklch(0.185 0.045 257); border: 1px solid var(--line); caret-color: var(--accent); }
+.theme-new-york-knicks input:focus-visible, .theme-new-york-knicks select:focus-visible, .theme-new-york-knicks textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px oklch(0.726 0.169 54.1 / 28%); }
+/* subway bullet — kbd as a station roundel */
+.theme-new-york-knicks kbd { font-family: var(--font-display); font-weight: 700; background: oklch(0.14 0.02 257); color: #ffffff; border: 2px solid var(--accent); border-radius: var(--radius-pill); padding: 0.1em 0.55em; }
+.theme-new-york-knicks ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-new-york-knicks ::-webkit-scrollbar-track { background: oklch(0.185 0.045 257); }
+.theme-new-york-knicks ::-webkit-scrollbar-thumb { background: oklch(0.55 0.13 54); border: 2px solid oklch(0.185 0.045 257); border-radius: 999px; }
+.theme-new-york-knicks ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-new-york-knicks .label-caps { color: var(--accent); font-weight: 700; }
+/* physical: MSG marquee — dotted bulb ring around featured borders */
+.theme-new-york-knicks .themed-border { border-color: var(--accent); outline: 2px dotted oklch(0.726 0.169 54.1 / 45%); outline-offset: 3px; }
+.theme-new-york-knicks button:hover { box-shadow: 0 0 14px oklch(0.726 0.169 54.1 / 40%), var(--shadow-1); }
+.theme-new-york-knicks button:active { transform: translateY(1px); box-shadow: none; }
+
+/* alt mode: garden matinee — white home kit, orange deepened for print contrast */
 .theme-new-york-knicks.alt-mode {
   --bg: oklch(0.98 0.012 256.8);
   --surface: oklch(0.955 0.015 256.8);
   --surface-2: oklch(0.92 0.020 256.8);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --fg: oklch(0.20 0.05 257);
+  --fg-muted: oklch(0.44 0.05 257);
+  --accent: oklch(0.62 0.17 54);
+  --accent-fg: oklch(1 0 0);
+  --line: oklch(0.87 0.010 257);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
 }
+.theme-new-york-knicks.alt-mode a { color: oklch(0.52 0.16 54); }
+.theme-new-york-knicks.alt-mode a:hover { color: var(--accent-2); }
+.theme-new-york-knicks.alt-mode thead th { background: oklch(0.94 0.012 257); }
+.theme-new-york-knicks.alt-mode kbd { background: #ffffff; color: oklch(0.20 0.05 257); }
+.theme-new-york-knicks.alt-mode input, .theme-new-york-knicks.alt-mode select, .theme-new-york-knicks.alt-mode textarea { background: #ffffff; }
+.theme-new-york-knicks.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.012 257); }
+.theme-new-york-knicks.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.68 0.13 54); border-color: oklch(0.94 0.012 257); }
+.theme-new-york-knicks.alt-mode .label-caps { color: oklch(0.52 0.16 54); }

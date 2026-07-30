@@ -77,6 +77,39 @@
 .theme-bloomberg-dna h1, .theme-bloomberg-dna h2 { text-transform: uppercase; text-shadow: 0 0 10px color-mix(in oklab, var(--accent) 45%, transparent); }
 .theme-bloomberg-dna h1::after { content: "▮"; margin-left: 0.15em; animation: sf-blink 1s steps(1) infinite; }
 
+/* depth */
+.theme-bloomberg-dna { background-image: repeating-linear-gradient(0deg, oklch(1 0 0 / 1.5%) 0 1px, transparent 1px 3px); } /* CRT scanlines, sub-threshold */
+.theme-bloomberg-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-bloomberg-dna a { color: var(--accent-2); text-decoration: none; }
+.theme-bloomberg-dna a:hover { background: var(--accent-2); color: oklch(0.09 0 0); } /* inverse video */
+.theme-bloomberg-dna thead th { background: oklch(0.16 0.01 60); border-bottom: 1px solid var(--line); text-align: left; }
+.theme-bloomberg-dna td { font-variant-numeric: tabular-nums; border-bottom: 1px solid oklch(0.22 0.01 60); }
+.theme-bloomberg-dna tbody tr:nth-child(even) td { background: oklch(1 0 0 / 3%); } /* ladder stripes */
+.theme-bloomberg-dna tbody tr:hover td { background: oklch(0.28 0.05 65); }
+.theme-bloomberg-dna input, .theme-bloomberg-dna select, .theme-bloomberg-dna textarea { background: var(--bg); border: 1px solid var(--line); color: var(--fg); caret-color: var(--accent); font-family: var(--font-mono); }
+.theme-bloomberg-dna input::placeholder, .theme-bloomberg-dna textarea::placeholder { color: oklch(0.5 0.04 80); }
+.theme-bloomberg-dna input:focus-visible, .theme-bloomberg-dna select:focus-visible, .theme-bloomberg-dna textarea:focus-visible { outline: none; border-color: var(--accent); background: oklch(0.12 0.01 60); }
+.theme-bloomberg-dna button:active { background: var(--accent); color: var(--accent-fg); } /* command executes: full invert */
+.theme-bloomberg-dna kbd { background: var(--accent); color: var(--accent-fg); font-weight: 700; padding: 0 0.4em; font-family: var(--font-mono); } /* the <GO> key */
+.theme-bloomberg-dna ::-webkit-scrollbar { width: 14px; height: 14px; }
+.theme-bloomberg-dna ::-webkit-scrollbar-track { background: var(--bg); border-left: 1px solid var(--line); }
+.theme-bloomberg-dna ::-webkit-scrollbar-thumb { background: oklch(0.35 0.03 70); }
+.theme-bloomberg-dna ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-bloomberg-dna .label-caps { color: var(--accent); }
+.theme-bloomberg-dna .themed-border { border-color: var(--accent); border-style: solid; }
+.theme-bloomberg-dna hr { border: none; border-top: 1px dashed var(--line); }
+
+/* alt mode: paper ticker tape — daylight terminal, statuses re-inked for light ground */
 .theme-bloomberg-dna.alt-mode { --bg: oklch(0.97 0.015 85); --surface: oklch(0.94 0.02 85); --surface-2: oklch(0.9 0.025 85);
   --fg: oklch(0.25 0.02 60); --fg-muted: oklch(0.45 0.03 60); --line: oklch(0.35 0.05 60 / 30%);
-  --accent: oklch(0.55 0.13 60); --accent-fg: oklch(0.98 0.01 85); background-image: none; }
+  --accent: oklch(0.55 0.13 60); --accent-fg: oklch(0.98 0.01 85);
+  --success: oklch(0.5 0.15 145); --warning: oklch(0.58 0.13 85); --danger: oklch(0.5 0.2 25);
+  background-image: none; }
+.theme-bloomberg-dna.alt-mode h1, .theme-bloomberg-dna.alt-mode h2 { text-shadow: none; }
+.theme-bloomberg-dna.alt-mode a:hover { background: var(--accent-2); color: oklch(0.98 0.01 85); }
+.theme-bloomberg-dna.alt-mode thead th { background: oklch(0.9 0.025 85); }
+.theme-bloomberg-dna.alt-mode td { border-bottom-color: oklch(0.82 0.03 80); }
+.theme-bloomberg-dna.alt-mode tbody tr:nth-child(even) td { background: oklch(0 0 0 / 3%); }
+.theme-bloomberg-dna.alt-mode tbody tr:hover td { background: oklch(0.86 0.05 75); }
+.theme-bloomberg-dna.alt-mode input:focus-visible, .theme-bloomberg-dna.alt-mode select:focus-visible, .theme-bloomberg-dna.alt-mode textarea:focus-visible { background: oklch(0.99 0.008 85); }
+.theme-bloomberg-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.6 0.05 70); }

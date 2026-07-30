@@ -47,11 +47,31 @@
 .theme-linkedin-dna button { font-weight: 600; }
 .theme-linkedin-dna h2::after { content: ""; display: block; width: 3rem; height: 3px; background: var(--accent); margin-top: 0.5rem; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-linkedin-dna thead th { background: var(--surface-2); font-size: 0.8em; font-weight: 600; color: var(--fg-muted); border-bottom: 1px solid var(--line); }
+.theme-linkedin-dna td { border-bottom: 1px solid var(--line); }
+.theme-linkedin-dna tbody tr:hover { background: oklch(0.97 0.008 80); }
+.theme-linkedin-dna a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.theme-linkedin-dna a:hover { text-decoration: underline; color: oklch(0.42 0.16 254.7); }
+.theme-linkedin-dna input, .theme-linkedin-dna textarea, .theme-linkedin-dna select { background: var(--surface); border: 1px solid oklch(0.45 0 0 / 60%); border-radius: var(--radius-sm); }
+.theme-linkedin-dna input:focus-visible, .theme-linkedin-dna textarea:focus-visible, .theme-linkedin-dna select:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.theme-linkedin-dna kbd { font-family: var(--font-body); font-size: 0.85em; background: var(--surface-2); border: 1px solid var(--line); border-radius: 0.3rem; padding: 0.1em 0.45em; }
+.theme-linkedin-dna ::selection { background: oklch(0.88 0.05 255); }
+.theme-linkedin-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-linkedin-dna ::-webkit-scrollbar-track { background: var(--bg); }
+.theme-linkedin-dna ::-webkit-scrollbar-thumb { background: oklch(0.7 0.01 80); border-radius: 5px; }
+.theme-linkedin-dna .label-caps { color: var(--fg-muted); font-weight: 600; }
+.theme-linkedin-dna .themed-border { border-top: 4px solid var(--accent); border-radius: var(--radius); }
+.theme-linkedin-dna button:hover { box-shadow: inset 0 0 0 1px currentColor; } /* double-border hover */
+.theme-linkedin-dna button:active { filter: brightness(0.92); }
+
+/* alt mode: LinkedIn dark — warm charcoal, #70B5F9-class lifted blue */
 .theme-linkedin-dna.alt-mode {
   --bg: oklch(0.145 0.006 84.6);
   --surface: oklch(0.185 0.006 84.6);
   --surface-2: oklch(0.225 0.006 84.6);
+  --accent: oklch(0.72 0.12 250);
+  --accent-fg: oklch(0.13 0 0);
   --fg: oklch(0.97 0.005 90);
   --fg-muted: oklch(0.70 0.01 90);
   --line: oklch(1 0 0 / 14%);
@@ -59,3 +79,8 @@
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
 }
+.theme-linkedin-dna.alt-mode tbody tr:hover { background: oklch(1 0 0 / 5%); }
+.theme-linkedin-dna.alt-mode a:hover { color: oklch(0.80 0.10 250); }
+.theme-linkedin-dna.alt-mode ::selection { background: oklch(0.42 0.09 255); }
+.theme-linkedin-dna.alt-mode input, .theme-linkedin-dna.alt-mode textarea, .theme-linkedin-dna.alt-mode select { border-color: oklch(1 0 0 / 40%); }
+.theme-linkedin-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.42 0.01 80); }

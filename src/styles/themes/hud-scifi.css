@@ -47,18 +47,45 @@
 .theme-hud-scifi h1, .theme-hud-scifi h2 { text-shadow: 0 0 12px color-mix(in oklab, var(--accent) 60%, transparent); }
 .theme-hud-scifi button { clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px); text-transform: uppercase; letter-spacing: 0.14em; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-hud-scifi thead th { font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); background: transparent; border-bottom: 1px solid color-mix(in oklab, var(--accent) 40%, transparent); }
+.theme-hud-scifi td { border-bottom: 1px solid oklch(0.75 0.1 220 / 12%); font-variant-numeric: tabular-nums; }
+.theme-hud-scifi tbody tr { transition: background-color 0.1s linear, box-shadow 0.1s linear; }
+.theme-hud-scifi tbody tr:hover { background: color-mix(in oklab, var(--accent) 7%, transparent); box-shadow: inset 2px 0 0 var(--accent); }
+.theme-hud-scifi input, .theme-hud-scifi select, .theme-hud-scifi textarea { background: oklch(0.14 0.015 252 / 80%); border: 1px solid var(--line); border-radius: var(--radius-sm); caret-color: var(--accent); font-family: var(--font-mono); }
+.theme-hud-scifi input:focus-visible, .theme-hud-scifi select:focus-visible, .theme-hud-scifi textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-hud-scifi kbd { font-family: var(--font-mono); font-size: 0.7em; padding: 0.1em 0.45em; color: var(--accent); background: transparent; border: 1px solid color-mix(in oklab, var(--accent) 50%, transparent); border-radius: var(--radius-sm); }
+.theme-hud-scifi a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in oklab, var(--accent) 40%, transparent); }
+.theme-hud-scifi a:hover { border-bottom-color: var(--accent); text-shadow: 0 0 10px color-mix(in oklab, var(--accent) 70%, transparent); }
+.theme-hud-scifi ::selection { background: color-mix(in oklab, var(--accent) 30%, transparent); }
+.theme-hud-scifi ::-webkit-scrollbar { width: 8px; height: 8px; }
+.theme-hud-scifi ::-webkit-scrollbar-track { background: transparent; }
+.theme-hud-scifi ::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--accent) 40%, transparent); border-radius: 1px; }
+.theme-hud-scifi ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-hud-scifi .label-caps { font-family: var(--font-mono); color: var(--fg-muted); }
+.theme-hud-scifi .label-caps::before { content: "▸ "; color: var(--accent); }
+/* targeting brackets: four painted corners on framed panels */
+.theme-hud-scifi .themed-border { border-color: var(--line); background-image: linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)); background-repeat: no-repeat; background-position: top left, top left, top right, top right, bottom left, bottom left, bottom right, bottom right; background-size: 12px 1px, 1px 12px, 12px 1px, 1px 12px, 12px 1px, 1px 12px, 12px 1px, 1px 12px; }
+.theme-hud-scifi button:active { box-shadow: inset 0 0 12px color-mix(in oklab, var(--accent) 30%, transparent); }
+
+/* alt mode: daylight ops — white console, ink-cyan telemetry */
 .theme-hud-scifi.alt-mode {
   --bg: oklch(0.98 0.012 252.7);
   --surface: oklch(0.955 0.015 252.7);
   --surface-2: oklch(0.92 0.017 252.7);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --fg: oklch(0.2 0.02 252);
+  --fg-muted: oklch(0.45 0.04 245);
+  --line: oklch(0.52 0.1 212 / 30%);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
   --accent: oklch(0.52 0.129 212.2);
+  --accent-2: oklch(0.5 0.2 265.8);
   --accent-fg: oklch(1 0 0);
-  background-image: none;
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 50%, transparent), 0 0 12px color-mix(in oklab, var(--accent) 20%, transparent);
+  background-image: repeating-linear-gradient(0deg, transparent 0 3px, oklch(0.52 0.1 212 / 3%) 3px 4px);
 }
+.theme-hud-scifi.alt-mode h1, .theme-hud-scifi.alt-mode h2 { text-shadow: none; }
+.theme-hud-scifi.alt-mode td { border-bottom-color: oklch(0.52 0.1 212 / 18%); }
+.theme-hud-scifi.alt-mode input, .theme-hud-scifi.alt-mode select, .theme-hud-scifi.alt-mode textarea { background: oklch(1 0 0 / 75%); }
+.theme-hud-scifi.alt-mode ::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--accent) 55%, transparent); }

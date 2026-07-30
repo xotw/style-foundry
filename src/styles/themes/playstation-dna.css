@@ -11,7 +11,7 @@
   --line: oklch(0.922 0 0);
   --success: oklch(0.523 0.135 144.2);
   --warning: oklch(0.768 0.158 81.3);
-  --danger: oklch(0.371 0.158 260.7);
+  --danger: oklch(0.577 0.215 27.3);
   --radius: 0.5rem;
   --radius-sm: 0.25rem;
   --radius-lg: 0.5rem;
@@ -46,15 +46,37 @@
 .theme-playstation-dna h1 { font-weight: 700; }
 .theme-playstation-dna h2::before { content: "△ ○ ✕ □ "; color: var(--accent); font-size: 0.55em; letter-spacing: 0.2em; vertical-align: middle; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-playstation-dna { background-image: radial-gradient(oklch(0.241 0.009 285.7 / 5%) 1px, transparent 1px); background-size: 22px 22px; }
+.theme-playstation-dna thead th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-muted); border-bottom: 2px solid var(--accent); }
+.theme-playstation-dna tbody td { border-bottom: 1px solid var(--line); }
+.theme-playstation-dna tbody tr:hover td { background: color-mix(in oklab, var(--accent) 7%, transparent); }
+.theme-playstation-dna a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 2px; text-decoration-color: color-mix(in oklab, var(--accent) 35%, transparent); }
+.theme-playstation-dna a:hover { text-decoration-color: var(--accent); }
+.theme-playstation-dna ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-playstation-dna input, .theme-playstation-dna select { border-radius: var(--radius-pill); }
+.theme-playstation-dna input:focus-visible, .theme-playstation-dna select:focus-visible, .theme-playstation-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 30%, transparent); }
+.theme-playstation-dna kbd { font-family: var(--font-mono); font-size: 0.78em; padding: 0.12em 0.6em; border-radius: var(--radius-pill); background: var(--surface); border: 1px solid var(--line); box-shadow: 0 2px 0 var(--line); }
+.theme-playstation-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-playstation-dna ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-playstation-dna ::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--accent) 55%, var(--surface-2)); border-radius: 999px; }
+.theme-playstation-dna .label-caps { color: var(--accent-2); font-weight: 700; }
+.theme-playstation-dna .themed-border { border-color: color-mix(in oklab, var(--accent) 40%, var(--line)); }
+.theme-playstation-dna button:active { transform: translateY(1px); }
+
+/* alt mode: console dark — PS5 midnight blue, DualSense glow */
 .theme-playstation-dna.alt-mode {
-  --bg: oklch(0.145 0.005 275.0);
-  --surface: oklch(0.185 0.005 275.0);
-  --surface-2: oklch(0.225 0.005 275.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
+  --bg: oklch(0.165 0.035 265.0);
+  --surface: oklch(0.205 0.040 264.0);
+  --surface-2: oklch(0.250 0.045 263.0);
+  --fg: oklch(0.960 0.008 260.0);
+  --fg-muted: oklch(0.720 0.020 258.0);
+  --accent: oklch(0.680 0.140 250.0);
+  --accent-2: oklch(0.810 0.090 248.0);
+  --line: oklch(1 0 0 / 16%);
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  background-image: radial-gradient(oklch(1 0 0 / 4%) 1px, transparent 1px);
+  background-size: 22px 22px;
 }

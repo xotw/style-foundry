@@ -60,16 +60,48 @@
 .theme-claymorphism button:active { transform: scale(0.94); }
 .theme-claymorphism h1 { font-weight: 600; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-claymorphism thead th { color: var(--fg); font-weight: 600; font-size: 0.78em; background: oklch(0.9 0.05 320 / 60%); border-bottom: none; }
+.theme-claymorphism thead th:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+.theme-claymorphism thead th:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.theme-claymorphism td { border-bottom: 2px dotted oklch(0.82 0.06 300 / 60%); }
+.theme-claymorphism tbody tr:hover { background: oklch(0.97 0.03 320 / 70%); }
+.theme-claymorphism input, .theme-claymorphism textarea, .theme-claymorphism select { background: oklch(0.92 0.04 300); border: none; border-radius: var(--radius-sm); box-shadow: inset 0 4px 8px oklch(0.66 0.09 300 / 35%), inset 0 -2px 4px oklch(1 0 0 / 70%); }
+.theme-claymorphism input:focus-visible, .theme-claymorphism textarea:focus-visible, .theme-claymorphism select:focus-visible { outline: none; box-shadow: inset 0 4px 8px oklch(0.66 0.09 300 / 30%), inset 0 -2px 4px oklch(1 0 0 / 70%), var(--glow); }
+.theme-claymorphism kbd { background: oklch(0.99 0.02 300); border-radius: 0.6em; padding: 0.12em 0.5em; font-family: var(--font-mono); font-size: 0.85em; box-shadow: 0 3px 6px -2px oklch(0.6 0.1 300 / 40%), inset 0 -2px 4px oklch(0.7 0.1 300 / 25%), inset 0 2px 4px oklch(1 0 0 / 85%); }
+.theme-claymorphism a { color: var(--accent); font-weight: 600; text-decoration: underline wavy; text-decoration-color: color-mix(in oklab, var(--accent) 45%, transparent); text-underline-offset: 0.22em; }
+.theme-claymorphism a:hover { text-decoration-color: var(--accent); }
+.theme-claymorphism ::selection { background: oklch(0.72 0.16 340 / 30%); }
+.theme-claymorphism ::-webkit-scrollbar { width: 14px; height: 14px; }
+.theme-claymorphism ::-webkit-scrollbar-track { background: oklch(0.9 0.04 300 / 60%); border-radius: 9999px; }
+.theme-claymorphism ::-webkit-scrollbar-thumb { background: oklch(0.78 0.1 340); border-radius: 9999px; border: 3px solid oklch(0.95 0.035 300); }
+.theme-claymorphism ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-claymorphism .label-caps { color: var(--accent); font-weight: 600; }
+.theme-claymorphism .themed-border { border: none; box-shadow: var(--shadow-1); }
+.theme-claymorphism button:hover { transform: scale(1.04) rotate(-0.5deg); }
+
+/* alt mode: plasticine at night — dark studio clay, same squish, moonlit highlights */
 .theme-claymorphism.alt-mode {
-  --bg: oklch(0.145 0.030 300.0);
-  --surface: oklch(0.185 0.030 300.0);
-  --surface-2: oklch(0.225 0.035 300.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  --bg: oklch(0.27 0.05 300);
+  --surface: oklch(0.35 0.06 300);
+  --surface-2: oklch(0.31 0.06 292);
+  --fg: oklch(0.94 0.02 300);
+  --fg-muted: oklch(0.74 0.04 300);
+  --accent: oklch(0.76 0.16 340);
+  --accent-fg: oklch(0.24 0.06 340);
+  --line: oklch(0.46 0.06 300);
+  --shadow-1: 0 8px 16px -6px oklch(0.12 0.05 300 / 60%), inset 0 -4px 8px oklch(0.2 0.05 300 / 45%), inset 0 4px 8px oklch(0.52 0.07 300 / 60%);
+  --shadow-2: 0 16px 30px -10px oklch(0.1 0.05 300 / 65%), inset 0 -6px 12px oklch(0.2 0.05 300 / 48%), inset 0 6px 12px oklch(0.54 0.07 300 / 62%);
+  --shadow-3: 0 28px 54px -16px oklch(0.08 0.05 300 / 70%), inset 0 -8px 16px oklch(0.2 0.05 300 / 50%), inset 0 8px 16px oklch(0.55 0.07 300 / 62%);
+  --glow: 0 0 0 6px oklch(0.76 0.16 340 / 22%);
+  background-image:
+    radial-gradient(40rem 30rem at 10% 0%, oklch(0.42 0.09 340 / 45%), transparent 60%),
+    radial-gradient(40rem 30rem at 100% 30%, oklch(0.4 0.08 210 / 40%), transparent 60%);
 }
+.theme-claymorphism.alt-mode thead th { background: oklch(0.38 0.06 320 / 70%); }
+.theme-claymorphism.alt-mode td { border-bottom-color: oklch(0.45 0.06 300 / 60%); }
+.theme-claymorphism.alt-mode tbody tr:hover { background: oklch(0.36 0.06 320 / 60%); }
+.theme-claymorphism.alt-mode input, .theme-claymorphism.alt-mode textarea, .theme-claymorphism.alt-mode select { background: oklch(0.29 0.05 300); color: var(--fg); box-shadow: inset 0 4px 8px oklch(0.14 0.05 300 / 60%), inset 0 -2px 4px oklch(0.48 0.07 300 / 50%); }
+.theme-claymorphism.alt-mode kbd { background: oklch(0.38 0.06 300); box-shadow: 0 3px 6px -2px oklch(0.1 0.05 300 / 60%), inset 0 -2px 4px oklch(0.2 0.05 300 / 40%), inset 0 2px 4px oklch(0.52 0.07 300 / 60%); }
+.theme-claymorphism.alt-mode ::-webkit-scrollbar-track { background: oklch(0.31 0.05 300 / 70%); }
+.theme-claymorphism.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.6 0.12 340); border-color: oklch(0.27 0.05 300); }

@@ -50,16 +50,46 @@
 .theme-chicago-bulls h1 { color: var(--accent); }
 .theme-chicago-bulls h1::after { content: ""; display: block; height: 4px; width: 6rem; margin-top: 0.6rem; background: #ffffff; }
 
-/* alt mode: auto-derived light variant */
+/* depth */
+.theme-chicago-bulls ::selection { background: var(--accent); color: var(--accent-fg); }
+.theme-chicago-bulls a { color: oklch(0.72 0.17 18); text-decoration-color: color-mix(in oklab, var(--accent) 55%, transparent); text-underline-offset: 3px; }
+.theme-chicago-bulls a:hover { color: #ffffff; text-decoration-color: var(--accent); text-decoration-thickness: 3px; }
+.theme-chicago-bulls thead th { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8em; color: var(--fg-muted); background: oklch(0.165 0.006 18); border-bottom: 2px solid var(--accent); }
+.theme-chicago-bulls td { border-bottom: 1px solid var(--line); }
+.theme-chicago-bulls tbody tr:hover { background: oklch(0.545 0.211 17 / 9%); box-shadow: inset 3px 0 0 var(--accent); }
+.theme-chicago-bulls input, .theme-chicago-bulls select, .theme-chicago-bulls textarea { background: oklch(0.128 0.004 18); border: 1px solid var(--line); caret-color: var(--accent); }
+.theme-chicago-bulls input:focus-visible, .theme-chicago-bulls select:focus-visible, .theme-chicago-bulls textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px oklch(0.545 0.211 17 / 30%); }
+.theme-chicago-bulls kbd { font-family: var(--font-display); font-weight: 700; background: oklch(0.10 0.003 18); color: #ffffff; border: 1px solid var(--accent); border-bottom-width: 3px; border-radius: var(--radius-sm); padding: 0.1em 0.45em; }
+.theme-chicago-bulls ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-chicago-bulls ::-webkit-scrollbar-track { background: oklch(0.128 0.004 18); }
+.theme-chicago-bulls ::-webkit-scrollbar-thumb { background: oklch(0.42 0.15 18); border: 2px solid oklch(0.128 0.004 18); border-radius: 999px; }
+.theme-chicago-bulls ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.theme-chicago-bulls .label-caps { color: oklch(0.68 0.19 18); font-weight: 700; }
+.theme-chicago-bulls .themed-border { border-color: var(--accent); box-shadow: inset 0 0 0 1px oklch(1 0 0 / 7%); }
+/* physical: the charge — buttons slam down like a drive to the rim */
+.theme-chicago-bulls button:hover { box-shadow: 0 4px 0 oklch(0.35 0.13 18), var(--shadow-1); transform: translateY(-2px); }
+.theme-chicago-bulls button:active { transform: translateY(1px); box-shadow: inset 0 2px 6px oklch(0 0 0 / 55%); }
+
+/* alt mode: home-whites kit — white base, red trim, faint jersey pinstripe */
 .theme-chicago-bulls.alt-mode {
   --bg: oklch(0.98 0.003 17.6);
   --surface: oklch(0.955 0.003 17.6);
   --surface-2: oklch(0.92 0.003 17.6);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
+  --fg: oklch(0.18 0.008 17);
+  --fg-muted: oklch(0.45 0.02 17);
+  --accent: oklch(0.50 0.20 17);
+  --line: oklch(0.87 0.008 17);
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  background-image: repeating-linear-gradient(90deg, transparent 0 26px, oklch(0.50 0.20 17 / 4%) 26px 27px);
 }
+.theme-chicago-bulls.alt-mode h1::after { background: oklch(0.15 0.005 17); }
+.theme-chicago-bulls.alt-mode a { color: oklch(0.48 0.19 18); }
+.theme-chicago-bulls.alt-mode a:hover { color: oklch(0.15 0.005 17); }
+.theme-chicago-bulls.alt-mode kbd { background: #ffffff; color: oklch(0.18 0.008 17); }
+.theme-chicago-bulls.alt-mode thead th { background: oklch(0.94 0.004 17); }
+.theme-chicago-bulls.alt-mode ::-webkit-scrollbar-track { background: oklch(0.94 0.004 17); }
+.theme-chicago-bulls.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0.62 0.13 18); border-color: oklch(0.94 0.004 17); }
+.theme-chicago-bulls.alt-mode .label-caps { color: oklch(0.48 0.19 18); }
+.theme-chicago-bulls.alt-mode input, .theme-chicago-bulls.alt-mode select, .theme-chicago-bulls.alt-mode textarea { background: #ffffff; }

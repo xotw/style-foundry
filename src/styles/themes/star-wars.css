@@ -1,0 +1,50 @@
+/* Star Wars — a galaxy far away: space black, crawl yellow, saber glow */
+.theme-star-wars {
+  --bg: oklch(0.117 0.009 284.9);
+  --surface: oklch(0.163 0.015 284.7);
+  --surface-2: oklch(0.201 0.020 284.5);
+  --fg: oklch(0.961 0.014 93.0);
+  --fg-muted: oklch(0.656 0.025 285.7);
+  --accent: oklch(0.921 0.188 101.9);
+  --accent-fg: oklch(0.117 0.009 284.9);
+  --accent-2: oklch(0.809 0.121 212.1);
+  --line: oklch(0.9 0.15 100 / 25%);
+  --success: oklch(0.809 0.121 212.1);
+  --warning: oklch(0.921 0.188 101.9);
+  --danger: oklch(0.643 0.242 27.5);
+  --radius: 0.25rem;
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.375rem;
+  --radius-pill: 0.375rem;
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 16px color-mix(in oklab, var(--accent) 50%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Pathway Gothic One", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.06em;
+  --label-transform: uppercase;
+  --label-tracking: 0.24em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-star-wars h1,
+.theme-star-wars h2,
+.theme-star-wars h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-star-wars { --font-ui: var(--font-display); background-image: radial-gradient(1px 1px at 12% 25%, #ffffff 50%, transparent 50%), radial-gradient(1px 1px at 78% 12%, #ffffff 50%, transparent 50%), radial-gradient(1.5px 1.5px at 45% 65%, #ffffffcc 50%, transparent 50%), radial-gradient(1px 1px at 90% 80%, #ffffff99 50%, transparent 50%), radial-gradient(1px 1px at 30% 88%, #ffffffaa 50%, transparent 50%); }
+.theme-star-wars h1, .theme-star-wars h2 { text-transform: uppercase; color: var(--accent); }
+.theme-star-wars h1 { transform: perspective(300px) rotateX(8deg); transform-origin: 50% 100%; }
+.theme-star-wars button { text-transform: uppercase; letter-spacing: 0.2em; }
+.theme-star-wars button:hover { box-shadow: 0 0 20px color-mix(in oklab, var(--accent-2) 60%, transparent); }
+

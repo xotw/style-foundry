@@ -114,6 +114,14 @@
 @import "./styles/themes/nintendo-dna.css";
 @import "./styles/themes/steam-dna.css";
 @import "./styles/themes/microsoft-dna.css";
+@import "./styles/themes/star-wars.css";
+@import "./styles/themes/stranger-things.css";
+@import "./styles/themes/matrix.css";
+@import "./styles/themes/dune.css";
+@import "./styles/themes/wes-anderson.css";
+@import "./styles/themes/severance.css";
+@import "./styles/themes/james-bond.css";
+@import "./styles/themes/ghibli.css";
 
 @custom-variant dark (&:is(.dark *));
 

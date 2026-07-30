@@ -46,7 +46,26 @@
 .theme-uber-dna h1 { font-weight: 700; letter-spacing: -0.03em; }
 .theme-uber-dna button { font-weight: 500; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-uber-dna thead th { font-size: 0.72rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-muted); border-bottom: 2px solid var(--fg); }
+.theme-uber-dna td { border-bottom: 1px solid var(--line); }
+.theme-uber-dna tbody tr:hover { background: var(--surface); }
+.theme-uber-dna input, .theme-uber-dna select, .theme-uber-dna textarea { background: var(--surface); border: 2px solid transparent; border-radius: var(--radius); transition: border-color 120ms ease, background 120ms ease; }
+.theme-uber-dna input:focus-visible, .theme-uber-dna select:focus-visible, .theme-uber-dna textarea:focus-visible { outline: none; border-color: var(--fg); background: var(--bg); }
+.theme-uber-dna a { color: var(--fg); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+.theme-uber-dna a:hover { color: var(--fg-muted); }
+.theme-uber-dna ::selection { background: var(--fg); color: oklch(1 0 0); }
+.theme-uber-dna ::-webkit-scrollbar { width: 8px; }
+.theme-uber-dna ::-webkit-scrollbar-track { background: var(--surface); }
+.theme-uber-dna ::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 4px; }
+.theme-uber-dna kbd { background: var(--fg); color: oklch(1 0 0); font-family: var(--font-mono); font-size: 0.7em; border-radius: 4px; padding: 0.15em 0.45em; }
+.theme-uber-dna .label-caps { font-weight: 500; color: var(--fg-muted); }
+.theme-uber-dna .themed-border { border-color: var(--fg); }
+.theme-uber-dna button { transition: opacity 120ms ease, transform 120ms ease; }
+.theme-uber-dna button:hover { opacity: 0.85; }
+.theme-uber-dna button:active { transform: scale(0.98); }
+
+/* alt mode: night ride — true black, white becomes the accent */
 .theme-uber-dna.alt-mode {
   --bg: oklch(0.145 0.000 0.0);
   --surface: oklch(0.185 0.000 0.0);
@@ -57,6 +76,9 @@
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.100 0.0);
-  --accent-fg: oklch(0.13 0 0);
+  --accent: oklch(0.97 0.005 90);
+  --accent-fg: oklch(0.145 0 0);
+  --accent-2: oklch(0.680 0.180 261.4);
 }
+.theme-uber-dna.alt-mode ::selection { background: oklch(0.97 0.005 90); color: oklch(0.145 0 0); }
+.theme-uber-dna.alt-mode kbd { background: oklch(0.97 0.005 90); color: oklch(0.145 0 0); }

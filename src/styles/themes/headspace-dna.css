@@ -6,7 +6,7 @@
   --fg: oklch(0.294 0.002 67.7);
   --fg-muted: oklch(0.55 0.04 50);
   --accent: oklch(0.478 0.257 263.6);
-  --accent-fg: oklch(0.15 0.03 45);
+  --accent-fg: oklch(1 0 0);
   --accent-2: oklch(0.869 0.178 91.3);
   --line: oklch(0.9 0.03 70);
   --success: oklch(0.72 0.14 155);
@@ -66,16 +66,35 @@
 .theme-headspace-dna h2 { color: var(--accent); }
 .theme-headspace-dna { background-image: radial-gradient(circle at 88% 6%, #ffce00 0 90px, transparent 90px), radial-gradient(circle at 8% 60%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 40%); }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-headspace-dna thead th { font-weight: 700; color: var(--fg-muted); border-bottom: 2px solid var(--surface-2); }
+.theme-headspace-dna td { border-bottom: 1px solid color-mix(in oklab, var(--line) 55%, transparent); }
+.theme-headspace-dna tbody tr:hover { background: color-mix(in oklab, var(--surface-2) 55%, transparent); }
+.theme-headspace-dna input, .theme-headspace-dna select { border-radius: var(--radius-pill); background: var(--surface); border: 2px solid transparent; transition: border-color 200ms ease, box-shadow 200ms ease; }
+.theme-headspace-dna textarea { border-radius: var(--radius); background: var(--surface); border: 2px solid transparent; }
+.theme-headspace-dna input:focus-visible, .theme-headspace-dna select:focus-visible, .theme-headspace-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--glow); }
+.theme-headspace-dna a { color: var(--accent); font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.theme-headspace-dna ::selection { background: oklch(0.90 0.09 60); }
+.theme-headspace-dna ::-webkit-scrollbar { width: 12px; }
+.theme-headspace-dna ::-webkit-scrollbar-track { background: transparent; }
+.theme-headspace-dna ::-webkit-scrollbar-thumb { background: var(--accent-2); border-radius: 999px; border: 3px solid var(--bg); }
+.theme-headspace-dna kbd { font-family: var(--font-mono); font-size: 0.72em; background: var(--surface-2); border-radius: 999px; padding: 0.15em 0.6em; }
+.theme-headspace-dna .label-caps { font-weight: 700; color: var(--fg-muted); }
+.theme-headspace-dna button { border-radius: var(--radius-pill); transition: transform 260ms cubic-bezier(0.34, 1.4, 0.6, 1); }
+.theme-headspace-dna button:hover { transform: scale(1.04); }
+
+/* alt mode: sleepcast — deep meditation indigo, the sun becomes a moon */
 .theme-headspace-dna.alt-mode {
-  --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
-  --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
+  --bg: oklch(0.225 0.045 280.0);
+  --surface: oklch(0.265 0.048 280.0);
+  --surface-2: oklch(0.310 0.050 280.0);
+  --fg: oklch(0.955 0.012 80);
+  --fg-muted: oklch(0.74 0.030 280);
+  --accent: oklch(0.640 0.190 263.6);
   --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  background-image: none;
+  --shadow-1: 0 4px 16px -6px oklch(0 0 0 / 40%);
+  --shadow-2: 0 16px 40px -16px oklch(0 0 0 / 50%);
+  --shadow-3: 0 32px 80px -32px oklch(0 0 0 / 60%);
+  background-image: radial-gradient(circle at 88% 6%, oklch(0.85 0.05 85) 0 60px, transparent 60px), radial-gradient(50% 45% at 12% 80%, oklch(0.32 0.08 300 / 50%), transparent 70%);
 }
+.theme-headspace-dna.alt-mode ::selection { background: oklch(0.42 0.10 280); }

@@ -47,15 +47,40 @@
 .theme-lego-dna button { border-bottom: 4px solid oklch(0 0 0 / 30%); font-weight: 800; }
 .theme-lego-dna button:active { transform: translateY(2px); border-bottom-width: 2px; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-lego-dna { background-image: radial-gradient(circle at 8px 8px, oklch(0 0 0 / 4%) 0 5px, transparent 6px); background-size: 32px 32px; }
+.theme-lego-dna thead th { background: var(--fg); color: oklch(1 0 0); font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; }
+.theme-lego-dna td { border-bottom: 1px solid oklch(0.9 0 0); }
+.theme-lego-dna tbody tr:hover { background: oklch(0.949 0.04 92); }
+.theme-lego-dna input, .theme-lego-dna select, .theme-lego-dna textarea { border: 2px solid var(--fg); border-radius: var(--radius-sm); background: oklch(1 0 0); font-weight: 600; }
+.theme-lego-dna input:focus-visible, .theme-lego-dna select:focus-visible, .theme-lego-dna textarea:focus-visible { outline: 3px solid oklch(0.871 0.178 91.8); outline-offset: 1px; }
+.theme-lego-dna a { color: var(--accent-2); font-weight: 800; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; }
+.theme-lego-dna a:hover { color: var(--accent); }
+.theme-lego-dna ::selection { background: oklch(0.871 0.178 91.8); color: oklch(0 0 0); }
+.theme-lego-dna ::-webkit-scrollbar { width: 12px; }
+.theme-lego-dna ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-lego-dna ::-webkit-scrollbar-thumb { background: var(--accent); border: 2px solid var(--fg); border-radius: 4px; }
+.theme-lego-dna kbd { background: var(--accent); color: oklch(1 0 0); font-weight: 800; border-radius: 4px; border-bottom: 3px solid oklch(0.40 0.17 28.3); padding: 0.1em 0.45em; font-size: 0.72em; }
+.theme-lego-dna .label-caps { font-weight: 800; }
+.theme-lego-dna .themed-border { border-color: var(--fg); }
+.theme-lego-dna button:hover { transform: translateY(-1px); }
+
+/* alt mode: black baseplate — studs and brick colors glow in the dark */
 .theme-lego-dna.alt-mode {
   --bg: oklch(0.145 0.000 0.0);
-  --surface: oklch(0.185 0.000 0.0);
-  --surface-2: oklch(0.225 0.000 0.0);
+  --surface: oklch(0.195 0.000 0.0);
+  --surface-2: oklch(0.240 0.000 0.0);
   --fg: oklch(0.97 0.005 90);
-  --fg-muted: oklch(0.70 0.01 90);
-  --line: oklch(1 0 0 / 14%);
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --fg-muted: oklch(0.72 0.01 90);
+  --accent: oklch(0.600 0.216 28.3);
+  --line: oklch(1 0 0 / 20%);
+  --shadow-1: 0 3px 0 oklch(0 0 0 / 60%);
+  --shadow-2: 0 6px 0 oklch(0 0 0 / 50%);
+  --shadow-3: 0 12px 24px oklch(0 0 0 / 60%);
+  background-image: radial-gradient(circle at 8px 8px, oklch(1 0 0 / 5%) 0 5px, transparent 6px);
+  background-size: 32px 32px;
 }
+.theme-lego-dna.alt-mode thead th { background: oklch(0.871 0.178 91.8); color: oklch(0 0 0); }
+.theme-lego-dna.alt-mode td { border-bottom-color: oklch(1 0 0 / 16%); }
+.theme-lego-dna.alt-mode tbody tr:hover { background: oklch(0.24 0.03 92); }
+.theme-lego-dna.alt-mode input, .theme-lego-dna.alt-mode select, .theme-lego-dna.alt-mode textarea { background: var(--surface); border-color: oklch(0.97 0.005 90); }

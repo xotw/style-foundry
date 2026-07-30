@@ -56,7 +56,25 @@
 .theme-e-ink img { filter: grayscale(1); }
 .theme-e-ink h1 { font-weight: 700; }
 
-/* alt mode: auto-derived dark variant */
+/* depth */
+.theme-e-ink thead th { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.7em; font-weight: 500; border-bottom: 2px solid var(--fg); text-align: left; }
+.theme-e-ink td { border-bottom: 1px dotted var(--line); }
+/* physical: row hover = a dither pass, like a partial screen refresh */
+.theme-e-ink tbody tr:hover { background: repeating-linear-gradient(45deg, oklch(0.16 0 0 / 8%) 0 1px, transparent 1px 3px); }
+.theme-e-ink input, .theme-e-ink select, .theme-e-ink textarea { border: 1px solid var(--fg); border-radius: var(--radius-sm); background: var(--surface); }
+.theme-e-ink input:focus, .theme-e-ink select:focus, .theme-e-ink textarea:focus { outline: 2px solid var(--fg); outline-offset: 1px; box-shadow: none; }
+.theme-e-ink a { color: var(--fg); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.theme-e-ink a:hover { background: var(--fg); color: var(--bg); text-decoration: none; }
+.theme-e-ink button:active { background: var(--fg); color: var(--bg); }
+.theme-e-ink kbd { font-family: var(--font-mono); font-size: 0.85em; padding: 0.1em 0.4em; border: 1px solid var(--fg); border-radius: var(--radius-sm); background: var(--surface); }
+.theme-e-ink ::selection { background: var(--fg); color: var(--bg); }
+.theme-e-ink ::-webkit-scrollbar { width: 8px; height: 8px; }
+.theme-e-ink ::-webkit-scrollbar-track { background: var(--surface-2); }
+.theme-e-ink ::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 0; }
+.theme-e-ink .label-caps { font-family: var(--font-mono); font-weight: 500; }
+.theme-e-ink .themed-border { border: 1px solid var(--fg); }
+
+/* alt mode: night reader — warm-free dark slate, ink flips to bone white */
 .theme-e-ink.alt-mode {
   --bg: oklch(0.145 0.002 90.0);
   --surface: oklch(0.185 0.002 90.0);
@@ -67,6 +85,17 @@
   --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
   --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
-  --accent: oklch(0.62 0.100 0.0);
-  --accent-fg: oklch(0.13 0 0);
+  --accent: oklch(0.97 0.005 90);
+  --accent-fg: oklch(0.145 0.002 90);
+  --accent-2: oklch(0.68 0.17 30);
+  --danger: oklch(0.68 0.17 30);
+  --line: oklch(0.97 0.005 90 / 35%);
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
+  --glow: 0 0 0 2px var(--fg);
 }
+.theme-e-ink.alt-mode tbody tr:hover { background: repeating-linear-gradient(45deg, oklch(0.97 0.005 90 / 10%) 0 1px, transparent 1px 3px); }
+.theme-e-ink.alt-mode input, .theme-e-ink.alt-mode select, .theme-e-ink.alt-mode textarea, .theme-e-ink.alt-mode kbd, .theme-e-ink.alt-mode thead th, .theme-e-ink.alt-mode .themed-border { border-color: var(--fg); }
+.theme-e-ink.alt-mode img { filter: grayscale(1) brightness(0.85); }
+.theme-e-ink.alt-mode ::-webkit-scrollbar-thumb { background: var(--fg); }

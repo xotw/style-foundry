@@ -47,7 +47,27 @@
 .theme-inter-milan button { text-transform: uppercase; letter-spacing: 0.06em; }
 
 .theme-inter-milan { background-image: repeating-linear-gradient(115deg, oklch(0.35 0.1 260 / 22%) 0 42px, transparent 42px 84px); }
-.theme-inter-milan h1 { background: linear-gradient(95deg, #4a86e8, #1c3f8f); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-inter-milan h1 { background: linear-gradient(95deg, #a9c6ff, #4a86e8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* depth */
+.theme-inter-milan thead th { background: linear-gradient(115deg, oklch(0.25 0.06 264), oklch(0.21 0.04 269)); color: oklch(1 0 0); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78em; border-bottom: 2px solid oklch(0.62 0.16 259); }
+.theme-inter-milan td { border-bottom: 1px solid var(--line); }
+.theme-inter-milan tbody tr:hover { background: oklch(0.543 0.171 260.5 / 16%); }
+.theme-inter-milan a { color: oklch(0.70 0.13 258); text-underline-offset: 3px; }
+/* biscione: the underline sharpens serpent-blue on hover */
+.theme-inter-milan a:hover { text-decoration-thickness: 2px; text-decoration-color: oklch(0.80 0.10 255); }
+.theme-inter-milan ::selection { background: oklch(0.543 0.171 260.5); color: oklch(1 0 0); }
+.theme-inter-milan input, .theme-inter-milan select, .theme-inter-milan textarea { background: oklch(0.16 0.03 268); }
+.theme-inter-milan input:focus-visible, .theme-inter-milan select:focus-visible, .theme-inter-milan textarea:focus-visible { outline: 2px solid oklch(0.62 0.16 259); outline-offset: 1px; }
+.theme-inter-milan kbd { background: oklch(0.16 0.03 268); border: 1px solid var(--line); border-bottom: 3px solid oklch(0.543 0.171 260.5); border-radius: var(--radius-sm); padding: 0.1em 0.45em; font-family: var(--font-mono); }
+.theme-inter-milan ::-webkit-scrollbar { width: 10px; height: 10px; }
+.theme-inter-milan ::-webkit-scrollbar-track { background: oklch(0.16 0.03 268); }
+.theme-inter-milan ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, oklch(0.55 0.17 260), oklch(0.35 0.10 265)); border-radius: 5px; border: 2px solid oklch(0.16 0.03 268); }
+.theme-inter-milan ::-webkit-scrollbar-thumb:hover { background: oklch(0.62 0.16 259); }
+.theme-inter-milan .label-caps { color: var(--accent-2); }
+/* nerazzurri shirt stripes on framed panels */
+.theme-inter-milan .themed-border { border-image: repeating-linear-gradient(180deg, oklch(0.45 0.16 262) 0 8px, oklch(0.13 0.02 268) 8px 16px) 1; }
+.theme-inter-milan button:active { transform: translateY(1px); }
 
 /* alt mode: auto-derived light variant */
 .theme-inter-milan.alt-mode {
@@ -60,5 +80,15 @@
   --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
   --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
   --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: none;
+  --accent: oklch(0.48 0.17 260.5);
+  /* away daylight: faint nerazzurri diagonals stay on the shirt */
+  background-image: repeating-linear-gradient(115deg, oklch(0.45 0.12 262 / 6%) 0 42px, transparent 42px 84px);
 }
+.theme-inter-milan.alt-mode h1 { background: linear-gradient(95deg, #1c3f8f, #4a86e8); -webkit-background-clip: text; background-clip: text; }
+.theme-inter-milan.alt-mode a { color: oklch(0.44 0.15 260); }
+.theme-inter-milan.alt-mode thead th { background: linear-gradient(115deg, oklch(0.30 0.08 262), oklch(0.22 0.05 268)); }
+.theme-inter-milan.alt-mode input, .theme-inter-milan.alt-mode select, .theme-inter-milan.alt-mode textarea { background: oklch(1 0 0); }
+.theme-inter-milan.alt-mode kbd { background: oklch(0.94 0.012 268); color: var(--fg); }
+.theme-inter-milan.alt-mode ::-webkit-scrollbar-track { background: oklch(0.93 0.012 268); }
+.theme-inter-milan.alt-mode ::-webkit-scrollbar-thumb { border-color: oklch(0.93 0.012 268); }
+.theme-inter-milan.alt-mode tbody tr:hover { background: oklch(0.48 0.17 260 / 8%); }

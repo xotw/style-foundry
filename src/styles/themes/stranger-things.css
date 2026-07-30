@@ -1,0 +1,49 @@
+/* Stranger Things — upside-down night, neon red serif title glow */
+.theme-stranger-things {
+  --bg: oklch(0.137 0.011 284.8);
+  --surface: oklch(0.177 0.016 284.6);
+  --surface-2: oklch(0.215 0.023 284.3);
+  --fg: oklch(0.924 0.009 314.8);
+  --fg-muted: oklch(0.637 0.038 296.3);
+  --accent: oklch(0.603 0.235 27.0);
+  --accent-fg: oklch(1.000 0 0);
+  --accent-2: oklch(0.638 0.129 259.7);
+  --line: oklch(0.5 0.2 25 / 35%);
+  --success: oklch(0.638 0.129 259.7);
+  --warning: oklch(0.767 0.141 81.6);
+  --danger: oklch(0.603 0.235 27.0);
+  --radius: 0.125rem;
+  --radius-sm: 0px;
+  --radius-lg: 0.25rem;
+  --radius-pill: 0.25rem;
+  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --glow: 0 0 20px color-mix(in oklab, var(--accent) 60%, transparent);
+  --border-width: 1px;
+  --blur-amount: 0px;
+  --font-display: "Grenze", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-display: 0.1em;
+  --label-transform: uppercase;
+  --label-tracking: 0.3em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-stranger-things h1,
+.theme-stranger-things h2,
+.theme-stranger-things h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
+}
+
+/* signature */
+.theme-stranger-things { background-image: radial-gradient(ellipse at 50% 120%, oklch(0.35 0.16 25 / 30%), transparent 60%); }
+.theme-stranger-things h1, .theme-stranger-things h2 { text-transform: uppercase; color: var(--accent); text-shadow: 0 0 14px color-mix(in oklab, var(--accent) 70%, transparent), 0 0 40px color-mix(in oklab, var(--accent) 40%, transparent); }
+.theme-stranger-things h1 { -webkit-text-stroke: 1px var(--accent); color: transparent; }
+.theme-stranger-things button { text-transform: uppercase; letter-spacing: 0.16em; }
+
