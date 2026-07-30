@@ -190,6 +190,34 @@ export const STYLES: StyleEntry[] = [
     fontPairing: "Abril Fatface / Outfit",
     swatch: ["oklch(0.55 0.24 330)", "oklch(0.95 0.14 95)", "oklch(0.72 0.2 200)"],
   },
+  {
+    slug: "stripe-dna",
+    name: "Stripe DNA",
+    tagline: "Clean white, indigo-to-cyan gradient accents, crisp type, generous air.",
+    fontPairing: "Sora / Inter",
+    swatch: ["oklch(1 0 0)", "oklch(0.53 0.21 275)", "oklch(0.72 0.14 205)"],
+  },
+  {
+    slug: "airbnb-dna",
+    name: "Airbnb DNA",
+    tagline: "Warm white marketplace, coral accent, big radii, soft diffuse shadows.",
+    fontPairing: "Figtree / Figtree",
+    swatch: ["oklch(0.995 0.003 60)", "oklch(0.62 0.21 18)", "oklch(0.55 0.13 340)"],
+  },
+  {
+    slug: "spotify-dna",
+    name: "Spotify DNA",
+    tagline: "Near-black entertainment shell, vivid green, pill buttons everywhere.",
+    fontPairing: "Manrope / Manrope",
+    swatch: ["oklch(0.14 0 0)", "oklch(0.83 0.22 148)", "oklch(0.24 0.003 260)"],
+  },
+  {
+    slug: "superhuman-dna",
+    name: "Superhuman DNA",
+    tagline: "Violet-tinted dark, glowing accents, keyboard-first micro-detail.",
+    fontPairing: "Sora / Inter",
+    swatch: ["oklch(0.15 0.03 295)", "oklch(0.68 0.2 305)", "oklch(0.72 0.15 240)"],
+  },
 ];
 
 export const STYLE_SLUGS = STYLES.map((s) => s.slug);
