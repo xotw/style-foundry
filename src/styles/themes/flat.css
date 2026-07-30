@@ -1,0 +1,52 @@
+/* Flat / Metro — saturated solids, zero shadow, sharp geometry, big type */
+.theme-flat {
+  --bg: oklch(0.96 0.004 250);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.55 0.19 250);
+  --fg: oklch(0.2 0.01 250);
+  --fg-muted: oklch(0.5 0.012 250);
+  --accent: oklch(0.6 0.19 30);
+  --accent-fg: oklch(1 0 0);
+  --accent-2: oklch(0.65 0.17 165);
+  --line: oklch(0.86 0.008 250);
+  --success: oklch(0.68 0.18 150);
+  --warning: oklch(0.78 0.17 80);
+  --danger: oklch(0.58 0.22 25);
+
+  --radius: 0rem;
+  --radius-sm: 0rem;
+  --radius-lg: 0rem;
+  --radius-pill: 0rem;
+
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: none;
+  --glow: 0 0 0 3px var(--accent);
+
+  --border-width: 0px;
+  --blur-amount: 0px;
+
+  --font-display: "Inter Tight", "Segoe UI", sans-serif;
+  --font-body: "Open Sans", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --tracking-display: -0.035em;
+  --label-transform: uppercase;
+  --label-tracking: 0.1em;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+.theme-flat h1,
+.theme-flat h2,
+.theme-flat h3 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: var(--tracking-display);
+}
+
+.theme-flat h1 {
+  font-weight: 200;
+}
