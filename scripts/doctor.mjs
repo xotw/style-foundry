@@ -15,6 +15,23 @@ if (!root || !existsSync(root)) {
   process.exit(1);
 }
 
+/* Optional per-app exceptions manifest: <app>/sf-doctor.json
+   {
+     "ignoreFiles": ["src/pages/CRMDashboard.tsx", "components/badges/"],
+     "allowedHex": ["#0A66C2", "#E36964"],
+     "reason": "status pills, owner avatars, source dots — assumed data-viz palette"
+   }
+   Matched findings are counted separately as documented exceptions and do NOT
+   weigh on the verdict. An exception is a decision, not a blocker. */
+let manifest = { ignoreFiles: [], allowedHex: [], reason: "" };
+const manifestPath = join(root, "sf-doctor.json");
+if (existsSync(manifestPath)) {
+  try { manifest = { ignoreFiles: [], allowedHex: [], reason: "", ...JSON.parse(readFileSync(manifestPath, "utf8")) }; }
+  catch { console.error("!! sf-doctor.json is invalid JSON — ignoring it"); }
+}
+const allowedHexSet = new Set(manifest.allowedHex.map((h) => h.toLowerCase()));
+const isIgnoredFile = (rel) => manifest.ignoreFiles.some((frag) => rel.includes(frag));
+
 const EXT = new Set([".tsx", ".ts", ".jsx", ".js", ".css", ".html", ".vue", ".svelte"]);
 const SKIP = new Set(["node_modules", "dist", "build", ".next", ".output", ".git", "public"]);
 
@@ -30,6 +47,7 @@ function* walk(dir) {
 
 let files = 0;
 let rawHex = 0;
+let exceptedHex = 0;
 let hexFiles = new Map();
 let semanticVarUse = 0;
 let bakedFontLiterals = [];
@@ -53,8 +71,16 @@ for (const f of walk(root)) {
 
   const hexes = src.match(/#[0-9a-fA-F]{6}\b/g) ?? [];
   if (hexes.length) {
-    rawHex += hexes.length;
-    hexFiles.set(rel, hexes.length);
+    if (isIgnoredFile(rel)) {
+      exceptedHex += hexes.length;
+    } else {
+      const kept = hexes.filter((h) => !allowedHexSet.has(h.toLowerCase()));
+      exceptedHex += hexes.length - kept.length;
+      if (kept.length) {
+        rawHex += kept.length;
+        hexFiles.set(rel, kept.length);
+      }
+    }
   }
   semanticVarUse += (src.match(/var\(--(background|foreground|primary|card|muted|accent|border|ring|sidebar|chart)/g) ?? []).length;
   if (/--(primary|background|card):/.test(src)) hasShadcnVars = true;
@@ -77,7 +103,7 @@ console.log("\n━━ Style Foundry doctor ━━━━━━━━━━━━�
 console.log(`Scanned: ${files} files in ${root}\n`);
 console.log(`Tailwind v4:              ${hasTailwind4 ? "yes" : "NO (v3 or none — bridge still works via CSS vars)"}`);
 console.log(`shadcn-style variables:   ${hasShadcnVars ? "yes" : "no"} (${semanticVarUse} semantic var() usages)`);
-console.log(`Raw hex colors:           ${rawHex}`);
+console.log(`Raw hex colors:           ${rawHex}${exceptedHex ? ` (+ ${exceptedHex} documented exceptions${manifest.reason ? ` — ${manifest.reason}` : ""})` : ""}`);
 for (const [f, n] of topHex) console.log(`   ${String(n).padStart(4)}  ${f}`);
 console.log(`Hardcoded gray/white/black utilities: ${hardcodedUtils}`);
 console.log(`Inline style colors:      ${inlineStyleColors}`);
