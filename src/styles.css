@@ -5,6 +5,20 @@
 @import "./styles/themes/brutalism.css";
 @import "./styles/themes/glass.css";
 @import "./styles/themes/dark-saas.css";
+@import "./styles/themes/neumorphism.css";
+@import "./styles/themes/editorial.css";
+@import "./styles/themes/terminal.css";
+@import "./styles/themes/vaporwave.css";
+@import "./styles/themes/claymorphism.css";
+@import "./styles/themes/luxury.css";
+@import "./styles/themes/memphis.css";
+@import "./styles/themes/aurora.css";
+@import "./styles/themes/bauhaus.css";
+@import "./styles/themes/y2k.css";
+@import "./styles/themes/minimal-warm.css";
+@import "./styles/themes/cyberpunk.css";
+@import "./styles/themes/newspaper.css";
+@import "./styles/themes/skeuomorphism.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -85,10 +99,7 @@
 
 /* Each theme sets --font-display / --font-body; mirror them into the
    Tailwind-facing family variables. */
-.theme-swiss,
-.theme-brutalism,
-.theme-glass,
-.theme-dark-saas {
+[class*="theme-"] {
   --font-display-family: var(--font-display);
   --font-body-family: var(--font-body);
 }
