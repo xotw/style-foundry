@@ -91,9 +91,23 @@ const BRIDGE = `
    bakes font/shadow/radius literals into its compiled utilities (a var bridge
    cannot beat a literal). Targeted !important, fonts and surfaces only. */
 [class*="theme-"].sf-enforce { font-family: var(--font-body) !important; }
-[class*="theme-"].sf-enforce :is(h1, h2, h3, h4, [class*="font-heading"], [class*="text-2xl"], [class*="text-3xl"], [class*="text-4xl"], [class*="text-5xl"]) {
+[class*="theme-"].sf-enforce :is(h1, h2, h3, h4, [class*="font-heading"]) {
   font-family: var(--font-display) !important;
   letter-spacing: var(--tracking-display) !important;
+}
+/* Data stays data: metrics/KPIs keep the body face with aligned lining figures.
+   The display face is for headlines ONLY — never on numbers. Opt specific
+   elements INTO the display face with data-sf="display". */
+[class*="theme-"] :is([class*="text-2xl"], [class*="text-3xl"], [class*="text-4xl"], [class*="text-5xl"]) {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+[class*="theme-"].sf-enforce [data-sf="display"] {
+  font-family: var(--font-display) !important;
+  letter-spacing: var(--tracking-display) !important;
+}
+[class*="theme-"] :is(.sf-num, [data-sf="num"]) {
+  font-family: var(--font-body) !important;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 [class*="theme-"].sf-enforce :is(button, [role="button"]) { font-family: var(--font-ui, var(--font-body)) !important; }
 [class*="theme-"].sf-enforce :is(code, pre, kbd) { font-family: var(--font-mono) !important; }
