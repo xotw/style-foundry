@@ -19,24 +19,11 @@ export function StyleSwitcher() {
   const [copied, setCopied] = useState(false);
   const [bdOpen, setBdOpen] = useState(false);
   const [backdrop, setBackdropState] = useState("");
-  const backdrops = current ? backdropsFor(current) : [];
-
-  useEffect(() => {
-    if (!current || backdrops.length === 0) return;
-    setBackdropState(localStorage.getItem(backdropKey(current)) ?? backdrops[1]?.id ?? "");
-  }, [current, backdrops.length]);
-
-  const pickBackdrop = (id: string) => {
-    if (!current) return;
-    localStorage.setItem(backdropKey(current), id);
-    setBackdropState(id);
-    window.dispatchEvent(new Event(BACKDROP_EVENT));
-    setBdOpen(false);
-  };
 
   useEffect(() => {
     setAlt(localStorage.getItem("sf-alt-mode") === "1");
   }, []);
+
   const toggleAlt = () => {
     const next = !alt;
     setAlt(next);
@@ -56,6 +43,20 @@ export function StyleSwitcher() {
           : "/styles/$slug";
 
   const current = params.slug;
+  const backdrops = current ? backdropsFor(current) : [];
+
+  useEffect(() => {
+    if (!current || backdrops.length === 0) return;
+    setBackdropState(localStorage.getItem(backdropKey(current)) ?? backdrops[1]?.id ?? "");
+  }, [current, backdrops.length]);
+
+  const pickBackdrop = (id: string) => {
+    if (!current) return;
+    localStorage.setItem(backdropKey(current), id);
+    setBackdropState(id);
+    window.dispatchEvent(new Event(BACKDROP_EVENT));
+    setBdOpen(false);
+  };
   // Cycle in the exact order of the homepage categories, not registry order.
   const ORDERED = STYLE_CATEGORIES.flatMap((c) =>
     c.slugs
