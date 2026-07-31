@@ -1,31 +1,31 @@
 /* Revolut DNA — midnight fintech, aurora gradient accents, borderless */
 .theme-revolut-dna {
-  --bg: oklch(0.189 0.014 278.6);
-  --surface: oklch(0.229 0.020 275.9);
-  --surface-2: oklch(0.271 0.025 274.5);
-  --fg: oklch(1.000 0 0);
-  --fg-muted: oklch(0.670 0.022 267.2);
-  --accent: oklch(0.572 0.226 282.0);
-  --accent-fg: oklch(1.000 0 0);
-  --accent-2: oklch(0.653 0.168 260.1);
-  --line: oklch(1 0 0 / 14%);
-  --success: oklch(0.615 0.143 147.4);
-  --warning: oklch(0.788 0.151 74.9);
-  --danger: oklch(0.615 0.190 27.8);
-  --radius: 0.75rem;
-  --radius-sm: 0.25rem;
-  --radius-lg: 0.5rem;
+  --bg: oklch(0.135 0.004 270);
+  --surface: oklch(0.205 0.005 270);
+  --surface-2: oklch(0.26 0.006 270);
+  --fg: oklch(0.97 0.002 270);
+  --fg-muted: oklch(0.62 0.006 270);
+  --accent: oklch(0.585 0.21 285);
+  --accent-fg: oklch(1 0 0);
+  --accent-2: oklch(0.75 0.15 160);
+  --line: oklch(1 0 0 / 7%);
+  --success: oklch(0.75 0.15 160);
+  --warning: oklch(0.8 0.14 80);
+  --danger: oklch(0.62 0.21 15);
+  --radius: 1.125rem;
+  --radius-sm: 0.875rem;
+  --radius-lg: 1.5rem;
   --radius-pill: 9999px;
-  --shadow-1: 0 2px 6px oklch(0 0 0 / 45%);
-  --shadow-2: 0 8px 24px oklch(0 0 0 / 55%);
-  --shadow-3: 0 24px 56px oklch(0 0 0 / 65%);
+  --shadow-1: none;
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 35%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 45%);
   --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
   --border-width: 1px;
   --blur-amount: 0px;
-  --font-display: "Sora", sans-serif;
-  --font-body: "Sora", sans-serif;
+  --font-display: "Gantari", "Inter", sans-serif;
+  --font-body: "Gantari", "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --tracking-display: 0em;
+  --tracking-display: -0.02em;
   --label-transform: none;
   --label-tracking: 0.05em;
 
@@ -42,43 +42,38 @@
 }
 
 /* signature */
-.theme-revolut-dna { --font-ui: var(--font-display); background-image: radial-gradient(ellipse at 80% -10%, oklch(0.45 0.18 285 / 35%), transparent 50%); }
-.theme-revolut-dna h1 { background: linear-gradient(95deg, var(--accent-2), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.theme-revolut-dna { --font-ui: var(--font-body); }
+.theme-revolut-dna h1 { font-weight: 700; letter-spacing: -0.03em; }
+.theme-revolut-dna h2, .theme-revolut-dna h3 { font-weight: 600; }
+.theme-revolut-dna button { border-radius: 9999px; font-weight: 600; border-color: transparent; }
+.theme-revolut-dna input, .theme-revolut-dna textarea, .theme-revolut-dna select { border-radius: 9999px; background: var(--surface-2); border-color: transparent; }
+.theme-revolut-dna textarea { border-radius: var(--radius-lg); }
+/* borderless surfaces: contrast does the work */
+.theme-revolut-dna .themed-border { border-color: transparent; }
+.theme-revolut-dna th { border-bottom: 1px solid oklch(1 0 0 / 8%); color: var(--fg-muted); font-weight: 500; font-size: 12px; }
+.theme-revolut-dna td { border-bottom: 1px solid oklch(1 0 0 / 5%); }
+.theme-revolut-dna tbody tr:hover { background: oklch(1 0 0 / 4%); }
+/* circular identity fills: avatars and icon chips go periwinkle */
+.theme-revolut-dna [class*="rounded-full"][class*="bg-surface"] { background: var(--accent); color: var(--accent-fg); }
+.theme-revolut-dna .text-success, .theme-revolut-dna .text-accent { font-weight: 600; }
+.theme-revolut-dna ::selection { background: color-mix(in oklab, var(--accent) 35%, transparent); }
+.theme-revolut-dna ::-webkit-scrollbar { width: 8px; }
+.theme-revolut-dna ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 18%); border-radius: 999px; }
+.theme-revolut-dna .label-caps { text-transform: none; letter-spacing: 0.02em; font-size: 12px; font-weight: 500; }
 
-/* depth */
-.theme-revolut-dna td, .theme-revolut-dna th { font-variant-numeric: tabular-nums; }
-.theme-revolut-dna thead th { font-size: 0.72rem; color: var(--fg-muted); letter-spacing: 0.05em; text-transform: uppercase; border-bottom: 1px solid var(--line); }
-.theme-revolut-dna td { border-bottom: 1px solid oklch(1 0 0 / 7%); }
-.theme-revolut-dna tbody tr:hover { background: var(--surface); }
-.theme-revolut-dna input, .theme-revolut-dna select, .theme-revolut-dna textarea { background: var(--surface-2); border: 1px solid transparent; border-radius: var(--radius); transition: box-shadow 150ms ease, background 150ms ease; }
-.theme-revolut-dna input:focus-visible, .theme-revolut-dna select:focus-visible, .theme-revolut-dna textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 30%, transparent); background: var(--surface); }
-.theme-revolut-dna a { color: var(--accent-2); text-decoration: none; font-weight: 600; }
-.theme-revolut-dna a:hover { color: color-mix(in oklab, var(--accent-2) 70%, white); }
-.theme-revolut-dna kbd { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: 0.75em; padding: 0.1em 0.45em; }
-.theme-revolut-dna ::selection { background: color-mix(in oklab, var(--accent) 45%, transparent); }
-.theme-revolut-dna ::-webkit-scrollbar { width: 10px; height: 10px; }
-.theme-revolut-dna ::-webkit-scrollbar-track { background: transparent; }
-.theme-revolut-dna ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 20%); border-radius: var(--radius-pill); }
-.theme-revolut-dna button { transition: filter 150ms ease, transform 150ms ease; }
-.theme-revolut-dna button:hover { filter: brightness(1.15); }
-.theme-revolut-dna button:active { transform: scale(0.98); }
-.theme-revolut-dna .themed-border { border: 1px solid transparent; background-image: linear-gradient(var(--surface), var(--surface)), linear-gradient(120deg, oklch(0.65 0.2 285), oklch(0.7 0.15 250), oklch(0.75 0.12 200)); background-origin: border-box; background-clip: padding-box, border-box; }
-.theme-revolut-dna .label-caps { color: var(--fg-muted); }
-
-/* alt mode: auto-derived light variant */
+/* alt mode: Revolut light — white + iOS gray groups, same periwinkle */
 .theme-revolut-dna.alt-mode {
-  --bg: oklch(0.98 0.012 278.6);
-  --surface: oklch(0.955 0.014 278.6);
-  --surface-2: oklch(0.92 0.014 278.6);
-  --fg: oklch(0.17 0.005 270);
-  --fg-muted: oklch(0.46 0.01 270);
-  --line: oklch(0.87 0.005 270);
-  --shadow-1: 0 1px 2px oklch(0 0 0 / 8%);
-  --shadow-2: 0 6px 20px -8px oklch(0 0 0 / 15%);
-  --shadow-3: 0 20px 50px -16px oklch(0 0 0 / 20%);
-  background-image: radial-gradient(ellipse at 80% -10%, oklch(0.85 0.07 285 / 55%), transparent 50%);
+  --bg: oklch(1 0 0);
+  --surface: oklch(0.958 0.003 270);
+  --surface-2: oklch(0.925 0.004 270);
+  --fg: oklch(0.185 0.005 270);
+  --fg-muted: oklch(0.52 0.008 270);
+  --line: oklch(0 0 0 / 7%);
+  --shadow-1: none;
+  --shadow-2: 0 8px 24px oklch(0 0 0 / 8%);
+  --shadow-3: 0 24px 56px oklch(0 0 0 / 12%);
 }
-.theme-revolut-dna.alt-mode td { border-bottom-color: oklch(0 0 0 / 7%); }
-.theme-revolut-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0 0 0 / 22%); }
-.theme-revolut-dna.alt-mode a:hover { color: color-mix(in oklab, var(--accent-2) 70%, black); }
-.theme-revolut-dna.alt-mode input, .theme-revolut-dna.alt-mode select, .theme-revolut-dna.alt-mode textarea { background: var(--surface-2); }
+.theme-revolut-dna.alt-mode th { border-bottom-color: oklch(0 0 0 / 8%); }
+.theme-revolut-dna.alt-mode td { border-bottom-color: oklch(0 0 0 / 5%); }
+.theme-revolut-dna.alt-mode tbody tr:hover { background: oklch(0 0 0 / 3%); }
+.theme-revolut-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0 0 0 / 18%); }

@@ -728,8 +728,8 @@ export const STYLES: StyleEntry[] = [
   {
     slug: "revolut-dna",
     name: "Revolut DNA",
-    tagline: "Midnight fintech, aurora gradients, borderless.",
-    fontPairing: "Sora",
+    tagline: "Near-black neutral, borderless cards, pills everywhere, periwinkle and mint.",
+    fontPairing: "Gantari",
     swatch: ["oklch(0.189 0.014 278.6)", "oklch(0.572 0.226 282.0)", "oklch(0.653 0.168 260.1)"],
   },
   {
