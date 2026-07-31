@@ -92,6 +92,12 @@
 .theme-revolut-dna.alt-mode tbody tr:hover { background: oklch(0 0 0 / 3%); }
 .theme-revolut-dna.alt-mode ::-webkit-scrollbar-thumb { background: oklch(0 0 0 / 18%); }
 
+/* When a backdrop is active, page-level canvases go transparent so the
+   wallpaper shows through and the frosted surfaces have something to blur. */
+.theme-revolut-dna:is(.rv-glow, .rv-lights, .rv-abstract, .rv-lava, .rv-velvet, .rv-travertine) :is(.bg-background, .bg-bg) {
+  background-color: transparent !important;
+}
+
 /* Backdrop gallery — Revolut-style wallpapers behind the glass.
    Opt-in: add one class beside the theme class, e.g. "theme-revolut-dna rv-lights".
    The frosted surfaces blur whatever backdrop is active. */
