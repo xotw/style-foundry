@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "@tanstack/react-router";
-import { Check, ChevronLeft, ChevronRight, ChevronUp, Moon, Search, Sun, Terminal } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, ChevronUp, Moon, Palette, Search, Sun, Terminal } from "lucide-react";
 import { STYLES } from "@/lib/styles-registry";
 import { STYLE_CATEGORIES } from "@/lib/style-categories";
+import { BACKDROP_EVENT, backdropKey, backdropsFor } from "@/lib/theme-backdrops";
 import { cn } from "@/lib/utils";
 
 /**
@@ -16,6 +17,22 @@ export function StyleSwitcher() {
   const [query, setQuery] = useState("");
   const [alt, setAlt] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [bdOpen, setBdOpen] = useState(false);
+  const [backdrop, setBackdropState] = useState("");
+  const backdrops = current ? backdropsFor(current) : [];
+
+  useEffect(() => {
+    if (!current || backdrops.length === 0) return;
+    setBackdropState(localStorage.getItem(backdropKey(current)) ?? backdrops[1]?.id ?? "");
+  }, [current, backdrops.length]);
+
+  const pickBackdrop = (id: string) => {
+    if (!current) return;
+    localStorage.setItem(backdropKey(current), id);
+    setBackdropState(id);
+    window.dispatchEvent(new Event(BACKDROP_EVENT));
+    setBdOpen(false);
+  };
 
   useEffect(() => {
     setAlt(localStorage.getItem("sf-alt-mode") === "1");
@@ -52,6 +69,7 @@ export function StyleSwitcher() {
 
   useEffect(() => {
     setOpen(false);
+    setBdOpen(false);
     setQuery("");
   }, [location.pathname]);
 
@@ -135,6 +153,32 @@ export function StyleSwitcher() {
         </div>
       )}
 
+      {/* Backdrop panel */}
+      {bdOpen && backdrops.length > 0 && (
+        <div className="mb-2 w-[220px] overflow-hidden rounded-2xl border border-white/15 bg-black/90 p-2 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.8)] backdrop-blur-xl">
+          <p className="px-3 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/35">
+            Backdrop
+          </p>
+          {backdrops.map((b) => (
+            <button
+              key={b.id || "none"}
+              onClick={() => pickBackdrop(b.id)}
+              className={cn(
+                "flex w-full items-center gap-2.5 rounded-lg px-3 py-1.5 text-[12px] font-medium transition-colors",
+                backdrop === b.id ? "bg-white text-black" : "text-white/70 hover:bg-white/10 hover:text-white",
+              )}
+            >
+              <span
+                className="size-4 shrink-0 rounded-full border border-white/25"
+                style={{ background: b.swatch }}
+              />
+              <span className="flex-1 text-left">{b.label}</span>
+              {backdrop === b.id && <Check className="size-3.5" />}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* Pill */}
       <div className="flex items-center gap-1 rounded-full border border-white/15 bg-black/80 p-1 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.8)] backdrop-blur-xl">
         <Link
@@ -182,6 +226,17 @@ export function StyleSwitcher() {
               {idx + 1}/{ORDERED.length}
             </span>
             <span className="h-4 w-px bg-white/15" />
+            {backdrops.length > 0 && (
+              <button
+                onClick={() => setBdOpen((o) => !o)}
+                aria-label="Backdrop gallery"
+                title="Backdrop gallery"
+                className="inline-flex items-center gap-1 rounded-full px-2.5 py-1.5 text-[11px] font-semibold text-white/60 transition-colors hover:text-white"
+              >
+                <Palette className="size-3" />
+                <span className="hidden md:inline">Backdrop</span>
+              </button>
+            )}
             <button
               onClick={toggleAlt}
               aria-label="Toggle light/dark variant"
