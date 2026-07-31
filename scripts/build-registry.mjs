@@ -180,6 +180,8 @@ for (const slug of slugs) {
       },
     ],
   };
+  if (slug === "revolut-dna")
+    item.docs += ' BACKDROPS: add one class beside the theme class for a wallpaper behind the glass — rv-glow | rv-lights | rv-abstract | rv-lava | rv-velvet | rv-travertine.';
   items.push({ name: item.name, type: item.type, title: item.title, description: item.description });
   writeFileSync(join(outDir, `${slug}.json`), JSON.stringify(item, null, 2));
 }
