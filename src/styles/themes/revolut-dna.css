@@ -21,7 +21,7 @@
   --shadow-3: 0 24px 56px oklch(0 0 0 / 45%);
   --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 45%, transparent);
   --border-width: 1px;
-  --blur-amount: 0px;
+  --blur-amount: 24px;
   --font-display: "Gantari", "Inter", sans-serif;
   --font-body: "Gantari", "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
@@ -61,6 +61,17 @@
 .theme-revolut-dna ::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 18%); border-radius: 999px; }
 .theme-revolut-dna .label-caps { text-transform: none; letter-spacing: 0.02em; font-size: 12px; font-weight: 500; }
 
+/* glassy material: sheets, menus and cards frost over what's behind them */
+.theme-revolut-dna :is(.bg-card, .bg-popover, [role="dialog"], [role="menu"], [role="listbox"]) {
+  background: color-mix(in oklab, var(--surface) 80%, transparent);
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+}
+.theme-revolut-dna .bg-surface, .theme-revolut-dna .bg-surface-2 {
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+}
+
 /* alt mode: Revolut light — white + iOS gray groups, same periwinkle */
 .theme-revolut-dna.alt-mode {
   --bg: oklch(1 0 0);
@@ -72,6 +83,9 @@
   --shadow-1: none;
   --shadow-2: 0 8px 24px oklch(0 0 0 / 8%);
   --shadow-3: 0 24px 56px oklch(0 0 0 / 12%);
+}
+.theme-revolut-dna.alt-mode :is(.bg-card, .bg-popover, [role="dialog"], [role="menu"]) {
+  background: color-mix(in oklab, var(--surface) 72%, transparent);
 }
 .theme-revolut-dna.alt-mode th { border-bottom-color: oklch(0 0 0 / 8%); }
 .theme-revolut-dna.alt-mode td { border-bottom-color: oklch(0 0 0 / 5%); }
